@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "reactNamespace": "Hex",
+    "noImplicitAny": true,
+    "outDir": "./build/",
+    "preserveConstEnums": false,
+    "removeComments": true,
+    "target": "ES6",
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "suppressImplicitAnyIndexErrors": true
+  }
+}
