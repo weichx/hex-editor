@@ -97,6 +97,13 @@ declare const enum BorderDecoration {
     Solid, Dotted, Dashed
 }
 
+type IJson = any;
+type IHTMLElementMap = Map<number, HTMLElement>;
+
+interface INewable<T> {
+    new (...args : any[]) : T;
+}
+
 interface IStyleDeclaration {
     alignContent?: string | null;
     alignItems?: string | null;

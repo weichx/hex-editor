@@ -1,23 +1,19 @@
+import {EditorElement} from "./editor_element";
 
-namespace HexEditorInternal {
+const contextStack = new Array<EditorElement>();
 
-    import EditorElement = HexEditor.EditorElement;
+export var RenderContextStack = {
 
-    const contextStack = new Array<EditorElement>();
+    peek() {
+        return contextStack[contextStack.length - 1];
+    },
 
-    export var RenderContextStack = {
+    push(ctx : EditorElement): void {
+        contextStack.push(ctx);
+    },
 
-        peek() {
-            return contextStack[contextStack.length - 1];
-        },
+    pop(): EditorElement {
+        return contextStack.pop();
+    }
 
-        push(ctx : EditorElement): void {
-            contextStack.push(ctx);
-        },
-
-        pop(): EditorElement {
-            return contextStack.pop();
-        }
-
-    };
-}
+};

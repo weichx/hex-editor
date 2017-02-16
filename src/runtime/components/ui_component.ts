@@ -1,0 +1,1 @@
+export class UIComponent extends Component {}

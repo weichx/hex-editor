@@ -1,25 +1,24 @@
-namespace HexEditor {
+import {EditorCustomElement} from "../../editor_element/editor_custom_element";
 
-    interface IInspectorRowAttr {
-        label : string;
+interface IInspectorRowAttr {
+    label : string;
+}
+
+export class InspectorRow extends EditorCustomElement<IInspectorRowAttr> {
+
+    protected getDomData() : IDomData {
+        return { tagName: "div", classList: "horizontal" };
     }
 
-    export class InspectorRow extends EditorCustomElement<IInspectorRowAttr> {
-
-        protected getDomData() : IDomData {
-            return { tagName: "div", classList: "horizontal" };
-        }
-
-        createInitialStructure(children : any) : JSXElement {
-            return [
-                <div class="inspector-label">{this.attrs.label}</div>,
-                <div class="inspector-value">
-                    {children}
-                </div>
-            ];
-        }
-
+    createInitialStructure(children : any) : JSXElement {
+        return [
+            <div class="inspector-label">{this.attrs.label}</div>,
+            <div class="inspector-value">
+                {children}
+            </div>
+        ];
     }
+
 }
 
 createStyleSheet(`<style>

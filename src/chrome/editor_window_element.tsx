@@ -1,13 +1,11 @@
+import {EditorCustomElement} from "../editor_element/editor_custom_element";
 
-namespace HexEditor {
+export interface IWindowAttrs {
+    title : string;
+    icon? : string;
+}
 
-    export interface IWindowAttrs {
-        title : string;
-        icon? : string;
-    }
-
-    export abstract class EditorWindowElement<T extends IWindowAttrs> extends EditorCustomElement<IWindowAttrs> {
-
-    }
+export abstract class EditorWindowElement<T extends IWindowAttrs> extends EditorCustomElement<IWindowAttrs> {
 
 }
+

@@ -1,9 +1,7 @@
 
-namespace EditorEvent {
 
-    export class BreakpointChanged {
+export class BreakpointChanged {
 
-        public onBreakpointChanged(breakpoint : Hex.Breakpoint) : void {}
+    public onBreakpointChanged(breakpoint : Breakpoint) : void {}
 
-    }
 }

@@ -1,16 +1,15 @@
+import {HorizontalBase} from "./horizontal";
+import {EditorCustomElement} from "../editor_element/editor_custom_element";
 
-namespace HexEditor {
+export class InlineField extends HorizontalBase<{ label : string }> {
 
-    export class InlineField extends HorizontalBase<{ label : string }> {
-
-        public createInitialStructure(children : any) : JSXElement {
-            return [
-                <span class="inline-label">{this.attrs.label}</span>,
-                children
-            ];
-        }
-
+    public createInitialStructure(children : any) : JSXElement {
+        return [
+            <span class="inline-label">{this.attrs.label}</span>,
+            children
+        ];
     }
+
 }
 
 createStyleSheet(`<style>

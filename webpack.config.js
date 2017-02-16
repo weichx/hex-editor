@@ -4,7 +4,11 @@ const globby = require('globby');
 
 const config = {
     entry: globby.sync([
-         "./src/**/*.ts"
+        "./src/_main.ts",
+        "!./src/app.tsx",
+         "./src/**/*.ts",
+        "./src/**/*.tsx",
+        "./src/app.tsx"
     ]),
     output: {
         path: path.resolve(__dirname, "build"),

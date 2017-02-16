@@ -1,27 +1,25 @@
+import {Button} from "../ui_elements/button";
+import {EditorCustomElement} from "../editor_element/editor_custom_element";
 
-namespace HexEditorInternal {
+export class Toolbar extends EditorCustomElement<{}> {
 
-    import Button = HexEditor.Button;
-
-    export class Toolbar extends EditorCustomElement<{}> {
-
-        public getDomData() : IDomData {
-            return {
-                tagName: "div",
-                classList: "editor-toolbar"
-            }
-        }
-
-        public createInitialStructure(children : any) : JSXElement {
-            return [
-                <div class="button-group">
-                    <Button>Pan</Button>
-                    <Button>Scale</Button>
-                    <Button>Rotate</Button>
-                </div>
-            ]
+    public getDomData() : IDomData {
+        return {
+            tagName: "div",
+            classList: "editor-toolbar"
         }
     }
+
+    public createInitialStructure(children : any) : JSXElement {
+        return [
+            <div class="button-group">
+                <Button>Pan</Button>
+                <Button>Scale</Button>
+                <Button>Rotate</Button>
+            </div>
+        ]
+    }
+
 }
 
 createStyleSheet(`

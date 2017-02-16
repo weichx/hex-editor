@@ -1,32 +1,32 @@
-namespace HexEditorInternal {
+import {EditorCustomElement} from "../editor_element/editor_custom_element";
+import {WindowColors} from "../editor_theme";
 
-    interface IWindowFrameTabAttrs extends IHTMLAttribute {
-        title : string;
+interface IWindowFrameTabAttrs extends IHTMLAttribute {
+    title : string;
+}
+
+export class WindowFrameTab extends EditorCustomElement<IWindowFrameTabAttrs> {
+
+    protected getDomData() : IDomData {
+        return {
+            tagName: "div",
+            classList: "window-frame-tab"
+        }
     }
 
-    export class WindowFrameTab extends EditorCustomElement<IWindowFrameTabAttrs> {
-
-        protected getDomData() : IDomData {
-            return {
-                tagName: "div",
-                classList: "window-frame-tab"
-            }
+    public setActive(isSelected : boolean) : void {
+        if (isSelected) {
+            this.getDomNode().classList.add('selected');
         }
-
-        public setActive(isSelected : boolean) : void {
-            if (isSelected) {
-                this.getDomNode().classList.add('selected');
-            }
-            else {
-                this.getDomNode().classList.remove('selected');
-            }
+        else {
+            this.getDomNode().classList.remove('selected');
         }
-
-        public createInitialStructure(children : any) : JSXElement {
-            return this.attrs.title;
-        }
-
     }
+
+    public createInitialStructure(children : any) : JSXElement {
+        return this.attrs.title;
+    }
+
 }
 
 createStyleSheet(`
@@ -41,8 +41,8 @@ createStyleSheet(`
 }
 
 .window-frame-tab.selected {
-    background: ${HexEditorTheme.WindowColors.selectedTabBodyGrey};
-    border: 1px solid ${HexEditorTheme.WindowColors.selectedTabBorderGrey};
+    background: ${WindowColors.selectedTabBodyGrey};
+    border: 1px solid ${WindowColors.selectedTabBorderGrey};
     border-bottom:none;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;

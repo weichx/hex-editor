@@ -1,12 +1,9 @@
-namespace EditorEvent {
 
-    import AppElement = Hex.AppElement;
+export class SelectionChanged {
 
-    export class SelectionChanged {
+    public onSelectionChanged : (newSelection? : AppElement, previousSelection? : AppElement) => void;
 
-        public onSelectionChanged : (newSelection? : AppElement, previousSelection? : AppElement) => void;
-
-    }
 }
+
 
 

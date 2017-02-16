@@ -1,17 +1,16 @@
-namespace HexEditor {
+import {EditorCustomElement} from "../editor_element/editor_custom_element";
 
-    export class VerticalBase<T> extends EditorCustomElement<T> {
+export class VerticalBase<T> extends EditorCustomElement<T> {
 
-        protected getDomData() : IDomData {
-            return VerticalBase.DomData;
-        }
-
-        public static DomData = { tagName: "div", classList: "vertical" };
-
+    protected getDomData() : IDomData {
+        return VerticalBase.DomData;
     }
 
-    export class Vertical extends VerticalBase<IHTMLAttribute> {}
+    public static DomData = { tagName: "div", classList: "vertical" };
+
 }
+
+export class Vertical extends VerticalBase<IHTMLAttribute> {}
 
 createStyleSheet(`<style>
 

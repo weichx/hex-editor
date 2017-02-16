@@ -1,54 +1,51 @@
+import {EditorCustomElement} from "./editor_element/editor_custom_element";
+import {Toolbar} from "./chrome/toolbar";
+import {SplitPane} from "./ui_elements/split_pane";
+import {WindowFrame} from "./chrome/editor_window_frame";
+import {HierarchyWindow} from "./windows/hierarchy/hierarchy_window";
+import {AssetWindow} from "./windows/asset_window";
+import {SceneWindow} from "./windows/scene_window";
+import {InspectorWindow} from "./windows/inspector_window";
+import {WindowColors} from "./editor_theme";
+import {MenuBar} from "./chrome/menu_bar";
 
 
-namespace HexEditorInternal {
+export class EditorApplication extends EditorCustomElement<{}> {
 
-    import EditorCustomElement = HexEditor.EditorCustomElement;
-    import MenuBar = HexEditorInternal.MenuBar;
-    import Toolbar = HexEditorInternal.Toolbar;
-    import WindowFrame = HexEditorInternal.WindowFrame;
-    import SplitPane = HexEditor.SplitPane;
-    import HierarchyWindow = HexEditor.HierarchyWindow;
-    import AssetWindow = HexEditor.AssetWindow;
-    import SceneWindow = HexEditor.SceneWindow;
-    import InspectorWindow = HexEditor.InspectorWindow;
-
-    export class EditorApplication extends EditorCustomElement<{}> {
-
-        public getDomData() : IDomData {
-            return { tagName: "div", classList: "editor-application" };
-        }
-
-        public createInitialStructure(children : any) : JSXElement {
-            return [
-                <MenuBar/>,
-                <Toolbar/>,
-                <SplitPane distribution={0.2}>
-
-                    <SplitPane axis={SplitDirection.Horizontal}>
-
-                        <WindowFrame>
-                            <HierarchyWindow title="Hierarchy" icon=""/>
-                        </WindowFrame>
-                        <WindowFrame>
-                            <AssetWindow title="Assets"/>
-                        </WindowFrame>
-                    </SplitPane>
-
-                    <SplitPane distribution={0.7}>
-                        <WindowFrame>
-                            <SceneWindow title="Scene" icon=""/>
-                        </WindowFrame>
-                        <WindowFrame>
-                            <InspectorWindow title="Inspector" icon=""/>
-                        </WindowFrame>
-                    </SplitPane>
-
-
-                </SplitPane>
-            ]
-        }
-
+    public getDomData() : IDomData {
+        return { tagName: "div", classList: "editor-application" };
     }
+
+    public createInitialStructure(children : any) : JSXElement {
+        return [
+            <MenuBar/>,
+            <Toolbar/>,
+            <SplitPane distribution={0.2}>
+
+                <SplitPane axis={SplitDirection.Horizontal}>
+
+                    <WindowFrame>
+                        <HierarchyWindow title="Hierarchy" icon=""/>
+                    </WindowFrame>
+                    <WindowFrame>
+                        <AssetWindow title="Assets"/>
+                    </WindowFrame>
+                </SplitPane>
+
+                <SplitPane distribution={0.7}>
+                    <WindowFrame>
+                        <SceneWindow title="Scene" icon=""/>
+                    </WindowFrame>
+                    <WindowFrame>
+                        <InspectorWindow title="Inspector" icon=""/>
+                    </WindowFrame>
+                </SplitPane>
+
+
+            </SplitPane>
+        ]
+    }
+
 }
 
 createStyleSheet(`<style>
@@ -57,16 +54,9 @@ createStyleSheet(`<style>
     overflow:hidden;
     width: 100%;
     height: 100%;
-    background: ${HexEditorTheme.WindowColors.backgroundGrey};
+    background: ${WindowColors.backgroundGrey};
     position: relative;
 }
 </style>`);
 
-
-
-(window as any).Hex = {
-    createElement: HexEditorInternal.createElement,
-    Binding: HexEditor.EditorBindingElement
-};
-
-EditorRuntime.start(HexEditorInternal.EditorApplication);
+(EditorRuntime as any).start(EditorApplication);

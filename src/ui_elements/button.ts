@@ -1,29 +1,27 @@
+import {EditorCustomElement} from "../editor_element/editor_custom_element";
 
-namespace HexEditor {
+interface IButtonAttr {
+    [key : string] : any;
+    type? : "info" | "danger" | "primary" | "success" | "warning" | "link";
+    size? : "block" | "large" | "medium" | "small" | "tiny";
+}
 
-    interface IButtonAttr {
-        [key : string] : any;
-        type? : "info" | "danger" | "primary" | "success" | "warning" | "link";
-        size? : "block" | "large" | "medium" | "small" | "tiny";
+export class Button extends EditorCustomElement<IButtonAttr> {
+
+    protected getDomData() : IDomData {
+        return {
+            tagName: "button",
+            classList: "btn " + this.getButtonSize() + this.getButtonType()
+        }
     }
 
-    export class Button extends EditorCustomElement<IButtonAttr> {
+    private getButtonSize() : string {
+        return " btn-" + (this.attrs.size || "default");
+    }
 
-        protected getDomData() : IDomData {
-            return {
-                tagName: "button",
-                classList: "btn " + this.getButtonSize() + this.getButtonType()
-            }
-        }
-
-        private getButtonSize() : string {
-            return " btn-" + (this.attrs.size || "default");
-        }
-
-        private getButtonType() : string {
-            return " btn-" + (this.attrs.size || "primary");
-        }
-
+    private getButtonType() : string {
+        return " btn-" + (this.attrs.size || "primary");
     }
 
 }
+

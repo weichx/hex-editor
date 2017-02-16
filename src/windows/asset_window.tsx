@@ -1,25 +1,23 @@
+import { EditorCustomElement } from "../editor_element/editor_custom_element";
 
-namespace HexEditor {
+interface IAssetWindowAttrs {
+    title : string;
+}
 
-    interface IAssetWindowAttrs {
-        title : string;
+export class AssetWindow extends EditorCustomElement<IAssetWindowAttrs> {
+
+    protected getDomData() : IDomData {
+        return {
+            tagName: "div", classList: "asset-window"
+        }
     }
 
-    export class AssetWindow extends EditorCustomElement<IAssetWindowAttrs> {
-
-        protected getDomData() : IDomData {
-            return {
-                tagName: "div", classList: "asset-window"
-            }
-        }
-
-        public createInitialStructure(children : any) : JSXElement {
-            return [
-                <h1>Hello Assets</h1>
-            ]
-        }
-
+    public createInitialStructure(children : any) : JSXElement {
+        return [
+            <h1>Hello Assets</h1>
+        ]
     }
+
 }
 
 createStyleSheet(`

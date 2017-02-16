@@ -1,37 +1,38 @@
-namespace HexEditor {
-    interface ITextBoxWithIconAttr extends IHTMLAttribute {
-        color? : string;
-        iconSide? : "left" | "right";
-        iconName : string;
-        binding : string;
-    }
+import {EditorCustomElement} from "../editor_element/editor_custom_element";
 
-    export class TextBoxWithIcon extends EditorCustomElement<ITextBoxWithIconAttr> {
+interface ITextBoxWithIconAttr extends IHTMLAttribute {
+    color? : string;
+    iconSide? : "left" | "right";
+    iconName : string;
+    binding : string;
+}
 
-        protected getDomData() : IDomData {
-            return {
-                tagName: "div",
-                classList: this.getClassList()
-            }
-        }
+export class TextBoxWithIcon extends EditorCustomElement<ITextBoxWithIconAttr> {
 
-        protected getClassList() : string {
-            return "inner-addon " + (this.attrs.iconSide === "left" ? "left-addon" : "right-addon");
-        }
-
-        public createInitialStructure(children : any) : JSX.Element<{}> {
-            return [
-                <i x-id="icon" class={"glyphicon glyphicon-" + this.attrs.iconName}></i>,
-                <input type="text" class="text-with-icon"/>
-            ]
-        }
-
-        public onMounted() : void {
-            if (this.attrs.color) {
-                this.getChildById("icon").getDomNode().style.color = this.attrs.color;
-            }
+    protected getDomData() : IDomData {
+        return {
+            tagName: "div",
+            classList: this.getClassList()
         }
     }
+
+    protected getClassList() : string {
+        return "inner-addon " + (this.attrs.iconSide === "left" ? "left-addon" : "right-addon");
+    }
+
+    public createInitialStructure(children : any) : JSX.Element<{}> {
+        return [
+            <i x-id="icon" class={"glyphicon glyphicon-" + this.attrs.iconName}></i>,
+            <input type="text" class="text-with-icon"/>
+        ]
+    }
+
+    public onMounted() : void {
+        if (this.attrs.color) {
+            this.getChildById("icon").getDomNode().style.color = this.attrs.color;
+        }
+    }
+
 }
 
 createStyleSheet(`<style>

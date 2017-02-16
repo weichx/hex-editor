@@ -7,8 +7,8 @@
     "preserveConstEnums": false,
     "removeComments": true,
     "target": "ES6",
+    "module": "commonjs",
     "experimentalDecorators": true,
-    "importHelpers": true,
-    "suppressImplicitAnyIndexErrors": true
+    "importHelpers": true
   }
 }

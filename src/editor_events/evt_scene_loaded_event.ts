@@ -1,11 +1,5 @@
+export class SceneLoaded {
 
-namespace EditorEvent {
+    public onSceneLoaded : (scene : Scene) => void;
 
-    import Scene = Hex.Scene;
-
-    export class SceneLoaded  {
-
-        public onSceneLoaded : (scene : Scene) => void;
-
-    }
 }
