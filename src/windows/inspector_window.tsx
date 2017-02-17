@@ -5,6 +5,7 @@ import {EditorWindowElement, IWindowAttrs} from "../chrome/editor_window_element
 import {InspectorRow} from "../ui_elements/inspector/inspector_row";
 import {ComponentMenu} from "./inspector/component_menu";
 import {WindowColors} from "../editor_theme";
+import {ComponentRenderer} from "../renderers/component/component_renderer";
 
 export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
 
@@ -49,10 +50,10 @@ export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
     }
 
     private createComponentDrawer(component : Component) {
-        // const renderer = ComponentRenderer.get(component);
-        // if (renderer) {
-        //     this.addChild(renderer);
-        // }
+        const renderer = ComponentRenderer.get(component);
+        if (renderer) {
+            this.addChild(renderer);
+        }
     }
 
 }

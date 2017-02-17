@@ -95,23 +95,15 @@ export abstract class EditorElement {
     //even if they are inserted elsewhere in the dom via 'child-root'
     public addChild<T>(child : EditorElement) : void {
         //todo throw if add called before structure finished
-        if (Array.isArray(child)) {
-            debugger; //todo see if we can remove this check
-            for (let i = 0; i < child.length; i++) {
-                this.addChild(child[i]);
-            }
-            return;
-        }
+
         if (!this.childRoot) {
             this.childRoot = child;
         }
 
-        if (this.isAncestor(child)) {
-            debugger;
-        }
         if (this.isDescendant(child)) {
             debugger;
         }
+
         if (child.parent) {
             child.parent.removeChild(child);
         }

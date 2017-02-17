@@ -1,4 +1,3 @@
-
 import {SceneTool} from "./scene_tool";
 import {distanceTestPoint, hitTestLine} from "../../util";
 
@@ -23,7 +22,7 @@ export class SceneRectTool extends SceneTool {
             const rect = selection.getRect();
             highlighter.setVisible(true);
             highlighter.setRect(rect);
-            if (input.isMouseDownThisFrame()) {
+            if (input.isMouseDownThisFrame() && input.isMouseInEditorElement(this.sceneBodyRoot)) {
 
                 this.draggedSide = this.hitTestDragSide(mouse, rect);
                 if (this.draggedSide === DragSide.None) {

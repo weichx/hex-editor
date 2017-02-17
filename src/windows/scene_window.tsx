@@ -15,8 +15,14 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
     private height : number;
 
     public onUpdated() : void {
+        const clientRect = this.getChildById("scene-window-body").getDomNode().getBoundingClientRect();
+        if(clientRect.width !== this.width || clientRect.height !== this.height) {
+            this.width = clientRect.width;
+            this.height = clientRect.height;
+            AppElement.Root.setRect(new Rectangle(0, 0, this.width, this.height));
+            this.paint();
+        }
         this.currentTool.update();
-        this.paint();
     }
 
     public setCursor(cursorString : string) : void {
@@ -24,9 +30,6 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
     }
 
     private paint() {
-        this.width = this.getDomNode().offsetWidth;
-        this.height = this.getDomNode().offsetHeight;
-
         this.canvas.width = this.width;
         this.canvas.height = this.height;
         this.ctx.clearRect(0, 0, this.width, this.height);
@@ -47,6 +50,7 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
 
         this.ctx.closePath();
         this.ctx.stroke();
+
     }
 
     public getDomData() : IDomData {
@@ -68,6 +72,7 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
             <canvas x-id="canvas"></canvas>,
             <div x-id="scene-window-body" class="scene-window-body">
                 <div x-child-root id="scene-render-root" class="scene-render-root"></div>
+                <div x-id="scene-viewport" class="scene-viewport"></div>
                 <div x-id="highlighter" x-hidden class="highlighter">
                     <div x-id="hi-lite-top-right" class="highlight-corner top-right"></div>
                     <div x-id="hi-lite-top-left" class="highlight-corner top-left"></div>
@@ -81,6 +86,15 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
 
 createStyleSheet(`
 <style>
+
+.scene-viewport {
+position: absolute;
+    border: 1px dashed white;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 .highlighter {
     position: absolute;
@@ -145,9 +159,6 @@ createStyleSheet(`
 
 .scene-render-root {
     position: relative;
-    width: 600px;
-    height: 400px;
-    border: 1px dashed white;
 }
 
 .scene-window-body {
@@ -155,7 +166,7 @@ createStyleSheet(`
     top:0; 
     left:0;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 3.5em);
 }
 
 .scene-window-header .break-point-bar {

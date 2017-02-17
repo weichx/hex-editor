@@ -1,0 +1,27 @@
+import {EditorElement} from "../../editor_element/editor_element";
+import {EditorCustomElement} from "../../editor_element/editor_custom_element";
+import {createElement} from "../../editor_element/element_renderer";
+
+interface IPropertyRendererAttrs {
+    component : Component & Indexable<any>;
+    editorData : IEditorAnnotationData;
+}
+
+export class PropertyRenderer extends EditorCustomElement<IPropertyRendererAttrs> {
+
+    public createInitialStructure(children : any) : JSXElement {
+        return children;
+    }
+
+    private static RendererMap = new Map<Constructor, TypeOf<EditorElement>>();
+
+    public static set(type : Constructor, renderer : any) : void {
+        PropertyRenderer.RendererMap.set(type, renderer);
+    }
+
+    public static get(component : Component, editorData : IEditorAnnotationData) : any {
+        const rendererType = PropertyRenderer.RendererMap.get(editorData.propertyType);
+        return createElement(rendererType, {component, editorData});
+    }
+
+}

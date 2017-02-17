@@ -2,12 +2,15 @@ import {ToggleIcon} from "../../ui_elements/icon";
 import {EditorCustomElement} from "../../editor_element/editor_custom_element";
 import {HierarchyWindow} from "./hierarchy_window";
 
-
 interface IHierarchyItem {
     element : AppElement;
 }
 
 export class HierarchyItem extends EditorCustomElement<IHierarchyItem> {
+
+    protected getDomData() : IDomData {
+        return { tagName: "div", classList: "item-structure" }
+    }
 
     public setSelected(isSelected : boolean) : void {
         const node = this.getChildById("item-details");
@@ -48,6 +51,11 @@ export class HierarchyItem extends EditorCustomElement<IHierarchyItem> {
         this.getChildById("spacer").getDomNode().style.background = null;
     }
 
+    public mount(point : any) {
+        debugger;
+        super.mount(point);
+    }
+
     public createInitialStructure(children : any) {
         const appElement = this.attrs.element;
         let padding = (appElement.getDepth() * 12);
@@ -55,8 +63,7 @@ export class HierarchyItem extends EditorCustomElement<IHierarchyItem> {
             padding += 12;
         }
 
-        return <div class="item-structure">
-
+        return [
             <div x-id="item-details"
                  class="item-details"
                  style={"padding-left:" + padding + "px"}
@@ -70,15 +77,15 @@ export class HierarchyItem extends EditorCustomElement<IHierarchyItem> {
 
                 <ToggleIcon x-hidden x-if-eval={ () => appElement.getChildCount() > 0 }/>
                 <a>({appElement.name})</a>
-            </div>
+            </div>,
 
             <div x-id="spacer"
                  class="item-insert-space"
                  onMouseEnter={this.mouseEnterSpace}
-                 onMouseExit={this.mouseExitSpace}/>
+                 onMouseExit={this.mouseExitSpace}/>,
 
             <div x-child-root class="item-children"></div>
-        </div>
+        ]
     }
 
 }

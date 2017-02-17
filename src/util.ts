@@ -105,3 +105,5 @@ function distanceSquaredToLineSegment(lx1 : number, ly1 : number, lx2 : number, 
 export class Integer {}
 
 export class Select {}
+
+export class EnumSelect {}

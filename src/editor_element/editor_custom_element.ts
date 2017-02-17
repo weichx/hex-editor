@@ -17,7 +17,10 @@ export abstract class EditorCustomElement<T extends IHTMLAttribute> extends Edit
         const domData = this.getDomData();
         this.tagName = domData.tagName || "div";
         super.createDomNode();
-        this.htmlNode.className = (domData.classList || "") + (this.attrs.class || "");
+        const classList = (domData.classList || "") + (this.attrs.class || "");
+        if(classList) {
+            this.htmlNode.className = classList;
+        }
         const attrs = domData.attributes;
         if (attrs) {
             for (let a in attrs) {

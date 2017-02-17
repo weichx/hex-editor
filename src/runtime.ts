@@ -7,6 +7,9 @@ import {EditorElement} from "./editor_element/editor_element";
 import {EditorInput} from "./input";
 import {CommandSerializer} from "./runtime/cmd_serializers/_cmd_serializer";
 import {CommandInvoker} from "./browser/cmd_invokers/_cmd_invoker";
+import {DefaultSizingComponent} from "./runtime/components/layout/default/default_sizing_component";
+import {DefaultLayoutComponent} from "./runtime/components/layout/default/default_layout_component";
+import {BackgroundComponent} from "./runtime/components/background_component";
 
 export type CommandInterpreter = (command : { type : number, id : number }) => void;
 
@@ -26,10 +29,79 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
         this.input = new EditorInput();
     }
 
+    private suppressAddElement(fn : () => void) : void {
+        this.addElement = function () {};
+        fn();
+        this.addElement = EditorRuntimeImplementation.prototype.addElement;
+    }
+
+    private createApplicationRoot() : void {
+        if (!AppElement.Root) {
+            this.suppressAddElement(() => {
+                AppElement.Root = new AppElement("__Root__");
+                this.appElementRegistry[-1] = AppElement.Root;
+                AppElement.Root.addComponent(DefaultLayoutComponent);
+                AppElement.Root.addComponent(DefaultSizingComponent);
+                AppElement.Root.addComponent(BackgroundComponent);
+            });
+        }
+    }
+
     public loadScene(sceneDescription : any) : void {
+        this.createApplicationRoot();
         if (!this.scene) this.scene = new Scene();
         this.scene.load(sceneDescription);
+        const elements = sceneDescription.elements;
+        const parentMap : Indexable<number> = {};
+        //todo use an instance id for elements?
+        this.suppressAddElement(() => {
+            const ids = Object.keys(elements);
+            for(let i = 0; i < ids.length; i++) {
+                const id = ids[i];
+                const elementDesc = elements[id];
+                const appElement = new AppElement(elementDesc.name) as any;
+                appElement.id = parseInt(id);
+                this.appElementRegistry[id] = appElement;
+                parentMap[id] = elementDesc.parentId;
+            }
+            const appElementIds = Object.keys(this.appElementRegistry);
+            for(let i = 0; i < appElementIds.length; i++) {
+                const appElement = this.appElementRegistry[appElementIds[i]] as any;
+                if(appElement.id === -1) continue;
+                const parentId = parentMap[appElement.id] || -1;
+                appElement.parent = this.appElementRegistry[parentId];
+                appElement.parent.children.add(appElement);
+            }
+        });
         this.emit(SceneLoaded, this.scene);
+    }
+
+    private hydrateElement(definition : any) : AppElement {
+        //todo dont call addElement until the end when building a scene
+        const appElement = new AppElement(definition.name);
+
+        for (let j = 0; j < definition.components.length; j++) {
+            const compDesc = definition.components[j];
+            const type = Component.getComponentFromPath(compDesc.type);
+            if(type) {
+                const cmp = appElement.addComponent(type);
+                this.hydrateComponent(cmp, compDesc.data);
+            }
+        }
+        for (let k = 0; k < definition.children.length; k++) {
+            this.hydrateElement(definition.children[k]).setParent(appElement);
+        }
+        return appElement;
+    }
+
+    private hydrateComponent(component : Component & Indexable<any>, data: IJson) : Component {
+        const keys = Object.keys(data);
+        for(let i = 0; i < keys.length; i++) {
+            const propertyName  = keys[i];
+            //todo use a more formal serialize / deserialize
+            component[propertyName] = data[propertyName];
+        }
+        return component;
     }
 
     public select(newSelection : AppElement) : void {
@@ -43,7 +115,6 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
     }
 
     public update(timeStamp : number) {
-        this.input.update();
         for (let i = 0; i < this.updateCycles.length; i++) {
             this.updateCycles[i].update(timeStamp);
         }
@@ -51,6 +122,7 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
         // on a worker thread and is decoded on a UI thread
         const commandBuffer = this.buildCommandBuffer();
         this.decodeCommandBuffer(commandBuffer);
+        this.input.update();
         requestAnimationFrame(this.boundUpdate);
     }
 
@@ -104,7 +176,7 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
         for (let i = 0; i < this.updateCycles.length; i++) {
             const length = this.updateCycles[i].removeUpdater(updater);
             if (length === 0) {
-                this.updateCycles.splice(i, 1);
+                this.updateCycles.removeAt(i);
                 return;
             }
         }
@@ -116,6 +188,13 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
         this.appElementRegistry[appElement.id] = appElement;
         this.emit(AppElementCreated, appElement);
         this.sendCommand(CommandType.Create, appElement.id);
+        const parent = appElement.getParent();
+        if (parent) {
+            const components = parent.getAllComponents();
+            for (let i = 0; i < components.length; i++) {
+                components[i].onChildAdded(appElement);
+            }
+        }
     }
 
     public addComponent(component : Component) : void {
@@ -127,12 +206,7 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
     }
 
     public drawScene(targetId : string) : void {
-        if (!AppElement.Root) {
-            this.addElement = function () {};
-            AppElement.Root = new AppElement("__Root__");
-            this.addElement = EditorRuntimeImplementation.prototype.addElement;
-            this.appElementRegistry[-1] = AppElement.Root;
-        }
+        this.createApplicationRoot();
         const root = document.getElementById(targetId);
         const bounds = root.getBoundingClientRect();
         const element = this.domElementIdMap.get(-1) || document.createElement("div");
@@ -159,7 +233,7 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
             }
         }
         const updateCycle = new UpdateCycle(interval);
-        this.updateCycles.push(updateCycle);
+        this.updateCycles.add(updateCycle);
         return updateCycle;
     }
 
@@ -211,7 +285,7 @@ class UpdateCycle {
     addUpdater(updater : Updater) : boolean {
         const idx = this.updaters.indexOf(updater);
         if (idx === -1) {
-            this.updaters.push(updater);
+            this.updaters.add(updater);
             return true;
         }
         return false;

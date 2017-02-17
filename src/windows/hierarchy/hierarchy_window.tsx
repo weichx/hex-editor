@@ -128,10 +128,13 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
     }
 
     public onSceneLoaded(scene : Scene) : void {
-        const roots = scene.getRootElements();
-        for (let i = 0; i < roots.length; i++) {
-            this.addChild(this.createHierarchyItem(roots[i]));
-        }
+        const root = AppElement.Root;
+        const rootItem = this.createHierarchyItem(root);
+        // const roots = scene.getRootElements();
+        // for (let i = 0; i < roots.length; i++) {
+        //     rootItem.addChild(this.createHierarchyItem(roots[i]));
+        // }
+        this.addChild(rootItem);
     }
 
     public isDragging() : boolean {
@@ -164,11 +167,12 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
 
     private createNewElement() : void {
         const selection = EditorRuntime.getSelection();
+        let appElement : AppElement = null;
         if (selection) {
-            new AppElement("Element", selection);
+            appElement = new AppElement("Element", selection);
         }
         else {
-            new AppElement("Element");
+            appElement = new AppElement("Element");
         }
     }
 
