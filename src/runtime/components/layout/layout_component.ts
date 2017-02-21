@@ -15,15 +15,11 @@ AppElement.prototype.setRect = function (rect : Rectangle) {
 
 };
 
-export abstract class LayoutComponent extends Component {
+export class LayoutComponent extends Component {
 
-    public layoutRect : Rectangle;
+    public layoutRect : Rectangle = new Rectangle();
 
-    public onCreated() {
-        this.layoutRect = new Rectangle();
-    }
-
-    public abstract doLayout() : void
+    public doLayout() : void {}
 
 }
 

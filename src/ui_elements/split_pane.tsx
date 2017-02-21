@@ -28,7 +28,11 @@ export class SplitPane extends EditorCustomElement<ISplitPaneAttrs> {
     protected distribution : number;
 
     protected getDomData() : IDomData {
-        return { tagName: "div", classList: "split-pane" }
+        let classList = "split-pane";
+        if(!this.isVertical()) {
+            classList += " horizontal";
+        }
+        return { tagName: "div", classList }
     }
 
     public onWindowResized() {
@@ -69,7 +73,7 @@ export class SplitPane extends EditorCustomElement<ISplitPaneAttrs> {
         }
         if (this.content0Child && this.content1Child) {
             this.c0Size = (this.totalSize * this.distribution) - (this.gutterSize * 0.5);
-            this.c1Size = this.totalSize - this.c0Size;
+            this.c1Size = this.totalSize - this.c0Size - this.gutterSize;
             this.getChildById("gutter").setVisible(true);
         }
         this.applySizeChanges()
@@ -152,19 +156,19 @@ export class SplitPane extends EditorCustomElement<ISplitPaneAttrs> {
 
     protected updateTotalSize() {
         if (this.isVertical()) {
-            this.totalSize = this.parent.getDomNode().clientWidth;
+            this.totalSize = (this.parent.getDomNode().clientWidth - (this.gutterSize * 0.5) | 0);
         }
         else {
-            this.totalSize = this.parent.getDomNode().clientHeight;
+            this.totalSize = (this.parent.getDomNode().clientHeight - (this.gutterSize * 0.5) | 0);
         }
     }
 
     protected applySizeChanges() {
         if (this.isVertical()) {
-            this.content0Node.style.width = this.c0Size + "px";
-            this.gutterNode.style.left = this.c0Size + "px";
-            this.content1Node.style.left = (this.gutterSize + this.c0Size) + "px";
-            this.content1Node.style.width = this.c1Size + "px";
+            this.content0Node.style.width = (this.c0Size | 0) + "px";
+            this.gutterNode.style.left = (this.c0Size | 0) + "px";
+            this.content1Node.style.left = ((this.gutterSize + this.c0Size) | 0) + "px";
+            this.content1Node.style.width = (this.c1Size | 0) + "px";
         }
         else {
             this.content0Node.style.height = this.c0Size + "px";
@@ -185,14 +189,14 @@ export class SplitPane extends EditorCustomElement<ISplitPaneAttrs> {
         this.content0Child = children[0];
         this.content1Child = children[1];
         this.ensureOrientation();
-        const styleString = this.getStyleString();
-        const gutterClass = this.isVertical() ? "vertical" : "horizontal";
+        let gutterClass = "gutter-";
+        gutterClass += this.isVertical() ? "vertical" : "horizontal";
         return [
-            <div x-id="content0" style={styleString}>
+            <div x-id="content0" class="split-pane-panel">
                 {children[0]}
             </div>,
-            <div x-id="gutter" onMouseDown={ this.startGutterDrag } class={"gutter-" + gutterClass}></div>,
-            <div x-id="content1" style={styleString}>
+            <div x-id="gutter" class={gutterClass} onMouseDown={ this.startGutterDrag } />,
+            <div x-id="content1" class="split-pane-panel">
                 {children[1]}
             </div>
         ]
@@ -201,9 +205,6 @@ export class SplitPane extends EditorCustomElement<ISplitPaneAttrs> {
     public setAxis(axis : SplitDirection) : void {
         if (this.attrs.axis === axis) return;
         this.attrs.axis = axis;
-        const styleString = this.getStyleString();
-        this.getChildById("content0").getDomNode().setAttribute("style", styleString);
-        this.getChildById("content1").getDomNode().setAttribute("style", styleString);
         const gutterNode = this.getChildById("gutter").getDomNode();
         if (this.attrs.axis === SplitDirection.Vertical) {
             gutterNode.classList.remove("gutter-horizontal");
@@ -216,15 +217,6 @@ export class SplitPane extends EditorCustomElement<ISplitPaneAttrs> {
             gutterNode.style.left = "0";
         }
         this.computeDimensions();
-    }
-
-    private getStyleString() : string {
-        const dimension = this.isVertical() ? "height" : "width";
-        return `
-            overflow:hidden;
-            position:absolute;
-            ${dimension}: 100%;
-        `;
     }
 
     public setOrSplitPane0(element : EditorElement, axis = SplitDirection.Vertical, distribution : number = 0.5) : void {
@@ -296,6 +288,19 @@ createStyleSheet(`<style>
     height: 100%;
     position:relative;
     overflow: hidden;
+}
+
+.split-pane .split-pane-panel {
+    height: 100%;
+}
+
+.split-pane.horizontal .split-pane-panel {
+    width: 100%;
+}
+
+.split-pane-panel {
+    overflow:hidden;
+    position:absolute;
 }
 
 .gutter-vertical {

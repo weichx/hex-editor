@@ -61,6 +61,12 @@ export function randomPositiveInteger() {
     return ~~(Math.random() * 9999999 + 1);
 }
 
+export function titlize(input : string) : string {
+    return input.replace(/([A-Z])/g, ' $1')// insert a space before all caps
+        .replace(/^./, function (str) { return str.toUpperCase(); });   // uppercase the first character
+}
+
+
 function distanceSquaredToLineSegment2(lx1 : number, ly1 : number, ldx : number, ldy : number, lineLengthSquared : number, px : number, py : number) {
     var t; // t===0 at line pt 1 and t ===1 at line pt 2
     if (!lineLengthSquared) {

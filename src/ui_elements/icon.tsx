@@ -38,48 +38,55 @@ export class FontIcon extends BaseIcon {
     }
 }
 
-interface IToggleIconAttrs {
+interface IToggleIconAttrs extends IHTMLAttribute {
     visibilityTarget? : () => EditorElement;
     open? : boolean;
     direction? : string;
 }
+
 
 export class ToggleIcon extends EditorCustomElement<IToggleIconAttrs> {
 
     protected getDomData() : IDomData {
         return {
             tagName: "i",
-            attributes: {
-                style: "font-size: 0.8em",
-            },
             classList: this.getClassList()
         };
     }
 
     public onMounted() {
-        this.attrs.visibilityTarget = this.attrs.visibilityTarget || (() => {
-                return this.__renderContext.getChildRoot();
+        const attrs = this.attrs;
+        const htmlNode = this.htmlNode;
+        let direction = attrs.direction;
+
+        attrs.visibilityTarget = attrs.visibilityTarget || (() => {
+                return (this as any).renderContext.getChildRoot();
             });
-        this.attrs.open = this.attrs.open === void 0 ? true : Boolean(this.attrs.open);
-        if (this.attrs.direction !== "right" && this.attrs.direction !== "left") {
-            this.attrs.direction = "right";
+
+        if (direction !== "right" && direction !== "left") {
+            attrs.direction = direction = "right";
         }
-        this.htmlNode.className = this.getClassList();
-        this.htmlNode.addEventListener('click', () => {
-            this.attrs.open = !this.attrs.open;
-            this.attrs.visibilityTarget().setVisible(this.attrs.open);
-            if (this.attrs.open) {
-                this.htmlNode.classList.remove("fa-chevron-" + this.attrs.direction);
-                this.htmlNode.classList.add("fa-chevron-down");
+
+        htmlNode.addEventListener('click', (e : MouseEvent) => {
+            attrs.open = !attrs.open;
+            const target = attrs.visibilityTarget();
+            target.setVisible(attrs.open);
+            if (attrs.open) {
+                htmlNode.classList.remove("fa-chevron-" + direction);
+                htmlNode.classList.add("fa-chevron-down");
             }
             else {
-                this.htmlNode.classList.remove("fa-chevron-down");
-                this.htmlNode.classList.add("fa-chevron-" + this.attrs.direction);
+                htmlNode.classList.remove("fa-chevron-down");
+                htmlNode.classList.add("fa-chevron-" + direction);
             }
-        });
+            e.stopPropagation();
+        }, false);
     }
 
     public getClassList() {
+        const attrs = this.attrs;
+        attrs.open = attrs.open === void 0 ? true : Boolean(attrs.open);
+
         if (this.attrs.direction !== "right" && this.attrs.direction !== "left") {
             this.attrs.direction = "right";
         }

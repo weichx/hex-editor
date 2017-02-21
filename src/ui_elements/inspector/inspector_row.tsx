@@ -1,10 +1,15 @@
 import {EditorCustomElement} from "../../editor_element/editor_custom_element";
+import {titlize} from "../../util";
 
 interface IInspectorRowAttr {
     label : string;
 }
 
 export class InspectorRow extends EditorCustomElement<IInspectorRowAttr> {
+
+    public onCreated() : void {
+        this.attrs.label = titlize(this.attrs.label);
+    }
 
     protected getDomData() : IDomData {
         return { tagName: "div", classList: "horizontal" };
@@ -24,7 +29,7 @@ export class InspectorRow extends EditorCustomElement<IInspectorRowAttr> {
 createStyleSheet(`<style>
 
     .inspector-label {
-        padding-left: 1em;
+        padding-left: 1.8em;
         width: 175px;
     }
     

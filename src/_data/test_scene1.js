@@ -8,7 +8,7 @@ module.exports = {
                     type: "Paint/Background",
                     data: {
                         color: {
-                            r: 1, g: 1, b: 1, a: 1
+                            r: 255, g: 255, b: 255, a: 1
                         }
                     }
                 }
@@ -17,16 +17,38 @@ module.exports = {
         2: {
             parentId: -1,
             name: "App Root 2",
-            components: [],
-            children: []
+            components: [{
+                type: "Paint/Background",
+                data: {
+                    color: {
+                        r: 255, g: 0, b: 0, a: 1
+                    }
+                }
+            }]
         },
         3: {
             parentId: 2,
-            name: "Child 1"
+            name: "Child 1",
+            components: [{
+                type: "Paint/Background",
+                data: {
+                    color: {
+                        r: 0, g: 255, b: 255, a: 1
+                    }
+                }
+            }]
         },
         4: {
             parentId: 2,
-            name: "Child 2"
+            name: "Child 2",
+            components: [{
+                type: "Paint/Background",
+                data: {
+                    color: {
+                        r: 0, g: 255, b: 0, a: 1
+                    }
+                }
+            }]
         }
 
     }

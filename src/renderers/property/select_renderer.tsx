@@ -4,17 +4,19 @@ import {Select, EnumSelect} from "../../util";
 import {InspectorRow} from "../../ui_elements/inspector/inspector_row";
 import {SelectInput} from "../../ui_elements/select_input";
 
+interface ISelectAttrs {
+    onValueChanged? : (newValue : any, oldValue : any) => void
+}
+
 @propertyDrawer(EnumSelect)
-export class EnumSelectRenderer extends PropertyRenderer {
+export class EnumSelectRenderer extends PropertyRenderer<ISelectAttrs> {
+
 
     private createOptions(e : any) {
         const retn = new Array<any>();
         Object.keys(e).forEach(function (key : string) {
             if (isNaN(key as any)) {
-                retn.add({
-                    name: key,
-                    value: e[key]
-                });
+                retn.add({ name: key, value: e[key] });
             }
         });
         return retn;
@@ -25,9 +27,8 @@ export class EnumSelectRenderer extends PropertyRenderer {
         const propertyName = editorData.propertyName;
         const component = this.attrs.component;
         const options = this.createOptions(editorData.propertyOptions[0]);
-
         return <InspectorRow label={propertyName}>
-            <SelectInput class="select-renderer" binding={component[propertyName]}>
+            <SelectInput class="select-renderer" onValueChanged={this.attrs.onValueChanged} binding={component[propertyName]}>
                 {
                     options.map((option : ISelectOption) => {
                         return <option value={option.value} default={option.default}>{option.name}</option>
@@ -40,7 +41,8 @@ export class EnumSelectRenderer extends PropertyRenderer {
 }
 
 @propertyDrawer(Select)
-export class SelectRenderer extends PropertyRenderer {
+export class SelectRenderer extends PropertyRenderer<ISelectAttrs> {
+
 
     public createInitialStructure(children : any) : JSXElement {
         const editorData = this.attrs.editorData;
@@ -48,7 +50,7 @@ export class SelectRenderer extends PropertyRenderer {
         const component = this.attrs.component;
 
         return <InspectorRow label={propertyName}>
-            <SelectInput class="select-renderer" binding={component[propertyName]}>
+            <SelectInput class="select-renderer" onValueChanged={this.attrs.onValueChanged} binding={component[propertyName]}>
                 {
                     editorData.propertyOptions[0].map((option : ISelectOption) => {
                         return <option value={option.value} default={option.default}>{option.name}</option>

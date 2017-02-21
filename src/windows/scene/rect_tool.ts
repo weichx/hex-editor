@@ -34,12 +34,6 @@ export class SceneRectTool extends SceneTool {
                         EditorRuntime.select(null);
                     }
                 }
-
-                //hit test sides
-                //hit test corners
-                //hit test element
-                //hit test other elements
-                //deselect
                 return;
             }
             else if (input.isMouseDown()) {

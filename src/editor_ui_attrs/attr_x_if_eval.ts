@@ -1,26 +1,33 @@
 import {EditorElement} from "../editor_element/editor_element";
+import {IPoolable2, ObjectPool2} from "../object_pool";
+import {ILifecycle} from "../runtime";
 
-export class XIfEval {
+interface IXIfEval extends IPoolable2<EditorElement, () => boolean> {}
 
-    private element : EditorElement;
+export class XIfEval implements IXIfEval, ILifecycle {
+
+    public element : EditorElement;
     private getterFn : () => boolean;
 
-    constructor(element : EditorElement, fn : () => boolean) {
-        this.element = element;
-        this.getterFn = fn;
-        this.element.setVisible(this.getterFn());
-        EditorRuntime.addUpdater(this, 100);
+    constructor() {
+        this.element = null;
+        this.getterFn = null;
     }
 
     public onUpdated() : void {
-        if (this.element.isDestroyed) {
-            EditorRuntime.removeUpdater(this);
-            this.element = null;
-            return;
-        }
         this.element.setVisible(this.getterFn());
     }
 
-    //todo handle destroy
+    public onSpawn(element : EditorElement, getter : () => boolean) : void {
+        this.element = element;
+        this.getterFn = getter;
+    }
+
+    public onDespawn() : void {
+        this.element = null;
+        this.getterFn = null;
+    }
+
+    public static Pool = new ObjectPool2(XIfEval);
 
 }

@@ -8,10 +8,52 @@ import {EditorInput} from "./input";
 import {CommandSerializer} from "./runtime/cmd_serializers/_cmd_serializer";
 import {CommandInvoker} from "./browser/cmd_invokers/_cmd_invoker";
 import {DefaultSizingComponent} from "./runtime/components/layout/default/default_sizing_component";
-import {DefaultLayoutComponent} from "./runtime/components/layout/default/default_layout_component";
+import {HorizontalStackLayout} from "./runtime/components/layout/default/default_layout_component";
 import {BackgroundComponent} from "./runtime/components/background_component";
+import {PseudoTree, PseudoTreeNode} from "hex-util/src/tree";
+import {DeserializeInto} from "cerialize";
 
 export type CommandInterpreter = (command : { type : number, id : number }) => void;
+
+class UpdateNode extends PseudoTreeNode<ILifecycle> {
+
+    traverse() : boolean {
+        const element = this.element as EditorElement;
+        if(element.isDestroyed()) {
+            return true;
+        }
+        //todo or disabled
+        for(let i = 0; i < this.items.length; i++) {
+            this.items[i].onUpdated();
+            if(element.isDestroyed()) {
+                for(let j = 0; j < this.items.length; j++) {
+                    const ctor = this.items[i].constructor as any;
+                    const pool = ctor.Pool;
+                    if(pool) {
+                        pool.despawn(this.items[i]);
+                    }
+                }
+                return true;
+            }
+        }
+
+        for(let i = 0; i < this.children.length; i++) {
+            const removeChild = this.children[i].traverse();
+            if(removeChild) {
+                this.children.removeAt(--i);
+            }
+        }
+
+        return this.items.length === 0;
+    }
+
+}
+
+
+export interface ILifecycle {
+    element : EditorElement;
+    onUpdated(delta? : number) : void;
+}
 
 export class EditorRuntimeImplementation extends RuntimeImpl {
 
@@ -19,6 +61,8 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
     private updateCycles : Array<UpdateCycle>;
     private domElementIdMap : IHTMLElementMap;
     private interpreters : Indexable<CommandInterpreter>;
+    //todo -- maybe bucket this
+    public readonly updateTree : PseudoTree<UpdateNode, ILifecycle>;
 
     constructor() {
         super();
@@ -27,6 +71,7 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
         this.selectedElement = null;
         this.updateCycles = [];
         this.input = new EditorInput();
+        this.updateTree = new PseudoTree(UpdateNode);
     }
 
     private suppressAddElement(fn : () => void) : void {
@@ -40,7 +85,7 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
             this.suppressAddElement(() => {
                 AppElement.Root = new AppElement("__Root__");
                 this.appElementRegistry[-1] = AppElement.Root;
-                AppElement.Root.addComponent(DefaultLayoutComponent);
+                AppElement.Root.addComponent(HorizontalStackLayout);
                 AppElement.Root.addComponent(DefaultSizingComponent);
                 AppElement.Root.addComponent(BackgroundComponent);
             });
@@ -72,36 +117,28 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
                 appElement.parent = this.appElementRegistry[parentId];
                 appElement.parent.children.add(appElement);
             }
+            for(let i = 0; i < ids.length; i++) {
+                const appElement = this.appElementRegistry[ids[i]];
+                if(appElement === AppElement.Root) continue;
+                const componentDescriptors = elements[ids[i]].components;
+                this.sendCommand(CommandType.Create, appElement.id);
+                this.createComponents(appElement, componentDescriptors);
+            }
         });
         this.emit(SceneLoaded, this.scene);
     }
 
-    private hydrateElement(definition : any) : AppElement {
-        //todo dont call addElement until the end when building a scene
-        const appElement = new AppElement(definition.name);
-
-        for (let j = 0; j < definition.components.length; j++) {
-            const compDesc = definition.components[j];
-            const type = Component.getComponentFromPath(compDesc.type);
+    private createComponents(appElement : AppElement, componentDescriptors : Array<any>) : void {
+        for(let i = 0; i < componentDescriptors.length; i++) {
+            const desc = componentDescriptors[i];
+            const type = Component.getComponentFromPath(desc.type) as any;
             if(type) {
                 const cmp = appElement.addComponent(type);
-                this.hydrateComponent(cmp, compDesc.data);
+                if(type.OnDeserialized) {
+                    type.OnDeserialized(cmp, desc.data); //temp until i optimize cerialize for hex
+                }
             }
         }
-        for (let k = 0; k < definition.children.length; k++) {
-            this.hydrateElement(definition.children[k]).setParent(appElement);
-        }
-        return appElement;
-    }
-
-    private hydrateComponent(component : Component & Indexable<any>, data: IJson) : Component {
-        const keys = Object.keys(data);
-        for(let i = 0; i < keys.length; i++) {
-            const propertyName  = keys[i];
-            //todo use a more formal serialize / deserialize
-            component[propertyName] = data[propertyName];
-        }
-        return component;
     }
 
     public select(newSelection : AppElement) : void {
@@ -115,21 +152,36 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
     }
 
     public update(timeStamp : number) {
-        for (let i = 0; i < this.updateCycles.length; i++) {
+
+        for(let i = 0; i < this.pendingComponents.length; i++) {
+            const cmp = this.pendingComponents[i];
+            cmp.onMounted();
+            //todo handle on editor gui
+            // if(typeof cmp.onEditorUpdate === "function") {
+            //
+            // }
+        }
+
+        this.pendingComponents.length = 0;
+
+        this.updateTree.traverse();
+
+        for (var i = 0; i < this.updateCycles.length; i++) {
             this.updateCycles[i].update(timeStamp);
         }
+
         //the real runtime implementation of buffer building lives
         // on a worker thread and is decoded on a UI thread
         const commandBuffer = this.buildCommandBuffer();
         this.decodeCommandBuffer(commandBuffer);
         this.input.update();
-        requestAnimationFrame(this.boundUpdate);
+       // requestAnimationFrame(this.boundUpdate);
     }
 
     protected buildCommandBuffer() : string {
         //todo using json for now but later will use a
         //format that doesn't need to use json.stringify/parse
-        let buffer = "[";
+        var buffer = "[";
         for (let i = 0; i < this.commandQueue.length - 1; i++) {
             buffer += this.buildCommandBufferSection(this.commandQueue[i]) + ",";
         }
@@ -199,6 +251,7 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
 
     public addComponent(component : Component) : void {
         const appElement = component.appElement;
+        this.pendingComponents.push(component);
         // super.addComponent(component);
         if (this.getSelection() === appElement) {
             this.emit(SelectionChanged, appElement);
@@ -207,7 +260,7 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
 
     public drawScene(targetId : string) : void {
         this.createApplicationRoot();
-        const root = document.getElementById(targetId);
+        const root = document.querySelector("." + targetId);
         const bounds = root.getBoundingClientRect();
         const element = this.domElementIdMap.get(-1) || document.createElement("div");
         element.id = "app-element-root";

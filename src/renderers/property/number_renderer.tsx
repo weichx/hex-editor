@@ -4,10 +4,13 @@ import {Integer} from "../../util";
 import {IntegerInput, NumberInput} from "../../ui_elements/number_input";
 import {InspectorRow} from "../../ui_elements/inspector/inspector_row";
 
+interface INumberAttrs {
+    onValueChanged(newValue? : number, oldValue? : number) : void;
+}
 
 @propertyDrawer(Number)
 @propertyDrawer(Integer)
-export class NumberRenderer extends PropertyRenderer {
+export class NumberRenderer extends PropertyRenderer<INumberAttrs>{
 
     public createInitialStructure(children : any) : JSXElement {
         const editorData = this.attrs.editorData;
@@ -16,10 +19,10 @@ export class NumberRenderer extends PropertyRenderer {
 
         let input = null;
         if (editorData.propertyType === Integer) {
-            input = <IntegerInput binding={component[propertyName]}></IntegerInput>
+            input = <IntegerInput onValueChanged={this.attrs.onValueChanged} binding={component[propertyName]}></IntegerInput>
         }
         else {
-            input = <NumberInput binding={component[propertyName]}></NumberInput>
+            input = <NumberInput onValueChanged={this.attrs.onValueChanged} binding={component[propertyName]}></NumberInput>
         }
 
         return <InspectorRow label={propertyName}>

@@ -19,12 +19,9 @@ html, body, #root {
     position: absolute;
     display: block;
     transform: translate(0, 0);
-    background: mediumvioletred;
     overflow:hidden;
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
 }
 
 .scene-render-root {

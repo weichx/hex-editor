@@ -3,6 +3,7 @@ import {EditorCustomElement} from "../editor_element/editor_custom_element";
 
 interface INumberInput {
     binding : any;
+    onValueChanged? : (newValue : number, oldValue : number) => void;
 }
 
 export class NumberInput extends EditorCustomElement<INumberInput> {
@@ -27,10 +28,14 @@ export class NumberInput extends EditorCustomElement<INumberInput> {
         this.getterFn = getGetter(this.attrs.binding.path);
         this.setterFn = getSetter(this.attrs.binding.path);
         this.htmlNode.addEventListener("input", (e : KeyboardEvent) => {
+
             let value = (this.htmlNode as HTMLInputElement).value || "";
             let parsedValue = this.formatNumber(value);
             if (!isNaN(parsedValue)) {
                 this.setterFn(this.ctx, parsedValue);
+                if(this.attrs.onValueChanged) {
+                    this.attrs.onValueChanged(parsedValue, this.lastValue);
+                }
                 this.lastValue = parsedValue;
             }
         });
@@ -43,6 +48,9 @@ export class NumberInput extends EditorCustomElement<INumberInput> {
     public onUpdated() {
         const value = this.getterFn(this.ctx) || 0;
         if (this.lastValue !== value) {
+            if(this.attrs.onValueChanged) {
+                this.attrs.onValueChanged(value, this.lastValue);
+            }
             this.lastValue = value;
             (this.htmlNode as HTMLInputElement).value = value;
         }

@@ -9,17 +9,12 @@ interface IHierarchyItem {
 export class HierarchyItem extends EditorCustomElement<IHierarchyItem> {
 
     protected getDomData() : IDomData {
-        return { tagName: "div", classList: "item-structure" }
+        return { tagName: "div", classList: "hierarchy-item" }
     }
 
     public setSelected(isSelected : boolean) : void {
         const node = this.getChildById("item-details");
-        if (isSelected) {
-            node.getDomNode().classList.add('selected');
-        }
-        else {
-            node.getDomNode().classList.remove('selected');
-        }
+        node.getDomNode().classList.toggle("selected", isSelected);
     }
 
     public onDestroyed() {
@@ -51,31 +46,21 @@ export class HierarchyItem extends EditorCustomElement<IHierarchyItem> {
         this.getChildById("spacer").getDomNode().style.background = null;
     }
 
-    public mount(point : any) {
-        debugger;
-        super.mount(point);
-    }
-
     public createInitialStructure(children : any) {
         const appElement = this.attrs.element;
-        let padding = (appElement.getDepth() * 12);
-        if (appElement.getParent() !== AppElement.Root) {
-            padding += 12;
-        }
+        let padding = (appElement.getDepth() + 1);
 
         return [
             <div x-id="item-details"
-                 class="item-details"
-                 style={"padding-left:" + padding + "px"}
-                 x-bind-style={
-                     { paddingLeft: () => "" }
-                 }
+                 class="hierarchy-item-details"
+                 style={"padding-left:" + padding + "em"}
                  onMouseEnter={ this.mouseEnterDetails }
                  onMouseExit={ this.mouseExitDetails }
                  onClick={ () => EditorRuntime.select(appElement) }
                  onRightClick={ this.showCreateMenu }>
 
-                <ToggleIcon x-hidden x-if-eval={ () => appElement.getChildCount() > 0 }/>
+                <ToggleIcon class="hierarchy-toggle" x-hidden x-if-eval={ () => appElement.getChildCount() > 0 }/>
+
                 <a>({appElement.name})</a>
             </div>,
 
@@ -90,3 +75,32 @@ export class HierarchyItem extends EditorCustomElement<IHierarchyItem> {
 
 }
 
+createStyleSheet(`<style>
+
+.hierarchy-toggle {
+    font-size: 0.7em;
+    position: absolute;
+    left: 0.2em;
+    top: 4px;
+}    
+    
+.hierarchy-item {
+    cursor: pointer;
+}
+
+.hierarchy-item-details {
+    position: relative;
+}
+
+.item-insert-space {
+    position: absolute;
+    height: 0.2em;
+    width: 100%;
+}
+
+.hierarchy-item-details.selected {
+    background: #c8f8ff;
+}
+
+
+`);

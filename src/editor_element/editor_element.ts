@@ -1,62 +1,61 @@
 import {traverse, traverseRootFirst} from "../util";
 
+interface IEventDescriptor {
+    type : string;
+    fn : (e? : any) => void;
+    bubble : boolean;
+}
+
+export enum EditorElementFlags {
+    Rendered = 1 << 1,
+    Enabled = 1 << 2,
+    Destroyed = 1 << 3,
+    Visible = 1 << 4
+}
+
+const pendingEventMap = new WeakMap<EditorElement, IEventDescriptor[]>();
+const activeEventMap = new WeakMap<EditorElement, IEventDescriptor[]>();
+let idGenerator = 0;
+
 export abstract class EditorElement {
 
-    public children : Array<EditorElement>;
-    private childIdMap : Indexable<EditorElement>;
-    protected childRoot : EditorElement;
+    public readonly id : number;
     public parent : EditorElement;
-    private __childMountPoint : HTMLElement;
-    public __mountPoint : HTMLElement;
-    public __renderContext : EditorElement;
+    public children : Array<EditorElement>;
 
-    //todo make flags
-    public isMounted : boolean;
-    public isRendered : boolean;
-    public isStructured : boolean;
-    public isEnabled : boolean;
-    public isDestroyed : boolean;
-    public isStatic : boolean; //ignore childRoot
-    public isVisible : boolean;
+    private renderContext : EditorElement;
+
+    private childRoot : EditorElement;
+    protected htmlNode : HTMLElement;
+
+    private childIdMap : Indexable<EditorElement>;
+    private flags : EditorElementFlags;
 
     constructor() {
+        this.id = ++idGenerator;
         this.children = [];
         this.parent = null;
-        this.isVisible = true;
-        this.childIdMap = {}; //todo make this global map?
+        this.flags = EditorElementFlags.Visible | EditorElementFlags.Enabled;
+        this.childIdMap = null; //todo make this global map?
         this.childRoot = null;
-        this.__renderContext = null;
-        this.__childMountPoint = null;
-        this.__mountPoint = null;
-        this.isMounted = false;
-        this.isRendered = false;
-        this.isStructured = false;
-        this.isStatic = false;
-        this.isEnabled = false;
-        this.isDestroyed = false;
-    }
-
-    //if this is not an html appElement node, add listener to all child elements
-    public addEventListener(event : string, fn : (e? : any) => void, bubble = false) : void {
-        for (let i = 0; i < this.children.length; i++) {
-            this.children[i].addEventListener(event, fn, bubble);
-        }
+        this.renderContext = null;
+        this.childRoot = this;
     }
 
     public setChildIdAlias(id : string, element : EditorElement) {
+        this.childIdMap = this.childIdMap || {};
         this.childIdMap[id] = element;
     }
 
     public setVisible(isVisible : boolean) {
-        if (this.isVisible === isVisible) return;
-        this.isVisible = isVisible;
-        for (let i = 0; i < this.children.length; i++) {
-            this.children[i].setVisible(isVisible);
+        if(isVisible === this.isVisible()) {
+            return;
         }
-    }
-
-    public getVisible() : boolean {
-        return this.isVisible;
+        this.flags ^= EditorElementFlags.Visible;
+        if(this.htmlNode) {
+            this.htmlNode.classList.toggle("hidden", !isVisible);
+        }
+        // this.onVisibilityChanged(isVisible);
     }
 
     public setPosition(x : number, y : number) : void {
@@ -74,31 +73,10 @@ export abstract class EditorElement {
     }
 
     public getClientBounds() {
-        return (<any>this.getDomNode()).__editorElement.getClientBounds();
+        return (this.htmlNode) ? this.htmlNode.getBoundingClientRect() : null;
     }
 
-    protected getMountPoint() : HTMLElement {
-        if (this.parent === null) {
-            return null;
-        }
-        return this.__mountPoint || this.parent.getMountPoint();
-    }
-
-    protected getChildMountPoint() : HTMLElement {
-        // if (this.__childMountPoint) return this.__childMountPoint;
-        if (!this.childRoot) throw new Error("Child Root null");
-        this.__childMountPoint = this.childRoot.getChildMountPoint();
-        return this.__childMountPoint;
-    }
-
-    //children belong to the node who is `addChild` is called on,
-    //even if they are inserted elsewhere in the dom via 'child-root'
     public addChild<T>(child : EditorElement) : void {
-        //todo throw if add called before structure finished
-
-        if (!this.childRoot) {
-            this.childRoot = child;
-        }
 
         if (this.isDescendant(child)) {
             debugger;
@@ -111,59 +89,11 @@ export abstract class EditorElement {
         child.parent = this;
         this.children.push(child);
 
-        child.isStatic = !this.isStructured;
-
-        if (this.isRendered) {
-            if (this.childRoot === child) {
-                child.render(this.__mountPoint);
-            }
-            else {
-                child.render(this.getChildMountPoint());
-            }
+        if (this.isRendered()) {
+            child.render(this.htmlNode);
         }
-        else if (this.isMounted) {
-            //if child root is a direct child, mount it to the input point
-            if (this.childRoot === child) {
-                child.mount(this.__mountPoint);
-            }
-            else {
-                //otherwise, mount all children onto the childRoot
-                child.mount(this.getChildMountPoint());
-            }
-        }
-    }
-
-    //todo this might not work -- child root kinda borks this
-    public insertChild(child : EditorElement, index : number) : void {
-        if (index >= this.children.length) index = this.children.length - 1;
-        if (index < 0) index = 0;
-
-        child.orphan();
-
-        child.parent = this;
-
-        //todo call onParentChanged()
-        this.children.splice(index, 0, child);
-
-        child.isStatic = !this.isStructured;
-
-        if (this.isRendered) {
-            if (this.childRoot === child) {
-                child.render(this.__mountPoint);
-            }
-            else {
-                child.render(this.getChildMountPoint());
-            }
-        }
-        else if (this.isMounted) {
-            //if child root is a direct child, mount it to the input point
-            if (this.childRoot === child) {
-                child.mount(this.__mountPoint);
-            }
-            else {
-                //otherwise, mount all children onto the childRoot
-                child.mount(this.getChildMountPoint());
-            }
+        else if (this.htmlNode) {
+            child.mount(this.htmlNode);
         }
     }
 
@@ -171,11 +101,11 @@ export abstract class EditorElement {
         this.mount(mountPoint);
 
         traverse(this, function (element : EditorElement) {
-            if (element.isRendered) {
+            if (element.isRendered()) {
                 element.onRerendered();
             }
             else {
-                element.isRendered = true;
+                element.flags |= EditorElementFlags.Rendered;
                 element.onRendered();
             }
         });
@@ -186,33 +116,37 @@ export abstract class EditorElement {
     }
 
     public mount(mountPoint : HTMLElement) : void {
-        this.__mountPoint = mountPoint;
-        const wasMounted = this.isMounted;
-        this.isMounted = true;
+        this.htmlNode = this.htmlNode || this.createDomNode();
+
         for (let i = 0; i < this.children.length; i++) {
-            const child = this.children[i];
-            if (child.isStatic) {
-                child.mount(mountPoint);
-            }
-            else {
-                child.mount(this.getChildMountPoint());
-            }
+            this.children[i].mount(this.htmlNode);
         }
 
-        if (wasMounted) {
-            this.onRemounted();
-        }
-        else {
-            this.onMounted();
-        }
+        this.attachEvents();
 
+        mountPoint.appendChild(this.htmlNode);
+        this.onMounted();
     }
 
+    protected attachEvents() : void {
+        const pendingEvents = pendingEventMap.get(this);
+        if(pendingEvents) {
+            const activeEvents = activeEventMap.get(this) || [];
+            for (let i = 0; i < pendingEvents.length; i++) {
+                const handler = pendingEvents[i];
+                activeEvents.add(handler);
+                this.addEventListener(handler.type, handler.fn, handler.bubble);
+            }
+            pendingEvents.length = 0;
+            pendingEventMap.set(this, null);
+            activeEventMap.set(this, activeEvents);
+        }
+    }
+
+    protected abstract createDomNode() : HTMLElement;
+
     public removeChild(child : EditorElement) : void {
-        //todo check for dom root change
-        const idx = this.children.indexOf(child);
-        if (idx === -1) return;
-        this.children.splice(idx, 1);
+        this.children.remove(child);
     }
 
     public orphan() : void {
@@ -236,12 +170,9 @@ export abstract class EditorElement {
     }
 
     public clearChildren() : void {
-        while (this.children.length) {
-            this.children[0].destroy();
+        for(let i = 0; i < this.children.length; i++) {
+            this.children[i].destroy();
         }
-        //in the case of child root being set to a node,
-        //the children will belong to the parent but the dom
-        //will belong to this node. Nuke it.
         const node = this.getDomNode();
         while (node.firstElementChild) {
             node.firstElementChild.remove();
@@ -278,51 +209,24 @@ export abstract class EditorElement {
         return null;
     }
 
-    // public getElementInAncestry<T extends EditorElementBase>(target : HTMLElement|EditorElementBase, type : TypeOf<T>) : T {
-    //     if (target instanceof EditorElementBase) {
-    //         let ptr = target.parent;
-    //         while (ptr) {
-    //             if (ptr instanceof type) {
-    //                 return ptr as T;
-    //             }
-    //             ptr = ptr.parent;
-    //         }
-    //         return null;
-    //     }
-    //     else {
-    //         return getHTMLElementInAncestry(target, type);
-    //     }
-    //
-    // }
-    //
-    // public getHTMLElementInAncestry<T>(target : HTMLElement, type : TypeOf<T>) : T {
-    //     let ptr = target as any;
-    //     while (ptr) {
-    //         const cast = (<any>ptr);
-    //         const editorElement = cast.__editorElement;
-    //         if (editorElement instanceof type) {
-    //             return editorElement;
-    //         }
-    //         ptr = ptr.parentElement;
-    //     }
-    //     return null;
-    // }
-
     public getFirstOfTypeUpwards<T extends EditorElement>(type : EditorElementConstructor<T>) : T {
         if (this instanceof type) return this as any;
         return this.getAncestorByType(type);
     }
 
     public getDomNode() : HTMLElement {
-        return this.children[0].getDomNode();
+        return this.htmlNode;
     }
 
     public getChildById<T extends EditorElement>(id : string) : T {
+        if(!this.childIdMap) return null;
         return this.childIdMap[id] as T;
     }
 
     public setChildRoot(element : EditorElement) : void {
+        //todo assert child root is a child
         this.childRoot = element;
+        if(!this.childRoot) this.childRoot = this;
     }
 
     public getChildRoot() : EditorElement {
@@ -369,8 +273,8 @@ export abstract class EditorElement {
     }
 
     public destroy() {
-        if (this.isDestroyed) return;
-        this.isDestroyed = true;
+        if (this.isDestroyed()) return;
+        this.flags |= EditorElementFlags.Destroyed;
         //maybe have 'isDestroyPending' flag
         //be careful with destroying the dom node since it is shared in a virtual tree
         this.onDestroyed();
@@ -380,20 +284,63 @@ export abstract class EditorElement {
         }
 
         if (this.parent) {
-            if (!this.parent.isDestroyed) {
+            if (!this.parent.isDestroyed()) {
                 this.getDomNode().remove();
                 this.parent.removeChild(this);
             }
         }
 
-        this.__mountPoint = null;
-        this.__childMountPoint = null;
-        this.__renderContext = null;
+        this.renderContext = null;
         this.parent = null;
         this.childRoot = null;
         this.childIdMap = null;
         this.children = null;
 
+    }
+
+    public isDestroyed() : boolean {
+        return (this.flags & EditorElementFlags.Destroyed) !== 0;
+    }
+
+    public isRendered() : boolean {
+        return (this.flags & EditorElementFlags.Rendered) !== 0;
+    }
+
+    public isVisible() : boolean {
+        return (this.flags & EditorElementFlags.Visible) !== 0;
+    }
+
+    public addEventListener(evtName : string, fn : (e : any) => void, bubble : boolean = false) : void {
+        if (this.htmlNode) {
+            const evtList = activeEventMap.get(this) || [];
+            evtList.push({ type: evtName, fn: fn, bubble: bubble });
+            this.htmlNode.addEventListener(evtName, fn, false);
+            activeEventMap.set(this, evtList);
+        }
+        else {
+            const evtList = pendingEventMap.get(this) || [];
+            evtList.push({ type: evtName, fn, bubble });
+            pendingEventMap.set(this, evtList);
+        }
+    }
+
+    public removeEventListener(evtName : string, fn : (e : any) => void) : boolean {
+        // if (!this.registeredEventHandlers) return false;
+        // for (let i = 0; i < this.registeredEventHandlers.length; i++) {
+        //     const handler = this.registeredEventHandlers[i];
+        //     if (handler.type === evtName && handler.fn === fn) {
+        //         if (this.htmlNode) {
+        //             this.htmlNode.removeEventListener(evtName, fn);
+        //         }
+        //         this.registeredEventHandlers.splice(i, 1);
+        //         return true;
+        //     }
+        // }
+        return false;
+    }
+
+    public createInitialStructure(children : any) : JSXElement {
+        return children;
     }
 
     public onDestroyed() { }
@@ -405,8 +352,6 @@ export abstract class EditorElement {
     public onRendered() { }
 
     public onRerendered() {}
-
-    public onRemounted() {}
 
     public onParentRendered() { }
 

@@ -22,21 +22,23 @@ export function createSetter(split : string[]) : (ctx : any, val : any) => any {
     return setterFn;
 }
 
-export function getGetter(path : Array<any>) : (ctx : any) => any {
-    let retn = GetterCache.get(path);
+export function getGetter(path : Array<string>) : (ctx : any) => any {
+    const pathString = path.join(".");
+    let retn = GetterCache.get(pathString);
     if (retn) return retn as (ctx : any) => any;
     const body = genCode(path);
     const fn = new Function("ctx", body) as (ctx : any) => any;
-    GetterCache.set(path, fn);
+    GetterCache.set(pathString, fn);
     return fn;
 }
 
-export function getSetter(path : Array<any>) : (ctx : any) => any {
-    let retn = SetterCache.get(path);
+export function getSetter(path : Array<string>) : (ctx : any) => any {
+    const pathString = path.join(".");
+    let retn = SetterCache.get(pathString);
     if (retn) return retn as (ctx : any) => any;
     const body = genCode(path, true);
     const fn = new Function("ctx", "val", body) as (ctx : any) => any;
-    SetterCache.set(path, fn);
+    SetterCache.set(pathString, fn);
     return fn;
 }
 

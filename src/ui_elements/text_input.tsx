@@ -1,14 +1,17 @@
 import {getSetter, getGetter} from "../editor_ui_attrs/binding_compiler";
 import {EditorCustomElement} from "../editor_element/editor_custom_element";
+import {ILifecycle} from "../runtime";
 
 interface ITextInput {
     binding : any;
+    onValueChanged? : (newValue? : string, oldValue? : string) => void;
 }
 
 //todo -- formatters
 
-export class TextInput extends EditorCustomElement<ITextInput> {
+export class TextInput extends EditorCustomElement<ITextInput> implements ILifecycle {
 
+    public element = this;
     private getterFn : (renderCtx : any) => any;
     private setterFn : (renderCtx : any, value : any) => void;
     private lastValue : any;
@@ -38,17 +41,16 @@ export class TextInput extends EditorCustomElement<ITextInput> {
     public onUpdated() {
         const value = this.getterFn(this.ctx) || "";
         if (this.lastValue !== value) {
+            if(this.attrs.onValueChanged) {
+                this.attrs.onValueChanged(value, this.lastValue);
+            }
             this.lastValue = value;
             (this.htmlNode as HTMLInputElement).value = value;
         }
     }
 
     public onRendered() {
-        EditorRuntime.addUpdater(this);
-    }
-
-    public onDestroyed() {
-        EditorRuntime.removeUpdater(this);
+        EditorRuntime.updateTree.add(this);
     }
 
 }

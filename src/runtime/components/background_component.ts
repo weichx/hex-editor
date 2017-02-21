@@ -13,4 +13,9 @@ export class BackgroundComponent extends Component {
         return new Color(this.color.r, this.color.g, this.color.b, this.color.a);
     }
 
+    public static OnDeserialized(instance : BackgroundComponent, json : IJson) : void {
+        const c = json.color;
+        instance.setColor(new Color(c.r, c.g, c.b, c.a));
+    }
+
 }

@@ -47,8 +47,7 @@ function createHTMLElement(tag : string, attrs : any, children : any) {
             smartAttributes[i](renderContext, retn, attrs);
         }
     }
-    retn.isStructured = true;
-    retn.__renderContext = renderContext;
+    (retn as any).renderContext = renderContext;
     retn.onStructured();
     retn.onEnabled();
     return retn;
@@ -56,7 +55,7 @@ function createHTMLElement(tag : string, attrs : any, children : any) {
 
 function createInstanceElement(type : TypeOf<EditorElement>, attrs : any, children : any) {
     const renderContext = RenderContextStack.peek();
-    const retn = new type(attrs) as any;
+    const retn = new type(attrs);
     RenderContextStack.push(retn);
     retn.onCreated();
     const child = retn.createInitialStructure(children);
@@ -66,8 +65,7 @@ function createInstanceElement(type : TypeOf<EditorElement>, attrs : any, childr
             smartAttributes[i](renderContext, retn, attrs);
         }
     }
-    retn.isStructured = true;
-    retn.__renderContext = renderContext;
+    (retn as any).renderContext = renderContext;
     retn.onStructured();
     retn.onEnabled();
     RenderContextStack.pop();
@@ -75,7 +73,6 @@ function createInstanceElement(type : TypeOf<EditorElement>, attrs : any, childr
 }
 
 export function createElement<T extends EditorElement,U>(type : string | TypeOf1<T, U>, attrs : U = null, ...children : any[]) : any {
-
     if (typeof type === "string") {
         return createHTMLElement(type, attrs, children);
     }

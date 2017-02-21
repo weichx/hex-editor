@@ -7,6 +7,7 @@ class InvokeCreateCommand extends CommandInvoker {
         const el = document.createElement(json["tagName"]);
         const id = json["id"];
         const parentId = json["parentId"];
+        el.setAttribute("app-id", id);
         //todo add paint classes
         //todo add paint styles
         //todo add rect layout

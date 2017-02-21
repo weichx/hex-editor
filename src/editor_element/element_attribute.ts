@@ -9,13 +9,15 @@ export function IdAndEventsAttributes(context : EditorElement, element : EditorE
     }
 
     if (attributes['x-if'] !== void 0) {
-        const fn = attributes['x-if'];
-        new XIf(element, fn); //todo attach these to the element they sit on
+        const binding = attributes['x-if'];
+        const xif = XIf.Pool.spawn(element, binding);
+        EditorRuntime.updateTree.add(xif);
     }
 
     if (attributes['x-if-eval'] !== void 0) {
-        new XIfEval(element, attributes['x-if-eval']).onUpdated();
-
+        const binding = attributes['x-if-eval'];
+        const xif = XIfEval.Pool.spawn(element, binding);
+        EditorRuntime.updateTree.add(xif);
     }
 
     if (attributes['x-hidden'] !== void 0) {

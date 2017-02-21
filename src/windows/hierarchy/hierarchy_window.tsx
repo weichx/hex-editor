@@ -22,7 +22,7 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
         for (let i = 0; i < childCount; i++) {
             const appElement = element.getChildAt(i);
             const childItem = this.createHierarchyItem(appElement);
-            item.addChild(childItem);
+            item.getChildRoot().addChild(childItem);
         }
         return item;
     }
@@ -76,7 +76,7 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
                 if (spacer) {
                     //insert child here if not in hierarchy
                     const idx = item.parent.getChildIndex(item);
-                    item.parent.insertChild(this.dragElement, idx);
+                    //item.parent.insertChild(this.dragElement, idx);
                 }
                 else {
                     item.addChild(this.dragElement);
@@ -86,7 +86,7 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
                 return;
             }
         }
-        else if (this.contextMenu.getVisible()) {
+        else if (this.contextMenu.isVisible()) {
             if (EditorRuntime.getInput().isMouseButtonDown(MouseButtonState.Left)) {
                 //if click outside context menu, hide it
                 const mp = EditorRuntime.getInput().getMousePosition();
@@ -225,20 +225,6 @@ createStyleSheet(`
     list-style: none;
     margin:0;
     
-}
-
-.item-structure {
-    cursor: pointer;
-}
-
-.item-insert-space {
-    position: absolute;
-    height: 0.2em;
-    width: 100%;
-}
-
-.item-details.selected {
-    background: #c8f8ff;
 }
 
 .hierarchy-window-root {

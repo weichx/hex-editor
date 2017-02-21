@@ -13,7 +13,7 @@ export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
 
     public onSelectionChanged(newSelection : AppElement, oldSelection : AppElement) : void {
         this.selection = newSelection;
-        this.childRoot.clearChildren();
+        this.getChildRoot().clearChildren();
         if (!this.selection) return;
         // this.addChild(createElement(TransformInspector, {
         //     element: this.selection
@@ -36,9 +36,6 @@ export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
                     <InspectorRow label="Name">
                         <TextInput binding={this.selection.name}/>
                     </InspectorRow>
-                    <InspectorRow label="Static">
-                        {/*<CheckboxInput binding={this.selection.isStatic}/>*/}
-                    </InspectorRow>
                 </div>
             </div>
 
@@ -50,9 +47,9 @@ export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
     }
 
     private createComponentDrawer(component : Component) {
-        const renderer = ComponentRenderer.get(component);
+        const renderer = ComponentRenderer.get(component as any);
         if (renderer) {
-            this.addChild(renderer);
+            this.getChildRoot().addChild(renderer);
         }
     }
 

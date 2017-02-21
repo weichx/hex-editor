@@ -1,5 +1,4 @@
 import {HorizontalBase} from "./horizontal";
-import {EditorCustomElement} from "../editor_element/editor_custom_element";
 
 export class InlineField extends HorizontalBase<{ label : string }> {
 
@@ -15,7 +14,7 @@ export class InlineField extends HorizontalBase<{ label : string }> {
 createStyleSheet(`<style>
 
     .inline-label {
-        padding-left: 1em;
+        padding-left: 1.8em;
         width: 125px;
     }
     

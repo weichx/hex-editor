@@ -9,44 +9,39 @@ import {InspectorWindow} from "./windows/inspector_window";
 import {WindowColors} from "./editor_theme";
 import {MenuBar} from "./chrome/menu_bar";
 
-
 export class EditorApplication extends EditorCustomElement<{}> {
 
-    public getDomData() : IDomData {
+    protected getDomData() : IDomData {
         return { tagName: "div", classList: "editor-application" };
     }
 
     public createInitialStructure(children : any) : JSXElement {
         return [
-            <MenuBar/>,
-            <Toolbar/>,
             <SplitPane distribution={0.2}>
 
-                <SplitPane axis={SplitDirection.Horizontal}>
+                <WindowFrame>
+                    <HierarchyWindow title="Hierarchy" icon=""/>
+                </WindowFrame>
 
-                    <WindowFrame>
-                        <HierarchyWindow title="Hierarchy" icon=""/>
-                    </WindowFrame>
-                    <WindowFrame>
-                        <AssetWindow title="Assets"/>
-                    </WindowFrame>
-                </SplitPane>
+                <SplitPane distribution={0.7} axis={SplitDirection.Vertical}>
 
-                <SplitPane distribution={0.7}>
                     <WindowFrame>
                         <SceneWindow title="Scene" icon=""/>
                     </WindowFrame>
+
                     <WindowFrame>
                         <InspectorWindow title="Inspector" icon=""/>
                     </WindowFrame>
-                </SplitPane>
 
+                </SplitPane>
 
             </SplitPane>
         ]
     }
 
 }
+
+
 
 createStyleSheet(`<style>
 

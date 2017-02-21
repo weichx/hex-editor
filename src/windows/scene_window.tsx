@@ -15,7 +15,7 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
     private height : number;
 
     public onUpdated() : void {
-        const clientRect = this.getChildById("scene-window-body").getDomNode().getBoundingClientRect();
+        const clientRect = this.getDomNode().getBoundingClientRect();
         if(clientRect.width !== this.width || clientRect.height !== this.height) {
             this.width = clientRect.width;
             this.height = clientRect.height;
@@ -71,7 +71,7 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
         return [
             <canvas x-id="canvas"></canvas>,
             <div x-id="scene-window-body" class="scene-window-body">
-                <div x-child-root id="scene-render-root" class="scene-render-root"></div>
+                <div x-child-root class="scene-render-root"></div>
                 <div x-id="scene-viewport" class="scene-viewport"></div>
                 <div x-id="highlighter" x-hidden class="highlighter">
                     <div x-id="hi-lite-top-right" class="highlight-corner top-right"></div>
@@ -166,7 +166,7 @@ position: absolute;
     top:0; 
     left:0;
     width: 100%;
-    height: calc(100% - 3.5em);
+    height: 100%;
 }
 
 .scene-window-header .break-point-bar {

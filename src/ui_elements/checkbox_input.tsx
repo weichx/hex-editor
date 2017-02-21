@@ -3,6 +3,7 @@ import {EditorCustomElement} from "../editor_element/editor_custom_element";
 
 interface ICheckboxInput extends IHTMLAttribute {
     binding : any;
+    onValueChanged? : (newValue : boolean, oldValue : boolean) => void;
 }
 
 export class CheckboxInput extends EditorCustomElement<ICheckboxInput> {
@@ -33,6 +34,9 @@ export class CheckboxInput extends EditorCustomElement<ICheckboxInput> {
     public onUpdated() {
         const value = Boolean(this.getterFn(this.ctx));
         if (this.lastValue !== value) {
+            if(this.attrs.onValueChanged) {
+                this.attrs.onValueChanged(value, this.lastValue);
+            }
             this.lastValue = value;
             (this.htmlNode as HTMLInputElement).checked = value;
         }

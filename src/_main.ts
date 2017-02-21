@@ -47,3 +47,9 @@ window.bind = function (ctx : any, path : any) {
 window.HexEnvironmentFlag |= EnvironmentFlag.EditorActive;
 window.EditorRuntime = new EditorRuntimeImplementation();
 window.Runtime = EditorRuntime as RuntimeImpl;
+
+function loop(delta : number) {
+    EditorRuntime.update(delta);
+    requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);

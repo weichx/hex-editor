@@ -41,21 +41,17 @@ export class EditorBindingElement extends EditorElement {
         return this.textNode as any;
     }
 
-    protected getChildMountPoint() : HTMLElement {
-        throw new Error("Bind Nodes cannot have children");
-    }
-
     public addChild(child : EditorElement) {
         throw new Error("Bind Nodes cannot have children");
     }
 
     public mount(mountPoint : HTMLElement) : void {
-        if (this.isMounted) return;
-        this.__mountPoint = mountPoint;
-        this.textNode = document.createTextNode(this.getterFn(this.ctx));
+        this.textNode = this.createDomNode() as any;
         mountPoint.appendChild(this.textNode);
         this.onEnabled(); // todo only do this if enabled
-        this.isMounted = true;
     }
 
+    protected createDomNode() : HTMLElement {
+        return document.createTextNode(this.getterFn(this.ctx)) as any;
+    }
 }

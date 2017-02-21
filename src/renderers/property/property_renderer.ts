@@ -7,7 +7,7 @@ interface IPropertyRendererAttrs {
     editorData : IEditorAnnotationData;
 }
 
-export class PropertyRenderer extends EditorCustomElement<IPropertyRendererAttrs> {
+export class PropertyRenderer<T> extends EditorCustomElement<T & IPropertyRendererAttrs> {
 
     public createInitialStructure(children : any) : JSXElement {
         return children;
@@ -19,9 +19,9 @@ export class PropertyRenderer extends EditorCustomElement<IPropertyRendererAttrs
         PropertyRenderer.RendererMap.set(type, renderer);
     }
 
-    public static get(component : Component, editorData : IEditorAnnotationData) : any {
+    public static get(component : Component, editorData : IEditorAnnotationData, attrs : any = null) : any {
         const rendererType = PropertyRenderer.RendererMap.get(editorData.propertyType);
-        return createElement(rendererType, {component, editorData});
+        return createElement(rendererType, {component, editorData, ...attrs});
     }
 
 }

@@ -39,6 +39,10 @@ export class MenuBar extends EditorCustomElement<IMenuBarAttributes> {
         this.menus = {};
     }
 
+    protected getDomData() : IDomData {
+        return {tagName : "div", classList: "menu-bar" }
+    }
+
     private getMenuParent(tokenizedPath : string[]) : any {
         if (tokenizedPath.length === 0) return null;
         const path = tokenizedPath.join('/');
@@ -60,26 +64,24 @@ export class MenuBar extends EditorCustomElement<IMenuBarAttributes> {
             icon={option.icon}/> as MenuItem;
         this.menus[option.path] = item;
         if (parent) {
-            parent.addChild(item);
+            parent.getChildRoot().addChild(item);
         }
         else {
-            this.addChild(item);
+            this.getChildRoot().addChild(item);
         }
         return item as MenuItem;
     }
 
     public onRendered() {
-        this.createMenuItem({ path: "View/Save As" });
-        this.createMenuItem({ path: "View/Save As/JPG" });
-        this.createMenuItem({ path: "View/Save As/PNG" });
-        this.createMenuItem({ path: "View/Save As/PDF" });
-        this.createMenuItem({ path: "View/Save As/Something Else/Other" });
+        //this.createMenuItem({ path: "View/Save As" });
+        // this.createMenuItem({ path: "View/Save As/JPG" });
+        // this.createMenuItem({ path: "View/Save As/PNG" });
+        // this.createMenuItem({ path: "View/Save As/PDF" });
+        // this.createMenuItem({ path: "View/Save As/Something Else/Other" });
     }
 
-    public createInitialStructure(children : any) : JSX.Element<IMenuBarAttributes> {
-        return <div class="menu-bar">
-            <ul x-child-root class="menu-bar-root"></ul>
-        </div>
+    public createInitialStructure(children : any) : JSXElement {
+        return <ul x-child-root class="menu-bar-root"></ul>
     }
 
 }
