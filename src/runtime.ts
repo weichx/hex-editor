@@ -4,14 +4,22 @@ import {render, createElement} from "./editor_element/element_renderer";
 import {WindowResized} from "./editor_events/evt_window_resized";
 import {AppElementCreated} from "./editor_events/evt_app_element_created";
 import {EditorElement} from "./editor_element/editor_element";
-import {EditorInput} from "./input";
+import {EditorInput} from "./editor_input";
 import {CommandSerializer} from "./runtime/cmd_serializers/_cmd_serializer";
 import {CommandInvoker} from "./browser/cmd_invokers/_cmd_invoker";
 import {DefaultSizingComponent} from "./runtime/components/layout/default/default_sizing_component";
 import {HorizontalStackLayout} from "./runtime/components/layout/default/default_layout_component";
 import {BackgroundComponent} from "./runtime/components/background_component";
-import {PseudoTree, PseudoTreeNode} from "hex-util/src/tree";
-import {DeserializeInto} from "cerialize";
+import {PseudoTreeNode, PseudoTree} from "./runtime/tree";
+import {RuntimeImpl, IRuntimeCommand} from "./runtime/runtime";
+import {AppElement} from "./runtime/app_element";
+import {Scene} from "./runtime/scene";
+import {CommandType} from "./runtime/enums/e_command_type";
+import {Component} from "./runtime/component";
+import {Rectangle} from "./runtime/rectangle";
+import {Vector2} from "./runtime/vector2";
+import {TypeOf} from "./runtime/interfaces/i_typeof";
+import {LayoutComponent} from "./runtime/components/layout/layout_component";
 
 export type CommandInterpreter = (command : { type : number, id : number }) => void;
 
@@ -126,6 +134,7 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
             }
         });
         this.emit(SceneLoaded, this.scene);
+        AppElement.Root.getComponent(HorizontalStackLayout).doLayout();
     }
 
     private createComponents(appElement : AppElement, componentDescriptors : Array<any>) : void {
@@ -261,11 +270,9 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
     public drawScene(targetId : string) : void {
         this.createApplicationRoot();
         const root = document.querySelector("." + targetId);
-        const bounds = root.getBoundingClientRect();
         const element = this.domElementIdMap.get(-1) || document.createElement("div");
         element.id = "app-element-root";
         this.domElementIdMap.set(-1, element);
-        AppElement.Root.setRect(new Rectangle(0, 0, bounds.width, bounds.height));
         root.appendChild(element);
     }
 
@@ -274,8 +281,7 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
     }
 
     public getEditorElementAtPoint(point : Vector2) : EditorElement {
-        const dom = document.elementFromPoint(point.x, point.y) as any;
-        return dom.__editorElement;
+        return document.elementFromPoint(point.x, point.y).__editorElement;
     }
 
     private getUpdateCycleForInterval(interval : number) : UpdateCycle {

@@ -1,4 +1,5 @@
 import {traverse, traverseRootFirst} from "../util";
+import {Rectangle} from "../runtime/rectangle";
 
 interface IEventDescriptor {
     type : string;
@@ -236,11 +237,6 @@ export abstract class EditorElement {
     public hasXId(idName : string) : boolean {
         const dom = this.getDomNode();
         return dom.getAttribute("x-id") === idName;
-    }
-
-    public hasCssClass(className : string) : boolean {
-        const dom = this.getDomNode();
-        return dom.classList.contains(className);
     }
 
     public isElementInHierarchy(element : Element) : boolean {

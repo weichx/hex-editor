@@ -2,6 +2,7 @@ import {InlineField} from "./inline_field";
 import {NumberInput} from "./number_input";
 import {HorizontalBase} from "./horizontal";
 import {getGetter} from "../editor_ui_attrs/binding_compiler";
+import {Vector2} from "../runtime/vector2";
 
 interface IVector2Input {
     binding : any;
@@ -35,10 +36,10 @@ export class Vector2Input extends HorizontalBase<IVector2Input> {
     public createInitialStructure(children : any) : JSXElement {
         return [
             <InlineField label="X">
-                <NumberInput binding={this.vector.x}></NumberInput>
+                <NumberInput binding={this.vector.x}/>
             </InlineField>,
             <InlineField label="Y">
-                <NumberInput binding={this.vector.y}></NumberInput>
+                <NumberInput binding={this.vector.y}/>
             </InlineField>
         ]
     }

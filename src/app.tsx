@@ -1,13 +1,10 @@
 import {EditorCustomElement} from "./editor_element/editor_custom_element";
-import {Toolbar} from "./chrome/toolbar";
 import {SplitPane} from "./ui_elements/split_pane";
 import {WindowFrame} from "./chrome/editor_window_frame";
 import {HierarchyWindow} from "./windows/hierarchy/hierarchy_window";
-import {AssetWindow} from "./windows/asset_window";
 import {SceneWindow} from "./windows/scene_window";
 import {InspectorWindow} from "./windows/inspector_window";
 import {WindowColors} from "./editor_theme";
-import {MenuBar} from "./chrome/menu_bar";
 
 export class EditorApplication extends EditorCustomElement<{}> {
 

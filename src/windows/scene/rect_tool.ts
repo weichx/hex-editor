@@ -1,5 +1,8 @@
 import {SceneTool} from "./scene_tool";
 import {distanceTestPoint, hitTestLine} from "../../util";
+import {Rectangle} from "../../runtime/rectangle";
+import {AppElement} from "../../runtime/app_element";
+import {Vector2} from "../../runtime/vector2";
 
 enum DragSide {
     None, Top, Left, Right, Bottom, TopRight, TopLeft, BottomRight, BottomLeft
@@ -24,7 +27,7 @@ export class SceneRectTool extends SceneTool {
             highlighter.setRect(rect);
             if (input.isMouseDownThisFrame() && input.isMouseInEditorElement(this.sceneBodyRoot)) {
 
-                this.draggedSide = this.hitTestDragSide(mouse, rect);
+                this.draggedSide = SceneRectTool.hitTestDragSide(mouse, rect);
                 if (this.draggedSide === DragSide.None) {
                     const element = EditorRuntime.getAppElementAtPoint(mouse);
                     if (element && element !== selection) {
@@ -46,7 +49,7 @@ export class SceneRectTool extends SceneTool {
             }
 
             if (this.draggedSide === DragSide.None) {
-                this.setHoverCursor(this.hitTestDragSide(mouse, rect));
+                this.setHoverCursor(SceneRectTool.hitTestDragSide(mouse, rect));
             }
 
         }
@@ -84,7 +87,7 @@ export class SceneRectTool extends SceneTool {
         }
     }
 
-    private hitTestDragSide(point : Vector2, bounds : Rectangle) : DragSide {
+    private static hitTestDragSide(point : Vector2, bounds : Rectangle) : DragSide {
         const x = bounds.x;
         const y = bounds.y;
         const xw = bounds.x + bounds.width;

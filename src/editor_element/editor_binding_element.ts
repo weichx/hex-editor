@@ -2,39 +2,34 @@ import {getGetter} from "../editor_ui_attrs/binding_compiler";
 import {EditorElement} from "./editor_element";
 
 export class EditorBindingElement extends EditorElement {
-
+    public element = this;
     private lastContent : string;
     private textNode : Text;
     private getterFn : (ctx : any) => any;
     private ctx : any;
+    private formatters : Array<(value : any) => any>;
 
     constructor(ctx : any, path : Array<any>) {
         super();
         this.ctx = ctx;
         this.getterFn = getGetter(path);
-    }
-
-    public onEnabled() {
-        if (this.textNode) {
-            EditorRuntime.addUpdater(this, 150);
-        }
+        this.formatters = null;
     }
 
     public onUpdated() {
         const newValue = this.getterFn(this.ctx);
         if (this.lastContent !== newValue) {
-            this.textNode.nodeValue = newValue;
+            this.textNode.nodeValue = this.applyFormatters(newValue);
             this.lastContent = newValue;
         }
     }
 
-    public onDestroyed() {
-        this.ctx = null;
-        EditorRuntime.removeUpdater(this);
-    }
-
-    public onDisabled() {
-        EditorRuntime.removeUpdater(this);
+    private applyFormatters(value : any) : string {
+        if(!this.formatters) return value;
+        for(let i = 0; i < this.formatters.length; i++) {
+            value = this.formatters[i](value);
+        }
+        return value;
     }
 
     public getDomNode() : HTMLElement {
@@ -48,10 +43,17 @@ export class EditorBindingElement extends EditorElement {
     public mount(mountPoint : HTMLElement) : void {
         this.textNode = this.createDomNode() as any;
         mountPoint.appendChild(this.textNode);
-        this.onEnabled(); // todo only do this if enabled
+        EditorRuntime.updateTree.add(this);
     }
 
     protected createDomNode() : HTMLElement {
         return document.createTextNode(this.getterFn(this.ctx)) as any;
     }
+
+    public format(formatter : (value : any) => any ) : this {
+        this.formatters = this.formatters || [];
+        this.formatters.push(formatter);
+        return this;
+    }
+
 }

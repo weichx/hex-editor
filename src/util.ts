@@ -1,3 +1,4 @@
+import {Vector2} from "./runtime/vector2";
 export function traverse(node : any, fn : (n : any) => void) {
     if (node.children) {
         for (let i = 0; i < node.children.length; i++) {

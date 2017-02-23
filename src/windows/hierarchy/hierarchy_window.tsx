@@ -7,6 +7,9 @@ import {createElement, render} from "../../editor_element/element_renderer";
 import {EditorWindowElement, IWindowAttrs} from "../../chrome/editor_window_element";
 import {WindowColors} from "../../editor_theme";
 import {EditorElement} from "../../editor_element/editor_element";
+import {AppElement} from "../../runtime/app_element";
+import {MouseButtonState} from "../../runtime/enums/e_mouse_state";
+import {Scene} from "../../runtime/scene";
 
 export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
 
@@ -60,9 +63,14 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
             if (input.isMouseUp()) {
 
                 const dropElement = EditorRuntime.getEditorElementAtPoint(mouse);
+                if(!dropElement) {
+                    this.dragElement = null;
+                    return;
+                }
+
                 const item = dropElement.getFirstOfTypeUpwards(HierarchyItem);
 
-                if (item === this.dragElement) {
+                if (!item || item === this.dragElement) {
                     this.dragElement = null;
                     return;
                 }

@@ -1,4 +1,6 @@
 import {EditorElement} from "./editor_element/editor_element";
+import {Input} from "./runtime/input";
+import {Vector2} from "./runtime/vector2";
 
 export class EditorInput extends Input {
 
@@ -21,6 +23,11 @@ export class EditorInput extends Input {
             this.x = evt.pageX;
             this.y = evt.pageY;
             this.mouseButtonState = evt.buttons;
+        }, true);
+
+        target.addEventListener("mousewheel", (evt : MouseWheelEvent) => {
+            this.mouseWheelDeltaX = Input.normalizeWheelValue(evt.deltaX);
+            this.mouseWheelDeltaY = Input.normalizeWheelValue(evt.deltaY);
         }, true);
 
         //todo make this get focus somehow

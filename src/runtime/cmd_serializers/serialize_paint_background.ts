@@ -1,5 +1,7 @@
 import {CommandSerializer, serializeCommandType} from "./_cmd_serializer";
 import {BackgroundComponent} from "../components/background_component";
+import {CommandType} from "../enums/e_command_type";
+import {AppElement} from "../app_element";
 
 @serializeCommandType(CommandType.PaintBackground)
 class SerializePaintBackgroundCommand extends CommandSerializer {

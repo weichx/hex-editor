@@ -1,6 +1,8 @@
 import {EditorElement} from "../../editor_element/editor_element";
 import {EditorCustomElement} from "../../editor_element/editor_custom_element";
 import {createElement} from "../../editor_element/element_renderer";
+import {Component} from "../../runtime/component";
+import {TypeOf} from "../../runtime/interfaces/i_typeof";
 
 interface IPropertyRendererAttrs {
     component : Component & Indexable<any>;

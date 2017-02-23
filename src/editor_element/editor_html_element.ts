@@ -1,4 +1,5 @@
 import {EditorElement} from "./editor_element";
+import {EditorTextElement} from "./editor_text_element";
 
 declare global {
     interface Node {
@@ -19,6 +20,39 @@ export class EditorHTMLElement<T extends IHTMLAttribute> extends EditorElement {
 
     protected getDomData() : IDomData {
         return { tagName: this.tagName };
+    }
+
+    public hasClass(className : string) : boolean {
+        return this.htmlNode.classList.contains(className);
+    }
+
+    public addClass(className : string) : void {
+        this.htmlNode.classList.add(className);
+    }
+
+    public removeClass(className : string) : void {
+        this.htmlNode.classList.remove(className);
+    }
+
+    public toggleClass(className : string, force : boolean = false) {
+        this.htmlNode.classList.toggle(className, force);
+    }
+
+    public setText(text : string) : void {
+        const textChild = this.children[0];
+        if(!textChild) {
+            this.addChild(new EditorTextElement(text));
+        }
+        else if(textChild instanceof EditorTextElement) {
+            textChild.setText(text);
+        }
+        else {
+            // no idea what to do here
+        }
+    }
+
+    public getText() : string {
+        return this.htmlNode.innerText;
     }
 
     private hasVisibleParentHTML() {
@@ -72,6 +106,37 @@ export class EditorHTMLElement<T extends IHTMLAttribute> extends EditorElement {
             this.htmlNode.classList.add("hidden");
         }
         return this.htmlNode;
+    }
+
+    public getChildBySelector(selector : string) : EditorHTMLElement<IHTMLAttribute> {
+        const node = this.htmlNode.querySelector(":scope " + selector);
+        if(node && node.__editorElement) {
+            return node.__editorElement as EditorHTMLElement<IHTMLAttribute>;
+        }
+    }
+
+    public getChildrenBySelector(selector : string) : EditorHTMLElement<IHTMLAttribute>[] {
+        const retn : Array<EditorHTMLElement<IHTMLAttribute>> = [];
+        const nodes = this.htmlNode.querySelectorAll(":scope " + selector);
+        for(let i = 0; i < nodes.length; i++) {
+            const editorElement = nodes[i].__editorElement;
+            if(editorElement) {
+                retn.push(editorElement as EditorHTMLElement<IHTMLAttribute>);
+            }
+        }
+        return retn;
+    }
+
+    public getDescendantsBySelector(selector : string) : EditorHTMLElement<IHTMLAttribute>[] {
+        const retn : Array<EditorHTMLElement<IHTMLAttribute>> = [];
+        const nodes = this.htmlNode.querySelectorAll(selector);
+        for(let i = 0; i < nodes.length; i++) {
+            const editorElement = nodes[i].__editorElement;
+            if(editorElement) { //todo maybe ensure renderContext == this || this.renderContext
+                retn.push(editorElement as EditorHTMLElement<IHTMLAttribute>);
+            }
+        }
+        return retn;
     }
 
 }

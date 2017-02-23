@@ -1,5 +1,7 @@
 import {CommandSerializer, serializeCommandType} from "./_cmd_serializer";
 import {UIComponent} from "../components/ui_component";
+import {CommandType} from "../enums/e_command_type";
+import {AppElement} from "../app_element";
 
 @serializeCommandType(CommandType.Create)
 class SerializeCreateCommand extends CommandSerializer {

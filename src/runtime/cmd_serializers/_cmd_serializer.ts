@@ -1,3 +1,4 @@
+import {AppElement} from "../app_element";
 export abstract class CommandSerializer {
 
     public abstract serializeCommand(appElement : AppElement) : string;

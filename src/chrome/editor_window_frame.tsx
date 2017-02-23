@@ -4,6 +4,7 @@ import {EditorCustomElement} from "../editor_element/editor_custom_element";
 import {WindowColors} from "../editor_theme";
 import {createElement} from "../editor_element/element_renderer";
 import {WindowFrameTab} from "./editor_window_tab";
+import {Vector2} from "../runtime/vector2";
 
 interface IWindowData {
     tab : WindowFrameTab;
@@ -74,17 +75,17 @@ export class WindowFrame extends EditorCustomElement<{}> {
 
             if (windowFrame) {
                 const rect = windowFrame.getChildById("body").getClientBounds();
-                if (this.mouseOnLeft(mouse, rect)) {
+                if (WindowFrame.mouseOnLeft(mouse, rect)) {
                     const frame = createElement(WindowFrame);
                     this.parentSplitPane.setOrSplitPane0(frame, SplitDirection.Vertical);
                     frame.addExistingWindow(this.draggedWindowData);
                 }
-                else if (this.mouseOnRight(mouse, rect)) {
+                else if (WindowFrame.mouseOnRight(mouse, rect)) {
                     const frame = createElement(WindowFrame);
                     this.parentSplitPane.setOrSplitPane1(frame, SplitDirection.Vertical);
                     frame.addExistingWindow(this.draggedWindowData);
                 }
-                else if (this.mouseOnBottom(mouse, rect)) {
+                else if (WindowFrame.mouseOnBottom(mouse, rect)) {
                     const frame = createElement(WindowFrame);
                     this.parentSplitPane.setOrSplitPane1(frame, SplitDirection.Horizontal);
                     frame.addExistingWindow(this.draggedWindowData);
@@ -152,17 +153,17 @@ export class WindowFrame extends EditorCustomElement<{}> {
         }
     }
 
-    private mouseOnLeft(mouse : Vector2, rect : ClientRect) : boolean {
+    private static mouseOnLeft(mouse : Vector2, rect : ClientRect) : boolean {
         return (mouse.y > rect.top && mouse.y < rect.top + (rect.height * 0.7))
             && (mouse.x > rect.left && mouse.x < rect.left + (0.3 * rect.width));
     }
 
-    private mouseOnRight(mouse : Vector2, rect : ClientRect) : boolean {
+    private static mouseOnRight(mouse : Vector2, rect : ClientRect) : boolean {
         return (mouse.y > rect.top && mouse.y < rect.top + (rect.height * 0.7))
             && (mouse.x > rect.left + (0.7 * rect.width) && mouse.x < rect.left + rect.width);
     }
 
-    private mouseOnBottom(mouse : Vector2, rect : ClientRect) : boolean {
+    private static mouseOnBottom(mouse : Vector2, rect : ClientRect) : boolean {
         return !(mouse.y > rect.top && mouse.y < rect.top + (rect.height * 0.7)) && mouse.y > rect.top;
     }
 
@@ -257,7 +258,7 @@ createStyleSheet(`<style>
 }
 
 .window-frame-body {
-    overflow:scroll;
+    overflow:auto;
     width:100%;
     height: 100%;
     border: 1px solid #828282;

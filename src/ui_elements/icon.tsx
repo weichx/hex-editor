@@ -19,7 +19,7 @@ export abstract class BaseIcon extends EditorCustomElement<IconAttrs> {
     }
 
     public createInitialStructure() {
-        return <i class={this.getIconClass() + " " + this.getIconPrefix() + this.attrs.iconName}></i>
+        return <i class={this.getIconClass() + " " + this.getIconPrefix() + this.attrs.iconName}/>
     }
 }
 

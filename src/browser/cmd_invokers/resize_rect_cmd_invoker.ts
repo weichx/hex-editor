@@ -1,4 +1,5 @@
 import {CommandInvoker, invokeCommandType} from "./_cmd_invoker";
+import {CommandType} from "../../runtime/enums/e_command_type";
 
 @invokeCommandType(CommandType.ResizeRect)
 class InvokeResizeRect extends CommandInvoker {

@@ -27,4 +27,9 @@ export class EditorTextElement extends EditorElement {
         return document.createTextNode(this.content) as any;
     }
 
+    public setText(text : string) : void {
+        this.content = text;
+        this.textNode.nodeValue = text;
+    }
+
 }

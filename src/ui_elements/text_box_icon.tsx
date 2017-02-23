@@ -20,10 +20,10 @@ export class TextBoxWithIcon extends EditorCustomElement<ITextBoxWithIconAttr> {
         return "inner-addon " + (this.attrs.iconSide === "left" ? "left-addon" : "right-addon");
     }
 
-    public createInitialStructure(children : any) : JSX.Element<{}> {
+    public createInitialStructure(children : any) : JSXElement {
         return [
-            <i x-id="icon" class={"glyphicon glyphicon-" + this.attrs.iconName}></i>,
-            <input type="text" class="text-with-icon"/>
+            <i x-id="icon" class={"fa fa-" + this.attrs.iconName}/>,
+            <input placeholder="search" type="text" class="text-with-icon"/>
         ]
     }
 
@@ -46,7 +46,7 @@ createStyleSheet(`<style>
 }
 
 /* style icon */
-.inner-addon .glyphicon {
+.inner-addon .fa {
   position: absolute;
   padding-right: 3px;
   padding-left: 3px;
@@ -55,8 +55,8 @@ createStyleSheet(`<style>
 }
 
 /* align icon */
-.left-addon .glyphicon  { left:  0;}
-.right-addon .glyphicon { right: 0;}
+.left-addon .fa  { left:  0;}
+.right-addon .fa { right: 0;}
 
 /* add padding  */
 .left-addon input  { padding-left:  30px; }

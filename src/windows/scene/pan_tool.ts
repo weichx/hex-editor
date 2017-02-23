@@ -1,18 +1,22 @@
-import {SceneWindow} from "../scene_window";
 import {SceneTool} from "./scene_tool";
 
 export class ScenePanTool extends SceneTool {
 
-    constructor(sceneWindow : SceneWindow) {
-        super(sceneWindow);
-    }
+    protected panning : boolean = false;
 
     public update() {
         const input = EditorRuntime.getInput();
-        if (input.isMouseDown()) { //todo -- and in scene window
+        if(!input.isMouseInEditorElement(this.sceneBodyRoot)) {
+            this.panning = false;
+            return;
+        }
+        if (input.isMouseDown()) {
             const delta = input.getMouseDelta();
-            //size component
-            //fit content
+            if(delta.isZero()) return;
+            this.sceneWindow.pan(delta);
+        }
+        else if(input.isMouseUp()) {
+            this.panning = false;
         }
     }
 

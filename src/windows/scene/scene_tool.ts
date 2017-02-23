@@ -8,7 +8,7 @@ export class SceneTool {
 
     constructor(sceneWindow : SceneWindow) {
         this.sceneWindow = sceneWindow;
-        this.sceneBodyRoot = this.sceneWindow.getChildById("scene-window-body")
+        this.sceneBodyRoot = this.sceneWindow.getChildRoot();
     }
 
     public update() : void {}

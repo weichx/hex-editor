@@ -1,6 +1,7 @@
 import {ToggleIcon} from "../../ui_elements/icon";
 import {EditorCustomElement} from "../../editor_element/editor_custom_element";
 import {HierarchyWindow} from "./hierarchy_window";
+import {AppElement} from "../../runtime/app_element";
 
 interface IHierarchyItem {
     element : AppElement;
@@ -61,7 +62,7 @@ export class HierarchyItem extends EditorCustomElement<IHierarchyItem> {
 
                 <ToggleIcon class="hierarchy-toggle" x-hidden x-if-eval={ () => appElement.getChildCount() > 0 }/>
 
-                <a>({appElement.name})</a>
+                <a> { Bind(appElement.name) } </a>
             </div>,
 
             <div x-id="spacer"

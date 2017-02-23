@@ -3,23 +3,33 @@ import {TextBoxWithIcon} from "../../ui_elements/text_box_icon";
 import {Button} from "../../ui_elements/button";
 import {EditorCustomElement} from "../../editor_element/editor_custom_element";
 import {ComponentOption} from "./component_option";
+import {Component} from "../../runtime/component";
+import {createElement} from "../../editor_element/element_renderer";
 
 export class ComponentMenu extends EditorCustomElement<{}> {
 
     private showComponentSelection : boolean = false;
 
-    private createComponentOption(componentType : typeof Component, componentName : string) {
-        return <ComponentOption
-            onClick={() => this.addComponent(componentType)}
-            label={componentName}>
-        </ComponentOption>;
+    protected getDomData() {
+        return { tagName: "div", classList: "inspector-component-menu" }
     }
 
     public onRendered() {
-        // Component.types.forEach((componentType : typeof Component, key : string) => {
-        //     const option = this.createComponentOption(componentType, key) as ComponentOption;
-        //     this.addChild(option);
-        // });
+        const componentPairs = Component.getComponentTypePathPairs();
+        type Pair = { type : typeof Component, path : string };
+        componentPairs.sort(function (item1 : Pair, item2 : Pair) {
+            if (item1.path < item2.path)
+                return -1;
+            if (item1.path > item2.path)
+                return 1;
+            return 0;
+        });
+        for (let i = 0; i < componentPairs.length; i++) {
+            this.getChildRoot().addChild(createElement(ComponentOption, {
+                label: componentPairs[i].path,
+                onClick: () => this.addComponent(componentPairs[i].type)
+            }));
+        }
     }
 
     public onUpdated() {
@@ -32,17 +42,16 @@ export class ComponentMenu extends EditorCustomElement<{}> {
     }
 
     public createInitialStructure(children : any) : JSX.Element<any> {
-        return <div class="inspector-add-component">
-            <div class="inspector-component-menu">
-                <Button x-if-eval={!this.showComponentSelection}
-                        onClick={ () => this.showComponentSelection = true}>Add Component</Button>
+        return [
+            <h4 class="add-component-title" x-if={this.showComponentSelection}>Add Component</h4>,
+            <Button x-if-eval={!this.showComponentSelection}
+                    onClick={ () => this.showComponentSelection = true}>Add Component</Button>,
 
-                <Vertical x-if={this.showComponentSelection}>
-                    <TextBoxWithIcon iconName="search" color="grey" binding="searchString"></TextBoxWithIcon>
-                    <Vertical x-child-root></Vertical>
-                </Vertical>
-            </div>
-        </div>
+            <Vertical x-if={this.showComponentSelection}>
+                <TextBoxWithIcon iconName="search" color="grey" binding="searchString"/>
+                <Vertical x-child-root/>
+            </Vertical>
+        ];
     }
 
     private addComponent(componentType : typeof Component) : void {
@@ -56,11 +65,15 @@ createStyleSheet(`
 <style>
 
 .inspector-component-menu {
-    width: calc(100% - 4px);
-    position: absolute;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    margin: 1em;
+    border: 1px solid grey;
+}
+
+.inspector-component-menu .add-component-title {
+    margin: 0.2em; auto;
 }
 
 .inspector-component-menu .component-item {

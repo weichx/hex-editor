@@ -1,15 +1,20 @@
 const path = require("path");
 const StrRep = require('string-replace-webpack-plugin');
 const globby = require('globby');
+const webpack = require('webpack');
 
 const config = {
-    entry: globby.sync([
-        "./src/_main.ts",
-        "!./src/app.tsx",
-         "./src/**/*.ts",
-        "./src/**/*.tsx",
-        "./src/app.tsx"
-    ]),
+    entry: {
+        app: globby.sync([
+            "./src/global.ts",
+            "./src/_main.ts",
+            "!./src/app.tsx",
+            "./src/**/*.ts",
+            "./src/**/*.tsx",
+            "./src/app.tsx"
+        ]),
+        vendor: ["pixi.js"]
+    },
     output: {
         path: path.resolve(__dirname, "build"),
         filename: "bundle.js"
@@ -34,7 +39,7 @@ const config = {
         ]
     },
     plugins: [
-
+        new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.bundle.js"),
         new StrRep()
     ]
 };

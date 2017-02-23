@@ -6,6 +6,9 @@ import {InspectorRow} from "../ui_elements/inspector/inspector_row";
 import {ComponentMenu} from "./inspector/component_menu";
 import {WindowColors} from "../editor_theme";
 import {ComponentRenderer} from "../renderers/component/component_renderer";
+import {AppElement} from "../runtime/app_element";
+import {Component} from "../runtime/component";
+import {createElement} from "../editor_element/element_renderer";
 
 export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
 
@@ -22,6 +25,7 @@ export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
         for (let i = 0; i < components.length; i++) {
             this.createComponentDrawer(components[i]);
         }
+        this.getChildRoot().addChild(createElement(ComponentMenu));
     }
 
     public onRendered() {
@@ -39,9 +43,7 @@ export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
                 </div>
             </div>
 
-            <Vertical x-child-root></Vertical>
-
-            <ComponentMenu x-if={this.selection} x-id="menu"/>
+            <Vertical x-child-root/>
 
         </div>;
     }
@@ -60,7 +62,7 @@ createStyleSheet(`
 
 .inspector-window {
     width:100%;
-    overflow: scroll;
+    overflow: auto;
     display:flex;
     flex-direction:column;
 }

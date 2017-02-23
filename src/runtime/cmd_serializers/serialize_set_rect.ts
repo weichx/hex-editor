@@ -1,4 +1,6 @@
 import {CommandSerializer, serializeCommandType} from "./_cmd_serializer";
+import {CommandType} from "../enums/e_command_type";
+import {AppElement} from "../app_element";
 
 @serializeCommandType(CommandType.SetRect)
 class SerializeSetRectCommand extends CommandSerializer {

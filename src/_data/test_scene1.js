@@ -27,7 +27,7 @@ module.exports = {
             }]
         },
         3: {
-            parentId: 2,
+            parentId: -1,
             name: "Child 1",
             components: [{
                 type: "Paint/Background",
@@ -39,7 +39,7 @@ module.exports = {
             }]
         },
         4: {
-            parentId: 2,
+            parentId: -1,
             name: "Child 2",
             components: [{
                 type: "Paint/Background",

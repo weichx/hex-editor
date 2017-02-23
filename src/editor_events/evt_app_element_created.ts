@@ -1,3 +1,4 @@
+import {AppElement} from "../runtime/app_element";
 
 export class AppElementCreated {
 

@@ -1,3 +1,6 @@
+import {component, Component} from "../component";
+import {Color} from "../color";
+import {CommandType} from "../enums/e_command_type";
 
 @component("Paint/Background")
 export class BackgroundComponent extends Component {

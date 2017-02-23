@@ -7,6 +7,8 @@ import {CheckboxInput} from "../../ui_elements/checkbox_input";
 import {titlize} from "../../util";
 import {WindowColors} from "../../editor_theme";
 import {getExposedFieldMap} from "./expose_as";
+import {Component} from "../../runtime/component";
+import {TypeOf} from "../../runtime/interfaces/i_typeof";
 
 interface IAttrs<T extends Component> {
     component : T;
@@ -18,6 +20,7 @@ export class ComponentRenderer<T extends Component> extends EditorCustomElement<
     protected component = this.attrs.component as T;
 
     protected getDomData() : IDomData {
+        Component.getComponentFromPath("");
         return { tagName: "div", classList: "component-renderer" }
     }
 
@@ -109,7 +112,7 @@ createStyleSheet(`<style>
 
 .component-renderer .enabled-input {
     position: absolute;
-    left: 1em;
+    left: 10px;
 }
 
 .component-renderer .component-name {

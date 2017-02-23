@@ -1,8 +1,5 @@
 
 declare class Hex {
-    static Binding : {
-        new(ctx : any, path : Array<any>) : any;
-    };
     static createElement : (a : any, b : any, ...c : any[]) => any;
 }
 
@@ -23,7 +20,6 @@ declare namespace JSX {
 }
 
 declare type JSXElement = JSX.Element<any>;
-
 
 interface IHTMLAttribute {
     class? : string;

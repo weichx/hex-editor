@@ -3,6 +3,7 @@ import {EditorTextElement} from "./editor_text_element";
 import {EditorHTMLElement} from "./editor_html_element";
 import {RenderContextStack} from "./render_context_stack";
 import {EditorElement} from "./editor_element";
+import {TypeOf, TypeOf1} from "../runtime/interfaces/i_typeof";
 
 const smartAttributes = [
     IdAndEventsAttributes

@@ -1,25 +1,89 @@
-import {SizingComponent} from "./sizing_component";
+import {SizingComponent, SizingMode} from "./sizing_component";
+import {Component} from "../../component";
+import {Rectangle} from "../../rectangle";
+import {AppElement} from "../../app_element";
 
-AppElement.prototype.setRect = function (rect : Rectangle) {
-    this.rect = rect.clone();
-    Runtime.sendCommand(CommandType.SetRect, this.id);
-    // Runtime.sendCommand(CommandType.Layout, this.id);
-    const layoutComponent = this.getComponent(LayoutComponent);
-    const sizingComponent = this.getComponent(SizingComponent);
-    if(sizingComponent) {
+export interface ISizingComponent{
+    appElement : AppElement;
+    width: number;
+    height: number;
+    sizingMode : SizingMode;
+}
 
+export class DefaultSizer implements ISizingComponent {
+
+    appElement : AppElement;
+    width: number;
+    height: number;
+    sizingMode : SizingMode;
+
+    constructor(appElement : AppElement) {
+        this.appElement = appElement;
+        this.width = 1;
+        this.height = 1;
+        this.sizingMode = SizingMode.Fraction;
     }
-    if(layoutComponent) {
-        layoutComponent.doLayout();
-    }
 
-};
+}
 
 export class LayoutComponent extends Component {
+
+    protected sizingComponents : Array<ISizingComponent> = [];
 
     public layoutRect : Rectangle = new Rectangle();
 
     public doLayout() : void {}
+
+    public onMounted() : void {
+        const childCount = this.appElement.getChildCount();
+        for(let i = 0; i < childCount; i++) {
+            const child = this.appElement.getChildAt(i);
+            let sizing = child.getComponent(SizingComponent) || new DefaultSizer(child);
+            this.sizingComponents.add(sizing)
+        }
+        this.doLayout();
+    }
+
+    public onChildAdded(child : AppElement) : void {
+        const sizer = child.getComponent(SizingComponent) || new DefaultSizer(child);
+        this.sizingComponents.push(sizer);
+        this.doLayout();
+    }
+
+    public onChildRemoved(child : AppElement) : void {
+        for(let i = 0; i < this.sizingComponents.length; i++) {
+            if(this.sizingComponents[i].appElement === child) {
+                this.sizingComponents.removeAt(i);
+                return;
+            }
+        }
+    }
+
+    public onChildMoved(child : AppElement) : void {
+        //maybe just rebuild sizing component list
+    }
+
+    public addSizingComponent(sizingComponent : SizingComponent) : void {
+        for(let i = 0; i < this.sizingComponents.length; i++) {
+            const cmp = this.sizingComponents[i];
+            if(cmp.appElement === sizingComponent.appElement) {
+                this.sizingComponents[i] = sizingComponent;
+                return;
+            }
+        }
+        Runtime.queueLayout(this);
+    }
+
+    public removeSizingComponent(sizingComponent : SizingComponent) : void {
+        for(let i = 0; i < this.sizingComponents.length; i++) {
+            const cmp = this.sizingComponents[i];
+            if(cmp.appElement === sizingComponent.appElement) {
+                this.sizingComponents[i] = new DefaultSizer(sizingComponent.appElement);
+                return;
+            }
+        }
+        Runtime.queueLayout(this);
+    }
 
 }
 
