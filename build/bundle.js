@@ -4,12 +4,15 @@ webpackJsonp([0],[
 
 	__webpack_require__(1);
 	__webpack_require__(23);
-	__webpack_require__(43);
 	__webpack_require__(44);
 	__webpack_require__(45);
 	__webpack_require__(46);
-	__webpack_require__(42);
 	__webpack_require__(47);
+	(function webpackMissingModule() { throw new Error("Cannot find module \"./src/drag_actions/drag_asset_action.ts\""); }());
+	(function webpackMissingModule() { throw new Error("Cannot find module \"./src/editor_element/drag_action.ts\""); }());
+	__webpack_require__(43);
+	__webpack_require__(49);
+	__webpack_require__(50);
 	__webpack_require__(12);
 	__webpack_require__(14);
 	__webpack_require__(11);
@@ -17,28 +20,28 @@ webpackJsonp([0],[
 	__webpack_require__(5);
 	__webpack_require__(15);
 	__webpack_require__(17);
-	__webpack_require__(48);
+	__webpack_require__(51);
 	__webpack_require__(3);
 	__webpack_require__(4);
 	__webpack_require__(16);
 	__webpack_require__(18);
-	__webpack_require__(49);
-	__webpack_require__(50);
+	__webpack_require__(2);
+	__webpack_require__(52);
+	__webpack_require__(53);
 	__webpack_require__(10);
 	__webpack_require__(7);
 	__webpack_require__(8);
 	__webpack_require__(9);
 	__webpack_require__(30);
-	__webpack_require__(51);
-	__webpack_require__(52);
-	__webpack_require__(2);
-	__webpack_require__(38);
-	__webpack_require__(53);
 	__webpack_require__(54);
-	__webpack_require__(22);
 	__webpack_require__(55);
+	__webpack_require__(38);
+	__webpack_require__(56);
 	__webpack_require__(57);
+	__webpack_require__(22);
 	__webpack_require__(58);
+	__webpack_require__(60);
+	__webpack_require__(61);
 	__webpack_require__(33);
 	__webpack_require__(28);
 	__webpack_require__(32);
@@ -46,62 +49,62 @@ webpackJsonp([0],[
 	__webpack_require__(24);
 	__webpack_require__(27);
 	__webpack_require__(26);
-	__webpack_require__(56);
 	__webpack_require__(59);
+	__webpack_require__(62);
 	__webpack_require__(34);
-	__webpack_require__(60);
+	__webpack_require__(63);
 	__webpack_require__(39);
 	__webpack_require__(21);
 	__webpack_require__(37);
 	__webpack_require__(19);
-	__webpack_require__(61);
-	__webpack_require__(62);
+	__webpack_require__(64);
+	__webpack_require__(65);
 	__webpack_require__(29);
 	__webpack_require__(36);
 	__webpack_require__(40);
 	__webpack_require__(35);
 	__webpack_require__(20);
-	__webpack_require__(63);
-	__webpack_require__(64);
-	__webpack_require__(13);
-	__webpack_require__(65);
 	__webpack_require__(66);
 	__webpack_require__(67);
-	__webpack_require__(69);
+	__webpack_require__(13);
 	__webpack_require__(68);
 	__webpack_require__(70);
-	__webpack_require__(77);
-	__webpack_require__(72);
+	__webpack_require__(69);
+	__webpack_require__(71);
+	__webpack_require__(79);
 	__webpack_require__(73);
-	__webpack_require__(270);
-	__webpack_require__(271);
-	__webpack_require__(268);
-	__webpack_require__(272);
+	__webpack_require__(74);
 	__webpack_require__(274);
 	__webpack_require__(275);
+	__webpack_require__(270);
 	__webpack_require__(276);
 	__webpack_require__(278);
-	__webpack_require__(269);
-	__webpack_require__(76);
 	__webpack_require__(279);
 	__webpack_require__(280);
+	__webpack_require__(282);
+	__webpack_require__(271);
+	__webpack_require__(77);
+	__webpack_require__(283);
+	__webpack_require__(284);
+	__webpack_require__(285);
+	__webpack_require__(266);
+	__webpack_require__(277);
 	__webpack_require__(281);
+	__webpack_require__(72);
+	__webpack_require__(268);
+	__webpack_require__(265);
+	__webpack_require__(286);
 	__webpack_require__(264);
 	__webpack_require__(273);
-	__webpack_require__(277);
-	__webpack_require__(71);
-	__webpack_require__(266);
-	__webpack_require__(263);
-	__webpack_require__(282);
-	__webpack_require__(262);
-	__webpack_require__(283);
-	__webpack_require__(75);
-	__webpack_require__(74);
-	__webpack_require__(261);
-	__webpack_require__(265);
-	__webpack_require__(267);
+	__webpack_require__(272);
 	__webpack_require__(78);
-	module.exports = __webpack_require__(260);
+	__webpack_require__(76);
+	__webpack_require__(75);
+	__webpack_require__(263);
+	__webpack_require__(267);
+	__webpack_require__(269);
+	__webpack_require__(80);
+	module.exports = __webpack_require__(262);
 
 
 /***/ },
@@ -109,9 +112,9 @@ webpackJsonp([0],[
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const runtime_1 = __webpack_require__(2);
+	const editor_runtime_1 = __webpack_require__(2);
 	const element_renderer_1 = __webpack_require__(5);
-	const editor_binding_element_1 = __webpack_require__(42);
+	const editor_binding_element_1 = __webpack_require__(43);
 	window.Runtime = null;
 	window.HexEnvironmentFlag = 0;
 	window.EmptyFunction = function () { };
@@ -157,7 +160,7 @@ webpackJsonp([0],[
 	    createElement: element_renderer_1.createElement
 	};
 	window.HexEnvironmentFlag |= 2;
-	window.EditorRuntime = new runtime_1.EditorRuntimeImplementation();
+	window.EditorRuntime = new editor_runtime_1.EditorRuntimeImplementation();
 	window.Runtime = EditorRuntime;
 	function loop(delta) {
 	    EditorRuntime.update(delta);
@@ -188,7 +191,10 @@ webpackJsonp([0],[
 	const scene_1 = __webpack_require__(40);
 	const e_command_type_1 = __webpack_require__(34);
 	const component_1 = __webpack_require__(28);
-	class UpdateNode extends tree_1.PseudoTreeNode {
+	const vector2_1 = __webpack_require__(20);
+	const drag_action_1 = __webpack_require__(287);
+	let mouseCache = new vector2_1.Vector2();
+	class UpdateNode extends tree_1.ShadowTreeNode {
 	    traverse() {
 	        const element = this.element;
 	        if (element.isDestroyed()) {
@@ -222,9 +228,10 @@ webpackJsonp([0],[
 	        this.domElementIdMap = new Map();
 	        this.interpreters = {};
 	        this.selectedElement = null;
-	        this.updateCycles = [];
 	        this.input = new editor_input_1.EditorInput();
-	        this.updateTree = new tree_1.PseudoTree(UpdateNode);
+	        this.updateTree = new tree_1.ShadowTree(UpdateNode);
+	        this.draggedAction = null;
+	        this.lastEnteredElement = null;
 	    }
 	    suppressAddElement(fn) {
 	        this.addElement = function () { };
@@ -297,6 +304,16 @@ webpackJsonp([0],[
 	        this.selectedElement = newSelection;
 	        this.emit(evt_selection_changed_1.SelectionChanged, newSelection, oldSelection);
 	    }
+	    beginDragAction(dragAction) {
+	        if (this.draggedAction) {
+	            throw new Error("Cannot initiate another drag action while one exists!");
+	        }
+	        this.draggedAction = dragAction;
+	        this.draggedAction.onDragStart();
+	    }
+	    getCurrentDragAction() {
+	        return this.draggedAction;
+	    }
 	    getSelection() {
 	        return this.selectedElement;
 	    }
@@ -306,10 +323,19 @@ webpackJsonp([0],[
 	            cmp.onMounted();
 	        }
 	        this.pendingComponents.length = 0;
-	        this.updateTree.traverse();
-	        for (var i = 0; i < this.updateCycles.length; i++) {
-	            this.updateCycles[i].update(timeStamp);
+	        if (this.draggedAction) {
+	            const mouse = this.input.getMousePosition(mouseCache);
+	            const element = this.getEditorElementAtPoint(mouse);
+	            this.draggedAction.onUpdate();
+	            if (this.input.isMouseUp()) {
+	                this.draggedAction.onDrop(element);
+	                drag_action_1.DragAction.invokeDropHandlers(element, this.draggedAction);
+	                this.draggedAction = null;
+	            }
+	            else {
+	            }
 	        }
+	        this.updateTree.traverse();
 	        const commandBuffer = this.buildCommandBuffer();
 	        this.decodeCommandBuffer(commandBuffer);
 	        this.input.update();
@@ -350,18 +376,6 @@ webpackJsonp([0],[
 	            });
 	        }
 	    }
-	    addUpdater(updater, interval = -1) {
-	        this.getUpdateCycleForInterval(interval).addUpdater(updater);
-	    }
-	    removeUpdater(updater) {
-	        for (let i = 0; i < this.updateCycles.length; i++) {
-	            const length = this.updateCycles[i].removeUpdater(updater);
-	            if (length === 0) {
-	                this.updateCycles.removeAt(i);
-	                return;
-	            }
-	        }
-	    }
 	    addElement(appElement) {
 	        this.appElementRegistry[appElement.id] = appElement;
 	        this.emit(evt_app_element_created_1.AppElementCreated, appElement);
@@ -395,20 +409,8 @@ webpackJsonp([0],[
 	    getEditorElementAtPoint(point) {
 	        return document.elementFromPoint(point.x, point.y).__editorElement;
 	    }
-	    getUpdateCycleForInterval(interval) {
-	        if (interval < 0)
-	            interval = 0;
-	        for (let i = 0; i < this.updateCycles.length; i++) {
-	            if (this.updateCycles[i].interval === interval) {
-	                return this.updateCycles[i];
-	            }
-	        }
-	        const updateCycle = new UpdateCycle(interval);
-	        this.updateCycles.add(updateCycle);
-	        return updateCycle;
-	    }
 	    start(appRoot, attrs = {}) {
-	        this.loadScene(__webpack_require__(41));
+	        this.loadScene(__webpack_require__(42));
 	        element_renderer_1.render(element_renderer_1.createElement(appRoot, attrs), document.getElementById('root'));
 	        requestAnimationFrame(this.boundUpdate);
 	        window.addEventListener("resize", () => {
@@ -422,36 +424,6 @@ webpackJsonp([0],[
 	    }
 	}
 	exports.EditorRuntimeImplementation = EditorRuntimeImplementation;
-	class UpdateCycle {
-	    constructor(interval) {
-	        this.interval = interval;
-	        this.lastUpdate = 0;
-	        this.updaters = [];
-	    }
-	    update(timeStamp) {
-	        if (timeStamp - this.lastUpdate > this.interval) {
-	            this.lastUpdate = timeStamp;
-	            for (let i = 0; i < this.updaters.length; i++) {
-	                this.updaters[i].onUpdated();
-	            }
-	        }
-	    }
-	    addUpdater(updater) {
-	        const idx = this.updaters.indexOf(updater);
-	        if (idx === -1) {
-	            this.updaters.add(updater);
-	            return true;
-	        }
-	        return false;
-	    }
-	    removeUpdater(updater) {
-	        const idx = this.updaters.indexOf(updater);
-	        if (idx !== -1) {
-	            this.updaters.splice(idx, 1);
-	        }
-	        return this.updaters.length;
-	    }
-	}
 
 
 /***/ },
@@ -1145,7 +1117,9 @@ webpackJsonp([0],[
 	        }
 	        return null;
 	    }
-	    getAncestorByType(type) {
+	    getAncestorByType(type, allowSelf = false) {
+	        if (allowSelf && this instanceof type)
+	            return this;
 	        let ptr = this.parent;
 	        while (ptr) {
 	            if (ptr instanceof type) {
@@ -1337,7 +1311,7 @@ webpackJsonp([0],[
 	}
 	exports.hitTestLine = hitTestLine;
 	function randomPositiveInteger() {
-	    return ~~(Math.random() * 9999999 + 1);
+	    return ~~(Math.random() * Number.MAX_SAFE_INTEGER);
 	}
 	exports.randomPositiveInteger = randomPositiveInteger;
 	function titlize(input) {
@@ -1382,11 +1356,24 @@ webpackJsonp([0],[
 	"use strict";
 	const editor_element_1 = __webpack_require__(12);
 	const editor_text_element_1 = __webpack_require__(11);
+	exports.InputEventAnnotationMap = new Map();
 	class EditorHTMLElement extends editor_element_1.EditorElement {
 	    constructor(attrs, tagName = "div") {
 	        super();
+	        this.element = this;
 	        this.attrs = attrs || {};
 	        this.tagName = tagName;
+	        const proto = this.constructor.prototype;
+	        const eventAnnotations = exports.InputEventAnnotationMap.get(this.constructor.prototype);
+	        if (eventAnnotations) {
+	            for (let i = 0; i < eventAnnotations.length; i++) {
+	                const annotation = eventAnnotations[i];
+	                this.addEventListener(annotation.type, (e) => {
+	                    this[annotation.methodName](e);
+	                    e.stopPropagation();
+	                });
+	            }
+	        }
 	    }
 	    getDomData() {
 	        return { tagName: this.tagName };
@@ -1618,12 +1605,15 @@ webpackJsonp([0],[
 	        this.mouseWheelDeltaX = 0;
 	        this.mouseWheelDeltaY = 0;
 	    }
-	    static normalizeWheelValue(value) {
-	        if (value === 0)
-	            return 0;
-	        if (value > 0)
-	            return 1;
-	        return -1;
+	    update() {
+	        this.lastX = this.x;
+	        this.lastY = this.y;
+	        this.lastMouseButtonState = this.mouseButtonState;
+	        this.mouseWheelDeltaX = 0;
+	        this.mouseWheelDeltaY = 0;
+	        for (let i = 8; i < 222; i++) {
+	            this.keyMapPrevious[i] = this.keyMapCurrent[i];
+	        }
 	    }
 	    wasMouseDown() {
 	        return (this.lastMouseButtonState & e_mouse_state_1.MouseButtonState.AnyButton) !== 0;
@@ -1670,21 +1660,29 @@ webpackJsonp([0],[
 	    isKeyUpThisFrame(key) {
 	        return this.keyMapPrevious[key] && !this.keyMapCurrent[key];
 	    }
-	    getMouseDelta() {
+	    getMouseDelta(cache) {
+	        if (cache) {
+	            cache.x = this.x - this.lastX;
+	            cache.y = this.y - this.lastY;
+	            return cache;
+	        }
 	        return new vector2_1.Vector2(this.x - this.lastX, this.y - this.lastY);
 	    }
-	    getMouseWheelDelta() {
-	        return new vector2_1.Vector2(this.mouseWheelDeltaX, this.mouseWheelDeltaY);
-	    }
-	    update() {
-	        this.lastX = this.x;
-	        this.lastY = this.y;
-	        this.lastMouseButtonState = this.mouseButtonState;
-	        this.mouseWheelDeltaX = 0;
-	        this.mouseWheelDeltaY = 0;
-	        for (let i = 8; i < 222; i++) {
-	            this.keyMapPrevious[i] = this.keyMapCurrent[i];
+	    getMouseDownDelta(cache) {
+	        if (cache) {
+	            cache.x = this.x - this.mouseDownPosition.x;
+	            cache.y = this.y - this.mouseDownPosition.y;
+	            return cache;
 	        }
+	        return new vector2_1.Vector2(this.x - this.mouseDownPosition.x, this.y - this.mouseDownPosition.y);
+	    }
+	    getMouseWheelDelta(cache) {
+	        if (cache) {
+	            cache.x = this.mouseWheelDeltaX;
+	            cache.y = this.mouseWheelDeltaY;
+	            return cache;
+	        }
+	        return new vector2_1.Vector2(this.mouseWheelDeltaX, this.mouseWheelDeltaY);
 	    }
 	    getMousePosition(cache) {
 	        if (cache) {
@@ -1693,6 +1691,35 @@ webpackJsonp([0],[
 	            return cache;
 	        }
 	        return new vector2_1.Vector2(this.x, this.y);
+	    }
+	    getMouseDownPosition(cache) {
+	        if (cache) {
+	            cache.x = this.mouseDownPosition.x;
+	            cache.y = this.mouseDownPosition.y;
+	            return cache;
+	        }
+	        return this.mouseDownPosition.clone();
+	    }
+	    isMouseInAppElement(element) {
+	        return element.containsPoint(new vector2_1.Vector2(this.x, this.y));
+	    }
+	    getMouseRelative(element, cache) {
+	        const rect = element.rect;
+	        if (cache) {
+	            cache.x = this.x - rect.x;
+	            cache.y = this.y - rect.y;
+	            return cache;
+	        }
+	        return new vector2_1.Vector2(this.x - rect.x, this.y - rect.y);
+	    }
+	    getMouseDownRelative(element, cache) {
+	        const rect = element.rect;
+	        if (cache) {
+	            cache.x = this.mouseDownPosition.x - rect.x;
+	            cache.y = this.mouseDownPosition.y - rect.y;
+	            return cache;
+	        }
+	        return new vector2_1.Vector2(this.mouseDownPosition.x - rect.x, this.mouseDownPosition.y - rect.y);
 	    }
 	    copyTo(input) {
 	        input.x = this.x;
@@ -1706,16 +1733,12 @@ webpackJsonp([0],[
 	            input.keyMapCurrent[i] = this.keyMapCurrent[i];
 	        }
 	    }
-	    isMouseInAppElement(element) {
-	        return element.containsPoint(new vector2_1.Vector2(this.x, this.y));
-	    }
-	    getMouseRelative(element) {
-	        const rect = element.rect;
-	        return new vector2_1.Vector2(this.x - rect.x, this.y - rect.y);
-	    }
-	    getMouseDownRelative(element) {
-	        const rect = element.rect;
-	        return new vector2_1.Vector2(this.mouseDownPosition.x - rect.x, this.mouseDownPosition.y - rect.y);
+	    static normalizeWheelValue(value) {
+	        if (value === 0)
+	            return 0;
+	        if (value > 0)
+	            return 1;
+	        return -1;
 	    }
 	}
 	exports.Input = Input;
@@ -2554,7 +2577,7 @@ webpackJsonp([0],[
 /***/ function(module, exports) {
 
 	"use strict";
-	class PseudoTree {
+	class ShadowTree {
 	    constructor(nodeConstructor) {
 	        this.nodeConstructor = nodeConstructor;
 	        this.nodeMap = new Map();
@@ -2580,9 +2603,13 @@ webpackJsonp([0],[
 	        let node = this.nodeMap.get(item.element);
 	        if (!node)
 	            return;
+	        this.nodeMap.delete(item.element);
 	        const rootIdx = this.rootNodes.indexOf(node);
 	        if (rootIdx !== -1) {
-	            this.rootNodes.splice(rootIdx, 1);
+	            this.rootNodes.removeAt(rootIdx);
+	            for (let i = 0; i < node.children.length; i++) {
+	                this.rootNodes.push(node.children[i]);
+	            }
 	            return;
 	        }
 	        const parentNode = this.nodeMap.get(item.element.parent);
@@ -2590,7 +2617,7 @@ webpackJsonp([0],[
 	            return;
 	        const nodeIdx = parentNode.children.indexOf(node);
 	        if (nodeIdx !== -1) {
-	            parentNode.children.splice(nodeIdx, 1);
+	            parentNode.children.removeAt(nodeIdx);
 	        }
 	        for (let i = 0; i < node.children.length; i++) {
 	            parentNode.children.add(node.children[i]);
@@ -2603,7 +2630,7 @@ webpackJsonp([0],[
 	            return this.insertAtRoot(treeNode);
 	        for (let i = 0; i < parentTreeNode.children.length; i++) {
 	            const childNode = parentTreeNode.children[i];
-	            if (PseudoTree.isDescendant(childNode.element, treeNode.element)) {
+	            if (ShadowTree.isDescendant(childNode.element, treeNode.element)) {
 	                treeNode.children.add(childNode);
 	                parentTreeNode.children.splice(i--, 1);
 	            }
@@ -2613,7 +2640,7 @@ webpackJsonp([0],[
 	    insertAtRoot(treeNode) {
 	        for (let i = 0; i < this.rootNodes.length; i++) {
 	            const node = this.rootNodes[i];
-	            if (PseudoTree.isDescendant(node.element, treeNode.element)) {
+	            if (ShadowTree.isDescendant(node.element, treeNode.element)) {
 	                treeNode.children.add(node);
 	                this.rootNodes.removeAt(i);
 	            }
@@ -2642,15 +2669,15 @@ webpackJsonp([0],[
 	        return null;
 	    }
 	}
-	exports.PseudoTree = PseudoTree;
-	class PseudoTreeNode {
+	exports.ShadowTree = ShadowTree;
+	class ShadowTreeNode {
 	    constructor(updater) {
 	        this.element = updater.element;
 	        this.children = [];
 	        this.items = [updater];
 	    }
 	}
-	exports.PseudoTreeNode = PseudoTreeNode;
+	exports.ShadowTreeNode = ShadowTreeNode;
 
 
 /***/ },
@@ -2658,6 +2685,7 @@ webpackJsonp([0],[
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
+	const vector2_1 = __webpack_require__(20);
 	const event_emitter_1 = __webpack_require__(37);
 	const app_element_1 = __webpack_require__(38);
 	const component_1 = __webpack_require__(28);
@@ -2665,6 +2693,7 @@ webpackJsonp([0],[
 	class RuntimeImpl extends event_emitter_1.EventEmitter {
 	    constructor() {
 	        super();
+	        this.MouseCache = new vector2_1.Vector2();
 	        this.rootElementCandidates = [];
 	        this.pendingComponents = [];
 	        this.appElementRegistry = {};
@@ -3045,7 +3074,8 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 41 */
+/* 41 */,
+/* 42 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -3105,7 +3135,7 @@ webpackJsonp([0],[
 	};
 
 /***/ },
-/* 42 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3158,7 +3188,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 43 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3181,7 +3211,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 44 */
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3202,7 +3232,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 45 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3224,7 +3254,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 46 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3248,24 +3278,115 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 47 */
+/* 48 */,
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	const editor_html_element_1 = __webpack_require__(14);
 	class EditorCustomElement extends editor_html_element_1.EditorHTMLElement {
+	    onMouseDown(e) { }
+	    onMouseUp(e) { }
+	    onMouseMove(e) { }
+	    onMouseEnter(e) { }
+	    onMouseExit(e) { }
+	    onMouseWheel(e) { }
+	    handleDragActionMouseEnter() { }
+	    handleDragActionMouseOver() { }
+	    handleDragActionMouseExit() { }
+	    handleDragActionDrop() { }
 	}
 	exports.EditorCustomElement = EditorCustomElement;
 
 
 /***/ },
-/* 48 */
+/* 50 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	const editor_html_element_1 = __webpack_require__(14);
+	function onClick(target, propertyKey, descriptor) {
+	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
+	    array.push({ type: "click", methodName: propertyKey });
+	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
+	}
+	exports.onClick = onClick;
+	function onRightClick(target, propertyKey, descriptor) {
+	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
+	    array.push({ type: "contextmenu", methodName: propertyKey });
+	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
+	}
+	exports.onRightClick = onRightClick;
+	function onMouseDown(target, propertyKey, descriptor) {
+	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
+	    array.push({ type: "mousedown", methodName: propertyKey });
+	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
+	}
+	exports.onMouseDown = onMouseDown;
+	function onMouseUp(target, propertyKey, descriptor) {
+	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
+	    array.push({ type: "mouseup", methodName: propertyKey });
+	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
+	}
+	exports.onMouseUp = onMouseUp;
+	function onMouseMove(target, propertyKey, descriptor) {
+	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
+	    array.push({ type: "mousemove", methodName: propertyKey });
+	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
+	}
+	exports.onMouseMove = onMouseMove;
+	function onMouseEnter(target, propertyKey, descriptor) {
+	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
+	    array.push({ type: "mouseenter", methodName: propertyKey });
+	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
+	}
+	exports.onMouseEnter = onMouseEnter;
+	function onMouseExit(target, propertyKey, descriptor) {
+	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
+	    array.push({ type: "mouseleave", methodName: propertyKey });
+	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
+	}
+	exports.onMouseExit = onMouseExit;
+	function onBlur(target, propertyKey, descriptor) {
+	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
+	    array.push({ type: "blur", methodName: propertyKey });
+	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
+	}
+	exports.onBlur = onBlur;
+	function onFocus(target, propertyKey, descriptor) {
+	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
+	    array.push({ type: "focus", methodName: propertyKey });
+	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
+	}
+	exports.onFocus = onFocus;
+	function onKeyDown(target, propertyKey, descriptor) {
+	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
+	    array.push({ type: "keydown", methodName: propertyKey });
+	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
+	}
+	exports.onKeyDown = onKeyDown;
+	function onKeyUp(target, propertyKey, descriptor) {
+	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
+	    array.push({ type: "keyup", methodName: propertyKey });
+	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
+	}
+	exports.onKeyUp = onKeyUp;
+	function onKeyPress(target, propertyKey, descriptor) {
+	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
+	    array.push({ type: "keypress", methodName: propertyKey });
+	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
+	}
+	exports.onKeyPress = onKeyPress;
+
+
+/***/ },
+/* 51 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 49 */
+/* 52 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3280,38 +3401,17 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 50 */
-/***/ function(module, exports, __webpack_require__) {
+/* 53 */
+/***/ function(module, exports) {
 
-	"use strict";
-	const binding_compiler_1 = __webpack_require__(8);
-	class XBind {
-	    constructor(element, binding) {
-	        this.element = element;
-	        this.ctx = binding.ctx;
-	        this.getterFn = binding_compiler_1.createGetter(binding.path.split("."));
-	        EditorRuntime.addUpdater(this, 200);
-	    }
-	    onUpdated() {
-	        if (this.element.isDestroyed) {
-	            EditorRuntime.removeUpdater(this);
-	            this.element = null;
-	            this.getterFn = null;
-	        }
-	        else if (this.element.isRendered) {
-	            var value = this.getterFn(this.ctx);
-	        }
-	    }
-	}
-	exports.XBind = XBind;
-
+	
 
 /***/ },
-/* 51 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const property_renderer_1 = __webpack_require__(52);
+	const property_renderer_1 = __webpack_require__(55);
 	function propertyDrawer(typeToDraw) {
 	    return function (target) {
 	        property_renderer_1.PropertyRenderer.set(typeToDraw, target);
@@ -3321,12 +3421,12 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 52 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	const tslib_1 = __webpack_require__(25);
-	const editor_custom_element_1 = __webpack_require__(47);
+	const editor_custom_element_1 = __webpack_require__(49);
 	const element_renderer_1 = __webpack_require__(5);
 	class PropertyRenderer extends editor_custom_element_1.EditorCustomElement {
 	    createInitialStructure(children) {
@@ -3345,7 +3445,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 53 */
+/* 56 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3388,7 +3488,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 54 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3425,13 +3525,13 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 55 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	const tslib_1 = __webpack_require__(25);
 	const _cmd_serializer_1 = __webpack_require__(22);
-	const ui_component_1 = __webpack_require__(56);
+	const ui_component_1 = __webpack_require__(59);
 	const e_command_type_1 = __webpack_require__(34);
 	let SerializeCreateCommand = class SerializeCreateCommand extends _cmd_serializer_1.CommandSerializer {
 	    serializeCommand(appElement) {
@@ -3456,7 +3556,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 56 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3467,7 +3567,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 57 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3494,7 +3594,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 58 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3524,7 +3624,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 59 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3541,7 +3641,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 60 */
+/* 63 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3650,20 +3750,20 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 61 */
+/* 64 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 62 */
+/* 65 */
 /***/ function(module, exports) {
 
 	"use strict";
 
 
 /***/ },
-/* 63 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3680,11 +3780,11 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 64 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const editor_custom_element_1 = __webpack_require__(47);
+	const editor_custom_element_1 = __webpack_require__(49);
 	class HorizontalBase extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
 	        return HorizontalBase.DomData;
@@ -3704,100 +3804,11 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 65 */
-/***/ function(module, exports) {
-
-	"use strict";
-	class ReferenceTreeNode {
-	    constructor(updater) {
-	        this.children = [];
-	        this.element = updater.element;
-	        this.children = [];
-	        this.updaters = [updater];
-	    }
-	    traverse() { }
-	}
-	exports.ReferenceTreeNode = ReferenceTreeNode;
-
-
-/***/ },
-/* 66 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const update_tree_node_1 = __webpack_require__(65);
-	class UpdateTree {
-	    constructor() {
-	        this.nodeMap = new Map();
-	        this.rootNodes = [];
-	    }
-	    traverse() {
-	        for (let i = 0; i < this.rootNodes.length; i++) {
-	            this.rootNodes[i].traverse();
-	        }
-	    }
-	    add(updater) {
-	        let currentNode = this.nodeMap.get(updater.element);
-	        if (currentNode) {
-	            currentNode.updaters.add(updater);
-	            return;
-	        }
-	        currentNode = new update_tree_node_1.ReferenceTreeNode(updater);
-	        this.insert(currentNode);
-	    }
-	    insert(treeNode) {
-	        const parentTreeNode = this.findParent(treeNode);
-	        if (!parentTreeNode)
-	            return this.insertAtRoot(treeNode);
-	        for (let i = 0; i < parentTreeNode.children.length; i++) {
-	            const childNode = parentTreeNode.children[i];
-	            if (this.isDescendant(childNode, treeNode)) {
-	                treeNode.children.add(childNode);
-	                parentTreeNode.children.removeAt(i--);
-	            }
-	        }
-	    }
-	    insertAtRoot(treeNode) {
-	        for (let i = 0; i < this.rootNodes.length; i++) {
-	            const node = this.rootNodes[i];
-	            if (this.isDescendant(node, treeNode)) {
-	                treeNode.children.add(node);
-	                this.rootNodes.removeAt(--i);
-	            }
-	        }
-	        this.rootNodes.add(treeNode);
-	    }
-	    isDescendant(possibleChild, parent) {
-	        if (possibleChild.parent === parent)
-	            return true;
-	        let ptr = possibleChild.parent;
-	        while (ptr) {
-	            if (ptr.parent === parent)
-	                return true;
-	            ptr = ptr.parent;
-	        }
-	        return false;
-	    }
-	    findParent(treeNode) {
-	        let ptr = treeNode.element;
-	        while (ptr) {
-	            const node = this.nodeMap.get(ptr);
-	            if (node)
-	                return node;
-	            ptr = ptr.parent;
-	        }
-	        return null;
-	    }
-	}
-	exports.UpdateTree = UpdateTree;
-
-
-/***/ },
-/* 67 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	const scene_tool_1 = __webpack_require__(68);
+	const scene_tool_1 = __webpack_require__(69);
 	class ScenePanTool extends scene_tool_1.SceneTool {
 	    constructor() {
 	        super(...arguments);
@@ -3809,7 +3820,14 @@ webpackJsonp([0],[
 	            this.panning = false;
 	            return;
 	        }
-	        if (input.isMouseDown()) {
+	        if (input.isMouseDownThisFrame()) {
+	            this.panning = true;
+	            const delta = input.getMouseDelta();
+	            if (delta.isZero())
+	                return;
+	            this.sceneWindow.pan(delta);
+	        }
+	        else if (this.panning && input.isMouseDown()) {
 	            const delta = input.getMouseDelta();
 	            if (delta.isZero())
 	                return;
@@ -3824,7 +3842,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 68 */
+/* 69 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3841,11 +3859,11 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 69 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const scene_tool_1 = __webpack_require__(68);
+	const scene_tool_1 = __webpack_require__(69);
 	const util_1 = __webpack_require__(13);
 	const rectangle_1 = __webpack_require__(29);
 	var DragSide;
@@ -4007,17 +4025,18 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 70 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const editor_custom_element_1 = __webpack_require__(47);
-	const split_pane_1 = __webpack_require__(71);
-	const editor_window_frame_1 = __webpack_require__(72);
-	const hierarchy_window_1 = __webpack_require__(74);
-	const scene_window_1 = __webpack_require__(78);
-	const inspector_window_1 = __webpack_require__(261);
-	const editor_theme_1 = __webpack_require__(49);
+	const editor_custom_element_1 = __webpack_require__(49);
+	const split_pane_1 = __webpack_require__(72);
+	const editor_window_frame_1 = __webpack_require__(73);
+	const hierarchy_window_1 = __webpack_require__(75);
+	const scene_window_1 = __webpack_require__(80);
+	const inspector_window_1 = __webpack_require__(263);
+	const editor_theme_1 = __webpack_require__(52);
+	const asset_window_1 = __webpack_require__(272);
 	class EditorApplication extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "editor-application" };
@@ -4025,8 +4044,11 @@ webpackJsonp([0],[
 	    createInitialStructure(children) {
 	        return [
 	            Hex.createElement(split_pane_1.SplitPane, { distribution: 0.2 },
-	                Hex.createElement(editor_window_frame_1.WindowFrame, null,
-	                    Hex.createElement(hierarchy_window_1.HierarchyWindow, { title: "Hierarchy", icon: "" })),
+	                Hex.createElement(split_pane_1.SplitPane, { axis: 1 },
+	                    Hex.createElement(editor_window_frame_1.WindowFrame, null,
+	                        Hex.createElement(hierarchy_window_1.HierarchyWindow, { title: "Hierarchy", icon: "" })),
+	                    Hex.createElement(editor_window_frame_1.WindowFrame, null,
+	                        Hex.createElement(asset_window_1.AssetWindow, { title: "Assets", icon: "" }))),
 	                Hex.createElement(split_pane_1.SplitPane, { distribution: 0.7, axis: 0 },
 	                    Hex.createElement(editor_window_frame_1.WindowFrame, null,
 	                        Hex.createElement(scene_window_1.SceneWindow, { title: "Scene", icon: "" })),
@@ -4050,17 +4072,18 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 71 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	const evt_window_resized_1 = __webpack_require__(16);
-	const editor_custom_element_1 = __webpack_require__(47);
+	const editor_custom_element_1 = __webpack_require__(49);
 	const element_renderer_1 = __webpack_require__(5);
 	const util_1 = __webpack_require__(13);
 	class SplitPane extends editor_custom_element_1.EditorCustomElement {
 	    constructor() {
 	        super(...arguments);
+	        this.element = this;
 	        this.gutterSize = 4;
 	    }
 	    getDomData() {
@@ -4138,7 +4161,7 @@ webpackJsonp([0],[
 	    onUpdated() {
 	        const input = EditorRuntime.getInput();
 	        if (input.isMouseUp()) {
-	            EditorRuntime.removeUpdater(this);
+	            EditorRuntime.updateTree.remove(this);
 	            return;
 	        }
 	        const delta = this.getMouseDelta();
@@ -4164,7 +4187,7 @@ webpackJsonp([0],[
 	        return this.attrs.axis === 0;
 	    }
 	    startGutterDrag() {
-	        EditorRuntime.addUpdater(this);
+	        EditorRuntime.updateTree.add(this);
 	    }
 	    getMouseDelta() {
 	        if (this.isVertical()) {
@@ -4325,20 +4348,24 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 72 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const split_pane_1 = __webpack_require__(71);
-	const editor_custom_element_1 = __webpack_require__(47);
-	const editor_theme_1 = __webpack_require__(49);
+	const split_pane_1 = __webpack_require__(72);
+	const editor_custom_element_1 = __webpack_require__(49);
+	const editor_theme_1 = __webpack_require__(52);
 	const element_renderer_1 = __webpack_require__(5);
-	const editor_window_tab_1 = __webpack_require__(73);
+	const editor_window_tab_1 = __webpack_require__(74);
 	const coverDiv = document.createElement('div');
 	coverDiv.style.position = "absolute";
 	coverDiv.style.zIndex = "400";
 	coverDiv.style.background = "magenta";
 	class WindowFrame extends editor_custom_element_1.EditorCustomElement {
+	    constructor() {
+	        super(...arguments);
+	        this.element = this;
+	    }
 	    onCreated() {
 	        this.windows = [];
 	        this.isCoverInDom = false;
@@ -4371,7 +4398,7 @@ webpackJsonp([0],[
 	        if (Input.isMouseUp()) {
 	            this.isCoverInDom = false;
 	            coverDiv.remove();
-	            EditorRuntime.removeUpdater(this);
+	            EditorRuntime.updateTree.remove(this);
 	            const mouse = Input.getMousePosition();
 	            const hoverElement = EditorRuntime.getEditorElementAtPoint(mouse);
 	            const windowFrame = hoverElement.getAncestorByType(WindowFrame);
@@ -4487,7 +4514,7 @@ webpackJsonp([0],[
 	    }
 	    startTabDrag(windowData) {
 	        this.draggedWindowData = windowData;
-	        EditorRuntime.addUpdater(this);
+	        EditorRuntime.updateTree.add(this);
 	    }
 	    createWindowData(content) {
 	        const windowData = {
@@ -4554,12 +4581,12 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 73 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const editor_custom_element_1 = __webpack_require__(47);
-	const editor_theme_1 = __webpack_require__(49);
+	const editor_custom_element_1 = __webpack_require__(49);
+	const editor_theme_1 = __webpack_require__(52);
 	class WindowFrameTab extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
 	        return {
@@ -4603,23 +4630,24 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 74 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const button_1 = __webpack_require__(63);
-	const hierarchy_item_1 = __webpack_require__(75);
+	const button_1 = __webpack_require__(66);
+	const hierarchy_item_1 = __webpack_require__(76);
 	const evt_selection_changed_1 = __webpack_require__(4);
 	const evt_scene_loaded_event_1 = __webpack_require__(3);
 	const evt_app_element_created_1 = __webpack_require__(17);
 	const element_renderer_1 = __webpack_require__(5);
-	const editor_window_element_1 = __webpack_require__(77);
-	const editor_theme_1 = __webpack_require__(49);
+	const editor_window_element_1 = __webpack_require__(79);
+	const editor_theme_1 = __webpack_require__(52);
 	const app_element_1 = __webpack_require__(38);
 	const e_mouse_state_1 = __webpack_require__(21);
 	class HierarchyWindow extends editor_window_element_1.EditorWindowElement {
 	    constructor() {
 	        super(...arguments);
+	        this.element = this;
 	        this.elementMap = new Map();
 	        this.contextSelection = null;
 	        this.contextMenu = null;
@@ -4697,7 +4725,7 @@ webpackJsonp([0],[
 	                }
 	            }
 	        }
-	        else if (input.isMouseDown()) {
+	        else if (input.isMouseInEditorElement(this) && input.isMouseDown()) {
 	            const mouse = input.getMousePosition();
 	            const hoverElement = EditorRuntime.getEditorElementAtPoint(mouse);
 	            if (!hoverElement)
@@ -4710,7 +4738,7 @@ webpackJsonp([0],[
 	        EditorRuntime.on(evt_selection_changed_1.SelectionChanged, this);
 	        EditorRuntime.on(evt_scene_loaded_event_1.SceneLoaded, this);
 	        EditorRuntime.on(evt_app_element_created_1.AppElementCreated, this);
-	        EditorRuntime.addUpdater(this);
+	        EditorRuntime.updateTree.add(this);
 	        this.onSceneLoaded(EditorRuntime.getScene());
 	    }
 	    onAppElementCreated(appElement) {
@@ -4824,13 +4852,14 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 75 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const icon_1 = __webpack_require__(76);
-	const editor_custom_element_1 = __webpack_require__(47);
-	const hierarchy_window_1 = __webpack_require__(74);
+	const icon_1 = __webpack_require__(77);
+	const editor_custom_element_1 = __webpack_require__(49);
+	const hierarchy_window_1 = __webpack_require__(75);
+	const hierarchy_insert_target_1 = __webpack_require__(78);
 	class HierarchyItem extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "hierarchy-item" };
@@ -4854,14 +4883,6 @@ webpackJsonp([0],[
 	    mouseExitDetails() {
 	        this.getChildById("item-details").getDomNode().style.background = null;
 	    }
-	    mouseEnterSpace() {
-	        if (this.getAncestorByType(hierarchy_window_1.HierarchyWindow).isDragging()) {
-	            this.getChildById("spacer").getDomNode().style.background = "blue";
-	        }
-	    }
-	    mouseExitSpace() {
-	        this.getChildById("spacer").getDomNode().style.background = null;
-	    }
 	    createInitialStructure(children) {
 	        const appElement = this.attrs.element;
 	        let padding = (appElement.getDepth() + 1);
@@ -4872,7 +4893,7 @@ webpackJsonp([0],[
 	                    " ",
 	                    new window.EditorBindingElement(appElement, ["name"]),
 	                    " ")),
-	            Hex.createElement("div", { "x-id": "spacer", class: "item-insert-space", onMouseEnter: this.mouseEnterSpace, onMouseExit: this.mouseExitSpace }),
+	            Hex.createElement(hierarchy_insert_target_1.HierarchyInsertTarget, null),
 	            Hex.createElement("div", { "x-child-root": true, class: "item-children" })
 	        ];
 	    }
@@ -4910,41 +4931,46 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 76 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const editor_custom_element_1 = __webpack_require__(47);
+	const editor_custom_element_1 = __webpack_require__(49);
 	class BaseIcon extends editor_custom_element_1.EditorCustomElement {
+	    constructor() {
+	        super(...arguments);
+	        this.prefix = "fa";
+	    }
+	    getDomData() {
+	        return { tagName: "i", classList: this.getClassList() };
+	    }
+	    getIconSize() {
+	        return " icon " + (this.attrs.size || "normal");
+	    }
+	    getClassList() {
+	        return this.prefix
+	            + " "
+	            + this.getPrefixedIconName(this.attrs.iconName)
+	            + this.getIconSize();
+	    }
+	    getPrefixedIconName(iconName) {
+	        return this.prefix + "-" + iconName;
+	    }
+	    ;
 	    setIcon(iconName) {
 	        const domNode = this.getDomNode();
-	        domNode.classList.remove(this.getIconPrefix() + this.attrs.iconName);
-	        domNode.classList.add(this.getIconPrefix() + iconName);
+	        domNode.classList.remove(this.getPrefixedIconName(this.attrs.iconName));
+	        domNode.classList.add(this.getPrefixedIconName(iconName));
 	        this.attrs.iconName = iconName;
-	    }
-	    createInitialStructure() {
-	        return Hex.createElement("i", { class: this.getIconClass() + " " + this.getIconPrefix() + this.attrs.iconName });
 	    }
 	}
 	exports.BaseIcon = BaseIcon;
 	class FontIcon extends BaseIcon {
-	    getIconClass() {
-	        return "fa fa-lg";
-	    }
-	    getIconPrefix() {
-	        return "fa-";
-	    }
-	    onMounted() {
-	        this.getDomNode().style.lineHeight = "1";
-	    }
 	}
 	exports.FontIcon = FontIcon;
 	class ToggleIcon extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
-	        return {
-	            tagName: "i",
-	            classList: this.getClassList()
-	        };
+	        return { tagName: "i", classList: this.getClassList() };
 	    }
 	    onMounted() {
 	        const attrs = this.attrs;
@@ -4971,6 +4997,9 @@ webpackJsonp([0],[
 	            e.stopPropagation();
 	        }, false);
 	    }
+	    getIconSize() {
+	        return " icon " + (this.attrs.size || "normal");
+	    }
 	    getClassList() {
 	        const attrs = this.attrs;
 	        attrs.open = attrs.open === void 0 ? true : Boolean(attrs.open);
@@ -4978,23 +5007,22 @@ webpackJsonp([0],[
 	            this.attrs.direction = "right";
 	        }
 	        if (this.attrs.open) {
-	            return "fa fa-chevron-down";
+	            return "fa fa-chevron-down" + this.getIconSize();
 	        }
-	        return "fa fa-chevron-" + this.attrs.direction;
+	        return "fa fa-chevron-" + this.attrs.direction + this.getIconSize();
 	    }
 	}
 	exports.ToggleIcon = ToggleIcon;
+	createStyleSheet(`<style>
+	    
+	    .icon.small {
+	        font-size: 0.7em;
+	    }
 
-
-/***/ },
-/* 77 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	const editor_custom_element_1 = __webpack_require__(47);
-	class EditorWindowElement extends editor_custom_element_1.EditorCustomElement {
-	}
-	exports.EditorWindowElement = EditorWindowElement;
+	    .icon.large {
+	        font-size:1.25em;
+	    }
+	`);
 
 
 /***/ },
@@ -5002,14 +5030,66 @@ webpackJsonp([0],[
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const PIXI = __webpack_require__(79);
-	const editor_theme_1 = __webpack_require__(49);
-	const editor_window_element_1 = __webpack_require__(77);
+	const tslib_1 = __webpack_require__(25);
+	const editor_html_element_1 = __webpack_require__(14);
+	const drag_action_1 = __webpack_require__(287);
+	class AppElementAssetDragAction extends drag_action_1.DragAction {
+	}
+	class HierarchyInsertTarget extends editor_html_element_1.EditorHTMLElement {
+	    getDomData() {
+	        return { tagName: "div", classList: "hierarchy-insert-target" };
+	    }
+	    handleDragEnter(dragAction) {
+	        this.getDomNode().style.background = "blue";
+	    }
+	    handleDragExit(dragAction) {
+	        this.getDomNode().style.background = null;
+	    }
+	    handleDrop(dragAction) {
+	    }
+	}
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.MouseEnter(AppElementAssetDragAction)
+	], HierarchyInsertTarget.prototype, "handleDragEnter", null);
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.MouseExit(AppElementAssetDragAction),
+	    drag_action_1.DragAction.Drop(AppElementAssetDragAction)
+	], HierarchyInsertTarget.prototype, "handleDragExit", null);
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.Drop(AppElementAssetDragAction)
+	], HierarchyInsertTarget.prototype, "handleDrop", null);
+	exports.HierarchyInsertTarget = HierarchyInsertTarget;
+	createStyleSheet(`<style>
+	    .hierarchy-insert-target {
+	        height: 0.2em;
+	    }
+	`);
+
+
+/***/ },
+/* 79 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	const editor_custom_element_1 = __webpack_require__(49);
+	class EditorWindowElement extends editor_custom_element_1.EditorCustomElement {
+	}
+	exports.EditorWindowElement = EditorWindowElement;
+
+
+/***/ },
+/* 80 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	const PIXI = __webpack_require__(81);
+	const editor_theme_1 = __webpack_require__(52);
+	const editor_window_element_1 = __webpack_require__(79);
 	const app_element_1 = __webpack_require__(38);
-	const scene_meta_bar_1 = __webpack_require__(260);
+	const scene_meta_bar_1 = __webpack_require__(262);
 	const vector2_1 = __webpack_require__(20);
-	const breakpoint_1 = __webpack_require__(54);
-	const pan_tool_1 = __webpack_require__(67);
+	const breakpoint_1 = __webpack_require__(57);
+	const pan_tool_1 = __webpack_require__(68);
 	const util_1 = __webpack_require__(13);
 	class SceneWindow extends editor_window_element_1.EditorWindowElement {
 	    constructor() {
@@ -5029,10 +5109,10 @@ webpackJsonp([0],[
 	    setPreviewSize(breakpointType) {
 	        this.currentBreakpoint = breakpointType;
 	        this.frameDimensions = breakpoint_1.Breakpoint.getDimensions(breakpointType);
-	        this.resetZoom();
 	        this.panValue.x = ((this.width * 0.5) - (this.frameDimensions.x * 0.5)) | 0;
 	        this.panValue.y = this.baseYOffset;
 	        app_element_1.AppElement.Root.setRectValues(this.panValue.x, this.panValue.y, this.frameDimensions.x, this.frameDimensions.y);
+	        this.resetZoom();
 	        this.drawFrameOutline();
 	        this.paintScene();
 	    }
@@ -5094,6 +5174,13 @@ webpackJsonp([0],[
 	    }
 	    resetZoom() {
 	        this.zoomLevel = 1.1;
+	        const width = this.width;
+	        const breakpointWidth = this.frameDimensions.x;
+	        if (breakpointWidth > width) {
+	            this.zoomLevel = width / breakpointWidth;
+	            this.panValue.x = ((this.zoomLevel * breakpointWidth * 0.5) - (width * 0.5)) | 0;
+	            this.panValue.y = this.baseYOffset;
+	        }
 	        this.zoom(1);
 	    }
 	    paintBackground() {
@@ -5216,8 +5303,6 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 79 */,
-/* 80 */,
 /* 81 */,
 /* 82 */,
 /* 83 */,
@@ -5397,15 +5482,17 @@ webpackJsonp([0],[
 /* 257 */,
 /* 258 */,
 /* 259 */,
-/* 260 */
+/* 260 */,
+/* 261 */,
+/* 262 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const editor_custom_element_1 = __webpack_require__(47);
-	const button_1 = __webpack_require__(63);
-	const scene_window_1 = __webpack_require__(78);
-	const editor_theme_1 = __webpack_require__(49);
-	const breakpoint_1 = __webpack_require__(54);
+	const editor_custom_element_1 = __webpack_require__(49);
+	const button_1 = __webpack_require__(66);
+	const scene_window_1 = __webpack_require__(80);
+	const editor_theme_1 = __webpack_require__(52);
+	const breakpoint_1 = __webpack_require__(57);
 	function round(places) {
 	    return function (value) {
 	        return value.toFixed(places);
@@ -5459,6 +5546,7 @@ webpackJsonp([0],[
 	    flex-direction: row;
 	    align-items: center;
 	    justify-content: flex-end;
+	    z-index:2;
 	}
 
 	.scene-size .btn {
@@ -5476,18 +5564,18 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 261 */
+/* 263 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const vertical_stack_1 = __webpack_require__(262);
-	const text_input_1 = __webpack_require__(263);
+	const vertical_stack_1 = __webpack_require__(264);
+	const text_input_1 = __webpack_require__(265);
 	const evt_selection_changed_1 = __webpack_require__(4);
-	const editor_window_element_1 = __webpack_require__(77);
-	const inspector_row_1 = __webpack_require__(264);
-	const component_menu_1 = __webpack_require__(265);
-	const editor_theme_1 = __webpack_require__(49);
-	const component_renderer_1 = __webpack_require__(268);
+	const editor_window_element_1 = __webpack_require__(79);
+	const inspector_row_1 = __webpack_require__(266);
+	const component_menu_1 = __webpack_require__(267);
+	const editor_theme_1 = __webpack_require__(52);
+	const component_renderer_1 = __webpack_require__(270);
 	const element_renderer_1 = __webpack_require__(5);
 	class InspectorWindow extends editor_window_element_1.EditorWindowElement {
 	    onSelectionChanged(newSelection, oldSelection) {
@@ -5542,11 +5630,11 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 262 */
+/* 264 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const editor_custom_element_1 = __webpack_require__(47);
+	const editor_custom_element_1 = __webpack_require__(49);
 	class VerticalBase extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
 	        return VerticalBase.DomData;
@@ -5568,12 +5656,12 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 263 */
+/* 265 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	const binding_compiler_1 = __webpack_require__(8);
-	const editor_custom_element_1 = __webpack_require__(47);
+	const editor_custom_element_1 = __webpack_require__(49);
 	class TextInput extends editor_custom_element_1.EditorCustomElement {
 	    constructor() {
 	        super(...arguments);
@@ -5616,11 +5704,11 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 264 */
+/* 266 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const editor_custom_element_1 = __webpack_require__(47);
+	const editor_custom_element_1 = __webpack_require__(49);
 	const util_1 = __webpack_require__(13);
 	class InspectorRow extends editor_custom_element_1.EditorCustomElement {
 	    onCreated() {
@@ -5653,15 +5741,15 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 265 */
+/* 267 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const vertical_stack_1 = __webpack_require__(262);
-	const text_box_icon_1 = __webpack_require__(266);
-	const button_1 = __webpack_require__(63);
-	const editor_custom_element_1 = __webpack_require__(47);
-	const component_option_1 = __webpack_require__(267);
+	const vertical_stack_1 = __webpack_require__(264);
+	const text_box_icon_1 = __webpack_require__(268);
+	const button_1 = __webpack_require__(66);
+	const editor_custom_element_1 = __webpack_require__(49);
+	const component_option_1 = __webpack_require__(269);
 	const component_1 = __webpack_require__(28);
 	const element_renderer_1 = __webpack_require__(5);
 	class ComponentMenu extends editor_custom_element_1.EditorCustomElement {
@@ -5738,11 +5826,11 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 266 */
+/* 268 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const editor_custom_element_1 = __webpack_require__(47);
+	const editor_custom_element_1 = __webpack_require__(49);
 	class TextBoxWithIcon extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
 	        return {
@@ -5797,11 +5885,11 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 267 */
+/* 269 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const editor_custom_element_1 = __webpack_require__(47);
+	const editor_custom_element_1 = __webpack_require__(49);
 	class ComponentOption extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "component-item" };
@@ -5814,18 +5902,18 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 268 */
+/* 270 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const editor_custom_element_1 = __webpack_require__(47);
-	const property_renderer_1 = __webpack_require__(52);
-	const horizontal_1 = __webpack_require__(64);
-	const icon_1 = __webpack_require__(76);
+	const editor_custom_element_1 = __webpack_require__(49);
+	const property_renderer_1 = __webpack_require__(55);
+	const horizontal_1 = __webpack_require__(67);
+	const icon_1 = __webpack_require__(77);
 	const element_renderer_1 = __webpack_require__(5);
-	const checkbox_input_1 = __webpack_require__(269);
+	const checkbox_input_1 = __webpack_require__(271);
 	const util_1 = __webpack_require__(13);
-	const editor_theme_1 = __webpack_require__(49);
+	const editor_theme_1 = __webpack_require__(52);
 	const expose_as_1 = __webpack_require__(30);
 	const component_1 = __webpack_require__(28);
 	class ComponentRenderer extends editor_custom_element_1.EditorCustomElement {
@@ -5925,13 +6013,17 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 269 */
+/* 271 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	const binding_compiler_1 = __webpack_require__(8);
-	const editor_custom_element_1 = __webpack_require__(47);
+	const editor_custom_element_1 = __webpack_require__(49);
 	class CheckboxInput extends editor_custom_element_1.EditorCustomElement {
+	    constructor() {
+	        super(...arguments);
+	        this.element = this;
+	    }
 	    getDomData() {
 	        return {
 	            tagName: "input",
@@ -5959,21 +6051,165 @@ webpackJsonp([0],[
 	        }
 	    }
 	    onRendered() {
-	        EditorRuntime.addUpdater(this);
-	    }
-	    onDestroyed() {
-	        EditorRuntime.removeUpdater(this);
+	        EditorRuntime.updateTree.add(this);
 	    }
 	}
 	exports.CheckboxInput = CheckboxInput;
 
 
 /***/ },
-/* 270 */
+/* 272 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const editor_custom_element_1 = __webpack_require__(47);
+	const editor_window_element_1 = __webpack_require__(79);
+	const editor_custom_element_1 = __webpack_require__(49);
+	const asset_folder_1 = __webpack_require__(273);
+	const vector2_1 = __webpack_require__(20);
+	const drag_asset_item_action_1 = __webpack_require__(288);
+	class AssetSectionItem extends editor_custom_element_1.EditorCustomElement {
+	    onRendered() {
+	    }
+	    createInitialStructure(children) {
+	        return [
+	            Hex.createElement("span", null, this.attrs.name)
+	        ];
+	    }
+	}
+	var assetManifest = {
+	    "Asset Type 1": [
+	        {
+	            type: "folder",
+	            contents: [
+	                "item 1",
+	                "item 2"
+	            ]
+	        },
+	        {
+	            type: "folder",
+	            contents: [
+	                "thing 1",
+	                "thing 2"
+	            ]
+	        },
+	        {
+	            type: "Asset",
+	            data: {}
+	        }
+	    ],
+	    "Asset 2": {}
+	};
+	class AssetWindow extends editor_window_element_1.EditorWindowElement {
+	    constructor() {
+	        super(...arguments);
+	        this.mouse = new vector2_1.Vector2();
+	    }
+	    getDomData() {
+	        return { tagName: "div", classList: "asset-window" };
+	    }
+	    onRendered() {
+	        this.loadAssets();
+	        EditorRuntime.updateTree.add(this);
+	    }
+	    loadAssets() {
+	    }
+	    onUpdated() {
+	        const input = EditorRuntime.getInput();
+	        if (!input.isMouseInEditorElement(this)) {
+	            return;
+	        }
+	        if (!EditorRuntime.getCurrentDragAction() && input.isMouseDown()) {
+	            input.getMouseDownDelta(this.mouse);
+	            if (this.mouse.lengthSquared() > 64) {
+	                input.getMouseDownPosition(this.mouse);
+	                let hoverElement = EditorRuntime.getEditorElementAtPoint(this.mouse);
+	                if (!hoverElement) {
+	                    return;
+	                }
+	                if (!(hoverElement instanceof AssetSectionItem)) {
+	                    hoverElement = hoverElement.getAncestorByType(AssetSectionItem);
+	                }
+	                if (!(hoverElement instanceof AssetSectionItem)) {
+	                    return;
+	                }
+	                const action = new drag_asset_item_action_1.DragAssetItemAction(hoverElement);
+	                EditorRuntime.beginDragAction(action);
+	            }
+	        }
+	    }
+	    startDraggingAsset(e) {
+	        alert("DOWN");
+	    }
+	    createInitialStructure() {
+	        return [
+	            Hex.createElement(asset_folder_1.AssetSection, { asset: { name: "Asset 1" } },
+	                Hex.createElement(AssetSectionItem, { name: "Text" }),
+	                Hex.createElement(AssetSectionItem, { name: "Text" }),
+	                Hex.createElement(AssetSectionItem, { name: "Text" })),
+	            Hex.createElement(asset_folder_1.AssetSection, { asset: { name: "Asset 1" } },
+	                Hex.createElement(AssetSectionItem, { name: "Text" }),
+	                Hex.createElement(AssetSectionItem, { name: "Text" }),
+	                Hex.createElement(AssetSectionItem, { name: "Text" })),
+	            Hex.createElement(asset_folder_1.AssetSection, { asset: { name: "Asset 1" } },
+	                Hex.createElement(AssetSectionItem, { name: "Text" }),
+	                Hex.createElement(AssetSectionItem, { name: "Text" }),
+	                Hex.createElement(AssetSectionItem, { name: "Text" }))
+	        ];
+	    }
+	}
+	exports.AssetWindow = AssetWindow;
+	createStyleSheet(`
+	<style>
+	.asset-window {
+	    width: 100%;
+	    height: 100%;
+	    background: mediumaquamarine;
+	}
+	</style>`);
+
+
+/***/ },
+/* 273 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	const icon_1 = __webpack_require__(77);
+	const horizontal_1 = __webpack_require__(67);
+	class AssetSection extends horizontal_1.HorizontalBase {
+	    getDomData() {
+	        const parent = super.getDomData();
+	        parent.classList += " asset-folder";
+	        return parent;
+	    }
+	    createInitialStructure(children) {
+	        return [
+	            Hex.createElement(icon_1.ToggleIcon, null),
+	            Hex.createElement(icon_1.FontIcon, { iconName: "folder" }),
+	            Hex.createElement("div", null,
+	                this.attrs.asset.name,
+	                Hex.createElement("div", { "x-child-root": true }, children)),
+	        ];
+	    }
+	    onMouseDown() {
+	        alert("Down on a thing");
+	    }
+	}
+	exports.AssetSection = AssetSection;
+	createStyleSheet(`<style>
+	 
+	 .asset-folder > * { 
+	    padding-left: 0.3em;
+	 }
+	 
+	`);
+
+
+/***/ },
+/* 274 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	const editor_custom_element_1 = __webpack_require__(49);
 	class MenuItem extends editor_custom_element_1.EditorCustomElement {
 	    noOp() { }
 	    createInitialStructure(children) {
@@ -6081,12 +6317,12 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 271 */
+/* 275 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const button_1 = __webpack_require__(63);
-	const editor_custom_element_1 = __webpack_require__(47);
+	const button_1 = __webpack_require__(66);
+	const editor_custom_element_1 = __webpack_require__(49);
 	class Toolbar extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
 	        return {
@@ -6127,16 +6363,16 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 272 */
+/* 276 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	const tslib_1 = __webpack_require__(25);
-	const component_renderer_1 = __webpack_require__(268);
+	const component_renderer_1 = __webpack_require__(270);
 	const sizing_component_1 = __webpack_require__(26);
 	const default_sizing_component_1 = __webpack_require__(24);
-	const inspector_row_1 = __webpack_require__(264);
-	const number_input_1 = __webpack_require__(273);
+	const inspector_row_1 = __webpack_require__(266);
+	const number_input_1 = __webpack_require__(277);
 	let SizingRenderer = class SizingRenderer extends component_renderer_1.ComponentRenderer {
 	    createInitialStructure(children) {
 	        const structure = [
@@ -6237,13 +6473,17 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 273 */
+/* 277 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	const binding_compiler_1 = __webpack_require__(8);
-	const editor_custom_element_1 = __webpack_require__(47);
+	const editor_custom_element_1 = __webpack_require__(49);
 	class NumberInput extends editor_custom_element_1.EditorCustomElement {
+	    constructor() {
+	        super(...arguments);
+	        this.element = this;
+	    }
 	    getDomData() {
 	        return {
 	            tagName: "input",
@@ -6283,10 +6523,7 @@ webpackJsonp([0],[
 	        }
 	    }
 	    onRendered() {
-	        EditorRuntime.addUpdater(this);
-	    }
-	    onDestroyed() {
-	        EditorRuntime.removeUpdater(this);
+	        EditorRuntime.updateTree.add(this);
 	    }
 	    formatNumber(input) {
 	        return parseFloat(input);
@@ -6302,15 +6539,15 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 274 */
+/* 278 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	const tslib_1 = __webpack_require__(25);
-	const property_drawer_1 = __webpack_require__(51);
-	const property_renderer_1 = __webpack_require__(52);
-	const inspector_row_1 = __webpack_require__(264);
-	const checkbox_input_1 = __webpack_require__(269);
+	const property_drawer_1 = __webpack_require__(54);
+	const property_renderer_1 = __webpack_require__(55);
+	const inspector_row_1 = __webpack_require__(266);
+	const checkbox_input_1 = __webpack_require__(271);
 	let BooleanRenderer = class BooleanRenderer extends property_renderer_1.PropertyRenderer {
 	    createInitialStructure(children) {
 	        const editorData = this.attrs.editorData;
@@ -6330,16 +6567,16 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 275 */
+/* 279 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	const tslib_1 = __webpack_require__(25);
-	const property_drawer_1 = __webpack_require__(51);
-	const property_renderer_1 = __webpack_require__(52);
+	const property_drawer_1 = __webpack_require__(54);
+	const property_renderer_1 = __webpack_require__(55);
 	const util_1 = __webpack_require__(13);
-	const number_input_1 = __webpack_require__(273);
-	const inspector_row_1 = __webpack_require__(264);
+	const number_input_1 = __webpack_require__(277);
+	const inspector_row_1 = __webpack_require__(266);
 	let NumberRenderer = class NumberRenderer extends property_renderer_1.PropertyRenderer {
 	    createInitialStructure(children) {
 	        const editorData = this.attrs.editorData;
@@ -6369,16 +6606,16 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 276 */
+/* 280 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	const tslib_1 = __webpack_require__(25);
-	const property_renderer_1 = __webpack_require__(52);
-	const property_drawer_1 = __webpack_require__(51);
+	const property_renderer_1 = __webpack_require__(55);
+	const property_drawer_1 = __webpack_require__(54);
 	const util_1 = __webpack_require__(13);
-	const inspector_row_1 = __webpack_require__(264);
-	const select_input_1 = __webpack_require__(277);
+	const inspector_row_1 = __webpack_require__(266);
+	const select_input_1 = __webpack_require__(281);
 	let EnumSelectRenderer = class EnumSelectRenderer extends property_renderer_1.PropertyRenderer {
 	    createOptions(e) {
 	        const retn = new Array();
@@ -6436,12 +6673,12 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 277 */
+/* 281 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	const binding_compiler_1 = __webpack_require__(8);
-	const editor_custom_element_1 = __webpack_require__(47);
+	const editor_custom_element_1 = __webpack_require__(49);
 	class SelectInput extends editor_custom_element_1.EditorCustomElement {
 	    constructor() {
 	        super(...arguments);
@@ -6497,15 +6734,15 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 278 */
+/* 282 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	const tslib_1 = __webpack_require__(25);
-	const property_drawer_1 = __webpack_require__(51);
-	const property_renderer_1 = __webpack_require__(52);
-	const inspector_row_1 = __webpack_require__(264);
-	const text_input_1 = __webpack_require__(263);
+	const property_drawer_1 = __webpack_require__(54);
+	const property_renderer_1 = __webpack_require__(55);
+	const inspector_row_1 = __webpack_require__(266);
+	const text_input_1 = __webpack_require__(265);
 	let StringRenderer = class StringRenderer extends property_renderer_1.PropertyRenderer {
 	    createInitialStructure(children) {
 	        const editorData = this.attrs.editorData;
@@ -6525,11 +6762,11 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 279 */
+/* 283 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const horizontal_1 = __webpack_require__(64);
+	const horizontal_1 = __webpack_require__(67);
 	class InlineField extends horizontal_1.HorizontalBase {
 	    createInitialStructure(children) {
 	        return [
@@ -6550,11 +6787,11 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 280 */
+/* 284 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const editor_custom_element_1 = __webpack_require__(47);
+	const editor_custom_element_1 = __webpack_require__(49);
 	class InspectorBody extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "vertical" };
@@ -6564,13 +6801,13 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 281 */
+/* 285 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const icon_1 = __webpack_require__(76);
-	const inspector_body_1 = __webpack_require__(280);
-	const editor_custom_element_1 = __webpack_require__(47);
+	const icon_1 = __webpack_require__(77);
+	const inspector_body_1 = __webpack_require__(284);
+	const editor_custom_element_1 = __webpack_require__(49);
 	class InspectorHeader extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "horizontal" };
@@ -6586,23 +6823,24 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 282 */
+/* 286 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const inline_field_1 = __webpack_require__(279);
-	const number_input_1 = __webpack_require__(273);
-	const horizontal_1 = __webpack_require__(64);
+	const inline_field_1 = __webpack_require__(283);
+	const number_input_1 = __webpack_require__(277);
+	const horizontal_1 = __webpack_require__(67);
 	const binding_compiler_1 = __webpack_require__(8);
 	const vector2_1 = __webpack_require__(20);
 	class Vector2Input extends horizontal_1.HorizontalBase {
+	    constructor() {
+	        super(...arguments);
+	        this.element = this;
+	    }
 	    onMounted() {
 	        this.ctx = this.attrs.binding.ctx;
 	        this.getterFn = binding_compiler_1.getGetter(this.attrs.binding.path);
-	        EditorRuntime.addUpdater(this, 150);
-	    }
-	    onDestroyed() {
-	        EditorRuntime.removeUpdater(this);
+	        EditorRuntime.updateTree.add(this);
 	    }
 	    onUpdated() {
 	        const value = this.getterFn(this.ctx) || new vector2_1.Vector2();
@@ -6630,32 +6868,88 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 283 */
+/* 287 */
+/***/ function(module, exports) {
+
+	"use strict";
+	const DragAnnotationMap = new Map();
+	class DragAction {
+	    onDragStart() { }
+	    onUpdate() { }
+	    onDrop(editorElement) { }
+	    static invokeDropHandlers(element, action) {
+	        DragAction.invoke(element, action, "drop");
+	    }
+	    static invokeEnterHandlers(element, action) {
+	        DragAction.invoke(element, action, "enter");
+	    }
+	    static invokeExitHandlers(element, action) {
+	        DragAction.invoke(element, action, "exit");
+	    }
+	    static invokeHoverHandlers(element, action) {
+	        DragAction.invoke(element, action, "hover");
+	    }
+	    static invoke(element, action, eventType) {
+	        const dragEventAnnotations = DragAnnotationMap.get(element.constructor);
+	        if (!dragEventAnnotations)
+	            return;
+	        const actionType = action.constructor;
+	        for (let i = 0; i < dragEventAnnotations.length; i++) {
+	            const annotation = dragEventAnnotations[i];
+	            if (annotation.actionType === actionType && annotation.eventType === eventType) {
+	                element[annotation.methodName](action);
+	            }
+	        }
+	    }
+	}
+	DragAction.MouseEnter = onDragActionMouseEnter;
+	DragAction.MouseExit = onDragActionMouseExit;
+	DragAction.MouseOver = onDragActionMouseOver;
+	DragAction.Drop = onDragActionDrop;
+	exports.DragAction = DragAction;
+	function onDragActionMouseEnter(actionType) {
+	    return function (target, propertyKey, descriptor) {
+	        const array = DragAnnotationMap.get(target) || new Array();
+	        array.push({ eventType: "enter", actionType: actionType, methodName: propertyKey });
+	        DragAnnotationMap.set(target, array);
+	    };
+	}
+	function onDragActionMouseExit(actionType) {
+	    return function (target, propertyKey, descriptor) {
+	        const array = DragAnnotationMap.get(target) || new Array();
+	        array.push({ eventType: "exit", actionType: actionType, methodName: propertyKey });
+	        DragAnnotationMap.set(target, array);
+	    };
+	}
+	function onDragActionDrop(actionType) {
+	    return function (target, propertyKey, descriptor) {
+	        const array = DragAnnotationMap.get(target) || new Array();
+	        array.push({ eventType: "drop", actionType: actionType, methodName: propertyKey });
+	        DragAnnotationMap.set(target, array);
+	    };
+	}
+	function onDragActionMouseOver(actionType) {
+	    return function (target, propertyKey, descriptor) {
+	        const array = DragAnnotationMap.get(target) || new Array();
+	        array.push({ eventType: "hover", actionType: actionType, methodName: propertyKey });
+	        DragAnnotationMap.set(target, array);
+	    };
+	}
+
+
+/***/ },
+/* 288 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
-	const editor_custom_element_1 = __webpack_require__(47);
-	class AssetWindow extends editor_custom_element_1.EditorCustomElement {
-	    getDomData() {
-	        return {
-	            tagName: "div", classList: "asset-window"
-	        };
-	    }
-	    createInitialStructure(children) {
-	        return [
-	            Hex.createElement("h1", null, "Hello Assets")
-	        ];
+	const drag_action_1 = __webpack_require__(287);
+	class DragAssetItemAction extends drag_action_1.DragAction {
+	    constructor(asset) {
+	        super();
+	        this.asset = asset;
 	    }
 	}
-	exports.AssetWindow = AssetWindow;
-	createStyleSheet(`
-	<style>
-	.asset-window {
-	    width: 100%;
-	    height: 100%;
-	    background: mediumaquamarine;
-	}
-	</style>`);
+	exports.DragAssetItemAction = DragAssetItemAction;
 
 
 /***/ }

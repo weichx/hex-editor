@@ -1,6 +1,6 @@
 import {getSetter, getGetter} from "../editor_ui_attrs/binding_compiler";
 import {EditorCustomElement} from "../editor_element/editor_custom_element";
-import {ILifecycle} from "../runtime";
+import {ILifecycle} from "../editor_runtime";
 
 interface ISelectInput extends IHTMLAttribute {
     binding : IBinding;

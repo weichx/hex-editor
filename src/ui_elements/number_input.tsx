@@ -7,7 +7,7 @@ interface INumberInput {
 }
 
 export class NumberInput extends EditorCustomElement<INumberInput> {
-
+    public element = this;
     protected getterFn : (renderCtx : any) => any;
     protected setterFn : (renderCtx : any, value : any) => void;
     protected lastValue : any;
@@ -57,11 +57,7 @@ export class NumberInput extends EditorCustomElement<INumberInput> {
     }
 
     public onRendered() {
-        EditorRuntime.addUpdater(this);
-    }
-
-    public onDestroyed() {
-        EditorRuntime.removeUpdater(this);
+        EditorRuntime.updateTree.add(this);
     }
 
     protected formatNumber(input : string) : number {

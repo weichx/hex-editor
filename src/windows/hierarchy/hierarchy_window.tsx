@@ -12,7 +12,7 @@ import {MouseButtonState} from "../../runtime/enums/e_mouse_state";
 import {Scene} from "../../runtime/scene";
 
 export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
-
+    public element = this;
     private elementMap : any = new Map<AppElement, HierarchyItem>();
     private contextSelection : AppElement = null;
     private contextMenu : EditorElement = null;
@@ -104,7 +104,7 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
                 }
             }
         }
-        else if (input.isMouseDown()) {
+        else if (input.isMouseInEditorElement(this) && input.isMouseDown()) {
             const mouse = input.getMousePosition();
             const hoverElement = EditorRuntime.getEditorElementAtPoint(mouse) as EditorElement;
             if (!hoverElement) return;
@@ -120,7 +120,7 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
         EditorRuntime.on(AppElementCreated, this);
         // EditorRuntime.on(AppElementDestroyed, this);
         // EditorRuntime.on(AppElementReparented, this);
-        EditorRuntime.addUpdater(this);
+        EditorRuntime.updateTree.add(this);
         this.onSceneLoaded(EditorRuntime.getScene());
     }
 

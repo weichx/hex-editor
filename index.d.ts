@@ -36,10 +36,6 @@ interface IHTMLAttribute {
     onMouseExit? : (e? : MouseEvent) => void;
 }
 
-interface EditorElementConstructor<T> {
-    new(t : any) : T;
-}
-
 interface IEditorAnnotationData {
     propertyName : string;
     propertyType : Constructor;
@@ -55,10 +51,8 @@ type Constructor = FunctionConstructor
     | BooleanConstructor
     | typeof Function
 
-type TypeConstructor<T> = { new(x? : any, y? : any, z?: any) : T }
 
 declare function createStyleSheet(css : string) : void;
-declare function addCssRule(rule : string, selector : string) : void;
 
 interface IBinding {
     ctx: any;
@@ -72,12 +66,6 @@ interface IDomData extends Object {
     classList? : string
 }
 
-interface IOffsetRectangle {
-    top? : number;
-    bottom? : number;
-    left? : number;
-    right? : number;
-}
 interface ISelectOption {
     name : string;
     value? : any
@@ -87,10 +75,6 @@ interface ISelectOption {
 
 declare const enum SplitDirection {
     Vertical, Horizontal
-}
-
-declare const enum BorderDecoration {
-    Solid, Dotted, Dashed
 }
 
 type IJson = any;

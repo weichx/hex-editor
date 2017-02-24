@@ -11,7 +11,7 @@ interface ISplitPaneAttrs extends IHTMLAttribute {
 }
 
 export class SplitPane extends EditorCustomElement<ISplitPaneAttrs> {
-
+    public element = this;
     protected content0Node : HTMLElement;
     protected content1Node : HTMLElement;
     protected gutterNode : HTMLElement;
@@ -112,7 +112,7 @@ export class SplitPane extends EditorCustomElement<ISplitPaneAttrs> {
     public onUpdated() {
         const input = EditorRuntime.getInput();
         if (input.isMouseUp()) {
-            EditorRuntime.removeUpdater(this);
+            EditorRuntime.updateTree.remove(this);
             return;
         }
 
@@ -142,7 +142,7 @@ export class SplitPane extends EditorCustomElement<ISplitPaneAttrs> {
     }
 
     protected startGutterDrag() {
-        EditorRuntime.addUpdater(this);
+        EditorRuntime.updateTree.add(this);
     }
 
     protected getMouseDelta() {

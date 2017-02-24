@@ -7,6 +7,7 @@ import {Component} from "./component";
 import {CommandType} from "./enums/e_command_type";
 import {LifeCycleFlag} from "./enums/e_lifecycle_flags";
 import {LayoutComponent} from "./components/layout/layout_component";
+import {DragAction} from "../drag_actions/drag_action";
 
 export interface IRuntimeCommand {
     type : CommandType,
@@ -19,6 +20,7 @@ export abstract class RuntimeImpl extends EventEmitter {
     protected input : Input;
     protected appElementRegistry : Indexable<AppElement>;
     protected commandQueue : Array<IRuntimeCommand>;
+    protected draggedAction : DragAction;
 
     protected pendingComponents : Array<Component>;
     protected updateComponents : Array<Component>;
@@ -147,6 +149,8 @@ export abstract class RuntimeImpl extends EventEmitter {
     public getInput() : Input {
         return this.input;
     }
+
+    public MouseCache : Vector2 = new Vector2();
 
     //todo will need to figure out how to handle delete commands
     //todo will need to figure out how to aggregate commands

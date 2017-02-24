@@ -3,55 +3,56 @@ import {EditorElement} from "../editor_element/editor_element";
 
 interface IconAttrs {
     iconName : string;
+    size? : "small" | "normal" | "large";
 }
 
 export abstract class BaseIcon extends EditorCustomElement<IconAttrs> {
 
-    protected abstract getIconClass() : string;
+    public prefix = "fa";
 
-    protected abstract getIconPrefix() : string;
+    protected getDomData() : IDomData {
+        return { tagName: "i", classList: this.getClassList() }
+    }
+
+    public getIconSize() : string {
+        return " icon " + (this.attrs.size || "normal");
+    }
+
+    public getClassList() : string {
+        return this.prefix
+            + " "
+            + this.getPrefixedIconName(this.attrs.iconName)
+            + this.getIconSize();
+    }
+
+    protected getPrefixedIconName(iconName : string) : string {
+        return this.prefix + "-" + iconName;
+    };
 
     public setIcon(iconName : string) {
         const domNode = this.getDomNode();
-        domNode.classList.remove(this.getIconPrefix() + this.attrs.iconName);
-        domNode.classList.add(this.getIconPrefix() + iconName);
+        domNode.classList.remove(this.getPrefixedIconName(this.attrs.iconName));
+        domNode.classList.add(this.getPrefixedIconName(iconName));
         this.attrs.iconName = iconName;
     }
 
-    public createInitialStructure() {
-        return <i class={this.getIconClass() + " " + this.getIconPrefix() + this.attrs.iconName}/>
-    }
 }
 
 export class FontIcon extends BaseIcon {
 
-    protected getIconClass() : string {
-        return "fa fa-lg";
-    }
-
-    protected getIconPrefix() : string {
-        return "fa-";
-    }
-
-    public onMounted() {
-        this.getDomNode().style.lineHeight = "1";
-    }
 }
 
 interface IToggleIconAttrs extends IHTMLAttribute {
     visibilityTarget? : () => EditorElement;
     open? : boolean;
     direction? : string;
+    size?: "small" | "normal" | "large"
 }
-
 
 export class ToggleIcon extends EditorCustomElement<IToggleIconAttrs> {
 
     protected getDomData() : IDomData {
-        return {
-            tagName: "i",
-            classList: this.getClassList()
-        };
+        return { tagName: "i",  classList: this.getClassList() };
     }
 
     public onMounted() {
@@ -83,6 +84,10 @@ export class ToggleIcon extends EditorCustomElement<IToggleIconAttrs> {
         }, false);
     }
 
+    private getIconSize() : string {
+        return " icon " + (this.attrs.size || "normal");
+    }
+
     public getClassList() {
         const attrs = this.attrs;
         attrs.open = attrs.open === void 0 ? true : Boolean(attrs.open);
@@ -91,9 +96,20 @@ export class ToggleIcon extends EditorCustomElement<IToggleIconAttrs> {
             this.attrs.direction = "right";
         }
         if (this.attrs.open) {
-            return "fa fa-chevron-down";
+            return "fa fa-chevron-down" + this.getIconSize();
         }
-        return "fa fa-chevron-" + this.attrs.direction;
+        return "fa fa-chevron-" + this.attrs.direction + this.getIconSize();
     }
 
 }
+
+createStyleSheet(`<style>
+    
+    .icon.small {
+        font-size: 0.7em;
+    }
+
+    .icon.large {
+        font-size:1.25em;
+    }
+`);

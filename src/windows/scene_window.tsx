@@ -41,7 +41,6 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
     public setPreviewSize(breakpointType : BreakpointType) : void {
         this.currentBreakpoint = breakpointType;
         this.frameDimensions = Breakpoint.getDimensions(breakpointType);
-        this.resetZoom();
         this.panValue.x = ((this.width * 0.5) - (this.frameDimensions.x * 0.5)) | 0;
         this.panValue.y = this.baseYOffset;
 
@@ -51,6 +50,7 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
             this.frameDimensions.x,
             this.frameDimensions.y
         );
+        this.resetZoom();
         this.drawFrameOutline();
         //invoke break point code
         this.paintScene();
@@ -134,6 +134,15 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
 
     private resetZoom() : void {
         this.zoomLevel = 1.1;
+        const width = this.width;
+        const breakpointWidth = this.frameDimensions.x;
+
+        if(breakpointWidth > width) {
+            this.zoomLevel =  width / breakpointWidth;
+            this.panValue.x = ((this.zoomLevel * breakpointWidth * 0.5) - (width * 0.5)) | 0;
+            this.panValue.y = this.baseYOffset;
+        }
+
         this.zoom(1);
     }
 

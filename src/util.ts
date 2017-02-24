@@ -59,7 +59,7 @@ export function hitTestLine(x1 : number, y1 : number, x2 : number, y2 : number, 
 }
 
 export function randomPositiveInteger() {
-    return ~~(Math.random() * 9999999 + 1);
+    return ~~(Math.random() * Number.MAX_SAFE_INTEGER);
 }
 
 export function titlize(input : string) : string {

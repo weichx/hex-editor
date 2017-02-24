@@ -69,6 +69,7 @@ createStyleSheet(`<style>
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    z-index:2;
 }
 
 .scene-size .btn {

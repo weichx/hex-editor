@@ -1,3 +1,4 @@
+
 export class Vector2 {
 
     public x : number;
@@ -82,11 +83,11 @@ export class Vector2 {
         return this;
     }
 
-    public dot(other : Vector2) : number {
+    public dot(other : {x : number, y : number }) : number {
         return this.x * other.x + this.y * other.y;
     }
 
-    public cross(other : Vector2) : number {
+    public cross(other : {x : number, y : number }) : number {
         return (this.x * other.y ) - (this.y * other.x );
     }
 
@@ -124,23 +125,23 @@ export class Vector2 {
         return this.x * this.x + this.y * this.y;
     }
 
-    public addVector(other : Vector2) : this {
+    public addVector(other : {x : number, y : number }) : this {
         this.x += other.x;
         this.y += other.y;
         return this;
     }
 
-    public subVector(other : Vector2) : this {
+    public subVector(other : {x : number, y : number }) : this {
         this.x -= other.x;
         this.y -= other.y;
         return this;
     }
 
-    public addVectorNew(other : Vector2) : Vector2 {
+    public addVectorNew(other : {x : number, y : number }) : Vector2 {
         return new Vector2(this.x + other.x, this.y + other.y);
     }
 
-    public subVectorNew(other : Vector2) : Vector2 {
+    public subVectorNew(other : {x : number, y : number }) : Vector2 {
         return new Vector2(this.x - other.x, this.y - other.y);
     }
 
@@ -167,19 +168,19 @@ export class Vector2 {
         return new Vector2(nx, ny);
     }
 
-    public project(other : Vector2) : Vector2 {
+    public project(other : {x : number, y : number }) : Vector2 {
         const e = ( (this.x * other.x) + (this.y * other.y) ) / ((other.x * other.x) + (other.y * other.y));
         this.x = e * other.x;
         this.y = e * other.y;
         return this;
     }
 
-    public projectNew(other : Vector2) : Vector2 {
+    public projectNew(other : {x : number, y : number }) : Vector2 {
         const e = ( (this.x * other.x) + (this.y * other.y) ) / ((other.x * other.x) + (other.y * other.y));
         return new Vector2(e * other.x, e * other.y);
     }
 
-    public distanceTo(other : Vector2) : number {
+    public distanceTo(other : {x : number, y : number }) : number {
         const dx = this.x - other.x;
         const dy = this.y - other.y;
         return dx * dx + dy * dy;
@@ -193,7 +194,7 @@ export class Vector2 {
         return this.x === 0 && this.y === 0;
     }
 
-    public isEqual(other : Vector2) : boolean {
+    public isEqual(other : {x : number, y : number }) : boolean {
         return this.x === other.x && this.y === other.y;
     }
 

@@ -7,15 +7,32 @@ declare global {
     }
 }
 
+
+export let InputEventAnnotationMap = new Map<Object, Array<any>>();
+
 export class EditorHTMLElement<T extends IHTMLAttribute> extends EditorElement {
 
     public attrs : T;
     public tagName : string;
+    public element = this; //this is for the updateTree -- but I don't like it
 
     constructor(attrs : T, tagName : string = "div") {
         super();
         this.attrs = attrs || {} as T;
         this.tagName = tagName;
+        const proto = this.constructor.prototype;
+        const eventAnnotations = InputEventAnnotationMap.get(this.constructor.prototype);
+
+        if(eventAnnotations) {
+            for(let i = 0; i < eventAnnotations.length; i++) {
+                const annotation = eventAnnotations[i];
+                this.addEventListener(annotation.type, (e : MouseEvent) => {
+                    (this as any)[annotation.methodName](e);
+                    e.stopPropagation();
+                });
+            }
+        }
+
     }
 
     protected getDomData() : IDomData {
@@ -138,5 +155,10 @@ export class EditorHTMLElement<T extends IHTMLAttribute> extends EditorElement {
         }
         return retn;
     }
+
+
+
+
+
 
 }

@@ -58,10 +58,15 @@ export class Input {
         // }, true);
     }
 
-    protected static normalizeWheelValue(value : number) : number {
-        if(value === 0) return 0;
-        if(value > 0) return 1;
-        return -1;
+    public update() {
+        this.lastX = this.x;
+        this.lastY = this.y;
+        this.lastMouseButtonState = this.mouseButtonState;
+        this.mouseWheelDeltaX = 0;
+        this.mouseWheelDeltaY = 0;
+        for (let i = 8; i < 222; i++) {
+            this.keyMapPrevious[i] = this.keyMapCurrent[i];
+        }
     }
 
     public wasMouseDown() : boolean {
@@ -124,23 +129,34 @@ export class Input {
         return this.keyMapPrevious[key] && !this.keyMapCurrent[key];
     }
 
-    public getMouseDelta() {
+    public getMouseDelta(cache? : Vector2) {
+        if(cache) {
+            cache.x = this.x - this.lastX;
+            cache.y = this.y - this.lastY;
+            return cache;
+        }
         return new Vector2(this.x - this.lastX, this.y - this.lastY);
     }
 
-    public getMouseWheelDelta() : Vector2 {
-        return new Vector2(this.mouseWheelDeltaX, this.mouseWheelDeltaY);
+    public getMouseDownDelta(cache? : Vector2) {
+        if(cache) {
+            cache.x = this.x - this.mouseDownPosition.x;
+            cache.y = this.y - this.mouseDownPosition.y;
+            return cache;
+        }
+        return new Vector2(
+            this.x - this.mouseDownPosition.x,
+            this.y - this.mouseDownPosition.y
+        );
     }
 
-    public update() {
-        this.lastX = this.x;
-        this.lastY = this.y;
-        this.lastMouseButtonState = this.mouseButtonState;
-        this.mouseWheelDeltaX = 0;
-        this.mouseWheelDeltaY = 0;
-        for (let i = 8; i < 222; i++) {
-            this.keyMapPrevious[i] = this.keyMapCurrent[i];
+    public getMouseWheelDelta(cache? : Vector2) : Vector2 {
+        if(cache) {
+            cache.x = this.mouseWheelDeltaX;
+            cache.y = this.mouseWheelDeltaY;
+            return cache;
         }
+        return new Vector2(this.mouseWheelDeltaX, this.mouseWheelDeltaY);
     }
 
     public getMousePosition(cache? : Vector2) : Vector2 {
@@ -150,6 +166,45 @@ export class Input {
             return cache;
         }
         return new Vector2(this.x, this.y);
+    }
+
+    public getMouseDownPosition(cache? : Vector2) : Vector2 {
+        if(cache) {
+            cache.x = this.mouseDownPosition.x;
+            cache.y = this.mouseDownPosition.y;
+            return cache;
+        }
+        return this.mouseDownPosition.clone();
+    }
+
+    public isMouseInAppElement(element : AppElement) : boolean {
+        return element.containsPoint(new Vector2(this.x, this.y));
+    }
+
+    public getMouseRelative(element : AppElement, cache? : Vector2) {
+        const rect = (element as any).rect;
+        if(cache) {
+            cache.x = this.x - rect.x;
+            cache.y = this.y - rect.y;
+            return cache;
+        }
+        return new Vector2(
+            this.x - rect.x,
+            this.y - rect.y
+        );
+    }
+
+    public getMouseDownRelative(element : AppElement, cache? : Vector2) {
+        const rect = (element as any).rect;
+        if(cache) {
+            cache.x = this.mouseDownPosition.x - rect.x;
+            cache.y = this.mouseDownPosition.y - rect.y;
+            return cache;
+        }
+        return new Vector2(
+            this.mouseDownPosition.x - rect.x,
+            this.mouseDownPosition.y - rect.y
+        );
     }
 
     public copyTo(input : Input) : void {
@@ -165,24 +220,10 @@ export class Input {
         }
     }
 
-    public isMouseInAppElement(element : AppElement) : boolean {
-        return element.containsPoint(new Vector2(this.x, this.y));
-    }
-
-    public getMouseRelative(element : AppElement) {
-        const rect = (element as any).rect;
-        return new Vector2(
-            this.x - rect.x,
-            this.y - rect.y
-        );
-    }
-
-    public getMouseDownRelative(element : AppElement) {
-        const rect = (element as any).rect;
-        return new Vector2(
-            this.mouseDownPosition.x - rect.x,
-            this.mouseDownPosition.y - rect.y
-        );
+    protected static normalizeWheelValue(value : number) : number {
+        if(value === 0) return 0;
+        if(value > 0) return 1;
+        return -1;
     }
 
 }

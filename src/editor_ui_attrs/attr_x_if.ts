@@ -1,7 +1,7 @@
 import {createGetter} from "./binding_compiler";
 import {EditorElement} from "../editor_element/editor_element";
 import {IPoolable2, ObjectPool2} from "../object_pool";
-import {ILifecycle} from "../runtime";
+import {ILifecycle} from "../editor_runtime";
 
 interface XIfBinding {
     ctx : any,

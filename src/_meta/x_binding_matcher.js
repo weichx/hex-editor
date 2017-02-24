@@ -56,7 +56,6 @@ module.exports = {
         const rest = block.substring(currPos);
         const captureTokens = parse(targetText);
         const path = recurseToString(captureTokens.path, captureTokens.refs);
-        console.log(`new EditorBindingElement(${captureTokens.ctx}, ${path})` + rest);
         return `new window.EditorBindingElement(${captureTokens.ctx}, ${path})` + rest;
     }
 };

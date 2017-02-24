@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    user-select: none;
 }
 
 html, body, #root {
@@ -31,4 +30,8 @@ html, body, #root {
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+html {
+    user-select: none;
 }

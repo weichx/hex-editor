@@ -1,4 +1,3 @@
-import a = require("./array");
 
 export interface ITraversable {
     parent : ITraversable;
@@ -8,7 +7,7 @@ export interface IElementReference {
     element : ITraversable;
 }
 
-export class PseudoTree<T extends PseudoTreeNode<U>, U extends IElementReference> {
+export class ShadowTree<T extends ShadowTreeNode<U>, U extends IElementReference> {
 
     private nodeMap : Map<ITraversable, T>;
     private rootNodes : Array<T>;
@@ -41,10 +40,13 @@ export class PseudoTree<T extends PseudoTreeNode<U>, U extends IElementReference
     public remove(item : U) : void {
         let node = this.nodeMap.get(item.element);
         if(!node) return;
-
+        this.nodeMap.delete(item.element);
         const rootIdx = this.rootNodes.indexOf(node);
         if(rootIdx !== -1) {
-            this.rootNodes.splice(rootIdx, 1);
+            this.rootNodes.removeAt(rootIdx);
+            for(let i = 0; i < node.children.length; i++) {
+                this.rootNodes.push(node.children[i] as T);
+            }
             return;
         }
 
@@ -53,7 +55,7 @@ export class PseudoTree<T extends PseudoTreeNode<U>, U extends IElementReference
 
         const nodeIdx = parentNode.children.indexOf(node);
         if(nodeIdx !== -1) {
-            parentNode.children.splice(nodeIdx, 1);
+            parentNode.children.removeAt(nodeIdx);
         }
 
         for(let i = 0; i < node.children.length; i++) {
@@ -69,7 +71,7 @@ export class PseudoTree<T extends PseudoTreeNode<U>, U extends IElementReference
 
         for(let i = 0; i < parentTreeNode.children.length; i++) {
             const childNode = parentTreeNode.children[i];
-            if(PseudoTree.isDescendant(childNode.element, treeNode.element)) {
+            if(ShadowTree.isDescendant(childNode.element, treeNode.element)) {
                 treeNode.children.add(childNode);
                 parentTreeNode.children.splice(i--, 1);
             }
@@ -81,7 +83,7 @@ export class PseudoTree<T extends PseudoTreeNode<U>, U extends IElementReference
         //if any root nodes should be children of this node, remove from root and add to new node
         for(let i = 0; i < this.rootNodes.length; i++) {
             const node = this.rootNodes[i];
-            if(PseudoTree.isDescendant(node.element, treeNode.element)) {
+            if(ShadowTree.isDescendant(node.element, treeNode.element)) {
                 treeNode.children.add(node);
                 this.rootNodes.removeAt(i);
             }
@@ -112,9 +114,9 @@ export class PseudoTree<T extends PseudoTreeNode<U>, U extends IElementReference
 
 }
 
-export abstract class PseudoTreeNode<T extends IElementReference> {
+export abstract class ShadowTreeNode<T extends IElementReference> {
 
-    public readonly children : Array<PseudoTreeNode<T>>;
+    public readonly children : Array<ShadowTreeNode<T>>;
     public readonly items : Array<T>;
     public readonly element : ITraversable;
 

@@ -10,20 +10,21 @@ import {CommandInvoker} from "./browser/cmd_invokers/_cmd_invoker";
 import {DefaultSizingComponent} from "./runtime/components/layout/default/default_sizing_component";
 import {HorizontalStackLayout} from "./runtime/components/layout/default/default_layout_component";
 import {BackgroundComponent} from "./runtime/components/background_component";
-import {PseudoTreeNode, PseudoTree} from "./runtime/tree";
+import {ShadowTree, ShadowTreeNode} from "./runtime/tree";
 import {RuntimeImpl, IRuntimeCommand} from "./runtime/runtime";
 import {AppElement} from "./runtime/app_element";
 import {Scene} from "./runtime/scene";
 import {CommandType} from "./runtime/enums/e_command_type";
 import {Component} from "./runtime/component";
-import {Rectangle} from "./runtime/rectangle";
 import {Vector2} from "./runtime/vector2";
 import {TypeOf} from "./runtime/interfaces/i_typeof";
-import {LayoutComponent} from "./runtime/components/layout/layout_component";
+import {DragAction} from "./drag_actions/drag_action";
 
 export type CommandInterpreter = (command : { type : number, id : number }) => void;
 
-class UpdateNode extends PseudoTreeNode<ILifecycle> {
+let mouseCache = new Vector2();
+
+class UpdateNode extends ShadowTreeNode<ILifecycle> {
 
     traverse() : boolean {
         const element = this.element as EditorElement;
@@ -66,20 +67,21 @@ export interface ILifecycle {
 export class EditorRuntimeImplementation extends RuntimeImpl {
 
     private selectedElement : AppElement;
-    private updateCycles : Array<UpdateCycle>;
     private domElementIdMap : IHTMLElementMap;
     private interpreters : Indexable<CommandInterpreter>;
     //todo -- maybe bucket this
-    public readonly updateTree : PseudoTree<UpdateNode, ILifecycle>;
+    public readonly updateTree : ShadowTree<UpdateNode, ILifecycle>;
+    private lastEnteredElement : EditorElement;
 
     constructor() {
         super();
         this.domElementIdMap = new Map<number, HTMLElement>();
         this.interpreters = {};
         this.selectedElement = null;
-        this.updateCycles = [];
         this.input = new EditorInput();
-        this.updateTree = new PseudoTree(UpdateNode);
+        this.updateTree = new ShadowTree(UpdateNode);
+        this.draggedAction = null;
+        this.lastEnteredElement = null;
     }
 
     private suppressAddElement(fn : () => void) : void {
@@ -156,6 +158,18 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
         this.emit(SelectionChanged, newSelection, oldSelection);
     }
 
+    public beginDragAction(dragAction : DragAction) : void {
+        if(this.draggedAction) {
+            throw new Error("Cannot initiate another drag action while one exists!");
+        }
+        this.draggedAction = dragAction;
+        this.draggedAction.onDragStart();
+    }
+
+    public getCurrentDragAction() : DragAction {
+        return this.draggedAction;
+    }
+
     public getSelection() : AppElement {
         return this.selectedElement;
     }
@@ -173,18 +187,28 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
 
         this.pendingComponents.length = 0;
 
-        this.updateTree.traverse();
+        if(this.draggedAction) {
+            const mouse = this.input.getMousePosition(mouseCache);
+            const element = this.getEditorElementAtPoint(mouse);
+            this.draggedAction.onUpdate();
+            if(this.input.isMouseUp()) {
+                this.draggedAction.onDrop(element);
+                DragAction.invokeDropHandlers(element, this.draggedAction);
+                this.draggedAction = null;
+            }
+            else {
+                //DragAction.handleDragActionDrop(this.draggedAction.constructor);
 
-        for (var i = 0; i < this.updateCycles.length; i++) {
-            this.updateCycles[i].update(timeStamp);
+            }
         }
+
+        this.updateTree.traverse();
 
         //the real runtime implementation of buffer building lives
         // on a worker thread and is decoded on a UI thread
         const commandBuffer = this.buildCommandBuffer();
         this.decodeCommandBuffer(commandBuffer);
         this.input.update();
-       // requestAnimationFrame(this.boundUpdate);
     }
 
     protected buildCommandBuffer() : string {
@@ -229,20 +253,6 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
         }
     }
 
-    public addUpdater(updater : Updater, interval : number = -1) {
-        this.getUpdateCycleForInterval(interval).addUpdater(updater);
-    }
-
-    public removeUpdater(updater : Updater) {
-        for (let i = 0; i < this.updateCycles.length; i++) {
-            const length = this.updateCycles[i].removeUpdater(updater);
-            if (length === 0) {
-                this.updateCycles.removeAt(i);
-                return;
-            }
-        }
-    }
-
     //todo hide this in the api
     public addElement(appElement : AppElement) : void {
         //todo destroy this when element is nuked
@@ -281,19 +291,8 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
     }
 
     public getEditorElementAtPoint(point : Vector2) : EditorElement {
+        //todo if this element isn't an editor element, maybe recurse upwards
         return document.elementFromPoint(point.x, point.y).__editorElement;
-    }
-
-    private getUpdateCycleForInterval(interval : number) : UpdateCycle {
-        if (interval < 0) interval = 0;
-        for (let i = 0; i < this.updateCycles.length; i++) {
-            if (this.updateCycles[i].interval === interval) {
-                return this.updateCycles[i];
-            }
-        }
-        const updateCycle = new UpdateCycle(interval);
-        this.updateCycles.add(updateCycle);
-        return updateCycle;
     }
 
     protected start(appRoot : TypeOf<EditorElement>, attrs = {}) : void {
@@ -312,50 +311,6 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
 
     protected sendCommandBuffer(buffer : string) : void {
         debugger;
-    }
-
-}
-
-export interface Updater {
-    onUpdated : () => void;
-}
-
-class UpdateCycle {
-
-    private updaters : Array<Updater>;
-    private lastUpdate : number;
-    public readonly interval : number;
-
-    constructor(interval : number) {
-        this.interval = interval;
-        this.lastUpdate = 0;
-        this.updaters = [];
-    }
-
-    update(timeStamp : number) {
-        if (timeStamp - this.lastUpdate > this.interval) {
-            this.lastUpdate = timeStamp;
-            for (let i = 0; i < this.updaters.length; i++) {
-                this.updaters[i].onUpdated();
-            }
-        }
-    }
-
-    addUpdater(updater : Updater) : boolean {
-        const idx = this.updaters.indexOf(updater);
-        if (idx === -1) {
-            this.updaters.add(updater);
-            return true;
-        }
-        return false;
-    }
-
-    removeUpdater(updater : Updater) : number {
-        const idx = this.updaters.indexOf(updater);
-        if (idx !== -1) {
-            this.updaters.splice(idx, 1);
-        }
-        return this.updaters.length;
     }
 
 }

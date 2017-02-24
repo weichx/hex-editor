@@ -180,7 +180,7 @@ export abstract class EditorElement {
         }
     }
 
-    public getChildrenByType<T>(type : EditorElementConstructor<T>) : T[] {
+    public getChildrenByType<T extends EditorElement>(type : INewable<T>) : T[] {
         const retn = new Array<T>();
         for (let i = 0; i < this.children.length; i++) {
             if (this.children[i] instanceof type) {
@@ -190,7 +190,7 @@ export abstract class EditorElement {
         return retn;
     }
 
-    public getChildByType<T>(type : EditorElementConstructor<T>) : T {
+    public getChildByType<T extends EditorElement>(type : INewable<T>) : T {
         for (let i = 0; i < this.children.length; i++) {
             if (this.children[i] instanceof type) {
                 return this.children[i] as any;
@@ -199,7 +199,8 @@ export abstract class EditorElement {
         return null;
     }
 
-    public getAncestorByType<T extends EditorElement>(type : EditorElementConstructor<T>) : T {
+    public getAncestorByType<T extends EditorElement>(type : INewable<T>, allowSelf = false) : T {
+        if(allowSelf && this instanceof type) return this as any; //why do I need a cast and why can't it be T?
         let ptr = this.parent as any;
         while (ptr) {
             if (ptr instanceof type) {
@@ -210,7 +211,7 @@ export abstract class EditorElement {
         return null;
     }
 
-    public getFirstOfTypeUpwards<T extends EditorElement>(type : EditorElementConstructor<T>) : T {
+    public getFirstOfTypeUpwards<T extends EditorElement>(type : INewable<T>) : T {
         if (this instanceof type) return this as any;
         return this.getAncestorByType(type);
     }

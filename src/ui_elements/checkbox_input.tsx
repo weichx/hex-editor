@@ -7,7 +7,7 @@ interface ICheckboxInput extends IHTMLAttribute {
 }
 
 export class CheckboxInput extends EditorCustomElement<ICheckboxInput> {
-
+    public element = this;
     private ctx : any;
     private getterFn : (renderCtx : any) => any;
     private setterFn : (renderCtx : any, value : any) => void;
@@ -43,11 +43,7 @@ export class CheckboxInput extends EditorCustomElement<ICheckboxInput> {
     }
 
     public onRendered() {
-        EditorRuntime.addUpdater(this);
-    }
-
-    public onDestroyed() {
-        EditorRuntime.removeUpdater(this);
+        EditorRuntime.updateTree.add(this);
     }
 
 }

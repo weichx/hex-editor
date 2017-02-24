@@ -1,4 +1,4 @@
-import {EditorRuntimeImplementation} from "./runtime";
+import {EditorRuntimeImplementation} from "./editor_runtime";
 import {createElement} from "./editor_element/element_renderer";
 import {EditorBindingElement as EBindingElement, EditorBindingElement} from "./editor_element/editor_binding_element";
 import {RuntimeImpl} from "./runtime/runtime";

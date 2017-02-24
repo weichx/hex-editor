@@ -9,7 +9,7 @@ interface IVector2Input {
 }
 
 export class Vector2Input extends HorizontalBase<IVector2Input> {
-
+    public element = this;
     protected getterFn : (renderCtx : any) => any;
     protected ctx : any;
     protected lastValue : Vector2;
@@ -18,11 +18,7 @@ export class Vector2Input extends HorizontalBase<IVector2Input> {
     public onMounted() {
         this.ctx = this.attrs.binding.ctx;
         this.getterFn = getGetter(this.attrs.binding.path);
-        EditorRuntime.addUpdater(this, 150);
-    }
-
-    public onDestroyed() {
-        EditorRuntime.removeUpdater(this);
+        EditorRuntime.updateTree.add(this);
     }
 
     public onUpdated() {

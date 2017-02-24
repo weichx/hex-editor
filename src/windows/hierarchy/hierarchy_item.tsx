@@ -2,6 +2,7 @@ import {ToggleIcon} from "../../ui_elements/icon";
 import {EditorCustomElement} from "../../editor_element/editor_custom_element";
 import {HierarchyWindow} from "./hierarchy_window";
 import {AppElement} from "../../runtime/app_element";
+import {HierarchyInsertTarget} from "./hierarchy_insert_target";
 
 interface IHierarchyItem {
     element : AppElement;
@@ -37,16 +38,6 @@ export class HierarchyItem extends EditorCustomElement<IHierarchyItem> {
         this.getChildById("item-details").getDomNode().style.background = null;
     }
 
-    private mouseEnterSpace() : void {
-        if (this.getAncestorByType(HierarchyWindow).isDragging()) {
-            this.getChildById("spacer").getDomNode().style.background = "blue";
-        }
-    }
-
-    private mouseExitSpace() : void {
-        this.getChildById("spacer").getDomNode().style.background = null;
-    }
-
     public createInitialStructure(children : any) {
         const appElement = this.attrs.element;
         let padding = (appElement.getDepth() + 1);
@@ -64,12 +55,7 @@ export class HierarchyItem extends EditorCustomElement<IHierarchyItem> {
 
                 <a> { Bind(appElement.name) } </a>
             </div>,
-
-            <div x-id="spacer"
-                 class="item-insert-space"
-                 onMouseEnter={this.mouseEnterSpace}
-                 onMouseExit={this.mouseExitSpace}/>,
-
+            <HierarchyInsertTarget/>,
             <div x-child-root class="item-children"></div>
         ]
     }

@@ -25,7 +25,7 @@ coverDiv.style.zIndex = "400";
 coverDiv.style.background = "magenta";
 
 export class WindowFrame extends EditorCustomElement<{}> {
-
+    public element = this;
     private windows : Array<IWindowData>;
     private isCoverInDom : boolean;
     private draggedWindowData : IWindowData;
@@ -68,7 +68,7 @@ export class WindowFrame extends EditorCustomElement<{}> {
         if (Input.isMouseUp()) {
             this.isCoverInDom = false;
             coverDiv.remove();
-            EditorRuntime.removeUpdater(this);
+            EditorRuntime.updateTree.remove(this);
             const mouse = Input.getMousePosition();
             const hoverElement = EditorRuntime.getEditorElementAtPoint(mouse);
             const windowFrame = hoverElement.getAncestorByType(WindowFrame);
@@ -200,7 +200,7 @@ export class WindowFrame extends EditorCustomElement<{}> {
 
     private startTabDrag(windowData : IWindowData) : void {
         this.draggedWindowData = windowData;
-        EditorRuntime.addUpdater(this);
+        EditorRuntime.updateTree.add(this);
     }
 
     private createWindowData(content : EditorWindowElement<IWindowAttributes>) {
