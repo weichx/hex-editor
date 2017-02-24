@@ -77,6 +77,9 @@ declare const enum SplitDirection {
     Vertical, Horizontal
 }
 
+type IResolve<T> =  (value?: T | PromiseLike<T>) => void;
+type IReject<T> = (reason?: T) => void;
+
 type IJson = any;
 type IHTMLElementMap = Map<number, HTMLElement>;
 

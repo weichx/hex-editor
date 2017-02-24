@@ -1,4 +1,10 @@
-import {Vector2} from "./runtime/vector2";
+
+export function setDefault<T>(value : any, defaultValue : T) : T {
+   if(value === void 0 || typeof defaultValue !== typeof value) {
+       return defaultValue;
+   }
+}
+
 export function traverse(node : any, fn : (n : any) => void) {
     if (node.children) {
         for (let i = 0; i < node.children.length; i++) {
@@ -46,15 +52,15 @@ export function clamp01(value : number) : number {
     return value;
 }
 
-export function hitTestRect(x : number, y : number, w : number, h : number, point : Vector2) {
+export function hitTestRect(x : number, y : number, w : number, h : number, point : {x: number, y : number}) {
     return point.x >= x && x + w >= point.x && point.y >= y && y + h >= point.y
 }
 
-export function distanceTestPoint(x : number, y : number, point : Vector2, radius : number) {
+export function distanceTestPoint(x : number, y : number, point : {x: number, y : number}, radius : number) {
     return ((x - point.x) * (x - point.x)) + ((y - point.y) * (y - point.y)) < radius * radius;
 }
 
-export function hitTestLine(x1 : number, y1 : number, x2 : number, y2 : number, point : Vector2, threshold = 1) {
+export function hitTestLine(x1 : number, y1 : number, x2 : number, y2 : number, point : {x: number, y : number}, threshold = 1) {
     return distanceSquaredToLineSegment(x1, y1, x2, y2, point.x, point.y) <= threshold * threshold;
 }
 

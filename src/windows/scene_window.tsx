@@ -11,6 +11,9 @@ import {Vector2} from "../runtime/vector2";
 import {Breakpoint, BreakpointType} from "../runtime/breakpoint";
 import {ScenePanTool} from "./scene/pan_tool";
 import {clamp} from "../util";
+import {DragAction} from "../drag_actions/drag_action";
+import {DragAssetItemAction} from "../drag_actions/drag_asset_item_action";
+import {TypographyComponent} from "../runtime/components/typography_component";
 
 export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
     public element = this;
@@ -181,13 +184,12 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
         this.stage = new PIXI.Container();
         this.pixi = new PIXI.WebGLRenderer(256, 256, {
             autoResize: true,
-            transparent: true
+            transparent: true,
+            view: this.getChildById('foreground-canvas').getDomNode() as HTMLCanvasElement
         });
-        this.pixi.view.classList.add('overlay-canvas');
         this.frameOutline = new PIXI.Graphics();
         this.stage.addChild(this.frameOutline);
         this.pixi.render(this.stage);
-        this.getDomNode().appendChild(this.pixi.view); //todo i might need to wrap this in an editor element
         this.setPreviewSize(this.currentBreakpoint);
     }
 
@@ -196,6 +198,7 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
             <SceneMetaBar/>,
             <canvas x-id="background-canvas" class="overlay-canvas" />,
             <div x-child-root class="scene-render-root"/>,
+            <canvas x-id="foreground-canvas" class="overlay-canvas"/>,
             <div x-id="highlighter" x-hidden class="highlighter">
                 <div x-id="hi-lite-top-right" class="highlight-corner top-right"></div>
                 <div x-id="hi-lite-top-left" class="highlight-corner top-left"></div>
@@ -204,6 +207,30 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
             </div>
         ]
     }
+
+    @DragAction.MouseEnter(DragAssetItemAction)
+    public handleAssetDragEnter() : void {
+        this.setCursor("-webkit-grabbing");
+    }
+
+    @DragAction.MouseOver(DragAssetItemAction)
+    public handleAssetDragHover() : void {
+
+    }
+
+    @DragAction.MouseExit(DragAssetItemAction)
+    public handleAssetDragExit() : void {
+        this.setCursor("default");
+    }
+
+    @DragAction.Drop(DragAssetItemAction)
+    public handleAssetDrop() : void {
+        const element = new AppElement("Generated");
+        const cmp = element.addComponent(TypographyComponent);
+        cmp.setTextAsync("Text goes here");
+
+    }
+
 }
 
 createStyleSheet(`

@@ -12,6 +12,7 @@ import {DragAction} from "../drag_actions/drag_action";
 export interface IRuntimeCommand {
     type : CommandType,
     elementId : number;
+    callback? : () => void;
 }
 
 export abstract class RuntimeImpl extends EventEmitter {
@@ -59,8 +60,8 @@ export abstract class RuntimeImpl extends EventEmitter {
         return this.scene;
     }
 
-    public sendCommand(type : number, elementId : number) : void {
-        this.commandQueue.push({ type, elementId });
+    public sendCommand(type : number, elementId : number, callback? : () => void) : void {
+        this.commandQueue.push({ type, elementId, callback });
     }
 
     public getAppElementAtPoint(point : Vector2) : AppElement {
@@ -149,8 +150,6 @@ export abstract class RuntimeImpl extends EventEmitter {
     public getInput() : Input {
         return this.input;
     }
-
-    public MouseCache : Vector2 = new Vector2();
 
     //todo will need to figure out how to handle delete commands
     //todo will need to figure out how to aggregate commands

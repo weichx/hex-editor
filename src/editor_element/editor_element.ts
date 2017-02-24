@@ -18,7 +18,7 @@ const pendingEventMap = new WeakMap<EditorElement, IEventDescriptor[]>();
 const activeEventMap = new WeakMap<EditorElement, IEventDescriptor[]>();
 let idGenerator = 0;
 
-export abstract class EditorElement {
+export class EditorElement {
 
     public readonly id : number;
     public parent : EditorElement;
@@ -144,7 +144,9 @@ export abstract class EditorElement {
         }
     }
 
-    protected abstract createDomNode() : HTMLElement;
+    protected createDomNode() : HTMLElement {
+        throw new Error("Not Implemented, use a subclass");
+    }
 
     public removeChild(child : EditorElement) : void {
         this.children.remove(child);

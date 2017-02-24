@@ -12,11 +12,15 @@ import {MouseButtonState} from "../../runtime/enums/e_mouse_state";
 import {Scene} from "../../runtime/scene";
 
 export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
-    public element = this;
+
     private elementMap : any = new Map<AppElement, HierarchyItem>();
     private contextSelection : AppElement = null;
     private contextMenu : EditorElement = null;
     private dragElement : EditorElement = null;
+
+    public getDomData() : IDomData {
+        return {tagName: "div", classList: "hierarchy-window-root" }
+    }
 
     private createHierarchyItem(element : AppElement) : HierarchyItem {
         const item = createElement(HierarchyItem, { element: element });
@@ -63,7 +67,7 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
             if (input.isMouseUp()) {
 
                 const dropElement = EditorRuntime.getEditorElementAtPoint(mouse);
-                if(!dropElement) {
+                if (!dropElement) {
                     this.dragElement = null;
                     return;
                 }
@@ -186,12 +190,12 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
 
     public createInitialStructure(children : Array<HTMLElement>) {
         this.contextMenu = this.createContextMenu() as any;
-        return <div class="hierarchy-window-root">
+        return [
             <div class="hierarchy-top-bar">
                 <Button class="btn btn-xs btn-info" onClick={ this.createNewElement }>Create</Button>
-            </div>
-            <div x-child-root class="hierarchy-main-body" onClick={ this.clearSelection }></div>
-        </div>
+            </div>,
+            <div x-child-root class="hierarchy-main-body" onClick={ this.clearSelection }/>
+        ]
     }
 
     private createContextMenu() : any {

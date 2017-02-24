@@ -1,12 +1,15 @@
 import {DragAction} from "./drag_action";
+import {Asset} from "../runtime/asset";
 
 export class DragAssetItemAction extends DragAction {
 
-    private asset : any;
+    public readonly asset : Asset;
 
-    constructor(asset : any) {
+    constructor(asset : Asset) {
         super();
         this.asset = asset;
     }
+
+
 
 }

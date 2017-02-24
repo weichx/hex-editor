@@ -6,9 +6,8 @@ class InvokePaintBackground extends CommandInvoker {
 
     public invokeCommand(json : IJson, elementIdMap : IHTMLElementMap) : void {
         const el = elementIdMap.get(json.id);
-        const style = el.style;
         const c = json.background.color;
-        style.background = `rgba(${c.r}, ${c.g}, ${c.b}, ${c.a})`;
+        el.style.background = `rgba(${c.r}, ${c.g}, ${c.b}, ${c.a})`;
     }
 
 }

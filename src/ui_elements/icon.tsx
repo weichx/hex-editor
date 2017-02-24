@@ -6,7 +6,7 @@ interface IconAttrs {
     size? : "small" | "normal" | "large";
 }
 
-export abstract class BaseIcon extends EditorCustomElement<IconAttrs> {
+export abstract class BaseIcon extends EditorCustomElement<IconAttrs & IHTMLAttribute> {
 
     public prefix = "fa";
 
@@ -15,7 +15,7 @@ export abstract class BaseIcon extends EditorCustomElement<IconAttrs> {
     }
 
     public getIconSize() : string {
-        return " icon " + (this.attrs.size || "normal");
+        return " icon " + (this.attrs.size || "");
     }
 
     public getClassList() : string {
@@ -85,7 +85,7 @@ export class ToggleIcon extends EditorCustomElement<IToggleIconAttrs> {
     }
 
     private getIconSize() : string {
-        return " icon " + (this.attrs.size || "normal");
+        return " icon " + (this.attrs.size || "");
     }
 
     public getClassList() {

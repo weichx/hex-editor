@@ -1,12 +1,12 @@
 import {EditorElement} from "../editor_element/editor_element";
 
 interface IDragAnnotation {
-    eventType : "enter" | "exit" | "hover" | "drop";
-    actionType : typeof DragAction;
+    eventType : string;
+    actionType : any;
     methodName : string;
 }
 
-const DragAnnotationMap = new Map<Object, Array<IDragAnnotation>>();
+const DragAnnotationMap = new Map<Object, DragAnnotationHandler>();
 
 export class DragAction {
 
@@ -40,53 +40,81 @@ export class DragAction {
     }
 
     private static invoke(element : EditorElement, action : DragAction, eventType : string) : void {
-        const dragEventAnnotations = DragAnnotationMap.get(element.constructor);
-
-        if (!dragEventAnnotations) return;
-
         const actionType = action.constructor;
+        //todo -- use shadow tree to make this faster
+        while(element) {
+            var handler = DragAnnotationMap.get(element.constructor);
+            if(handler && handler.typeSet.has(actionType)) {
+                handler.invoke(element, action, eventType);
+                return;
+            }
+            element = element.parent;
+        }
+    }
 
-        for (let i = 0; i < dragEventAnnotations.length; i++) {
-            const annotation = dragEventAnnotations[i];
+}
+
+class DragAnnotationHandler {
+
+    public handlers : Array<IDragAnnotation>;
+    public typeSet : Set<any>;
+
+    constructor() {
+        this.handlers = [];
+        this.typeSet = new Set();
+    }
+
+    public add(eventType : string, actionType : any, methodName : string) : void {
+        this.typeSet.add(actionType);
+        this.handlers.push({eventType, actionType, methodName});
+    }
+
+    public invoke(element : EditorElement, action : DragAction, eventType : string) : void {
+        const actionType  = action.constructor;
+        for (let i = 0; i < this.handlers.length; i++) {
+            const annotation = this.handlers[i];
             if (annotation.actionType === actionType && annotation.eventType === eventType) {
                 (element as any)[annotation.methodName](action);
             }
         }
-
     }
 
 }
 
 type DragDescriptor = TypedPropertyDescriptor<(dragAction : DragAction) => any>;
 
-function onDragActionMouseEnter(actionType : typeof DragAction) {
+function onDragActionMouseEnter<T extends DragAction>(actionType : INewable<T>) {
     return function (target : Object, propertyKey : string, descriptor : DragDescriptor) {
-        const array = DragAnnotationMap.get(target) || new Array<IDragAnnotation>();
-        array.push({ eventType: "enter", actionType: actionType, methodName: propertyKey });
-        DragAnnotationMap.set(target, array);
+        target = target.constructor;
+        const handler = DragAnnotationMap.get(target) || new DragAnnotationHandler();
+        handler.add("enter", actionType, propertyKey);
+        DragAnnotationMap.set(target, handler);
     };
 }
 
-function onDragActionMouseExit(actionType : typeof DragAction) {
+function onDragActionMouseExit<T extends DragAction>(actionType : INewable<T>) {
     return function (target : Object, propertyKey : string, descriptor : DragDescriptor) {
-        const array = DragAnnotationMap.get(target) || new Array<IDragAnnotation>();
-        array.push({ eventType: "exit", actionType: actionType, methodName: propertyKey });
-        DragAnnotationMap.set(target, array);
+        target = target.constructor;
+        const handler = DragAnnotationMap.get(target) || new DragAnnotationHandler();
+        handler.add("exit", actionType, propertyKey);
+        DragAnnotationMap.set(target, handler);
     };
 }
 
-function onDragActionDrop(actionType : typeof DragAction) {
+function onDragActionDrop<T extends DragAction>(actionType : INewable<T>) {
     return function (target : Object, propertyKey : string, descriptor : DragDescriptor) {
-        const array = DragAnnotationMap.get(target) || new Array<IDragAnnotation>();
-        array.push({ eventType: "drop", actionType: actionType, methodName: propertyKey });
-        DragAnnotationMap.set(target, array);
+        target = target.constructor;
+        const handler = DragAnnotationMap.get(target) || new DragAnnotationHandler();
+        handler.add("drop", actionType, propertyKey);
+        DragAnnotationMap.set(target, handler);
     };
 }
 
-function onDragActionMouseOver(actionType : typeof DragAction) {
+function onDragActionMouseOver<T extends DragAction>(actionType : INewable<T>) {
     return function (target : Object, propertyKey : string, descriptor : DragDescriptor) {
-        const array = DragAnnotationMap.get(target) || new Array<IDragAnnotation>();
-        array.push({ eventType: "hover", actionType: actionType, methodName: propertyKey });
-        DragAnnotationMap.set(target, array);
+        target = target.constructor;
+        const handler = DragAnnotationMap.get(target) || new DragAnnotationHandler();
+        handler.add("hover", actionType, propertyKey);
+        DragAnnotationMap.set(target, handler);
     };
 }

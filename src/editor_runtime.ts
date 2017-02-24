@@ -191,14 +191,23 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
             const mouse = this.input.getMousePosition(mouseCache);
             const element = this.getEditorElementAtPoint(mouse);
             this.draggedAction.onUpdate();
+            if(element) {
+                if(element !== this.lastEnteredElement) {
+                    if(this.lastEnteredElement) {
+                        DragAction.invokeExitHandlers(this.lastEnteredElement, this.draggedAction);
+                    }
+                    this.lastEnteredElement = element;
+                    DragAction.invokeEnterHandlers(this.lastEnteredElement, this.draggedAction);
+                }
+                else {
+                    DragAction.invokeHoverHandlers(this.lastEnteredElement, this.draggedAction);
+                }
+            }
             if(this.input.isMouseUp()) {
                 this.draggedAction.onDrop(element);
+                DragAction.invokeExitHandlers(element, this.draggedAction);
                 DragAction.invokeDropHandlers(element, this.draggedAction);
                 this.draggedAction = null;
-            }
-            else {
-                //DragAction.handleDragActionDrop(this.draggedAction.constructor);
-
             }
         }
 
@@ -237,6 +246,7 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
         const elementMap = this.domElementIdMap;
         const json = JSON.parse(buffer) as IJson[];
         for (let i = 0; i < json.length; i++) {
+            let response : any;
             const command = json[i];
             const commandInvoker = CommandInvoker.getInvoker(command.type);
             editorGuard(() => {
@@ -250,6 +260,9 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
             runtimeGuard(() => {
                 commandInvoker.invokeCommand(command, elementMap);
             });
+            //if(response) {
+            // sendResponse(messageId, Serialize(response));
+            //}
         }
     }
 
@@ -261,6 +274,7 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
         this.sendCommand(CommandType.Create, appElement.id);
         const parent = appElement.getParent();
         if (parent) {
+            //todo -- only if they are tagged for editor calls
             const components = parent.getAllComponents();
             for (let i = 0; i < components.length; i++) {
                 components[i].onChildAdded(appElement);
@@ -290,9 +304,12 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
         return this.input as EditorInput;
     }
 
-    public getEditorElementAtPoint(point : Vector2) : EditorElement {
-        //todo if this element isn't an editor element, maybe recurse upwards
-        return document.elementFromPoint(point.x, point.y).__editorElement;
+    public getEditorElementAtPoint<T extends EditorElement>(point : Vector2, type : INewable<T> = null) : T {
+        if(!type) type = EditorElement as any;
+        //todo find a better way to find elements
+        const element = document.elementFromPoint(point.x, point.y).__editorElement;
+        if(!element) return null;
+        return element.getAncestorByType(type, true);
     }
 
     protected start(appRoot : TypeOf<EditorElement>, attrs = {}) : void {

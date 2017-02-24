@@ -1,39 +1,58 @@
-import {ToggleIcon, FontIcon} from "../../ui_elements/icon";
-import { HorizontalBase} from "../../ui_elements/horizontal";
+import {setDefault} from "../../util";
+import {EditorHTMLElement} from "../../editor_element/editor_html_element";
+import {IconNameToggleRow} from "../../ui_elements/toggle_icon_label_row";
+import {DragAction} from "../../drag_actions/drag_action";
+import {DragAssetItemAction} from "../../drag_actions/drag_asset_item_action";
 
 interface IAssetFolder {
-    asset: { name : string }
+    name : string;
+    isOpen? : boolean;
 }
 
-export class AssetSection extends HorizontalBase<IAssetFolder> {
+class AssetFolderNameRow extends IconNameToggleRow {
+
+    @DragAction.MouseEnter(DragAssetItemAction)
+    public dragEnter() : void {
+        this.getDomNode().style.backgroundColor = "red";
+    }
+
+    @DragAction.MouseExit(DragAssetItemAction)
+    public dragExit() : void {
+        this.getDomNode().style.backgroundColor = null;
+    }
+
+}
+
+export class AssetSection extends EditorHTMLElement<IAssetFolder> {
 
     public getDomData() : IDomData {
-        const parent = super.getDomData();
-        parent.classList += " asset-folder";
-        return parent;
+        return { tagName: "div", classList: "asset-folder" }
     }
 
     public createInitialStructure(children : JSXElement) : JSXElement {
+        this.attrs.isOpen = setDefault(this.attrs.isOpen, true);
+        const depth = 1;
+        const padding = depth * 16;
         return [
-            <ToggleIcon/>,
-            <FontIcon iconName="folder"/>,
-            <div>
-                {this.attrs.asset.name}
-                <div x-child-root>{children}</div>
-            </div>,
+            <AssetFolderNameRow toggleElementFn={() => this.getChildRoot()}
+                                iconName="folder"
+                                label="Label"/>,
+            <div style={"padding-left: " + padding + "px"} x-child-root>{children}</div>
         ];
     }
 
-    public onMouseDown() : void {
-        alert("Down on a thing");
-    }
 
 }
 
 createStyleSheet(`<style>
+    
+     .asset-folder {
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        cursor: pointer;
+     }
+     
  
- .asset-folder > * { 
-    padding-left: 0.3em;
- }
- 
+         
 `);
