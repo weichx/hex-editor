@@ -5,47 +5,48 @@ import {AppElement} from "../../runtime/app_element";
 import {Vector2} from "../../runtime/vector2";
 
 enum DragSide {
-    None, Top, Left, Right, Bottom, TopRight, TopLeft, BottomRight, BottomLeft
+    None, Center, Top, Left, Right, Bottom, TopRight, TopLeft, BottomRight, BottomLeft
 }
 
 export class SceneRectTool extends SceneTool {
 
     private draggedSide : DragSide = DragSide.None;
-    private dragRect : Rectangle = new Rectangle();
-    private selection : AppElement;
+    private panning : boolean = false;
 
     public update() : void {
 
         const input = EditorRuntime.getInput();
         const selection = EditorRuntime.getSelection();
         const mouse = input.getMouseRelativeToEditorElement(this.sceneBodyRoot);
-        const highlighter = this.sceneWindow.highlighter;
+        const inElement = input.isMouseInEditorElement(this.sceneBodyRoot);
 
         if (selection) {
-            const rect = selection.getRect();
-            highlighter.setVisible(true);
-            highlighter.setRect(rect);
-            if (input.isMouseDownThisFrame() && input.isMouseInEditorElement(this.sceneBodyRoot)) {
+
+            let rect = selection.getBoundingBox();
+
+            if (input.isMouseDownThisFrame() && inElement) {
 
                 this.draggedSide = SceneRectTool.hitTestDragSide(mouse, rect);
                 if (this.draggedSide === DragSide.None) {
                     const element = EditorRuntime.getAppElementAtPoint(mouse);
-                    if (element && element !== selection) {
+                    if (element && element !== AppElement.Root && element !== selection) {
                         EditorRuntime.select(element);
-                    }
-                    else {
-                        EditorRuntime.select(null);
                     }
                 }
                 return;
             }
+
             else if (input.isMouseDown()) {
                 if (this.draggedSide !== DragSide.None) {
                     this.updateDragSide(input.getMouseDelta(), selection);
                 }
+                else if (this.panning) {
+                    this.sceneWindow.pan(input.getMouseDelta());
+                }
             }
             else if (input.isMouseUp()) {
                 this.draggedSide = DragSide.None;
+                this.panning = false;
             }
 
             if (this.draggedSide === DragSide.None) {
@@ -54,35 +55,44 @@ export class SceneRectTool extends SceneTool {
 
         }
         else {
-            this.sceneWindow.setCursor('default');
+            EditorRuntime.setCursor('default');
             this.draggedSide = DragSide.None;
-            highlighter.setVisible(false);
+
+            if (!inElement || input.isMouseUp()) {
+                this.panning = false;
+                return;
+            }
+
+            if (input.isMouseDownThisFrame()) {
+                this.panning = true;
+            }
+
+            if (this.panning) {
+                this.sceneWindow.pan(input.getMouseDelta());
+            }
         }
-
-        // if (!input.isMouseInElement(this.sceneBodyRoot)) return;
-
     }
 
     private setHoverCursor(dragSide : DragSide) {
         switch (dragSide) {
             case DragSide.Top:
             case DragSide.Bottom:
-                this.sceneWindow.setCursor('ns-resize');
+                EditorRuntime.setCursor('ns-resize');
                 break;
             case DragSide.Left:
             case DragSide.Right:
-                this.sceneWindow.setCursor('ew-resize');
+                EditorRuntime.setCursor('ew-resize');
                 break;
             case DragSide.TopRight:
             case DragSide.BottomLeft:
-                this.sceneWindow.setCursor('nesw-resize');
+                EditorRuntime.setCursor('nesw-resize');
                 break;
             case DragSide.TopLeft:
             case DragSide.BottomRight:
-                this.sceneWindow.setCursor('nwse-resize');
+                EditorRuntime.setCursor('nwse-resize');
                 break;
             default:
-                this.sceneWindow.setCursor('default');
+                EditorRuntime.setCursor('default');
                 break;
         }
     }
@@ -103,11 +113,14 @@ export class SceneRectTool extends SceneTool {
         if (hitTestLine(x, yh, xw, yh, point, 3)) return DragSide.Bottom;
         if (hitTestLine(xw, y, xw, yh, point, 3)) return DragSide.Right;
 
+        if (bounds.containsPoint(point)) return DragSide.Center;
+
         return DragSide.None;
     }
 
     private updateDragSide(delta : Vector2, appElement : AppElement) {
-        const rect = appElement.getRect();
+        //todo may want this to be Axis-Aligned
+        const rect = appElement.getBoundingBox();
         switch (this.draggedSide) {
             case DragSide.TopRight:
                 rect.y += delta.y;
@@ -143,6 +156,10 @@ export class SceneRectTool extends SceneTool {
             case DragSide.Bottom:
                 rect.height += delta.y;
                 break;
+            case DragSide.Center:
+                rect.x += delta.x;
+                rect.y += delta.y;
+                break;
         }
         if (rect.width < 1) rect.width = 1;
         if (rect.height < 1) rect.height = 1;
@@ -152,7 +169,8 @@ export class SceneRectTool extends SceneTool {
         if (rect.width === 1 && delta.x > 0) {
             rect.x -= delta.x;
         }
-        appElement.setRect(rect);
+        appElement.setPositionValues(rect.x, rect.y);
+        appElement.setDimensions(rect.width, rect.height);
     }
 
 }

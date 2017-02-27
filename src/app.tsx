@@ -4,7 +4,7 @@ import {WindowFrame} from "./chrome/editor_window_frame";
 import {HierarchyWindow} from "./windows/hierarchy/hierarchy_window";
 import {SceneWindow} from "./windows/scene_window";
 import {InspectorWindow} from "./windows/inspector_window";
-import {WindowColors} from "./editor_theme";
+import {WindowColors} from "./editor/editor_theme";
 import {AssetWindow} from "./windows/asset/asset_window";
 
 export class EditorApplication extends EditorCustomElement<{}> {

@@ -76,10 +76,6 @@ createStyleSheet(`
     margin: 0.2em; auto;
 }
 
-.inspector-component-menu .component-item {
-    cursor: pointer;
-}
-
 .inspector-component-menu .component-item:hover {
     background: rgba(69,245,255,0.32);
 }

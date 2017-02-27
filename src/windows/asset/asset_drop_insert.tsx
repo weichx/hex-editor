@@ -1,6 +1,6 @@
 import {EditorHTMLElement} from "../../editor_element/editor_html_element";
-import {DragAction} from "../../drag_actions/drag_action";
-import {DragAssetItemAction} from "../../drag_actions/drag_asset_item_action";
+import {DragAction} from "../../editor/drag_actions/drag_action";
+import {DragAssetItemAction} from "../../editor/drag_actions/drag_asset_item_action";
 
 export class AssetDropTargetInsert extends EditorHTMLElement<{}> {
 

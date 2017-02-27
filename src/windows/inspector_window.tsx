@@ -4,11 +4,12 @@ import {SelectionChanged} from "../editor_events/evt_selection_changed";
 import {EditorWindowElement, IWindowAttrs} from "../chrome/editor_window_element";
 import {InspectorRow} from "../ui_elements/inspector/inspector_row";
 import {ComponentMenu} from "./inspector/component_menu";
-import {WindowColors} from "../editor_theme";
+import {WindowColors} from "../editor/editor_theme";
 import {ComponentRenderer} from "../renderers/component/component_renderer";
 import {AppElement} from "../runtime/app_element";
 import {Component} from "../runtime/component";
 import {createElement} from "../editor_element/element_renderer";
+import {TransformInspector} from "../renderers/component/app_element_component";
 
 export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
 
@@ -18,9 +19,9 @@ export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
         this.selection = newSelection;
         this.getChildRoot().clearChildren();
         if (!this.selection) return;
-        // this.addChild(createElement(TransformInspector, {
-        //     element: this.selection
-        // }));
+        this.getChildRoot().addChild(createElement(TransformInspector, {
+            element: this.selection
+        }));
         const components = newSelection.getAllComponents();
         for (let i = 0; i < components.length; i++) {
             this.createComponentDrawer(components[i]);

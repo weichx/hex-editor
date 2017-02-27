@@ -1,8 +1,8 @@
 import {setDefault} from "../../util";
 import {EditorHTMLElement} from "../../editor_element/editor_html_element";
 import {IconNameToggleRow} from "../../ui_elements/toggle_icon_label_row";
-import {DragAction} from "../../drag_actions/drag_action";
-import {DragAssetItemAction} from "../../drag_actions/drag_asset_item_action";
+import {DragAction} from "../../editor/drag_actions/drag_action";
+import {DragAssetItemAction} from "../../editor/drag_actions/drag_asset_item_action";
 
 interface IAssetFolder {
     name : string;
@@ -50,7 +50,6 @@ createStyleSheet(`<style>
         display:flex;
         flex-direction: column;
         width: 100%;
-        cursor: pointer;
      }
      
  

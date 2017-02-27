@@ -43,6 +43,7 @@ Array.prototype.removeAt = function (index : number) {
         index++
     }
     this.length--;
+    return true;
 };
 
 export default 0;

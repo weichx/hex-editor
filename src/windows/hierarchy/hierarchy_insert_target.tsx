@@ -1,5 +1,5 @@
 import {EditorHTMLElement} from "../../editor_element/editor_html_element";
-import {DragAction} from "../../drag_actions/drag_action";
+import {DragAction} from "../../editor/drag_actions/drag_action";
 
 class AppElementAssetDragAction extends DragAction {}
 

@@ -1,24 +1,31 @@
 import {Rectangle} from "./rectangle";
 import {Component} from "./component";
-import {Vector2} from "./vector2";
-import {RuntimeImpl} from "./runtime";
+import {Vector2, ImmutableVector2} from "./vector2";
 import {LifeCycleFlag} from "./enums/e_lifecycle_flags";
 import {CommandType} from "./enums/e_command_type";
 import {TypeOf} from "./interfaces/i_typeof";
 
-let idGenerator = -1;
+let idGenerator = 0;
+
+export enum Space {
+    Local, World
+}
 
 export class AppElement {
 
     public name : string;
-
     public readonly id : number;
 
-    private rect : Rectangle;
     private parent : AppElement;
     private components : Array<Component>;
     private children : Array<AppElement>;
     private lifeCycleFlags : LifeCycleFlag;
+    private localPosition : Vector2;
+    private parentPosition : Vector2;
+    private scale : Vector2;
+    private rotation : number;
+    private width : number;
+    private height : number;
 
     constructor(name? : string, parent : AppElement = null) {
         this.id = idGenerator++;
@@ -27,39 +34,132 @@ export class AppElement {
         this.parent = parent || AppElement.Root;
         this.children = [];
         this.components = [];
-        this.rect = new Rectangle();
+        this.localPosition = new Vector2();
+        this.parentPosition = new Vector2();
+        if(this.parent) {
+            this.parentPosition.x = this.parent.localPosition.x;
+            this.parentPosition.y = this.parent.localPosition.y;
+        }
+        this.width = 0;
+        this.height = 0;
+        this.rotation = 0;
+        this.scale = new Vector2(1, 1);
         //todo don't allow components to be constructed outside of addComponent or this constructor
         Runtime.addElement(this);
+    }
+
+    public setScale(scale : IVector2) : void {
+        this.scale.x = scale.x;
+        this.scale.y = scale.y;
+        Runtime.sendCommand(CommandType.SetTransform, this.id);
+    }
+
+    public getScale() : ImmutableVector2 {
+        return this.scale as ImmutableVector2;
+    }
+
+    public getWidth() : number {
+        return this.width;
+    }
+
+    public setWidth(width : number) : void {
+        this.width = width;
+        Runtime.sendCommand(CommandType.SetDimensions, this.id);
+    }
+
+    public getHeight() : number {
+        return this.height;
+    }
+
+    public setHeight(height : number) : void {
+        this.height = height;
+        Runtime.sendCommand(CommandType.SetDimensions, this.id);
+    }
+
+    public setDimensions(widthOrDimension : number | IDimension, height = 0) : void {
+        const dimension = widthOrDimension as IDimension;
+
+        if (typeof widthOrDimension === "object") {
+            if (dimension.width !== void 0) {
+                this.width = dimension.width;
+                this.height = dimension.height;
+            }
+        }
+        else {
+            this.width = widthOrDimension;
+            this.height = height;
+        }
+        Runtime.sendCommand(CommandType.SetDimensions, this.id);
+    }
+
+    public getRotation() : number {
+        return this.rotation;
+    }
+
+    public setRotation(value : number) : void {
+        this.rotation = value;
+        Runtime.sendCommand(CommandType.SetTransform, this.id);
+    }
+
+    public setPosition(position : IVector2, relativeTo : Space = Space.World) : void {
+        this.setPositionValues(position.x, position.y, relativeTo);
+    }
+
+    public setPositionValues(x : number, y : number, relativeTo : Space = Space.World) : void {
+        if (relativeTo === Space.Local) {
+            this.localPosition.x = x;
+            this.localPosition.y = y;
+        }
+        else {
+            this.localPosition.x = x - this.parentPosition.x;
+            this.localPosition.y = y - this.parentPosition.y;
+        }
+        Runtime.sendCommand(CommandType.SetPosition, this.id);
+        const worldX = this.localPosition.x + this.parentPosition.x;
+        const worldY = this.localPosition.y + this.parentPosition.y;
+        for(let i = 0; i < this.children.length;i++) {
+            const position = this.children[i].parentPosition;
+            position.x = worldX;
+            position.y = worldY;
+        }
+    }
+
+    public getLocalPosition() : ImmutableVector2 {
+        return this.localPosition as ImmutableVector2;
+    }
+
+    public getPosition(positionCache? : Vector2) : Vector2 {
+        if(positionCache) {
+            positionCache.x = this.parentPosition.x + this.localPosition.x;
+            positionCache.y = this.parentPosition.y + this.localPosition.y;
+            return positionCache;
+        }
+        return this.localPosition.addVectorNew(this.parentPosition);
+    }
+
+    public getBoundingBox() : Rectangle {
+        //todo axis aligned? handle rotation and scale
+        const p = this.getPosition();
+        return new Rectangle(p.x, p.y, this.width, this.height);
     }
 
     public enable() : void {
         //Runtime.enable(this);
     }
 
-    public setRectValues(x : number, y : number, width : number, height : number) : void {
-        this.rect.x = x;
-        this.rect.y = y;
-        this.rect.width = width;
-        this.rect.height = height;
-        Runtime.sendCommand(CommandType.SetRect, this.id);
-    }
-
-    public setRect(rect : Rectangle) : void {
-        this.rect.x = rect.x;
-        this.rect.y = rect.y;
-        this.rect.width = rect.width;
-        this.rect.height = rect.height;
-        Runtime.sendCommand(CommandType.SetRect, this.id);
-        //todo -- emit event here
-    }
-
-    public getRect() : Rectangle {
-        return this.rect.clone();
-    }
-
     public setParent(parent : AppElement) : void {
+        parent = parent || AppElement.Root;
         this.parent = parent;
-        this.parent.children.push(this);
+        if(parent) {
+            this.parent.children.push(this);
+            const p = this.parent.getPosition();
+            this.parentPosition.x = p.x;
+            this.parentPosition.y = p.y;
+        }
+        else {
+            this.parentPosition.x = 0;
+            this.parentPosition.y = 0;
+        }
     }
 
     public getParent() : AppElement {
@@ -75,10 +175,8 @@ export class AppElement {
     }
 
     public removeChild(child : AppElement) : void {
-        const idx = this.children.indexOf(child);
-        if (idx !== -1) {
+        if(this.children.remove(child)) {
             child.setParent(null);
-            this.children.splice(idx, 1);
         }
     }
 
@@ -212,32 +310,44 @@ export class AppElement {
     /*** Helpers ***/
 
     public containsPoint(point : Vector2) : boolean {
-        return this.rect.containsPoint(point);
+        const p  = this.getPosition();
+        const x = p.x;
+        const y = p.y;
+        const w = this.width;
+        const h = this.height;
+        const px = point.x;
+        const py = point.y;
+        return px >= x && x + w >= px && py >= y && y + h >= py;
     }
 
+    //this might be backwards
+    //todo account for rotation
     public containsRect(rect : Rectangle) : boolean {
-        return this.rect.containsRectangle(rect);
+        const p = this.getPosition();
+        return rect.x + rect.width < (p.x + this.width)
+            && (rect.x) > (p.x)
+            && (rect.y) > (p.y)
+            && (rect.y + rect.height) < (p.y + this.height);
     }
 
+    //todo account for rotation -- probably want to use algorithm of overlapping polygons instead
     public overlapsRectangle(rect : Rectangle) : boolean {
-        return this.rect.overlapsRectangle(rect);
+        const p = this.getPosition();
+        const minAx = p.x;
+        const minAy = p.y;
+        const maxAx = p.x + this.width;
+        const maxAy = p.y + this.height;
+        const minBx = rect.x;
+        const minBy = rect.y;
+        const maxBx = rect.x + rect.width;
+        const maxBy = rect.y + rect.height;
+        const aLeftOfB = maxAx < minBx;
+        const aRightOfB = minAx > maxBx;
+        const aAboveB = minAy > maxBy;
+        const aBelowB = maxAy < minBy;
+        return !( aLeftOfB || aRightOfB || aAboveB || aBelowB );
     }
 
-    public containsElement(appElement : AppElement) : boolean {
-        return this.rect.containsRectangle(appElement.rect);
-    }
-
-    public overlapsElement(appElement : AppElement) : boolean {
-        return this.rect.overlapsRectangle(appElement.rect);
-    }
-
-    // public getPointRelative() : Vector2 {
-    //   return new Vector2(this.rect.x - )
-    // }
-    //
-    // public makePointRelative(point : Vector2) : Vector2 {
-    //     return new Vector2(this.rect.x + point.x, this.rect.y + point.y);
-    // }
 
     /*** Static ***/
 

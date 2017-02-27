@@ -21,6 +21,16 @@ declare namespace JSX {
 
 declare type JSXElement = JSX.Element<any>;
 
+interface IDimension {
+    width : number;
+    height : number;
+}
+
+interface IVector2 {
+    x : number;
+    y : number;
+}
+
 interface IHTMLAttribute {
     class? : string;
     style? : string;

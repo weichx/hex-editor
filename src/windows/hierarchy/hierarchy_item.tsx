@@ -71,10 +71,6 @@ createStyleSheet(`<style>
     top: 4px;
 }    
     
-.hierarchy-item {
-    cursor: pointer;
-}
-
 .hierarchy-item-details {
     position: relative;
 }

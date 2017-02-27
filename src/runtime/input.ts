@@ -4,7 +4,7 @@ import {KeyCode} from "./enums/e_keycode";
 import {MouseButtonState} from "./enums/e_mouse_state";
 
 export class Input {
-
+    //todo consider making use of ImmutableVector2 to cut down on new Vector() calls
     protected x : number;
     protected y : number;
     protected lastX : number;
@@ -29,33 +29,6 @@ export class Input {
         this.mouseDownPosition = new Vector2(-1, -1);
         this.mouseWheelDeltaX = 0;
         this.mouseWheelDeltaY = 0;
-        // target.addEventListener("mousemove", (evt : MouseEvent) => {
-        //     this.x = evt.pageX;
-        //     this.y = evt.pageY;
-        // }, true);
-        //
-        // target.addEventListener("mousedown", (evt : MouseEvent) => {
-        //     this.x = evt.pageX;
-        //     this.y = evt.pageY;
-        //     this.mouseButtonState = evt.buttons;
-        //     this.mouseDownPosition.x = this.x;
-        //     this.mouseDownPosition.y = this.y;
-        // }, true);
-        //
-        // target.addEventListener("mouseup", (evt : MouseEvent) => {
-        //     this.x = evt.pageX;
-        //     this.y = evt.pageY;
-        //     this.mouseButtonState = evt.buttons;
-        // }, true);
-        //
-        // //todo make this work with `target`, needs to get focus somehow
-        // document.body.addEventListener("keydown", (evt : KeyboardEvent) => {
-        //     this.keyMapCurrent[evt.keyCode] = true;
-        // }, true);
-        //
-        // document.body.addEventListener("keyup", (evt : KeyboardEvent) => {
-        //     this.keyMapCurrent[evt.keyCode] = false;
-        // }, true);
     }
 
     public update() {
@@ -207,17 +180,37 @@ export class Input {
         );
     }
 
-    public copyTo(input : Input) : void {
-        input.x = this.x;
-        input.y = this.y;
-        input.lastX = this.lastX;
-        input.lastY = this.lastY;
-        input.lastMouseButtonState = this.lastMouseButtonState;
-        input.mouseButtonState = this.mouseButtonState;
-        for(let i = 8; i < 222; i++) {
-            input.keyMapPrevious[i] = this.keyMapPrevious[i];
-            input.keyMapCurrent[i] = this.keyMapCurrent[i];
-        }
+    public deserialize(data : Indexable<number>) : void {
+        this.x = data.x;
+        this.y = data.y;
+        this.lastX = data.lastX;
+        this.lastY = data.lastY;
+        this.lastMouseButtonState = data.lastMouseButtonState;
+        this.mouseButtonState = data.mouseButtonState;
+        this.mouseDownPosition.x = data.mouseDownPositionX;
+        this.mouseDownPosition.y = data.mouseDownPositionY;
+        this.mouseWheelDeltaX = data.mouseWheelDeltaX;
+        this.mouseWheelDeltaY = data.mouseWheelDeltaY;
+        //todo - keyboard input
+    }
+
+    public serialize() : Indexable<number> {
+        return {
+            x: this.x,
+            y: this.y,
+            lastX : this.lastX,
+            lastY : this.lastY,
+            lastMouseButtonState : this.lastMouseButtonState,
+            mouseButtonState : this.mouseButtonState,
+            mouseDownPositionX : this.mouseDownPosition.x,
+            mouseDownPositionY : this.mouseDownPosition.y,
+            mouseWheelDeltaX : this.mouseWheelDeltaX,
+            mouseWheelDeltaY : this.mouseWheelDeltaY
+        };
+        // for(let i = 8; i < 222; i++) {
+        //     input.keyMapPrevious[i] = this.keyMapPrevious[i];
+        //     input.keyMapCurrent[i] = this.keyMapCurrent[i];
+        // }
     }
 
     protected static normalizeWheelValue(value : number) : number {

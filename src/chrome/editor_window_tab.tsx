@@ -1,5 +1,5 @@
 import {EditorCustomElement} from "../editor_element/editor_custom_element";
-import {WindowColors} from "../editor_theme";
+import {WindowColors} from "../editor/editor_theme";
 
 interface IWindowFrameTabAttrs extends IHTMLAttribute {
     title : string;
@@ -37,7 +37,6 @@ createStyleSheet(`
     text-align: center;
     font-size: 0.9em;
     color: black;
-    cursor: pointer;
 }
 
 .window-frame-tab.selected {

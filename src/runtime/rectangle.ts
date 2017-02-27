@@ -23,7 +23,7 @@ export class Rectangle {
     }
 
     public containsPoint(point : Vector2) : boolean {
-        return false;
+        return Rectangle.pointInsideRect(point, this);
     }
 
     public static pointInsideRect(point : Vector2, rect : Rectangle) {
@@ -38,6 +38,14 @@ export class Rectangle {
 
     public clone() : Rectangle {
         return new Rectangle(this.x, this.y, this.width, this.height);
+    }
+
+    public copyTo(input : {x : number, y: number, width: number, height: number}) : any {
+        input.x = this.x;
+        input.y = this.y;
+        input.width = this.width;
+        input.height = this.height;
+        return input;
     }
 
     public static Zero = new Rectangle();

@@ -5,14 +5,14 @@ export enum CommandType {
     Move,
     Replace,
     SetRect,
-    ResizeRect,
-    MoveRect,
+
+    SetPosition,
+    SetDimensions,
+    SetTransform,
     SetParent,
-    PaintBorder,
-    PaintOutline,
+
     PaintBackground,
     SetText,
     SetFont,
-    SetFontSize,
-    SetFontColor
+    UpdateInput
 }

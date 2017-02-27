@@ -1,5 +1,6 @@
 import {traverse, traverseRootFirst} from "../util";
 import {Rectangle} from "../runtime/rectangle";
+import {Vector2} from "../runtime/vector2";
 
 interface IEventDescriptor {
     type : string;
@@ -295,6 +296,22 @@ export class EditorElement {
         this.childIdMap = null;
         this.children = null;
 
+    }
+
+    public pointToLocalSpace(point : Vector2) : Vector2 {
+        const rect = this.htmlNode.getBoundingClientRect();
+        return new Vector2(
+            point.x - rect.left,
+            point.y - rect.top
+        );
+    }
+
+    public pointToWorldSpace(point : Vector2) : Vector2 {
+        const rect = this.htmlNode.getBoundingClientRect();
+        return new Vector2(
+            point.x + rect.left,
+            point.y + rect.top
+        );
     }
 
     public isDestroyed() : boolean {

@@ -5,7 +5,7 @@ import {SceneLoaded} from "../../editor_events/evt_scene_loaded_event";
 import {AppElementCreated} from "../../editor_events/evt_app_element_created";
 import {createElement, render} from "../../editor_element/element_renderer";
 import {EditorWindowElement, IWindowAttrs} from "../../chrome/editor_window_element";
-import {WindowColors} from "../../editor_theme";
+import {WindowColors} from "../../editor/editor_theme";
 import {EditorElement} from "../../editor_element/editor_element";
 import {AppElement} from "../../runtime/app_element";
 import {MouseButtonState} from "../../runtime/enums/e_mouse_state";
@@ -62,6 +62,7 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
 
     public onUpdated() {
         const input = EditorRuntime.getInput();
+        //todo replace this with drag system used elsewhere
         if (this.dragElement) {
             const mouse = input.getMousePosition();
             if (input.isMouseUp()) {
@@ -108,7 +109,7 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
                 }
             }
         }
-        else if (input.isMouseInEditorElement(this) && input.isMouseDown()) {
+        else if (input.isMouseInEditorElement(this) && input.isMouseDownThisFrame()) {
             const mouse = input.getMousePosition();
             const hoverElement = EditorRuntime.getEditorElementAtPoint(mouse) as EditorElement;
             if (!hoverElement) return;
@@ -224,10 +225,6 @@ createStyleSheet(`
     display: flex;
     flex-direction: column;
     color: black;
-}
-
-.ctx-menu-item {
-    cursor: pointer;
 }
 
 .hierarchy-ctx-menu {

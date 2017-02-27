@@ -111,12 +111,14 @@ export class SplitPane extends EditorCustomElement<ISplitPaneAttrs> {
 
     public onUpdated() {
         const input = EditorRuntime.getInput();
+
         if (input.isMouseUp()) {
             EditorRuntime.updateTree.remove(this);
             return;
         }
 
         const delta = this.getMouseDelta();
+
         if (delta === 0) return;
         const total = this.c0Size + delta;
         const shrink = delta < 0 && total > this.attrs.minSize;
@@ -307,7 +309,7 @@ createStyleSheet(`<style>
     width: 4px;
     min-width:4px;
     height:100%;
-    cursor: ew-resize;
+    /*cursor: ew-resize;*/
     position:absolute;;
 }
 
@@ -315,7 +317,7 @@ createStyleSheet(`<style>
     width: 100%;
     height: 4px;
     min-height:4px;
-    cursor: ns-resize;
+    /*cursor: ns-resize;*/
     position:absolute;;
 }
 

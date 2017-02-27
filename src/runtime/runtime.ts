@@ -1,58 +1,45 @@
 import {Scene} from "./scene";
 import {Vector2} from "./vector2";
 import {Input} from "./input";
-import {EventEmitter} from "./event_emitter";
 import {AppElement} from "./app_element";
 import {Component} from "./component";
-import {CommandType} from "./enums/e_command_type";
 import {LifeCycleFlag} from "./enums/e_lifecycle_flags";
 import {LayoutComponent} from "./components/layout/layout_component";
-import {DragAction} from "../drag_actions/drag_action";
+import {DragAction} from "../editor/drag_actions/drag_action";
+import {RuntimeBase} from "../shared/runtime_base";
 
-export interface IRuntimeCommand {
-    type : CommandType,
-    elementId : number;
-    callback? : () => void;
-}
-
-export abstract class RuntimeImpl extends EventEmitter {
+export class RuntimeImpl extends RuntimeBase  {
 
     protected scene : Scene;
     protected input : Input;
     protected appElementRegistry : Indexable<AppElement>;
-    protected commandQueue : Array<IRuntimeCommand>;
     protected draggedAction : DragAction;
 
     protected pendingComponents : Array<Component>;
-    protected updateComponents : Array<Component>;
-    protected lateUpdateComponents : Array<Component>;
-    protected enabledComponents : Array<Component>;
-    protected disabledComponents : Array<Component>;
-    protected inUpdateLoop : boolean;
+    protected updateComponents : Array<Component>; //todo replace with ShadowTree
     protected rootElementCandidates : Array<AppElement>;
-
-    protected boundUpdate : (delta : number) => void;
 
     constructor() {
         super();
+        this.input = new Input();
         this.rootElementCandidates = [];
         this.pendingComponents = [];
         this.appElementRegistry = {};
         this.commandQueue = [];
-        this.boundUpdate = (delta : number) => {
-            this.update(delta);
+        self.onmessage = (message : MessageEvent) => {
+            this.onMessage(message);
         };
     }
 
+    public getAppElementById(id : number) : AppElement {
+        return this.appElementRegistry[id];
+    }
+
+    protected postMessage(data : string) : void {
+        self.postMessage(data, void 0);
+    }
+
     public queueLayout(layoutComponent : LayoutComponent) : void {
-
-    }
-
-    protected sendCommandBuffer(buffer : string) : void {
-        debugger;
-    }
-
-    protected decodeMessage(evt : any) : void {
 
     }
 
@@ -60,18 +47,15 @@ export abstract class RuntimeImpl extends EventEmitter {
         return this.scene;
     }
 
-    public sendCommand(type : number, elementId : number, callback? : () => void) : void {
-        this.commandQueue.push({ type, elementId, callback });
-    }
-
     public getAppElementAtPoint(point : Vector2) : AppElement {
-        const roots = this.scene.getRootElements();
-        for (let i = 0; i < roots.length; i++) {
-            const hit = this.appElementAtPointStep(roots[i], point);
+        const childCount = AppElement.Root.getChildCount();
+        for (let i = 0; i < childCount; i++) {
+            const hit = this.appElementAtPointStep(AppElement.Root.getChildAt(i), point);
             if (hit) {
                 return hit;
             }
         }
+        if(AppElement.Root.containsPoint(point)) return AppElement.Root;
         return null;
     }
 
@@ -150,10 +134,5 @@ export abstract class RuntimeImpl extends EventEmitter {
     public getInput() : Input {
         return this.input;
     }
-
-    //todo will need to figure out how to handle delete commands
-    //todo will need to figure out how to aggregate commands
-    //todo will need to figure out how to dedupe commands
-    protected abstract buildCommandBuffer() : string;
 
 }

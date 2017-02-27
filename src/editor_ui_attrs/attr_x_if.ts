@@ -1,7 +1,7 @@
-import {createGetter} from "./binding_compiler";
+import {getGetter} from "./binding_compiler";
 import {EditorElement} from "../editor_element/editor_element";
 import {IPoolable2, ObjectPool2} from "../object_pool";
-import {ILifecycle} from "../editor_runtime";
+import {ILifecycle} from "../editor/editor_runtime";
 
 interface XIfBinding {
     ctx : any,
@@ -20,7 +20,7 @@ export class XIf implements IPoolable2<EditorElement, XIfBinding>, ILifecycle {
         this.element = element;
         this.ctx = binding.ctx;
         this.invert = binding.invert;
-        this.getterFn = createGetter(binding.path.split("."));
+        this.getterFn = getGetter(binding.path.split('.'));
     }
 
     public onDespawn() : void {

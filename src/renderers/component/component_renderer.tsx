@@ -5,7 +5,7 @@ import {ToggleIcon} from "../../ui_elements/icon";
 import {createElement} from "../../editor_element/element_renderer";
 import {CheckboxInput} from "../../ui_elements/checkbox_input";
 import {titlize} from "../../util";
-import {WindowColors} from "../../editor_theme";
+import {WindowColors} from "../../editor/editor_theme";
 import {getExposedFieldMap} from "./expose_as";
 import {Component} from "../../runtime/component";
 import {TypeOf} from "../../runtime/interfaces/i_typeof";

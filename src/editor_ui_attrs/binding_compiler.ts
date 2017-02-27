@@ -1,26 +1,5 @@
-const FunctionCache = new Map<string, Function>();
 const GetterCache = new Map<any, Function>();
 const SetterCache = new Map<any, Function>();
-
-export function createGetter(split : string[]) : (ctx : any) => any {
-    const key = "get:" + split.join(".");
-    let retn = FunctionCache.get(key);
-    if (retn) return retn as (ctx : any) => any;
-    const body = parse(split, false);
-    const getterFn = new Function("ctx", body) as any;
-    FunctionCache.set(key);
-    return getterFn;
-}
-
-export function createSetter(split : string[]) : (ctx : any, val : any) => any {
-    const key = "set:" + split.join(".");
-    let retn = FunctionCache.get(key);
-    if (retn) return retn as (ctx : any, val : any) => any;
-    const body = parse(split, true);
-    const setterFn = new Function("ctx", "val", body) as any;
-    FunctionCache.set(key, setterFn);
-    return setterFn;
-}
 
 export function getGetter(path : Array<string>) : (ctx : any) => any {
     const pathString = path.join(".");
@@ -40,28 +19,6 @@ export function getSetter(path : Array<string>) : (ctx : any) => any {
     const fn = new Function("ctx", "val", body) as (ctx : any) => any;
     SetterCache.set(pathString, fn);
     return fn;
-}
-
-function parse(split : string[], isSetter : boolean) {
-    if (split.length === 1) {
-        return "return ctx." + split[0] + ";";
-    }
-    let str = `var $0 = ctx.${split[0]};if($0) {\n`;
-    for (let i = 1; i < split.length; i++) {
-        str += `var $${i} = $${i - 1}.${split[i]};\n`;
-
-        if (i !== split.length - 1) {
-            str += `if($${i}) {\n`;
-        }
-        else {
-            if (isSetter) str += `$${i - 1}.${split[i]} = val;\n`;
-            else str += `return $${i};\n`
-        }
-    }
-    for (let i = 0; i < split.length - 1; i++) {
-        str += "}\n";
-    }
-    return str;
 }
 
 export function genCode(groups : any, isSetter = false, varChar = 'a',) {

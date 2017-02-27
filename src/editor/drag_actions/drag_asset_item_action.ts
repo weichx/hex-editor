@@ -1,5 +1,5 @@
 import {DragAction} from "./drag_action";
-import {Asset} from "../runtime/asset";
+import {Asset} from "../../runtime/asset";
 
 export class DragAssetItemAction extends DragAction {
 

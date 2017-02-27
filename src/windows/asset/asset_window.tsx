@@ -1,10 +1,12 @@
 import {EditorWindowElement} from "../../chrome/editor_window_element";
 import {AssetSection} from "./asset_folder";
 import {Vector2} from "../../runtime/vector2";
-import {DragAssetItemAction} from "../../drag_actions/drag_asset_item_action";
+import {DragAssetItemAction} from "../../editor/drag_actions/drag_asset_item_action";
 import {AssetSectionItem} from "./asset_item";
 import {EditorElement} from "../../editor_element/editor_element";
 import {createElement} from "../../editor_element/element_renderer";
+import {PrefabAssetItem} from "./prefab_asset_item";
+import {PrefabTemplate} from "../../prefab_template";
 
 interface IAssetWindowAttrs {
     title : string;
@@ -51,9 +53,9 @@ export class AssetWindow extends EditorWindowElement<IAssetWindowAttrs> {
                 });
                 return createElement(AssetSection, attrs, children);
             case "image":
-                return createElement(AssetSectionItem, data);
+                return null;//createElement(AssetSectionItem, data);
             case "prefab":
-                break;
+                return createElement(PrefabAssetItem, { asset: new PrefabTemplate(asset) });
         }
         return null;
     }
@@ -72,35 +74,15 @@ export class AssetWindow extends EditorWindowElement<IAssetWindowAttrs> {
                 if (!hoverElement) {
                     return;
                 }
-                const action = new DragAssetItemAction(hoverElement.getAsset());
-                EditorRuntime.beginDragAction(action);
+                EditorRuntime.beginDragAction(hoverElement.createDragAction());
             }
         }
 
     }
 
-    public startDraggingAsset(e : MouseEvent) : any {
-        alert("DOWN");
-    }
 
     public createInitialStructure() : JSXElement {
-        return [
-            // <AssetSection asset={ {name: "Asset 1"}}>
-            //     <AssetSectionItem name="Text"/>
-            //     <AssetSectionItem name="Text"/>
-            //     <AssetSectionItem name="Text"/>
-            // </AssetSection>,
-            // <AssetSection asset={ {name: "Asset 1"}}>
-            //     <AssetSectionItem name="Text"/>
-            //     <AssetSectionItem name="Text"/>
-            //     <AssetSectionItem name="Text"/>
-            // </AssetSection>,
-            // <AssetSection asset={ {name: "Asset 1"}}>
-            //     <AssetSectionItem name="Text"/>
-            //     <AssetSectionItem name="Text"/>
-            //     <AssetSectionItem name="Text"/>
-            // </AssetSection>
-        ]
+        return [];
     }
 
 }

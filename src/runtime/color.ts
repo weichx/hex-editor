@@ -12,25 +12,34 @@ export class Color {
         this.a = a;
     }
 
-    public static Black = new Color(0, 0, 0, 1);
+    public copyTo(input : any) : any {
+        input.r = this.r;
+        input.g = this.g;
+        input.b = this.b;
+        input.a = this.a;
+        return input;
+    }
 
-    public static Blue = new Color(0, 0, 1, 1);
+    public static get Black() : Color { return new Color(0, 0, 0, 255); }
 
-    public static Clear = new Color(0, 0, 0, 0);
+    public static get Blue() { return new Color(0, 0, 255, 255); }
 
-    public static Cyan = new Color(0, 1, 1, 1);
+    public static get Clear() { return new Color(0, 0, 0, 0); }
 
-    public static Gray = new Color(0.5, 0.5, 0.5, 1);
+    public static get Cyan() { return new Color(0, 255, 255, 255); }
 
-    public static Green = new Color(0, 1, 0, 1);
+    public static get Gray() { return new Color(0.5, 0.5, 0.5, 255); }
 
-    public static Magenta = new Color(1, 0, 1, 1);
+    public static get Green() { return new Color(0, 255, 0, 255); }
 
-    public static Red = new Color(1, 0, 0, 1);
+    public static get Magenta() { return new Color(255, 0, 255, 255); }
 
-    public static White = new Color(1, 1, 1, 1);
+    public static get Red() { return new Color(255, 0, 0, 255); }
 
-    public static Yellow = new Color(1, 0.92, 0.016, 1);
+    public static get Yellow() { return new Color(255, (0.92 * 255 | 0), (0.06 * 255 | 0), 255); }
 
+    public static get White() {
+        return new Color(0, 0, 0, 255);
+    }
 }
 

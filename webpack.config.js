@@ -4,17 +4,14 @@ const globby = require('globby');
 const webpack = require('webpack');
 
 const config = {
-    entry: {
-        app: globby.sync([
-            "./src/global.ts",
-            "./src/_main.ts",
-            "!./src/app.tsx",
-            "./src/**/*.ts",
-            "./src/**/*.tsx",
-            "./src/app.tsx"
-        ]),
-        vendor: ["pixi.js"]
-    },
+    entry: globby.sync([
+        "./src/global.ts",
+        "./src/_main.ts",
+        "!./src/app.tsx",
+        "./src/**/*.ts",
+        "./src/**/*.tsx",
+        "./src/app.tsx"
+    ]),
     output: {
         path: path.resolve(__dirname, "build"),
         filename: "bundle.js"
@@ -39,7 +36,6 @@ const config = {
         ]
     },
     plugins: [
-        new webpack.optimize.CommonsChunkPlugin("vendor", "vendor.bundle.js"),
         new StrRep()
     ]
 };

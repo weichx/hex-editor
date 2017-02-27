@@ -1,22 +1,16 @@
 import {EditorHTMLElement} from "../../editor_element/editor_html_element";
-import {Asset} from "../../runtime/asset";
-import {IconNameToggleRow} from "../../ui_elements/toggle_icon_label_row";
+import {DragAction} from "../../editor/drag_actions/drag_action";
 
-export class AssetSectionItem extends EditorHTMLElement<{asset: Asset}> {
+export class AssetSectionItem<T> extends EditorHTMLElement<T> {
 
     protected getDomData() : IDomData {
         return { tagName: "div", classList: "asset-item" }
     }
 
-    public getAsset() : Asset {
-        return this.attrs.asset;
+    public createDragAction() : DragAction {
+        throw new Error("Subclass this");
     }
 
-    public createInitialStructure(children : JSXElement) : JSXElement {
-        return [
-            <IconNameToggleRow iconName="search" label="asset"/>
-        ];
-    }
 }
 
 createStyleSheet(`<style>

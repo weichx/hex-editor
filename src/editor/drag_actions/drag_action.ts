@@ -1,4 +1,4 @@
-import {EditorElement} from "../editor_element/editor_element";
+import {EditorElement} from "../../editor_element/editor_element";
 
 interface IDragAnnotation {
     eventType : string;

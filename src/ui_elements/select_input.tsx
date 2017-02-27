@@ -1,6 +1,6 @@
 import {getSetter, getGetter} from "../editor_ui_attrs/binding_compiler";
 import {EditorCustomElement} from "../editor_element/editor_custom_element";
-import {ILifecycle} from "../editor_runtime";
+import {ILifecycle} from "../editor/editor_runtime";
 
 interface ISelectInput extends IHTMLAttribute {
     binding : IBinding;
@@ -27,7 +27,7 @@ export class SelectInput extends EditorCustomElement<ISelectInput> implements IL
         this.lastValue = this.getterFn(this.ctx);
         this.htmlNode.addEventListener("change", () => {
             const select = (this.htmlNode as HTMLSelectElement);
-            let value = select.options[select.selectedIndex].value;
+            let value = (select.options[select.selectedIndex] as HTMLOptionElement).value;
             const target = this.children[select.selectedIndex] as any;
             if (target.attrs.value !== void 0) {
                 value = target.attrs.value;

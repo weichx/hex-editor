@@ -4,7 +4,7 @@ import {createElement} from "../../editor_element/element_renderer";
 import {Component} from "../../runtime/component";
 import {TypeOf} from "../../runtime/interfaces/i_typeof";
 
-interface IPropertyRendererAttrs {
+export interface IPropertyRendererAttrs {
     component : Component & Indexable<any>;
     editorData : IEditorAnnotationData;
 }

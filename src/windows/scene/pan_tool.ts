@@ -12,14 +12,10 @@ export class ScenePanTool extends SceneTool {
         }
         if (input.isMouseDownThisFrame()) {
             this.panning = true;
-            const delta = input.getMouseDelta();
-            if(delta.isZero()) return;
-            this.sceneWindow.pan(delta);
+            this.sceneWindow.pan(input.getMouseDelta());
         }
         else if(this.panning && input.isMouseDown()) {
-            const delta = input.getMouseDelta();
-            if(delta.isZero()) return;
-            this.sceneWindow.pan(delta);
+            this.sceneWindow.pan(input.getMouseDelta());
         }
         else if(input.isMouseUp()) {
             this.panning = false;

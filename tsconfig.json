@@ -10,5 +10,8 @@
     "module": "commonjs",
     "experimentalDecorators": true,
     "importHelpers": true
-  }
+  },
+  "exclude": [
+    "node_modules", "build", "spec"
+  ]
 }

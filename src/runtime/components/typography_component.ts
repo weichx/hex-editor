@@ -1,5 +1,6 @@
 import {UIComponent} from "./ui_component";
 import {CommandType} from "../enums/e_command_type";
+import {Rectangle} from "../rectangle";
 
 export class Font {
     //size
@@ -18,8 +19,12 @@ export class TypographyComponent extends UIComponent {
 
     public async setTextAsync(text : string) : Promise<string> {
         this.setTextPromise = new Promise((resolve : IResolve<string>) => {
-            Runtime.sendCommand(CommandType.SetText, this.appElement.id, resolve);
-            return text;
+
+            // Runtime.sendCommand(CommandType.SetText, this.appElement.id, (rect : Rectangle) => {
+            //     this.appElement.setRect(rect);
+            //     resolve(text);
+            // });
+
         });
         return this.setTextPromise;
     }

@@ -22,7 +22,7 @@ export class SizingComponent extends Component implements ISizingComponent {
     }
 
     public onLayoutRectChanged(layoutRect : Rectangle) : void {
-        this.appElement.setRect(layoutRect);
+
     }
 
     public onMounted() : void {

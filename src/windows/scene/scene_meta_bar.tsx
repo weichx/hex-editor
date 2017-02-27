@@ -1,7 +1,7 @@
 import {EditorCustomElement} from "../../editor_element/editor_custom_element";
 import {Button} from "../../ui_elements/button";
 import {SceneWindow} from "../scene_window";
-import {WindowColors} from "../../editor_theme";
+import {WindowColors} from "../../editor/editor_theme";
 import {BreakpointType} from "../../runtime/breakpoint";
 
 function round(places : number) {

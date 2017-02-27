@@ -1,7 +1,9 @@
-import {EditorRuntimeImplementation} from "./editor_runtime";
+import {EditorRuntimeImplementation} from "./editor/editor_runtime";
 import {createElement} from "./editor_element/element_renderer";
 import {EditorBindingElement as EBindingElement, EditorBindingElement} from "./editor_element/editor_binding_element";
 import {RuntimeImpl} from "./runtime/runtime";
+import {BrowserRuntimeImpl} from "./browser/browser_runtime";
+import {EditorWorker, EditorWorkerContext} from "./editor/editor_worker";
 
 const enum EnvironmentFlag {
     RuntimeActive = 1 << 0,
@@ -19,14 +21,16 @@ declare global {
     const developmentGuard : (fn : () => void) => void;
     const productionGuard : (fn : () => void) => void;
     const testGuard : (fn : () => void) => void;
+    let BrowserRuntime : BrowserRuntimeImpl;
     let EditorRuntime : EditorRuntimeImplementation;
     let Runtime : RuntimeImpl;
     let Bind : (expression : any) => EditorBindingElement;
-
+    let AppRootElementId : number;
     let EditorBindingElement : typeof EBindingElement;
 
     interface Window {
         Runtime : RuntimeImpl;
+        BrowserRuntime : BrowserRuntimeImpl;
         EditorRuntime : EditorRuntimeImplementation;
         EditorBindingElement: typeof EBindingElement;
         createStyleSheet : (css : string) => void;
@@ -38,6 +42,8 @@ declare global {
         testGuard(fn : () => void) : void;
         EmptyFunction(...args : any[]) : void;
         HexEnvironmentFlag : EnvironmentFlag;
+        HexWorker : typeof Worker;
+        AppRootElementId : number;
     }
 
     interface HTMLStyleElement {
@@ -45,7 +51,7 @@ declare global {
     }
 
 }
-
+window.AppRootElementId = 0;
 window.Runtime = null;
 window.HexEnvironmentFlag = 0;
 window.EmptyFunction = function () {};
@@ -96,12 +102,16 @@ window.Bind = function (ctx : any, path : any) {
     createElement: createElement
 };
 
+(window as any).self = new EditorWorkerContext();
+window.HexWorker = EditorWorker;
 window.HexEnvironmentFlag |= EnvironmentFlag.EditorActive;
+window.BrowserRuntime = new BrowserRuntimeImpl("todo --- code url here", document.body);
 window.EditorRuntime = new EditorRuntimeImplementation();
 window.Runtime = EditorRuntime as any;
 
 function loop(delta : number) {
-    EditorRuntime.update(delta);
+    (BrowserRuntime as any).update(delta);
+    (EditorRuntime as any).update(delta);
     requestAnimationFrame(loop);
 }
 requestAnimationFrame(loop);

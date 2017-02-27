@@ -1,31 +1,30 @@
 ///<reference path="../../node_modules/@types/pixi.js/index.d.ts"/>
-import PIXI = require("pixi.js");
-import {WindowColors} from "../editor_theme";
+import {WindowColors} from "../editor/editor_theme";
 import {EditorWindowElement, IWindowAttrs} from "../chrome/editor_window_element";
 import {EditorElement} from "../editor_element/editor_element";
 import {SceneTool} from "./scene/scene_tool";
-import {Rectangle} from "../runtime/rectangle";
-import {AppElement} from "../runtime/app_element";
+import {AppElement, Space} from "../runtime/app_element";
 import {SceneMetaBar} from "./scene/scene_meta_bar";
 import {Vector2} from "../runtime/vector2";
 import {Breakpoint, BreakpointType} from "../runtime/breakpoint";
 import {ScenePanTool} from "./scene/pan_tool";
 import {clamp} from "../util";
-import {DragAction} from "../drag_actions/drag_action";
-import {DragAssetItemAction} from "../drag_actions/drag_asset_item_action";
-import {TypographyComponent} from "../runtime/components/typography_component";
+import {DragAction} from "../editor/drag_actions/drag_action";
+import {PrefabDragAction} from "../editor/drag_actions/prefab_drag_action";
+import {SceneRectTool} from "./scene/rect_tool";
 
 export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
     public element = this;
     private currentTool : SceneTool;
     private ctx : CanvasRenderingContext2D;
     private canvas : HTMLCanvasElement;
-    public highlighter : EditorElement;
     public pixi : PIXI.WebGLRenderer;
     public stage : PIXI.Container;
     private width : number;
     private height : number;
+    private dragThing : PIXI.Graphics;
     private frameOutline : PIXI.Graphics;
+    private selectionOutline : PIXI.Graphics;
     public zoomLevel : number = 1;
     private panValue : Vector2;
     private baseYOffset : number = 12;
@@ -47,12 +46,9 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
         this.panValue.x = ((this.width * 0.5) - (this.frameDimensions.x * 0.5)) | 0;
         this.panValue.y = this.baseYOffset;
 
-        AppElement.Root.setRectValues(
-            this.panValue.x,
-            this.panValue.y,
-            this.frameDimensions.x,
-            this.frameDimensions.y
-        );
+        AppElement.Root.setPosition(this.panValue);
+        AppElement.Root.setDimensions(this.frameDimensions.x, this.frameDimensions.y);
+
         this.resetZoom();
         this.drawFrameOutline();
         //invoke break point code
@@ -61,17 +57,6 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
 
     private paintScene() : void {
         this.isPaintQueued = true;
-    }
-
-    private drawFrameOutline() : void {
-        this.frameOutline.clear();
-        this.frameOutline.lineStyle(1, 0xFF00CD);
-        this.frameOutline.drawRect(
-            this.panValue.x,
-            this.panValue.y - 1,
-            this.zoomLevel * this.frameDimensions.x,
-            this.zoomLevel * this.frameDimensions.y
-        );
     }
 
     public onUpdated() : void {
@@ -92,31 +77,29 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
             this.setPreviewSize(this.currentBreakpoint);
         }
         this.currentTool.update();
-        if(this.isPaintQueued) {
-            this.isPaintQueued = false;
+        //if(this.isPaintQueued) {
+        //    this.isPaintQueued = false;
             this.paintBackground();
             this.drawFrameOutline();
+            this.drawSelection();
             this.pixi.render(this.stage);
-        }
+        //}
+    }
+
+    public applyPanOffset(input : IVector2) : void {
+        input.x += this.panValue.x;
+        input.y += this.panValue.y;
     }
 
     public pan(delta : Vector2) : void {
+        if(delta.isZero()) return;
         this.panValue.addVector(delta);
-        AppElement.Root.setRectValues(
-            this.panValue.x,
-            this.panValue.y,
-            this.frameDimensions.x,
-            this.frameDimensions.y
-        );
+        AppElement.Root.setPosition(this.panValue);
+        AppElement.Root.setDimensions(this.frameDimensions.x, this.frameDimensions.y);
         this.paintScene();
     }
 
-    public setCursor(cursorString : string) : void {
-        this.getDomNode().style.cursor = cursorString;
-    }
-
     private zoom(zoomDelta : number) : void {
-        if(zoomDelta === 0) return;
         const oldWidth = this.frameDimensions.x * this.zoomLevel;
         const oldHeight = this.frameDimensions.y * this.zoomLevel;
         this.zoomLevel -= 0.1 * zoomDelta;
@@ -128,15 +111,17 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
             (oldHeight - newHeight) * 0.5
         );
         this.pan(diff);
-        const childRootDom = this.getChildRoot().getDomNode();
-        const appRootDom = childRootDom.firstElementChild as HTMLElement;
-        appRootDom.style.transformOrigin = "top left";
-        appRootDom.style.transform = "scale(" + this.zoomLevel + ")";
+        if(zoomDelta !== 0) {
+            const childRootDom = this.getChildRoot().getDomNode();
+            const appRootDom = childRootDom.firstElementChild as HTMLElement;
+            appRootDom.style.transformOrigin = "top left";
+            appRootDom.style.transform = "scale(" + this.zoomLevel + ")";
+        }
         this.paintScene();
     }
 
     private resetZoom() : void {
-        this.zoomLevel = 1.1;
+        this.zoomLevel = 1;
         const width = this.width;
         const breakpointWidth = this.frameDimensions.x;
 
@@ -146,7 +131,7 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
             this.panValue.y = this.baseYOffset;
         }
 
-        this.zoom(1);
+        this.zoom(0);
     }
 
     private paintBackground() {
@@ -174,11 +159,12 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
     }
 
     public onRendered() {
-        this.currentTool = new ScenePanTool(this);
+        //todo swap tool based on layout type of parent of selection
+        this.currentTool = new SceneRectTool(this);//new ScenePanTool(this);
         this.panValue = new Vector2();
         this.canvas = this.getChildBySelector('canvas').getDomNode() as HTMLCanvasElement;
         this.ctx = this.canvas.getContext("2d");
-        EditorRuntime.drawScene("scene-render-root");
+        EditorRuntime.drawScene(".scene-render-root");
         EditorRuntime.updateTree.add(this);
         PIXI.utils.skipHello();
         this.stage = new PIXI.Container();
@@ -188,9 +174,75 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
             view: this.getChildById('foreground-canvas').getDomNode() as HTMLCanvasElement
         });
         this.frameOutline = new PIXI.Graphics();
+        this.dragThing = new PIXI.Graphics();
+        this.selectionOutline = new PIXI.Graphics();
         this.stage.addChild(this.frameOutline);
+        this.stage.addChild(this.dragThing);
+        this.stage.addChild(this.selectionOutline);
         this.pixi.render(this.stage);
         this.setPreviewSize(this.currentBreakpoint);
+    }
+
+    public drawDragThing() : void {
+        const input = EditorRuntime.getInput();
+        const mouse = input.getMouseRelativeToEditorElement(this.getChildRoot());
+        const mouseOver = Runtime.getAppElementAtPoint(mouse);
+
+        if(mouseOver) {
+            //see if we are over a layout element
+            //if we are, simulate adding this to the layout at some fixed width (20px or something smallish)
+            //might not need to do an actual layout
+            //might get away with just shifting elements absolutely temporarily
+
+            //if not in a layout element -- fill the current element
+            //if in layout element within some gutter amount, do fancy preview
+
+            this.dragThing.clear();
+            this.dragThing.beginFill(0x00FF00, 0.2);
+            this.dragThing.lineStyle(1, 0x00FF00);
+            const position = mouseOver.getPosition();
+            //todo lerp this for sexiness
+            this.dragThing.drawRect(
+                position.x,
+                position. y - 1,
+                mouseOver.getWidth(),
+                mouseOver.getHeight()
+            );
+        }
+        else {
+            this.dragThing.clear();
+            this.dragThing.beginFill(0x00FF00, 0.2);
+            this.dragThing.lineStyle(1, 0x00FF00);
+            this.dragThing.drawRect(mouse.x - 50, mouse.y - 25, 100, 50);
+        }
+
+        this.paintScene();
+    }
+
+    private drawFrameOutline() : void {
+        this.frameOutline.clear();
+        this.frameOutline.lineStyle(1, 0xFF00CD);
+        this.frameOutline.drawRect(
+            this.panValue.x,
+            this.panValue.y - 1,
+            this.zoomLevel * (this.frameDimensions.x + 1),
+            this.zoomLevel * (this.frameDimensions.y)
+        );
+    }
+
+    public drawSelection() : void {
+        this.selectionOutline.clear();
+        const selection = EditorRuntime.getSelection();
+        if(!selection) return;
+        const position = selection.getPosition();
+        this.selectionOutline.lineStyle(1, 0xFFFFFFFF);
+        this.selectionOutline.rotation = selection.getRotation();
+        this.selectionOutline.drawRect(
+            position.x,
+            position.y - 1,
+            this.zoomLevel * selection.getWidth(),
+            this.zoomLevel * selection.getHeight()
+        );
     }
 
     public createInitialStructure(children : any) : JSXElement {
@@ -199,81 +251,56 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
             <canvas x-id="background-canvas" class="overlay-canvas" />,
             <div x-child-root class="scene-render-root"/>,
             <canvas x-id="foreground-canvas" class="overlay-canvas"/>,
-            <div x-id="highlighter" x-hidden class="highlighter">
-                <div x-id="hi-lite-top-right" class="highlight-corner top-right"></div>
-                <div x-id="hi-lite-top-left" class="highlight-corner top-left"></div>
-                <div x-id="hi-lite-bottom-right" class="highlight-corner bottom-right"></div>
-                <div x-id="hi-lite-bottom-left" class="highlight-corner bottom-left"></div>
-            </div>
         ]
     }
 
-    @DragAction.MouseEnter(DragAssetItemAction)
+    @DragAction.MouseEnter(PrefabDragAction)
     public handleAssetDragEnter() : void {
-        this.setCursor("-webkit-grabbing");
+        EditorRuntime.setCursor("-webkit-grabbing");
     }
 
-    @DragAction.MouseOver(DragAssetItemAction)
+    @DragAction.MouseOver(PrefabDragAction)
     public handleAssetDragHover() : void {
-
+        this.drawDragThing();
     }
 
-    @DragAction.MouseExit(DragAssetItemAction)
+    @DragAction.MouseExit(PrefabDragAction)
     public handleAssetDragExit() : void {
-        this.setCursor("default");
+        EditorRuntime.setCursor("default");
+        this.dragThing.clear();
+        this.paintScene();
     }
 
-    @DragAction.Drop(DragAssetItemAction)
-    public handleAssetDrop() : void {
-        const element = new AppElement("Generated");
-        const cmp = element.addComponent(TypographyComponent);
-        cmp.setTextAsync("Text goes here");
+    @DragAction.Drop(PrefabDragAction)
+    public handleAssetDrop(action : PrefabDragAction) : void {
+        const input = EditorRuntime.getInput();
+        const mouse = input.getMouseRelativeToEditorElement(this.getChildRoot());
+        const mouseOver = Runtime.getAppElementAtPoint(mouse);
+        const appElement = action.template.create();
 
+        if(mouseOver) {
+            appElement.setParent(mouseOver);
+            appElement.setPositionValues(0, 0, Space.Local);
+            appElement.setDimensions(mouseOver.getWidth(), mouseOver.getHeight());
+        }
+        else {
+            appElement.setParent(AppElement.Root);
+            //todo handle pan value
+            appElement.setPositionValues(
+                mouse.x - 50,
+                mouse.y - 25
+            );
+            appElement.setDimensions(100, 50);
+        }
+        EditorRuntime.select(appElement);
+        this.dragThing.clear();
+        this.paintScene();
     }
 
 }
 
 createStyleSheet(`
 <style>
-
-.highlighter {
-    position: absolute;
-    transform: translate(0, 0);
-    width: 100px;
-    height: 100px;
-    border: 1px solid lightblue;
-    top: 0;
-    left:0;
-}
-
-.highlight-corner {
-    position: absolute;
-    background:lightblue;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    z-index: 100;
-}
-        
-.top-right {
-    top: -5px;
-    right: -5px;
-}
-
-.top-left{
-    top: -5px;
-    left: -5px;
-}
-
-.bottom-right {
-    bottom: -5px;
-    right: -5px;
-}
-
-.bottom-left {
-    bottom: -5px;
-    left: -5px;
-}
         
 .scene-window-root {
     overflow:hidden;

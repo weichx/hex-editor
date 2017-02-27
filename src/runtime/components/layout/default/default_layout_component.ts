@@ -55,13 +55,10 @@ export class HorizontalStackLayout extends LayoutComponent {
 
         let allocatedSpace = 0;
         for (let i = 0; i < this.sizingComponents.length; i++) {
-            const rect = new Rectangle();
-            rect.x = allocatedSpace;
-            rect.y = 0;
-            rect.width = sizings[i];
-            rect.height = 100;
+            const element = this.sizingComponents[i].appElement;
+            element.setPositionValues(allocatedSpace, 0);
+            element.setDimensions(sizings[i], 100);
             allocatedSpace += sizings[i];
-            this.sizingComponents[i].appElement.setRect(rect);
         }
     }
 

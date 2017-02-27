@@ -80,14 +80,23 @@ export class Component {
         return Component.types.get(path);
     }
 
-    public static getComponentTypePathPairs() : Array<{type: typeof Component, path: string}> {
-        const retn = new Array<{type: typeof Component, path: string}>();
-        Component.types.forEach(function(value : typeof Component, key : string) {
-            retn.push({type: value, path: key});
+    public static getComponentTypePathPairs() : Array<{ type : typeof Component, path : string }> {
+        const retn = new Array<{ type : typeof Component, path : string }>();
+        Component.types.forEach(function (value : typeof Component, key : string) {
+            retn.push({ type: value, path: key });
         });
         return retn;
     }
 
+    public serialize() : IJson {
+        return null;
+    }
+
+    public static Serialize(component : Component) : any {
+        return {
+            id: "blach", data:  component.serialize()
+        }
+    }
 }
 
 export const allowMultiple = Component.allowMultipleDecorator;
