@@ -21,6 +21,7 @@ export function getSetter(path : Array<string>) : (ctx : any) => any {
     return fn;
 }
 
+
 export function genCode(groups : any, isSetter = false, varChar = 'a',) {
     let code = "";
     if (!Array.isArray(groups)) {

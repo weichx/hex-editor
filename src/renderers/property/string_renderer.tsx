@@ -10,6 +10,18 @@ interface IStringAttrs {
 @propertyDrawer(String)
 export class StringRenderer extends PropertyRenderer<IStringAttrs> {
 
+    public onChange() : void {
+
+        // if(this.attrs.editorData.onValueChanged) {
+        //
+        // }
+
+        if(this.attrs.onValueChanged) {
+            this.attrs.onValueChanged("", "");
+        }
+
+    }
+
     public createInitialStructure(children : any) : JSXElement {
         const editorData = this.attrs.editorData;
         const component = this.attrs.component as any;

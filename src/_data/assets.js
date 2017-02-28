@@ -34,7 +34,9 @@ module.exports = [
         })
     ]),
     Prefab("Text", {}, [
-        Component("UI/Text")
+        Component("UI/Text", {
+            textContent: "Hex Yeah!"
+        })
     ]),
     Prefab("Image", []),
     Prefab("Button", []),

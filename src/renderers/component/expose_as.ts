@@ -14,6 +14,26 @@ export function getExposedFieldMap(target : any) : Map<string, IEditorAnnotation
     return null;
 }
 
+export function inspector(propertyType : any, ...propertyOptions : any[]) {
+    return (target : Object, propertyName : string) => {
+        var fieldMap = editorDataMap.get(target.constructor);
+        if(!fieldMap) {
+            fieldMap = new Map<string, IEditorAnnotationData>();
+            const parent = Object.getPrototypeOf(target.constructor);
+            if (typeof parent === "function") {
+                const parentFields = editorDataMap.get(parent);
+                if(parentFields) {
+                    parentFields.forEach(function (value : IEditorAnnotationData, key : string) {
+                        fieldMap.set(key, value);
+                    });
+                }
+            }
+            editorDataMap.set(target.constructor, fieldMap);
+        }
+        fieldMap.set(propertyName, {propertyName, propertyType, propertyOptions});
+    };
+}
+
 export function exposeAs(propertyType : any, ...propertyOptions : any[]) {
     return (target : Object, propertyName : string) => {
         var fieldMap = editorDataMap.get(target.constructor);
@@ -24,7 +44,7 @@ export function exposeAs(propertyType : any, ...propertyOptions : any[]) {
                 const parentFields = editorDataMap.get(parent);
                 if(parentFields) {
                     parentFields.forEach(function (value : IEditorAnnotationData, key : string) {
-                        this.fieldMap.set(key, value);
+                        fieldMap.set(key, value);
                     });
                 }
             }

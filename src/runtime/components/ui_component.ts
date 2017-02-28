@@ -42,6 +42,10 @@ export class UIComponent extends Component {
         Runtime.sendCommand(CommandType.PaintBackground, this.appElement.id)
     }
 
+    public getTypeName() : string {
+        return this.constructor.name.replace("Component", "");
+    }
+
     public getBackground() : Background {
         return this.background;
     }

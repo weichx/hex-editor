@@ -11,7 +11,6 @@ interface ITextInput {
 
 export class TextInput extends EditorCustomElement<ITextInput> implements ILifecycle {
 
-    public element = this;
     private getterFn : (renderCtx : any) => any;
     private setterFn : (renderCtx : any, value : any) => void;
     private lastValue : any;
@@ -20,9 +19,9 @@ export class TextInput extends EditorCustomElement<ITextInput> implements ILifec
     protected getDomData() : IDomData {
         return {
             tagName: "input",
+            style: "width: 100%",
             attributes: {
-                type: "text",
-                style: "width: 100%"
+                type: "text"
             }
         };
     }

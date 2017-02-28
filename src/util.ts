@@ -159,4 +159,8 @@ export class Integer {}
 
 export class Select {}
 
+export function Select1(options : any[]) {
+
+}
+
 export class EnumSelect {}

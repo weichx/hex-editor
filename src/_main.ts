@@ -25,6 +25,7 @@ declare global {
     let EditorRuntime : EditorRuntimeImplementation;
     let Runtime : RuntimeImpl;
     let Bind : (expression : any) => EditorBindingElement;
+    let Binding : <T>(t : T) => T;
     let AppRootElementId : number;
     let EditorBindingElement : typeof EBindingElement;
 

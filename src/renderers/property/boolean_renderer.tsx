@@ -10,6 +10,10 @@ interface IBooleanAttrs {
 @propertyDrawer(Boolean)
 export class BooleanRenderer extends PropertyRenderer<IBooleanAttrs> {
 
+    private valueChanged() : void {
+        this.attrs.component.setDirty(this.attrs.editorData.propertyName);
+    }
+
     public createInitialStructure(children : any) : JSXElement {
         const editorData = this.attrs.editorData;
         const propertyName = editorData.propertyName;

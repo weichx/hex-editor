@@ -7,7 +7,7 @@ interface ICheckboxInput extends IHTMLAttribute {
 }
 
 export class CheckboxInput extends EditorCustomElement<ICheckboxInput> {
-    public element = this;
+
     private ctx : any;
     private getterFn : (renderCtx : any) => any;
     private setterFn : (renderCtx : any, value : any) => void;

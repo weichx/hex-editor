@@ -1,6 +1,7 @@
 import {CommandType} from "../enums/e_command_type";
 import {BackgroundComponent} from "../components/background_component";
 import {Component} from "../component";
+import {UIComponent} from "../components/ui_component";
 
 const ComponentCache = new Array<Component>();
 const ColorCache = {};
@@ -15,6 +16,7 @@ Runtime.setCommandSerializer(CommandType.Create, function (id : any) {
     for (let i = 0; i < components.length; i++) {
         serializedComponents[i] = components[i].serialize();
     }
+
     //todo -- call onCreate after we get the response buffer back
 
     //outline
@@ -29,7 +31,7 @@ Runtime.setCommandSerializer(CommandType.Create, function (id : any) {
     //Component.Serialize(component)
     return {
         id: id,
-        elementType : "Panel",
+        elementType : appElement.getComponent(UIComponent).getTypeName(),
         components: serializedComponents,
         parentId: appElement.getParent().id
     };

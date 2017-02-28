@@ -27,3 +27,11 @@ export class PropertyRenderer<T> extends EditorCustomElement<T & IPropertyRender
     }
 
 }
+
+//change propogation
+//input -> notify upwards of changes
+
+//send every frame
+
+//check every frame
+

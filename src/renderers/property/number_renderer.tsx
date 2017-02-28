@@ -12,11 +12,13 @@ interface INumberAttrs {
 @propertyDrawer(Integer)
 export class NumberRenderer extends PropertyRenderer<INumberAttrs> {
 
-    public createInitialStructure(children : any) : JSXElement {
+    public createInitialStructure() : JSXElement {
         const editorData = this.attrs.editorData;
         const propertyName = editorData.propertyName;
         const component = this.attrs.component;
-
+        //Bind(this.attrs.component[propertyName])
+        //var binding = new Binding(this, this, ["path"], onChange)
+        //this.onUpdated() { binding.update() }
         let input = null;
         if (editorData.propertyType === Integer) {
             input = <IntegerInput onValueChanged={this.attrs.onValueChanged} binding={component[propertyName]}/>

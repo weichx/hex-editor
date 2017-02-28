@@ -37,6 +37,7 @@ BrowserRuntime.setCommandInvoker(CommandType.Create, (function () {
 
     const elementTypeToTagName : any = {
         "Panel": "div",
+        "Text": "div",
         "Button": "button",
         "Dropdown": "select",
         "Section": "section"
@@ -46,11 +47,12 @@ BrowserRuntime.setCommandInvoker(CommandType.Create, (function () {
         const element = document.createElement(elementTypeToTagName[payload.elementType]);
         const parentId = payload.parentId;
         element.setAttribute("app-id", payload.id);
+        BrowserRuntime.setDomNodeToElementId(payload.id, element);
         const components = payload.components;
         for (let i = 0; i < components.length; i++) {
             DeserializeComponent(components[i], element);
         }
-        BrowserRuntime.setDomNodeToElementId(payload.id, element);
+
         BrowserRuntime.elementIdToDomNode(parentId).appendChild(element);
     }
 })());
