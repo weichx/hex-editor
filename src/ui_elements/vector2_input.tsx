@@ -1,41 +1,18 @@
 import {InlineField} from "./inline_field";
 import {NumberInput} from "./number_input";
-import {HorizontalBase} from "./horizontal";
-import {getGetter} from "../editor_ui_attrs/binding_compiler";
 import {Vector2} from "../runtime/vector2";
+import {CreateBinding} from "../editor/binding";
+import {InputRenderer, IInputRendererAttrs} from "./editor_input";
 
-interface IVector2Input {
-    binding : any;
-}
-
-export class Vector2Input extends HorizontalBase<IVector2Input> {
-    public element = this;
-    protected getterFn : (renderCtx : any) => any;
-    protected ctx : any;
-    protected lastValue : Vector2;
-    protected vector : Vector2;
-
-    public onMounted() {
-        this.ctx = this.attrs.binding.ctx;
-        this.getterFn = getGetter(this.attrs.binding.path);
-        EditorRuntime.updateTree.add(this);
-    }
-
-    public onUpdated() {
-        const value = this.getterFn(this.ctx) || new Vector2();
-        if (this.lastValue !== value) {
-            this.lastValue = value;
-            this.vector = value;
-        }
-    }
+export class Vector2Input extends InputRenderer<IInputRendererAttrs<Vector2>, Vector2> {
 
     public createInitialStructure(children : any) : JSXElement {
         return [
             <InlineField label="X">
-                <NumberInput binding={this.vector.x}/>
+                <NumberInput value={ CreateBinding(this.binding, "x") }/>
             </InlineField>,
             <InlineField label="Y">
-                <NumberInput binding={this.vector.y}/>
+                <NumberInput value={ CreateBinding(this.binding, "y") }/>
             </InlineField>
         ]
     }

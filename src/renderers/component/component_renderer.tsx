@@ -39,7 +39,7 @@ export class ComponentRenderer<T extends Component> extends EditorCustomElement<
     public createStandardHeaderStructure() : JSXElement {
         return <Horizontal style="position:relative">
             <ToggleIcon class="inspector-toggle" visibilityTarget={ () => this.getChildRoot() }/>
-            <CheckboxInput class="enabled-input" binding={true}/>
+            <CheckboxInput class="enabled-input" value={true}/>
             <span class="component-name">
                     {this.getDisplayName(this.attrs.component.constructor.name)}
                 </span>

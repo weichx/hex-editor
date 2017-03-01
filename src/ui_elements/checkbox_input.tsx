@@ -1,17 +1,9 @@
-import {getSetter, getGetter} from "../editor_ui_attrs/binding_compiler";
-import {EditorCustomElement} from "../editor_element/editor_custom_element";
+import {InputRenderer, IInputRendererAttrs} from "./editor_input";
 
-interface ICheckboxInput extends IHTMLAttribute {
-    binding : any;
-    onValueChanged? : (newValue : boolean, oldValue : boolean) => void;
-}
 
-export class CheckboxInput extends EditorCustomElement<ICheckboxInput> {
+export class CheckboxInput extends InputRenderer<IInputRendererAttrs<boolean>, boolean> {
 
-    private ctx : any;
-    private getterFn : (renderCtx : any) => any;
-    private setterFn : (renderCtx : any, value : any) => void;
-    private lastValue : boolean;
+    protected htmlNode : HTMLInputElement;
 
     protected getDomData() : IDomData {
         return {
@@ -21,29 +13,19 @@ export class CheckboxInput extends EditorCustomElement<ICheckboxInput> {
     }
 
     public onMounted() {
-        this.ctx = this.attrs.binding.ctx;
-        this.getterFn = getGetter(this.attrs.binding.path);
-        this.setterFn = getSetter(this.attrs.binding.path);
+
+        this.binding.onChange(() => {
+            this.htmlNode.checked = Boolean(this.binding.get());
+        });
+
         this.htmlNode.addEventListener("change", () => {
-            const value = (this.htmlNode as HTMLInputElement).checked;
-            this.setterFn(this.ctx, value);
-            this.lastValue = value;
+            this.binding.set(this.htmlNode.checked);
         }, true);
+
     }
 
-    public onUpdated() {
-        const value = Boolean(this.getterFn(this.ctx));
-        if (this.lastValue !== value) {
-            if(this.attrs.onValueChanged) {
-                this.attrs.onValueChanged(value, this.lastValue);
-            }
-            this.lastValue = value;
-            (this.htmlNode as HTMLInputElement).checked = value;
-        }
-    }
-
-    public onRendered() {
-        EditorRuntime.updateTree.add(this);
+    public onValueChanged(newValue : boolean) : void {
+        this.htmlNode.checked = newValue;
     }
 
 }

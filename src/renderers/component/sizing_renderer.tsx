@@ -63,10 +63,10 @@ class SizingRenderer extends ComponentRenderer<SizingComponent> {
         };
         return [
             <InspectorRow label="Width">
-                <NumberInput onValueChanged={ widthChanged } binding={this.component.width}/>
+                <NumberInput value={this.component.width}/>
             </InspectorRow>,
             <InspectorRow label="Height">
-                <NumberInput onValueChanged={ heightChanged } binding={this.component.height}/>
+                <NumberInput value={this.component.height}/>
             </InspectorRow>
         ]
     }
@@ -80,10 +80,10 @@ class SizingRenderer extends ComponentRenderer<SizingComponent> {
         };
         return [
             <InspectorRow label="Width">
-                <NumberInput onValueChanged={ widthChanged } binding={this.component.width}/>
+                <NumberInput  value={this.component.width}/>
             </InspectorRow>,
             <InspectorRow label="Height">
-                <NumberInput onValueChanged={ heightChanged } binding={this.component.height}/>
+                <NumberInput  value={this.component.height}/>
             </InspectorRow>
         ]
     }

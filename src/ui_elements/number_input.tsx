@@ -1,100 +1,44 @@
-import {getSetter, getGetter} from "../editor_ui_attrs/binding_compiler";
-import {EditorCustomElement} from "../editor_element/editor_custom_element";
+import {InputRenderer, IInputRendererAttrs} from "./editor_input";
 
-interface INumberInput {
-    binding : any;
-    onValueChanged? : (newValue : number, oldValue : number) => void;
-}
+export class NumberInput extends InputRenderer<IInputRendererAttrs<number>, number> {
 
-export class NumberInput extends EditorCustomElement<INumberInput> {
-
-    protected getterFn : (renderCtx : any) => any;
-    protected setterFn : (renderCtx : any, value : any) => void;
-    protected lastValue : any;
-    protected ctx : any;
+    protected htmlNode : HTMLInputElement;
 
     protected getDomData() : IDomData {
         return {
             tagName: "input",
+            style: "width: 100%",
             attributes: {
-                type: "text",
-                style: "width: 100%"
+                type: "text"
             }
-        }
-    }
-
-    protected onAttrChanged(attrName : string, attrValue : number) : void {
-        if(attrName === "binding") {
-            //set html input
-            //set last value == attrValue
         }
     }
 
     public onMounted() {
-        /*
-
-
-        for(var key in this.attrs) {
-            if(typeof key !== Binding) {
-                this.attrs[key] = new StaticBinding(this.attrs[key])
-            }
-
-        }
-
-
-         */
-        this.ctx = this.attrs.binding.ctx;
-        this.getterFn = getGetter(this.attrs.binding.path);
-        this.setterFn = getSetter(this.attrs.binding.path);
+        this.htmlNode.value = this.formatNumber(this.binding.get()).toString();
+        this.binding.onChange(() => {
+            this.htmlNode.value = this.formatNumber(this.binding.get()).toString();
+        });
         this.htmlNode.addEventListener("input", (e : KeyboardEvent) => {
-
-            let value = (this.htmlNode as HTMLInputElement).value || "";
+            let value = this.htmlNode.value || "0";
             let parsedValue = this.formatNumber(value);
             if (!isNaN(parsedValue)) {
-                //if(this.binding.set(parsedValue)) {
-                //  this.attrs.onValueChanged()
-                //  this.attrs.onValueChanged = "x";
-                //  this.attrs.onValueChanged.isDirty()
-                //  this.attrs.onValueChanged();
-
-                // Object.defineProperty(this.attrs.prototype) {
-                //
-                //  get: function() { return this["some constant name"] }
-                //  set: function() { this["some constant name"] = value }
-                //
-                // }
-                //}
-                this.setterFn(this.ctx, parsedValue);
-                if(this.attrs.onValueChanged) {
-                    this.attrs.onValueChanged(parsedValue, this.lastValue);
-                }
-                this.lastValue = parsedValue;
+               this.binding.set(parsedValue);
             }
         });
 
         this.htmlNode.addEventListener("focusout", () => {
-            (this.htmlNode as HTMLInputElement).value = this.formatNumber(this.lastValue).toString();
+            this.htmlNode.value = this.formatNumber(this.binding.get()).toString();
         });
     }
 
-    public onUpdated() {
-        //if(this.attrs.isDirty()) { this.htmlNoe.value = this.attrs.value }
-        const value = this.getterFn(this.ctx) || 0;
-        if (this.lastValue !== value) {
-            if(this.attrs.onValueChanged) {
-                this.attrs.onValueChanged(value, this.lastValue);
-            }
-            this.lastValue = value;
-            (this.htmlNode as HTMLInputElement).value = value;
-        }
+
+    public onValueChanged(newValue : number) : void {
+        this.htmlNode.value = this.formatNumber(newValue).toString();
     }
 
-    public onRendered() {
-        EditorRuntime.updateTree.add(this);
-    }
-
-    protected formatNumber(input : string) : number {
-        return parseFloat(input);
+    protected formatNumber(input : string|number) : number {
+        return parseFloat(input as string);
     }
 }
 

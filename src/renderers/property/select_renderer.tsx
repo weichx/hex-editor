@@ -3,6 +3,7 @@ import {propertyDrawer} from "./property_drawer";
 import {Select, EnumSelect} from "../../util";
 import {InspectorRow} from "../../ui_elements/inspector/inspector_row";
 import {SelectInput} from "../../ui_elements/select_input";
+import {CreateBinding} from "../../editor/binding";
 
 interface ISelectAttrs {
     onValueChanged? : (newValue : any, oldValue : any) => void
@@ -10,7 +11,6 @@ interface ISelectAttrs {
 
 @propertyDrawer(EnumSelect)
 export class EnumSelectRenderer extends PropertyRenderer<ISelectAttrs> {
-
 
     private createOptions(e : any) {
         const retn = new Array<any>();
@@ -28,7 +28,7 @@ export class EnumSelectRenderer extends PropertyRenderer<ISelectAttrs> {
         const component = this.attrs.component;
         const options = this.createOptions(editorData.propertyOptions[0]);
         return <InspectorRow label={propertyName}>
-            <SelectInput class="select-renderer" onValueChanged={this.attrs.onValueChanged} binding={component[propertyName]}>
+            <SelectInput class="select-renderer" value={ CreateBinding(component, propertyName as any) }>
                 {
                     options.map((option : ISelectOption) => {
                         return <option value={option.value} default={option.default}>{option.name}</option>
@@ -50,7 +50,7 @@ export class SelectRenderer extends PropertyRenderer<ISelectAttrs> {
         const component = this.attrs.component;
 
         return <InspectorRow label={propertyName}>
-            <SelectInput class="select-renderer" onValueChanged={this.attrs.onValueChanged} binding={component[propertyName]}>
+            <SelectInput class="select-renderer" value={ CreateBinding(component, propertyName as any) }>
                 {
                     editorData.propertyOptions[0].map((option : ISelectOption) => {
                         return <option value={option.value} default={option.default}>{option.name}</option>

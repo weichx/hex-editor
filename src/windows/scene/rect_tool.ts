@@ -32,6 +32,9 @@ export class SceneRectTool extends SceneTool {
                     if (element && element !== AppElement.Root && element !== selection) {
                         EditorRuntime.select(element);
                     }
+                    else {
+                        this.panning = true;
+                    }
                 }
                 return;
             }

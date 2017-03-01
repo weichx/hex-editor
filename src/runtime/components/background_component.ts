@@ -31,4 +31,10 @@ export class BackgroundComponent extends Component {
         }
     }
 
+    // public onInspectorUpdated() : void {
+    //     if(dirtyFields.get("color")) {
+    //
+    //     }
+    // }
+
 }

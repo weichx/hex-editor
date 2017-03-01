@@ -5,6 +5,7 @@ import {InlineField} from "../../ui_elements/inline_field";
 import {NumberInput} from "../../ui_elements/number_input";
 import {propertyDrawer} from "./property_drawer";
 import {BackgroundComponent} from "../../runtime/components/background_component";
+import {CreateBinding} from "../../editor/binding";
 
 interface IColorRenderAttrs extends IPropertyRendererAttrs {
     onValueChanged? (newValue : Color, oldValue : Color) : void;
@@ -13,32 +14,30 @@ interface IColorRenderAttrs extends IPropertyRendererAttrs {
 @propertyDrawer(Color)
 export class ColorRenderer extends PropertyRenderer<IColorRenderAttrs> {
 
-    private onColorChannelChanged(newValue : number, oldValue : number) : void {
+    private updateColor() : void {
         const cmp = this.attrs.component as BackgroundComponent; //temp! need to implement dirty checking
         cmp.setColor(cmp.getColor());
     }
 
     public createInitialStructure() {
+
         const editorData = this.attrs.editorData;
         const propertyName = editorData.propertyName;
         const component = this.attrs.component;
+        const color : Color = component[propertyName] as Color;
 
         return <InspectorRow label={propertyName}>
             <InlineField label="Red">
-                <NumberInput onValueChanged={ (n : number, o : number) => this.onColorChannelChanged(n,o) }
-                             binding={component[propertyName].r}/>
+                <NumberInput value={ CreateBinding(color, "r").onChange( () => this.updateColor() ) }/>
             </InlineField>
             <InlineField label="Green">
-                <NumberInput onValueChanged={ (n : number, o : number) => this.onColorChannelChanged(n,o) }
-                             binding={component[propertyName].g}/>
+                <NumberInput value={ CreateBinding(color, "g").onChange( () => this.updateColor() ) }/>
             </InlineField>
             <InlineField label="Blue">
-                <NumberInput onValueChanged={ (n : number, o : number) => this.onColorChannelChanged(n,o) }
-                             binding={component[propertyName].b}/>
+                <NumberInput value={ CreateBinding(color, "b").onChange( () => this.updateColor() ) }/>
             </InlineField>
             <InlineField label="Alpha">
-                <NumberInput onValueChanged={ (n : number, o : number) => this.onColorChannelChanged(n,o) }
-                             binding={component[propertyName].a}/>
+                <NumberInput value={ CreateBinding(color, "a").onChange( () => this.updateColor() ) }/>
             </InlineField>
         </InspectorRow>
 

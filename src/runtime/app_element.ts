@@ -55,7 +55,7 @@ export class AppElement {
     }
 
     public getScale() : ImmutableVector2 {
-        return this.scale as ImmutableVector2;
+        return this.scale.clone() as ImmutableVector2;
     }
 
     public getWidth() : number {
@@ -125,7 +125,7 @@ export class AppElement {
     }
 
     public getLocalPosition() : ImmutableVector2 {
-        return this.localPosition as ImmutableVector2;
+        return this.localPosition.clone() as ImmutableVector2;
     }
 
     public getPosition(positionCache? : Vector2) : Vector2 {

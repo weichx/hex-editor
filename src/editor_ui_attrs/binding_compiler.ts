@@ -1,9 +1,9 @@
 const GetterCache = new Map<any, Function>();
 const SetterCache = new Map<any, Function>();
 
-export function getGetter(path : Array<string>) : (ctx : any) => any {
-    const pathString = path.join(".");
-    let retn = GetterCache.get(pathString);
+export function getGetter(path : Array<string> | string) : (ctx : any) => any {
+    const pathString = Array.isArray(path) ? path.join(".") : path as string;
+    const retn = GetterCache.get(pathString);
     if (retn) return retn as (ctx : any) => any;
     const body = genCode(path);
     const fn = new Function("ctx", body) as (ctx : any) => any;
@@ -11,8 +11,8 @@ export function getGetter(path : Array<string>) : (ctx : any) => any {
     return fn;
 }
 
-export function getSetter(path : Array<string>) : (ctx : any) => any {
-    const pathString = path.join(".");
+export function getSetter(path : Array<string> | string) : (ctx : any) => any {
+    const pathString = Array.isArray(path) ? path.join(".") : path as string;
     let retn = SetterCache.get(pathString);
     if (retn) return retn as (ctx : any) => any;
     const body = genCode(path, true);
@@ -21,32 +21,35 @@ export function getSetter(path : Array<string>) : (ctx : any) => any {
     return fn;
 }
 
+export function genSimpleGetter(fieldName : string) : string {
+    return "return ctx." + fieldName;
+}
 
 export function genCode(groups : any, isSetter = false, varChar = 'a',) {
     let code = "";
     if (!Array.isArray(groups)) {
         if (isSetter) {
-            return `this.ctx.${groups} = val;`;
+            return `ctx.${groups} = val;`;
         }
         else {
-            return `return this.ctx.${groups}`;
+            return `return ctx.${groups}`;
         }
     }
     if (groups.length === 1 && varChar === 'a') {
         if (Array.isArray(groups[0])) {
             if (isSetter) {
-                return `this.ctx.${groups[0][0]} = val;`;
+                return `ctx.${groups[0][0]} = val;`;
             }
             else {
-                return `return this.ctx.${groups[0][0]}`;
+                return `return ctx.${groups[0][0]}`;
             }
         }
         else {
             if (isSetter) {
-                return `this.ctx.${groups[0]} = val;`;
+                return `ctx.${groups[0]} = val;`;
             }
             else {
-                return `return this.ctx.${groups[0]}`;
+                return `return ctx.${groups[0]}`;
             }
         }
     }

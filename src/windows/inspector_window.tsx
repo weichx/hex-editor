@@ -9,7 +9,7 @@ import {ComponentRenderer} from "../renderers/component/component_renderer";
 import {AppElement} from "../runtime/app_element";
 import {Component} from "../runtime/component";
 import {createElement} from "../editor_element/element_renderer";
-import {TransformInspector} from "../renderers/component/app_element_component";
+import {TransformInspector} from "../renderers/component/app_element_inspector";
 
 export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
 
@@ -20,7 +20,7 @@ export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
         this.getChildRoot().clearChildren();
         if (!this.selection) return;
         this.getChildRoot().addChild(createElement(TransformInspector, {
-            element: this.selection
+            appElement: this.selection
         }));
         const components = newSelection.getAllComponents();
         for (let i = 0; i < components.length; i++) {
@@ -29,7 +29,19 @@ export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
         this.getChildRoot().addChild(createElement(ComponentMenu));
     }
 
+    public onUpdated() : void {
+        if(!this.selection) return;
+        const components = this.selection.getAllComponents();
+        for(let i = 0; i < components.length; i++) {
+            const cmp = components[i] as any;
+            if(cmp.onInspectorUpdated) {
+                cmp.onInspectorUpdated();
+            }
+        }
+    }
+
     public onRendered() {
+        EditorRuntime.updateTree.add(this);
         EditorRuntime.on(SelectionChanged, this);
         this.onSelectionChanged(EditorRuntime.getSelection() as AppElement, null);
     }

@@ -38,36 +38,7 @@
 //
 // }
 //
-// class Binding<T> {
 //
-//     private value : T;
-//     private getterFn : any;
-//     private setterFn : any;
-//     private defaultValue : T;
-//     private context : Object;
-//
-//     constructor(host : Object, context : Object, path : string[]) {
-//         // EditorRuntime.updateTree.add(this);
-//     }
-//
-//     public onUpdated() : void {
-//         const value = this.getterFn(this.context);
-//     }
-//
-//     public set(value : T) : void {
-//         if(this.setterFn(this.context, value)) {
-//         }
-//     }
-//
-//     public get() : T {
-//         return this.value;
-//     }
-//
-//     public isDirty() : boolean {
-//         return false;
-//     }
-//
-// }
 //
 // export class ArrayInput extends EditorCustomElement<IArrayInput> implements ILifecycle {
 //

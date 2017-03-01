@@ -102,7 +102,7 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
     private zoom(zoomDelta : number) : void {
         const oldWidth = this.frameDimensions.x * this.zoomLevel;
         const oldHeight = this.frameDimensions.y * this.zoomLevel;
-        this.zoomLevel -= 0.1 * zoomDelta;
+        this.zoomLevel -= 0.05 * zoomDelta;
         this.zoomLevel = clamp(this.zoomLevel, 0.1, 4);
         const newWidth = this.frameDimensions.x * this.zoomLevel;
         const newHeight = this.frameDimensions.y * this.zoomLevel;
@@ -237,10 +237,12 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
         const position = selection.getPosition();
         this.selectionOutline.lineStyle(1, 0xFFFFFFFF);
         this.selectionOutline.rotation = selection.getRotation();
+        //probably need to scale pan diff,
+        //app root moves on zoom
         this.selectionOutline.drawRect(
             position.x,
             position.y - 1,
-            this.zoomLevel * selection.getWidth(),
+            (this.zoomLevel * selection.getWidth()) + 1,
             this.zoomLevel * selection.getHeight()
         );
     }
