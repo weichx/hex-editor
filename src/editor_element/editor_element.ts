@@ -50,11 +50,11 @@ export class EditorElement {
     }
 
     public setVisible(isVisible : boolean) {
-        if(isVisible === this.isVisible()) {
+        if (isVisible === this.isVisible()) {
             return;
         }
         this.flags ^= EditorElementFlags.Visible;
-        if(this.htmlNode) {
+        if (this.htmlNode) {
             this.htmlNode.classList.toggle("hidden", !isVisible);
         }
         // this.onVisibilityChanged(isVisible);
@@ -64,14 +64,6 @@ export class EditorElement {
         const dom = this.getDomNode();
         dom.style.left = x + "px";
         dom.style.top = y + "px";
-    }
-
-    public setRect(rect : Rectangle) : void {
-        const dom = this.getDomNode();
-        dom.style.left = rect.x + 'px';
-        dom.style.top = rect.y + 'px';
-        dom.style.width = rect.width + 'px';
-        dom.style.height = rect.height + 'px';
     }
 
     public getClientBounds() {
@@ -86,17 +78,62 @@ export class EditorElement {
 
         if (child.parent) {
             child.parent.removeChild(child);
+            //if rendered remove  dom
+            if (child.htmlNode) {
+                child.htmlNode.remove();
+            }
         }
 
+        const oldParent = child.parent;
         child.parent = this;
         this.children.push(child);
 
-        if (this.isRendered()) {
+        if (this.htmlNode && child.htmlNode) {
+            this.htmlNode.appendChild(child.htmlNode);
+        }
+
+        if (!child.isRendered() && this.isRendered()) {
             child.render(this.htmlNode);
         }
-        else if (this.htmlNode) {
+        else if (!child.isMounted() && this.isMounted()) {
             child.mount(this.htmlNode);
         }
+
+        child.onParentChanged(this, oldParent);
+
+    }
+
+    public insertChild<T>(child : EditorElement, index : number) : void {
+        if (index < 0) index = 0;
+        if (index > this.children.length) index = this.children.length;
+        if (index === this.children.length) {
+            return this.addChild(child);
+        }
+
+        if (this.isDescendant(child)) {
+            debugger;
+        }
+
+        if (child.parent) {
+            child.parent.removeChild(child);
+            if (child.htmlNode) {
+                child.htmlNode.remove();
+            }
+        }
+
+        const oldParent = child.parent;
+        child.parent = this;
+        this.children.insert(child, index);
+
+        if (!child.isRendered() && this.isRendered()) {
+            child.render(this.htmlNode);
+        }
+        else if (!child.isMounted() && this.isMounted()) {
+            child.mount(this.htmlNode);
+        }
+
+        child.onParentChanged(this, oldParent);
+
     }
 
     protected render(mountPoint : HTMLElement) : void {
@@ -132,11 +169,11 @@ export class EditorElement {
 
     protected attachEvents() : void {
         const pendingEvents = pendingEventMap.get(this);
-        if(pendingEvents) {
+        if (pendingEvents) {
             const activeEvents = activeEventMap.get(this) || [];
             for (let i = 0; i < pendingEvents.length; i++) {
                 const handler = pendingEvents[i];
-                activeEvents.add(handler);
+                activeEvents.push(handler);
                 this.addEventListener(handler.type, handler.fn, handler.bubble);
             }
             pendingEvents.length = 0;
@@ -174,7 +211,7 @@ export class EditorElement {
     }
 
     public clearChildren() : void {
-        for(let i = 0; i < this.children.length; i++) {
+        for (let i = 0; i < this.children.length; i++) {
             this.children[i].destroy();
         }
         const node = this.getDomNode();
@@ -203,7 +240,7 @@ export class EditorElement {
     }
 
     public getAncestorByType<T extends EditorElement>(type : INewable<T>, allowSelf = false) : T {
-        if(allowSelf && this instanceof type) return this as any; //why do I need a cast and why can't it be T?
+        if (allowSelf && this instanceof type) return this as any; //why do I need a cast and why can't it be T?
         let ptr = this.parent as any;
         while (ptr) {
             if (ptr instanceof type) {
@@ -224,14 +261,14 @@ export class EditorElement {
     }
 
     public getChildById<T extends EditorElement>(id : string) : T {
-        if(!this.childIdMap) return null;
+        if (!this.childIdMap) return null;
         return this.childIdMap[id] as T;
     }
 
     public setChildRoot(element : EditorElement) : void {
         //todo assert child root is a child
         this.childRoot = element;
-        if(!this.childRoot) this.childRoot = this;
+        if (!this.childRoot) this.childRoot = this;
     }
 
     public getChildRoot() : EditorElement {
@@ -318,6 +355,10 @@ export class EditorElement {
         return (this.flags & EditorElementFlags.Destroyed) !== 0;
     }
 
+    public isMounted() : boolean {
+        return Boolean(this.htmlNode);
+    }
+
     public isRendered() : boolean {
         return (this.flags & EditorElementFlags.Rendered) !== 0;
     }
@@ -370,6 +411,8 @@ export class EditorElement {
     public onRerendered() {}
 
     public onParentRendered() { }
+
+    public onParentChanged(newParent : EditorElement, oldParent : EditorElement) {}
 
     public onMounted() { }
 

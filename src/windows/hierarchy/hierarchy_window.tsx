@@ -10,10 +10,12 @@ import {EditorElement} from "../../editor_element/editor_element";
 import {AppElement} from "../../runtime/app_element";
 import {MouseButtonState} from "../../runtime/enums/e_mouse_state";
 import {Scene} from "../../runtime/scene";
+import {AppElementParentChanged} from "../../editor_events/evt_app_element_parent_changed";
+import {HierarchyItemDragAction} from "../../editor/drag_actions/drag_hierarchy_item";
 
 export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
 
-    private elementMap : any = new Map<AppElement, HierarchyItem>();
+    private elementMap = new Map<AppElement, HierarchyItem>();
     private contextSelection : AppElement = null;
     private contextMenu : EditorElement = null;
     private dragElement : EditorElement = null;
@@ -36,6 +38,14 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
 
     private getHierarchyItemForElement(element : AppElement) : HierarchyItem {
         return this.elementMap.get(element);
+    }
+
+    public onAppElementParentChanged(appElement : AppElement, newParent : AppElement, oldParent : AppElement) : void {
+        this.getHierarchyItemForElement(appElement).destroy();
+        this.elementMap.set(appElement, null);
+        const item = this.createHierarchyItem(appElement);
+        const parentItem = this.elementMap.get(newParent);
+        parentItem.getChildRoot().addChild(item);
     }
 
     public onSelectionChanged(newSelection : AppElement, oldSelection : AppElement) : void {
@@ -64,40 +74,40 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
         const input = EditorRuntime.getInput();
         //todo replace this with drag system used elsewhere
         if (this.dragElement) {
-            const mouse = input.getMousePosition();
-            if (input.isMouseUp()) {
-
-                const dropElement = EditorRuntime.getEditorElementAtPoint(mouse);
-                if (!dropElement) {
-                    this.dragElement = null;
-                    return;
-                }
-
-                const item = dropElement.getFirstOfTypeUpwards(HierarchyItem);
-
-                if (!item || item === this.dragElement) {
-                    this.dragElement = null;
-                    return;
-                }
-
-                if (this.dragElement.isElementInHierarchy(item.getDomNode())) {
-                    this.dragElement = null;
-                    return;
-                }
-
-                const spacer = dropElement.hasXId("spacer");
-                if (spacer) {
-                    //insert child here if not in hierarchy
-                    const idx = item.parent.getChildIndex(item);
-                    //item.parent.insertChild(this.dragElement, idx);
-                }
-                else {
-                    item.addChild(this.dragElement);
-                }
-
-                this.dragElement = null;
-                return;
-            }
+            // const mouse = input.getMousePosition();
+            // if (input.isMouseUp()) {
+            //
+            //     const dropElement = EditorRuntime.getEditorElementAtPoint(mouse);
+            //     if (!dropElement) {
+            //         this.dragElement = null;
+            //         return;
+            //     }
+            //
+            //     const item = dropElement.getFirstOfTypeUpwards(HierarchyItem);
+            //
+            //     if (!item || item === this.dragElement) {
+            //         this.dragElement = null;
+            //         return;
+            //     }
+            //
+            //     if (this.dragElement.isElementInHierarchy(item.getDomNode())) {
+            //         this.dragElement = null;
+            //         return;
+            //     }
+            //
+            //     const spacer = dropElement.hasXId("spacer");
+            //     if (spacer) {
+            //         //insert child here if not in hierarchy
+            //         const idx = item.parent.getChildIndex(item);
+            //         //item.parent.insertChild(this.dragElement, idx);
+            //     }
+            //     else {
+            //         item.addChild(this.dragElement);
+            //     }
+            //
+            //     this.dragElement = null;
+            //     return;
+            // }
         }
         else if (this.contextMenu.isVisible()) {
             if (EditorRuntime.getInput().isMouseButtonDown(MouseButtonState.Left)) {
@@ -110,10 +120,12 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
             }
         }
         else if (input.isMouseInEditorElement(this) && input.isMouseDownThisFrame()) {
+            //todo if selection changed in the last frame, don't
             const mouse = input.getMousePosition();
             const hoverElement = EditorRuntime.getEditorElementAtPoint(mouse) as EditorElement;
             if (!hoverElement) return;
-            this.dragElement = hoverElement.getFirstOfTypeUpwards(HierarchyItem);
+            const dragElement = hoverElement.getFirstOfTypeUpwards(HierarchyItem);
+            EditorRuntime.beginDragAction(new HierarchyItemDragAction(dragElement))
         }
     }
 
@@ -124,7 +136,7 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
 
         EditorRuntime.on(AppElementCreated, this);
         // EditorRuntime.on(AppElementDestroyed, this);
-        // EditorRuntime.on(AppElementReparented, this);
+        EditorRuntime.on(AppElementParentChanged, this);
         EditorRuntime.updateTree.add(this);
         this.onSceneLoaded(EditorRuntime.getScene());
     }
@@ -143,15 +155,7 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
     public onSceneLoaded(scene : Scene) : void {
         const root = AppElement.Root;
         const rootItem = this.createHierarchyItem(root);
-        // const roots = scene.getRootElements();
-        // for (let i = 0; i < roots.length; i++) {
-        //     rootItem.addChild(this.createHierarchyItem(roots[i]));
-        // }
         this.addChild(rootItem);
-    }
-
-    public isDragging() : boolean {
-        return Boolean(this.dragElement);
     }
 
     private clearSelection() {
@@ -163,7 +167,7 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
         appElement.setParent(this.contextSelection);
         const item = this.createHierarchyItem(appElement);
         const itemParent = this.getHierarchyItemForElement(this.contextSelection);
-        itemParent.addChild(item);
+        itemParent.getChildRoot().addChild(item);
         this.contextMenu.setVisible(false);
     }
 

@@ -38,21 +38,21 @@ module.exports = [
             textContent: "Hex Yeah!"
         })
     ]),
-    Prefab("Image", [
+    Prefab("Image", {}, [
         Component("UI/Image", {
             assetId: "img/placeholder.svg" //todo formalize asset ids and resource management
         })
     ]),
-    Prefab("Button", [
+    Prefab("Button", {}, [
         Component("UI/Button", {
             text: "Click Me!"
         })
     ]),
-    Prefab("Slider", []),
-    Prefab("Toggle", []),
-    Prefab("Input", []),
-    Prefab("Dropdown", []),
-    Prefab("Radio Button")
+    Prefab("Slider", {}, []),
+    Prefab("Toggle", {}, []),
+    Prefab("Input", {}, []),
+    Prefab("Dropdown", {}, []),
+    Prefab("Radio Button", {}, [])
 ];
 
 

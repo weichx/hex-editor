@@ -7,16 +7,16 @@ import {LifeCycleFlag} from "./enums/e_lifecycle_flags";
 import {LayoutComponent} from "./components/layout/layout_component";
 import {DragAction} from "../editor/drag_actions/drag_action";
 import {RuntimeBase} from "../shared/runtime_base";
+import {AppElementParentChanged} from "../editor_events/evt_app_element_parent_changed";
 
-export class RuntimeImpl extends RuntimeBase  {
+export class RuntimeImpl extends RuntimeBase {
 
     protected scene : Scene;
     protected input : Input;
     protected appElementRegistry : Indexable<AppElement>;
     protected draggedAction : DragAction;
-
+    protected layoutQueue : Array<LayoutComponent>;
     protected pendingComponents : Array<Component>;
-    protected updateComponents : Array<Component>; //todo replace with ShadowTree
     protected rootElementCandidates : Array<AppElement>;
 
     constructor() {
@@ -26,6 +26,7 @@ export class RuntimeImpl extends RuntimeBase  {
         this.pendingComponents = [];
         this.appElementRegistry = {};
         this.commandQueue = [];
+        this.layoutQueue = [];
         self.onmessage = (message : MessageEvent) => {
             this.onMessage(message);
         };
@@ -40,7 +41,11 @@ export class RuntimeImpl extends RuntimeBase  {
     }
 
     public queueLayout(layoutComponent : LayoutComponent) : void {
-
+        const idx = this.layoutQueue.indexOf(layoutComponent);
+        //todo this should be sorted top to bottom, use a shadow/skip tree
+        if (!this.layoutQueue.contains(layoutComponent)) {
+            this.layoutQueue.push(layoutComponent);
+        }
     }
 
     public getScene() : Scene {
@@ -55,7 +60,7 @@ export class RuntimeImpl extends RuntimeBase  {
                 return hit;
             }
         }
-        if(AppElement.Root.containsPoint(point)) return AppElement.Root;
+        if (AppElement.Root.containsPoint(point)) return AppElement.Root;
         return null;
     }
 
@@ -84,51 +89,36 @@ export class RuntimeImpl extends RuntimeBase  {
         this.pendingComponents.push(component);
     }
 
+    public setParent(appElement : AppElement, newParent : AppElement, oldParent : AppElement) : void {
+        const storage = new Array<Component>();
+        if (oldParent) {
+            oldParent.getAllComponents(storage);
+            for (let i = 0; i < storage.length; i++) {
+                storage[i].onChildRemoved(appElement);
+            }
+            storage.length = 0;
+        }
+        if (newParent) {
+            newParent.getAllComponents(storage);
+            for (let i = 0; i < storage.length; i++) {
+                storage[i].onChildAdded(appElement);
+            }
+        }
+        this.emit(AppElementParentChanged, appElement, newParent, oldParent);
+    }
+
+    public destroyElement(appElement : AppElement) : void {
+        if (appElement.isDestroyed()) return;
+        appElement.destroy();
+        // this.emit(AppElementDestroyed, appElement);
+    }
+
     protected update(delta : number) : void {
 
-        //this.host.copyInput(this.input);
+        // for(let i = 0; i < this.layoutQueue.length; i++) {
+        //     this.layoutQueue[i].doLayout();
+        // }
 
-        if (this.rootElementCandidates.length > 0) {
-            for (let i = 0; i < this.rootElementCandidates.length; i++) {
-                const candidate = this.rootElementCandidates[i];
-                if (candidate.getParent() === AppElement.Root) {
-                    this.scene.addRootElement(candidate);
-                }
-            }
-            this.rootElementCandidates.length = 0;
-        }
-
-        if (this.pendingComponents.length > 0) {
-            for (let i = 0; i < this.pendingComponents.length; i++) {
-                const cmp = this.pendingComponents[i] as any;
-                cmp.lifeCycleFlags = cmp.lifeCycleFlags | LifeCycleFlag.Created;
-                cmp.onCreated();
-            }
-
-            for (let i = 0; i < this.pendingComponents.length; i++) {
-                const cmp = this.pendingComponents[i] as any;
-                cmp.lifeCycleFlags = cmp.lifeCycleFlags | LifeCycleFlag.Mounted;
-                cmp.onMounted();
-            }
-
-            for (let i = 0; i < this.pendingComponents.length; i++) {
-                const cmp = this.pendingComponents[i];
-                if (cmp.update !== Component.prototype.update) {
-                    this.updateComponents.push(cmp);
-                }
-                cmp.onEnabled();
-            }
-            this.pendingComponents.length = 0;
-        }
-
-        for (let i = 0; i < this.updateComponents.length; i++) {
-            // if(this.updateComponents[i].isEnabled()) {
-            this.updateComponents[i].update(delta);
-            // }
-        }
-
-        // this.sendCommandBuffer(this.buildBuffer());
-        // requestAnimationFrame(this.boundUpdate);
     }
 
     public getInput() : Input {

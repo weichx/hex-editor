@@ -1,20 +1,12 @@
-import {getSetter, getGetter} from "../editor_ui_attrs/binding_compiler";
-import {EditorCustomElement} from "../editor_element/editor_custom_element";
-import {ILifecycle} from "../editor/editor_runtime";
+import {InputRenderer, IInputRendererAttrs} from "./editor_input";
 
 interface ITextInput {
-    binding : any;
     onValueChanged? : (newValue? : string, oldValue? : string) => void;
 }
 
-//todo -- formatters
+export class TextInput extends InputRenderer<IInputRendererAttrs<string>, string> {
 
-export class TextInput extends EditorCustomElement<ITextInput> implements ILifecycle {
-
-    private getterFn : (renderCtx : any) => any;
-    private setterFn : (renderCtx : any, value : any) => void;
-    private lastValue : any;
-    private ctx : any;
+    protected htmlNode : HTMLInputElement;
 
     protected getDomData() : IDomData {
         return {
@@ -27,29 +19,21 @@ export class TextInput extends EditorCustomElement<ITextInput> implements ILifec
     }
 
     public onMounted() {
-        this.ctx = this.attrs.binding.ctx;
-        this.getterFn = getGetter(this.attrs.binding.path);
-        this.setterFn = getSetter(this.attrs.binding.path);
+
+        this.htmlNode.value = this.binding.get();
+
+        this.binding.onChange(() => {
+            this.htmlNode.value = this.binding.get();
+        });
+
         this.htmlNode.addEventListener("input", (e : KeyboardEvent) => {
-            const value = (this.htmlNode as HTMLInputElement).value || "";
-            this.setterFn(this.ctx, value);
-            this.lastValue = value;
+            const value = this.htmlNode.value || "";
+            this.binding.set(value);
         });
     }
 
-    public onUpdated() {
-        const value = this.getterFn(this.ctx) || "";
-        if (this.lastValue !== value) {
-            if(this.attrs.onValueChanged) {
-                this.attrs.onValueChanged(value, this.lastValue);
-            }
-            this.lastValue = value;
-            (this.htmlNode as HTMLInputElement).value = value;
-        }
-    }
-
-    public onRendered() {
-        EditorRuntime.updateTree.add(this);
+    public onValueChanged(newValue : string) : void {
+        this.htmlNode.value = newValue || "";
     }
 
 }

@@ -30,7 +30,7 @@ export class ShadowTree<T extends ShadowTreeNode<U>, U extends IElementReference
     public add(item : U) : void {
         let currentNode = this.nodeMap.get(item.element);
         if(currentNode) {
-            currentNode.items.add(item);
+            currentNode.items.push(item);
             return;
         }
         currentNode = new this.nodeConstructor(item);
@@ -59,7 +59,7 @@ export class ShadowTree<T extends ShadowTreeNode<U>, U extends IElementReference
         }
 
         for(let i = 0; i < node.children.length; i++) {
-            parentNode.children.add(node.children[i]);
+            parentNode.children.push(node.children[i]);
         }
 
     }
@@ -72,23 +72,23 @@ export class ShadowTree<T extends ShadowTreeNode<U>, U extends IElementReference
         for(let i = 0; i < parentTreeNode.children.length; i++) {
             const childNode = parentTreeNode.children[i];
             if(ShadowTree.isDescendant(childNode.element, treeNode.element)) {
-                treeNode.children.add(childNode);
+                treeNode.children.push(childNode);
                 parentTreeNode.children.splice(i--, 1);
             }
         }
-        parentTreeNode.children.add(treeNode);
+        parentTreeNode.children.push(treeNode);
     }
 
     private insertAtRoot(treeNode : T) : void {
-        //if any root nodes should be children of this node, remove from root and add to new node
+        //if any root nodes should be children of this node, remove from root and push to new node
         for(let i = 0; i < this.rootNodes.length; i++) {
             const node = this.rootNodes[i];
             if(ShadowTree.isDescendant(node.element, treeNode.element)) {
-                treeNode.children.add(node);
+                treeNode.children.push(node);
                 this.rootNodes.removeAt(i);
             }
         }
-        this.rootNodes.add(treeNode);
+        this.rootNodes.push(treeNode);
     }
 
     private static isDescendant<T>(possibleChild : ITraversable, parent : ITraversable) : boolean {

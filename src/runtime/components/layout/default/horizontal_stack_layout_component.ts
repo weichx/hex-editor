@@ -1,21 +1,18 @@
-import {SizingComponent, SizingMode} from "../sizing_component";
+import {SizingMode} from "../sizing_component";
 import {LayoutComponent} from "../layout_component";
 import {exposeAs} from "../../../../renderers/component/expose_as";
-import {AppElement} from "../../../app_element";
-import {Rectangle} from "../../../rectangle";
+import {component} from "../../../component";
+import {Space} from "../../../app_element";
 
-
+@component("Layout/HorizontalStack")
 export class HorizontalStackLayout extends LayoutComponent {
 
-    protected totalWidth : number = 800;
-    protected totalHeight : number = 600;
 
     @exposeAs(Boolean) public wrap : boolean = false;
 
     public doLayout() : void {
         //todo -- assuming height stretches to highest child for now, allow other clamp modes later
-
-        var remainingSpace = this.totalWidth;
+        var remainingSpace = this.appElement.getWidth();
 
         const sizings = new Array<number>(this.sizingComponents.length);
         let totalFractions = 0;
@@ -25,7 +22,7 @@ export class HorizontalStackLayout extends LayoutComponent {
                 switch (sizer.sizingMode) {
                     case SizingMode.Percent:
                         const percentageValue = sizer.width * 0.01;
-                        sizings[i] = (percentageValue * this.totalWidth) | 0;
+                        sizings[i] = (percentageValue * this.appElement.getWidth()) | 0;
                         remainingSpace -= sizings[i];
                         break;
                     case SizingMode.Fraction:
@@ -56,8 +53,8 @@ export class HorizontalStackLayout extends LayoutComponent {
         let allocatedSpace = 0;
         for (let i = 0; i < this.sizingComponents.length; i++) {
             const element = this.sizingComponents[i].appElement;
-            element.setPositionValues(allocatedSpace, 0);
-            element.setDimensions(sizings[i], 100);
+            element.setPositionValues(allocatedSpace, 0, Space.Local);
+            element.setDimensions(sizings[i], this.appElement.getHeight());
             allocatedSpace += sizings[i];
         }
     }

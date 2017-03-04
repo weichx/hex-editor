@@ -27,7 +27,7 @@ export class StringRenderer extends PropertyRenderer<IStringAttrs> {
         const component = this.attrs.component as any;
         const propertyName = editorData.propertyName;
         return <InspectorRow label={editorData.propertyName}>
-            <TextInput onValueChanged={this.attrs.onValueChanged} binding={component[propertyName]}/>
+            <TextInput value={component[propertyName]}/>
         </InspectorRow>
     }
 

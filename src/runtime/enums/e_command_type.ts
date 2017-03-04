@@ -5,6 +5,7 @@ export enum CommandType {
     Move,
     Replace,
     SetRect,
+    SetImage,
 
     SetPosition,
     SetDimensions,

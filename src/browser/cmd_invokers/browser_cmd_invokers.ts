@@ -14,22 +14,33 @@ function DeserializeComponent(component : any, element : HTMLElement) : any {
 }
 
 BrowserRuntime.setCommandInvoker(CommandType.SetText, (function () {
+
     var ruler = document.createElement('span');
-    var style = ruler.style;
-    style.wordWrap = "none";
-    style.visibility = "hidden";
+    var rulerStyle = ruler.style;
+    rulerStyle.wordWrap = "none";
+    rulerStyle.visibility = "hidden";
     document.body.appendChild(ruler);
 
     return function (payload : IJson) {
-        const el = BrowserRuntime.elementIdToDomNode(payload.id);
-        el.innerText = payload.text;
-        style.fontSize = payload.fontSize;
-        style.fontFamily = payload.fontFamily;
-        style.fontWeight = payload.fontWeight;
-        style.lineHeight = payload.lineHeight;
-        style.textDecoration = payload.decoration;
+        const element = BrowserRuntime.elementIdToDomNode(payload.id);
+        element.innerText = payload.text;
+        const font = payload.font;
+        const style = element.style;
+        if(payload.setFont) {
+            style.fontSize = font.size + "px";
+            style.fontFamily = font.name;
+            style.fontWeight = font.weight;
+            style.lineHeight = font.lineHeight;
+            style.textDecoration = font.decoration;
+        }
+        //todo -- only measure when we need to
+        rulerStyle.fontSize = font.size + "px";
+        rulerStyle.fontFamily = font.name;
+        rulerStyle.fontWeight = font.weight;
+        rulerStyle.lineHeight = font.lineHeight;
+        rulerStyle.textDecoration = font.decoration;
         ruler.innerText = payload.text;
-        return ruler.offsetWidth;
+        return ruler.offsetWidth; //todo this should be queued so we do write then read
     }
 })());
 
@@ -40,7 +51,8 @@ BrowserRuntime.setCommandInvoker(CommandType.Create, (function () {
         "Text": "div",
         "Button": "button",
         "Dropdown": "select",
-        "Section": "section"
+        "Section": "section",
+        "Image": "img"
     };
 
     return function (payload : IJson) {
@@ -52,10 +64,26 @@ BrowserRuntime.setCommandInvoker(CommandType.Create, (function () {
         for (let i = 0; i < components.length; i++) {
             DeserializeComponent(components[i], element);
         }
-
         BrowserRuntime.elementIdToDomNode(parentId).appendChild(element);
     }
 })());
+
+BrowserRuntime.setCommandInvoker(CommandType.Destroy, function (payload : IJson) {
+    const element = BrowserRuntime.elementIdToDomNode(payload.id);
+    element && element.remove();
+    BrowserRuntime.setDomNodeToElementId(payload.id, null);
+    for(let i = 0; i< payload.childIds; i++) {
+        BrowserRuntime.setDomNodeToElementId(payload.childIds[i], null);
+    }
+
+});
+
+BrowserRuntime.setCommandInvoker(CommandType.SetImage, function (payload : IJson) {
+    //todo this needs work
+    //aspect ratio, width, height, stretch, filters, 9-slice, etc
+    const el = BrowserRuntime.elementIdToDomNode(payload.id);
+    el.setAttribute("src", payload.image);
+});
 
 BrowserRuntime.setCommandInvoker(CommandType.SetPosition, function (payload : IJson) {
     const el = BrowserRuntime.elementIdToDomNode(payload.id);

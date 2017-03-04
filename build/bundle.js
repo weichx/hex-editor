@@ -45,14 +45,14 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	__webpack_require__(39);
+	__webpack_require__(44);
 	__webpack_require__(20);
-	__webpack_require__(37);
-	__webpack_require__(40);
-	__webpack_require__(41);
-	__webpack_require__(36);
 	__webpack_require__(42);
-	__webpack_require__(43);
+	__webpack_require__(45);
+	__webpack_require__(46);
+	__webpack_require__(41);
+	__webpack_require__(47);
+	__webpack_require__(48);
 	__webpack_require__(12);
 	__webpack_require__(15);
 	__webpack_require__(11);
@@ -60,109 +60,113 @@
 	__webpack_require__(5);
 	__webpack_require__(16);
 	__webpack_require__(18);
-	__webpack_require__(44);
+	__webpack_require__(32);
+	__webpack_require__(49);
 	__webpack_require__(3);
 	__webpack_require__(4);
 	__webpack_require__(17);
-	__webpack_require__(45);
+	__webpack_require__(50);
 	__webpack_require__(10);
 	__webpack_require__(7);
 	__webpack_require__(8);
-	__webpack_require__(46);
-	__webpack_require__(34);
-	__webpack_require__(47);
-	__webpack_require__(48);
-	__webpack_require__(49);
-	__webpack_require__(19);
-	__webpack_require__(2);
-	__webpack_require__(50);
-	__webpack_require__(38);
-	__webpack_require__(9);
 	__webpack_require__(51);
+	__webpack_require__(35);
 	__webpack_require__(52);
 	__webpack_require__(53);
 	__webpack_require__(54);
-	__webpack_require__(25);
+	__webpack_require__(19);
+	__webpack_require__(2);
 	__webpack_require__(55);
+	__webpack_require__(43);
+	__webpack_require__(9);
 	__webpack_require__(56);
+	__webpack_require__(39);
 	__webpack_require__(57);
 	__webpack_require__(58);
+	__webpack_require__(25);
 	__webpack_require__(59);
-	__webpack_require__(61);
-	__webpack_require__(29);
 	__webpack_require__(60);
+	__webpack_require__(61);
+	__webpack_require__(62);
 	__webpack_require__(63);
-	__webpack_require__(66);
 	__webpack_require__(65);
+	__webpack_require__(34);
 	__webpack_require__(64);
 	__webpack_require__(67);
-	__webpack_require__(62);
+	__webpack_require__(36);
+	__webpack_require__(38);
+	__webpack_require__(37);
 	__webpack_require__(68);
+	__webpack_require__(66);
 	__webpack_require__(69);
-	__webpack_require__(28);
 	__webpack_require__(70);
+	__webpack_require__(71);
+	__webpack_require__(28);
+	__webpack_require__(72);
 	__webpack_require__(27);
 	__webpack_require__(22);
-	__webpack_require__(32);
+	__webpack_require__(31);
 	__webpack_require__(21);
-	__webpack_require__(71);
-	__webpack_require__(72);
+	__webpack_require__(73);
+	__webpack_require__(74);
 	__webpack_require__(26);
 	__webpack_require__(24);
 	__webpack_require__(33);
 	__webpack_require__(23);
 	__webpack_require__(14);
-	__webpack_require__(30);
-	__webpack_require__(73);
-	__webpack_require__(74);
+	__webpack_require__(29);
 	__webpack_require__(75);
-	__webpack_require__(13);
 	__webpack_require__(76);
-	__webpack_require__(78);
 	__webpack_require__(77);
+	__webpack_require__(13);
+	__webpack_require__(78);
+	__webpack_require__(80);
 	__webpack_require__(79);
-	__webpack_require__(87);
 	__webpack_require__(81);
-	__webpack_require__(82);
-	__webpack_require__(109);
-	__webpack_require__(110);
-	__webpack_require__(99);
-	__webpack_require__(97);
+	__webpack_require__(89);
+	__webpack_require__(83);
+	__webpack_require__(84);
 	__webpack_require__(111);
 	__webpack_require__(112);
+	__webpack_require__(101);
+	__webpack_require__(99);
 	__webpack_require__(113);
 	__webpack_require__(114);
 	__webpack_require__(115);
+	__webpack_require__(116);
 	__webpack_require__(117);
 	__webpack_require__(118);
-	__webpack_require__(98);
-	__webpack_require__(85);
-	__webpack_require__(101);
 	__webpack_require__(119);
-	__webpack_require__(120);
-	__webpack_require__(93);
-	__webpack_require__(102);
 	__webpack_require__(121);
-	__webpack_require__(116);
-	__webpack_require__(80);
-	__webpack_require__(95);
-	__webpack_require__(92);
-	__webpack_require__(105);
-	__webpack_require__(100);
-	__webpack_require__(91);
 	__webpack_require__(122);
-	__webpack_require__(104);
-	__webpack_require__(106);
+	__webpack_require__(100);
+	__webpack_require__(87);
 	__webpack_require__(103);
-	__webpack_require__(107);
-	__webpack_require__(86);
-	__webpack_require__(84);
-	__webpack_require__(83);
-	__webpack_require__(90);
+	__webpack_require__(123);
+	__webpack_require__(124);
+	__webpack_require__(95);
+	__webpack_require__(104);
+	__webpack_require__(125);
+	__webpack_require__(120);
+	__webpack_require__(82);
+	__webpack_require__(97);
 	__webpack_require__(94);
-	__webpack_require__(96);
+	__webpack_require__(107);
+	__webpack_require__(102);
+	__webpack_require__(93);
+	__webpack_require__(126);
+	__webpack_require__(106);
+	__webpack_require__(108);
+	__webpack_require__(105);
+	__webpack_require__(109);
 	__webpack_require__(88);
-	module.exports = __webpack_require__(89);
+	__webpack_require__(86);
+	__webpack_require__(85);
+	__webpack_require__(92);
+	__webpack_require__(96);
+	__webpack_require__(98);
+	__webpack_require__(90);
+	module.exports = __webpack_require__(91);
 
 
 /***/ },
@@ -173,9 +177,9 @@
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const editor_runtime_1 = __webpack_require__(2);
 	const element_renderer_1 = __webpack_require__(5);
-	const editor_binding_element_1 = __webpack_require__(36);
-	const browser_runtime_1 = __webpack_require__(37);
-	const editor_worker_1 = __webpack_require__(38);
+	const editor_binding_element_1 = __webpack_require__(41);
+	const browser_runtime_1 = __webpack_require__(42);
+	const editor_worker_1 = __webpack_require__(43);
 	window.AppRootElementId = 0;
 	window.Runtime = null;
 	window.HexEnvironmentFlag = 0;
@@ -253,9 +257,10 @@
 	const app_element_1 = __webpack_require__(25);
 	const scene_1 = __webpack_require__(33);
 	const e_command_type_1 = __webpack_require__(28);
-	const component_1 = __webpack_require__(29);
+	const component_1 = __webpack_require__(34);
 	const vector2_1 = __webpack_require__(14);
-	const drag_action_1 = __webpack_require__(34);
+	const drag_action_1 = __webpack_require__(35);
+	const horizontal_stack_layout_component_1 = __webpack_require__(36);
 	let mouseCache = new vector2_1.Vector2();
 	class UpdateNode extends tree_1.ShadowTreeNode {
 	    traverse() {
@@ -310,6 +315,7 @@
 	        if (!app_element_1.AppElement.Root) {
 	            this.suppressAddElement(() => {
 	                app_element_1.AppElement.Root = new app_element_1.AppElement("__Root__");
+	                app_element_1.AppElement.Root.addComponent(horizontal_stack_layout_component_1.HorizontalStackLayout);
 	                this.appElementRegistry[0] = app_element_1.AppElement.Root;
 	            });
 	        }
@@ -338,7 +344,7 @@
 	                    continue;
 	                const parentId = parentMap[appElement.id] || 0;
 	                appElement.parent = this.appElementRegistry[parentId];
-	                appElement.parent.children.add(appElement);
+	                appElement.parent.children.push(appElement);
 	            }
 	            for (let i = 0; i < ids.length; i++) {
 	                const appElement = this.appElementRegistry[ids[i]];
@@ -412,6 +418,10 @@
 	            }
 	        }
 	        this.updateTree.traverse();
+	        for (let i = 0; i < this.layoutQueue.length; i++) {
+	            this.layoutQueue[i].doLayout();
+	        }
+	        this.layoutQueue.length = 0;
 	        this.sendCommandBuffer();
 	        this.input.update();
 	    }
@@ -448,7 +458,7 @@
 	        return element.getAncestorByType(type, true);
 	    }
 	    start(appRoot, attrs = {}) {
-	        this.loadScene(__webpack_require__(35));
+	        this.loadScene(__webpack_require__(40));
 	        element_renderer_1.render(element_renderer_1.createElement(appRoot, attrs), document.getElementById('root'));
 	        window.addEventListener("resize", () => {
 	            this.emit(evt_window_resized_1.WindowResized, window.innerWidth, window.innerHeight);
@@ -858,7 +868,7 @@
 	        this.list = [];
 	        if (preload > 0) {
 	            for (let i = 0; i < preload; i++) {
-	                this.list.add(new this.type());
+	                this.list.push(new this.type());
 	            }
 	        }
 	    }
@@ -867,7 +877,7 @@
 	    }
 	    despawn(item) {
 	        item.onDespawn();
-	        this.list.add(item);
+	        this.list.push(item);
 	    }
 	}
 	class ObjectPool extends BaseObjectPool {
@@ -1012,13 +1022,6 @@
 	        dom.style.left = x + "px";
 	        dom.style.top = y + "px";
 	    }
-	    setRect(rect) {
-	        const dom = this.getDomNode();
-	        dom.style.left = rect.x + 'px';
-	        dom.style.top = rect.y + 'px';
-	        dom.style.width = rect.width + 'px';
-	        dom.style.height = rect.height + 'px';
-	    }
 	    getClientBounds() {
 	        return (this.htmlNode) ? this.htmlNode.getBoundingClientRect() : null;
 	    }
@@ -1028,15 +1031,51 @@
 	        }
 	        if (child.parent) {
 	            child.parent.removeChild(child);
+	            if (child.htmlNode) {
+	                child.htmlNode.remove();
+	            }
 	        }
+	        const oldParent = child.parent;
 	        child.parent = this;
 	        this.children.push(child);
-	        if (this.isRendered()) {
+	        if (this.htmlNode && child.htmlNode) {
+	            this.htmlNode.appendChild(child.htmlNode);
+	        }
+	        if (!child.isRendered() && this.isRendered()) {
 	            child.render(this.htmlNode);
 	        }
-	        else if (this.htmlNode) {
+	        else if (!child.isMounted() && this.isMounted()) {
 	            child.mount(this.htmlNode);
 	        }
+	        child.onParentChanged(this, oldParent);
+	    }
+	    insertChild(child, index) {
+	        if (index < 0)
+	            index = 0;
+	        if (index > this.children.length)
+	            index = this.children.length;
+	        if (index === this.children.length) {
+	            return this.addChild(child);
+	        }
+	        if (this.isDescendant(child)) {
+	            debugger;
+	        }
+	        if (child.parent) {
+	            child.parent.removeChild(child);
+	            if (child.htmlNode) {
+	                child.htmlNode.remove();
+	            }
+	        }
+	        const oldParent = child.parent;
+	        child.parent = this;
+	        this.children.insert(child, index);
+	        if (!child.isRendered() && this.isRendered()) {
+	            child.render(this.htmlNode);
+	        }
+	        else if (!child.isMounted() && this.isMounted()) {
+	            child.mount(this.htmlNode);
+	        }
+	        child.onParentChanged(this, oldParent);
 	    }
 	    render(mountPoint) {
 	        this.mount(mountPoint);
@@ -1068,7 +1107,7 @@
 	            const activeEvents = activeEventMap.get(this) || [];
 	            for (let i = 0; i < pendingEvents.length; i++) {
 	                const handler = pendingEvents[i];
-	                activeEvents.add(handler);
+	                activeEvents.push(handler);
 	                this.addEventListener(handler.type, handler.fn, handler.bubble);
 	            }
 	            pendingEvents.length = 0;
@@ -1219,6 +1258,9 @@
 	    isDestroyed() {
 	        return (this.flags & EditorElementFlags.Destroyed) !== 0;
 	    }
+	    isMounted() {
+	        return Boolean(this.htmlNode);
+	    }
 	    isRendered() {
 	        return (this.flags & EditorElementFlags.Rendered) !== 0;
 	    }
@@ -1250,6 +1292,7 @@
 	    onRendered() { }
 	    onRerendered() { }
 	    onParentRendered() { }
+	    onParentChanged(newParent, oldParent) { }
 	    onMounted() { }
 	    onDisabled() { }
 	    onEnabled() { }
@@ -2059,7 +2102,7 @@
 	    add(item) {
 	        let currentNode = this.nodeMap.get(item.element);
 	        if (currentNode) {
-	            currentNode.items.add(item);
+	            currentNode.items.push(item);
 	            return;
 	        }
 	        currentNode = new this.nodeConstructor(item);
@@ -2086,7 +2129,7 @@
 	            parentNode.children.removeAt(nodeIdx);
 	        }
 	        for (let i = 0; i < node.children.length; i++) {
-	            parentNode.children.add(node.children[i]);
+	            parentNode.children.push(node.children[i]);
 	        }
 	    }
 	    insert(treeNode) {
@@ -2097,21 +2140,21 @@
 	        for (let i = 0; i < parentTreeNode.children.length; i++) {
 	            const childNode = parentTreeNode.children[i];
 	            if (ShadowTree.isDescendant(childNode.element, treeNode.element)) {
-	                treeNode.children.add(childNode);
+	                treeNode.children.push(childNode);
 	                parentTreeNode.children.splice(i--, 1);
 	            }
 	        }
-	        parentTreeNode.children.add(treeNode);
+	        parentTreeNode.children.push(treeNode);
 	    }
 	    insertAtRoot(treeNode) {
 	        for (let i = 0; i < this.rootNodes.length; i++) {
 	            const node = this.rootNodes[i];
 	            if (ShadowTree.isDescendant(node.element, treeNode.element)) {
-	                treeNode.children.add(node);
+	                treeNode.children.push(node);
 	                this.rootNodes.removeAt(i);
 	            }
 	        }
-	        this.rootNodes.add(treeNode);
+	        this.rootNodes.push(treeNode);
 	    }
 	    static isDescendant(possibleChild, parent) {
 	        if (possibleChild.parent === parent)
@@ -2154,9 +2197,8 @@
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const input_1 = __webpack_require__(21);
 	const app_element_1 = __webpack_require__(25);
-	const component_1 = __webpack_require__(29);
-	const e_lifecycle_flags_1 = __webpack_require__(27);
-	const runtime_base_1 = __webpack_require__(30);
+	const runtime_base_1 = __webpack_require__(29);
+	const evt_app_element_parent_changed_1 = __webpack_require__(32);
 	class RuntimeImpl extends runtime_base_1.RuntimeBase {
 	    constructor() {
 	        super();
@@ -2165,6 +2207,7 @@
 	        this.pendingComponents = [];
 	        this.appElementRegistry = {};
 	        this.commandQueue = [];
+	        this.layoutQueue = [];
 	        self.onmessage = (message) => {
 	            this.onMessage(message);
 	        };
@@ -2176,6 +2219,10 @@
 	        self.postMessage(data, void 0);
 	    }
 	    queueLayout(layoutComponent) {
+	        const idx = this.layoutQueue.indexOf(layoutComponent);
+	        if (!this.layoutQueue.contains(layoutComponent)) {
+	            this.layoutQueue.push(layoutComponent);
+	        }
 	    }
 	    getScene() {
 	        return this.scene;
@@ -2211,39 +2258,29 @@
 	    addComponent(component) {
 	        this.pendingComponents.push(component);
 	    }
+	    setParent(appElement, newParent, oldParent) {
+	        const storage = new Array();
+	        if (oldParent) {
+	            oldParent.getAllComponents(storage);
+	            for (let i = 0; i < storage.length; i++) {
+	                storage[i].onChildRemoved(appElement);
+	            }
+	            storage.length = 0;
+	        }
+	        if (newParent) {
+	            newParent.getAllComponents(storage);
+	            for (let i = 0; i < storage.length; i++) {
+	                storage[i].onChildAdded(appElement);
+	            }
+	        }
+	        this.emit(evt_app_element_parent_changed_1.AppElementParentChanged, appElement, newParent, oldParent);
+	    }
+	    destroyElement(appElement) {
+	        if (appElement.isDestroyed())
+	            return;
+	        appElement.destroy();
+	    }
 	    update(delta) {
-	        if (this.rootElementCandidates.length > 0) {
-	            for (let i = 0; i < this.rootElementCandidates.length; i++) {
-	                const candidate = this.rootElementCandidates[i];
-	                if (candidate.getParent() === app_element_1.AppElement.Root) {
-	                    this.scene.addRootElement(candidate);
-	                }
-	            }
-	            this.rootElementCandidates.length = 0;
-	        }
-	        if (this.pendingComponents.length > 0) {
-	            for (let i = 0; i < this.pendingComponents.length; i++) {
-	                const cmp = this.pendingComponents[i];
-	                cmp.lifeCycleFlags = cmp.lifeCycleFlags | e_lifecycle_flags_1.LifeCycleFlag.Created;
-	                cmp.onCreated();
-	            }
-	            for (let i = 0; i < this.pendingComponents.length; i++) {
-	                const cmp = this.pendingComponents[i];
-	                cmp.lifeCycleFlags = cmp.lifeCycleFlags | e_lifecycle_flags_1.LifeCycleFlag.Mounted;
-	                cmp.onMounted();
-	            }
-	            for (let i = 0; i < this.pendingComponents.length; i++) {
-	                const cmp = this.pendingComponents[i];
-	                if (cmp.update !== component_1.Component.prototype.update) {
-	                    this.updateComponents.push(cmp);
-	                }
-	                cmp.onEnabled();
-	            }
-	            this.pendingComponents.length = 0;
-	        }
-	        for (let i = 0; i < this.updateComponents.length; i++) {
-	            this.updateComponents[i].update(delta);
-	        }
 	    }
 	    getInput() {
 	        return this.input;
@@ -2262,6 +2299,7 @@
 	const vector2_1 = __webpack_require__(14);
 	const e_lifecycle_flags_1 = __webpack_require__(27);
 	const e_command_type_1 = __webpack_require__(28);
+	const util_1 = __webpack_require__(13);
 	let idGenerator = 0;
 	var Space;
 	(function (Space) {
@@ -2371,7 +2409,11 @@
 	    }
 	    setParent(parent) {
 	        parent = parent || AppElement.Root;
+	        const oldParent = this.parent;
 	        this.parent = parent;
+	        if (oldParent) {
+	            oldParent.children.remove(this);
+	        }
 	        if (parent) {
 	            this.parent.children.push(this);
 	            const p = this.parent.getPosition();
@@ -2382,6 +2424,7 @@
 	            this.parentPosition.x = 0;
 	            this.parentPosition.y = 0;
 	        }
+	        Runtime.setParent(this, parent, oldParent);
 	    }
 	    getParent() {
 	        return this.parent;
@@ -2481,9 +2524,29 @@
 	        return this.parent.getComponents(type, storage);
 	    }
 	    destroy() {
+	        if (!this.parent)
+	            return;
+	        this.lifeCycleFlags |= e_lifecycle_flags_1.LifeCycleFlag.Destroyed;
+	        for (let i = 0; i < this.children.length; i++) {
+	            this.children[i].destroy();
+	        }
 	        for (let i = 0; i < this.components.length; i++) {
 	            this.components[i].destroy();
 	        }
+	        if (!this.parent.isDestroyed()) {
+	            this.parent.children.remove(this);
+	            const components = this.parent.components;
+	            for (let i = 0; i < components.length; i++) {
+	                components[i].onChildRemoved(this);
+	            }
+	            const childIds = new Array();
+	            util_1.traverseChildren(this, (child) => {
+	                childIds.push(child.id);
+	            });
+	            Runtime.sendCommand(e_command_type_1.CommandType.Destroy, { id: this.id, childIds });
+	        }
+	    }
+	    destroyFromParent() {
 	    }
 	    isRoot() {
 	        return this === AppElement.Root;
@@ -2620,100 +2683,27 @@
 	    CommandType[CommandType["Move"] = 3] = "Move";
 	    CommandType[CommandType["Replace"] = 4] = "Replace";
 	    CommandType[CommandType["SetRect"] = 5] = "SetRect";
-	    CommandType[CommandType["SetPosition"] = 6] = "SetPosition";
-	    CommandType[CommandType["SetDimensions"] = 7] = "SetDimensions";
-	    CommandType[CommandType["SetTransform"] = 8] = "SetTransform";
-	    CommandType[CommandType["SetParent"] = 9] = "SetParent";
-	    CommandType[CommandType["PaintBackground"] = 10] = "PaintBackground";
-	    CommandType[CommandType["SetText"] = 11] = "SetText";
-	    CommandType[CommandType["SetFont"] = 12] = "SetFont";
-	    CommandType[CommandType["UpdateInput"] = 13] = "UpdateInput";
+	    CommandType[CommandType["SetImage"] = 6] = "SetImage";
+	    CommandType[CommandType["SetPosition"] = 7] = "SetPosition";
+	    CommandType[CommandType["SetDimensions"] = 8] = "SetDimensions";
+	    CommandType[CommandType["SetTransform"] = 9] = "SetTransform";
+	    CommandType[CommandType["SetParent"] = 10] = "SetParent";
+	    CommandType[CommandType["PaintBackground"] = 11] = "PaintBackground";
+	    CommandType[CommandType["SetText"] = 12] = "SetText";
+	    CommandType[CommandType["SetFont"] = 13] = "SetFont";
+	    CommandType[CommandType["UpdateInput"] = 14] = "UpdateInput";
 	})(CommandType = exports.CommandType || (exports.CommandType = {}));
 
 
 /***/ },
 /* 29 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	class Component {
-	    getComponent(type) {
-	        return this.appElement.getComponent(type);
-	    }
-	    getComponents(type) {
-	        return this.appElement.getComponents(type);
-	    }
-	    getComponentInChildren(type) {
-	        return this.appElement.getComponentInChildren(type);
-	    }
-	    getComponentsInChildren(type) {
-	        return this.appElement.getComponentsInChildren(type);
-	    }
-	    getComponentsInDescendants(type) {
-	        return this.appElement.getComponentsInDescendants(type);
-	    }
-	    getComponentInParent(type) {
-	        return this.appElement.getComponentInParent(type);
-	    }
-	    getComponentsInParent(type) {
-	        return this.appElement.getComponentsInParent(type);
-	    }
-	    onChildAdded(child) { }
-	    onChildRemoved(child) { }
-	    onCreated() { }
-	    onMounted() { }
-	    onEnabled() { }
-	    onDisabled() { }
-	    onDestroyed() { }
-	    update(deltaTime) { }
-	    destroy() {
-	        this.appElement = null;
-	    }
-	    static componentDecorator(path) {
-	        return function (target) {
-	            Component.types.set(path, target);
-	        };
-	    }
-	    static allowMultipleDecorator() {
-	    }
-	    static requireComponent() {
-	    }
-	    static getComponentFromPath(path) {
-	        return Component.types.get(path);
-	    }
-	    static getComponentTypePathPairs() {
-	        const retn = new Array();
-	        Component.types.forEach(function (value, key) {
-	            retn.push({ type: value, path: key });
-	        });
-	        return retn;
-	    }
-	    serialize() {
-	        return null;
-	    }
-	    static Serialize(component) {
-	        return {
-	            id: "blach", data: component.serialize()
-	        };
-	    }
-	}
-	Component.types = new Map();
-	exports.Component = Component;
-	exports.allowMultiple = Component.allowMultipleDecorator;
-	exports.component = Component.componentDecorator;
-	exports.requireComponent = Component.requireComponent;
-
-
-/***/ },
-/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
+	const tslib_1 = __webpack_require__(30);
 	const e_command_type_1 = __webpack_require__(28);
-	const event_emitter_1 = __webpack_require__(32);
+	const event_emitter_1 = __webpack_require__(31);
 	const object_pool_1 = __webpack_require__(9);
 	class RuntimeCommand {
 	    constructor() {
@@ -2740,6 +2730,7 @@
 	        this.serializers = {};
 	        this.commandQueue = [];
 	        this.pendingBuffers = [];
+	        this.awaitedCommands = [];
 	        this.commandPool = new object_pool_1.ObjectPool3(RuntimeCommand);
 	    }
 	    sendCommand(commandType, data) {
@@ -2838,7 +2829,7 @@
 
 
 /***/ },
-/* 31 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global) {/*! *****************************************************************************
@@ -2973,7 +2964,7 @@
 	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
 
 /***/ },
-/* 32 */
+/* 31 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3017,13 +3008,25 @@
 
 
 /***/ },
+/* 32 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	class AppElementParentChanged {
+	    onAppElementParentChanged(appElement, newParent, oldParent) { }
+	}
+	exports.AppElementParentChanged = AppElementParentChanged;
+
+
+/***/ },
 /* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const app_element_1 = __webpack_require__(25);
-	const component_1 = __webpack_require__(29);
+	const component_1 = __webpack_require__(34);
 	class Scene {
 	    constructor() {
 	        this.isRendered = false;
@@ -3061,6 +3064,80 @@
 
 /***/ },
 /* 34 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	class Component {
+	    getComponent(type) {
+	        return this.appElement.getComponent(type);
+	    }
+	    getComponents(type) {
+	        return this.appElement.getComponents(type);
+	    }
+	    getComponentInChildren(type) {
+	        return this.appElement.getComponentInChildren(type);
+	    }
+	    getComponentsInChildren(type) {
+	        return this.appElement.getComponentsInChildren(type);
+	    }
+	    getComponentsInDescendants(type) {
+	        return this.appElement.getComponentsInDescendants(type);
+	    }
+	    getComponentInParent(type) {
+	        return this.appElement.getComponentInParent(type);
+	    }
+	    getComponentsInParent(type) {
+	        return this.appElement.getComponentsInParent(type);
+	    }
+	    onChildAdded(child) { }
+	    onChildRemoved(child) { }
+	    onCreated() { }
+	    onMounted() { }
+	    onEnabled() { }
+	    onDisabled() { }
+	    onDestroyed() { }
+	    update(deltaTime) { }
+	    destroy() {
+	        this.appElement = null;
+	    }
+	    static componentDecorator(path) {
+	        return function (target) {
+	            Component.types.set(path, target);
+	        };
+	    }
+	    static allowMultipleDecorator() {
+	    }
+	    static requireComponent() {
+	    }
+	    static getComponentFromPath(path) {
+	        return Component.types.get(path);
+	    }
+	    static getComponentTypePathPairs() {
+	        const retn = new Array();
+	        Component.types.forEach(function (value, key) {
+	            retn.push({ type: value, path: key });
+	        });
+	        return retn;
+	    }
+	    serialize() {
+	        return null;
+	    }
+	    static Serialize(component) {
+	        return {
+	            id: "blach", data: component.serialize()
+	        };
+	    }
+	}
+	Component.types = new Map();
+	exports.Component = Component;
+	exports.allowMultiple = Component.allowMultipleDecorator;
+	exports.component = Component.componentDecorator;
+	exports.requireComponent = Component.requireComponent;
+
+
+/***/ },
+/* 35 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3153,49 +3230,327 @@
 
 
 /***/ },
-/* 35 */
+/* 36 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(30);
+	const sizing_component_1 = __webpack_require__(37);
+	const layout_component_1 = __webpack_require__(38);
+	const expose_as_1 = __webpack_require__(39);
+	const component_1 = __webpack_require__(34);
+	const app_element_1 = __webpack_require__(25);
+	let HorizontalStackLayout = class HorizontalStackLayout extends layout_component_1.LayoutComponent {
+	    constructor() {
+	        super(...arguments);
+	        this.wrap = false;
+	    }
+	    doLayout() {
+	        var remainingSpace = this.appElement.getWidth();
+	        const sizings = new Array(this.sizingComponents.length);
+	        let totalFractions = 0;
+	        for (let i = 0; i < this.sizingComponents.length; i++) {
+	            const sizer = this.sizingComponents[i];
+	            if (sizer) {
+	                switch (sizer.sizingMode) {
+	                    case sizing_component_1.SizingMode.Percent:
+	                        const percentageValue = sizer.width * 0.01;
+	                        sizings[i] = (percentageValue * this.appElement.getWidth()) | 0;
+	                        remainingSpace -= sizings[i];
+	                        break;
+	                    case sizing_component_1.SizingMode.Fraction:
+	                        totalFractions++;
+	                        sizings[i] = sizer.width;
+	                        break;
+	                    case sizing_component_1.SizingMode.Fixed:
+	                        sizings[i] = sizer.width;
+	                        remainingSpace -= sizings[i];
+	                        break;
+	                }
+	            }
+	            else {
+	                sizings[i] = -1;
+	            }
+	        }
+	        if (totalFractions > 0) {
+	            const pieceSize = remainingSpace / totalFractions;
+	            for (let i = 0; i < sizings.length; i++) {
+	                if (this.sizingComponents[i].sizingMode === sizing_component_1.SizingMode.Fraction) {
+	                    sizings[i] = pieceSize * (this.sizingComponents[i].width);
+	                }
+	            }
+	        }
+	        let allocatedSpace = 0;
+	        for (let i = 0; i < this.sizingComponents.length; i++) {
+	            const element = this.sizingComponents[i].appElement;
+	            element.setPositionValues(allocatedSpace, 0, app_element_1.Space.Local);
+	            element.setDimensions(sizings[i], this.appElement.getHeight());
+	            allocatedSpace += sizings[i];
+	        }
+	    }
+	};
+	tslib_1.__decorate([
+	    expose_as_1.exposeAs(Boolean)
+	], HorizontalStackLayout.prototype, "wrap", void 0);
+	HorizontalStackLayout = tslib_1.__decorate([
+	    component_1.component("Layout/HorizontalStack")
+	], HorizontalStackLayout);
+	exports.HorizontalStackLayout = HorizontalStackLayout;
+
+
+/***/ },
+/* 37 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(30);
+	const layout_component_1 = __webpack_require__(38);
+	const expose_as_1 = __webpack_require__(39);
+	const util_1 = __webpack_require__(13);
+	const component_1 = __webpack_require__(34);
+	var SizingMode;
+	(function (SizingMode) {
+	    SizingMode[SizingMode["Fixed"] = 0] = "Fixed";
+	    SizingMode[SizingMode["Percent"] = 1] = "Percent";
+	    SizingMode[SizingMode["Fraction"] = 2] = "Fraction";
+	    SizingMode[SizingMode["Anchor"] = 3] = "Anchor";
+	})(SizingMode = exports.SizingMode || (exports.SizingMode = {}));
+	let SizingComponent = class SizingComponent extends component_1.Component {
+	    constructor() {
+	        super(...arguments);
+	        this.sizingMode = SizingMode.Fraction;
+	        this.width = 1;
+	        this.height = 1;
+	    }
+	    setLayoutRect(rect) {
+	    }
+	    onLayoutRectChanged(layoutRect) {
+	    }
+	    onMounted() {
+	        const layout = this.getComponentInParent(layout_component_1.LayoutComponent);
+	        if (layout) {
+	            layout.addSizingComponent(this);
+	        }
+	    }
+	    onDestroyed() {
+	        if (!this.appElement.isDestroyed()) {
+	            const layout = this.getComponentInParent(layout_component_1.LayoutComponent);
+	            if (layout) {
+	                layout.removeSizingComponent(this);
+	            }
+	        }
+	    }
+	};
+	tslib_1.__decorate([
+	    expose_as_1.exposeAs(util_1.EnumSelect, SizingMode)
+	], SizingComponent.prototype, "sizingMode", void 0);
+	tslib_1.__decorate([
+	    expose_as_1.exposeAs(Number)
+	], SizingComponent.prototype, "width", void 0);
+	tslib_1.__decorate([
+	    expose_as_1.exposeAs(Number)
+	], SizingComponent.prototype, "height", void 0);
+	SizingComponent = tslib_1.__decorate([
+	    component_1.component("Layout/Sizing")
+	], SizingComponent);
+	exports.SizingComponent = SizingComponent;
+
+
+/***/ },
+/* 38 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const sizing_component_1 = __webpack_require__(37);
+	const component_1 = __webpack_require__(34);
+	class DefaultSizer {
+	    constructor(appElement) {
+	        this.appElement = appElement;
+	        this.width = 1;
+	        this.height = 1;
+	        this.sizingMode = sizing_component_1.SizingMode.Fraction;
+	    }
+	}
+	exports.DefaultSizer = DefaultSizer;
+	class LayoutComponent extends component_1.Component {
+	    constructor() {
+	        super(...arguments);
+	        this.sizingComponents = [];
+	    }
+	    doLayout() { }
+	    onMounted() {
+	        const childCount = this.appElement.getChildCount();
+	        for (let i = 0; i < childCount; i++) {
+	            const child = this.appElement.getChildAt(i);
+	            let sizing = child.getComponent(sizing_component_1.SizingComponent) || new DefaultSizer(child);
+	            this.sizingComponents.push(sizing);
+	        }
+	        Runtime.queueLayout(this);
+	    }
+	    getSlotAtPosition(position) {
+	        if (this.sizingComponents.length === 0)
+	            return;
+	    }
+	    onChildAdded(child) {
+	        const sizer = child.getComponent(sizing_component_1.SizingComponent) || new DefaultSizer(child);
+	        this.sizingComponents.push(sizer);
+	        Runtime.queueLayout(this);
+	    }
+	    onChildRemoved(child) {
+	        for (let i = 0; i < this.sizingComponents.length; i++) {
+	            if (this.sizingComponents[i].appElement === child) {
+	                this.sizingComponents.removeAt(i);
+	                break;
+	            }
+	        }
+	        Runtime.queueLayout(this);
+	    }
+	    onChildMoved(child) {
+	    }
+	    addSizingComponent(sizingComponent) {
+	        for (let i = 0; i < this.sizingComponents.length; i++) {
+	            const cmp = this.sizingComponents[i];
+	            if (cmp.appElement === sizingComponent.appElement) {
+	                this.sizingComponents[i] = sizingComponent;
+	                return;
+	            }
+	        }
+	        Runtime.queueLayout(this);
+	    }
+	    removeSizingComponent(sizingComponent) {
+	        for (let i = 0; i < this.sizingComponents.length; i++) {
+	            const cmp = this.sizingComponents[i];
+	            if (cmp.appElement === sizingComponent.appElement) {
+	                this.sizingComponents[i] = new DefaultSizer(sizingComponent.appElement);
+	                return;
+	            }
+	        }
+	        Runtime.queueLayout(this);
+	    }
+	}
+	exports.LayoutComponent = LayoutComponent;
+
+
+/***/ },
+/* 39 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	let editorDataMap = new Map();
+	let fnPrototype = Object.getPrototypeOf(function () { });
+	function getExposedFieldMap(target) {
+	    let map = null;
+	    let ptr = target.constructor;
+	    while (!map && ptr !== fnPrototype) {
+	        map = editorDataMap.get(ptr);
+	        if (map)
+	            return map;
+	        ptr = Object.getPrototypeOf(ptr);
+	    }
+	    return null;
+	}
+	exports.getExposedFieldMap = getExposedFieldMap;
+	function inspector(propertyType, ...propertyOptions) {
+	    return (target, propertyName) => {
+	        var fieldMap = editorDataMap.get(target.constructor);
+	        if (!fieldMap) {
+	            fieldMap = new Map();
+	            const parent = Object.getPrototypeOf(target.constructor);
+	            if (typeof parent === "function") {
+	                const parentFields = editorDataMap.get(parent);
+	                if (parentFields) {
+	                    parentFields.forEach(function (value, key) {
+	                        fieldMap.set(key, value);
+	                    });
+	                }
+	            }
+	            editorDataMap.set(target.constructor, fieldMap);
+	        }
+	        fieldMap.set(propertyName, { propertyName, propertyType, propertyOptions });
+	    };
+	}
+	exports.inspector = inspector;
+	function exposeAs(propertyType, ...propertyOptions) {
+	    return (target, propertyName) => {
+	        var fieldMap = editorDataMap.get(target.constructor);
+	        if (!fieldMap) {
+	            fieldMap = new Map();
+	            const parent = Object.getPrototypeOf(target.constructor);
+	            if (typeof parent === "function") {
+	                const parentFields = editorDataMap.get(parent);
+	                if (parentFields) {
+	                    parentFields.forEach(function (value, key) {
+	                        fieldMap.set(key, value);
+	                    });
+	                }
+	            }
+	            editorDataMap.set(target.constructor, fieldMap);
+	        }
+	        fieldMap.set(propertyName, { propertyName, propertyType, propertyOptions });
+	    };
+	}
+	exports.exposeAs = exposeAs;
+
+
+/***/ },
+/* 40 */
 /***/ function(module, exports) {
 
 	module.exports = {
 	    elements: {
-	        // 1: {
-	        //     parentId: 0,
-	        //     name: "App Root 1",
-	        //     components: [
-	        //         {
-	        //             type: "Paint/Background",
-	        //             data: {
-	        //                 color: {
-	        //                     r: 255, g: 255, b: 255, a: 1
-	        //                 }
-	        //             }
-	        //         }
-	        //     ]
-	        // },
-	        // 2: {
-	        //     parentId: 0,
-	        //     name: "App Root 2",
-	        //     components: [{
-	        //         type: "Paint/Background",
-	        //         data: {
-	        //             color: {
-	        //                 r: 255, g: 0, b: 0, a: 1
-	        //             }
-	        //         }
-	        //     }]
-	        // },
-	        // 3: {
-	        //     parentId: 0,
-	        //     name: "Child 1",
-	        //     components: [{
-	        //         type: "Paint/Background",
-	        //         data: {
-	        //             color: {
-	        //                 r: 0, g: 255, b: 255, a: 1
-	        //             }
-	        //         }
-	        //     }]
-	        // },
+	        1: {
+	            parentId: 0,
+	            name: "Child 1",
+	            components: [
+	                {
+	                    type: "UI/Panel"
+	                },
+	                {
+	                    type: "Paint/Background",
+	                    data: {
+	                        color: {
+	                            r: 255, g: 255, b: 255, a: 1
+	                        }
+	                    }
+	                }
+	            ]
+	        },
+	        2: {
+	            parentId: 0,
+	            name: "Child 2",
+	            components: [
+	                {
+	                    type: "UI/Panel"
+	                },
+	                {
+	                    type: "Paint/Background",
+	                    data: {
+	                        color: {
+	                            r: 255, g: 0, b: 0, a: 1
+	                        }
+	                    }
+	                }]
+	        },
+	        3: {
+	            parentId: 0,
+	            name: "Child 3",
+	            components: [
+	                {
+	                    type: "UI/Panel"
+	                },
+	                {
+	                    type: "Paint/Background",
+	                    data: {
+	                        color: {
+	                            r: 0, g: 255, b: 255, a: 1
+	                        }
+	                    }
+	                }]
+	        },
 	        // 4: {
 	        //     parentId: 0,
 	        //     name: "Child 2",
@@ -3213,7 +3568,7 @@
 	};
 
 /***/ },
-/* 36 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3267,12 +3622,12 @@
 
 
 /***/ },
-/* 37 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const runtime_base_1 = __webpack_require__(30);
+	const runtime_base_1 = __webpack_require__(29);
 	const browser_input_1 = __webpack_require__(20);
 	const e_command_type_1 = __webpack_require__(28);
 	class BrowserRuntimeImpl extends runtime_base_1.RuntimeBase {
@@ -3314,7 +3669,7 @@
 
 
 /***/ },
-/* 38 */
+/* 43 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3349,7 +3704,7 @@
 
 
 /***/ },
-/* 39 */
+/* 44 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3364,7 +3719,7 @@
 
 
 /***/ },
-/* 40 */
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3382,18 +3737,27 @@
 	}
 	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetText, (function () {
 	    var ruler = document.createElement('span');
-	    var style = ruler.style;
-	    style.wordWrap = "none";
-	    style.visibility = "hidden";
+	    var rulerStyle = ruler.style;
+	    rulerStyle.wordWrap = "none";
+	    rulerStyle.visibility = "hidden";
 	    document.body.appendChild(ruler);
 	    return function (payload) {
-	        const el = BrowserRuntime.elementIdToDomNode(payload.id);
-	        el.innerText = payload.text;
-	        style.fontSize = payload.fontSize;
-	        style.fontFamily = payload.fontFamily;
-	        style.fontWeight = payload.fontWeight;
-	        style.lineHeight = payload.lineHeight;
-	        style.textDecoration = payload.decoration;
+	        const element = BrowserRuntime.elementIdToDomNode(payload.id);
+	        element.innerText = payload.text;
+	        const font = payload.font;
+	        const style = element.style;
+	        if (payload.setFont) {
+	            style.fontSize = font.size + "px";
+	            style.fontFamily = font.name;
+	            style.fontWeight = font.weight;
+	            style.lineHeight = font.lineHeight;
+	            style.textDecoration = font.decoration;
+	        }
+	        rulerStyle.fontSize = font.size + "px";
+	        rulerStyle.fontFamily = font.name;
+	        rulerStyle.fontWeight = font.weight;
+	        rulerStyle.lineHeight = font.lineHeight;
+	        rulerStyle.textDecoration = font.decoration;
 	        ruler.innerText = payload.text;
 	        return ruler.offsetWidth;
 	    };
@@ -3404,7 +3768,8 @@
 	        "Text": "div",
 	        "Button": "button",
 	        "Dropdown": "select",
-	        "Section": "section"
+	        "Section": "section",
+	        "Image": "img"
 	    };
 	    return function (payload) {
 	        const element = document.createElement(elementTypeToTagName[payload.elementType]);
@@ -3418,6 +3783,18 @@
 	        BrowserRuntime.elementIdToDomNode(parentId).appendChild(element);
 	    };
 	})());
+	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.Destroy, function (payload) {
+	    const element = BrowserRuntime.elementIdToDomNode(payload.id);
+	    element && element.remove();
+	    BrowserRuntime.setDomNodeToElementId(payload.id, null);
+	    for (let i = 0; i < payload.childIds; i++) {
+	        BrowserRuntime.setDomNodeToElementId(payload.childIds[i], null);
+	    }
+	});
+	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetImage, function (payload) {
+	    const el = BrowserRuntime.elementIdToDomNode(payload.id);
+	    el.setAttribute("src", payload.image);
+	});
 	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetPosition, function (payload) {
 	    const el = BrowserRuntime.elementIdToDomNode(payload.id);
 	    const x = payload.x | 0;
@@ -3456,7 +3833,7 @@
 
 
 /***/ },
-/* 41 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3468,7 +3845,7 @@
 
 
 /***/ },
-/* 42 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3490,7 +3867,7 @@
 
 
 /***/ },
-/* 43 */
+/* 48 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3571,19 +3948,19 @@
 
 
 /***/ },
-/* 44 */
+/* 49 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 45 */
+/* 50 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 46 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3687,18 +4064,18 @@
 
 
 /***/ },
-/* 47 */
+/* 52 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 48 */
+/* 53 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const drag_action_1 = __webpack_require__(34);
+	const drag_action_1 = __webpack_require__(35);
 	class DragAssetItemAction extends drag_action_1.DragAction {
 	    constructor(asset) {
 	        super();
@@ -3709,12 +4086,12 @@
 
 
 /***/ },
-/* 49 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const drag_action_1 = __webpack_require__(34);
+	const drag_action_1 = __webpack_require__(35);
 	class PrefabDragAction extends drag_action_1.DragAction {
 	    constructor(template) {
 	        super();
@@ -3725,7 +4102,7 @@
 
 
 /***/ },
-/* 50 */
+/* 55 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3741,13 +4118,13 @@
 
 
 /***/ },
-/* 51 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const app_element_1 = __webpack_require__(25);
-	const component_1 = __webpack_require__(29);
+	const component_1 = __webpack_require__(34);
 	class PrefabTemplate {
 	    constructor(assetDef) {
 	        this.name = assetDef.name;
@@ -3772,74 +4149,12 @@
 
 
 /***/ },
-/* 52 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	let editorDataMap = new Map();
-	let fnPrototype = Object.getPrototypeOf(function () { });
-	function getExposedFieldMap(target) {
-	    let map = null;
-	    let ptr = target.constructor;
-	    while (!map && ptr !== fnPrototype) {
-	        map = editorDataMap.get(ptr);
-	        if (map)
-	            return map;
-	        ptr = Object.getPrototypeOf(ptr);
-	    }
-	    return null;
-	}
-	exports.getExposedFieldMap = getExposedFieldMap;
-	function inspector(propertyType, ...propertyOptions) {
-	    return (target, propertyName) => {
-	        var fieldMap = editorDataMap.get(target.constructor);
-	        if (!fieldMap) {
-	            fieldMap = new Map();
-	            const parent = Object.getPrototypeOf(target.constructor);
-	            if (typeof parent === "function") {
-	                const parentFields = editorDataMap.get(parent);
-	                if (parentFields) {
-	                    parentFields.forEach(function (value, key) {
-	                        fieldMap.set(key, value);
-	                    });
-	                }
-	            }
-	            editorDataMap.set(target.constructor, fieldMap);
-	        }
-	        fieldMap.set(propertyName, { propertyName, propertyType, propertyOptions });
-	    };
-	}
-	exports.inspector = inspector;
-	function exposeAs(propertyType, ...propertyOptions) {
-	    return (target, propertyName) => {
-	        var fieldMap = editorDataMap.get(target.constructor);
-	        if (!fieldMap) {
-	            fieldMap = new Map();
-	            const parent = Object.getPrototypeOf(target.constructor);
-	            if (typeof parent === "function") {
-	                const parentFields = editorDataMap.get(parent);
-	                if (parentFields) {
-	                    parentFields.forEach(function (value, key) {
-	                        fieldMap.set(key, value);
-	                    });
-	                }
-	            }
-	            editorDataMap.set(target.constructor, fieldMap);
-	        }
-	        fieldMap.set(propertyName, { propertyName, propertyType, propertyOptions });
-	    };
-	}
-	exports.exposeAs = exposeAs;
-
-
-/***/ },
-/* 53 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const property_renderer_1 = __webpack_require__(54);
+	const property_renderer_1 = __webpack_require__(58);
 	function propertyDrawer(typeToDraw) {
 	    return function (target) {
 	        property_renderer_1.PropertyRenderer.set(typeToDraw, target);
@@ -3849,12 +4164,12 @@
 
 
 /***/ },
-/* 54 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(42);
+	const editor_custom_element_1 = __webpack_require__(47);
 	const element_renderer_1 = __webpack_require__(5);
 	class PropertyRenderer extends editor_custom_element_1.EditorCustomElement {
 	    createInitialStructure(children) {
@@ -3873,13 +4188,18 @@
 
 
 /***/ },
-/* 55 */
+/* 59 */
 /***/ function(module, exports) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	Array.prototype.add = function (item) {
-	    this[this.length] = item;
+	Array.prototype.contains = function (item) {
+	    const length = this.length;
+	    for (let i = 0; i < length; i++) {
+	        if (this[i] === item)
+	            return true;
+	    }
+	    return false;
 	};
 	Array.prototype.getFirst = function () {
 	    return this[0];
@@ -3913,11 +4233,21 @@
 	    this.length--;
 	    return true;
 	};
+	Array.prototype.insert = function (item, index) {
+	    this.length++;
+	    let len = this.length;
+	    let i = index + 1;
+	    while (i < len) {
+	        this[i - 1] = this[i];
+	        i++;
+	    }
+	    this[index] = item;
+	};
 	exports.default = 0;
 
 
 /***/ },
-/* 56 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3947,7 +4277,7 @@
 
 
 /***/ },
-/* 57 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3985,7 +4315,7 @@
 
 
 /***/ },
-/* 58 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3997,14 +4327,14 @@
 
 
 /***/ },
-/* 59 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const e_command_type_1 = __webpack_require__(28);
-	const background_component_1 = __webpack_require__(60);
-	const ui_component_1 = __webpack_require__(62);
+	const background_component_1 = __webpack_require__(64);
+	const ui_component_1 = __webpack_require__(66);
 	const ComponentCache = new Array();
 	const ColorCache = {};
 	Runtime.setCommandSerializer(e_command_type_1.CommandType.Create, function (id) {
@@ -4015,12 +4345,26 @@
 	    for (let i = 0; i < components.length; i++) {
 	        serializedComponents[i] = components[i].serialize();
 	    }
+	    const uiComponent = appElement.getComponent(ui_component_1.UIComponent);
+	    let elementType = "Panel";
+	    if (uiComponent) {
+	        elementType = uiComponent.getTypeName();
+	    }
 	    return {
 	        id: id,
-	        elementType: appElement.getComponent(ui_component_1.UIComponent).getTypeName(),
+	        elementType: elementType,
 	        components: serializedComponents,
 	        parentId: appElement.getParent().id
 	    };
+	});
+	Runtime.setCommandSerializer(e_command_type_1.CommandType.Destroy, function (data) {
+	    return { id: data.id };
+	});
+	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetText, function (data) {
+	    return { id: data.id, text: data.text, font: data.font };
+	});
+	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetImage, function (data) {
+	    return { id: data.id, image: data.image };
 	});
 	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetPosition, function (id) {
 	    const appElement = Runtime.getAppElementById(id);
@@ -4046,16 +4390,16 @@
 
 
 /***/ },
-/* 60 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const component_1 = __webpack_require__(29);
-	const color_1 = __webpack_require__(61);
+	const tslib_1 = __webpack_require__(30);
+	const component_1 = __webpack_require__(34);
+	const color_1 = __webpack_require__(65);
 	const e_command_type_1 = __webpack_require__(28);
-	const expose_as_1 = __webpack_require__(52);
+	const expose_as_1 = __webpack_require__(39);
 	let BackgroundComponent = class BackgroundComponent extends component_1.Component {
 	    constructor() {
 	        super(...arguments);
@@ -4091,7 +4435,7 @@
 
 
 /***/ },
-/* 61 */
+/* 65 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -4127,13 +4471,13 @@
 
 
 /***/ },
-/* 62 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const component_1 = __webpack_require__(29);
+	const tslib_1 = __webpack_require__(30);
+	const component_1 = __webpack_require__(34);
 	const e_command_type_1 = __webpack_require__(28);
 	class Background {
 	    constructor() {
@@ -4183,213 +4527,14 @@
 
 
 /***/ },
-/* 63 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const sizing_component_1 = __webpack_require__(64);
-	const layout_component_1 = __webpack_require__(65);
-	const expose_as_1 = __webpack_require__(52);
-	class HorizontalStackLayout extends layout_component_1.LayoutComponent {
-	    constructor() {
-	        super(...arguments);
-	        this.totalWidth = 800;
-	        this.totalHeight = 600;
-	        this.wrap = false;
-	    }
-	    doLayout() {
-	        var remainingSpace = this.totalWidth;
-	        const sizings = new Array(this.sizingComponents.length);
-	        let totalFractions = 0;
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            const sizer = this.sizingComponents[i];
-	            if (sizer) {
-	                switch (sizer.sizingMode) {
-	                    case sizing_component_1.SizingMode.Percent:
-	                        const percentageValue = sizer.width * 0.01;
-	                        sizings[i] = (percentageValue * this.totalWidth) | 0;
-	                        remainingSpace -= sizings[i];
-	                        break;
-	                    case sizing_component_1.SizingMode.Fraction:
-	                        totalFractions++;
-	                        sizings[i] = sizer.width;
-	                        break;
-	                    case sizing_component_1.SizingMode.Fixed:
-	                        sizings[i] = sizer.width;
-	                        remainingSpace -= sizings[i];
-	                        break;
-	                }
-	            }
-	            else {
-	                sizings[i] = -1;
-	            }
-	        }
-	        if (totalFractions > 0) {
-	            const pieceSize = remainingSpace / totalFractions;
-	            for (let i = 0; i < sizings.length; i++) {
-	                if (this.sizingComponents[i].sizingMode === sizing_component_1.SizingMode.Fraction) {
-	                    sizings[i] = pieceSize * (this.sizingComponents[i].width);
-	                }
-	            }
-	        }
-	        let allocatedSpace = 0;
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            const element = this.sizingComponents[i].appElement;
-	            element.setPositionValues(allocatedSpace, 0);
-	            element.setDimensions(sizings[i], 100);
-	            allocatedSpace += sizings[i];
-	        }
-	    }
-	}
-	tslib_1.__decorate([
-	    expose_as_1.exposeAs(Boolean)
-	], HorizontalStackLayout.prototype, "wrap", void 0);
-	exports.HorizontalStackLayout = HorizontalStackLayout;
-
-
-/***/ },
-/* 64 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const layout_component_1 = __webpack_require__(65);
-	const expose_as_1 = __webpack_require__(52);
-	const util_1 = __webpack_require__(13);
-	const component_1 = __webpack_require__(29);
-	var SizingMode;
-	(function (SizingMode) {
-	    SizingMode[SizingMode["Fixed"] = 0] = "Fixed";
-	    SizingMode[SizingMode["Percent"] = 1] = "Percent";
-	    SizingMode[SizingMode["Fraction"] = 2] = "Fraction";
-	    SizingMode[SizingMode["Anchor"] = 3] = "Anchor";
-	})(SizingMode = exports.SizingMode || (exports.SizingMode = {}));
-	let SizingComponent = class SizingComponent extends component_1.Component {
-	    constructor() {
-	        super(...arguments);
-	        this.sizingMode = SizingMode.Fraction;
-	        this.width = 1;
-	        this.height = 1;
-	    }
-	    setLayoutRect(rect) {
-	    }
-	    onLayoutRectChanged(layoutRect) {
-	    }
-	    onMounted() {
-	        const layout = this.getComponentInParent(layout_component_1.LayoutComponent);
-	        if (layout) {
-	            layout.addSizingComponent(this);
-	        }
-	    }
-	    onDestroyed() {
-	        if (!this.appElement.isDestroyed()) {
-	            const layout = this.getComponentInParent(layout_component_1.LayoutComponent);
-	            if (layout) {
-	                layout.removeSizingComponent(this);
-	            }
-	        }
-	    }
-	};
-	tslib_1.__decorate([
-	    expose_as_1.exposeAs(util_1.EnumSelect, SizingMode)
-	], SizingComponent.prototype, "sizingMode", void 0);
-	tslib_1.__decorate([
-	    expose_as_1.exposeAs(Number)
-	], SizingComponent.prototype, "width", void 0);
-	tslib_1.__decorate([
-	    expose_as_1.exposeAs(Number)
-	], SizingComponent.prototype, "height", void 0);
-	SizingComponent = tslib_1.__decorate([
-	    component_1.component("Layout/Sizing")
-	], SizingComponent);
-	exports.SizingComponent = SizingComponent;
-
-
-/***/ },
-/* 65 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const sizing_component_1 = __webpack_require__(64);
-	const component_1 = __webpack_require__(29);
-	const rectangle_1 = __webpack_require__(26);
-	class DefaultSizer {
-	    constructor(appElement) {
-	        this.appElement = appElement;
-	        this.width = 1;
-	        this.height = 1;
-	        this.sizingMode = sizing_component_1.SizingMode.Fraction;
-	    }
-	}
-	exports.DefaultSizer = DefaultSizer;
-	class LayoutComponent extends component_1.Component {
-	    constructor() {
-	        super(...arguments);
-	        this.sizingComponents = [];
-	        this.layoutRect = new rectangle_1.Rectangle();
-	    }
-	    doLayout() { }
-	    onMounted() {
-	        const childCount = this.appElement.getChildCount();
-	        for (let i = 0; i < childCount; i++) {
-	            const child = this.appElement.getChildAt(i);
-	            let sizing = child.getComponent(sizing_component_1.SizingComponent) || new DefaultSizer(child);
-	            this.sizingComponents.add(sizing);
-	        }
-	        this.doLayout();
-	    }
-	    onChildAdded(child) {
-	        const sizer = child.getComponent(sizing_component_1.SizingComponent) || new DefaultSizer(child);
-	        this.sizingComponents.push(sizer);
-	        this.doLayout();
-	    }
-	    onChildRemoved(child) {
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            if (this.sizingComponents[i].appElement === child) {
-	                this.sizingComponents.removeAt(i);
-	                return;
-	            }
-	        }
-	    }
-	    onChildMoved(child) {
-	    }
-	    addSizingComponent(sizingComponent) {
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            const cmp = this.sizingComponents[i];
-	            if (cmp.appElement === sizingComponent.appElement) {
-	                this.sizingComponents[i] = sizingComponent;
-	                return;
-	            }
-	        }
-	        Runtime.queueLayout(this);
-	    }
-	    removeSizingComponent(sizingComponent) {
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            const cmp = this.sizingComponents[i];
-	            if (cmp.appElement === sizingComponent.appElement) {
-	                this.sizingComponents[i] = new DefaultSizer(sizingComponent.appElement);
-	                return;
-	            }
-	        }
-	        Runtime.queueLayout(this);
-	    }
-	}
-	exports.LayoutComponent = LayoutComponent;
-
-
-/***/ },
-/* 66 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const sizing_component_1 = __webpack_require__(64);
-	const component_1 = __webpack_require__(29);
+	const tslib_1 = __webpack_require__(30);
+	const sizing_component_1 = __webpack_require__(37);
+	const component_1 = __webpack_require__(34);
 	let DefaultSizingComponent = class DefaultSizingComponent extends sizing_component_1.SizingComponent {
 	    onMounted() {
 	    }
@@ -4401,13 +4546,13 @@
 
 
 /***/ },
-/* 67 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const ui_component_1 = __webpack_require__(62);
+	const tslib_1 = __webpack_require__(30);
+	const ui_component_1 = __webpack_require__(66);
 	class Font {
 	}
 	exports.Font = Font;
@@ -4429,14 +4574,55 @@
 
 
 /***/ },
-/* 68 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const ui_component_1 = __webpack_require__(62);
-	const component_1 = __webpack_require__(29);
+	const tslib_1 = __webpack_require__(30);
+	const ui_component_1 = __webpack_require__(66);
+	const expose_as_1 = __webpack_require__(39);
+	const component_1 = __webpack_require__(34);
+	const e_command_type_1 = __webpack_require__(28);
+	let ImageComponent = class ImageComponent extends ui_component_1.UIComponent {
+	    setImageAsync(image) {
+	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
+	            return null;
+	        });
+	    }
+	    serialize() {
+	        return {
+	            elementType: "Image",
+	            commands: [
+	                {
+	                    type: e_command_type_1.CommandType.SetImage,
+	                    data: {
+	                        id: this.appElement.id,
+	                        image: "img/placeholder.svg"
+	                    }
+	                }
+	            ]
+	        };
+	    }
+	};
+	tslib_1.__decorate([
+	    expose_as_1.inspector(String)
+	], ImageComponent.prototype, "image", void 0);
+	ImageComponent = tslib_1.__decorate([
+	    component_1.component("UI/Image")
+	], ImageComponent);
+	exports.ImageComponent = ImageComponent;
+
+
+/***/ },
+/* 70 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(30);
+	const ui_component_1 = __webpack_require__(66);
+	const component_1 = __webpack_require__(34);
 	let PanelComponent = class PanelComponent extends ui_component_1.UIComponent {
 	    serialize() {
 	        return {
@@ -4451,59 +4637,61 @@
 
 
 /***/ },
-/* 69 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const component_1 = __webpack_require__(29);
+	const tslib_1 = __webpack_require__(30);
+	const component_1 = __webpack_require__(34);
 	const e_command_type_1 = __webpack_require__(28);
-	const ui_component_1 = __webpack_require__(62);
-	const expose_as_1 = __webpack_require__(52);
-	const dirtyMap = new WeakMap();
-	function DirtyCheck(ctx, fieldName, callback) {
-	    let map = dirtyMap.get(ctx);
-	    if (!map) {
-	        map = {};
-	        dirtyMap.set(ctx, map);
-	    }
-	    const lastValue = map[fieldName];
-	    const currentValue = ctx[fieldName];
-	    if (Array.isArray(lastValue)) {
-	        if (!Array.isArray(currentValue)) {
-	            return true;
-	        }
-	        const ref = map[fieldName].ref;
-	        if (ref === currentValue) {
-	            map[fieldName].ref = currentValue;
-	            return true;
-	        }
-	        if (lastValue !== currentValue) {
-	            map[fieldName] = currentValue;
-	            callback(currentValue);
-	            return true;
-	        }
-	    }
-	    else if (typeof lastValue === "object") {
-	    }
-	    return lastValue === currentValue;
-	}
+	const ui_component_1 = __webpack_require__(66);
 	let TextComponent = class TextComponent extends ui_component_1.UIComponent {
 	    constructor() {
 	        super(...arguments);
 	        this.textContent = "";
-	        this.list = [];
+	        this.font = {
+	            name: "Roboto",
+	            size: 12,
+	            lineHeight: 1,
+	            weight: 400,
+	            decoration: "none"
+	        };
+	    }
+	    getFontSize() {
+	        return this.font.size;
+	    }
+	    getFontName() {
+	        return this.font.name;
+	    }
+	    getTextContent() {
+	        return this.textContent;
 	    }
 	    setTextAsync(text) {
 	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
 	            return yield Runtime.awaitCommand(e_command_type_1.CommandType.SetText, {
 	                id: this.appElement.id,
-	                text: text
+	                text: text,
+	                font: this.font,
+	                setFont: false
 	            }).then((width) => {
 	                this.textContent = text;
 	                this.appElement.setWidth(width);
 	                return this.textContent;
+	            });
+	        });
+	    }
+	    setFontAsync(font) {
+	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
+	            return yield Runtime.awaitCommand(e_command_type_1.CommandType.SetText, {
+	                id: this.appElement.id,
+	                text: this.textContent,
+	                font: font,
+	                setFont: true
+	            }).then((width) => {
+	                this.font = font;
+	                this.appElement.setWidth(width);
+	                return this.font;
 	            });
 	        });
 	    }
@@ -4513,22 +4701,18 @@
 	    serialize() {
 	        return {
 	            commands: [
-	                { type: e_command_type_1.CommandType.SetText, data: { id: this.appElement.id, text: this.textContent } }
+	                {
+	                    type: e_command_type_1.CommandType.SetText,
+	                    data: {
+	                        id: this.appElement.id,
+	                        text: this.textContent,
+	                        font: this.font
+	                    }
+	                }
 	            ]
 	        };
 	    }
-	    onInspectorUpdated() {
-	        if (DirtyCheck(this, "textContent")) {
-	            this.setTextAsync(this.textContent);
-	        }
-	    }
 	};
-	tslib_1.__decorate([
-	    expose_as_1.inspector(String)
-	], TextComponent.prototype, "textContent", void 0);
-	tslib_1.__decorate([
-	    expose_as_1.inspector(Object)
-	], TextComponent.prototype, "list", void 0);
 	TextComponent = tslib_1.__decorate([
 	    component_1.component("UI/Text")
 	], TextComponent);
@@ -4536,7 +4720,7 @@
 
 
 /***/ },
-/* 70 */
+/* 72 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -4646,13 +4830,13 @@
 
 
 /***/ },
-/* 71 */
+/* 73 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 72 */
+/* 74 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -4660,7 +4844,7 @@
 
 
 /***/ },
-/* 73 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4678,13 +4862,13 @@
 
 
 /***/ },
-/* 74 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(42);
-	const binding_1 = __webpack_require__(46);
+	const editor_custom_element_1 = __webpack_require__(47);
+	const binding_1 = __webpack_require__(51);
 	class InputRenderer extends editor_custom_element_1.EditorCustomElement {
 	    onCreated() {
 	        if (this.attrs.value instanceof binding_1.EditorBinding) {
@@ -4704,12 +4888,12 @@
 
 
 /***/ },
-/* 75 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(42);
+	const editor_custom_element_1 = __webpack_require__(47);
 	class HorizontalBase extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
 	        return HorizontalBase.DomData;
@@ -4729,12 +4913,12 @@
 
 
 /***/ },
-/* 76 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const scene_tool_1 = __webpack_require__(77);
+	const scene_tool_1 = __webpack_require__(79);
 	class ScenePanTool extends scene_tool_1.SceneTool {
 	    constructor() {
 	        super(...arguments);
@@ -4762,7 +4946,7 @@
 
 
 /***/ },
-/* 77 */
+/* 79 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -4780,12 +4964,12 @@
 
 
 /***/ },
-/* 78 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const scene_tool_1 = __webpack_require__(77);
+	const scene_tool_1 = __webpack_require__(79);
 	const util_1 = __webpack_require__(13);
 	const app_element_1 = __webpack_require__(25);
 	var DragSide;
@@ -4966,19 +5150,19 @@
 
 
 /***/ },
-/* 79 */
+/* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(42);
-	const split_pane_1 = __webpack_require__(80);
-	const editor_window_frame_1 = __webpack_require__(81);
-	const hierarchy_window_1 = __webpack_require__(83);
-	const scene_window_1 = __webpack_require__(88);
-	const inspector_window_1 = __webpack_require__(90);
-	const editor_theme_1 = __webpack_require__(50);
-	const asset_window_1 = __webpack_require__(103);
+	const editor_custom_element_1 = __webpack_require__(47);
+	const split_pane_1 = __webpack_require__(82);
+	const editor_window_frame_1 = __webpack_require__(83);
+	const hierarchy_window_1 = __webpack_require__(85);
+	const scene_window_1 = __webpack_require__(90);
+	const inspector_window_1 = __webpack_require__(92);
+	const editor_theme_1 = __webpack_require__(55);
+	const asset_window_1 = __webpack_require__(105);
 	class EditorApplication extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "editor-application" };
@@ -5014,13 +5198,13 @@
 
 
 /***/ },
-/* 80 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const evt_window_resized_1 = __webpack_require__(17);
-	const editor_custom_element_1 = __webpack_require__(42);
+	const editor_custom_element_1 = __webpack_require__(47);
 	const element_renderer_1 = __webpack_require__(5);
 	const util_1 = __webpack_require__(13);
 	class SplitPane extends editor_custom_element_1.EditorCustomElement {
@@ -5291,16 +5475,16 @@
 
 
 /***/ },
-/* 81 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const split_pane_1 = __webpack_require__(80);
-	const editor_custom_element_1 = __webpack_require__(42);
-	const editor_theme_1 = __webpack_require__(50);
+	const split_pane_1 = __webpack_require__(82);
+	const editor_custom_element_1 = __webpack_require__(47);
+	const editor_theme_1 = __webpack_require__(55);
 	const element_renderer_1 = __webpack_require__(5);
-	const editor_window_tab_1 = __webpack_require__(82);
+	const editor_window_tab_1 = __webpack_require__(84);
 	const coverDiv = document.createElement('div');
 	coverDiv.style.position = "absolute";
 	coverDiv.style.zIndex = "400";
@@ -5525,13 +5709,13 @@
 
 
 /***/ },
-/* 82 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(42);
-	const editor_theme_1 = __webpack_require__(50);
+	const editor_custom_element_1 = __webpack_require__(47);
+	const editor_theme_1 = __webpack_require__(55);
 	class WindowFrameTab extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
 	        return {
@@ -5574,21 +5758,23 @@
 
 
 /***/ },
-/* 83 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const button_1 = __webpack_require__(73);
-	const hierarchy_item_1 = __webpack_require__(84);
+	const button_1 = __webpack_require__(75);
+	const hierarchy_item_1 = __webpack_require__(86);
 	const evt_selection_changed_1 = __webpack_require__(4);
 	const evt_scene_loaded_event_1 = __webpack_require__(3);
 	const evt_app_element_created_1 = __webpack_require__(18);
 	const element_renderer_1 = __webpack_require__(5);
-	const editor_window_element_1 = __webpack_require__(87);
-	const editor_theme_1 = __webpack_require__(50);
+	const editor_window_element_1 = __webpack_require__(89);
+	const editor_theme_1 = __webpack_require__(55);
 	const app_element_1 = __webpack_require__(25);
 	const e_mouse_state_1 = __webpack_require__(22);
+	const evt_app_element_parent_changed_1 = __webpack_require__(32);
+	const drag_hierarchy_item_1 = __webpack_require__(127);
 	class HierarchyWindow extends editor_window_element_1.EditorWindowElement {
 	    constructor() {
 	        super(...arguments);
@@ -5614,6 +5800,13 @@
 	    getHierarchyItemForElement(element) {
 	        return this.elementMap.get(element);
 	    }
+	    onAppElementParentChanged(appElement, newParent, oldParent) {
+	        this.getHierarchyItemForElement(appElement).destroy();
+	        this.elementMap.set(appElement, null);
+	        const item = this.createHierarchyItem(appElement);
+	        const parentItem = this.elementMap.get(newParent);
+	        parentItem.getChildRoot().addChild(item);
+	    }
 	    onSelectionChanged(newSelection, oldSelection) {
 	        if (oldSelection) {
 	            const item = this.getHierarchyItemForElement(oldSelection);
@@ -5636,32 +5829,6 @@
 	    onUpdated() {
 	        const input = EditorRuntime.getInput();
 	        if (this.dragElement) {
-	            const mouse = input.getMousePosition();
-	            if (input.isMouseUp()) {
-	                const dropElement = EditorRuntime.getEditorElementAtPoint(mouse);
-	                if (!dropElement) {
-	                    this.dragElement = null;
-	                    return;
-	                }
-	                const item = dropElement.getFirstOfTypeUpwards(hierarchy_item_1.HierarchyItem);
-	                if (!item || item === this.dragElement) {
-	                    this.dragElement = null;
-	                    return;
-	                }
-	                if (this.dragElement.isElementInHierarchy(item.getDomNode())) {
-	                    this.dragElement = null;
-	                    return;
-	                }
-	                const spacer = dropElement.hasXId("spacer");
-	                if (spacer) {
-	                    const idx = item.parent.getChildIndex(item);
-	                }
-	                else {
-	                    item.addChild(this.dragElement);
-	                }
-	                this.dragElement = null;
-	                return;
-	            }
 	        }
 	        else if (this.contextMenu.isVisible()) {
 	            if (EditorRuntime.getInput().isMouseButtonDown(e_mouse_state_1.MouseButtonState.Left)) {
@@ -5677,7 +5844,8 @@
 	            const hoverElement = EditorRuntime.getEditorElementAtPoint(mouse);
 	            if (!hoverElement)
 	                return;
-	            this.dragElement = hoverElement.getFirstOfTypeUpwards(hierarchy_item_1.HierarchyItem);
+	            const dragElement = hoverElement.getFirstOfTypeUpwards(hierarchy_item_1.HierarchyItem);
+	            EditorRuntime.beginDragAction(new drag_hierarchy_item_1.HierarchyItemDragAction(dragElement));
 	        }
 	    }
 	    onRendered() {
@@ -5685,6 +5853,7 @@
 	        EditorRuntime.on(evt_selection_changed_1.SelectionChanged, this);
 	        EditorRuntime.on(evt_scene_loaded_event_1.SceneLoaded, this);
 	        EditorRuntime.on(evt_app_element_created_1.AppElementCreated, this);
+	        EditorRuntime.on(evt_app_element_parent_changed_1.AppElementParentChanged, this);
 	        EditorRuntime.updateTree.add(this);
 	        this.onSceneLoaded(EditorRuntime.getScene());
 	    }
@@ -5703,9 +5872,6 @@
 	        const rootItem = this.createHierarchyItem(root);
 	        this.addChild(rootItem);
 	    }
-	    isDragging() {
-	        return Boolean(this.dragElement);
-	    }
 	    clearSelection() {
 	        EditorRuntime.select(null);
 	    }
@@ -5714,7 +5880,7 @@
 	        appElement.setParent(this.contextSelection);
 	        const item = this.createHierarchyItem(appElement);
 	        const itemParent = this.getHierarchyItemForElement(this.contextSelection);
-	        itemParent.addChild(item);
+	        itemParent.getChildRoot().addChild(item);
 	        this.contextMenu.setVisible(false);
 	    }
 	    destroyContextSelection() {
@@ -5796,15 +5962,18 @@
 
 
 /***/ },
-/* 84 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const icon_1 = __webpack_require__(85);
-	const editor_custom_element_1 = __webpack_require__(42);
-	const hierarchy_window_1 = __webpack_require__(83);
-	const hierarchy_insert_target_1 = __webpack_require__(86);
+	const tslib_1 = __webpack_require__(30);
+	const icon_1 = __webpack_require__(87);
+	const editor_custom_element_1 = __webpack_require__(47);
+	const hierarchy_window_1 = __webpack_require__(85);
+	const hierarchy_insert_target_1 = __webpack_require__(88);
+	const drag_action_1 = __webpack_require__(35);
+	const drag_hierarchy_item_1 = __webpack_require__(127);
 	class HierarchyItem extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "hierarchy-item" };
@@ -5820,20 +5989,30 @@
 	        const hierarchy = this.getAncestorByType(hierarchy_window_1.HierarchyWindow);
 	        hierarchy.showContextMenu(this.attrs.element, e.pageX, e.pageY);
 	    }
-	    mouseEnterDetails() {
-	        if (this.getAncestorByType(hierarchy_window_1.HierarchyWindow).isDragging()) {
-	            this.getChildById("item-details").getDomNode().style.background = "blue";
+	    mouseEnterDetails(action) {
+	        if (action.item === this || action.item === this.parent) {
+	            this.getChildById("item-details").getDomNode().style.background = "red";
+	        }
+	        else {
+	            this.getChildById("item-details").getDomNode().style.background = "green";
 	        }
 	    }
-	    mouseExitDetails() {
+	    mouseExitDetails(item) {
 	        this.getChildById("item-details").getDomNode().style.background = null;
+	    }
+	    mouseDragDrop(action) {
+	        if (action.item === this || action.item === this.parent) {
+	            return;
+	        }
+	        const elementParent = this.attrs.element;
+	        action.item.attrs.element.setParent(elementParent);
 	    }
 	    createInitialStructure(children) {
 	        const appElement = this.attrs.element;
 	        let padding = (appElement.getDepth() + 1);
 	        return [
-	            Hex.createElement("div", { "x-id": "item-details", class: "hierarchy-item-details", style: "padding-left:" + padding + "em", onMouseEnter: this.mouseEnterDetails, onMouseExit: this.mouseExitDetails, onClick: () => EditorRuntime.select(appElement), onRightClick: this.showCreateMenu },
-	                Hex.createElement(icon_1.ToggleIcon, { class: "hierarchy-toggle", "x-hidden": true, "x-if-eval": () => appElement.getChildCount() > 0 }),
+	            Hex.createElement("div", { "x-id": "item-details", class: "hierarchy-item-details", style: "padding-left:" + padding + "em", onClick: () => EditorRuntime.select(appElement), onRightClick: this.showCreateMenu },
+	                Hex.createElement(icon_1.ToggleIcon, { style: "padding-left:" + (appElement.getDepth() * 12) + "px", class: "hierarchy-toggle", "x-hidden": true, "x-if-eval": () => appElement.getChildCount() > 0 }),
 	                Hex.createElement("a", null,
 	                    " ",
 	                    new window.EditorBindingElement(appElement, ["name"]),
@@ -5843,6 +6022,15 @@
 	        ];
 	    }
 	}
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.MouseEnter(drag_hierarchy_item_1.HierarchyItemDragAction)
+	], HierarchyItem.prototype, "mouseEnterDetails", null);
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.MouseExit(drag_hierarchy_item_1.HierarchyItemDragAction)
+	], HierarchyItem.prototype, "mouseExitDetails", null);
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.Drop(drag_hierarchy_item_1.HierarchyItemDragAction)
+	], HierarchyItem.prototype, "mouseDragDrop", null);
 	exports.HierarchyItem = HierarchyItem;
 	createStyleSheet(`<style>
 
@@ -5872,12 +6060,12 @@
 
 
 /***/ },
-/* 85 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(42);
+	const editor_custom_element_1 = __webpack_require__(47);
 	class BaseIcon extends editor_custom_element_1.EditorCustomElement {
 	    constructor() {
 	        super(...arguments);
@@ -5968,14 +6156,15 @@
 
 
 /***/ },
-/* 86 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
+	const tslib_1 = __webpack_require__(30);
 	const editor_html_element_1 = __webpack_require__(15);
-	const drag_action_1 = __webpack_require__(34);
+	const drag_action_1 = __webpack_require__(35);
+	const drag_hierarchy_item_1 = __webpack_require__(127);
 	class AppElementAssetDragAction extends drag_action_1.DragAction {
 	}
 	class HierarchyInsertTarget extends editor_html_element_1.EditorHTMLElement {
@@ -5983,61 +6172,63 @@
 	        return { tagName: "div", classList: "hierarchy-insert-target" };
 	    }
 	    handleDragEnter(dragAction) {
-	        this.getDomNode().style.background = "blue";
+	        this.getDomNode().style.background = "green";
 	    }
 	    handleDragExit(dragAction) {
 	        this.getDomNode().style.background = null;
 	    }
 	    handleDrop(dragAction) {
+	        debugger;
 	    }
 	}
 	tslib_1.__decorate([
-	    drag_action_1.DragAction.MouseEnter(AppElementAssetDragAction)
+	    drag_action_1.DragAction.MouseEnter(drag_hierarchy_item_1.HierarchyItemDragAction)
 	], HierarchyInsertTarget.prototype, "handleDragEnter", null);
 	tslib_1.__decorate([
-	    drag_action_1.DragAction.MouseExit(AppElementAssetDragAction),
-	    drag_action_1.DragAction.Drop(AppElementAssetDragAction)
+	    drag_action_1.DragAction.MouseExit(drag_hierarchy_item_1.HierarchyItemDragAction),
+	    drag_action_1.DragAction.Drop(drag_hierarchy_item_1.HierarchyItemDragAction)
 	], HierarchyInsertTarget.prototype, "handleDragExit", null);
 	tslib_1.__decorate([
-	    drag_action_1.DragAction.Drop(AppElementAssetDragAction)
+	    drag_action_1.DragAction.Drop(drag_hierarchy_item_1.HierarchyItemDragAction)
 	], HierarchyInsertTarget.prototype, "handleDrop", null);
 	exports.HierarchyInsertTarget = HierarchyInsertTarget;
 	createStyleSheet(`<style>
 	    .hierarchy-insert-target {
-	        height: 0.2em;
+	        height: 0.15em;
 	    }
 	`);
 
 
 /***/ },
-/* 87 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(42);
+	const editor_custom_element_1 = __webpack_require__(47);
 	class EditorWindowElement extends editor_custom_element_1.EditorCustomElement {
 	}
 	exports.EditorWindowElement = EditorWindowElement;
 
 
 /***/ },
-/* 88 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const editor_theme_1 = __webpack_require__(50);
-	const editor_window_element_1 = __webpack_require__(87);
+	const tslib_1 = __webpack_require__(30);
+	const editor_theme_1 = __webpack_require__(55);
+	const editor_window_element_1 = __webpack_require__(89);
 	const app_element_1 = __webpack_require__(25);
-	const scene_meta_bar_1 = __webpack_require__(89);
+	const scene_meta_bar_1 = __webpack_require__(91);
 	const vector2_1 = __webpack_require__(14);
-	const breakpoint_1 = __webpack_require__(57);
+	const breakpoint_1 = __webpack_require__(61);
 	const util_1 = __webpack_require__(13);
-	const drag_action_1 = __webpack_require__(34);
-	const prefab_drag_action_1 = __webpack_require__(49);
-	const rect_tool_1 = __webpack_require__(78);
+	const drag_action_1 = __webpack_require__(35);
+	const prefab_drag_action_1 = __webpack_require__(54);
+	const rect_tool_1 = __webpack_require__(80);
+	const layout_component_1 = __webpack_require__(38);
 	class SceneWindow extends editor_window_element_1.EditorWindowElement {
 	    constructor() {
 	        super(...arguments);
@@ -6181,7 +6372,13 @@
 	            this.dragThing.beginFill(0x00FF00, 0.2);
 	            this.dragThing.lineStyle(1, 0x00FF00);
 	            const position = mouseOver.getPosition();
-	            this.dragThing.drawRect(position.x, position.y - 1, mouseOver.getWidth(), mouseOver.getHeight());
+	            const layout = mouseOver.getComponent(layout_component_1.LayoutComponent);
+	            if (layout) {
+	                const slot = layout.getSlotAtPosition(mouse);
+	            }
+	            else {
+	                this.dragThing.drawRect(position.x, position.y - 1, mouseOver.getWidth(), mouseOver.getHeight());
+	            }
 	        }
 	        else {
 	            this.dragThing.clear();
@@ -6202,9 +6399,18 @@
 	        if (!selection)
 	            return;
 	        const position = selection.getPosition();
+	        const w = selection.getWidth();
+	        const h = selection.getHeight();
 	        this.selectionOutline.lineStyle(1, 0xFFFFFFFF);
 	        this.selectionOutline.rotation = selection.getRotation();
-	        this.selectionOutline.drawRect(position.x, position.y - 1, (this.zoomLevel * selection.getWidth()) + 1, this.zoomLevel * selection.getHeight());
+	        this.selectionOutline.drawRect(position.x, position.y - 1, (this.zoomLevel * w) + 1, this.zoomLevel * h);
+	        this.selectionOutline.lineStyle(1, 0x000000);
+	        this.selectionOutline.beginFill(0x87b0f2);
+	        this.selectionOutline.drawCircle(position.x, position.y, 5);
+	        this.selectionOutline.drawCircle(position.x + w, position.y, 5);
+	        this.selectionOutline.drawCircle(position.x + w, position.y + h, 5);
+	        this.selectionOutline.drawCircle(position.x, position.y + h, 5);
+	        this.selectionOutline.endFill();
 	    }
 	    createInitialStructure(children) {
 	        return [
@@ -6284,16 +6490,16 @@
 
 
 /***/ },
-/* 89 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(42);
-	const button_1 = __webpack_require__(73);
-	const scene_window_1 = __webpack_require__(88);
-	const editor_theme_1 = __webpack_require__(50);
-	const breakpoint_1 = __webpack_require__(57);
+	const editor_custom_element_1 = __webpack_require__(47);
+	const button_1 = __webpack_require__(75);
+	const scene_window_1 = __webpack_require__(90);
+	const editor_theme_1 = __webpack_require__(55);
+	const breakpoint_1 = __webpack_require__(61);
 	function round(places) {
 	    return function (value) {
 	        return value.toFixed(places);
@@ -6365,21 +6571,22 @@
 
 
 /***/ },
-/* 90 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const vertical_stack_1 = __webpack_require__(91);
-	const text_input_1 = __webpack_require__(92);
+	const vertical_stack_1 = __webpack_require__(93);
+	const text_input_1 = __webpack_require__(94);
 	const evt_selection_changed_1 = __webpack_require__(4);
-	const editor_window_element_1 = __webpack_require__(87);
-	const inspector_row_1 = __webpack_require__(93);
-	const component_menu_1 = __webpack_require__(94);
-	const editor_theme_1 = __webpack_require__(50);
-	const component_renderer_1 = __webpack_require__(97);
+	const editor_window_element_1 = __webpack_require__(89);
+	const inspector_row_1 = __webpack_require__(95);
+	const component_menu_1 = __webpack_require__(96);
+	const editor_theme_1 = __webpack_require__(55);
+	const component_renderer_1 = __webpack_require__(99);
 	const element_renderer_1 = __webpack_require__(5);
-	const app_element_inspector_1 = __webpack_require__(99);
+	const app_element_inspector_1 = __webpack_require__(101);
+	const binding_1 = __webpack_require__(51);
 	class InspectorWindow extends editor_window_element_1.EditorWindowElement {
 	    onSelectionChanged(newSelection, oldSelection) {
 	        this.selection = newSelection;
@@ -6416,10 +6623,7 @@
 	            Hex.createElement("div", { class: "inspector-header" },
 	                Hex.createElement("div", { "x-if": { ctx: this, invert: false, path: "selection" }, class: "inspector-name-field" },
 	                    Hex.createElement(inspector_row_1.InspectorRow, { label: "Name" },
-	                        Hex.createElement(text_input_1.TextInput, { binding: {
-	                                ctx: this,
-	                                path: ["selection", "name"]
-	                            } })))),
+	                        Hex.createElement(text_input_1.TextInput, { value: binding_1.CreateBinding(this, "selection", "name") })))),
 	            Hex.createElement(vertical_stack_1.Vertical, { "x-child-root": true }));
 	    }
 	    createComponentDrawer(component) {
@@ -6448,12 +6652,12 @@
 
 
 /***/ },
-/* 91 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(42);
+	const editor_custom_element_1 = __webpack_require__(47);
 	class VerticalBase extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
 	        return VerticalBase.DomData;
@@ -6475,14 +6679,13 @@
 
 
 /***/ },
-/* 92 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const binding_compiler_1 = __webpack_require__(8);
-	const editor_custom_element_1 = __webpack_require__(42);
-	class TextInput extends editor_custom_element_1.EditorCustomElement {
+	const editor_input_1 = __webpack_require__(76);
+	class TextInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return {
 	            tagName: "input",
@@ -6493,39 +6696,29 @@
 	        };
 	    }
 	    onMounted() {
-	        this.ctx = this.attrs.binding.ctx;
-	        this.getterFn = binding_compiler_1.getGetter(this.attrs.binding.path);
-	        this.setterFn = binding_compiler_1.getSetter(this.attrs.binding.path);
+	        this.htmlNode.value = this.binding.get();
+	        this.binding.onChange(() => {
+	            this.htmlNode.value = this.binding.get();
+	        });
 	        this.htmlNode.addEventListener("input", (e) => {
 	            const value = this.htmlNode.value || "";
-	            this.setterFn(this.ctx, value);
-	            this.lastValue = value;
+	            this.binding.set(value);
 	        });
 	    }
-	    onUpdated() {
-	        const value = this.getterFn(this.ctx) || "";
-	        if (this.lastValue !== value) {
-	            if (this.attrs.onValueChanged) {
-	                this.attrs.onValueChanged(value, this.lastValue);
-	            }
-	            this.lastValue = value;
-	            this.htmlNode.value = value;
-	        }
-	    }
-	    onRendered() {
-	        EditorRuntime.updateTree.add(this);
+	    onValueChanged(newValue) {
+	        this.htmlNode.value = newValue || "";
 	    }
 	}
 	exports.TextInput = TextInput;
 
 
 /***/ },
-/* 93 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(42);
+	const editor_custom_element_1 = __webpack_require__(47);
 	const util_1 = __webpack_require__(13);
 	class InspectorRow extends editor_custom_element_1.EditorCustomElement {
 	    onCreated() {
@@ -6558,17 +6751,17 @@
 
 
 /***/ },
-/* 94 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const vertical_stack_1 = __webpack_require__(91);
-	const text_box_icon_1 = __webpack_require__(95);
-	const button_1 = __webpack_require__(73);
-	const editor_custom_element_1 = __webpack_require__(42);
-	const component_option_1 = __webpack_require__(96);
-	const component_1 = __webpack_require__(29);
+	const vertical_stack_1 = __webpack_require__(93);
+	const text_box_icon_1 = __webpack_require__(97);
+	const button_1 = __webpack_require__(75);
+	const editor_custom_element_1 = __webpack_require__(47);
+	const component_option_1 = __webpack_require__(98);
+	const component_1 = __webpack_require__(34);
 	const element_renderer_1 = __webpack_require__(5);
 	class ComponentMenu extends editor_custom_element_1.EditorCustomElement {
 	    constructor() {
@@ -6640,12 +6833,12 @@
 
 
 /***/ },
-/* 95 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(42);
+	const editor_custom_element_1 = __webpack_require__(47);
 	class TextBoxWithIcon extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
 	        return {
@@ -6700,12 +6893,12 @@
 
 
 /***/ },
-/* 96 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(42);
+	const editor_custom_element_1 = __webpack_require__(47);
 	class ComponentOption extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "component-item" };
@@ -6718,21 +6911,20 @@
 
 
 /***/ },
-/* 97 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(42);
-	const property_renderer_1 = __webpack_require__(54);
-	const horizontal_1 = __webpack_require__(75);
-	const icon_1 = __webpack_require__(85);
+	const editor_custom_element_1 = __webpack_require__(47);
+	const property_renderer_1 = __webpack_require__(58);
+	const horizontal_1 = __webpack_require__(77);
+	const icon_1 = __webpack_require__(87);
 	const element_renderer_1 = __webpack_require__(5);
-	const checkbox_input_1 = __webpack_require__(98);
+	const checkbox_input_1 = __webpack_require__(100);
 	const util_1 = __webpack_require__(13);
-	const editor_theme_1 = __webpack_require__(50);
-	const expose_as_1 = __webpack_require__(52);
-	const component_1 = __webpack_require__(29);
+	const editor_theme_1 = __webpack_require__(55);
+	const expose_as_1 = __webpack_require__(39);
 	class ComponentRenderer extends editor_custom_element_1.EditorCustomElement {
 	    constructor() {
 	        super(...arguments);
@@ -6740,7 +6932,6 @@
 	        this.component = this.attrs.component;
 	    }
 	    getDomData() {
-	        component_1.Component.getComponentFromPath("");
 	        return { tagName: "div", classList: "component-renderer" };
 	    }
 	    getRenderer(propertyName, attrs) {
@@ -6827,12 +7018,12 @@
 
 
 /***/ },
-/* 98 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(74);
+	const editor_input_1 = __webpack_require__(76);
 	class CheckboxInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return {
@@ -6856,18 +7047,18 @@
 
 
 /***/ },
-/* 99 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const editor_html_element_1 = __webpack_require__(15);
-	const inspector_row_1 = __webpack_require__(93);
-	const vector2_input_1 = __webpack_require__(100);
-	const binding_1 = __webpack_require__(46);
+	const inspector_row_1 = __webpack_require__(95);
+	const vector2_input_1 = __webpack_require__(102);
+	const binding_1 = __webpack_require__(51);
 	const app_element_1 = __webpack_require__(25);
-	const number_input_1 = __webpack_require__(102);
-	const inline_field_1 = __webpack_require__(101);
+	const number_input_1 = __webpack_require__(104);
+	const inline_field_1 = __webpack_require__(103);
 	class TransformInspector extends editor_html_element_1.EditorHTMLElement {
 	    onCreated() {
 	        this.appElement = this.attrs.appElement;
@@ -6921,15 +7112,15 @@
 
 
 /***/ },
-/* 100 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const inline_field_1 = __webpack_require__(101);
-	const number_input_1 = __webpack_require__(102);
-	const binding_1 = __webpack_require__(46);
-	const editor_input_1 = __webpack_require__(74);
+	const inline_field_1 = __webpack_require__(103);
+	const number_input_1 = __webpack_require__(104);
+	const binding_1 = __webpack_require__(51);
+	const editor_input_1 = __webpack_require__(76);
 	class Vector2Input extends editor_input_1.InputRenderer {
 	    createInitialStructure(children) {
 	        return [
@@ -6944,12 +7135,12 @@
 
 
 /***/ },
-/* 101 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const horizontal_1 = __webpack_require__(75);
+	const horizontal_1 = __webpack_require__(77);
 	class InlineField extends horizontal_1.HorizontalBase {
 	    createInitialStructure(children) {
 	        return [
@@ -6970,12 +7161,12 @@
 
 
 /***/ },
-/* 102 */
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(74);
+	const editor_input_1 = __webpack_require__(76);
 	class NumberInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return {
@@ -7019,18 +7210,18 @@
 
 
 /***/ },
-/* 103 */
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_window_element_1 = __webpack_require__(87);
-	const asset_folder_1 = __webpack_require__(104);
+	const editor_window_element_1 = __webpack_require__(89);
+	const asset_folder_1 = __webpack_require__(106);
 	const vector2_1 = __webpack_require__(14);
-	const asset_item_1 = __webpack_require__(106);
+	const asset_item_1 = __webpack_require__(108);
 	const element_renderer_1 = __webpack_require__(5);
-	const prefab_asset_item_1 = __webpack_require__(107);
-	const prefab_template_1 = __webpack_require__(51);
+	const prefab_asset_item_1 = __webpack_require__(109);
+	const prefab_template_1 = __webpack_require__(56);
 	class AssetWindow extends editor_window_element_1.EditorWindowElement {
 	    constructor() {
 	        super(...arguments);
@@ -7044,7 +7235,7 @@
 	        EditorRuntime.updateTree.add(this);
 	    }
 	    loadAssets() {
-	        const manifest = __webpack_require__(108);
+	        const manifest = __webpack_require__(110);
 	        manifest.forEach((data) => {
 	            this.getChildRoot().addChild(this.loadAsset(data));
 	        });
@@ -7103,17 +7294,17 @@
 
 
 /***/ },
-/* 104 */
+/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
+	const tslib_1 = __webpack_require__(30);
 	const util_1 = __webpack_require__(13);
 	const editor_html_element_1 = __webpack_require__(15);
-	const toggle_icon_label_row_1 = __webpack_require__(105);
-	const drag_action_1 = __webpack_require__(34);
-	const drag_asset_item_action_1 = __webpack_require__(48);
+	const toggle_icon_label_row_1 = __webpack_require__(107);
+	const drag_action_1 = __webpack_require__(35);
+	const drag_asset_item_action_1 = __webpack_require__(53);
 	class AssetFolderNameRow extends toggle_icon_label_row_1.IconNameToggleRow {
 	    dragEnter() {
 	        this.getDomNode().style.backgroundColor = "red";
@@ -7157,13 +7348,13 @@
 
 
 /***/ },
-/* 105 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const icon_1 = __webpack_require__(85);
-	const horizontal_1 = __webpack_require__(75);
+	const icon_1 = __webpack_require__(87);
+	const horizontal_1 = __webpack_require__(77);
 	class IconNameToggleRow extends horizontal_1.HorizontalBase {
 	    createInitialStructure() {
 	        let label = null;
@@ -7189,7 +7380,7 @@
 
 
 /***/ },
-/* 106 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7218,13 +7409,13 @@
 
 
 /***/ },
-/* 107 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const asset_item_1 = __webpack_require__(106);
-	const prefab_drag_action_1 = __webpack_require__(49);
+	const asset_item_1 = __webpack_require__(108);
+	const prefab_drag_action_1 = __webpack_require__(54);
 	class PrefabAssetItem extends asset_item_1.AssetSectionItem {
 	    createDragAction() {
 	        return new prefab_drag_action_1.PrefabDragAction(this.attrs.asset);
@@ -7239,7 +7430,7 @@
 
 
 /***/ },
-/* 108 */
+/* 110 */
 /***/ function(module, exports) {
 
 	function Folder(name, contents, isOpen = true) {
@@ -7282,21 +7473,21 @@
 	            textContent: "Hex Yeah!"
 	        })
 	    ]),
-	    Prefab("Image", [
+	    Prefab("Image", {}, [
 	        Component("UI/Image", {
 	            assetId: "img/placeholder.svg" //todo formalize asset ids and resource management
 	        })
 	    ]),
-	    Prefab("Button", [
+	    Prefab("Button", {}, [
 	        Component("UI/Button", {
 	            text: "Click Me!"
 	        })
 	    ]),
-	    Prefab("Slider", []),
-	    Prefab("Toggle", []),
-	    Prefab("Input", []),
-	    Prefab("Dropdown", []),
-	    Prefab("Radio Button")
+	    Prefab("Slider", {}, []),
+	    Prefab("Toggle", {}, []),
+	    Prefab("Input", {}, []),
+	    Prefab("Dropdown", {}, []),
+	    Prefab("Radio Button", {}, [])
 	];
 
 
@@ -7391,12 +7582,12 @@
 
 
 /***/ },
-/* 109 */
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(42);
+	const editor_custom_element_1 = __webpack_require__(47);
 	class MenuItem extends editor_custom_element_1.EditorCustomElement {
 	    noOp() { }
 	    createInitialStructure(children) {
@@ -7504,13 +7695,13 @@
 
 
 /***/ },
-/* 110 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const button_1 = __webpack_require__(73);
-	const editor_custom_element_1 = __webpack_require__(42);
+	const button_1 = __webpack_require__(75);
+	const editor_custom_element_1 = __webpack_require__(47);
 	class Toolbar extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
 	        return {
@@ -7551,17 +7742,23 @@
 
 
 /***/ },
-/* 111 */
+/* 113 */
+/***/ function(module, exports) {
+
+	
+
+/***/ },
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const component_renderer_1 = __webpack_require__(97);
-	const sizing_component_1 = __webpack_require__(64);
-	const default_sizing_component_1 = __webpack_require__(66);
-	const inspector_row_1 = __webpack_require__(93);
-	const number_input_1 = __webpack_require__(102);
+	const tslib_1 = __webpack_require__(30);
+	const component_renderer_1 = __webpack_require__(99);
+	const sizing_component_1 = __webpack_require__(37);
+	const default_sizing_component_1 = __webpack_require__(67);
+	const inspector_row_1 = __webpack_require__(95);
+	const number_input_1 = __webpack_require__(104);
 	let SizingRenderer = class SizingRenderer extends component_renderer_1.ComponentRenderer {
 	    createInitialStructure(children) {
 	        const structure = [
@@ -7650,17 +7847,76 @@
 
 
 /***/ },
-/* 112 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const property_drawer_1 = __webpack_require__(53);
-	const property_renderer_1 = __webpack_require__(54);
-	const inspector_row_1 = __webpack_require__(93);
-	const checkbox_input_1 = __webpack_require__(98);
-	const binding_1 = __webpack_require__(46);
+	const tslib_1 = __webpack_require__(30);
+	const component_renderer_1 = __webpack_require__(99);
+	const text_component_1 = __webpack_require__(71);
+	const inspector_row_1 = __webpack_require__(95);
+	const text_input_1 = __webpack_require__(94);
+	const binding_1 = __webpack_require__(51);
+	const number_input_1 = __webpack_require__(104);
+	let TextComponentRenderer = class TextComponentRenderer extends component_renderer_1.ComponentRenderer {
+	    onCreated() {
+	        this.proxy = {
+	            textContent: this.component.getTextContent(),
+	            font: {
+	                name: this.component.getFontName(),
+	                size: this.component.getFontSize(),
+	                lineHeight: 1,
+	                weight: 400,
+	                decoration: "none"
+	            }
+	        };
+	        this.textBinding = binding_1.CreateBinding(this.proxy, "textContent").onChange(() => {
+	            this.component.setTextAsync(this.proxy.textContent);
+	        });
+	        this.fontSizeBinding = binding_1.CreateBinding(this.proxy, "font", "size").onChange(() => {
+	            this.component.setFontAsync(this.proxy.font);
+	        });
+	        this.fontNameBinding = binding_1.CreateBinding(this.proxy, "font", "name").onChange(() => {
+	            this.component.setFontAsync(this.proxy.font);
+	        });
+	        this.textBinding.setHost(this);
+	        this.fontNameBinding.setHost(this);
+	        this.fontSizeBinding.setHost(this);
+	        EditorRuntime.updateTree.add(this);
+	    }
+	    createInitialStructure() {
+	        return [
+	            this.createStandardHeaderStructure(),
+	            this.createStandardBodyStructure([
+	                Hex.createElement(inspector_row_1.InspectorRow, { label: "Text" },
+	                    Hex.createElement(text_input_1.TextInput, { value: this.textBinding })),
+	                Hex.createElement(inspector_row_1.InspectorRow, { label: "Text" },
+	                    Hex.createElement(text_input_1.TextInput, { value: this.fontNameBinding })),
+	                Hex.createElement(inspector_row_1.InspectorRow, { label: "Font Size" },
+	                    Hex.createElement(number_input_1.NumberInput, { value: this.fontSizeBinding }))
+	            ])
+	        ];
+	    }
+	};
+	TextComponentRenderer = tslib_1.__decorate([
+	    component_renderer_1.renderer(text_component_1.TextComponent)
+	], TextComponentRenderer);
+	exports.TextComponentRenderer = TextComponentRenderer;
+
+
+/***/ },
+/* 116 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(30);
+	const property_drawer_1 = __webpack_require__(57);
+	const property_renderer_1 = __webpack_require__(58);
+	const inspector_row_1 = __webpack_require__(95);
+	const checkbox_input_1 = __webpack_require__(100);
+	const binding_1 = __webpack_require__(51);
 	let BooleanRenderer = class BooleanRenderer extends property_renderer_1.PropertyRenderer {
 	    createInitialStructure(children) {
 	        const editorData = this.attrs.editorData;
@@ -7677,19 +7933,19 @@
 
 
 /***/ },
-/* 113 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const property_renderer_1 = __webpack_require__(54);
-	const color_1 = __webpack_require__(61);
-	const inspector_row_1 = __webpack_require__(93);
-	const inline_field_1 = __webpack_require__(101);
-	const number_input_1 = __webpack_require__(102);
-	const property_drawer_1 = __webpack_require__(53);
-	const binding_1 = __webpack_require__(46);
+	const tslib_1 = __webpack_require__(30);
+	const property_renderer_1 = __webpack_require__(58);
+	const color_1 = __webpack_require__(65);
+	const inspector_row_1 = __webpack_require__(95);
+	const inline_field_1 = __webpack_require__(103);
+	const number_input_1 = __webpack_require__(104);
+	const property_drawer_1 = __webpack_require__(57);
+	const binding_1 = __webpack_require__(51);
 	let ColorRenderer = class ColorRenderer extends property_renderer_1.PropertyRenderer {
 	    updateColor() {
 	        const cmp = this.attrs.component;
@@ -7718,18 +7974,18 @@
 
 
 /***/ },
-/* 114 */
+/* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const property_drawer_1 = __webpack_require__(53);
-	const property_renderer_1 = __webpack_require__(54);
+	const tslib_1 = __webpack_require__(30);
+	const property_drawer_1 = __webpack_require__(57);
+	const property_renderer_1 = __webpack_require__(58);
 	const util_1 = __webpack_require__(13);
-	const number_input_1 = __webpack_require__(102);
-	const inspector_row_1 = __webpack_require__(93);
-	const binding_1 = __webpack_require__(46);
+	const number_input_1 = __webpack_require__(104);
+	const inspector_row_1 = __webpack_require__(95);
+	const binding_1 = __webpack_require__(51);
 	let NumberRenderer = class NumberRenderer extends property_renderer_1.PropertyRenderer {
 	    createInitialStructure() {
 	        const editorData = this.attrs.editorData;
@@ -7753,24 +8009,24 @@
 
 
 /***/ },
-/* 115 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const property_renderer_1 = __webpack_require__(54);
-	const property_drawer_1 = __webpack_require__(53);
+	const tslib_1 = __webpack_require__(30);
+	const property_renderer_1 = __webpack_require__(58);
+	const property_drawer_1 = __webpack_require__(57);
 	const util_1 = __webpack_require__(13);
-	const inspector_row_1 = __webpack_require__(93);
-	const select_input_1 = __webpack_require__(116);
-	const binding_1 = __webpack_require__(46);
+	const inspector_row_1 = __webpack_require__(95);
+	const select_input_1 = __webpack_require__(120);
+	const binding_1 = __webpack_require__(51);
 	let EnumSelectRenderer = class EnumSelectRenderer extends property_renderer_1.PropertyRenderer {
 	    createOptions(e) {
 	        const retn = new Array();
 	        Object.keys(e).forEach(function (key) {
 	            if (isNaN(key)) {
-	                retn.add({ name: key, value: e[key] });
+	                retn.push({ name: key, value: e[key] });
 	            }
 	        });
 	        return retn;
@@ -7816,12 +8072,12 @@
 
 
 /***/ },
-/* 116 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(74);
+	const editor_input_1 = __webpack_require__(76);
 	class SelectInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return { tagName: "select" };
@@ -7852,16 +8108,16 @@
 
 
 /***/ },
-/* 117 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const property_drawer_1 = __webpack_require__(53);
-	const property_renderer_1 = __webpack_require__(54);
-	const inspector_row_1 = __webpack_require__(93);
-	const text_input_1 = __webpack_require__(92);
+	const tslib_1 = __webpack_require__(30);
+	const property_drawer_1 = __webpack_require__(57);
+	const property_renderer_1 = __webpack_require__(58);
+	const inspector_row_1 = __webpack_require__(95);
+	const text_input_1 = __webpack_require__(94);
 	let StringRenderer = class StringRenderer extends property_renderer_1.PropertyRenderer {
 	    onChange() {
 	        if (this.attrs.onValueChanged) {
@@ -7873,10 +8129,7 @@
 	        const component = this.attrs.component;
 	        const propertyName = editorData.propertyName;
 	        return Hex.createElement(inspector_row_1.InspectorRow, { label: editorData.propertyName },
-	            Hex.createElement(text_input_1.TextInput, { onValueChanged: this.attrs.onValueChanged, binding: {
-	                    ctx: component,
-	                    path: [[propertyName]]
-	                } }));
+	            Hex.createElement(text_input_1.TextInput, { value: component[propertyName] }));
 	    }
 	};
 	StringRenderer = tslib_1.__decorate([
@@ -7886,18 +8139,18 @@
 
 
 /***/ },
-/* 118 */
+/* 122 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 119 */
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(42);
+	const editor_custom_element_1 = __webpack_require__(47);
 	class InspectorBody extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "vertical" };
@@ -7907,14 +8160,14 @@
 
 
 /***/ },
-/* 120 */
+/* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const icon_1 = __webpack_require__(85);
-	const inspector_body_1 = __webpack_require__(119);
-	const editor_custom_element_1 = __webpack_require__(42);
+	const icon_1 = __webpack_require__(87);
+	const inspector_body_1 = __webpack_require__(123);
+	const editor_custom_element_1 = __webpack_require__(47);
 	class InspectorHeader extends editor_custom_element_1.EditorCustomElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "horizontal" };
@@ -7930,7 +8183,7 @@
 
 
 /***/ },
-/* 121 */
+/* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7949,15 +8202,15 @@
 
 
 /***/ },
-/* 122 */
+/* 126 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
+	const tslib_1 = __webpack_require__(30);
 	const editor_html_element_1 = __webpack_require__(15);
-	const drag_action_1 = __webpack_require__(34);
-	const drag_asset_item_action_1 = __webpack_require__(48);
+	const drag_action_1 = __webpack_require__(35);
+	const drag_asset_item_action_1 = __webpack_require__(53);
 	class AssetDropTargetInsert extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "asset-drop-target-insert" };
@@ -7989,6 +8242,22 @@
 	    }
 
 	`);
+
+
+/***/ },
+/* 127 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const drag_action_1 = __webpack_require__(35);
+	class HierarchyItemDragAction extends drag_action_1.DragAction {
+	    constructor(item) {
+	        super();
+	        this.item = item;
+	    }
+	}
+	exports.HierarchyItemDragAction = HierarchyItemDragAction;
 
 
 /***/ }

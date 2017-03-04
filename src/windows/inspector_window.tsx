@@ -10,13 +10,14 @@ import {AppElement} from "../runtime/app_element";
 import {Component} from "../runtime/component";
 import {createElement} from "../editor_element/element_renderer";
 import {TransformInspector} from "../renderers/component/app_element_inspector";
+import {CreateBinding} from "../editor/binding";
 
 export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
 
-    private selection : AppElement;
+    public readonly selection : AppElement;
 
     public onSelectionChanged(newSelection : AppElement, oldSelection : AppElement) : void {
-        this.selection = newSelection;
+        (this as any).selection = newSelection;
         this.getChildRoot().clearChildren();
         if (!this.selection) return;
         this.getChildRoot().addChild(createElement(TransformInspector, {
@@ -51,7 +52,7 @@ export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
             <div class="inspector-header">
                 <div x-if={this.selection} class="inspector-name-field">
                     <InspectorRow label="Name">
-                        <TextInput binding={this.selection.name}/>
+                        <TextInput value={ CreateBinding(this, "selection", "name") }/>
                     </InspectorRow>
                 </div>
             </div>

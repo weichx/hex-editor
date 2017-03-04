@@ -20,7 +20,6 @@ export class ComponentRenderer<T extends Component> extends EditorCustomElement<
     protected component = this.attrs.component as T;
 
     protected getDomData() : IDomData {
-        Component.getComponentFromPath("");
         return { tagName: "div", classList: "component-renderer" }
     }
 

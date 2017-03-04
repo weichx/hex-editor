@@ -1,7 +1,7 @@
 import {SizingComponent, SizingMode} from "./sizing_component";
 import {Component} from "../../component";
-import {Rectangle} from "../../rectangle";
 import {AppElement} from "../../app_element";
+import {Vector2} from "../../vector2";
 
 export interface ISizingComponent{
     appElement : AppElement;
@@ -30,8 +30,6 @@ export class LayoutComponent extends Component {
 
     protected sizingComponents : Array<ISizingComponent> = [];
 
-    public layoutRect : Rectangle = new Rectangle();
-
     public doLayout() : void {}
 
     public onMounted() : void {
@@ -39,24 +37,30 @@ export class LayoutComponent extends Component {
         for(let i = 0; i < childCount; i++) {
             const child = this.appElement.getChildAt(i);
             let sizing = child.getComponent(SizingComponent) || new DefaultSizer(child);
-            this.sizingComponents.add(sizing)
+            this.sizingComponents.push(sizing)
         }
-        this.doLayout();
+        Runtime.queueLayout(this);
+    }
+
+    public getSlotAtPosition(position : Vector2) : any {
+        if(this.sizingComponents.length === 0) return;
+
     }
 
     public onChildAdded(child : AppElement) : void {
         const sizer = child.getComponent(SizingComponent) || new DefaultSizer(child);
         this.sizingComponents.push(sizer);
-        this.doLayout();
+        Runtime.queueLayout(this);
     }
 
     public onChildRemoved(child : AppElement) : void {
         for(let i = 0; i < this.sizingComponents.length; i++) {
             if(this.sizingComponents[i].appElement === child) {
                 this.sizingComponents.removeAt(i);
-                return;
+                break;
             }
         }
+        Runtime.queueLayout(this);
     }
 
     public onChildMoved(child : AppElement) : void {

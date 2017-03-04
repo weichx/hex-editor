@@ -12,6 +12,7 @@ import {clamp} from "../util";
 import {DragAction} from "../editor/drag_actions/drag_action";
 import {PrefabDragAction} from "../editor/drag_actions/prefab_drag_action";
 import {SceneRectTool} from "./scene/rect_tool";
+import {LayoutComponent} from "../runtime/components/layout/layout_component";
 
 export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
     public element = this;
@@ -201,13 +202,24 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
             this.dragThing.beginFill(0x00FF00, 0.2);
             this.dragThing.lineStyle(1, 0x00FF00);
             const position = mouseOver.getPosition();
-            //todo lerp this for sexiness
-            this.dragThing.drawRect(
-                position.x,
-                position. y - 1,
-                mouseOver.getWidth(),
-                mouseOver.getHeight()
-            );
+            const layout = mouseOver.getComponent(LayoutComponent);
+            if(layout) {
+                const slot = layout.getSlotAtPosition(mouse);
+                //if slot !== last slot -> Cancel animation
+                //draw layout position
+                // this.dragThing.drawRect(
+                //
+                // )
+            }
+            else {
+                //todo lerp this for sexiness
+                this.dragThing.drawRect(
+                    position.x,
+                    position. y - 1,
+                    mouseOver.getWidth(),
+                    mouseOver.getHeight()
+                );
+            }
         }
         else {
             this.dragThing.clear();
@@ -234,17 +246,30 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
         this.selectionOutline.clear();
         const selection = EditorRuntime.getSelection();
         if(!selection) return;
+
         const position = selection.getPosition();
+        const w = selection.getWidth();
+        const h = selection.getHeight();
+
         this.selectionOutline.lineStyle(1, 0xFFFFFFFF);
         this.selectionOutline.rotation = selection.getRotation();
         //probably need to scale pan diff,
         //app root moves on zoom
+
         this.selectionOutline.drawRect(
             position.x,
             position.y - 1,
-            (this.zoomLevel * selection.getWidth()) + 1,
-            this.zoomLevel * selection.getHeight()
+            (this.zoomLevel * w) + 1,
+            this.zoomLevel * h
         );
+        this.selectionOutline.lineStyle(1, 0x000000);
+        this.selectionOutline.beginFill(0x87b0f2);
+        this.selectionOutline.drawCircle(position.x, position.y, 5);
+        this.selectionOutline.drawCircle(position.x + w, position.y, 5);
+        this.selectionOutline.drawCircle(position.x + w, position.y + h, 5);
+        this.selectionOutline.drawCircle(position.x, position.y + h, 5);
+
+        this.selectionOutline.endFill();
     }
 
     public createInitialStructure(children : any) : JSXElement {
@@ -279,7 +304,6 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
         const mouse = input.getMouseRelativeToEditorElement(this.getChildRoot());
         const mouseOver = Runtime.getAppElementAtPoint(mouse);
         const appElement = action.template.create();
-
         if(mouseOver) {
             appElement.setParent(mouseOver);
             appElement.setPositionValues(0, 0, Space.Local);

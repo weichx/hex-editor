@@ -3,6 +3,9 @@ import {EditorCustomElement} from "../../editor_element/editor_custom_element";
 import {HierarchyWindow} from "./hierarchy_window";
 import {AppElement} from "../../runtime/app_element";
 import {HierarchyInsertTarget} from "./hierarchy_insert_target";
+import {DragAction} from "../../editor/drag_actions/drag_action";
+import {HierarchyItemDragAction} from "../../editor/drag_actions/drag_hierarchy_item";
+import {PrefabDragAction} from "../../editor/drag_actions/prefab_drag_action";
 
 interface IHierarchyItem {
     element : AppElement;
@@ -28,14 +31,28 @@ export class HierarchyItem extends EditorCustomElement<IHierarchyItem> {
         hierarchy.showContextMenu(this.attrs.element, e.pageX, e.pageY);
     }
 
-    private mouseEnterDetails() : void {
-        if (this.getAncestorByType(HierarchyWindow).isDragging()) {
-            this.getChildById("item-details").getDomNode().style.background = "blue";
+    @DragAction.MouseEnter(HierarchyItemDragAction)
+    private mouseEnterDetails(action : HierarchyItemDragAction) : void {
+        if (action.item === this || action.item === this.parent) {
+            this.getChildById("item-details").getDomNode().style.background = "red";
+        }
+        else {
+            this.getChildById("item-details").getDomNode().style.background = "green";
         }
     }
 
-    private mouseExitDetails() : void {
+    @DragAction.MouseExit(HierarchyItemDragAction)
+    private mouseExitDetails(item : HierarchyItemDragAction) : void {
         this.getChildById("item-details").getDomNode().style.background = null;
+    }
+
+    @DragAction.Drop(HierarchyItemDragAction)
+    public mouseDragDrop(action : HierarchyItemDragAction) : void {
+        if (action.item === this || action.item === this.parent) {
+            return;
+        }
+        const elementParent = this.attrs.element;
+        action.item.attrs.element.setParent(elementParent);
     }
 
     public createInitialStructure(children : any) {
@@ -46,12 +63,10 @@ export class HierarchyItem extends EditorCustomElement<IHierarchyItem> {
             <div x-id="item-details"
                  class="hierarchy-item-details"
                  style={"padding-left:" + padding + "em"}
-                 onMouseEnter={ this.mouseEnterDetails }
-                 onMouseExit={ this.mouseExitDetails }
                  onClick={ () => EditorRuntime.select(appElement) }
                  onRightClick={ this.showCreateMenu }>
 
-                <ToggleIcon class="hierarchy-toggle" x-hidden x-if-eval={ () => appElement.getChildCount() > 0 }/>
+                <ToggleIcon style={"padding-left:" + (appElement.getDepth() * 12) + "px" } class="hierarchy-toggle" x-hidden x-if-eval={ () => appElement.getChildCount() > 0 }/>
 
                 <a> { Bind(appElement.name) } </a>
             </div>,

@@ -49,6 +49,7 @@ export abstract class RuntimeBase extends EventEmitter {
         this.serializers = {};
         this.commandQueue = [];
         this.pendingBuffers = [];
+        this.awaitedCommands = [];
         this.commandPool = new ObjectPool3<RuntimeCommand, CommandType, any, (arg : any) => any>(RuntimeCommand);
     }
 

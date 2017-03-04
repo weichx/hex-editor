@@ -14,6 +14,7 @@ import {Component} from "../runtime/component";
 import {Vector2} from "../runtime/vector2";
 import {TypeOf} from "../runtime/interfaces/i_typeof";
 import {DragAction} from "./drag_actions/drag_action";
+import {HorizontalStackLayout} from "../runtime/components/layout/default/horizontal_stack_layout_component";
 
 let mouseCache = new Vector2();
 
@@ -92,6 +93,7 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
         if (!AppElement.Root) {
             this.suppressAddElement(() => {
                 AppElement.Root = new AppElement("__Root__");
+                AppElement.Root.addComponent(HorizontalStackLayout);
                 this.appElementRegistry[0] = AppElement.Root;
             });
         }
@@ -120,7 +122,7 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
                 if (appElement.id === 0) continue;
                 const parentId = parentMap[appElement.id] || 0;
                 appElement.parent = this.appElementRegistry[parentId];
-                appElement.parent.children.add(appElement);
+                appElement.parent.children.push(appElement);
             }
             for (let i = 0; i < ids.length; i++) {
                 const appElement = this.appElementRegistry[ids[i]];
@@ -210,6 +212,10 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
 
         this.updateTree.traverse();
 
+        for (let i = 0; i < this.layoutQueue.length; i++) {
+            this.layoutQueue[i].doLayout();
+        }
+        this.layoutQueue.length = 0;
         //the real runtime implementation of buffer building lives
         // on a worker thread and is decoded on a UI thread
         this.sendCommandBuffer();
@@ -236,7 +242,7 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
 
     public addComponent(component : Component) : void {
         const appElement = component.appElement;
-        
+
         this.pendingComponents.push(component);
         // super.addComponent(component);
         if (this.getSelection() === appElement) {

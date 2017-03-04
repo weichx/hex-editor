@@ -10,41 +10,41 @@ export interface IEditorBinding<T> {
     setHost(host : EditorElement) : void;
 }
 
+// export function CreateBinding
+// <T extends object, U extends keyof T>
+// (context : T, one : U) : IEditorBinding<T[U]>;
+//
+// export function CreateBinding
+// <T extends object, U extends keyof T, V extends keyof T[U]>
+// (context : T, one : U, two : V) : IEditorBinding<T[U][V]>;
+//
+// export function CreateBinding
+// <T extends object, U extends keyof T, V extends keyof T[U], W extends keyof T[U][V]>
+// (context : T, one : U, two : V, three : W) : IEditorBinding<T[U][V][W]>;
+//
+// export function CreateBinding
+// <T extends object, U extends keyof T, V extends keyof T[U], W extends keyof T[U][V], X extends keyof T[U][V][W]>
+// (context : T, one : U, two : V, three : W, four : X) : IEditorBinding<T[U][V][W][X]>
+
 export function CreateBinding
 <T extends object, U extends keyof T>
-(context : T, one : U) : IEditorBinding<T[U]>;
+(context : T|IEditorBinding<T>, one : U) : IEditorBinding<T[U]>;
 
 export function CreateBinding
 <T extends object, U extends keyof T, V extends keyof T[U]>
-(context : T, one : U, two : V) : IEditorBinding<T[U][V]>;
+(context : T|IEditorBinding<T>, one : U, two : V) : IEditorBinding<T[U][V]>;
 
 export function CreateBinding
 <T extends object, U extends keyof T, V extends keyof T[U], W extends keyof T[U][V]>
-(context : T, one : U, two : V, three : W) : IEditorBinding<T[U][V][W]>;
+(context : T|IEditorBinding<T>, one : U, two : V, three : W) : IEditorBinding<T[U][V][W]>;
 
 export function CreateBinding
 <T extends object, U extends keyof T, V extends keyof T[U], W extends keyof T[U][V], X extends keyof T[U][V][W]>
-(context : T, one : U, two : V, three : W, four : X) : IEditorBinding<T[U][V][W][X]>
-
-export function CreateBinding
-<T extends object, U extends keyof T>
-(context : IEditorBinding<T>, one : U) : IEditorBinding<T[U]>;
-
-export function CreateBinding
-<T extends object, U extends keyof T, V extends keyof T[U]>
-(context : IEditorBinding<T>, one : U, two : V) : IEditorBinding<T[U][V]>;
-
-export function CreateBinding
-<T extends object, U extends keyof T, V extends keyof T[U], W extends keyof T[U][V]>
-(context : IEditorBinding<T>, one : U, two : V, three : W) : IEditorBinding<T[U][V][W]>;
+(context : T|IEditorBinding<T>, one : U, two : V, three : W, four : X) : IEditorBinding<T[U][V][W][X]>;
 
 export function CreateBinding
 <T extends object, U extends keyof T, V extends keyof T[U], W extends keyof T[U][V], X extends keyof T[U][V][W]>
-(context : IEditorBinding<T>, one : U, two : V, three : W, four : X) : IEditorBinding<T[U][V][W][X]>;
-
-export function CreateBinding
-<T extends object, U extends keyof T, V extends keyof T[U], W extends keyof T[U][V], X extends keyof T[U][V][W]>
-(context : T, one? : U, two? : V, three? : W, four? : X) : IEditorBinding<any> {
+(context : T|IEditorBinding<T>, one? : U, two? : V, three? : W, four? : X) : IEditorBinding<any> {
     const path = Array.prototype.slice.call(arguments, 1);
 
     if (context instanceof EditorBinding) {

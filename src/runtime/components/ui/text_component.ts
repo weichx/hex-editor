@@ -1,55 +1,46 @@
 import {component} from "../../component";
 import {CommandType} from "../../enums/e_command_type";
 import {UIComponent} from "../ui_component";
-import {inspector} from "../../../renderers/component/expose_as";
-import {Vector2} from "../../vector2";
 
-const dirtyMap = new WeakMap<any, any>();
-
-function DirtyCheck(ctx : any, fieldName : string, callback? : (...args : any[]) => any) {
-    let map = dirtyMap.get(ctx);
-    if (!map) {
-        map = {};
-        dirtyMap.set(ctx, map);
-    }
-
-    const lastValue = map[fieldName];
-    const currentValue = ctx[fieldName];
-
-    if (Array.isArray(lastValue)) {
-        if (!Array.isArray(currentValue)) {
-
-            return true;
-        }
-        const ref = map[fieldName].ref;
-        if(ref === currentValue) {
-            map[fieldName].ref = currentValue;
-            return true;
-        }
-        if (lastValue !== currentValue) {
-            map[fieldName] = currentValue;
-            callback(currentValue);
-            return true;
-        }
-    }
-    else if (typeof lastValue === "object") {
-
-    }
-
-    return lastValue === currentValue;
-
+export interface IFont {
+    name : string;
+    size : number;
+    lineHeight : number;
+    weight : number;
+    decoration : string;
 }
 
 @component("UI/Text")
 export class TextComponent extends UIComponent {
 
-    @inspector(String) private textContent : string = "";
-    @inspector(Object) private list : Vector2[] = [];
+    private textContent : string = "";
+
+    private font : IFont = {
+        name: "Roboto",
+        size: 12,
+        lineHeight: 1,
+        weight: 400,
+        decoration: "none"
+    };
+
+    public getFontSize() : number {
+        return this.font.size;
+    }
+
+    public getFontName() : string {
+        return this.font.name;
+    }
+
+    public getTextContent() : string {
+        return this.textContent;
+    }
 
     public async setTextAsync(text : string) : Promise<string> {
         return await Runtime.awaitCommand<number>(CommandType.SetText, {
             id: this.appElement.id,
-            text: text
+            text: text,
+            font: this.font,
+            setFont: false
         }).then((width : number) => {
             this.textContent = text;
             this.appElement.setWidth(width);
@@ -57,21 +48,36 @@ export class TextComponent extends UIComponent {
         });
     }
 
+    public async setFontAsync(font : IFont) : Promise<IFont> {
+        return await Runtime.awaitCommand<number>(CommandType.SetText, {
+            id: this.appElement.id,
+            text: this.textContent,
+            font: font,
+            setFont: true
+        }).then((width : number) => {
+            this.font = font;
+            this.appElement.setWidth(width);
+            return this.font;
+        });
+    }
+
     public static OnDeserialized(instance : TextComponent, json : IJson) : void {
         instance.textContent = json.textContent;
+        //instance.font = json.font || instance.font;
     }
 
     public serialize() : any {
         return {
             commands: [
-                { type: CommandType.SetText, data: { id: this.appElement.id, text: this.textContent } }
+                {
+                    type: CommandType.SetText,
+                    data: {
+                        id: this.appElement.id,
+                        text: this.textContent,
+                        font: this.font
+                    }
+                }
             ]
-        }
-    }
-
-    public onInspectorUpdated() : void {
-        if(DirtyCheck(this, "textContent")) {
-            this.setTextAsync(this.textContent);
         }
     }
 

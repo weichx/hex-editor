@@ -2,6 +2,7 @@ import {CommandType} from "../enums/e_command_type";
 import {BackgroundComponent} from "../components/background_component";
 import {Component} from "../component";
 import {UIComponent} from "../components/ui_component";
+import { IFont} from "../components/ui/text_component";
 
 const ComponentCache = new Array<Component>();
 const ColorCache = {};
@@ -19,22 +20,37 @@ Runtime.setCommandSerializer(CommandType.Create, function (id : any) {
 
     //todo -- call onCreate after we get the response buffer back
 
-    //outline
-    //border
-    //foreground color
-    //background
-    //shadow
-    //foreach component
+
     //component.onCreate() or maybe onInitialize() or onMount()
     //maybe fire the response when we get it back
     //maybe only do that if in run mode
     //Component.Serialize(component)
+
+    const uiComponent = appElement.getComponent(UIComponent);
+    let elementType = "Panel"; //temp until we get meta-elements
+
+    if(uiComponent) {
+        elementType = uiComponent.getTypeName()
+    }
+
     return {
         id: id,
-        elementType : appElement.getComponent(UIComponent).getTypeName(),
+        elementType : elementType,
         components: serializedComponents,
         parentId: appElement.getParent().id
     };
+});
+
+Runtime.setCommandSerializer(CommandType.Destroy, function (data : { id : number} ) {
+   return {id : data.id }
+});
+
+Runtime.setCommandSerializer(CommandType.SetText, function (data : {id : number, text : string, font : IFont}) {
+    return { id : data.id, text: data.text, font: data.font};
+});
+
+Runtime.setCommandSerializer(CommandType.SetImage, function (data : {id : number, image: string}) {
+    return { id : data.id, image: data.image };
 });
 
 Runtime.setCommandSerializer(CommandType.SetPosition, function (id : any) {

@@ -16,7 +16,7 @@ export class EnumSelectRenderer extends PropertyRenderer<ISelectAttrs> {
         const retn = new Array<any>();
         Object.keys(e).forEach(function (key : string) {
             if (isNaN(key as any)) {
-                retn.add({ name: key, value: e[key] });
+                retn.push({ name: key, value: e[key] });
             }
         });
         return retn;
@@ -42,7 +42,6 @@ export class EnumSelectRenderer extends PropertyRenderer<ISelectAttrs> {
 
 @propertyDrawer(Select)
 export class SelectRenderer extends PropertyRenderer<ISelectAttrs> {
-
 
     public createInitialStructure(children : any) : JSXElement {
         const editorData = this.attrs.editorData;

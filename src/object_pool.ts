@@ -31,19 +31,18 @@ abstract class BaseObjectPool<T extends {onDespawn: () => void}> {
         this.list = [];
         if(preload > 0) {
             for(let i = 0; i < preload; i++) {
-                this.list.add(new this.type());
+                this.list.push(new this.type());
             }
         }
     }
 
     protected getItem() : T {
         return this.list.length > 0 ? this.list.pop() : new this.type();
-
     }
 
     public despawn(item : T) : void {
         item.onDespawn();
-        this.list.add(item);
+        this.list.push(item);
     }
 
 }

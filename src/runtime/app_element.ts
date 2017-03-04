@@ -4,6 +4,7 @@ import {Vector2, ImmutableVector2} from "./vector2";
 import {LifeCycleFlag} from "./enums/e_lifecycle_flags";
 import {CommandType} from "./enums/e_command_type";
 import {TypeOf} from "./interfaces/i_typeof";
+import {traverseChildren} from "../util";
 
 let idGenerator = 0;
 
@@ -64,6 +65,9 @@ export class AppElement {
 
     public setWidth(width : number) : void {
         this.width = width;
+        //todo get parent layout component and invoke layout
+        //todo get layout component and invoke layout
+        //todo use anchor settings
         Runtime.sendCommand(CommandType.SetDimensions, this.id);
     }
 
@@ -149,7 +153,12 @@ export class AppElement {
 
     public setParent(parent : AppElement) : void {
         parent = parent || AppElement.Root;
+        const oldParent = this.parent;
         this.parent = parent;
+        //todo ancestor check
+        if(oldParent) {
+            oldParent.children.remove(this);
+        }
         if(parent) {
             this.parent.children.push(this);
             const p = this.parent.getPosition();
@@ -160,6 +169,7 @@ export class AppElement {
             this.parentPosition.x = 0;
             this.parentPosition.y = 0;
         }
+        Runtime.setParent(this, parent, oldParent);
     }
 
     public getParent() : AppElement {
@@ -272,13 +282,35 @@ export class AppElement {
     }
 
     public destroy() {
-        //todo this isnt right yet
+        if(!this.parent) return; //can't destroy root
 
-        //todo destroy children
+        this.lifeCycleFlags |= LifeCycleFlag.Destroyed;
+
+        for(let i = 0; i < this.children.length; i++) {
+            this.children[i].destroy();
+        }
+
         for (let i = 0; i < this.components.length; i++) {
             this.components[i].destroy();
         }
 
+        if(!this.parent.isDestroyed()) {
+            this.parent.children.remove(this);
+            const components = this.parent.components;
+            for(let i = 0; i < components.length; i++) {
+                components[i].onChildRemoved(this);
+            }
+            const childIds = new Array<number>();
+            traverseChildren(this, (child : AppElement) => {
+                childIds.push(child.id);
+            });
+            Runtime.sendCommand(CommandType.Destroy, { id : this.id, childIds });
+        }
+
+    }
+
+    private destroyFromParent() : void {
+        //don't fire handlers n stuff
     }
 
     /*** Accessors ***/
