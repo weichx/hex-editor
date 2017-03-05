@@ -1,4 +1,4 @@
-import {EditorCustomElement} from "../editor_element/editor_custom_element";
+import {EditorHTMLElement} from "../editor_element/editor_html_element";
 
 interface ITextBoxWithIconAttr extends IHTMLAttribute {
     color? : string;
@@ -7,7 +7,7 @@ interface ITextBoxWithIconAttr extends IHTMLAttribute {
     binding : string;
 }
 
-export class TextBoxWithIcon extends EditorCustomElement<ITextBoxWithIconAttr> {
+export class TextBoxWithIcon extends EditorHTMLElement<ITextBoxWithIconAttr> {
 
     protected getDomData() : IDomData {
         return {

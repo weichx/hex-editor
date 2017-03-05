@@ -49,7 +49,6 @@ function createHTMLElement(tag : string, attrs : any, children : any) {
         }
     }
     (retn as any).renderContext = renderContext;
-    retn.onStructured();
     retn.onEnabled();
     return retn;
 }
@@ -67,7 +66,6 @@ function createInstanceElement(type : TypeOf<EditorElement>, attrs : any, childr
         }
     }
     (retn as any).renderContext = renderContext;
-    retn.onStructured();
     retn.onEnabled();
     RenderContextStack.pop();
     return retn;

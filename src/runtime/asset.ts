@@ -1,31 +1,43 @@
 import {randomPositiveInteger} from "../util";
+import {IAssetManifest} from "../windows/asset/asset_window";
 
-export enum AssetType {
-    Image, Prefab, JSON
-}
-
-//todo this might not belong here
 export class Asset {
 
     public readonly id : number;
-    public readonly type : AssetType;
     private pathSegments : string[];
-    private path : string;
 
-    constructor(path : string, type : AssetType) {
+    constructor(assetDescription : IAssetManifest) {
         //todo -- use a better random or maybe a guid
         this.id = randomPositiveInteger();
-        this.type = type;
-        this.path = path;
+        this.pathSegments = assetDescription.path.split("/");
+    }
+
+    public move(path : string) : void {
+        const name = this.getName();
         this.pathSegments = path.split("/");
+        this.pathSegments.push(name);
+    }
+
+    public setName(name : string) : string {
+        name = name.replace(/\n/g, "");
+        this.pathSegments[this.pathSegments.length - 1] = name;
+        return name;
     }
 
     public getName() : string {
         return this.pathSegments[this.pathSegments.length - 1];
     }
 
-    public isPrefab() : boolean {
-        return this.type === AssetType.Prefab;
+    public getPath() : string {
+        return this.pathSegments.join("/");
+    }
+
+    public getPathSegments() : string[] {
+        return this.pathSegments.slice(0);
+    }
+
+    public getDepth() : number {
+        return this.pathSegments.length - 1;
     }
 
 }

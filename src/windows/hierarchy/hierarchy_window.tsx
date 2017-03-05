@@ -8,21 +8,19 @@ import {EditorWindowElement, IWindowAttrs} from "../../chrome/editor_window_elem
 import {WindowColors} from "../../editor/editor_theme";
 import {EditorElement} from "../../editor_element/editor_element";
 import {AppElement} from "../../runtime/app_element";
-import {MouseButtonState} from "../../runtime/enums/e_mouse_state";
 import {Scene} from "../../runtime/scene";
 import {AppElementParentChanged} from "../../editor_events/evt_app_element_parent_changed";
 import {HierarchyItemDragAction} from "../../editor/drag_actions/drag_hierarchy_item";
+import {Vector2} from "../../runtime/vector2";
+import {EditorContextMenu} from "../../chrome/context_menu";
+import {onRightClick, onClick} from "../../editor_element/editor_element_annotations";
+import {ToggleIcon} from "../../ui_elements/icon";
 
 export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
 
+    private mouse = new Vector2();
     private elementMap = new Map<AppElement, HierarchyItem>();
     private contextSelection : AppElement = null;
-    private contextMenu : EditorElement = null;
-    private dragElement : EditorElement = null;
-
-    public getDomData() : IDomData {
-        return {tagName: "div", classList: "hierarchy-window-root" }
-    }
 
     private createHierarchyItem(element : AppElement) : HierarchyItem {
         const item = createElement(HierarchyItem, { element: element });
@@ -64,73 +62,40 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
 
     }
 
-    public showContextMenu(item : AppElement, x : number, y : number) : void {
-        this.contextSelection = item;
-        this.contextMenu.setPosition(x, y);
-        this.contextMenu.setVisible(true);
+    @onRightClick
+    public showContextMenu() : void {
+        const input = EditorRuntime.getInput();
+        input.getMousePosition(this.mouse);
+        let mouseOver = EditorRuntime.getEditorElementAtPoint(this.mouse);
+        if(!mouseOver || mouseOver.getAncestorByType(ToggleIcon, true)) return;
+
+        let item = mouseOver.getAncestorByType(HierarchyItem, true);
+        if(item) this.contextSelection = item.attrs.element;
     }
 
     public onUpdated() {
         const input = EditorRuntime.getInput();
-        //todo replace this with drag system used elsewhere
-        if (this.dragElement) {
-            // const mouse = input.getMousePosition();
-            // if (input.isMouseUp()) {
-            //
-            //     const dropElement = EditorRuntime.getEditorElementAtPoint(mouse);
-            //     if (!dropElement) {
-            //         this.dragElement = null;
-            //         return;
-            //     }
-            //
-            //     const item = dropElement.getFirstOfTypeUpwards(HierarchyItem);
-            //
-            //     if (!item || item === this.dragElement) {
-            //         this.dragElement = null;
-            //         return;
-            //     }
-            //
-            //     if (this.dragElement.isElementInHierarchy(item.getDomNode())) {
-            //         this.dragElement = null;
-            //         return;
-            //     }
-            //
-            //     const spacer = dropElement.hasXId("spacer");
-            //     if (spacer) {
-            //         //insert child here if not in hierarchy
-            //         const idx = item.parent.getChildIndex(item);
-            //         //item.parent.insertChild(this.dragElement, idx);
-            //     }
-            //     else {
-            //         item.addChild(this.dragElement);
-            //     }
-            //
-            //     this.dragElement = null;
-            //     return;
-            // }
+        const inElement = input.isMouseInEditorElement(this);
+
+        if (!inElement) {
+            return;
         }
-        else if (this.contextMenu.isVisible()) {
-            if (EditorRuntime.getInput().isMouseButtonDown(MouseButtonState.Left)) {
-                //if click outside context menu, hide it
-                const mp = EditorRuntime.getInput().getMousePosition();
-                const el = document.elementFromPoint(mp.x, mp.y);
-                if (!this.contextMenu.isElementInHierarchy(el)) {
-                    this.contextMenu.setVisible(false);
+
+        if (!EditorRuntime.getCurrentDragAction() && input.isMouseDown()) {
+            input.getMouseDownDelta(this.mouse);
+            if (this.mouse.lengthSquared() > 64) {
+                input.getMouseDownPosition(this.mouse);
+                let dragElement = EditorRuntime.getEditorElementAtPoint(this.mouse, HierarchyItem);
+                if (!dragElement) {
+                    return;
                 }
+                EditorRuntime.beginDragAction(new HierarchyItemDragAction(dragElement))
             }
         }
-        else if (input.isMouseInEditorElement(this) && input.isMouseDownThisFrame()) {
-            //todo if selection changed in the last frame, don't
-            const mouse = input.getMousePosition();
-            const hoverElement = EditorRuntime.getEditorElementAtPoint(mouse) as EditorElement;
-            if (!hoverElement) return;
-            const dragElement = hoverElement.getFirstOfTypeUpwards(HierarchyItem);
-            EditorRuntime.beginDragAction(new HierarchyItemDragAction(dragElement))
-        }
+
     }
 
     public onRendered() {
-        render(this.contextMenu, document.getElementById("root"));
         EditorRuntime.on(SelectionChanged, this);
         EditorRuntime.on(SceneLoaded, this);
 
@@ -158,17 +123,13 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
         this.addChild(rootItem);
     }
 
+    @onClick
     private clearSelection() {
         EditorRuntime.select(null);
     }
 
     private addChildToContextSelection() {
-        const appElement = new AppElement("Child Element");
-        appElement.setParent(this.contextSelection);
-        const item = this.createHierarchyItem(appElement);
-        const itemParent = this.getHierarchyItemForElement(this.contextSelection);
-        itemParent.getChildRoot().addChild(item);
-        this.contextMenu.setVisible(false);
+        new AppElement("Child Element", this.contextSelection);
     }
 
     private destroyContextSelection() {
@@ -179,41 +140,36 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
         hierarchyItem.destroy();
         this.contextSelection.destroy();
         this.contextSelection = null;
-        this.contextMenu.setVisible(false);
     }
 
     private createNewElement() : void {
-        const selection = EditorRuntime.getSelection();
-        let appElement : AppElement = null;
-        if (selection) {
-            appElement = new AppElement("Element", selection);
-        }
-        else {
-            appElement = new AppElement("Element");
-        }
+        new AppElement("Element", EditorRuntime.getSelection());
     }
 
     public createInitialStructure(children : Array<HTMLElement>) {
-        this.contextMenu = this.createContextMenu() as any;
         return [
             <div class="hierarchy-top-bar">
-                <Button class="btn btn-xs btn-info" onClick={ this.createNewElement }>Create</Button>
+                <Button onClick={ this.createNewElement }>Create</Button>
             </div>,
-            <div x-child-root class="hierarchy-main-body" onClick={ this.clearSelection }/>
+            <div x-child-root class="hierarchy-main-body"/>
         ]
     }
 
     private createContextMenu() : any {
-        return <div x-id="ctx-menu" x-hidden class="hierarchy-ctx-menu-container">
-            <ul class="hierarchy-ctx-menu">
-                <li class="ctx-menu-item" onClick={this.addChildToContextSelection}>
-                    <a>Add Child</a>
-                </li>
-                <li class="ctx-menu-item" onClick={this.destroyContextSelection}>
-                    <a>Delete</a>
-                </li>
-            </ul>
-        </div>
+        return createElement(EditorContextMenu, {
+            options: [
+                {
+                    name: "Create",
+                    icon: "object-group",
+                    action: () => this.addChildToContextSelection()
+                },
+                {
+                    name: "Delete",
+                    icon: "remove",
+                    action: () => this.destroyContextSelection()
+                }
+            ]
+        });
     }
 }
 
@@ -221,26 +177,7 @@ createStyleSheet(`
 <style>
 
 
-.hierarchy-ctx-menu-container {
-    position: absolute;
-    z-index: 100;
-    min-width: 200px;
-    background: burlywood;
-    display: flex;
-    flex-direction: column;
-    color: black;
-}
-
-.hierarchy-ctx-menu {
-    width: 100%;
-    background: white;
-    padding-left: 1em;
-    list-style: none;
-    margin:0;
-    
-}
-
-.hierarchy-window-root {
+.hierarchy-window {
     display: flex;
     flex-direction: column;
     height: 100%;

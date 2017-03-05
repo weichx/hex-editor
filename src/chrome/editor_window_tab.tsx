@@ -1,11 +1,11 @@
-import {EditorCustomElement} from "../editor_element/editor_custom_element";
 import {WindowColors} from "../editor/editor_theme";
+import {EditorHTMLElement} from "../editor_element/editor_html_element";
 
 interface IWindowFrameTabAttrs extends IHTMLAttribute {
     title : string;
 }
 
-export class WindowFrameTab extends EditorCustomElement<IWindowFrameTabAttrs> {
+export class WindowFrameTab extends EditorHTMLElement<IWindowFrameTabAttrs> {
 
     protected getDomData() : IDomData {
         return {

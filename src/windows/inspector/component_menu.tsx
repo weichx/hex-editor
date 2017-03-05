@@ -1,12 +1,12 @@
 import {Vertical} from "../../ui_elements/vertical_stack";
 import {TextBoxWithIcon} from "../../ui_elements/text_box_icon";
 import {Button} from "../../ui_elements/button";
-import {EditorCustomElement} from "../../editor_element/editor_custom_element";
 import {ComponentOption} from "./component_option";
 import {Component} from "../../runtime/component";
 import {createElement} from "../../editor_element/element_renderer";
+import {EditorHTMLElement} from "../../editor_element/editor_html_element";
 
-export class ComponentMenu extends EditorCustomElement<{}> {
+export class ComponentMenu extends EditorHTMLElement<{}> {
 
     private showComponentSelection : boolean = false;
 

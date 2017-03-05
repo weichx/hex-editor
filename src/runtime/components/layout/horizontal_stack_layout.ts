@@ -1,12 +1,11 @@
-import {SizingMode} from "../sizing_component";
-import {LayoutComponent} from "../layout_component";
-import {exposeAs} from "../../../../renderers/component/expose_as";
-import {component} from "../../../component";
-import {Space} from "../../../app_element";
+import {SizingMode} from "./sizing_component";
+import {LayoutComponent} from "./layout";
+import {exposeAs} from "../../../renderers/component/expose_as";
+import {component} from "../../component";
+import {Space} from "../../app_element";
 
 @component("Layout/HorizontalStack")
 export class HorizontalStackLayout extends LayoutComponent {
-
 
     @exposeAs(Boolean) public wrap : boolean = false;
 
@@ -58,7 +57,6 @@ export class HorizontalStackLayout extends LayoutComponent {
             allocatedSpace += sizings[i];
         }
     }
-
 
     //I set text
     //I ask for height

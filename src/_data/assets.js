@@ -1,20 +1,20 @@
-function Folder(name, contents, isOpen = true) {
+function Folder(name, isOpen = true, children = []) {
     return {
         name: name,
         type: 'folder',
         data: {
             isOpen: isOpen,
-            contents: contents
-        }
+        },
+        children: children
     }
 }
 
-function Prefab(name, data, components) {
+function Prefab(name, data, children = []) {
     return {
         type: 'prefab',
         name: name,
         data: data,
-        components: components
+        children: children
     }
 }
 
@@ -26,121 +26,42 @@ function Component(type, data) {
 }
 
 module.exports = [
-
-    Prefab("Panel", {}, [
-        Component("UI/Panel"),
-        Component("Paint/Background", {
-            color: {r: 255, g: 0, b: 0, a: 1}
-        })
-    ]),
-    Prefab("Text", {}, [
-        Component("UI/Text", {
-            textContent: "Hex Yeah!"
-        })
-    ]),
-    Prefab("Image", {}, [
-        Component("UI/Image", {
-            assetId: "img/placeholder.svg" //todo formalize asset ids and resource management
-        })
-    ]),
-    Prefab("Button", {}, [
-        Component("UI/Button", {
-            text: "Click Me!"
-        })
-    ]),
-    Prefab("Slider", {}, []),
-    Prefab("Toggle", {}, []),
-    Prefab("Input", {}, []),
-    Prefab("Dropdown", {}, []),
-    Prefab("Radio Button", {}, [])
+    Folder("Root Folder", true, [
+        Prefab("Panel", {
+            components: [
+                Component("UI/Panel"),
+                Component("Paint/Background", {
+                    color: {r: 255, g: 0, b: 0, a: 1}
+                })
+            ]
+        }),
+        Prefab("Text", {
+            position: {x: 1, y: 1},
+            components: [
+                Component("UI/Text", {
+                    textContent: "Hex Yeah!"
+                })
+            ]
+        }),
+        Prefab("Image", {
+            components: [
+                Component("UI/Image", {
+                    assetId: "img/placeholder.svg" //todo formalize asset ids and resource management
+                })
+            ]
+        }),
+        Prefab("Button", {
+            components: [
+                Component("UI/Button", {
+                    text: "Click Me!"
+                })
+            ]
+        }),
+        // Prefab("Slider", {}, []),
+        // Prefab("Toggle", {}, []),
+        // Prefab("Input", {}, []),
+        // Prefab("Dropdown", {}, []),
+        // Prefab("Radio Button", {}, [])
+    ], true)
 ];
 
-
-// module.exports = [
-//     {
-//         id: 0x0,
-//         name: "thing",
-//         type: "folder",
-//         data: {
-//             contents: [
-//                 {
-//                     id: 0x1,
-//                     name: "Folder",
-//                     type: "folder",
-//                     data: {
-//                         contents: [
-//                             {
-//                                 idx: 0x4,
-//                                 name: "Some Item",
-//                                 type: "image",
-//                                 data: {
-//                                     format: "png",
-//                                     width: 300,
-//                                     height: 300
-//                                 }
-//                             }
-//                         ]
-//                     }
-//                 },
-//                 {
-//                     id: 0x2,
-//                     name: "image",
-//                     type: "image",
-//                     data: {
-//                         format: "png",
-//                         width: 300,
-//                         height: 300
-//                     }
-//                 },
-//                 {
-//
-//                     id: 0x3,
-//                     name: "image",
-//                     type: "image",
-//                     data: {
-//                         format: "png",
-//                         width: 300,
-//                         height: 300
-//                     }
-//                 },
-//                 {
-//                     id: 0x5,
-//                     name: 'prefab',
-//                     type: "prefab",
-//                     data: {
-//                         transform: {
-//                             position: "",
-//                             rotation: "",
-//                             width: "",
-//                             height: "",
-//                             scale: ""
-//                         },
-//                         components: [
-//                             {
-//                                 type: "UI/HorizontalLayout",
-//                                 data: {
-//                                     wrapMode: 1,
-//                                     fillFrom: 'left',
-//                                     overflow: 'hidden'
-//                                 }
-//                             },
-//                             {
-//                                 type: "UI/Anchor",
-//                                 data: {
-//                                     target: 0x1141,
-//                                     topLeft: '',
-//                                     topRight: '',
-//                                     bottomLeft: "",
-//                                     bottomRight: ""
-//                                 }
-//                             }
-//                         ],
-//                         children: [
-//                             0x1, 0x2, 0x3
-//                         ]
-//                     }
-//                 }
-//             ]
-//         }
-//     }
-// ];

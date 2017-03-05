@@ -6,6 +6,8 @@ import {NumberInput} from "../../ui_elements/number_input";
 import {propertyDrawer} from "./property_drawer";
 import {BackgroundComponent} from "../../runtime/components/background_component";
 import {CreateBinding} from "../../editor/binding";
+import {Button} from "../../ui_elements/button";
+import {randomPositiveInteger, getRandomInt} from "../../util";
 
 interface IColorRenderAttrs extends IPropertyRendererAttrs {
     onValueChanged? (newValue : Color, oldValue : Color) : void;
@@ -17,6 +19,16 @@ export class ColorRenderer extends PropertyRenderer<IColorRenderAttrs> {
     private updateColor() : void {
         const cmp = this.attrs.component as BackgroundComponent; //temp! need to implement dirty checking
         cmp.setColor(cmp.getColor());
+    }
+
+    private randomize() : void {
+        const c = new Color();
+        c.r = getRandomInt(0, 255);
+        c.g = getRandomInt(0, 255);
+        c.b = getRandomInt(0, 255);
+        c.a = 1;//getRandomInt(0, 255);
+        const cmp = this.attrs.component as BackgroundComponent; //temp! need to implement dirty checking
+        cmp.setColor(c);
     }
 
     public createInitialStructure() {
@@ -39,6 +51,7 @@ export class ColorRenderer extends PropertyRenderer<IColorRenderAttrs> {
             <InlineField label="Alpha">
                 <NumberInput value={ CreateBinding(color, "a").onChange( () => this.updateColor() ) }/>
             </InlineField>
+            <Button onClick={this.randomize}>Random</Button>
         </InspectorRow>
 
     }

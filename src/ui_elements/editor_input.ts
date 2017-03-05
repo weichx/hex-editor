@@ -1,11 +1,11 @@
-import {EditorCustomElement} from "../editor_element/editor_custom_element";
 import {IEditorBinding, CreateBinding, EditorBinding} from "../editor/binding";
+import {EditorHTMLElement} from "../editor_element/editor_html_element";
 
 export interface IInputRendererAttrs<T> extends IHTMLAttribute {
     value : T|IEditorBinding<T>;
 }
 
-export class InputRenderer<T extends IInputRendererAttrs<U>, U> extends EditorCustomElement<IInputRendererAttrs<U>> {
+export class InputRenderer<T extends IInputRendererAttrs<U>, U> extends EditorHTMLElement<IInputRendererAttrs<U>> {
 
     protected binding : EditorBinding<U>;
 

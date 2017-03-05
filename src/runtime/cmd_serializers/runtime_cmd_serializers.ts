@@ -2,7 +2,7 @@ import {CommandType} from "../enums/e_command_type";
 import {BackgroundComponent} from "../components/background_component";
 import {Component} from "../component";
 import {UIComponent} from "../components/ui_component";
-import { IFont} from "../components/ui/text_component";
+import {IFont} from "../components/ui/text_component";
 
 const ComponentCache = new Array<Component>();
 const ColorCache = {};
@@ -20,7 +20,6 @@ Runtime.setCommandSerializer(CommandType.Create, function (id : any) {
 
     //todo -- call onCreate after we get the response buffer back
 
-
     //component.onCreate() or maybe onInitialize() or onMount()
     //maybe fire the response when we get it back
     //maybe only do that if in run mode
@@ -29,28 +28,32 @@ Runtime.setCommandSerializer(CommandType.Create, function (id : any) {
     const uiComponent = appElement.getComponent(UIComponent);
     let elementType = "Panel"; //temp until we get meta-elements
 
-    if(uiComponent) {
+    if (uiComponent) {
         elementType = uiComponent.getTypeName()
     }
 
     return {
         id: id,
-        elementType : elementType,
+        elementType: elementType,
         components: serializedComponents,
         parentId: appElement.getParent().id
     };
 });
 
-Runtime.setCommandSerializer(CommandType.Destroy, function (data : { id : number} ) {
-   return {id : data.id }
+Runtime.setCommandSerializer(CommandType.Destroy, function (data : { id : number }) {
+    return data;
 });
 
-Runtime.setCommandSerializer(CommandType.SetText, function (data : {id : number, text : string, font : IFont}) {
-    return { id : data.id, text: data.text, font: data.font};
+Runtime.setCommandSerializer(CommandType.SetParent, function (data : { id : number, parentId : number }) {
+    return data;
 });
 
-Runtime.setCommandSerializer(CommandType.SetImage, function (data : {id : number, image: string}) {
-    return { id : data.id, image: data.image };
+Runtime.setCommandSerializer(CommandType.SetText, function (data : { id : number, text : string, font : IFont }) {
+    return data;
+});
+
+Runtime.setCommandSerializer(CommandType.SetImage, function (data : { id : number, image : string }) {
+    return { id: data.id, image: data.image };
 });
 
 Runtime.setCommandSerializer(CommandType.SetPosition, function (id : any) {

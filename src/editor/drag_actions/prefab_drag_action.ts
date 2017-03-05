@@ -1,5 +1,5 @@
 import {DragAction} from "./drag_action";
-import {PrefabTemplate} from "../../prefab_template";
+import {PrefabTemplate} from "../../asset_types/prefab_template";
 
 export class PrefabDragAction extends DragAction {
 

@@ -105,6 +105,53 @@ export class LayoutComponent extends Component {
 //how are animation triggers handled? possibly using this layout rect
 
 
+//tethers -> Sticky positioning based on screen size and tether point within some element (not only parent)
+//anchors -> Stretch width/height based on anchor points on parent
+
+//tether and anchor are mutually exclusive
+
+//anchor drives size
+//it is a subclass of SizingComponent
+
+//Tether is a subclass of Layout?
+
+//adjusting sizes
+    //layout items are locked
+
+//sizing
+    //anchor
+    //percent of parent remaining
+    //percent of parent total space
+    //fraction of parent remaining space
+    //fraction of parent total space based on # of siblings
+    //min / max / preferred
+    //fit child content width
+    //fit child content height
+    //fill parent
+    //stretch left
+    //stretch right
+    //stretch up
+    //stretch down
+    //stretch to sibling
+
+//margin / padding / border -> Ignored for layout, layout only deals with total width / height
+//margin / padding / border -> Optionally collapsible
+
+//onLayoutSet()
+//onLayoutChanged()
+
+//anything with an anchor is NOT part of layout children
+//anything with a tether is NOT part of layout children
+//absolute width / height
+//position
+
+
+//possible to use layout meta-elements that can declare sizing for their child
+//these elements can have only 1 child but many components
+//auto generated when attaching to child of layout
+
+
+
 
 
 

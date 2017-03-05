@@ -14,7 +14,7 @@ import {Component} from "../runtime/component";
 import {Vector2} from "../runtime/vector2";
 import {TypeOf} from "../runtime/interfaces/i_typeof";
 import {DragAction} from "./drag_actions/drag_action";
-import {HorizontalStackLayout} from "../runtime/components/layout/default/horizontal_stack_layout_component";
+import {HorizontalStackLayout} from "../runtime/components/layout/horizontal_stack_layout";
 
 let mouseCache = new Vector2();
 
@@ -64,14 +64,18 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
     public readonly updateTree : ShadowTree<UpdateNode, ILifecycle>;
     private lastEnteredElement : EditorElement;
     private rootDomNode : HTMLElement;
+    private editorApplicationRoot : EditorElement;
+    private activeContextMenu : EditorElement;
 
     constructor() {
         super();
         this.selectedElement = null;
+        this.editorApplicationRoot = null;
         this.input = new EditorInput();
         this.updateTree = new ShadowTree(UpdateNode);
         this.draggedAction = null;
         this.lastEnteredElement = null;
+        this.activeContextMenu = null;
         this.rootDomNode = null;
     }
 
@@ -121,8 +125,7 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
                 const appElement = this.appElementRegistry[appElementIds[i]] as any;
                 if (appElement.id === 0) continue;
                 const parentId = parentMap[appElement.id] || 0;
-                appElement.parent = this.appElementRegistry[parentId];
-                appElement.parent.children.push(appElement);
+                appElement.setParent(this.appElementRegistry[parentId]);
             }
             for (let i = 0; i < ids.length; i++) {
                 const appElement = this.appElementRegistry[ids[i]];
@@ -133,7 +136,6 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
             }
         });
         this.emit(SceneLoaded, this.scene);
-        // AppElement.Root.getComponent(HorizontalStackLayout).doLayout();
     }
 
     private createComponents(appElement : AppElement, componentDescriptors : Array<any>) : void {
@@ -156,6 +158,7 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
     }
 
     public beginDragAction(dragAction : DragAction) : void {
+        if(!dragAction) return;
         if (this.draggedAction) {
             throw new Error("Cannot initiate another drag action while one exists!");
         }
@@ -264,9 +267,26 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
         return element.getAncestorByType(type, true);
     }
 
+    public showContextMenu(menu : EditorElement) : void {
+        if(this.activeContextMenu) {
+            this.activeContextMenu.destroy();
+        }
+        this.activeContextMenu = menu;
+        this.editorApplicationRoot.addChild(menu);
+        const mp = this.input.getMousePosition();
+        menu.setPosition(mp.x, mp.y);
+    }
+
+    public hideContextMenu() : void {
+        if(this.activeContextMenu) {
+            this.activeContextMenu.destroy();
+        }
+    }
+
     protected start(appRoot : TypeOf<EditorElement>, attrs = {}) : void {
         this.loadScene(require('./../_data/test_scene1'));
-        render(createElement(appRoot, attrs), document.getElementById('root'));
+        this.editorApplicationRoot = createElement(appRoot, attrs);
+        render(this.editorApplicationRoot, document.getElementById('root'));
         window.addEventListener("resize", () => {
             this.emit(WindowResized, window.innerWidth, window.innerHeight);
         });

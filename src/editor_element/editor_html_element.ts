@@ -1,12 +1,12 @@
 import {EditorElement} from "./editor_element";
 import {EditorTextElement} from "./editor_text_element";
+import {dasherize} from "../util";
 
 declare global {
     interface Node {
         __editorElement : EditorElement;
     }
 }
-
 
 export let InputEventAnnotationMap = new Map<Object, Array<any>>();
 
@@ -23,12 +23,13 @@ export class EditorHTMLElement<T extends IHTMLAttribute> extends EditorElement {
         const proto = this.constructor.prototype;
         const eventAnnotations = InputEventAnnotationMap.get(this.constructor.prototype);
 
-        if(eventAnnotations) {
-            for(let i = 0; i < eventAnnotations.length; i++) {
+        if (eventAnnotations) {
+            for (let i = 0; i < eventAnnotations.length; i++) {
                 const annotation = eventAnnotations[i];
                 this.addEventListener(annotation.type, (e : MouseEvent) => {
                     (this as any)[annotation.methodName](e);
                     e.stopPropagation();
+                    e.preventDefault();
                 });
             }
         }
@@ -36,7 +37,15 @@ export class EditorHTMLElement<T extends IHTMLAttribute> extends EditorElement {
     }
 
     protected getDomData() : IDomData {
-        return { tagName: this.tagName };
+        if (this.constructor.name === "EditorHTMLElement") {
+            return { tagName: this.tagName };
+        }
+        else {
+            return {
+                tagName: this.tagName,
+                classList: dasherize(this.constructor.name)
+            }
+        }
     }
 
     public hasClass(className : string) : boolean {
@@ -57,10 +66,10 @@ export class EditorHTMLElement<T extends IHTMLAttribute> extends EditorElement {
 
     public setText(text : string) : void {
         const textChild = this.children[0];
-        if(!textChild) {
+        if (!textChild) {
             this.addChild(new EditorTextElement(text));
         }
-        else if(textChild instanceof EditorTextElement) {
+        else if (textChild instanceof EditorTextElement) {
             textChild.setText(text);
         }
         else {
@@ -93,7 +102,7 @@ export class EditorHTMLElement<T extends IHTMLAttribute> extends EditorElement {
         if (domData.classList) {
             let className = domData.classList;
             const attrClass = this.attrs.class;
-            if (attrClass)  {
+            if (attrClass) {
                 className += " " + attrClass;
             }
             this.htmlNode.className = className;
@@ -119,25 +128,25 @@ export class EditorHTMLElement<T extends IHTMLAttribute> extends EditorElement {
             }
         }
 
-        if(!this.isVisible()) {
+        if (!this.isVisible()) {
             this.htmlNode.classList.add("hidden");
         }
         return this.htmlNode;
     }
 
-    public getChildBySelector(selector : string) : EditorHTMLElement<IHTMLAttribute> {
+    public getChildBySelector<T extends EditorHTMLElement<any>>(selector : string, type : INewable<T> = null) : T {
         const node = this.htmlNode.querySelector(":scope " + selector);
-        if(node && node.__editorElement) {
-            return node.__editorElement as EditorHTMLElement<IHTMLAttribute>;
+        if (node && node.__editorElement) {
+            return node.__editorElement as T;
         }
     }
 
     public getChildrenBySelector(selector : string) : EditorHTMLElement<IHTMLAttribute>[] {
         const retn : Array<EditorHTMLElement<IHTMLAttribute>> = [];
         const nodes = this.htmlNode.querySelectorAll(":scope " + selector);
-        for(let i = 0; i < nodes.length; i++) {
+        for (let i = 0; i < nodes.length; i++) {
             const editorElement = nodes[i].__editorElement;
-            if(editorElement) {
+            if (editorElement) {
                 retn.push(editorElement as EditorHTMLElement<IHTMLAttribute>);
             }
         }
@@ -147,18 +156,13 @@ export class EditorHTMLElement<T extends IHTMLAttribute> extends EditorElement {
     public getDescendantsBySelector(selector : string) : EditorHTMLElement<IHTMLAttribute>[] {
         const retn : Array<EditorHTMLElement<IHTMLAttribute>> = [];
         const nodes = this.htmlNode.querySelectorAll(selector);
-        for(let i = 0; i < nodes.length; i++) {
+        for (let i = 0; i < nodes.length; i++) {
             const editorElement = nodes[i].__editorElement;
-            if(editorElement) { //todo maybe ensure renderContext == this || this.renderContext
+            if (editorElement) { //todo maybe ensure renderContext == this || this.renderContext
                 retn.push(editorElement as EditorHTMLElement<IHTMLAttribute>);
             }
         }
         return retn;
     }
-
-
-
-
-
 
 }

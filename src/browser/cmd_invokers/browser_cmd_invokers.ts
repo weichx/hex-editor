@@ -23,6 +23,7 @@ BrowserRuntime.setCommandInvoker(CommandType.SetText, (function () {
 
     return function (payload : IJson) {
         const element = BrowserRuntime.elementIdToDomNode(payload.id);
+        if(!element) return;
         element.innerText = payload.text;
         const font = payload.font;
         const style = element.style;
@@ -57,6 +58,7 @@ BrowserRuntime.setCommandInvoker(CommandType.Create, (function () {
 
     return function (payload : IJson) {
         const element = document.createElement(elementTypeToTagName[payload.elementType]);
+        if(!element) return;
         const parentId = payload.parentId;
         element.setAttribute("app-id", payload.id);
         BrowserRuntime.setDomNodeToElementId(payload.id, element);
@@ -75,18 +77,27 @@ BrowserRuntime.setCommandInvoker(CommandType.Destroy, function (payload : IJson)
     for(let i = 0; i< payload.childIds; i++) {
         BrowserRuntime.setDomNodeToElementId(payload.childIds[i], null);
     }
+});
 
+BrowserRuntime.setCommandInvoker(CommandType.SetParent, function(payload : IJson) {
+    const element = BrowserRuntime.elementIdToDomNode(payload.id);
+    if(!element) return;
+    element.remove();
+    const parentElement = BrowserRuntime.elementIdToDomNode(payload.parentId);
+    parentElement.appendChild(element);
 });
 
 BrowserRuntime.setCommandInvoker(CommandType.SetImage, function (payload : IJson) {
     //todo this needs work
     //aspect ratio, width, height, stretch, filters, 9-slice, etc
     const el = BrowserRuntime.elementIdToDomNode(payload.id);
+    if(!el) return;
     el.setAttribute("src", payload.image);
 });
 
 BrowserRuntime.setCommandInvoker(CommandType.SetPosition, function (payload : IJson) {
     const el = BrowserRuntime.elementIdToDomNode(payload.id);
+    if(!el) return;
     const x = payload.x | 0;
     const y = payload.y | 0;
     el.style.top = y === 0 ? null : y + "px";
@@ -95,6 +106,7 @@ BrowserRuntime.setCommandInvoker(CommandType.SetPosition, function (payload : IJ
 
 BrowserRuntime.setCommandInvoker(CommandType.SetDimensions, function (payload : IJson) {
     const el = BrowserRuntime.elementIdToDomNode(payload.id);
+    if(!el) return;
     el.style.width = (payload.width | 0) + "px";
     el.style.height = (payload.height | 0) + "px";
 });
@@ -105,6 +117,7 @@ BrowserRuntime.setCommandInvoker(CommandType.SetTransform, function (payload : I
 
 BrowserRuntime.setCommandInvoker(CommandType.SetRect, function (payload : IJson) {
     const el = BrowserRuntime.elementIdToDomNode(payload.id);
+    if(!el) return;
     const rect = payload.rect;
     const style = el.style;
     const x = rect.x | 0;
@@ -117,6 +130,7 @@ BrowserRuntime.setCommandInvoker(CommandType.SetRect, function (payload : IJson)
 
 BrowserRuntime.setCommandInvoker(CommandType.PaintBackground, function (payload : IJson) {
     const el = BrowserRuntime.elementIdToDomNode(payload.id);
+    if(!el) return;
     const c = payload.color;
     //todo = use a style cache to check for bg class
     el.style.background = `rgba(${c.r}, ${c.g}, ${c.b}, ${c.a})`;

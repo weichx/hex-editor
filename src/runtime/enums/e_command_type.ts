@@ -1,12 +1,9 @@
 export enum CommandType {
     Create,
     Destroy,
-    Update,
-    Move,
-    Replace,
+
     SetRect,
     SetImage,
-
     SetPosition,
     SetDimensions,
     SetTransform,
@@ -14,6 +11,5 @@ export enum CommandType {
 
     PaintBackground,
     SetText,
-    SetFont,
     UpdateInput
 }

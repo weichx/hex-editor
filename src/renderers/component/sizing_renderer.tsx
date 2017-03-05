@@ -1,6 +1,6 @@
 import {ComponentRenderer, renderer} from "./component_renderer";
 import {SizingComponent, SizingMode} from "../../runtime/components/layout/sizing_component";
-import {DefaultSizingComponent} from "../../runtime/components/layout/default/default_sizing_component";
+import {DefaultSizingComponent} from "../../runtime/components/layout/default_sizing_component";
 import {InspectorRow} from "../../ui_elements/inspector/inspector_row";
 import {NumberInput} from "../../ui_elements/number_input";
 import {EditorElement} from "../../editor_element/editor_element";

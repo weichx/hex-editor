@@ -1,34 +1,72 @@
 import {EditorHTMLElement} from "../../editor_element/editor_html_element";
+import {HierarchyItem} from "./hierarchy_item";
 import {DragAction} from "../../editor/drag_actions/drag_action";
 import {HierarchyItemDragAction} from "../../editor/drag_actions/drag_hierarchy_item";
+import {PrefabDragAction} from "../../editor/drag_actions/prefab_drag_action";
 
-class AppElementAssetDragAction extends DragAction {}
+export class HierarchyItemDropTarget extends EditorHTMLElement<{ insert : "before"|"after" }> {
 
-export class HierarchyInsertTarget extends EditorHTMLElement<{}> {
+    private target : HierarchyItem;
 
-    public getDomData() : IDomData {
-        return { tagName : "div", classList: "hierarchy-insert-target" };
+    public onMounted() {
+        this.target = this.parent as HierarchyItem;
     }
 
+    @DragAction.MouseEnter(PrefabDragAction)
     @DragAction.MouseEnter(HierarchyItemDragAction)
-    public handleDragEnter(dragAction : AppElementAssetDragAction) : void {
-        this.getDomNode().style.background = "green";
+    public onDragEnter(action : PrefabDragAction|HierarchyItemDragAction) : void {
+        this.addClass("hover")
     }
 
+    @DragAction.MouseExit(PrefabDragAction)
     @DragAction.MouseExit(HierarchyItemDragAction)
-    @DragAction.Drop(HierarchyItemDragAction)
-    public handleDragExit(dragAction : AppElementAssetDragAction) : void {
-        this.getDomNode().style.background = null;
+    public onDragExit() : void {
+        this.removeClass("hover")
     }
 
+    @DragAction.Drop(PrefabDragAction)
     @DragAction.Drop(HierarchyItemDragAction)
-    public handleDrop(dragAction : AppElementAssetDragAction) : void {
-        debugger;
+    public onDrop(action : PrefabDragAction|HierarchyItemDragAction) : void {
+        const grandParent = this.target.getAncestorByType(HierarchyItem);
+
+        if (!grandParent) {
+            return;
+        }
+
+        let idx = grandParent.getChildRoot().getChildIndex(this.target);
+        if (this.attrs.insert === "after") idx++;
+
+        if(action instanceof PrefabDragAction) {
+            //create
+        }
+        else if(action instanceof HierarchyItemDragAction) {
+           // grandParent.getChildRoot().insertChild(action.item, idx);
+            action.appElement.setParent(this.target.attrs.element);
+        }
+
+    }
+
+    public createInitialStructure() : JSXElement {
+        return <div class="hover-target-display"/>
     }
 }
 
 createStyleSheet(`<style>
-    .hierarchy-insert-target {
-        height: 0.15em;
+    
+    .hierarchy-item-drop-target {
+        position:relative;
     }
+    
+    .hierarchy-item-drop-target .hover-target-display {
+        position: absolute;
+        top: -2px;
+        left: 0;
+        height: 4px;
+        width: 100%;
+    }
+    
+    .hierarchy-item-drop-target.hover .hover-target-display {
+        background: aliceblue;
+    }
+    
 `);

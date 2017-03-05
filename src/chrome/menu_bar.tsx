@@ -1,5 +1,5 @@
-import {EditorCustomElement} from "../editor_element/editor_custom_element";
 
+import {EditorHTMLElement} from "../editor_element/editor_html_element";
 interface IMenuBarAttributes {}
 
 interface IMenuItem {
@@ -8,11 +8,11 @@ interface IMenuItem {
     action? : () => void;
 }
 
-export class MenuItem extends EditorCustomElement<IMenuItem> {
+export class MenuItem extends EditorHTMLElement<IMenuItem> {
 
     private noOp() : void { }
 
-    public createInitialStructure(children : any) : JSX.Element<IMenuItem> {
+    public createInitialStructure(children : JSXElement) : JSXElement {
         if (!this.attrs.action) {
             this.attrs.action = this.noOp;
         }
@@ -30,7 +30,7 @@ export class MenuItem extends EditorCustomElement<IMenuItem> {
 
 }
 
-export class MenuBar extends EditorCustomElement<IMenuBarAttributes> {
+export class MenuBar extends EditorHTMLElement<IMenuBarAttributes> {
 
     private menus : Indexable<MenuItem>;
 
@@ -40,7 +40,7 @@ export class MenuBar extends EditorCustomElement<IMenuBarAttributes> {
     }
 
     protected getDomData() : IDomData {
-        return {tagName : "div", classList: "menu-bar" }
+        return { tagName: "div", classList: "menu-bar" }
     }
 
     private getMenuParent(tokenizedPath : string[]) : any {
@@ -73,7 +73,11 @@ export class MenuBar extends EditorCustomElement<IMenuBarAttributes> {
     }
 
     public onRendered() {
-        //this.createMenuItem({ path: "View/Save As" });
+        this.createMenuItem({
+            path: "File/Save As", action: () => {
+                EditorRuntime.getScene().save();
+            }
+        });
         // this.createMenuItem({ path: "View/Save As/JPG" });
         // this.createMenuItem({ path: "View/Save As/PNG" });
         // this.createMenuItem({ path: "View/Save As/PDF" });
@@ -81,7 +85,7 @@ export class MenuBar extends EditorCustomElement<IMenuBarAttributes> {
     }
 
     public createInitialStructure(children : any) : JSXElement {
-        return <ul x-child-root class="menu-bar-root"></ul>
+        return <ul x-child-root class="menu-bar-root"/>
     }
 
 }
@@ -102,6 +106,7 @@ createStyleSheet(`<style>
 .menu-bar ul {
     margin: 0 0 1em 0;
     padding: 0;
+    z-index:10;
 }
 
 .menu-bar-root {
@@ -124,9 +129,9 @@ createStyleSheet(`<style>
     list-style: none;
 }
 
-
 .menu-item:hover > .sub-menu {
     display: block;
+    background-color: whitesmoke;
 }
 
 .expand-left {

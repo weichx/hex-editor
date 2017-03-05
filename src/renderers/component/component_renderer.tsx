@@ -1,4 +1,3 @@
-import {EditorCustomElement} from "../../editor_element/editor_custom_element";
 import {PropertyRenderer} from "../property/property_renderer";
 import {Horizontal} from "../../ui_elements/horizontal";
 import {ToggleIcon} from "../../ui_elements/icon";
@@ -9,12 +8,13 @@ import {WindowColors} from "../../editor/editor_theme";
 import {getExposedFieldMap} from "./expose_as";
 import {Component} from "../../runtime/component";
 import {TypeOf} from "../../runtime/interfaces/i_typeof";
+import {EditorHTMLElement} from "../../editor_element/editor_html_element";
 
 interface IAttrs<T extends Component> {
     component : T;
 }
 
-export class ComponentRenderer<T extends Component> extends EditorCustomElement<IAttrs<T>> {
+export class ComponentRenderer<T extends Component> extends EditorHTMLElement<IAttrs<T>> {
 
     protected editorDataMap = getExposedFieldMap(this.attrs.component);
     protected component = this.attrs.component as T;

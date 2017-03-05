@@ -1,5 +1,6 @@
-import {AppElement} from "./runtime/app_element";
-import {Component} from "./runtime/component";
+import {AppElement} from "../runtime/app_element";
+import {Component} from "../runtime/component";
+import {Asset} from "../runtime/asset";
 
 export interface IPrefabDefinition {
     name: string;
@@ -7,13 +8,16 @@ export interface IPrefabDefinition {
     components: any[]
 }
 
-export class PrefabTemplate {
+interface ComponentTemplate {}
 
-    public name : string;
+export class PrefabTemplate extends Asset {
+
     private assetDef : IPrefabDefinition;
+    private children : Array<PrefabTemplate>;
+    private components : Array<ComponentTemplate>;
 
     constructor(assetDef : any) {
-        this.name = assetDef.name;
+        super(assetDef);
         this.assetDef = assetDef;
     }
 

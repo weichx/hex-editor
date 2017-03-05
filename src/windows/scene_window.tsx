@@ -12,7 +12,7 @@ import {clamp} from "../util";
 import {DragAction} from "../editor/drag_actions/drag_action";
 import {PrefabDragAction} from "../editor/drag_actions/prefab_drag_action";
 import {SceneRectTool} from "./scene/rect_tool";
-import {LayoutComponent} from "../runtime/components/layout/layout_component";
+import {LayoutComponent} from "../runtime/components/layout/layout";
 
 export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
     public element = this;
@@ -247,7 +247,7 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
         const selection = EditorRuntime.getSelection();
         if(!selection) return;
 
-        const position = selection.getPosition();
+        const position = selection.getLocalPosition();
         const w = selection.getWidth();
         const h = selection.getHeight();
 
@@ -270,6 +270,15 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
         this.selectionOutline.drawCircle(position.x, position.y + h, 5);
 
         this.selectionOutline.endFill();
+        const parent = selection.getParent();
+        let parentPosition : Vector2 = null;
+        if(parent) {
+            parentPosition = selection.getParent().getPosition();
+        }
+        else {
+            parentPosition = selection.getPosition();
+        }
+        this.selectionOutline.position.set(parentPosition.x, parentPosition.y);
     }
 
     public createInitialStructure(children : any) : JSXElement {

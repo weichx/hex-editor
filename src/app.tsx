@@ -1,4 +1,3 @@
-import {EditorCustomElement} from "./editor_element/editor_custom_element";
 import {SplitPane} from "./ui_elements/split_pane";
 import {WindowFrame} from "./chrome/editor_window_frame";
 import {HierarchyWindow} from "./windows/hierarchy/hierarchy_window";
@@ -6,8 +5,10 @@ import {SceneWindow} from "./windows/scene_window";
 import {InspectorWindow} from "./windows/inspector_window";
 import {WindowColors} from "./editor/editor_theme";
 import {AssetWindow} from "./windows/asset/asset_window";
+import {MenuBar} from "./chrome/menu_bar";
+import {EditorHTMLElement} from "./editor_element/editor_html_element";
 
-export class EditorApplication extends EditorCustomElement<{}> {
+export class EditorApplication extends EditorHTMLElement<{}> {
 
     protected getDomData() : IDomData {
         return { tagName: "div", classList: "editor-application" };
@@ -15,6 +16,7 @@ export class EditorApplication extends EditorCustomElement<{}> {
 
     public createInitialStructure(children : any) : JSXElement {
         return [
+            <MenuBar/>,
             <SplitPane distribution={0.2}>
                 <SplitPane axis={SplitDirection.Horizontal}>
 

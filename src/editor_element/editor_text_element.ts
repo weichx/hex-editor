@@ -14,7 +14,7 @@ export class EditorTextElement extends EditorElement {
         return this.textNode as any;
     }
 
-    public addChild(child : EditorElement) {
+    public addChild(child : EditorElement) : boolean {
         throw new Error("Text Nodes cannot have children");
     }
 

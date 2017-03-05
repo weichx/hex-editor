@@ -36,10 +36,9 @@ export class AppElement {
         this.children = [];
         this.components = [];
         this.localPosition = new Vector2();
-        this.parentPosition = new Vector2();
+        this.parentPosition = (this.parent) ? this.parent.getPosition() : new Vector2();
         if(this.parent) {
-            this.parentPosition.x = this.parent.localPosition.x;
-            this.parentPosition.y = this.parent.localPosition.y;
+            this.parent.children.push(this);
         }
         this.width = 0;
         this.height = 0;
@@ -152,6 +151,7 @@ export class AppElement {
     }
 
     public setParent(parent : AppElement) : void {
+        if(parent && parent === this.parent) return;
         parent = parent || AppElement.Root;
         const oldParent = this.parent;
         this.parent = parent;
@@ -193,7 +193,7 @@ export class AppElement {
     public getDepth() : number {
         if (this === AppElement.Root) return 0;
         let ptr = this.parent;
-        let depth = 0;
+        let depth = 1;
         while (ptr !== AppElement.Root) {
             depth++;
             ptr = ptr.parent;

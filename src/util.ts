@@ -1,43 +1,4 @@
 
-export function getBits(value : number, offset : number, bitCount : number) : number {
-    return (value >> offset) & (1 << bitCount) - 1;
-}
-
-//todo -- untested
-function getMask(start :number, end : number) : number {
-    return (~0 >> (32 - start - 1)) & (~0 << (32 - end))
-}
-
-export function set1stByte(target : number, value : number) {
-    return (target & 0xffffff00) | (value & 0x000000ff);
-}
-
-export function setBytes(target : number, value : number, byteCount : number, offset : number) : number {
-    // int x = (number >> (8*n)) & 0xff;
-    return (target & 0xff000000) | (value & 0x00ffffff)
-}
-
-export function getNthByte(value : number, byteNumber : number) : number {
-    return (value >> (8* byteNumber)) & 0xff;
-}
-
-//todo -- untested
-export function setBits(target : number, value : number, offset : number, bitCount : number) : number {
-    var mask = getMask(0, bitCount);
-    return (target & ~mask) | (value & mask);
-}
-
-export function setHighLowBits(high : number, low : number) : number {
-    return (high << 16) | (low & 0xffff);
-}
-
-export function getLow16Bits(value : number) : number {
-    return value & 0xFFFF;
-}
-
-export function getHigh16Bits(value : number) : number {
-    return (value >> 16) & ( 1 << 16) - 1;
-}
 
 export function setDefault<T>(value : any, defaultValue : T) : T {
    if(value === void 0 || typeof defaultValue !== typeof value) {
@@ -92,6 +53,17 @@ export function clamp01(value : number) : number {
     return value;
 }
 
+export function titlize(input : string) : string {
+    return input.replace(/([A-Z])/g, ' $1')// insert a space before all caps
+        .replace(/^./, function (str) { return str.toUpperCase(); });   // uppercase the first character
+}
+
+var STRING_DASHERIZE_REGEXP = (/([a-z\d])([A-Z])/g);
+export function dasherize(str : string) : string {
+    str = str.replace(/_/g, '-');
+    return str.replace(STRING_DASHERIZE_REGEXP, '$1-$2').toLowerCase();
+}
+
 export function hitTestRect(x : number, y : number, w : number, h : number, point : {x: number, y : number}) {
     return point.x >= x && x + w >= point.x && point.y >= y && y + h >= point.y
 }
@@ -105,14 +77,12 @@ export function hitTestLine(x1 : number, y1 : number, x2 : number, y2 : number, 
 }
 
 export function randomPositiveInteger() {
-    return ~~(Math.random() * Number.MAX_SAFE_INTEGER);
+    return getRandomInt(0, Number.MAX_SAFE_INTEGER);
 }
 
-export function titlize(input : string) : string {
-    return input.replace(/([A-Z])/g, ' $1')// insert a space before all caps
-        .replace(/^./, function (str) { return str.toUpperCase(); });   // uppercase the first character
+export function getRandomInt(min : number, max : number) : number {
+    return ~~(Math.random() * (max - min + 1)) + min;
 }
-
 
 function distanceSquaredToLineSegment2(lx1 : number, ly1 : number, ldx : number, ldy : number, lineLengthSquared : number, px : number, py : number) {
     var t; // t===0 at line pt 1 and t ===1 at line pt 2

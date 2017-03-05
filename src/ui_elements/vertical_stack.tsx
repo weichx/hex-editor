@@ -1,6 +1,6 @@
-import {EditorCustomElement} from "../editor_element/editor_custom_element";
+import {EditorHTMLElement} from "../editor_element/editor_html_element";
 
-export class VerticalBase<T> extends EditorCustomElement<T> {
+export class VerticalBase<T> extends EditorHTMLElement<T> {
 
     protected getDomData() : IDomData {
         return VerticalBase.DomData;

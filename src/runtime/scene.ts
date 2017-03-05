@@ -1,17 +1,69 @@
 import {AppElement} from "./app_element";
 import {Component} from "./component";
+import {traverseChildren} from "../util";
+import {setTypePath} from "./persistance/type";
+
+@setTypePath("Runtime/Scene")
 export class Scene {
 
-    private isRendered : boolean;
     private sceneRoots : AppElement[];
 
     constructor() {
-        this.isRendered = false;
         this.sceneRoots = [];
     }
 
-    public save() : any {
+    public save() {
 
+        var generateId = (function() {
+            let id = 1;
+            return function() {
+                return id++;
+            }
+        })();
+
+        function addToMap(o : object) : void {
+            if(objectIdMap.has(o)) return;
+            objectIdMap.set(o, generateId());
+        }
+
+        let json : any = {};
+        let objectIdMap = new Map<object, number>();
+        //give all objects an id
+
+        traverseChildren(AppElement.Root, (child : AppElement) => {
+
+            addToMap(child);
+
+            objectIdMap.set(child, generateId());
+            child.getAllComponents().forEach((component : Component) => {
+
+                addToMap(child);
+
+                Object.keys(component).forEach((key : string) => {
+                    const value = (component as any)[key];
+                    if(value && typeof value === "object") {
+                        addToMap(child);
+                    }
+                });
+
+            });
+        });
+
+        traverseChildren(AppElement.Root, (child : AppElement) => {
+            json[objectIdMap.get(child)] =  {
+                id: child.id,
+                name: child.name,
+                parentId: child.getParent().id,
+                localPosition: child.getLocalPosition(),
+                localRotation: child.getRotation(),
+                scale: child.getScale(),
+                width: child.getWidth(),
+                height: child.getHeight(),
+                components: child.getAllComponents().forEach((component : Component) => {
+                    json[objectIdMap.get(component)] = "";
+                })
+            }
+        });
     }
 
     public destroy() : void {
@@ -26,15 +78,15 @@ export class Scene {
         // }
     }
 
-    private hydrateElement(definition : any) : AppElement {
-        const appElement = new AppElement(definition.name);
+    private hydrateElement(definition : any, parent? : AppElement) : AppElement {
+        const appElement = new AppElement(definition.name, parent);
         for (let j = 0; j < definition.components.length; j++) {
             const compDesc = definition.components[j];
             const type = Component.getComponentFromPath(compDesc.type);
             const cmp = appElement.addComponent(type);
         }
         for (let k = 0; k < definition.children.length; k++) {
-            this.hydrateElement(definition.children[k]).setParent(appElement);
+            this.hydrateElement(definition.children[k], appElement);
         }
         return appElement;
     }

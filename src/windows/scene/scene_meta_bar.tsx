@@ -1,8 +1,8 @@
-import {EditorCustomElement} from "../../editor_element/editor_custom_element";
 import {Button} from "../../ui_elements/button";
 import {SceneWindow} from "../scene_window";
 import {WindowColors} from "../../editor/editor_theme";
 import {BreakpointType} from "../../runtime/breakpoint";
+import {EditorHTMLElement} from "../../editor_element/editor_html_element";
 
 function round(places : number) {
     return function (value : number) {
@@ -10,7 +10,7 @@ function round(places : number) {
     }
 }
 
-export class SceneMetaBar extends EditorCustomElement<{}> {
+export class SceneMetaBar extends EditorHTMLElement<{}> {
 
     private scene : SceneWindow;
     private sceneSizeButtons : Button[];

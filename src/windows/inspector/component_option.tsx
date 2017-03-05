@@ -1,10 +1,10 @@
-import {EditorCustomElement} from "../../editor_element/editor_custom_element";
+import {EditorHTMLElement} from "../../editor_element/editor_html_element";
 
 interface IComponentOptionAttr extends IHTMLAttribute {
     label : string;
 }
 
-export class ComponentOption extends EditorCustomElement<IComponentOptionAttr> {
+export class ComponentOption extends EditorHTMLElement<IComponentOptionAttr> {
 
     public getDomData() : IDomData {
         return { tagName: "div", classList: "component-item" }

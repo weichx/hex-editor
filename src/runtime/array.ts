@@ -17,7 +17,7 @@ Array.prototype.contains = function<T>(item : T) : boolean {
         if(this[i] === item) return true;
     }
     return false;
-}
+};
 
 Array.prototype.getFirst = function () {
     return this[0];
@@ -54,12 +54,14 @@ Array.prototype.removeAt = function (index : number) {
 };
 
 Array.prototype.insert = function<T>(item : T, index : number) : void {
+    let i = this.length;
     this.length++;
-    let len = this.length;
-    let i = index + 1;
-    while(i < len) {
-        this[i - 1] = this[i];
-        i++;
+    if(index >= this.length) {
+        this[this.length - 1] = item;
+        return;
+    }
+    while(i != index) {
+        this[i] = this[--i];
     }
     this[index] = item;
 };

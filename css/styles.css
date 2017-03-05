@@ -14,19 +14,19 @@ html, body, #root {
     display: none !important;
 }
 
+.invisible {
+    visibility: hidden !important;
+}
+
 .scene-render-root * {
     position: absolute;
     display: block;
     transform: translate(0, 0);
-    overflow:hidden;
+    overflow: visible;
     margin: 0;
     padding: 0;
     top: 0;
     left: 0;
-}
-
-.scene-render-root :first-child {
-    overflow: visible;
 }
 
 .scene-render-root {

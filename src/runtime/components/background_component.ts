@@ -1,12 +1,15 @@
 import {component, Component} from "../component";
 import {Color} from "../color";
 import {CommandType} from "../enums/e_command_type";
-import {exposeAs} from "../../renderers/component/expose_as";
+import {inspector} from "../../renderers/component/expose_as";
+import {serializeAs} from "cerialize";
 
 @component("Paint/Background")
 export class BackgroundComponent extends Component {
 
-    @exposeAs(Color) private color : Color = Color.White;
+    @inspector(Color)
+    @serializeAs(Color)
+    private color : Color = Color.White;
 
     public setColor(color : Color) : void {
         this.color.r = color.r;

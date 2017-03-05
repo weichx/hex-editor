@@ -1,7 +1,7 @@
 import {Button} from "../ui_elements/button";
-import {EditorCustomElement} from "../editor_element/editor_custom_element";
+import {EditorHTMLElement} from "../editor_element/editor_html_element";
 
-export class Toolbar extends EditorCustomElement<{}> {
+export class Toolbar extends EditorHTMLElement<{}> {
 
     public getDomData() : IDomData {
         return {

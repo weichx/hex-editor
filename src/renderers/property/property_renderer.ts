@@ -1,15 +1,15 @@
 import {EditorElement} from "../../editor_element/editor_element";
-import {EditorCustomElement} from "../../editor_element/editor_custom_element";
 import {createElement} from "../../editor_element/element_renderer";
 import {Component} from "../../runtime/component";
 import {TypeOf} from "../../runtime/interfaces/i_typeof";
+import {EditorHTMLElement} from "../../editor_element/editor_html_element";
 
 export interface IPropertyRendererAttrs {
     component : Component & Indexable<any>;
     editorData : IEditorAnnotationData;
 }
 
-export class PropertyRenderer<T> extends EditorCustomElement<T & IPropertyRendererAttrs> {
+export class PropertyRenderer<T> extends EditorHTMLElement<T & IPropertyRendererAttrs> {
 
     public createInitialStructure(children : any) : JSXElement {
         return children;

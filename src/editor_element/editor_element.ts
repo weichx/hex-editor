@@ -1,5 +1,4 @@
 import {traverse, traverseRootFirst} from "../util";
-import {Rectangle} from "../runtime/rectangle";
 import {Vector2} from "../runtime/vector2";
 
 interface IEventDescriptor {
@@ -70,75 +69,58 @@ export class EditorElement {
         return (this.htmlNode) ? this.htmlNode.getBoundingClientRect() : null;
     }
 
-    public addChild<T>(child : EditorElement) : void {
-
-        if (this.isDescendant(child)) {
-            debugger;
-        }
-
-        if (child.parent) {
-            child.parent.removeChild(child);
-            //if rendered remove  dom
-            if (child.htmlNode) {
-                child.htmlNode.remove();
-            }
-        }
-
-        const oldParent = child.parent;
-        child.parent = this;
-        this.children.push(child);
-
-        if (this.htmlNode && child.htmlNode) {
-            this.htmlNode.appendChild(child.htmlNode);
-        }
-
-        if (!child.isRendered() && this.isRendered()) {
-            child.render(this.htmlNode);
-        }
-        else if (!child.isMounted() && this.isMounted()) {
-            child.mount(this.htmlNode);
-        }
-
-        child.onParentChanged(this, oldParent);
-
+    public addChild<T>(child : EditorElement) : boolean {
+        return this.insertChild(child, this.children.length);
     }
 
-    public insertChild<T>(child : EditorElement, index : number) : void {
+    public insertChild<T>(child : EditorElement, index : number) : boolean {
+        if(!child) return;
         if (index < 0) index = 0;
         if (index > this.children.length) index = this.children.length;
-        if (index === this.children.length) {
-            return this.addChild(child);
-        }
+        if (this.children[index] === child) return;
 
-        if (this.isDescendant(child)) {
-            debugger;
-        }
-
-        if (child.parent) {
-            child.parent.removeChild(child);
-            if (child.htmlNode) {
-                child.htmlNode.remove();
-            }
+        if (this.isAncestor(child)) {
+            return false;
         }
 
         const oldParent = child.parent;
-        child.parent = this;
-        this.children.insert(child, index);
+        const current = this.children[index];
+        const moved = child.parent === this;
 
-        if (!child.isRendered() && this.isRendered()) {
+        if (child.parent) {
+            child.parent.children.remove(child);
+        }
+
+        this.children.insert(child, index);
+        child.parent = this;
+
+        if (this.isMounted() && child.isMounted()) {
+            if (current) {
+                this.htmlNode.insertBefore(child.htmlNode, current.htmlNode);
+            }
+            else {
+                this.htmlNode.appendChild(child.htmlNode);
+            }
+        }
+        else if (!child.isRendered() && this.isRendered()) {
             child.render(this.htmlNode);
         }
         else if (!child.isMounted() && this.isMounted()) {
             child.mount(this.htmlNode);
         }
 
-        child.onParentChanged(this, oldParent);
+        if(!moved && oldParent && child.parent && child.isMounted()) {
+            child.onParentChanged(this, oldParent);
+        }
 
+        if(moved) child.onMoved(index);
+
+        return true;
     }
 
     protected render(mountPoint : HTMLElement) : void {
         this.mount(mountPoint);
-
+        //todo get rid of onRerendered
         traverse(this, function (element : EditorElement) {
             if (element.isRendered()) {
                 element.onRerendered();
@@ -186,13 +168,9 @@ export class EditorElement {
         throw new Error("Not Implemented, use a subclass");
     }
 
-    public removeChild(child : EditorElement) : void {
-        this.children.remove(child);
-    }
-
     public orphan() : void {
         if (!this.isOrphaned()) {
-            this.parent.removeChild(this);
+            this.parent.children.remove(this);
             this.getDomNode().remove();
             this.parent = null;
         }
@@ -275,6 +253,10 @@ export class EditorElement {
         return this.childRoot;
     }
 
+    public getChildCount() : number {
+        return this.children.length;
+    }
+
     public hasXId(idName : string) : boolean {
         const dom = this.getDomNode();
         return dom.getAttribute("x-id") === idName;
@@ -323,7 +305,7 @@ export class EditorElement {
         if (this.parent) {
             if (!this.parent.isDestroyed()) {
                 this.getDomNode().remove();
-                this.parent.removeChild(this);
+                this.parent.children.remove(this);
             }
         }
 
@@ -382,18 +364,18 @@ export class EditorElement {
     }
 
     public removeEventListener(evtName : string, fn : (e : any) => void) : boolean {
-        // if (!this.registeredEventHandlers) return false;
-        // for (let i = 0; i < this.registeredEventHandlers.length; i++) {
-        //     const handler = this.registeredEventHandlers[i];
-        //     if (handler.type === evtName && handler.fn === fn) {
-        //         if (this.htmlNode) {
-        //             this.htmlNode.removeEventListener(evtName, fn);
-        //         }
-        //         this.registeredEventHandlers.splice(i, 1);
-        //         return true;
-        //     }
-        // }
-        return false;
+        const evtList = pendingEventMap.get(this);
+        if (!evtList) return;
+        for (let i = 0; i < evtList.length; i++) {
+            const evt = evtList[i];
+            if (evt.type === evtName && evt.fn === fn) {
+                if (this.htmlNode) {
+                    this.htmlNode.removeEventListener(evtName, fn);
+                }
+                evtList.removeAt(i);
+                return true;
+            }
+        }
     }
 
     public createInitialStructure(children : any) : JSXElement {
@@ -420,6 +402,6 @@ export class EditorElement {
 
     public onEnabled() { }
 
-    public onStructured() { }
+    public onMoved(index : number) : void {}
 
 }

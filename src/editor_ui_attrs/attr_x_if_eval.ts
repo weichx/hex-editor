@@ -1,10 +1,9 @@
 import {EditorElement} from "../editor_element/editor_element";
 import {IPoolable2, ObjectPool2} from "../object_pool";
-import {ILifecycle} from "../editor/editor_runtime";
 
 interface IXIfEval extends IPoolable2<EditorElement, () => boolean> {}
 
-export class XIfEval implements IXIfEval, ILifecycle {
+export class XIfEval implements IXIfEval {
 
     public element : EditorElement;
     private getterFn : () => boolean;

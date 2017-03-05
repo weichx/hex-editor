@@ -1,4 +1,4 @@
-import {LayoutComponent, ISizingComponent} from "./layout_component";
+import {LayoutComponent, ISizingComponent} from "./layout";
 import {exposeAs} from "../../../renderers/component/expose_as";
 import {EnumSelect} from "../../../util";
 import {component, Component} from "../../component";

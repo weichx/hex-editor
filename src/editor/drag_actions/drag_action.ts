@@ -23,6 +23,13 @@ export class DragAction {
     public static MouseOver = onDragActionMouseOver;
     public static Drop = onDragActionDrop;
 
+    //todo -- would be nicer to have drag actions live on a prototype
+    public static Inherit(target : any) : any {
+        const handlers = DragAnnotationMap.get(target.__proto__);
+        if(!handlers) return;
+        DragAnnotationMap.set(target, handlers.clone());
+    }
+
     public static invokeDropHandlers(element : EditorElement, action : DragAction) {
         DragAction.invoke(element, action, "drop");
     }
@@ -77,6 +84,14 @@ class DragAnnotationHandler {
                 (element as any)[annotation.methodName](action);
             }
         }
+    }
+    public clone() : DragAnnotationHandler {
+        const retn = new DragAnnotationHandler();
+        retn.handlers = this.handlers.slice(0);
+        this.typeSet.forEach(function(t : any) {
+            retn.typeSet.add(t);
+        });
+        return retn;
     }
 
 }

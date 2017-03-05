@@ -45,14 +45,15 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	__webpack_require__(44);
-	__webpack_require__(20);
-	__webpack_require__(42);
 	__webpack_require__(45);
-	__webpack_require__(46);
-	__webpack_require__(41);
 	__webpack_require__(47);
 	__webpack_require__(48);
+	__webpack_require__(20);
+	__webpack_require__(43);
+	__webpack_require__(49);
+	__webpack_require__(50);
+	__webpack_require__(42);
+	__webpack_require__(51);
 	__webpack_require__(12);
 	__webpack_require__(15);
 	__webpack_require__(11);
@@ -61,112 +62,121 @@
 	__webpack_require__(16);
 	__webpack_require__(18);
 	__webpack_require__(32);
-	__webpack_require__(49);
+	__webpack_require__(52);
 	__webpack_require__(3);
 	__webpack_require__(4);
 	__webpack_require__(17);
-	__webpack_require__(50);
+	__webpack_require__(53);
 	__webpack_require__(10);
 	__webpack_require__(7);
 	__webpack_require__(8);
-	__webpack_require__(51);
-	__webpack_require__(35);
-	__webpack_require__(52);
-	__webpack_require__(53);
 	__webpack_require__(54);
-	__webpack_require__(19);
-	__webpack_require__(2);
 	__webpack_require__(55);
-	__webpack_require__(43);
-	__webpack_require__(9);
+	__webpack_require__(36);
 	__webpack_require__(56);
-	__webpack_require__(39);
 	__webpack_require__(57);
 	__webpack_require__(58);
-	__webpack_require__(25);
 	__webpack_require__(59);
+	__webpack_require__(19);
+	__webpack_require__(2);
 	__webpack_require__(60);
+	__webpack_require__(44);
+	__webpack_require__(9);
+	__webpack_require__(40);
 	__webpack_require__(61);
 	__webpack_require__(62);
+	__webpack_require__(25);
 	__webpack_require__(63);
-	__webpack_require__(65);
-	__webpack_require__(34);
+	__webpack_require__(46);
 	__webpack_require__(64);
-	__webpack_require__(67);
-	__webpack_require__(36);
-	__webpack_require__(38);
-	__webpack_require__(37);
-	__webpack_require__(68);
+	__webpack_require__(65);
 	__webpack_require__(66);
-	__webpack_require__(69);
-	__webpack_require__(70);
-	__webpack_require__(71);
-	__webpack_require__(28);
+	__webpack_require__(68);
+	__webpack_require__(34);
+	__webpack_require__(67);
 	__webpack_require__(72);
+	__webpack_require__(73);
+	__webpack_require__(37);
+	__webpack_require__(39);
+	__webpack_require__(38);
+	__webpack_require__(74);
+	__webpack_require__(75);
+	__webpack_require__(71);
+	__webpack_require__(76);
+	__webpack_require__(77);
+	__webpack_require__(78);
+	__webpack_require__(28);
+	__webpack_require__(79);
 	__webpack_require__(27);
 	__webpack_require__(22);
 	__webpack_require__(31);
 	__webpack_require__(21);
-	__webpack_require__(73);
-	__webpack_require__(74);
+	__webpack_require__(80);
+	__webpack_require__(81);
+	__webpack_require__(82);
+	__webpack_require__(35);
 	__webpack_require__(26);
 	__webpack_require__(24);
 	__webpack_require__(33);
+	__webpack_require__(83);
 	__webpack_require__(23);
 	__webpack_require__(14);
 	__webpack_require__(29);
-	__webpack_require__(75);
-	__webpack_require__(76);
-	__webpack_require__(77);
-	__webpack_require__(13);
-	__webpack_require__(78);
-	__webpack_require__(80);
-	__webpack_require__(79);
-	__webpack_require__(81);
-	__webpack_require__(89);
-	__webpack_require__(83);
 	__webpack_require__(84);
-	__webpack_require__(111);
-	__webpack_require__(112);
-	__webpack_require__(101);
-	__webpack_require__(99);
-	__webpack_require__(113);
-	__webpack_require__(114);
-	__webpack_require__(115);
-	__webpack_require__(116);
-	__webpack_require__(117);
-	__webpack_require__(118);
+	__webpack_require__(85);
+	__webpack_require__(86);
+	__webpack_require__(87);
+	__webpack_require__(13);
+	__webpack_require__(88);
+	__webpack_require__(90);
+	__webpack_require__(89);
+	__webpack_require__(91);
 	__webpack_require__(119);
+	__webpack_require__(118);
+	__webpack_require__(100);
+	__webpack_require__(99);
+	__webpack_require__(93);
+	__webpack_require__(94);
 	__webpack_require__(121);
 	__webpack_require__(122);
-	__webpack_require__(100);
-	__webpack_require__(87);
-	__webpack_require__(103);
+	__webpack_require__(112);
 	__webpack_require__(123);
+	__webpack_require__(110);
 	__webpack_require__(124);
-	__webpack_require__(95);
-	__webpack_require__(104);
 	__webpack_require__(125);
-	__webpack_require__(120);
-	__webpack_require__(82);
-	__webpack_require__(97);
-	__webpack_require__(94);
-	__webpack_require__(107);
-	__webpack_require__(102);
-	__webpack_require__(93);
 	__webpack_require__(126);
+	__webpack_require__(127);
+	__webpack_require__(128);
+	__webpack_require__(129);
+	__webpack_require__(130);
+	__webpack_require__(132);
+	__webpack_require__(133);
+	__webpack_require__(111);
+	__webpack_require__(97);
+	__webpack_require__(114);
+	__webpack_require__(134);
+	__webpack_require__(135);
 	__webpack_require__(106);
+	__webpack_require__(115);
+	__webpack_require__(136);
+	__webpack_require__(131);
+	__webpack_require__(92);
 	__webpack_require__(108);
 	__webpack_require__(105);
-	__webpack_require__(109);
-	__webpack_require__(88);
-	__webpack_require__(86);
-	__webpack_require__(85);
-	__webpack_require__(92);
-	__webpack_require__(96);
+	__webpack_require__(137);
+	__webpack_require__(113);
+	__webpack_require__(104);
+	__webpack_require__(138);
+	__webpack_require__(117);
+	__webpack_require__(116);
 	__webpack_require__(98);
-	__webpack_require__(90);
-	module.exports = __webpack_require__(91);
+	__webpack_require__(96);
+	__webpack_require__(95);
+	__webpack_require__(103);
+	__webpack_require__(107);
+	__webpack_require__(109);
+	__webpack_require__(101);
+	module.exports = __webpack_require__(102);
 
 
 /***/ },
@@ -177,9 +187,9 @@
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const editor_runtime_1 = __webpack_require__(2);
 	const element_renderer_1 = __webpack_require__(5);
-	const editor_binding_element_1 = __webpack_require__(41);
-	const browser_runtime_1 = __webpack_require__(42);
-	const editor_worker_1 = __webpack_require__(43);
+	const editor_binding_element_1 = __webpack_require__(42);
+	const browser_runtime_1 = __webpack_require__(43);
+	const editor_worker_1 = __webpack_require__(44);
 	window.AppRootElementId = 0;
 	window.Runtime = null;
 	window.HexEnvironmentFlag = 0;
@@ -259,8 +269,8 @@
 	const e_command_type_1 = __webpack_require__(28);
 	const component_1 = __webpack_require__(34);
 	const vector2_1 = __webpack_require__(14);
-	const drag_action_1 = __webpack_require__(35);
-	const horizontal_stack_layout_component_1 = __webpack_require__(36);
+	const drag_action_1 = __webpack_require__(36);
+	const horizontal_stack_layout_1 = __webpack_require__(37);
 	let mouseCache = new vector2_1.Vector2();
 	class UpdateNode extends tree_1.ShadowTreeNode {
 	    traverse() {
@@ -294,10 +304,12 @@
 	    constructor() {
 	        super();
 	        this.selectedElement = null;
+	        this.editorApplicationRoot = null;
 	        this.input = new editor_input_1.EditorInput();
 	        this.updateTree = new tree_1.ShadowTree(UpdateNode);
 	        this.draggedAction = null;
 	        this.lastEnteredElement = null;
+	        this.activeContextMenu = null;
 	        this.rootDomNode = null;
 	    }
 	    setCursor(cursorString) {
@@ -315,7 +327,7 @@
 	        if (!app_element_1.AppElement.Root) {
 	            this.suppressAddElement(() => {
 	                app_element_1.AppElement.Root = new app_element_1.AppElement("__Root__");
-	                app_element_1.AppElement.Root.addComponent(horizontal_stack_layout_component_1.HorizontalStackLayout);
+	                app_element_1.AppElement.Root.addComponent(horizontal_stack_layout_1.HorizontalStackLayout);
 	                this.appElementRegistry[0] = app_element_1.AppElement.Root;
 	            });
 	        }
@@ -343,8 +355,7 @@
 	                if (appElement.id === 0)
 	                    continue;
 	                const parentId = parentMap[appElement.id] || 0;
-	                appElement.parent = this.appElementRegistry[parentId];
-	                appElement.parent.children.push(appElement);
+	                appElement.setParent(this.appElementRegistry[parentId]);
 	            }
 	            for (let i = 0; i < ids.length; i++) {
 	                const appElement = this.appElementRegistry[ids[i]];
@@ -375,6 +386,8 @@
 	        this.emit(evt_selection_changed_1.SelectionChanged, newSelection, oldSelection);
 	    }
 	    beginDragAction(dragAction) {
+	        if (!dragAction)
+	            return;
 	        if (this.draggedAction) {
 	            throw new Error("Cannot initiate another drag action while one exists!");
 	        }
@@ -457,9 +470,24 @@
 	            return null;
 	        return element.getAncestorByType(type, true);
 	    }
+	    showContextMenu(menu) {
+	        if (this.activeContextMenu) {
+	            this.activeContextMenu.destroy();
+	        }
+	        this.activeContextMenu = menu;
+	        this.editorApplicationRoot.addChild(menu);
+	        const mp = this.input.getMousePosition();
+	        menu.setPosition(mp.x, mp.y);
+	    }
+	    hideContextMenu() {
+	        if (this.activeContextMenu) {
+	            this.activeContextMenu.destroy();
+	        }
+	    }
 	    start(appRoot, attrs = {}) {
-	        this.loadScene(__webpack_require__(40));
-	        element_renderer_1.render(element_renderer_1.createElement(appRoot, attrs), document.getElementById('root'));
+	        this.loadScene(__webpack_require__(41));
+	        this.editorApplicationRoot = element_renderer_1.createElement(appRoot, attrs);
+	        element_renderer_1.render(this.editorApplicationRoot, document.getElementById('root'));
 	        window.addEventListener("resize", () => {
 	            this.emit(evt_window_resized_1.WindowResized, window.innerWidth, window.innerHeight);
 	        });
@@ -537,7 +565,6 @@
 	        }
 	    }
 	    retn.renderContext = renderContext;
-	    retn.onStructured();
 	    retn.onEnabled();
 	    return retn;
 	}
@@ -554,7 +581,6 @@
 	        }
 	    }
 	    retn.renderContext = renderContext;
-	    retn.onStructured();
 	    retn.onEnabled();
 	    render_context_stack_1.RenderContextStack.pop();
 	    return retn;
@@ -597,7 +623,19 @@
 	        EditorRuntime.updateTree.add(xif);
 	    }
 	    if (attributes['x-hidden'] !== void 0) {
-	        element.setVisible(false);
+	        element.setVisible(!attributes['x-hidden']);
+	    }
+	    if (attributes['x-visible'] !== void 0) {
+	        if (attributes['x-visible'])
+	            return;
+	        attributes['class'] = attributes['class'] || "";
+	        attributes['class'] = "invisible " + attributes['class'];
+	    }
+	    if (attributes['x-invisible'] !== void 0) {
+	        if (!attributes['x-invisible'])
+	            return;
+	        attributes['class'] = attributes['class'] || "";
+	        attributes['class'] = "invisible " + attributes['class'];
 	    }
 	    if (attributes['x-child-root']) {
 	        context.setChildRoot(element);
@@ -1026,56 +1064,48 @@
 	        return (this.htmlNode) ? this.htmlNode.getBoundingClientRect() : null;
 	    }
 	    addChild(child) {
-	        if (this.isDescendant(child)) {
-	            debugger;
-	        }
-	        if (child.parent) {
-	            child.parent.removeChild(child);
-	            if (child.htmlNode) {
-	                child.htmlNode.remove();
-	            }
-	        }
-	        const oldParent = child.parent;
-	        child.parent = this;
-	        this.children.push(child);
-	        if (this.htmlNode && child.htmlNode) {
-	            this.htmlNode.appendChild(child.htmlNode);
-	        }
-	        if (!child.isRendered() && this.isRendered()) {
-	            child.render(this.htmlNode);
-	        }
-	        else if (!child.isMounted() && this.isMounted()) {
-	            child.mount(this.htmlNode);
-	        }
-	        child.onParentChanged(this, oldParent);
+	        return this.insertChild(child, this.children.length);
 	    }
 	    insertChild(child, index) {
+	        if (!child)
+	            return;
 	        if (index < 0)
 	            index = 0;
 	        if (index > this.children.length)
 	            index = this.children.length;
-	        if (index === this.children.length) {
-	            return this.addChild(child);
-	        }
-	        if (this.isDescendant(child)) {
-	            debugger;
-	        }
-	        if (child.parent) {
-	            child.parent.removeChild(child);
-	            if (child.htmlNode) {
-	                child.htmlNode.remove();
-	            }
+	        if (this.children[index] === child)
+	            return;
+	        if (this.isAncestor(child)) {
+	            return false;
 	        }
 	        const oldParent = child.parent;
-	        child.parent = this;
+	        const current = this.children[index];
+	        const moved = child.parent === this;
+	        if (child.parent) {
+	            child.parent.children.remove(child);
+	        }
 	        this.children.insert(child, index);
-	        if (!child.isRendered() && this.isRendered()) {
+	        child.parent = this;
+	        if (this.isMounted() && child.isMounted()) {
+	            if (current) {
+	                this.htmlNode.insertBefore(child.htmlNode, current.htmlNode);
+	            }
+	            else {
+	                this.htmlNode.appendChild(child.htmlNode);
+	            }
+	        }
+	        else if (!child.isRendered() && this.isRendered()) {
 	            child.render(this.htmlNode);
 	        }
 	        else if (!child.isMounted() && this.isMounted()) {
 	            child.mount(this.htmlNode);
 	        }
-	        child.onParentChanged(this, oldParent);
+	        if (!moved && oldParent && child.parent && child.isMounted()) {
+	            child.onParentChanged(this, oldParent);
+	        }
+	        if (moved)
+	            child.onMoved(index);
+	        return true;
 	    }
 	    render(mountPoint) {
 	        this.mount(mountPoint);
@@ -1118,12 +1148,9 @@
 	    createDomNode() {
 	        throw new Error("Not Implemented, use a subclass");
 	    }
-	    removeChild(child) {
-	        this.children.remove(child);
-	    }
 	    orphan() {
 	        if (!this.isOrphaned()) {
-	            this.parent.removeChild(this);
+	            this.parent.children.remove(this);
 	            this.getDomNode().remove();
 	            this.parent = null;
 	        }
@@ -1197,6 +1224,9 @@
 	    getChildRoot() {
 	        return this.childRoot;
 	    }
+	    getChildCount() {
+	        return this.children.length;
+	    }
 	    hasXId(idName) {
 	        const dom = this.getDomNode();
 	        return dom.getAttribute("x-id") === idName;
@@ -1238,7 +1268,7 @@
 	        if (this.parent) {
 	            if (!this.parent.isDestroyed()) {
 	                this.getDomNode().remove();
-	                this.parent.removeChild(this);
+	                this.parent.children.remove(this);
 	            }
 	        }
 	        this.renderContext = null;
@@ -1281,7 +1311,19 @@
 	        }
 	    }
 	    removeEventListener(evtName, fn) {
-	        return false;
+	        const evtList = pendingEventMap.get(this);
+	        if (!evtList)
+	            return;
+	        for (let i = 0; i < evtList.length; i++) {
+	            const evt = evtList[i];
+	            if (evt.type === evtName && evt.fn === fn) {
+	                if (this.htmlNode) {
+	                    this.htmlNode.removeEventListener(evtName, fn);
+	                }
+	                evtList.removeAt(i);
+	                return true;
+	            }
+	        }
 	    }
 	    createInitialStructure(children) {
 	        return children;
@@ -1296,7 +1338,7 @@
 	    onMounted() { }
 	    onDisabled() { }
 	    onEnabled() { }
-	    onStructured() { }
+	    onMoved(index) { }
 	}
 	exports.EditorElement = EditorElement;
 
@@ -1307,42 +1349,6 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	function getBits(value, offset, bitCount) {
-	    return (value >> offset) & (1 << bitCount) - 1;
-	}
-	exports.getBits = getBits;
-	function getMask(start, end) {
-	    return (~0 >> (32 - start - 1)) & (~0 << (32 - end));
-	}
-	function set1stByte(target, value) {
-	    return (target & 0xffffff00) | (value & 0x000000ff);
-	}
-	exports.set1stByte = set1stByte;
-	function setBytes(target, value, byteCount, offset) {
-	    return (target & 0xff000000) | (value & 0x00ffffff);
-	}
-	exports.setBytes = setBytes;
-	function getNthByte(value, byteNumber) {
-	    return (value >> (8 * byteNumber)) & 0xff;
-	}
-	exports.getNthByte = getNthByte;
-	function setBits(target, value, offset, bitCount) {
-	    var mask = getMask(0, bitCount);
-	    return (target & ~mask) | (value & mask);
-	}
-	exports.setBits = setBits;
-	function setHighLowBits(high, low) {
-	    return (high << 16) | (low & 0xffff);
-	}
-	exports.setHighLowBits = setHighLowBits;
-	function getLow16Bits(value) {
-	    return value & 0xFFFF;
-	}
-	exports.getLow16Bits = getLow16Bits;
-	function getHigh16Bits(value) {
-	    return (value >> 16) & (1 << 16) - 1;
-	}
-	exports.getHigh16Bits = getHigh16Bits;
 	function setDefault(value, defaultValue) {
 	    if (value === void 0 || typeof defaultValue !== typeof value) {
 	        return defaultValue;
@@ -1400,6 +1406,17 @@
 	    return value;
 	}
 	exports.clamp01 = clamp01;
+	function titlize(input) {
+	    return input.replace(/([A-Z])/g, ' $1')
+	        .replace(/^./, function (str) { return str.toUpperCase(); });
+	}
+	exports.titlize = titlize;
+	var STRING_DASHERIZE_REGEXP = (/([a-z\d])([A-Z])/g);
+	function dasherize(str) {
+	    str = str.replace(/_/g, '-');
+	    return str.replace(STRING_DASHERIZE_REGEXP, '$1-$2').toLowerCase();
+	}
+	exports.dasherize = dasherize;
 	function hitTestRect(x, y, w, h, point) {
 	    return point.x >= x && x + w >= point.x && point.y >= y && y + h >= point.y;
 	}
@@ -1413,14 +1430,13 @@
 	}
 	exports.hitTestLine = hitTestLine;
 	function randomPositiveInteger() {
-	    return ~~(Math.random() * Number.MAX_SAFE_INTEGER);
+	    return getRandomInt(0, Number.MAX_SAFE_INTEGER);
 	}
 	exports.randomPositiveInteger = randomPositiveInteger;
-	function titlize(input) {
-	    return input.replace(/([A-Z])/g, ' $1')
-	        .replace(/^./, function (str) { return str.toUpperCase(); });
+	function getRandomInt(min, max) {
+	    return ~~(Math.random() * (max - min + 1)) + min;
 	}
-	exports.titlize = titlize;
+	exports.getRandomInt = getRandomInt;
 	function distanceSquaredToLineSegment2(lx1, ly1, ldx, ldy, lineLengthSquared, px, py) {
 	    var t;
 	    if (!lineLengthSquared) {
@@ -1637,6 +1653,7 @@
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const editor_element_1 = __webpack_require__(12);
 	const editor_text_element_1 = __webpack_require__(11);
+	const util_1 = __webpack_require__(13);
 	exports.InputEventAnnotationMap = new Map();
 	class EditorHTMLElement extends editor_element_1.EditorElement {
 	    constructor(attrs, tagName = "div") {
@@ -1652,12 +1669,21 @@
 	                this.addEventListener(annotation.type, (e) => {
 	                    this[annotation.methodName](e);
 	                    e.stopPropagation();
+	                    e.preventDefault();
 	                });
 	            }
 	        }
 	    }
 	    getDomData() {
-	        return { tagName: this.tagName };
+	        if (this.constructor.name === "EditorHTMLElement") {
+	            return { tagName: this.tagName };
+	        }
+	        else {
+	            return {
+	                tagName: this.tagName,
+	                classList: util_1.dasherize(this.constructor.name)
+	            };
+	        }
 	    }
 	    hasClass(className) {
 	        return this.htmlNode.classList.contains(className);
@@ -1735,7 +1761,7 @@
 	        }
 	        return this.htmlNode;
 	    }
-	    getChildBySelector(selector) {
+	    getChildBySelector(selector, type = null) {
 	        const node = this.htmlNode.querySelector(":scope " + selector);
 	        if (node && node.__editorElement) {
 	            return node.__editorElement;
@@ -2199,6 +2225,7 @@
 	const app_element_1 = __webpack_require__(25);
 	const runtime_base_1 = __webpack_require__(29);
 	const evt_app_element_parent_changed_1 = __webpack_require__(32);
+	const e_command_type_1 = __webpack_require__(28);
 	class RuntimeImpl extends runtime_base_1.RuntimeBase {
 	    constructor() {
 	        super();
@@ -2240,8 +2267,6 @@
 	        return null;
 	    }
 	    appElementAtPointStep(test, point) {
-	        if (!test.containsPoint(point))
-	            return null;
 	        const childCount = test.getChildCount();
 	        for (let i = 0; i < childCount; i++) {
 	            const hit = this.appElementAtPointStep(test.getChildAt(i), point);
@@ -2274,6 +2299,7 @@
 	            }
 	        }
 	        this.emit(evt_app_element_parent_changed_1.AppElementParentChanged, appElement, newParent, oldParent);
+	        this.sendCommand(e_command_type_1.CommandType.SetParent, { id: appElement.id, parentId: newParent.id });
 	    }
 	    destroyElement(appElement) {
 	        if (appElement.isDestroyed())
@@ -2315,10 +2341,9 @@
 	        this.children = [];
 	        this.components = [];
 	        this.localPosition = new vector2_1.Vector2();
-	        this.parentPosition = new vector2_1.Vector2();
+	        this.parentPosition = (this.parent) ? this.parent.getPosition() : new vector2_1.Vector2();
 	        if (this.parent) {
-	            this.parentPosition.x = this.parent.localPosition.x;
-	            this.parentPosition.y = this.parent.localPosition.y;
+	            this.parent.children.push(this);
 	        }
 	        this.width = 0;
 	        this.height = 0;
@@ -2408,6 +2433,8 @@
 	    enable() {
 	    }
 	    setParent(parent) {
+	        if (parent && parent === this.parent)
+	            return;
 	        parent = parent || AppElement.Root;
 	        const oldParent = this.parent;
 	        this.parent = parent;
@@ -2444,7 +2471,7 @@
 	        if (this === AppElement.Root)
 	            return 0;
 	        let ptr = this.parent;
-	        let depth = 0;
+	        let depth = 1;
 	        while (ptr !== AppElement.Root) {
 	            depth++;
 	            ptr = ptr.parent;
@@ -2679,19 +2706,15 @@
 	(function (CommandType) {
 	    CommandType[CommandType["Create"] = 0] = "Create";
 	    CommandType[CommandType["Destroy"] = 1] = "Destroy";
-	    CommandType[CommandType["Update"] = 2] = "Update";
-	    CommandType[CommandType["Move"] = 3] = "Move";
-	    CommandType[CommandType["Replace"] = 4] = "Replace";
-	    CommandType[CommandType["SetRect"] = 5] = "SetRect";
-	    CommandType[CommandType["SetImage"] = 6] = "SetImage";
-	    CommandType[CommandType["SetPosition"] = 7] = "SetPosition";
-	    CommandType[CommandType["SetDimensions"] = 8] = "SetDimensions";
-	    CommandType[CommandType["SetTransform"] = 9] = "SetTransform";
-	    CommandType[CommandType["SetParent"] = 10] = "SetParent";
-	    CommandType[CommandType["PaintBackground"] = 11] = "PaintBackground";
-	    CommandType[CommandType["SetText"] = 12] = "SetText";
-	    CommandType[CommandType["SetFont"] = 13] = "SetFont";
-	    CommandType[CommandType["UpdateInput"] = 14] = "UpdateInput";
+	    CommandType[CommandType["SetRect"] = 2] = "SetRect";
+	    CommandType[CommandType["SetImage"] = 3] = "SetImage";
+	    CommandType[CommandType["SetPosition"] = 4] = "SetPosition";
+	    CommandType[CommandType["SetDimensions"] = 5] = "SetDimensions";
+	    CommandType[CommandType["SetTransform"] = 6] = "SetTransform";
+	    CommandType[CommandType["SetParent"] = 7] = "SetParent";
+	    CommandType[CommandType["PaintBackground"] = 8] = "PaintBackground";
+	    CommandType[CommandType["SetText"] = 9] = "SetText";
+	    CommandType[CommandType["UpdateInput"] = 10] = "UpdateInput";
 	})(CommandType = exports.CommandType || (exports.CommandType = {}));
 
 
@@ -3025,28 +3048,71 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(30);
 	const app_element_1 = __webpack_require__(25);
 	const component_1 = __webpack_require__(34);
-	class Scene {
+	const util_1 = __webpack_require__(13);
+	const type_1 = __webpack_require__(35);
+	let Scene = class Scene {
 	    constructor() {
-	        this.isRendered = false;
 	        this.sceneRoots = [];
 	    }
 	    save() {
+	        var generateId = (function () {
+	            let id = 1;
+	            return function () {
+	                return id++;
+	            };
+	        })();
+	        function addToMap(o) {
+	            if (objectIdMap.has(o))
+	                return;
+	            objectIdMap.set(o, generateId());
+	        }
+	        let json = {};
+	        let objectIdMap = new Map();
+	        util_1.traverseChildren(app_element_1.AppElement.Root, (child) => {
+	            addToMap(child);
+	            objectIdMap.set(child, generateId());
+	            child.getAllComponents().forEach((component) => {
+	                addToMap(child);
+	                Object.keys(component).forEach((key) => {
+	                    const value = component[key];
+	                    if (value && typeof value === "object") {
+	                        addToMap(child);
+	                    }
+	                });
+	            });
+	        });
+	        util_1.traverseChildren(app_element_1.AppElement.Root, (child) => {
+	            json[objectIdMap.get(child)] = {
+	                id: child.id,
+	                name: child.name,
+	                parentId: child.getParent().id,
+	                localPosition: child.getLocalPosition(),
+	                localRotation: child.getRotation(),
+	                scale: child.getScale(),
+	                width: child.getWidth(),
+	                height: child.getHeight(),
+	                components: child.getAllComponents().forEach((component) => {
+	                    json[objectIdMap.get(component)] = "";
+	                })
+	            };
+	        });
 	    }
 	    destroy() {
 	    }
 	    load(sceneDescription) {
 	    }
-	    hydrateElement(definition) {
-	        const appElement = new app_element_1.AppElement(definition.name);
+	    hydrateElement(definition, parent) {
+	        const appElement = new app_element_1.AppElement(definition.name, parent);
 	        for (let j = 0; j < definition.components.length; j++) {
 	            const compDesc = definition.components[j];
 	            const type = component_1.Component.getComponentFromPath(compDesc.type);
 	            const cmp = appElement.addComponent(type);
 	        }
 	        for (let k = 0; k < definition.children.length; k++) {
-	            this.hydrateElement(definition.children[k]).setParent(appElement);
+	            this.hydrateElement(definition.children[k], appElement);
 	        }
 	        return appElement;
 	    }
@@ -3058,7 +3124,10 @@
 	    getRootElements() {
 	        return this.sceneRoots.slice(0);
 	    }
-	}
+	};
+	Scene = tslib_1.__decorate([
+	    type_1.setTypePath("Runtime/Scene")
+	], Scene);
 	exports.Scene = Scene;
 
 
@@ -3142,11 +3211,36 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
+	const typeMap = new Map();
+	function getTypeFromPath(path) {
+	    return typeMap.get(path);
+	}
+	exports.getTypeFromPath = getTypeFromPath;
+	function setTypePath(path) {
+	    return function (target) {
+	        typeMap.set(path, target);
+	    };
+	}
+	exports.setTypePath = setTypePath;
+
+
+/***/ },
+/* 36 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
 	const DragAnnotationMap = new Map();
 	class DragAction {
 	    onDragStart() { }
 	    onUpdate() { }
 	    onDrop(editorElement) { }
+	    static Inherit(target) {
+	        const handlers = DragAnnotationMap.get(target.__proto__);
+	        if (!handlers)
+	            return;
+	        DragAnnotationMap.set(target, handlers.clone());
+	    }
 	    static invokeDropHandlers(element, action) {
 	        DragAction.invoke(element, action, "drop");
 	    }
@@ -3194,6 +3288,14 @@
 	            }
 	        }
 	    }
+	    clone() {
+	        const retn = new DragAnnotationHandler();
+	        retn.handlers = this.handlers.slice(0);
+	        this.typeSet.forEach(function (t) {
+	            retn.typeSet.add(t);
+	        });
+	        return retn;
+	    }
 	}
 	function onDragActionMouseEnter(actionType) {
 	    return function (target, propertyKey, descriptor) {
@@ -3230,18 +3332,18 @@
 
 
 /***/ },
-/* 36 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(30);
-	const sizing_component_1 = __webpack_require__(37);
-	const layout_component_1 = __webpack_require__(38);
-	const expose_as_1 = __webpack_require__(39);
+	const sizing_component_1 = __webpack_require__(38);
+	const layout_1 = __webpack_require__(39);
+	const expose_as_1 = __webpack_require__(40);
 	const component_1 = __webpack_require__(34);
 	const app_element_1 = __webpack_require__(25);
-	let HorizontalStackLayout = class HorizontalStackLayout extends layout_component_1.LayoutComponent {
+	let HorizontalStackLayout = class HorizontalStackLayout extends layout_1.LayoutComponent {
 	    constructor() {
 	        super(...arguments);
 	        this.wrap = false;
@@ -3300,14 +3402,14 @@
 
 
 /***/ },
-/* 37 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(30);
-	const layout_component_1 = __webpack_require__(38);
-	const expose_as_1 = __webpack_require__(39);
+	const layout_1 = __webpack_require__(39);
+	const expose_as_1 = __webpack_require__(40);
 	const util_1 = __webpack_require__(13);
 	const component_1 = __webpack_require__(34);
 	var SizingMode;
@@ -3329,14 +3431,14 @@
 	    onLayoutRectChanged(layoutRect) {
 	    }
 	    onMounted() {
-	        const layout = this.getComponentInParent(layout_component_1.LayoutComponent);
+	        const layout = this.getComponentInParent(layout_1.LayoutComponent);
 	        if (layout) {
 	            layout.addSizingComponent(this);
 	        }
 	    }
 	    onDestroyed() {
 	        if (!this.appElement.isDestroyed()) {
-	            const layout = this.getComponentInParent(layout_component_1.LayoutComponent);
+	            const layout = this.getComponentInParent(layout_1.LayoutComponent);
 	            if (layout) {
 	                layout.removeSizingComponent(this);
 	            }
@@ -3359,12 +3461,12 @@
 
 
 /***/ },
-/* 38 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const sizing_component_1 = __webpack_require__(37);
+	const sizing_component_1 = __webpack_require__(38);
 	const component_1 = __webpack_require__(34);
 	class DefaultSizer {
 	    constructor(appElement) {
@@ -3435,7 +3537,7 @@
 
 
 /***/ },
-/* 39 */
+/* 40 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3497,7 +3599,7 @@
 
 
 /***/ },
-/* 40 */
+/* 41 */
 /***/ function(module, exports) {
 
 	module.exports = {
@@ -3568,7 +3670,7 @@
 	};
 
 /***/ },
-/* 41 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3622,7 +3724,7 @@
 
 
 /***/ },
-/* 42 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3669,7 +3771,7 @@
 
 
 /***/ },
-/* 43 */
+/* 44 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3704,7 +3806,94 @@
 
 
 /***/ },
-/* 44 */
+/* 45 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const asset_1 = __webpack_require__(46);
+	class FolderAsset extends asset_1.Asset {
+	    constructor(assetDefinition) {
+	        super(assetDefinition);
+	        const data = assetDefinition.data;
+	        this.isOpen = data ? data.isOpen : true;
+	    }
+	}
+	exports.FolderAsset = FolderAsset;
+
+
+/***/ },
+/* 46 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const util_1 = __webpack_require__(13);
+	class Asset {
+	    constructor(assetDescription) {
+	        this.id = util_1.randomPositiveInteger();
+	        this.pathSegments = assetDescription.path.split("/");
+	    }
+	    move(path) {
+	        const name = this.getName();
+	        this.pathSegments = path.split("/");
+	        this.pathSegments.push(name);
+	    }
+	    setName(name) {
+	        name = name.replace(/\n/g, "");
+	        this.pathSegments[this.pathSegments.length - 1] = name;
+	        return name;
+	    }
+	    getName() {
+	        return this.pathSegments[this.pathSegments.length - 1];
+	    }
+	    getPath() {
+	        return this.pathSegments.join("/");
+	    }
+	    getPathSegments() {
+	        return this.pathSegments.slice(0);
+	    }
+	    getDepth() {
+	        return this.pathSegments.length - 1;
+	    }
+	}
+	exports.Asset = Asset;
+
+
+/***/ },
+/* 47 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const app_element_1 = __webpack_require__(25);
+	const component_1 = __webpack_require__(34);
+	const asset_1 = __webpack_require__(46);
+	class PrefabTemplate extends asset_1.Asset {
+	    constructor(assetDef) {
+	        super(assetDef);
+	        this.assetDef = assetDef;
+	    }
+	    create() {
+	        const appElement = new app_element_1.AppElement(this.assetDef.name);
+	        for (let i = 0; i < this.assetDef.components.length; i++) {
+	            const desc = this.assetDef.components[i];
+	            const type = component_1.Component.getComponentFromPath(desc.type);
+	            if (type) {
+	                const cmp = appElement.addComponent(type);
+	                if (type.OnDeserialized) {
+	                    type.OnDeserialized(cmp, desc.data);
+	                }
+	            }
+	        }
+	        return appElement;
+	    }
+	}
+	exports.PrefabTemplate = PrefabTemplate;
+
+
+/***/ },
+/* 48 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3716,10 +3905,46 @@
 	    return field;
 	}
 	exports.setUpperBits = setUpperBits;
+	function getBits(value, offset, bitCount) {
+	    return (value >> offset) & (1 << bitCount) - 1;
+	}
+	exports.getBits = getBits;
+	function getMask(start, end) {
+	    return (~0 >> (32 - start - 1)) & (~0 << (32 - end));
+	}
+	function set1stByte(target, value) {
+	    return (target & 0xffffff00) | (value & 0x000000ff);
+	}
+	exports.set1stByte = set1stByte;
+	function setBytes(target, value, byteCount, offset) {
+	    return (target & 0xff000000) | (value & 0x00ffffff);
+	}
+	exports.setBytes = setBytes;
+	function getNthByte(value, byteNumber) {
+	    return (value >> (8 * byteNumber)) & 0xff;
+	}
+	exports.getNthByte = getNthByte;
+	function setBits(target, value, offset, bitCount) {
+	    var mask = getMask(0, bitCount);
+	    return (target & ~mask) | (value & mask);
+	}
+	exports.setBits = setBits;
+	function setHighLowBits(high, low) {
+	    return (high << 16) | (low & 0xffff);
+	}
+	exports.setHighLowBits = setHighLowBits;
+	function getLow16Bits(value) {
+	    return value & 0xFFFF;
+	}
+	exports.getLow16Bits = getLow16Bits;
+	function getHigh16Bits(value) {
+	    return (value >> 16) & (1 << 16) - 1;
+	}
+	exports.getHigh16Bits = getHigh16Bits;
 
 
 /***/ },
-/* 45 */
+/* 49 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3743,6 +3968,8 @@
 	    document.body.appendChild(ruler);
 	    return function (payload) {
 	        const element = BrowserRuntime.elementIdToDomNode(payload.id);
+	        if (!element)
+	            return;
 	        element.innerText = payload.text;
 	        const font = payload.font;
 	        const style = element.style;
@@ -3773,6 +4000,8 @@
 	    };
 	    return function (payload) {
 	        const element = document.createElement(elementTypeToTagName[payload.elementType]);
+	        if (!element)
+	            return;
 	        const parentId = payload.parentId;
 	        element.setAttribute("app-id", payload.id);
 	        BrowserRuntime.setDomNodeToElementId(payload.id, element);
@@ -3791,12 +4020,24 @@
 	        BrowserRuntime.setDomNodeToElementId(payload.childIds[i], null);
 	    }
 	});
+	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetParent, function (payload) {
+	    const element = BrowserRuntime.elementIdToDomNode(payload.id);
+	    if (!element)
+	        return;
+	    element.remove();
+	    const parentElement = BrowserRuntime.elementIdToDomNode(payload.parentId);
+	    parentElement.appendChild(element);
+	});
 	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetImage, function (payload) {
 	    const el = BrowserRuntime.elementIdToDomNode(payload.id);
+	    if (!el)
+	        return;
 	    el.setAttribute("src", payload.image);
 	});
 	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetPosition, function (payload) {
 	    const el = BrowserRuntime.elementIdToDomNode(payload.id);
+	    if (!el)
+	        return;
 	    const x = payload.x | 0;
 	    const y = payload.y | 0;
 	    el.style.top = y === 0 ? null : y + "px";
@@ -3804,6 +4045,8 @@
 	});
 	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetDimensions, function (payload) {
 	    const el = BrowserRuntime.elementIdToDomNode(payload.id);
+	    if (!el)
+	        return;
 	    el.style.width = (payload.width | 0) + "px";
 	    el.style.height = (payload.height | 0) + "px";
 	});
@@ -3811,6 +4054,8 @@
 	});
 	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetRect, function (payload) {
 	    const el = BrowserRuntime.elementIdToDomNode(payload.id);
+	    if (!el)
+	        return;
 	    const rect = payload.rect;
 	    const style = el.style;
 	    const x = rect.x | 0;
@@ -3822,6 +4067,8 @@
 	});
 	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.PaintBackground, function (payload) {
 	    const el = BrowserRuntime.elementIdToDomNode(payload.id);
+	    if (!el)
+	        return;
 	    const c = payload.color;
 	    el.style.background = `rgba(${c.r}, ${c.g}, ${c.b}, ${c.a})`;
 	});
@@ -3833,7 +4080,7 @@
 
 
 /***/ },
-/* 46 */
+/* 50 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3845,29 +4092,7 @@
 
 
 /***/ },
-/* 47 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(15);
-	class EditorCustomElement extends editor_html_element_1.EditorHTMLElement {
-	    onMouseDown(e) { }
-	    onMouseUp(e) { }
-	    onMouseMove(e) { }
-	    onMouseEnter(e) { }
-	    onMouseExit(e) { }
-	    onMouseWheel(e) { }
-	    handleDragActionMouseEnter() { }
-	    handleDragActionMouseOver() { }
-	    handleDragActionMouseExit() { }
-	    handleDragActionDrop() { }
-	}
-	exports.EditorCustomElement = EditorCustomElement;
-
-
-/***/ },
-/* 48 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3948,19 +4173,19 @@
 
 
 /***/ },
-/* 49 */
+/* 52 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 50 */
+/* 53 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 51 */
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4064,18 +4289,35 @@
 
 
 /***/ },
-/* 52 */
+/* 55 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const drag_action_1 = __webpack_require__(36);
+	class AssetDragAction extends drag_action_1.DragAction {
+	    constructor(asset, item) {
+	        super();
+	        this.asset = asset;
+	        this.item = item;
+	    }
+	}
+	exports.AssetDragAction = AssetDragAction;
+
+
+/***/ },
+/* 56 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 53 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const drag_action_1 = __webpack_require__(35);
+	const drag_action_1 = __webpack_require__(36);
 	class DragAssetItemAction extends drag_action_1.DragAction {
 	    constructor(asset) {
 	        super();
@@ -4086,12 +4328,29 @@
 
 
 /***/ },
-/* 54 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const drag_action_1 = __webpack_require__(35);
+	const drag_action_1 = __webpack_require__(36);
+	class HierarchyItemDragAction extends drag_action_1.DragAction {
+	    constructor(item) {
+	        super();
+	        this.item = item;
+	        this.appElement = item.attrs.element;
+	    }
+	}
+	exports.HierarchyItemDragAction = HierarchyItemDragAction;
+
+
+/***/ },
+/* 59 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const drag_action_1 = __webpack_require__(36);
 	class PrefabDragAction extends drag_action_1.DragAction {
 	    constructor(template) {
 	        super();
@@ -4102,7 +4361,7 @@
 
 
 /***/ },
-/* 55 */
+/* 60 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -4118,43 +4377,12 @@
 
 
 /***/ },
-/* 56 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const app_element_1 = __webpack_require__(25);
-	const component_1 = __webpack_require__(34);
-	class PrefabTemplate {
-	    constructor(assetDef) {
-	        this.name = assetDef.name;
-	        this.assetDef = assetDef;
-	    }
-	    create() {
-	        const appElement = new app_element_1.AppElement(this.assetDef.name);
-	        for (let i = 0; i < this.assetDef.components.length; i++) {
-	            const desc = this.assetDef.components[i];
-	            const type = component_1.Component.getComponentFromPath(desc.type);
-	            if (type) {
-	                const cmp = appElement.addComponent(type);
-	                if (type.OnDeserialized) {
-	                    type.OnDeserialized(cmp, desc.data);
-	                }
-	            }
-	        }
-	        return appElement;
-	    }
-	}
-	exports.PrefabTemplate = PrefabTemplate;
-
-
-/***/ },
-/* 57 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const property_renderer_1 = __webpack_require__(58);
+	const property_renderer_1 = __webpack_require__(62);
 	function propertyDrawer(typeToDraw) {
 	    return function (target) {
 	        property_renderer_1.PropertyRenderer.set(typeToDraw, target);
@@ -4164,14 +4392,14 @@
 
 
 /***/ },
-/* 58 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(47);
 	const element_renderer_1 = __webpack_require__(5);
-	class PropertyRenderer extends editor_custom_element_1.EditorCustomElement {
+	const editor_html_element_1 = __webpack_require__(15);
+	class PropertyRenderer extends editor_html_element_1.EditorHTMLElement {
 	    createInitialStructure(children) {
 	        return children;
 	    }
@@ -4188,7 +4416,7 @@
 
 
 /***/ },
-/* 59 */
+/* 63 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -4234,12 +4462,14 @@
 	    return true;
 	};
 	Array.prototype.insert = function (item, index) {
+	    let i = this.length;
 	    this.length++;
-	    let len = this.length;
-	    let i = index + 1;
-	    while (i < len) {
-	        this[i - 1] = this[i];
-	        i++;
+	    if (index >= this.length) {
+	        this[this.length - 1] = item;
+	        return;
+	    }
+	    while (i != index) {
+	        this[i] = this[--i];
 	    }
 	    this[index] = item;
 	};
@@ -4247,37 +4477,7 @@
 
 
 /***/ },
-/* 60 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const util_1 = __webpack_require__(13);
-	var AssetType;
-	(function (AssetType) {
-	    AssetType[AssetType["Image"] = 0] = "Image";
-	    AssetType[AssetType["Prefab"] = 1] = "Prefab";
-	    AssetType[AssetType["JSON"] = 2] = "JSON";
-	})(AssetType = exports.AssetType || (exports.AssetType = {}));
-	class Asset {
-	    constructor(path, type) {
-	        this.id = util_1.randomPositiveInteger();
-	        this.type = type;
-	        this.path = path;
-	        this.pathSegments = path.split("/");
-	    }
-	    getName() {
-	        return this.pathSegments[this.pathSegments.length - 1];
-	    }
-	    isPrefab() {
-	        return this.type === AssetType.Prefab;
-	    }
-	}
-	exports.Asset = Asset;
-
-
-/***/ },
-/* 61 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4315,7 +4515,7 @@
 
 
 /***/ },
-/* 62 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4327,14 +4527,14 @@
 
 
 /***/ },
-/* 63 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const e_command_type_1 = __webpack_require__(28);
-	const background_component_1 = __webpack_require__(64);
-	const ui_component_1 = __webpack_require__(66);
+	const background_component_1 = __webpack_require__(67);
+	const ui_component_1 = __webpack_require__(71);
 	const ComponentCache = new Array();
 	const ColorCache = {};
 	Runtime.setCommandSerializer(e_command_type_1.CommandType.Create, function (id) {
@@ -4358,10 +4558,13 @@
 	    };
 	});
 	Runtime.setCommandSerializer(e_command_type_1.CommandType.Destroy, function (data) {
-	    return { id: data.id };
+	    return data;
+	});
+	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetParent, function (data) {
+	    return data;
 	});
 	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetText, function (data) {
-	    return { id: data.id, text: data.text, font: data.font };
+	    return data;
 	});
 	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetImage, function (data) {
 	    return { id: data.id, image: data.image };
@@ -4390,16 +4593,17 @@
 
 
 /***/ },
-/* 64 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(30);
 	const component_1 = __webpack_require__(34);
-	const color_1 = __webpack_require__(65);
+	const color_1 = __webpack_require__(68);
 	const e_command_type_1 = __webpack_require__(28);
-	const expose_as_1 = __webpack_require__(39);
+	const expose_as_1 = __webpack_require__(40);
+	const cerialize_1 = __webpack_require__(69);
 	let BackgroundComponent = class BackgroundComponent extends component_1.Component {
 	    constructor() {
 	        super(...arguments);
@@ -4426,7 +4630,8 @@
 	    }
 	};
 	tslib_1.__decorate([
-	    expose_as_1.exposeAs(color_1.Color)
+	    expose_as_1.inspector(color_1.Color),
+	    cerialize_1.serializeAs(color_1.Color)
 	], BackgroundComponent.prototype, "color", void 0);
 	BackgroundComponent = tslib_1.__decorate([
 	    component_1.component("Paint/Background")
@@ -4435,7 +4640,7 @@
 
 
 /***/ },
-/* 65 */
+/* 68 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -4471,7 +4676,670 @@
 
 
 /***/ },
-/* 66 */
+/* 69 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(70);
+
+/***/ },
+/* 70 */
+/***/ function(module, exports) {
+
+	/* WEBPACK VAR INJECTION */(function(global) {"use strict";
+	var win = null;
+	try {
+	    win = window;
+	}
+	catch (e) {
+	    win = global;
+	}
+	//some other modules might want access to the serialization meta data, expose it here
+	var TypeMap = win.__CerializeTypeMap = new Map();
+	exports.__TypeMap = TypeMap;
+	//convert strings like my_camel_string to myCamelString
+	function CamelCase(str) {
+	    var STRING_CAMELIZE_REGEXP = (/(\-|_|\.|\s)+(.)?/g);
+	    return str.replace(STRING_CAMELIZE_REGEXP, function (match, separator, chr) {
+	        return chr ? chr.toUpperCase() : '';
+	    }).replace(/^([A-Z])/, function (match, separator, chr) {
+	        return match.toLowerCase();
+	    });
+	}
+	exports.CamelCase = CamelCase;
+	//convert strings like MyCamelString to my_camel_string
+	function SnakeCase(str) {
+	    var STRING_DECAMELIZE_REGEXP = (/([a-z\d])([A-Z])/g);
+	    return str.replace(STRING_DECAMELIZE_REGEXP, '$1_$2').toLowerCase();
+	}
+	exports.SnakeCase = SnakeCase;
+	//convert strings like myCamelCase to my_camel_case
+	function UnderscoreCase(str) {
+	    var STRING_UNDERSCORE_REGEXP_1 = (/([a-z\d])([A-Z]+)/g);
+	    var STRING_UNDERSCORE_REGEXP_2 = (/\-|\s+/g);
+	    return str.replace(STRING_UNDERSCORE_REGEXP_1, '$1_$2').replace(STRING_UNDERSCORE_REGEXP_2, '_').toLowerCase();
+	}
+	exports.UnderscoreCase = UnderscoreCase;
+	//convert strings like my_camelCase to my-camel-case
+	function DashCase(str) {
+	    var STRING_DASHERIZE_REGEXP = (/([a-z\d])([A-Z])/g);
+	    str = str.replace(/_/g, '-');
+	    return str.replace(STRING_DASHERIZE_REGEXP, '$1-$2').toLowerCase();
+	}
+	exports.DashCase = DashCase;
+	//gets meta data for a key name, creating a new meta data instance
+	//if the input array doesn't already define one for the given keyName
+	function getMetaData(array, keyName) {
+	    for (var i = 0; i < array.length; i++) {
+	        if (array[i].keyName === keyName) {
+	            return array[i];
+	        }
+	    }
+	    array.push(new MetaData(keyName));
+	    return array[array.length - 1];
+	}
+	//helper for grabbing the type and keyname from a multi-type input variable
+	function getTypeAndKeyName(keyNameOrType, keyName) {
+	    var type = null;
+	    var key = null;
+	    if (typeof keyNameOrType === "string") {
+	        key = keyNameOrType;
+	    }
+	    else if (keyNameOrType && typeof keyNameOrType === "function" || typeof keyNameOrType === "object") {
+	        type = keyNameOrType;
+	        key = keyName;
+	    }
+	    return { key: key, type: type };
+	}
+	//todo instance.constructor.prototype.__proto__ === parent class, maybe use this?
+	//because types are stored in a JS Map keyed by constructor, serialization is not inherited by default
+	//keeping this seperate by default also allows sub classes to serialize differently than their parent
+	function inheritSerialization(parentType) {
+	    return function (childType) {
+	        var parentMetaData = TypeMap.get(parentType) || [];
+	        var childMetaData = TypeMap.get(childType) || [];
+	        for (var i = 0; i < parentMetaData.length; i++) {
+	            var keyName = parentMetaData[i].keyName;
+	            if (!MetaData.hasKeyName(childMetaData, keyName)) {
+	                childMetaData.push(MetaData.clone(parentMetaData[i]));
+	            }
+	        }
+	        TypeMap.set(childType, childMetaData);
+	    };
+	}
+	exports.inheritSerialization = inheritSerialization;
+	//an untyped serialization property annotation, gets existing meta data for the target or creates
+	//a new one and assigns the serialization key for that type in the meta data
+	function serialize(target, keyName) {
+	    if (!target || !keyName)
+	        return;
+	    var metaDataList = TypeMap.get(target.constructor) || [];
+	    var metadata = getMetaData(metaDataList, keyName);
+	    metadata.serializedKey = keyName;
+	    TypeMap.set(target.constructor, metaDataList);
+	}
+	exports.serialize = serialize;
+	//an untyped deserialization property annotation, gets existing meta data for the target or creates
+	//a new one and assigns the deserialization key for that type in the meta data
+	function deserialize(target, keyName) {
+	    if (!target || !keyName)
+	        return;
+	    var metaDataList = TypeMap.get(target.constructor) || [];
+	    var metadata = getMetaData(metaDataList, keyName);
+	    metadata.deserializedKey = keyName;
+	    TypeMap.set(target.constructor, metaDataList);
+	}
+	exports.deserialize = deserialize;
+	//this combines @serialize and @deserialize as defined above
+	function autoserialize(target, keyName) {
+	    if (!target || !keyName)
+	        return;
+	    var metaDataList = TypeMap.get(target.constructor) || [];
+	    var metadata = getMetaData(metaDataList, keyName);
+	    metadata.serializedKey = keyName;
+	    metadata.deserializedKey = keyName;
+	    TypeMap.set(target.constructor, metaDataList);
+	}
+	exports.autoserialize = autoserialize;
+	//We dont actually need the type to serialize but I like the consistency with deserializeAs which definitely does
+	//serializes a type using 1.) a custom key name, 2.) a custom type, or 3.) both custom key and type
+	function serializeAs(keyNameOrType, keyName) {
+	    if (!keyNameOrType)
+	        return;
+	    var _a = getTypeAndKeyName(keyNameOrType, keyName), key = _a.key, type = _a.type;
+	    return function (target, actualKeyName) {
+	        if (!target || !actualKeyName)
+	            return;
+	        var metaDataList = TypeMap.get(target.constructor) || [];
+	        var metadata = getMetaData(metaDataList, actualKeyName);
+	        metadata.serializedKey = (key) ? key : actualKeyName;
+	        metadata.serializedType = type;
+	        //this allows the type to be a stand alone function instead of a class
+	        if (type !== Date && type !== RegExp && !TypeMap.get(type) && typeof type === "function") {
+	            metadata.serializedType = {
+	                Serialize: type
+	            };
+	        }
+	        TypeMap.set(target.constructor, metaDataList);
+	    };
+	}
+	exports.serializeAs = serializeAs;
+	//Supports serializing of dictionary-like map objects, ie: { x: {}, y: {} }
+	function serializeIndexable(type, keyName) {
+	    if (!type)
+	        return;
+	    return function (target, actualKeyName) {
+	        if (!target || !actualKeyName)
+	            return;
+	        var metaDataList = TypeMap.get(target.constructor) || [];
+	        var metadata = getMetaData(metaDataList, actualKeyName);
+	        metadata.serializedKey = (keyName) ? keyName : actualKeyName;
+	        metadata.serializedType = type;
+	        metadata.indexable = true;
+	        //this allows the type to be a stand alone function instead of a class
+	        if (type !== Date && type !== RegExp && !TypeMap.get(type) && typeof type === "function") {
+	            metadata.serializedType = {
+	                Serialize: type
+	            };
+	        }
+	        TypeMap.set(target.constructor, metaDataList);
+	    };
+	}
+	exports.serializeIndexable = serializeIndexable;
+	//deserializes a type using 1.) a custom key name, 2.) a custom type, or 3.) both custom key and type
+	function deserializeAs(keyNameOrType, keyName) {
+	    if (!keyNameOrType)
+	        return;
+	    var _a = getTypeAndKeyName(keyNameOrType, keyName), key = _a.key, type = _a.type;
+	    return function (target, actualKeyName) {
+	        if (!target || !actualKeyName)
+	            return;
+	        var metaDataList = TypeMap.get(target.constructor) || [];
+	        var metadata = getMetaData(metaDataList, actualKeyName);
+	        metadata.deserializedKey = (key) ? key : actualKeyName;
+	        metadata.deserializedType = type;
+	        //this allows the type to be a stand alone function instead of a class
+	        if (!TypeMap.get(type) && type !== Date && type !== RegExp && typeof type === "function") {
+	            metadata.deserializedType = {
+	                Deserialize: type
+	            };
+	        }
+	        TypeMap.set(target.constructor, metaDataList);
+	    };
+	}
+	exports.deserializeAs = deserializeAs;
+	//Supports deserializing of dictionary-like map objects, ie: { x: {}, y: {} }
+	function deserializeIndexable(type, keyName) {
+	    if (!type)
+	        return;
+	    var key = keyName;
+	    return function (target, actualKeyName) {
+	        if (!target || !actualKeyName)
+	            return;
+	        var metaDataList = TypeMap.get(target.constructor) || [];
+	        var metadata = getMetaData(metaDataList, actualKeyName);
+	        metadata.deserializedKey = (key) ? key : actualKeyName;
+	        metadata.deserializedType = type;
+	        metadata.indexable = true;
+	        if (!TypeMap.get(type) && type !== Date && type !== RegExp && typeof type === "function") {
+	            metadata.deserializedType = {
+	                Deserialize: type
+	            };
+	        }
+	        TypeMap.set(target.constructor, metaDataList);
+	    };
+	}
+	exports.deserializeIndexable = deserializeIndexable;
+	//serializes and deserializes a type using 1.) a custom key name, 2.) a custom type, or 3.) both custom key and type
+	function autoserializeAs(keyNameOrType, keyName) {
+	    if (!keyNameOrType)
+	        return;
+	    var _a = getTypeAndKeyName(keyNameOrType, keyName), key = _a.key, type = _a.type;
+	    return function (target, actualKeyName) {
+	        if (!target || !actualKeyName)
+	            return;
+	        var metaDataList = TypeMap.get(target.constructor) || [];
+	        var metadata = getMetaData(metaDataList, actualKeyName);
+	        var serialKey = (key) ? key : actualKeyName;
+	        metadata.deserializedKey = serialKey;
+	        metadata.deserializedType = type;
+	        metadata.serializedKey = serialKey;
+	        metadata.serializedType = type;
+	        if (!TypeMap.get(type) && type !== Date && type !== RegExp && typeof type === "function") {
+	            metadata.deserializedType = {
+	                Deserialize: type
+	            };
+	        }
+	        TypeMap.set(target.constructor, metaDataList);
+	    };
+	}
+	exports.autoserializeAs = autoserializeAs;
+	//Supports serializing/deserializing of dictionary-like map objects, ie: { x: {}, y: {} }
+	function autoserializeIndexable(type, keyName) {
+	    if (!type)
+	        return;
+	    var key = keyName;
+	    return function (target, actualKeyName) {
+	        if (!target || !actualKeyName)
+	            return;
+	        var metaDataList = TypeMap.get(target.constructor) || [];
+	        var metadata = getMetaData(metaDataList, actualKeyName);
+	        var serialKey = (key) ? key : actualKeyName;
+	        metadata.deserializedKey = serialKey;
+	        metadata.deserializedType = type;
+	        metadata.serializedKey = serialKey;
+	        metadata.serializedType = type;
+	        metadata.indexable = true;
+	        if (!TypeMap.get(type) && type !== Date && type !== RegExp && typeof type === "function") {
+	            metadata.deserializedType = {
+	                Deserialize: type
+	            };
+	        }
+	        TypeMap.set(target.constructor, metaDataList);
+	    };
+	}
+	exports.autoserializeIndexable = autoserializeIndexable;
+	//helper class to contain serialization meta data for a property, each property
+	//in a type tagged with a serialization annotation will contain an array of these
+	//objects each describing one property
+	var MetaData = (function () {
+	    function MetaData(keyName) {
+	        this.keyName = keyName;
+	        this.serializedKey = null;
+	        this.deserializedKey = null;
+	        this.deserializedType = null;
+	        this.serializedType = null;
+	        this.indexable = false;
+	    }
+	    //checks for a key name in a meta data array
+	    MetaData.hasKeyName = function (metadataArray, key) {
+	        for (var i = 0; i < metadataArray.length; i++) {
+	            if (metadataArray[i].keyName === key)
+	                return true;
+	        }
+	        return false;
+	    };
+	    //clone a meta data instance, used for inheriting serialization properties
+	    MetaData.clone = function (data) {
+	        var metadata = new MetaData(data.keyName);
+	        metadata.deserializedKey = data.deserializedKey;
+	        metadata.serializedKey = data.serializedKey;
+	        metadata.serializedType = data.serializedType;
+	        metadata.deserializedType = data.deserializedType;
+	        metadata.indexable = data.indexable;
+	        return metadata;
+	    };
+	    return MetaData;
+	}());
+	//merges two primitive objects recursively, overwriting or defining properties on
+	//`instance` as they defined in `json`. Works on objects, arrays and primitives
+	function mergePrimitiveObjects(instance, json) {
+	    if (!json)
+	        return instance; //if we dont have a json value, just use what the instance defines already
+	    if (!instance)
+	        return json; //if we dont have an instance value, just use the json
+	    //for each key in the input json we need to do a merge into the instance object
+	    Object.keys(json).forEach(function (key) {
+	        var transformedKey = key;
+	        if (typeof deserializeKeyTransform === "function") {
+	            transformedKey = deserializeKeyTransform(key);
+	        }
+	        var jsonValue = json[key];
+	        var instanceValue = instance[key];
+	        if (Array.isArray(jsonValue)) {
+	            //in the array case we reuse the items that exist already where possible
+	            //so reset the instance array length (or make it an array if it isnt)
+	            //then call mergePrimitiveObjects recursively
+	            instanceValue = Array.isArray(instanceValue) ? instanceValue : [];
+	            instanceValue.length = jsonValue.length;
+	            for (var i = 0; i < instanceValue.length; i++) {
+	                instanceValue[i] = mergePrimitiveObjects(instanceValue[i], jsonValue[i]);
+	            }
+	        }
+	        else if (jsonValue && typeof jsonValue === "object") {
+	            if (!instanceValue || typeof instanceValue !== "object") {
+	                instanceValue = {};
+	            }
+	            instanceValue = mergePrimitiveObjects(instanceValue, jsonValue);
+	        }
+	        else {
+	            //primitive case, just use straight assignment
+	            instanceValue = jsonValue;
+	        }
+	        instance[transformedKey] = instanceValue;
+	    });
+	    return instance;
+	}
+	//takes an array defined in json and deserializes it into an array that ist stuffed with instances of `type`.
+	//any instances already defined in `arrayInstance` will be re-used where possible to maintain referential integrity.
+	function deserializeArrayInto(source, type, arrayInstance) {
+	    if (!Array.isArray(arrayInstance)) {
+	        arrayInstance = new Array(source.length);
+	    }
+	    //extend or truncate the target array to match the source array
+	    arrayInstance.length = source.length;
+	    for (var i = 0; i < source.length; i++) {
+	        arrayInstance[i] = DeserializeInto(source[i], type, arrayInstance[i] || new type());
+	    }
+	    return arrayInstance;
+	}
+	//takes an object defined in json and deserializes it into a `type` instance or populates / overwrites
+	//properties on `instance` if it is provided.
+	function deserializeObjectInto(json, type, instance) {
+	    var metadataArray = TypeMap.get(type);
+	    //if we dont have an instance we need to create a new `type`
+	    if (instance === null || instance === void 0) {
+	        if (type) {
+	            instance = new type();
+	        }
+	    }
+	    //if we dont have any meta data and we dont have a type to inflate, just merge the objects
+	    if (instance && !type && !metadataArray) {
+	        return mergePrimitiveObjects(instance, json);
+	    }
+	    //if we dont have meta data just bail out and keep what we have
+	    if (!metadataArray) {
+	        invokeDeserializeHook(instance, json, type);
+	        return instance;
+	    }
+	    //for each property in meta data, try to hydrate that property with its corresponding json value
+	    for (var i = 0; i < metadataArray.length; i++) {
+	        var metadata = metadataArray[i];
+	        //these are not the droids we're looking for (to deserialize), moving along
+	        if (!metadata.deserializedKey)
+	            continue;
+	        var serializedKey = metadata.deserializedKey;
+	        if (metadata.deserializedKey === metadata.keyName) {
+	            if (typeof deserializeKeyTransform === "function") {
+	                serializedKey = deserializeKeyTransform(metadata.keyName);
+	            }
+	        }
+	        var source = json[serializedKey];
+	        if (source === void 0)
+	            continue;
+	        var keyName = metadata.keyName;
+	        //if there is a custom deserialize function, use that
+	        if (metadata.deserializedType && typeof metadata.deserializedType.Deserialize === "function") {
+	            instance[keyName] = metadata.deserializedType.Deserialize(source);
+	        }
+	        else if (Array.isArray(source)) {
+	            if (metadata.deserializedType) {
+	                instance[keyName] = deserializeArrayInto(source, metadata.deserializedType, instance[keyName]);
+	            }
+	            else {
+	                instance[keyName] = deserializeArray(source, null);
+	            }
+	        }
+	        else if ((typeof source === "string" || source instanceof Date) && metadata.deserializedType === Date) {
+	            var deserializedDate = new Date(source);
+	            if (instance[keyName] instanceof Date) {
+	                instance[keyName].setTime(deserializedDate.getTime());
+	            }
+	            else {
+	                instance[keyName] = deserializedDate;
+	            }
+	        }
+	        else if (typeof source === "string" && type === RegExp) {
+	            instance[keyName] = new RegExp(source);
+	        }
+	        else if (source && typeof source === "object") {
+	            if (metadata.indexable) {
+	                instance[keyName] = deserializeIndexableObjectInto(source, metadata.deserializedType, instance[keyName]);
+	            }
+	            else {
+	                instance[keyName] = deserializeObjectInto(source, metadata.deserializedType, instance[keyName]);
+	            }
+	        }
+	        else {
+	            instance[keyName] = source;
+	        }
+	    }
+	    //invoke our after deserialized callback if provided
+	    invokeDeserializeHook(instance, json, type);
+	    return instance;
+	}
+	//deserializes a bit of json into a `type`
+	function Deserialize(json, type) {
+	    if (Array.isArray(json)) {
+	        return deserializeArray(json, type);
+	    }
+	    else if (json && typeof json === "object") {
+	        return deserializeObject(json, type);
+	    }
+	    else if ((typeof json === "string" || json instanceof Date) && type === Date) {
+	        return new Date(json);
+	    }
+	    else if (typeof json === "string" && type === RegExp) {
+	        return new RegExp(json);
+	    }
+	    else {
+	        return json;
+	    }
+	}
+	exports.Deserialize = Deserialize;
+	//takes some json, a type, and a target object and deserializes the json into that object
+	function DeserializeInto(source, type, target) {
+	    if (Array.isArray(source)) {
+	        return deserializeArrayInto(source, type, target || []);
+	    }
+	    else if (source && typeof source === "object") {
+	        return deserializeObjectInto(source, type, target || new type());
+	    }
+	    else {
+	        return target || (type && new type()) || null;
+	    }
+	}
+	exports.DeserializeInto = DeserializeInto;
+	//deserializes an array of json into an array of `type`
+	function deserializeArray(source, type) {
+	    var retn = new Array(source.length);
+	    for (var i = 0; i < source.length; i++) {
+	        retn[i] = Deserialize(source[i], type);
+	    }
+	    return retn;
+	}
+	function invokeDeserializeHook(instance, json, type) {
+	    if (type && typeof (type).OnDeserialized === "function") {
+	        type.OnDeserialized(instance, json);
+	    }
+	}
+	function invokeSerializeHook(instance, json) {
+	    if (typeof (instance.constructor).OnSerialized === "function") {
+	        (instance.constructor).OnSerialized(instance, json);
+	    }
+	}
+	//deserialize a bit of json into an instance of `type`
+	function deserializeObject(json, type) {
+	    var metadataArray = TypeMap.get(type);
+	    //if we dont have meta data, just decode the json and use that
+	    if (!metadataArray) {
+	        var inst = null;
+	        if (!type) {
+	            inst = JSON.parse(JSON.stringify(json));
+	        }
+	        else {
+	            inst = new type(); //todo this probably wrong
+	            invokeDeserializeHook(inst, json, type);
+	        }
+	        return inst;
+	    }
+	    var instance = new type();
+	    //for each tagged property on the source type, try to deserialize it
+	    for (var i = 0; i < metadataArray.length; i++) {
+	        var metadata = metadataArray[i];
+	        if (!metadata.deserializedKey)
+	            continue;
+	        var serializedKey = metadata.deserializedKey;
+	        if (metadata.deserializedKey === metadata.keyName) {
+	            if (typeof deserializeKeyTransform === "function") {
+	                serializedKey = deserializeKeyTransform(metadata.keyName);
+	            }
+	        }
+	        var source = json[serializedKey];
+	        var keyName = metadata.keyName;
+	        if (source === void 0)
+	            continue;
+	        //if there is a custom deserialize function, use that
+	        if (metadata.deserializedType && typeof metadata.deserializedType.Deserialize === "function") {
+	            instance[keyName] = metadata.deserializedType.Deserialize(source);
+	        }
+	        else if (Array.isArray(source)) {
+	            instance[keyName] = deserializeArray(source, metadata.deserializedType || null);
+	        }
+	        else if ((typeof source === "string" || source instanceof Date) && metadata.deserializedType === Date) {
+	            instance[keyName] = new Date(source);
+	        }
+	        else if (typeof source === "string" && metadata.deserializedType === RegExp) {
+	            instance[keyName] = new RegExp(json);
+	        }
+	        else if (source && typeof source === "object") {
+	            if (metadata.indexable) {
+	                instance[keyName] = deserializeIndexableObject(source, metadata.deserializedType);
+	            }
+	            else {
+	                instance[keyName] = deserializeObject(source, metadata.deserializedType);
+	            }
+	        }
+	        else {
+	            instance[keyName] = source;
+	        }
+	    }
+	    invokeDeserializeHook(instance, json, type);
+	    return instance;
+	}
+	function deserializeIndexableObject(source, type) {
+	    var retn = {};
+	    //todo apply key transformation here?
+	    Object.keys(source).forEach(function (key) {
+	        retn[key] = deserializeObject(source[key], type);
+	    });
+	    return retn;
+	}
+	function deserializeIndexableObjectInto(source, type, instance) {
+	    //todo apply key transformation here?
+	    Object.keys(source).forEach(function (key) {
+	        instance[key] = deserializeObjectInto(source[key], type, instance[key]);
+	    });
+	    return instance;
+	}
+	//take an array and spit out json
+	function serializeArray(source, type) {
+	    var serializedArray = new Array(source.length);
+	    for (var j = 0; j < source.length; j++) {
+	        serializedArray[j] = Serialize(source[j], type);
+	    }
+	    return serializedArray;
+	}
+	//take an instance of something and try to spit out json for it based on property annotaitons
+	function serializeTypedObject(instance, type) {
+	    var json = {};
+	    var metadataArray;
+	    if (type) {
+	        metadataArray = TypeMap.get(type);
+	    }
+	    else {
+	        metadataArray = TypeMap.get(instance.constructor);
+	    }
+	    for (var i = 0; i < metadataArray.length; i++) {
+	        var metadata = metadataArray[i];
+	        if (!metadata.serializedKey)
+	            continue;
+	        var serializedKey = metadata.serializedKey;
+	        if (metadata.serializedKey === metadata.keyName) {
+	            if (typeof serializeKeyTransform === "function") {
+	                serializedKey = serializeKeyTransform(metadata.keyName);
+	            }
+	        }
+	        var source = instance[metadata.keyName];
+	        if (source === void 0)
+	            continue;
+	        if (Array.isArray(source)) {
+	            json[serializedKey] = serializeArray(source);
+	        }
+	        else if (metadata.serializedType && typeof metadata.serializedType.Serialize === "function") {
+	            //todo -- serializeIndexableObject probably isn't needed because of how serialize works
+	            json[serializedKey] = metadata.serializedType.Serialize(source);
+	        }
+	        else {
+	            var value = Serialize(source);
+	            if (value !== void 0) {
+	                json[serializedKey] = value;
+	            }
+	        }
+	    }
+	    invokeSerializeHook(instance, json);
+	    return json;
+	}
+	//take an instance of something and spit out some json
+	function Serialize(instance, type) {
+	    if (instance === null || instance === void 0)
+	        return null;
+	    if (Array.isArray(instance)) {
+	        return serializeArray(instance, type);
+	    }
+	    if (type && TypeMap.has(type)) {
+	        return serializeTypedObject(instance, type);
+	    }
+	    if (instance.constructor && TypeMap.has(instance.constructor)) {
+	        return serializeTypedObject(instance);
+	    }
+	    if (instance instanceof Date) {
+	        return instance.toISOString();
+	    }
+	    if (instance instanceof RegExp) {
+	        return instance.toString();
+	    }
+	    if (instance && typeof instance === 'object' || typeof instance === 'function') {
+	        var keys = Object.keys(instance);
+	        var json = {};
+	        for (var i = 0; i < keys.length; i++) {
+	            //todo this probably needs a key transform
+	            json[keys[i]] = Serialize(instance[keys[i]]);
+	        }
+	        invokeSerializeHook(instance, json);
+	        return json;
+	    }
+	    return instance;
+	}
+	exports.Serialize = Serialize;
+	function GenericDeserialize(json, type) {
+	    return Deserialize(json, type);
+	}
+	exports.GenericDeserialize = GenericDeserialize;
+	function GenericDeserializeInto(json, type, instance) {
+	    return DeserializeInto(json, type, instance);
+	}
+	exports.GenericDeserializeInto = GenericDeserializeInto;
+	//these are used for transforming keys from one format to another
+	var serializeKeyTransform = null;
+	var deserializeKeyTransform = null;
+	//setter for deserializing key transform
+	function DeserializeKeysFrom(transform) {
+	    deserializeKeyTransform = transform;
+	}
+	exports.DeserializeKeysFrom = DeserializeKeysFrom;
+	//setter for serializing key transform
+	function SerializeKeysTo(transform) {
+	    serializeKeyTransform = transform;
+	}
+	exports.SerializeKeysTo = SerializeKeysTo;
+	//this is kinda dumb but typescript doesnt treat enums as a type, but sometimes you still
+	//want them to be serialized / deserialized, this does the trick but must be called after
+	//the enum is defined.
+	function SerializableEnumeration(e) {
+	    e.Serialize = function (x) {
+	        return e[x];
+	    };
+	    e.Deserialize = function (x) {
+	        return e[x];
+	    };
+	}
+	exports.SerializableEnumeration = SerializableEnumeration;
+	//expose the type map
+
+	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
+
+/***/ },
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4527,13 +5395,36 @@
 
 
 /***/ },
-/* 67 */
+/* 72 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const sizing_component_1 = __webpack_require__(38);
+	class FitContentSizeComponent extends sizing_component_1.SizingComponent {
+	    onCreated() {
+	        this.sizingMode = sizing_component_1.SizingMode.Fixed;
+	        this.width = this.appElement.getWidth();
+	        this.height = this.appElement.getHeight();
+	    }
+	    getPixelWidth(totalWidth, totalHeight) {
+	        return this.appElement.getWidth();
+	    }
+	    getPixelHeight(totalWidth, totalHeight) {
+	        return this.appElement.getHeight();
+	    }
+	}
+	exports.FitContentSizeComponent = FitContentSizeComponent;
+
+
+/***/ },
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(30);
-	const sizing_component_1 = __webpack_require__(37);
+	const sizing_component_1 = __webpack_require__(38);
 	const component_1 = __webpack_require__(34);
 	let DefaultSizingComponent = class DefaultSizingComponent extends sizing_component_1.SizingComponent {
 	    onMounted() {
@@ -4546,13 +5437,75 @@
 
 
 /***/ },
-/* 68 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(30);
-	const ui_component_1 = __webpack_require__(66);
+	const sizing_component_1 = __webpack_require__(38);
+	const layout_1 = __webpack_require__(39);
+	const component_1 = __webpack_require__(34);
+	const app_element_1 = __webpack_require__(25);
+	let VerticalStackLayout = class VerticalStackLayout extends layout_1.LayoutComponent {
+	    doLayout() {
+	        var remainingSpace = this.appElement.getHeight();
+	        const sizings = new Array(this.sizingComponents.length);
+	        let totalFractions = 0;
+	        for (let i = 0; i < this.sizingComponents.length; i++) {
+	            const sizer = this.sizingComponents[i];
+	            if (sizer) {
+	                switch (sizer.sizingMode) {
+	                    case sizing_component_1.SizingMode.Percent:
+	                        const percentageValue = sizer.height * 0.01;
+	                        sizings[i] = (percentageValue * this.appElement.getHeight()) | 0;
+	                        remainingSpace -= sizings[i];
+	                        break;
+	                    case sizing_component_1.SizingMode.Fraction:
+	                        totalFractions++;
+	                        sizings[i] = sizer.height;
+	                        break;
+	                    case sizing_component_1.SizingMode.Fixed:
+	                        sizings[i] = sizer.height;
+	                        remainingSpace -= sizings[i];
+	                        break;
+	                }
+	            }
+	            else {
+	                sizings[i] = -1;
+	            }
+	        }
+	        if (totalFractions > 0) {
+	            const pieceSize = remainingSpace / totalFractions;
+	            for (let i = 0; i < sizings.length; i++) {
+	                if (this.sizingComponents[i].sizingMode === sizing_component_1.SizingMode.Fraction) {
+	                    sizings[i] = pieceSize * (this.sizingComponents[i].height);
+	                }
+	            }
+	        }
+	        let allocatedSpace = 0;
+	        for (let i = 0; i < this.sizingComponents.length; i++) {
+	            const element = this.sizingComponents[i].appElement;
+	            element.setPositionValues(0, allocatedSpace, app_element_1.Space.Local);
+	            element.setDimensions(this.appElement.getWidth(), sizings[i]);
+	            allocatedSpace += sizings[i];
+	        }
+	    }
+	};
+	VerticalStackLayout = tslib_1.__decorate([
+	    component_1.component("Layout/VerticalStack")
+	], VerticalStackLayout);
+	exports.VerticalStackLayout = VerticalStackLayout;
+
+
+/***/ },
+/* 75 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(30);
+	const ui_component_1 = __webpack_require__(71);
 	class Font {
 	}
 	exports.Font = Font;
@@ -4574,14 +5527,14 @@
 
 
 /***/ },
-/* 69 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(30);
-	const ui_component_1 = __webpack_require__(66);
-	const expose_as_1 = __webpack_require__(39);
+	const ui_component_1 = __webpack_require__(71);
+	const expose_as_1 = __webpack_require__(40);
 	const component_1 = __webpack_require__(34);
 	const e_command_type_1 = __webpack_require__(28);
 	let ImageComponent = class ImageComponent extends ui_component_1.UIComponent {
@@ -4615,13 +5568,13 @@
 
 
 /***/ },
-/* 70 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(30);
-	const ui_component_1 = __webpack_require__(66);
+	const ui_component_1 = __webpack_require__(71);
 	const component_1 = __webpack_require__(34);
 	let PanelComponent = class PanelComponent extends ui_component_1.UIComponent {
 	    serialize() {
@@ -4637,7 +5590,7 @@
 
 
 /***/ },
-/* 71 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4645,7 +5598,7 @@
 	const tslib_1 = __webpack_require__(30);
 	const component_1 = __webpack_require__(34);
 	const e_command_type_1 = __webpack_require__(28);
-	const ui_component_1 = __webpack_require__(66);
+	const ui_component_1 = __webpack_require__(71);
 	let TextComponent = class TextComponent extends ui_component_1.UIComponent {
 	    constructor() {
 	        super(...arguments);
@@ -4720,7 +5673,7 @@
 
 
 /***/ },
-/* 72 */
+/* 79 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -4830,13 +5783,13 @@
 
 
 /***/ },
-/* 73 */
+/* 80 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 74 */
+/* 81 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -4844,7 +5797,132 @@
 
 
 /***/ },
-/* 75 */
+/* 82 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	class ObjectId {
+	    static generate() {
+	        return ++ObjectId.value;
+	    }
+	    static seed(seed) {
+	        ObjectId.value = seed;
+	    }
+	}
+	ObjectId.value = 1;
+	exports.ObjectId = ObjectId;
+
+
+/***/ },
+/* 83 */
+/***/ function(module, exports) {
+
+	var rotate180 = PIXI.GroupD8.rotate180;
+	class Serializer {
+	    constructor() {
+	        this.refId = 1;
+	        this.storage = {};
+	        this.objectIdMap = new Map();
+	        this.objectQueue = [];
+	    }
+	    add(obj) {
+	        if (this.objectIdMap.has(obj))
+	            return;
+	        const id = this.getRefId(obj);
+	        this.storage[id] = this.serialize(obj);
+	    }
+	    toJSON() {
+	    }
+	    toString() {
+	        return JSON.stringify(this.toJSON());
+	    }
+	    serialize(target) {
+	        const keys = Object.keys(target);
+	        for (let i = 0; i < keys.length; i++) {
+	            const field = target[keys[i]];
+	            if (Array.isArray(field)) {
+	            }
+	            else if (typeof field === "object") {
+	                this.getRefId(field);
+	                this.objectQueue.push(field);
+	            }
+	            else if (typeof field === "function") {
+	            }
+	            else {
+	            }
+	        }
+	        for (let i = 0; i < this.objectQueue.length; i++) {
+	        }
+	    }
+	    getRefId(target) {
+	        if (target == null)
+	            return -1;
+	        let id = this.objectIdMap.get(target);
+	        if (!id) {
+	            id = this.refId++;
+	            this.objectIdMap.set(target, id);
+	        }
+	        return id;
+	    }
+	}
+
+
+/***/ },
+/* 84 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	let blurListener = null;
+	let inputListener = null;
+	exports.TextSelection = {
+	    moveCaretToEnd(node) {
+	        if (!node)
+	            return;
+	        node.focus();
+	        const sel = window.getSelection();
+	        if (sel.rangeCount > 0) {
+	            var textNode = sel.focusNode;
+	            const nodeLength = (textNode) ? textNode.nodeValue.length : 0;
+	            var newOffset = sel.focusOffset + nodeLength;
+	            sel.collapse(textNode, Math.min(nodeLength, newOffset));
+	        }
+	    },
+	    makeEditable(node, inputCallback, blurOnEnter = false) {
+	        node.setAttribute("contenteditable", "true");
+	        this.moveCaretToEnd(node);
+	        blurListener = () => {
+	            let text = node.innerText;
+	            text = text.replace(/\/n/g, "");
+	            blurListener = null;
+	            inputListener = null;
+	            this.removeEditable(node);
+	            node.innerText = inputCallback(text) || text;
+	        };
+	        inputListener = () => {
+	            let text = node.innerText;
+	            if (blurOnEnter && text.indexOf("\n") !== -1) {
+	                text = text.replace(/\/n/g, "");
+	                blurListener = null;
+	                inputListener = null;
+	                this.removeEditable(node);
+	                node.innerText = inputCallback(text);
+	            }
+	        };
+	        node.addEventListener("input", inputListener);
+	        node.addEventListener("blur", blurListener);
+	    },
+	    removeEditable(node) {
+	        node.removeEventListener("input", inputListener);
+	        node.removeEventListener("blur", blurListener);
+	        node.removeAttribute("contenteditable");
+	    }
+	};
+
+
+/***/ },
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4862,14 +5940,14 @@
 
 
 /***/ },
-/* 76 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(47);
-	const binding_1 = __webpack_require__(51);
-	class InputRenderer extends editor_custom_element_1.EditorCustomElement {
+	const binding_1 = __webpack_require__(54);
+	const editor_html_element_1 = __webpack_require__(15);
+	class InputRenderer extends editor_html_element_1.EditorHTMLElement {
 	    onCreated() {
 	        if (this.attrs.value instanceof binding_1.EditorBinding) {
 	            this.binding = this.attrs.value;
@@ -4888,13 +5966,13 @@
 
 
 /***/ },
-/* 77 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(47);
-	class HorizontalBase extends editor_custom_element_1.EditorCustomElement {
+	const editor_html_element_1 = __webpack_require__(15);
+	class HorizontalBase extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return HorizontalBase.DomData;
 	    }
@@ -4913,12 +5991,12 @@
 
 
 /***/ },
-/* 78 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const scene_tool_1 = __webpack_require__(79);
+	const scene_tool_1 = __webpack_require__(89);
 	class ScenePanTool extends scene_tool_1.SceneTool {
 	    constructor() {
 	        super(...arguments);
@@ -4946,7 +6024,7 @@
 
 
 /***/ },
-/* 79 */
+/* 89 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -4964,12 +6042,12 @@
 
 
 /***/ },
-/* 80 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const scene_tool_1 = __webpack_require__(79);
+	const scene_tool_1 = __webpack_require__(89);
 	const util_1 = __webpack_require__(13);
 	const app_element_1 = __webpack_require__(25);
 	var DragSide;
@@ -5150,25 +6228,27 @@
 
 
 /***/ },
-/* 81 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(47);
-	const split_pane_1 = __webpack_require__(82);
-	const editor_window_frame_1 = __webpack_require__(83);
-	const hierarchy_window_1 = __webpack_require__(85);
-	const scene_window_1 = __webpack_require__(90);
-	const inspector_window_1 = __webpack_require__(92);
-	const editor_theme_1 = __webpack_require__(55);
-	const asset_window_1 = __webpack_require__(105);
-	class EditorApplication extends editor_custom_element_1.EditorCustomElement {
+	const split_pane_1 = __webpack_require__(92);
+	const editor_window_frame_1 = __webpack_require__(93);
+	const hierarchy_window_1 = __webpack_require__(95);
+	const scene_window_1 = __webpack_require__(101);
+	const inspector_window_1 = __webpack_require__(103);
+	const editor_theme_1 = __webpack_require__(60);
+	const asset_window_1 = __webpack_require__(116);
+	const menu_bar_1 = __webpack_require__(121);
+	const editor_html_element_1 = __webpack_require__(15);
+	class EditorApplication extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "editor-application" };
 	    }
 	    createInitialStructure(children) {
 	        return [
+	            Hex.createElement(menu_bar_1.MenuBar, null),
 	            Hex.createElement(split_pane_1.SplitPane, { distribution: 0.2 },
 	                Hex.createElement(split_pane_1.SplitPane, { axis: 1 },
 	                    Hex.createElement(editor_window_frame_1.WindowFrame, null,
@@ -5198,16 +6278,16 @@
 
 
 /***/ },
-/* 82 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const evt_window_resized_1 = __webpack_require__(17);
-	const editor_custom_element_1 = __webpack_require__(47);
 	const element_renderer_1 = __webpack_require__(5);
 	const util_1 = __webpack_require__(13);
-	class SplitPane extends editor_custom_element_1.EditorCustomElement {
+	const editor_html_element_1 = __webpack_require__(15);
+	class SplitPane extends editor_html_element_1.EditorHTMLElement {
 	    constructor() {
 	        super(...arguments);
 	        this.element = this;
@@ -5475,21 +6555,21 @@
 
 
 /***/ },
-/* 83 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const split_pane_1 = __webpack_require__(82);
-	const editor_custom_element_1 = __webpack_require__(47);
-	const editor_theme_1 = __webpack_require__(55);
+	const split_pane_1 = __webpack_require__(92);
+	const editor_theme_1 = __webpack_require__(60);
 	const element_renderer_1 = __webpack_require__(5);
-	const editor_window_tab_1 = __webpack_require__(84);
+	const editor_window_tab_1 = __webpack_require__(94);
+	const editor_html_element_1 = __webpack_require__(15);
 	const coverDiv = document.createElement('div');
 	coverDiv.style.position = "absolute";
 	coverDiv.style.zIndex = "400";
 	coverDiv.style.background = "magenta";
-	class WindowFrame extends editor_custom_element_1.EditorCustomElement {
+	class WindowFrame extends editor_html_element_1.EditorHTMLElement {
 	    constructor() {
 	        super(...arguments);
 	        this.element = this;
@@ -5709,14 +6789,14 @@
 
 
 /***/ },
-/* 84 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(47);
-	const editor_theme_1 = __webpack_require__(55);
-	class WindowFrameTab extends editor_custom_element_1.EditorCustomElement {
+	const editor_theme_1 = __webpack_require__(60);
+	const editor_html_element_1 = __webpack_require__(15);
+	class WindowFrameTab extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return {
 	            tagName: "div",
@@ -5758,33 +6838,33 @@
 
 
 /***/ },
-/* 85 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const button_1 = __webpack_require__(75);
-	const hierarchy_item_1 = __webpack_require__(86);
+	const tslib_1 = __webpack_require__(30);
+	const button_1 = __webpack_require__(85);
+	const hierarchy_item_1 = __webpack_require__(96);
 	const evt_selection_changed_1 = __webpack_require__(4);
 	const evt_scene_loaded_event_1 = __webpack_require__(3);
 	const evt_app_element_created_1 = __webpack_require__(18);
 	const element_renderer_1 = __webpack_require__(5);
-	const editor_window_element_1 = __webpack_require__(89);
-	const editor_theme_1 = __webpack_require__(55);
+	const editor_window_element_1 = __webpack_require__(99);
+	const editor_theme_1 = __webpack_require__(60);
 	const app_element_1 = __webpack_require__(25);
-	const e_mouse_state_1 = __webpack_require__(22);
 	const evt_app_element_parent_changed_1 = __webpack_require__(32);
-	const drag_hierarchy_item_1 = __webpack_require__(127);
+	const drag_hierarchy_item_1 = __webpack_require__(58);
+	const vector2_1 = __webpack_require__(14);
+	const context_menu_1 = __webpack_require__(100);
+	const editor_element_annotations_1 = __webpack_require__(51);
+	const icon_1 = __webpack_require__(97);
 	class HierarchyWindow extends editor_window_element_1.EditorWindowElement {
 	    constructor() {
 	        super(...arguments);
+	        this.mouse = new vector2_1.Vector2();
 	        this.elementMap = new Map();
 	        this.contextSelection = null;
-	        this.contextMenu = null;
-	        this.dragElement = null;
-	    }
-	    getDomData() {
-	        return { tagName: "div", classList: "hierarchy-window-root" };
 	    }
 	    createHierarchyItem(element) {
 	        const item = element_renderer_1.createElement(hierarchy_item_1.HierarchyItem, { element: element });
@@ -5821,35 +6901,35 @@
 	            }
 	        }
 	    }
-	    showContextMenu(item, x, y) {
-	        this.contextSelection = item;
-	        this.contextMenu.setPosition(x, y);
-	        this.contextMenu.setVisible(true);
+	    showContextMenu() {
+	        const input = EditorRuntime.getInput();
+	        input.getMousePosition(this.mouse);
+	        let mouseOver = EditorRuntime.getEditorElementAtPoint(this.mouse);
+	        if (!mouseOver || mouseOver.getAncestorByType(icon_1.ToggleIcon, true))
+	            return;
+	        let item = mouseOver.getAncestorByType(hierarchy_item_1.HierarchyItem, true);
+	        if (item)
+	            this.contextSelection = item.attrs.element;
 	    }
 	    onUpdated() {
 	        const input = EditorRuntime.getInput();
-	        if (this.dragElement) {
+	        const inElement = input.isMouseInEditorElement(this);
+	        if (!inElement) {
+	            return;
 	        }
-	        else if (this.contextMenu.isVisible()) {
-	            if (EditorRuntime.getInput().isMouseButtonDown(e_mouse_state_1.MouseButtonState.Left)) {
-	                const mp = EditorRuntime.getInput().getMousePosition();
-	                const el = document.elementFromPoint(mp.x, mp.y);
-	                if (!this.contextMenu.isElementInHierarchy(el)) {
-	                    this.contextMenu.setVisible(false);
+	        if (!EditorRuntime.getCurrentDragAction() && input.isMouseDown()) {
+	            input.getMouseDownDelta(this.mouse);
+	            if (this.mouse.lengthSquared() > 64) {
+	                input.getMouseDownPosition(this.mouse);
+	                let dragElement = EditorRuntime.getEditorElementAtPoint(this.mouse, hierarchy_item_1.HierarchyItem);
+	                if (!dragElement) {
+	                    return;
 	                }
+	                EditorRuntime.beginDragAction(new drag_hierarchy_item_1.HierarchyItemDragAction(dragElement));
 	            }
-	        }
-	        else if (input.isMouseInEditorElement(this) && input.isMouseDownThisFrame()) {
-	            const mouse = input.getMousePosition();
-	            const hoverElement = EditorRuntime.getEditorElementAtPoint(mouse);
-	            if (!hoverElement)
-	                return;
-	            const dragElement = hoverElement.getFirstOfTypeUpwards(hierarchy_item_1.HierarchyItem);
-	            EditorRuntime.beginDragAction(new drag_hierarchy_item_1.HierarchyItemDragAction(dragElement));
 	        }
 	    }
 	    onRendered() {
-	        element_renderer_1.render(this.contextMenu, document.getElementById("root"));
 	        EditorRuntime.on(evt_selection_changed_1.SelectionChanged, this);
 	        EditorRuntime.on(evt_scene_loaded_event_1.SceneLoaded, this);
 	        EditorRuntime.on(evt_app_element_created_1.AppElementCreated, this);
@@ -5876,12 +6956,7 @@
 	        EditorRuntime.select(null);
 	    }
 	    addChildToContextSelection() {
-	        const appElement = new app_element_1.AppElement("Child Element");
-	        appElement.setParent(this.contextSelection);
-	        const item = this.createHierarchyItem(appElement);
-	        const itemParent = this.getHierarchyItemForElement(this.contextSelection);
-	        itemParent.getChildRoot().addChild(item);
-	        this.contextMenu.setVisible(false);
+	        new app_element_1.AppElement("Child Element", this.contextSelection);
 	    }
 	    destroyContextSelection() {
 	        const hierarchyItem = this.getHierarchyItemForElement(this.contextSelection);
@@ -5891,60 +6966,46 @@
 	        hierarchyItem.destroy();
 	        this.contextSelection.destroy();
 	        this.contextSelection = null;
-	        this.contextMenu.setVisible(false);
 	    }
 	    createNewElement() {
-	        const selection = EditorRuntime.getSelection();
-	        let appElement = null;
-	        if (selection) {
-	            appElement = new app_element_1.AppElement("Element", selection);
-	        }
-	        else {
-	            appElement = new app_element_1.AppElement("Element");
-	        }
+	        new app_element_1.AppElement("Element", EditorRuntime.getSelection());
 	    }
 	    createInitialStructure(children) {
-	        this.contextMenu = this.createContextMenu();
 	        return [
 	            Hex.createElement("div", { class: "hierarchy-top-bar" },
-	                Hex.createElement(button_1.Button, { class: "btn btn-xs btn-info", onClick: this.createNewElement }, "Create")),
-	            Hex.createElement("div", { "x-child-root": true, class: "hierarchy-main-body", onClick: this.clearSelection })
+	                Hex.createElement(button_1.Button, { onClick: this.createNewElement }, "Create")),
+	            Hex.createElement("div", { "x-child-root": true, class: "hierarchy-main-body" })
 	        ];
 	    }
 	    createContextMenu() {
-	        return Hex.createElement("div", { "x-id": "ctx-menu", "x-hidden": true, class: "hierarchy-ctx-menu-container" },
-	            Hex.createElement("ul", { class: "hierarchy-ctx-menu" },
-	                Hex.createElement("li", { class: "ctx-menu-item", onClick: this.addChildToContextSelection },
-	                    Hex.createElement("a", null, "Add Child")),
-	                Hex.createElement("li", { class: "ctx-menu-item", onClick: this.destroyContextSelection },
-	                    Hex.createElement("a", null, "Delete"))));
+	        return element_renderer_1.createElement(context_menu_1.EditorContextMenu, {
+	            options: [
+	                {
+	                    name: "Create",
+	                    icon: "object-group",
+	                    action: () => this.addChildToContextSelection()
+	                },
+	                {
+	                    name: "Delete",
+	                    icon: "remove",
+	                    action: () => this.destroyContextSelection()
+	                }
+	            ]
+	        });
 	    }
 	}
+	tslib_1.__decorate([
+	    editor_element_annotations_1.onRightClick
+	], HierarchyWindow.prototype, "showContextMenu", null);
+	tslib_1.__decorate([
+	    editor_element_annotations_1.onClick
+	], HierarchyWindow.prototype, "clearSelection", null);
 	exports.HierarchyWindow = HierarchyWindow;
 	createStyleSheet(`
 	<style>
 
 
-	.hierarchy-ctx-menu-container {
-	    position: absolute;
-	    z-index: 100;
-	    min-width: 200px;
-	    background: burlywood;
-	    display: flex;
-	    flex-direction: column;
-	    color: black;
-	}
-
-	.hierarchy-ctx-menu {
-	    width: 100%;
-	    background: white;
-	    padding-left: 1em;
-	    list-style: none;
-	    margin:0;
-	    
-	}
-
-	.hierarchy-window-root {
+	.hierarchy-window {
 	    display: flex;
 	    flex-direction: column;
 	    height: 100%;
@@ -5962,63 +7023,53 @@
 
 
 /***/ },
-/* 86 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(30);
-	const icon_1 = __webpack_require__(87);
-	const editor_custom_element_1 = __webpack_require__(47);
-	const hierarchy_window_1 = __webpack_require__(85);
-	const hierarchy_insert_target_1 = __webpack_require__(88);
-	const drag_action_1 = __webpack_require__(35);
-	const drag_hierarchy_item_1 = __webpack_require__(127);
-	class HierarchyItem extends editor_custom_element_1.EditorCustomElement {
-	    getDomData() {
-	        return { tagName: "div", classList: "hierarchy-item" };
-	    }
+	const icon_1 = __webpack_require__(97);
+	const drag_action_1 = __webpack_require__(36);
+	const drag_hierarchy_item_1 = __webpack_require__(58);
+	const editor_html_element_1 = __webpack_require__(15);
+	const hierarchy_insert_target_1 = __webpack_require__(98);
+	class HierarchyItem extends editor_html_element_1.EditorHTMLElement {
 	    setSelected(isSelected) {
-	        const node = this.getChildById("item-details");
-	        node.getDomNode().classList.toggle("selected", isSelected);
+	        this.getChildBySelector(".hierarchy-item-offset").toggleClass("selected", isSelected);
 	    }
 	    onDestroyed() {
 	        this.attrs.element = null;
 	    }
-	    showCreateMenu(e) {
-	        const hierarchy = this.getAncestorByType(hierarchy_window_1.HierarchyWindow);
-	        hierarchy.showContextMenu(this.attrs.element, e.pageX, e.pageY);
-	    }
 	    mouseEnterDetails(action) {
-	        if (action.item === this || action.item === this.parent) {
-	            this.getChildById("item-details").getDomNode().style.background = "red";
-	        }
-	        else {
-	            this.getChildById("item-details").getDomNode().style.background = "green";
+	        if (!(action.item === this || action.item === this.parent)) {
+	            this.getChildBySelector(".hierarchy-item-offset").addClass("hovered");
 	        }
 	    }
 	    mouseExitDetails(item) {
-	        this.getChildById("item-details").getDomNode().style.background = null;
+	        this.getChildBySelector(".hierarchy-item-offset").removeClass("hovered");
 	    }
 	    mouseDragDrop(action) {
 	        if (action.item === this || action.item === this.parent) {
 	            return;
 	        }
 	        const elementParent = this.attrs.element;
-	        action.item.attrs.element.setParent(elementParent);
+	        action.appElement.setParent(elementParent);
 	    }
 	    createInitialStructure(children) {
 	        const appElement = this.attrs.element;
-	        let padding = (appElement.getDepth() + 1);
+	        const depth = this.attrs.element.getDepth();
+	        const paddingLeft = "padding-left:" + (depth * 12) + "px";
 	        return [
-	            Hex.createElement("div", { "x-id": "item-details", class: "hierarchy-item-details", style: "padding-left:" + padding + "em", onClick: () => EditorRuntime.select(appElement), onRightClick: this.showCreateMenu },
-	                Hex.createElement(icon_1.ToggleIcon, { style: "padding-left:" + (appElement.getDepth() * 12) + "px", class: "hierarchy-toggle", "x-hidden": true, "x-if-eval": () => appElement.getChildCount() > 0 }),
-	                Hex.createElement("a", null,
+	            Hex.createElement(hierarchy_insert_target_1.HierarchyItemDropTarget, { insert: "before" }),
+	            Hex.createElement("div", { class: "hierarchy-item-offset", style: paddingLeft },
+	                Hex.createElement(icon_1.ToggleIcon, { "x-id": "toggle", "x-if-eval": () => appElement.getChildCount() > 0 }),
+	                Hex.createElement("div", { class: "name-label" },
 	                    " ",
 	                    new window.EditorBindingElement(appElement, ["name"]),
 	                    " ")),
-	            Hex.createElement(hierarchy_insert_target_1.HierarchyInsertTarget, null),
-	            Hex.createElement("div", { "x-child-root": true, class: "item-children" })
+	            Hex.createElement(hierarchy_insert_target_1.HierarchyItemDropTarget, { insert: "after" }),
+	            Hex.createElement("div", { "x-child-root": true, class: "hierarchy-item-children" }, children),
 	        ];
 	    }
 	}
@@ -6034,39 +7085,48 @@
 	exports.HierarchyItem = HierarchyItem;
 	createStyleSheet(`<style>
 
-	.hierarchy-toggle {
-	    font-size: 0.7em;
-	    position: absolute;
-	    left: 0.2em;
-	    top: 4px;
-	}    
+	    .hierarchy-item-details.selected {
+	        background: #c8f8ff;
+	    }
+
+	    .hierarchy-item-offset.selected {
+	        color:white;
+	        background: #62b4ff;
+	    }
 	    
-	.hierarchy-item-details {
-	    position: relative;
-	}
-
-	.item-insert-space {
-	    position: absolute;
-	    height: 0.2em;
-	    width: 100%;
-	}
-
-	.hierarchy-item-details.selected {
-	    background: #c8f8ff;
-	}
-
+	    .hierarchy-item-offset.hovered {
+	        background: #43ff5f;
+	    }
+	    
+	    .hierarchy-item-offset {
+	        display:flex;
+	        flex-direction: row;
+	    }
+	        
+	    .hierarchy-item-offset .name-label {
+	        flex:1;
+	        margin-right:2px;
+	        margin-left: 2px;
+	        padding-left:2px;
+	        padding-right:2px;
+	    }
+	    
+	    .hierarchy-item-offset .icon {
+	        color: black;
+	    }
+	    
 
 	`);
 
 
 /***/ },
-/* 87 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(47);
-	class BaseIcon extends editor_custom_element_1.EditorCustomElement {
+	const editor_html_element_1 = __webpack_require__(15);
+	class FontIcon extends editor_html_element_1.EditorHTMLElement {
 	    constructor() {
 	        super(...arguments);
 	        this.prefix = "fa";
@@ -6094,141 +7154,230 @@
 	        this.attrs.iconName = iconName;
 	    }
 	}
-	exports.BaseIcon = BaseIcon;
-	class FontIcon extends BaseIcon {
-	}
 	exports.FontIcon = FontIcon;
-	class ToggleIcon extends editor_custom_element_1.EditorCustomElement {
+	class ToggleIcon extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "i", classList: this.getClassList() };
 	    }
 	    onMounted() {
 	        const attrs = this.attrs;
 	        const htmlNode = this.htmlNode;
-	        let direction = attrs.direction;
 	        attrs.visibilityTarget = attrs.visibilityTarget || (() => {
 	            return this.renderContext.getChildRoot();
 	        });
-	        if (direction !== "right" && direction !== "left") {
-	            attrs.direction = direction = "right";
-	        }
 	        htmlNode.addEventListener('click', (e) => {
 	            attrs.open = !attrs.open;
-	            const target = attrs.visibilityTarget();
-	            target.setVisible(attrs.open);
-	            if (attrs.open) {
-	                htmlNode.classList.remove("fa-chevron-" + direction);
-	                htmlNode.classList.add("fa-chevron-down");
+	            if (this.attrs.onToggle) {
+	                this.attrs.onToggle(attrs.open);
 	            }
 	            else {
-	                htmlNode.classList.remove("fa-chevron-down");
-	                htmlNode.classList.add("fa-chevron-" + direction);
+	                attrs.visibilityTarget().setVisible(attrs.open);
 	            }
+	            htmlNode.classList.toggle("fa-caret-down", attrs.open);
+	            htmlNode.classList.toggle("fa-caret-right", !attrs.open);
 	            e.stopPropagation();
-	        }, false);
-	    }
-	    getIconSize() {
-	        return " icon " + (this.attrs.size || "");
+	        }, true);
 	    }
 	    getClassList() {
 	        const attrs = this.attrs;
 	        attrs.open = attrs.open === void 0 ? true : Boolean(attrs.open);
-	        if (this.attrs.direction !== "right" && this.attrs.direction !== "left") {
-	            this.attrs.direction = "right";
-	        }
-	        if (this.attrs.open) {
-	            return "fa fa-chevron-down" + this.getIconSize();
-	        }
-	        return "fa fa-chevron-" + this.attrs.direction + this.getIconSize();
+	        return "toggle-icon fa " + (this.attrs.open ? "fa-caret-down" : "fa-caret-right");
 	    }
 	}
 	exports.ToggleIcon = ToggleIcon;
 	createStyleSheet(`<style>
-	    
-	    .icon.small {
-	        font-size: 0.7em;
-	    }
-
-	    .icon.large {
-	        font-size:1.25em;
+	    .toggle-icon {
+	        width: 18px;
+	        padding: 0 4px;
 	    }
 	`);
 
 
 /***/ },
-/* 88 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(30);
 	const editor_html_element_1 = __webpack_require__(15);
-	const drag_action_1 = __webpack_require__(35);
-	const drag_hierarchy_item_1 = __webpack_require__(127);
-	class AppElementAssetDragAction extends drag_action_1.DragAction {
-	}
-	class HierarchyInsertTarget extends editor_html_element_1.EditorHTMLElement {
-	    getDomData() {
-	        return { tagName: "div", classList: "hierarchy-insert-target" };
+	const hierarchy_item_1 = __webpack_require__(96);
+	const drag_action_1 = __webpack_require__(36);
+	const drag_hierarchy_item_1 = __webpack_require__(58);
+	const prefab_drag_action_1 = __webpack_require__(59);
+	class HierarchyItemDropTarget extends editor_html_element_1.EditorHTMLElement {
+	    onMounted() {
+	        this.target = this.parent;
 	    }
-	    handleDragEnter(dragAction) {
-	        this.getDomNode().style.background = "green";
+	    onDragEnter(action) {
+	        this.addClass("hover");
 	    }
-	    handleDragExit(dragAction) {
-	        this.getDomNode().style.background = null;
+	    onDragExit() {
+	        this.removeClass("hover");
 	    }
-	    handleDrop(dragAction) {
-	        debugger;
+	    onDrop(action) {
+	        const grandParent = this.target.getAncestorByType(hierarchy_item_1.HierarchyItem);
+	        if (!grandParent) {
+	            return;
+	        }
+	        let idx = grandParent.getChildRoot().getChildIndex(this.target);
+	        if (this.attrs.insert === "after")
+	            idx++;
+	        if (action instanceof prefab_drag_action_1.PrefabDragAction) {
+	        }
+	        else if (action instanceof drag_hierarchy_item_1.HierarchyItemDragAction) {
+	            action.appElement.setParent(this.target.attrs.element);
+	        }
+	    }
+	    createInitialStructure() {
+	        return Hex.createElement("div", { class: "hover-target-display" });
 	    }
 	}
 	tslib_1.__decorate([
+	    drag_action_1.DragAction.MouseEnter(prefab_drag_action_1.PrefabDragAction),
 	    drag_action_1.DragAction.MouseEnter(drag_hierarchy_item_1.HierarchyItemDragAction)
-	], HierarchyInsertTarget.prototype, "handleDragEnter", null);
+	], HierarchyItemDropTarget.prototype, "onDragEnter", null);
 	tslib_1.__decorate([
-	    drag_action_1.DragAction.MouseExit(drag_hierarchy_item_1.HierarchyItemDragAction),
-	    drag_action_1.DragAction.Drop(drag_hierarchy_item_1.HierarchyItemDragAction)
-	], HierarchyInsertTarget.prototype, "handleDragExit", null);
+	    drag_action_1.DragAction.MouseExit(prefab_drag_action_1.PrefabDragAction),
+	    drag_action_1.DragAction.MouseExit(drag_hierarchy_item_1.HierarchyItemDragAction)
+	], HierarchyItemDropTarget.prototype, "onDragExit", null);
 	tslib_1.__decorate([
+	    drag_action_1.DragAction.Drop(prefab_drag_action_1.PrefabDragAction),
 	    drag_action_1.DragAction.Drop(drag_hierarchy_item_1.HierarchyItemDragAction)
-	], HierarchyInsertTarget.prototype, "handleDrop", null);
-	exports.HierarchyInsertTarget = HierarchyInsertTarget;
+	], HierarchyItemDropTarget.prototype, "onDrop", null);
+	exports.HierarchyItemDropTarget = HierarchyItemDropTarget;
 	createStyleSheet(`<style>
-	    .hierarchy-insert-target {
-	        height: 0.15em;
+	    
+	    .hierarchy-item-drop-target {
+	        position:relative;
 	    }
+	    
+	    .hierarchy-item-drop-target .hover-target-display {
+	        position: absolute;
+	        top: -2px;
+	        left: 0;
+	        height: 4px;
+	        width: 100%;
+	    }
+	    
+	    .hierarchy-item-drop-target.hover .hover-target-display {
+	        background: aliceblue;
+	    }
+	    
 	`);
 
 
 /***/ },
-/* 89 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(47);
-	class EditorWindowElement extends editor_custom_element_1.EditorCustomElement {
+	const editor_html_element_1 = __webpack_require__(15);
+	class EditorWindowElement extends editor_html_element_1.EditorHTMLElement {
 	}
 	exports.EditorWindowElement = EditorWindowElement;
 
 
 /***/ },
-/* 90 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(30);
-	const editor_theme_1 = __webpack_require__(55);
-	const editor_window_element_1 = __webpack_require__(89);
+	const editor_html_element_1 = __webpack_require__(15);
+	const element_renderer_1 = __webpack_require__(5);
+	const editor_element_annotations_1 = __webpack_require__(51);
+	const icon_1 = __webpack_require__(97);
+	class EditorContextMenu extends editor_html_element_1.EditorHTMLElement {
+	    getDomData() {
+	        return { tagName: "div", classList: "editor-context-menu" };
+	    }
+	    onCreated() {
+	        EditorRuntime.updateTree.add(this);
+	    }
+	    onUpdated() {
+	        const input = EditorRuntime.getInput();
+	        if (input.isMouseDownThisFrame()) {
+	            const mp = EditorRuntime.getInput().getMousePosition();
+	            const el = EditorRuntime.getEditorElementAtPoint(mp);
+	            if (!this.isDescendant(el)) {
+	                EditorRuntime.hideContextMenu();
+	            }
+	        }
+	    }
+	    createInitialStructure() {
+	        return this.createMenu(this.attrs.options);
+	    }
+	    createMenu(options) {
+	        return options.map((option) => {
+	            return element_renderer_1.createElement(EditorContextMenuItem, option);
+	        });
+	    }
+	}
+	exports.EditorContextMenu = EditorContextMenu;
+	class EditorContextMenuItem extends editor_html_element_1.EditorHTMLElement {
+	    getDomData() {
+	        return { tagName: "div", classList: "editor-context-menu-item" };
+	    }
+	    onClick() {
+	        if (this.attrs.action) {
+	            this.attrs.action();
+	        }
+	        EditorRuntime.hideContextMenu();
+	    }
+	    createInitialStructure() {
+	        return [
+	            Hex.createElement(icon_1.FontIcon, { iconName: this.attrs.icon }),
+	            this.attrs.name
+	        ];
+	    }
+	}
+	tslib_1.__decorate([
+	    editor_element_annotations_1.onClick
+	], EditorContextMenuItem.prototype, "onClick", null);
+	createStyleSheet(`
+	<style>
+
+	.editor-context-menu {
+	    position: absolute;
+	    z-index: 100;
+	    min-width: 200px;
+	    background: #d4d4d4;
+	    display: flex;
+	    flex-direction: column;
+	    color: black;
+	    border-radius: 3px;
+	    padding: 0.5em;
+	}
+
+	.editor-context-menu-item:hover {
+	    background: lightblue;
+	}
+
+
+	`);
+
+
+/***/ },
+/* 101 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(30);
+	const editor_theme_1 = __webpack_require__(60);
+	const editor_window_element_1 = __webpack_require__(99);
 	const app_element_1 = __webpack_require__(25);
-	const scene_meta_bar_1 = __webpack_require__(91);
+	const scene_meta_bar_1 = __webpack_require__(102);
 	const vector2_1 = __webpack_require__(14);
-	const breakpoint_1 = __webpack_require__(61);
+	const breakpoint_1 = __webpack_require__(64);
 	const util_1 = __webpack_require__(13);
-	const drag_action_1 = __webpack_require__(35);
-	const prefab_drag_action_1 = __webpack_require__(54);
-	const rect_tool_1 = __webpack_require__(80);
-	const layout_component_1 = __webpack_require__(38);
+	const drag_action_1 = __webpack_require__(36);
+	const prefab_drag_action_1 = __webpack_require__(59);
+	const rect_tool_1 = __webpack_require__(90);
+	const layout_1 = __webpack_require__(39);
 	class SceneWindow extends editor_window_element_1.EditorWindowElement {
 	    constructor() {
 	        super(...arguments);
@@ -6372,7 +7521,7 @@
 	            this.dragThing.beginFill(0x00FF00, 0.2);
 	            this.dragThing.lineStyle(1, 0x00FF00);
 	            const position = mouseOver.getPosition();
-	            const layout = mouseOver.getComponent(layout_component_1.LayoutComponent);
+	            const layout = mouseOver.getComponent(layout_1.LayoutComponent);
 	            if (layout) {
 	                const slot = layout.getSlotAtPosition(mouse);
 	            }
@@ -6398,7 +7547,7 @@
 	        const selection = EditorRuntime.getSelection();
 	        if (!selection)
 	            return;
-	        const position = selection.getPosition();
+	        const position = selection.getLocalPosition();
 	        const w = selection.getWidth();
 	        const h = selection.getHeight();
 	        this.selectionOutline.lineStyle(1, 0xFFFFFFFF);
@@ -6411,6 +7560,15 @@
 	        this.selectionOutline.drawCircle(position.x + w, position.y + h, 5);
 	        this.selectionOutline.drawCircle(position.x, position.y + h, 5);
 	        this.selectionOutline.endFill();
+	        const parent = selection.getParent();
+	        let parentPosition = null;
+	        if (parent) {
+	            parentPosition = selection.getParent().getPosition();
+	        }
+	        else {
+	            parentPosition = selection.getPosition();
+	        }
+	        this.selectionOutline.position.set(parentPosition.x, parentPosition.y);
 	    }
 	    createInitialStructure(children) {
 	        return [
@@ -6490,22 +7648,22 @@
 
 
 /***/ },
-/* 91 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(47);
-	const button_1 = __webpack_require__(75);
-	const scene_window_1 = __webpack_require__(90);
-	const editor_theme_1 = __webpack_require__(55);
-	const breakpoint_1 = __webpack_require__(61);
+	const button_1 = __webpack_require__(85);
+	const scene_window_1 = __webpack_require__(101);
+	const editor_theme_1 = __webpack_require__(60);
+	const breakpoint_1 = __webpack_require__(64);
+	const editor_html_element_1 = __webpack_require__(15);
 	function round(places) {
 	    return function (value) {
 	        return value.toFixed(places);
 	    };
 	}
-	class SceneMetaBar extends editor_custom_element_1.EditorCustomElement {
+	class SceneMetaBar extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "scene-meta-bar" };
 	    }
@@ -6571,22 +7729,22 @@
 
 
 /***/ },
-/* 92 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const vertical_stack_1 = __webpack_require__(93);
-	const text_input_1 = __webpack_require__(94);
+	const vertical_stack_1 = __webpack_require__(104);
+	const text_input_1 = __webpack_require__(105);
 	const evt_selection_changed_1 = __webpack_require__(4);
-	const editor_window_element_1 = __webpack_require__(89);
-	const inspector_row_1 = __webpack_require__(95);
-	const component_menu_1 = __webpack_require__(96);
-	const editor_theme_1 = __webpack_require__(55);
-	const component_renderer_1 = __webpack_require__(99);
+	const editor_window_element_1 = __webpack_require__(99);
+	const inspector_row_1 = __webpack_require__(106);
+	const component_menu_1 = __webpack_require__(107);
+	const editor_theme_1 = __webpack_require__(60);
+	const component_renderer_1 = __webpack_require__(110);
 	const element_renderer_1 = __webpack_require__(5);
-	const app_element_inspector_1 = __webpack_require__(101);
-	const binding_1 = __webpack_require__(51);
+	const app_element_inspector_1 = __webpack_require__(112);
+	const binding_1 = __webpack_require__(54);
 	class InspectorWindow extends editor_window_element_1.EditorWindowElement {
 	    onSelectionChanged(newSelection, oldSelection) {
 	        this.selection = newSelection;
@@ -6652,13 +7810,13 @@
 
 
 /***/ },
-/* 93 */
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(47);
-	class VerticalBase extends editor_custom_element_1.EditorCustomElement {
+	const editor_html_element_1 = __webpack_require__(15);
+	class VerticalBase extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return VerticalBase.DomData;
 	    }
@@ -6679,12 +7837,12 @@
 
 
 /***/ },
-/* 94 */
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(76);
+	const editor_input_1 = __webpack_require__(86);
 	class TextInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return {
@@ -6713,14 +7871,14 @@
 
 
 /***/ },
-/* 95 */
+/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(47);
 	const util_1 = __webpack_require__(13);
-	class InspectorRow extends editor_custom_element_1.EditorCustomElement {
+	const editor_html_element_1 = __webpack_require__(15);
+	class InspectorRow extends editor_html_element_1.EditorHTMLElement {
 	    onCreated() {
 	        this.attrs.label = util_1.titlize(this.attrs.label);
 	    }
@@ -6751,19 +7909,19 @@
 
 
 /***/ },
-/* 96 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const vertical_stack_1 = __webpack_require__(93);
-	const text_box_icon_1 = __webpack_require__(97);
-	const button_1 = __webpack_require__(75);
-	const editor_custom_element_1 = __webpack_require__(47);
-	const component_option_1 = __webpack_require__(98);
+	const vertical_stack_1 = __webpack_require__(104);
+	const text_box_icon_1 = __webpack_require__(108);
+	const button_1 = __webpack_require__(85);
+	const component_option_1 = __webpack_require__(109);
 	const component_1 = __webpack_require__(34);
 	const element_renderer_1 = __webpack_require__(5);
-	class ComponentMenu extends editor_custom_element_1.EditorCustomElement {
+	const editor_html_element_1 = __webpack_require__(15);
+	class ComponentMenu extends editor_html_element_1.EditorHTMLElement {
 	    constructor() {
 	        super(...arguments);
 	        this.showComponentSelection = false;
@@ -6833,13 +7991,13 @@
 
 
 /***/ },
-/* 97 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(47);
-	class TextBoxWithIcon extends editor_custom_element_1.EditorCustomElement {
+	const editor_html_element_1 = __webpack_require__(15);
+	class TextBoxWithIcon extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return {
 	            tagName: "div",
@@ -6893,13 +8051,13 @@
 
 
 /***/ },
-/* 98 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(47);
-	class ComponentOption extends editor_custom_element_1.EditorCustomElement {
+	const editor_html_element_1 = __webpack_require__(15);
+	class ComponentOption extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "component-item" };
 	    }
@@ -6911,21 +8069,21 @@
 
 
 /***/ },
-/* 99 */
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(47);
-	const property_renderer_1 = __webpack_require__(58);
-	const horizontal_1 = __webpack_require__(77);
-	const icon_1 = __webpack_require__(87);
+	const property_renderer_1 = __webpack_require__(62);
+	const horizontal_1 = __webpack_require__(87);
+	const icon_1 = __webpack_require__(97);
 	const element_renderer_1 = __webpack_require__(5);
-	const checkbox_input_1 = __webpack_require__(100);
+	const checkbox_input_1 = __webpack_require__(111);
 	const util_1 = __webpack_require__(13);
-	const editor_theme_1 = __webpack_require__(55);
-	const expose_as_1 = __webpack_require__(39);
-	class ComponentRenderer extends editor_custom_element_1.EditorCustomElement {
+	const editor_theme_1 = __webpack_require__(60);
+	const expose_as_1 = __webpack_require__(40);
+	const editor_html_element_1 = __webpack_require__(15);
+	class ComponentRenderer extends editor_html_element_1.EditorHTMLElement {
 	    constructor() {
 	        super(...arguments);
 	        this.editorDataMap = expose_as_1.getExposedFieldMap(this.attrs.component);
@@ -7018,12 +8176,12 @@
 
 
 /***/ },
-/* 100 */
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(76);
+	const editor_input_1 = __webpack_require__(86);
 	class CheckboxInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return {
@@ -7047,18 +8205,18 @@
 
 
 /***/ },
-/* 101 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const editor_html_element_1 = __webpack_require__(15);
-	const inspector_row_1 = __webpack_require__(95);
-	const vector2_input_1 = __webpack_require__(102);
-	const binding_1 = __webpack_require__(51);
+	const inspector_row_1 = __webpack_require__(106);
+	const vector2_input_1 = __webpack_require__(113);
+	const binding_1 = __webpack_require__(54);
 	const app_element_1 = __webpack_require__(25);
-	const number_input_1 = __webpack_require__(104);
-	const inline_field_1 = __webpack_require__(103);
+	const number_input_1 = __webpack_require__(115);
+	const inline_field_1 = __webpack_require__(114);
 	class TransformInspector extends editor_html_element_1.EditorHTMLElement {
 	    onCreated() {
 	        this.appElement = this.attrs.appElement;
@@ -7112,15 +8270,15 @@
 
 
 /***/ },
-/* 102 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const inline_field_1 = __webpack_require__(103);
-	const number_input_1 = __webpack_require__(104);
-	const binding_1 = __webpack_require__(51);
-	const editor_input_1 = __webpack_require__(76);
+	const inline_field_1 = __webpack_require__(114);
+	const number_input_1 = __webpack_require__(115);
+	const binding_1 = __webpack_require__(54);
+	const editor_input_1 = __webpack_require__(86);
 	class Vector2Input extends editor_input_1.InputRenderer {
 	    createInitialStructure(children) {
 	        return [
@@ -7135,12 +8293,12 @@
 
 
 /***/ },
-/* 103 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const horizontal_1 = __webpack_require__(77);
+	const horizontal_1 = __webpack_require__(87);
 	class InlineField extends horizontal_1.HorizontalBase {
 	    createInitialStructure(children) {
 	        return [
@@ -7161,12 +8319,12 @@
 
 
 /***/ },
-/* 104 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(76);
+	const editor_input_1 = __webpack_require__(86);
 	class NumberInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return {
@@ -7210,66 +8368,89 @@
 
 
 /***/ },
-/* 105 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_window_element_1 = __webpack_require__(89);
-	const asset_folder_1 = __webpack_require__(106);
+	const tslib_1 = __webpack_require__(30);
+	const editor_window_element_1 = __webpack_require__(99);
 	const vector2_1 = __webpack_require__(14);
-	const asset_item_1 = __webpack_require__(108);
+	const asset_item_1 = __webpack_require__(117);
 	const element_renderer_1 = __webpack_require__(5);
-	const prefab_asset_item_1 = __webpack_require__(109);
-	const prefab_template_1 = __webpack_require__(56);
+	const prefab_asset_item_1 = __webpack_require__(118);
+	const prefab_template_1 = __webpack_require__(47);
+	const editor_element_annotations_1 = __webpack_require__(51);
+	const context_menu_1 = __webpack_require__(100);
+	const editor_theme_1 = __webpack_require__(60);
+	const folder_asset_item_1 = __webpack_require__(119);
+	const folder_asset_1 = __webpack_require__(45);
+	const icon_1 = __webpack_require__(97);
 	class AssetWindow extends editor_window_element_1.EditorWindowElement {
 	    constructor() {
 	        super(...arguments);
 	        this.mouse = new vector2_1.Vector2();
-	    }
-	    getDomData() {
-	        return { tagName: "div", classList: "asset-window" };
+	        this.selectedItem = null;
 	    }
 	    onRendered() {
 	        this.loadAssets();
 	        EditorRuntime.updateTree.add(this);
 	    }
 	    loadAssets() {
-	        const manifest = __webpack_require__(110);
+	        const manifest = __webpack_require__(120);
 	        manifest.forEach((data) => {
 	            this.getChildRoot().addChild(this.loadAsset(data));
 	        });
 	    }
-	    loadAsset(asset) {
-	        const data = asset.data;
-	        switch (asset.type) {
+	    loadAsset(assetDescription, path = "") {
+	        const name = assetDescription.name;
+	        assetDescription.path = (path !== "") ? path + "/" + name : name;
+	        const children = assetDescription.children.map((child) => {
+	            return this.loadAsset(child, assetDescription.path);
+	        });
+	        switch (assetDescription.type) {
 	            case "folder":
-	                const attrs = { name: asset.name, isOpen: data.isOpen };
-	                const children = [];
-	                data.contents.forEach((asset) => {
-	                    const child = this.loadAsset(asset);
-	                    if (child) {
-	                        children.push(child);
-	                    }
-	                });
-	                return element_renderer_1.createElement(asset_folder_1.AssetSection, attrs, children);
+	                return element_renderer_1.createElement(folder_asset_item_1.FolderAssetItem, {
+	                    asset: new folder_asset_1.FolderAsset(assetDescription)
+	                }, ...children);
 	            case "image":
 	                return null;
 	            case "prefab":
-	                return element_renderer_1.createElement(prefab_asset_item_1.PrefabAssetItem, { asset: new prefab_template_1.PrefabTemplate(asset) });
+	                return element_renderer_1.createElement(prefab_asset_item_1.PrefabAssetItem, {
+	                    asset: new prefab_template_1.PrefabTemplate(assetDescription)
+	                }, ...children);
 	        }
 	        return null;
 	    }
+	    select() {
+	        const input = EditorRuntime.getInput();
+	        input.getMousePosition(this.mouse);
+	        const mouseOver = EditorRuntime.getEditorElementAtPoint(this.mouse);
+	        if (mouseOver.getAncestorByType(icon_1.ToggleIcon, true))
+	            return;
+	        if (this.selectedItem) {
+	            this.selectedItem.deselect();
+	        }
+	        this.selectedItem = mouseOver.getAncestorByType(asset_item_1.EditorAssetItem, true);
+	        if (this.selectedItem) {
+	            this.selectedItem.select();
+	        }
+	    }
+	    showContextMenu() {
+	        this.select();
+	        EditorRuntime.showContextMenu(this.createContextMenu());
+	    }
 	    onUpdated() {
 	        const input = EditorRuntime.getInput();
-	        if (!input.isMouseInEditorElement(this)) {
+	        const inElement = input.isMouseInEditorElement(this);
+	        if (!inElement) {
 	            return;
 	        }
 	        if (!EditorRuntime.getCurrentDragAction() && input.isMouseDown()) {
 	            input.getMouseDownDelta(this.mouse);
 	            if (this.mouse.lengthSquared() > 64) {
 	                input.getMouseDownPosition(this.mouse);
-	                let hoverElement = EditorRuntime.getEditorElementAtPoint(this.mouse, asset_item_1.AssetSectionItem);
+	                let hoverElement = EditorRuntime.getEditorElementAtPoint(this.mouse, asset_item_1.EditorAssetItem);
 	                if (!hoverElement) {
 	                    return;
 	                }
@@ -7277,179 +8458,340 @@
 	            }
 	        }
 	    }
-	    createInitialStructure() {
-	        return [];
+	    createFolder() {
+	        let parent = this;
+	        if (this.selectedItem) {
+	            parent = this.selectedItem.getAncestorByType(folder_asset_item_1.FolderAssetItem, true) || this;
+	        }
+	        const path = (parent instanceof asset_item_1.EditorAssetItem) ? parent.getPath() + "/" : "";
+	        const asset = new folder_asset_1.FolderAsset({ path: path + "New Folder" });
+	        const folder = element_renderer_1.createElement(folder_asset_item_1.FolderAssetItem, { asset });
+	        parent.getChildRoot().addChild(folder);
+	    }
+	    renameAssetItem() {
+	        const target = this.selectedItem.getAncestorByType(asset_item_1.EditorAssetItem, true);
+	        if (!target)
+	            return;
+	        target.beginRename();
+	    }
+	    createContextMenu() {
+	        return element_renderer_1.createElement(context_menu_1.EditorContextMenu, {
+	            options: [
+	                {
+	                    name: "Create Folder",
+	                    icon: "folder-o",
+	                    action: () => this.createFolder(),
+	                },
+	                {
+	                    name: "Rename",
+	                    icon: "i-cursor",
+	                    action: () => { this.renameAssetItem(); }
+	                },
+	                {
+	                    name: "Delete",
+	                    icon: "remove",
+	                    action: () => { }
+	                }
+	            ]
+	        });
 	    }
 	}
+	tslib_1.__decorate([
+	    editor_element_annotations_1.onMouseDown
+	], AssetWindow.prototype, "select", null);
+	tslib_1.__decorate([
+	    editor_element_annotations_1.onRightClick
+	], AssetWindow.prototype, "showContextMenu", null);
 	exports.AssetWindow = AssetWindow;
 	createStyleSheet(`
 	<style>
+
 	.asset-window {
 	    overflow:scroll;
 	    width: 100%;
 	    height: 100%;
-	    background: mediumaquamarine;
+	    position: relative;
+	    padding-top: 4px;
+	    padding-bottom: 4px;
+	    background: ${editor_theme_1.WindowColors.backgroundGrey};
 	}
+
 	</style>`);
 
 
 /***/ },
-/* 106 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(30);
-	const util_1 = __webpack_require__(13);
 	const editor_html_element_1 = __webpack_require__(15);
-	const toggle_icon_label_row_1 = __webpack_require__(107);
-	const drag_action_1 = __webpack_require__(35);
-	const drag_asset_item_action_1 = __webpack_require__(53);
-	class AssetFolderNameRow extends toggle_icon_label_row_1.IconNameToggleRow {
-	    dragEnter() {
-	        this.getDomNode().style.backgroundColor = "red";
+	const asset_window_1 = __webpack_require__(116);
+	const icon_1 = __webpack_require__(97);
+	const text_selection_1 = __webpack_require__(84);
+	const drag_action_1 = __webpack_require__(36);
+	const asset_drag_action_1 = __webpack_require__(55);
+	class AssetItemDropTarget extends editor_html_element_1.EditorHTMLElement {
+	    onMounted() {
+	        this.target = this.parent;
 	    }
-	    dragExit() {
-	        this.getDomNode().style.backgroundColor = null;
+	    onDragEnter(action) {
+	        if (this.target.canNestAsset(action.asset)) {
+	            this.addClass("hover");
+	        }
+	    }
+	    onDragExit() {
+	        this.removeClass("hover");
+	    }
+	    onDrop(action) {
+	        const grandParent = this.target.getAncestorByType(EditorAssetItem);
+	        if (!grandParent || !grandParent.canNestAsset(action.asset)) {
+	            return;
+	        }
+	        let idx = grandParent.getChildRoot().getChildIndex(this.target);
+	        if (this.attrs.insert === "after")
+	            idx++;
+	        grandParent.getChildRoot().insertChild(action.item, idx);
+	    }
+	    createInitialStructure() {
+	        return Hex.createElement("div", { class: "hover-target-display" });
 	    }
 	}
 	tslib_1.__decorate([
-	    drag_action_1.DragAction.MouseEnter(drag_asset_item_action_1.DragAssetItemAction)
-	], AssetFolderNameRow.prototype, "dragEnter", null);
+	    drag_action_1.DragAction.MouseEnter(asset_drag_action_1.AssetDragAction)
+	], AssetItemDropTarget.prototype, "onDragEnter", null);
 	tslib_1.__decorate([
-	    drag_action_1.DragAction.MouseExit(drag_asset_item_action_1.DragAssetItemAction)
-	], AssetFolderNameRow.prototype, "dragExit", null);
-	class AssetSection extends editor_html_element_1.EditorHTMLElement {
-	    getDomData() {
-	        return { tagName: "div", classList: "asset-folder" };
+	    drag_action_1.DragAction.MouseExit(asset_drag_action_1.AssetDragAction)
+	], AssetItemDropTarget.prototype, "onDragExit", null);
+	class EditorAssetItem extends editor_html_element_1.EditorHTMLElement {
+	    onCreated() {
+	        this.asset = this.attrs.asset;
+	        this.assetWindow = this.getAncestorByType(asset_window_1.AssetWindow);
+	    }
+	    setIconName(iconName) {
+	        this.iconName = iconName;
+	    }
+	    canNestAsset(asset) {
+	        return true;
+	    }
+	    createDragAction() {
+	        return new asset_drag_action_1.AssetDragAction(this.asset, this);
+	    }
+	    getIconName() {
+	        return this.iconName;
+	    }
+	    beginRename() {
+	        const label = this.getChildBySelector(".name-label").getDomNode();
+	        text_selection_1.TextSelection.makeEditable(label, (text) => {
+	            return this.asset.setName(text);
+	        }, true);
+	    }
+	    select() {
+	        this.getChildBySelector('.asset-item-offset').addClass("selected");
+	    }
+	    deselect() {
+	        this.getChildBySelector('.asset-item-offset').removeClass("selected");
+	    }
+	    getPath() {
+	        return this.asset.getPath();
+	    }
+	    onAssetDragEnter(action) {
+	        if (this.canNestAsset(action.asset)) {
+	            this.getChildBySelector('.asset-item-offset').addClass("hovered");
+	        }
+	    }
+	    onAssetDragExit() {
+	        this.getChildBySelector('.asset-item-offset').removeClass("hovered");
+	    }
+	    onAssetDrop(action) {
+	        if (!this.canNestAsset(action.asset))
+	            return;
+	        this.getChildRoot().addChild(action.item);
+	        action.asset.move(this.asset.getPath());
+	    }
+	    onParentChanged() {
+	        const parent = this.getAncestorByType(EditorAssetItem);
+	        parent.showToggleIcon(parent.getChildRoot().children.length > 0);
+	        parent.onChildAdded(this);
+	    }
+	    onChildAdded(item) { }
+	    showToggleIcon(shouldShow) {
+	        this.getChildById("toggle").getDomNode().classList.toggle("invisible", !shouldShow);
+	    }
+	    setIcon(iconName) {
+	        this.getChildBySelector('.asset-icon', icon_1.FontIcon).setIcon(iconName);
 	    }
 	    createInitialStructure(children) {
-	        this.attrs.isOpen = util_1.setDefault(this.attrs.isOpen, true);
-	        const depth = 1;
-	        const padding = depth * 16;
+	        const depth = this.asset.getDepth();
+	        const paddingLeft = "padding-left:" + (depth * 12) + "px";
 	        return [
-	            Hex.createElement(AssetFolderNameRow, { toggleElementFn: () => this.getChildRoot(), iconName: "folder", label: "Label" }),
-	            Hex.createElement("div", { style: "padding-left: " + padding + "px", "x-child-root": true }, children)
+	            Hex.createElement(AssetItemDropTarget, { insert: "before" }),
+	            Hex.createElement("div", { class: "asset-item-offset", style: paddingLeft },
+	                Hex.createElement(icon_1.ToggleIcon, { "x-id": "toggle", "x-visible": children.length > 0, onToggle: (isOpen) => this.toggle(isOpen) }),
+	                Hex.createElement(icon_1.FontIcon, { class: "asset-icon", iconName: this.getIconName() }),
+	                Hex.createElement("div", { class: "name-label" },
+	                    " ",
+	                    this.asset.getName(),
+	                    " ")),
+	            Hex.createElement(AssetItemDropTarget, { insert: "after" }),
+	            Hex.createElement("div", { "x-child-root": true, class: "asset-item-children" }, children),
 	        ];
 	    }
+	    toggle(isOpen) {
+	        this.getChildRoot().setVisible(isOpen);
+	    }
 	}
-	exports.AssetSection = AssetSection;
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.MouseEnter(asset_drag_action_1.AssetDragAction)
+	], EditorAssetItem.prototype, "onAssetDragEnter", null);
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.MouseExit(asset_drag_action_1.AssetDragAction)
+	], EditorAssetItem.prototype, "onAssetDragExit", null);
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.Drop(asset_drag_action_1.AssetDragAction)
+	], EditorAssetItem.prototype, "onAssetDrop", null);
+	exports.EditorAssetItem = EditorAssetItem;
 	createStyleSheet(`<style>
 	    
-	     .asset-folder {
-	        display:flex;
-	        flex-direction: column;
+	    .asset-item-drop-target {
+	        position:relative;
+	    }
+	    
+	    .asset-item-drop-target .hover-target-display {
+	        position: absolute;
+	        top: -2px;
+	        left: 0;
+	        height: 4px;
 	        width: 100%;
-	     }
-	     
-	 
+	    }
+	    
+	    .asset-item-drop-target.hover .hover-target-display {
+	        background: aliceblue;
+	    }
+	    
+	    .asset-item-offset.selected {
+	        color:white;
+	        background: #62b4ff;
+	    }
+	    
+	    .asset-item-offset.hovered {
+	        background: #43ff5f;
+	    }
+	    
+	    .asset-item-offset {
+	        display:flex;
+	        flex-direction: row;
+	    }
+	        
+	    .asset-item-offset .name-label {
+	        flex:1;
+	        margin-right:2px;
+	        margin-left: 2px;
+	        padding-left:2px;
+	        padding-right:2px;
+	    }
+	    
+	    .asset-item-offset .icon {
+	        color: black;
+	    }
+	    
+	    .asset-item-offset [contenteditable] {
+	        outline: 1px solid black;
+	    }
+	    
+	`);
+
+
+/***/ },
+/* 118 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(30);
+	const prefab_template_1 = __webpack_require__(47);
+	const asset_item_1 = __webpack_require__(117);
+	const drag_action_1 = __webpack_require__(36);
+	let PrefabAssetItem = class PrefabAssetItem extends asset_item_1.EditorAssetItem {
+	    getIconName() {
+	        return "object-group";
+	    }
+	    canNestAsset(asset) {
+	        return asset instanceof prefab_template_1.PrefabTemplate;
+	    }
+	};
+	PrefabAssetItem = tslib_1.__decorate([
+	    drag_action_1.DragAction.Inherit
+	], PrefabAssetItem);
+	exports.PrefabAssetItem = PrefabAssetItem;
+
+
+/***/ },
+/* 119 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(30);
+	const asset_item_1 = __webpack_require__(117);
+	const icon_1 = __webpack_require__(97);
+	const drag_action_1 = __webpack_require__(36);
+	let FolderAssetItem = class FolderAssetItem extends asset_item_1.EditorAssetItem {
+	    getIconName() {
+	        return "folder-open-o";
+	    }
+	    onRendered() {
+	        if (this.getChildRoot().getChildCount() === 0) {
+	            this.setIcon("folder-o");
+	        }
+	        else if (this.asset.isOpen) {
+	            this.setIcon("folder-open-o");
+	        }
+	        else {
+	            this.setIcon("folder-o");
+	        }
+	    }
+	    onChildAdded() {
+	        this.onRendered();
+	    }
+	    toggle(isOpen) {
+	        super.toggle(isOpen);
+	        const iconName = isOpen ? "folder-open-o" : "folder-o";
+	        this.getChildBySelector('.asset-icon', icon_1.FontIcon).setIcon(iconName);
+	    }
+	};
+	FolderAssetItem = tslib_1.__decorate([
+	    drag_action_1.DragAction.Inherit
+	], FolderAssetItem);
+	exports.FolderAssetItem = FolderAssetItem;
+	createStyleSheet(`<style>
+
 	         
 	`);
 
 
 /***/ },
-/* 107 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const icon_1 = __webpack_require__(87);
-	const horizontal_1 = __webpack_require__(77);
-	class IconNameToggleRow extends horizontal_1.HorizontalBase {
-	    createInitialStructure() {
-	        let label = null;
-	        if (this.attrs.useBinding) {
-	            label = new window.EditorBindingElement(this, ["attrs", "label"]);
-	        }
-	        else {
-	            label = this.attrs.label;
-	        }
-	        let toggle = void 0;
-	        if (this.attrs.toggleElementFn) {
-	            toggle = Hex.createElement(icon_1.ToggleIcon, { visibilityTarget: this.attrs.toggleElementFn, class: "toggle", size: "small" });
-	        }
-	        return [
-	            Hex.createElement("div", { class: "icon-container" },
-	                toggle,
-	                Hex.createElement(icon_1.FontIcon, { style: "padding-left:4px", iconName: this.attrs.iconName })),
-	            Hex.createElement("span", { style: "padding-left:4px" }, label)
-	        ];
-	    }
-	}
-	exports.IconNameToggleRow = IconNameToggleRow;
-
-
-/***/ },
-/* 108 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(15);
-	class AssetSectionItem extends editor_html_element_1.EditorHTMLElement {
-	    getDomData() {
-	        return { tagName: "div", classList: "asset-item" };
-	    }
-	    createDragAction() {
-	        throw new Error("Subclass this");
-	    }
-	}
-	exports.AssetSectionItem = AssetSectionItem;
-	createStyleSheet(`<style>
-	    
-	    .asset-item {
-
-	    }
-	    
-	    .asset-item-name {
-	    
-	    }
-	    
-	`);
-
-
-/***/ },
-/* 109 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const asset_item_1 = __webpack_require__(108);
-	const prefab_drag_action_1 = __webpack_require__(54);
-	class PrefabAssetItem extends asset_item_1.AssetSectionItem {
-	    createDragAction() {
-	        return new prefab_drag_action_1.PrefabDragAction(this.attrs.asset);
-	    }
-	    createInitialStructure(children) {
-	        return [
-	            Hex.createElement("span", null, this.attrs.asset.name)
-	        ];
-	    }
-	}
-	exports.PrefabAssetItem = PrefabAssetItem;
-
-
-/***/ },
-/* 110 */
+/* 120 */
 /***/ function(module, exports) {
 
-	function Folder(name, contents, isOpen = true) {
+	function Folder(name, isOpen = true, children = []) {
 	    return {
 	        name: name,
 	        type: 'folder',
 	        data: {
 	            isOpen: isOpen,
-	            contents: contents
-	        }
+	        },
+	        children: children
 	    }
 	}
 
-	function Prefab(name, data, components) {
+	function Prefab(name, data, children = []) {
 	    return {
 	        type: 'prefab',
 	        name: name,
 	        data: data,
-	        components: components
+	        children: children
 	    }
 	}
 
@@ -7461,134 +8803,55 @@
 	}
 
 	module.exports = [
-
-	    Prefab("Panel", {}, [
-	        Component("UI/Panel"),
-	        Component("Paint/Background", {
-	            color: {r: 255, g: 0, b: 0, a: 1}
-	        })
-	    ]),
-	    Prefab("Text", {}, [
-	        Component("UI/Text", {
-	            textContent: "Hex Yeah!"
-	        })
-	    ]),
-	    Prefab("Image", {}, [
-	        Component("UI/Image", {
-	            assetId: "img/placeholder.svg" //todo formalize asset ids and resource management
-	        })
-	    ]),
-	    Prefab("Button", {}, [
-	        Component("UI/Button", {
-	            text: "Click Me!"
-	        })
-	    ]),
-	    Prefab("Slider", {}, []),
-	    Prefab("Toggle", {}, []),
-	    Prefab("Input", {}, []),
-	    Prefab("Dropdown", {}, []),
-	    Prefab("Radio Button", {}, [])
+	    Folder("Root Folder", true, [
+	        Prefab("Panel", {
+	            components: [
+	                Component("UI/Panel"),
+	                Component("Paint/Background", {
+	                    color: {r: 255, g: 0, b: 0, a: 1}
+	                })
+	            ]
+	        }),
+	        Prefab("Text", {
+	            position: {x: 1, y: 1},
+	            components: [
+	                Component("UI/Text", {
+	                    textContent: "Hex Yeah!"
+	                })
+	            ]
+	        }),
+	        Prefab("Image", {
+	            components: [
+	                Component("UI/Image", {
+	                    assetId: "img/placeholder.svg" //todo formalize asset ids and resource management
+	                })
+	            ]
+	        }),
+	        Prefab("Button", {
+	            components: [
+	                Component("UI/Button", {
+	                    text: "Click Me!"
+	                })
+	            ]
+	        }),
+	        // Prefab("Slider", {}, []),
+	        // Prefab("Toggle", {}, []),
+	        // Prefab("Input", {}, []),
+	        // Prefab("Dropdown", {}, []),
+	        // Prefab("Radio Button", {}, [])
+	    ], true)
 	];
 
 
-	// module.exports = [
-	//     {
-	//         id: 0x0,
-	//         name: "thing",
-	//         type: "folder",
-	//         data: {
-	//             contents: [
-	//                 {
-	//                     id: 0x1,
-	//                     name: "Folder",
-	//                     type: "folder",
-	//                     data: {
-	//                         contents: [
-	//                             {
-	//                                 idx: 0x4,
-	//                                 name: "Some Item",
-	//                                 type: "image",
-	//                                 data: {
-	//                                     format: "png",
-	//                                     width: 300,
-	//                                     height: 300
-	//                                 }
-	//                             }
-	//                         ]
-	//                     }
-	//                 },
-	//                 {
-	//                     id: 0x2,
-	//                     name: "image",
-	//                     type: "image",
-	//                     data: {
-	//                         format: "png",
-	//                         width: 300,
-	//                         height: 300
-	//                     }
-	//                 },
-	//                 {
-	//
-	//                     id: 0x3,
-	//                     name: "image",
-	//                     type: "image",
-	//                     data: {
-	//                         format: "png",
-	//                         width: 300,
-	//                         height: 300
-	//                     }
-	//                 },
-	//                 {
-	//                     id: 0x5,
-	//                     name: 'prefab',
-	//                     type: "prefab",
-	//                     data: {
-	//                         transform: {
-	//                             position: "",
-	//                             rotation: "",
-	//                             width: "",
-	//                             height: "",
-	//                             scale: ""
-	//                         },
-	//                         components: [
-	//                             {
-	//                                 type: "UI/HorizontalLayout",
-	//                                 data: {
-	//                                     wrapMode: 1,
-	//                                     fillFrom: 'left',
-	//                                     overflow: 'hidden'
-	//                                 }
-	//                             },
-	//                             {
-	//                                 type: "UI/Anchor",
-	//                                 data: {
-	//                                     target: 0x1141,
-	//                                     topLeft: '',
-	//                                     topRight: '',
-	//                                     bottomLeft: "",
-	//                                     bottomRight: ""
-	//                                 }
-	//                             }
-	//                         ],
-	//                         children: [
-	//                             0x1, 0x2, 0x3
-	//                         ]
-	//                     }
-	//                 }
-	//             ]
-	//         }
-	//     }
-	// ];
-
 
 /***/ },
-/* 111 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(47);
-	class MenuItem extends editor_custom_element_1.EditorCustomElement {
+	const editor_html_element_1 = __webpack_require__(15);
+	class MenuItem extends editor_html_element_1.EditorHTMLElement {
 	    noOp() { }
 	    createInitialStructure(children) {
 	        if (!this.attrs.action) {
@@ -7604,7 +8867,7 @@
 	    }
 	}
 	exports.MenuItem = MenuItem;
-	class MenuBar extends editor_custom_element_1.EditorCustomElement {
+	class MenuBar extends editor_html_element_1.EditorHTMLElement {
 	    constructor() {
 	        super({});
 	        this.menus = {};
@@ -7638,6 +8901,11 @@
 	        return item;
 	    }
 	    onRendered() {
+	        this.createMenuItem({
+	            path: "File/Save As", action: () => {
+	                EditorRuntime.getScene().save();
+	            }
+	        });
 	    }
 	    createInitialStructure(children) {
 	        return Hex.createElement("ul", { "x-child-root": true, class: "menu-bar-root" });
@@ -7659,6 +8927,7 @@
 	.menu-bar ul {
 	    margin: 0 0 1em 0;
 	    padding: 0;
+	    z-index:10;
 	}
 
 	.menu-bar-root {
@@ -7681,9 +8950,9 @@
 	    list-style: none;
 	}
 
-
 	.menu-item:hover > .sub-menu {
 	    display: block;
+	    background-color: whitesmoke;
 	}
 
 	.expand-left {
@@ -7695,14 +8964,14 @@
 
 
 /***/ },
-/* 112 */
+/* 122 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const button_1 = __webpack_require__(75);
-	const editor_custom_element_1 = __webpack_require__(47);
-	class Toolbar extends editor_custom_element_1.EditorCustomElement {
+	const button_1 = __webpack_require__(85);
+	const editor_html_element_1 = __webpack_require__(15);
+	class Toolbar extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return {
 	            tagName: "div",
@@ -7742,23 +9011,29 @@
 
 
 /***/ },
-/* 113 */
+/* 123 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 114 */
+/* 124 */
+/***/ function(module, exports) {
+
+	
+
+/***/ },
+/* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(30);
-	const component_renderer_1 = __webpack_require__(99);
-	const sizing_component_1 = __webpack_require__(37);
-	const default_sizing_component_1 = __webpack_require__(67);
-	const inspector_row_1 = __webpack_require__(95);
-	const number_input_1 = __webpack_require__(104);
+	const component_renderer_1 = __webpack_require__(110);
+	const sizing_component_1 = __webpack_require__(38);
+	const default_sizing_component_1 = __webpack_require__(73);
+	const inspector_row_1 = __webpack_require__(106);
+	const number_input_1 = __webpack_require__(115);
 	let SizingRenderer = class SizingRenderer extends component_renderer_1.ComponentRenderer {
 	    createInitialStructure(children) {
 	        const structure = [
@@ -7847,18 +9122,18 @@
 
 
 /***/ },
-/* 115 */
+/* 126 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(30);
-	const component_renderer_1 = __webpack_require__(99);
-	const text_component_1 = __webpack_require__(71);
-	const inspector_row_1 = __webpack_require__(95);
-	const text_input_1 = __webpack_require__(94);
-	const binding_1 = __webpack_require__(51);
-	const number_input_1 = __webpack_require__(104);
+	const component_renderer_1 = __webpack_require__(110);
+	const text_component_1 = __webpack_require__(78);
+	const inspector_row_1 = __webpack_require__(106);
+	const text_input_1 = __webpack_require__(105);
+	const binding_1 = __webpack_require__(54);
+	const number_input_1 = __webpack_require__(115);
 	let TextComponentRenderer = class TextComponentRenderer extends component_renderer_1.ComponentRenderer {
 	    onCreated() {
 	        this.proxy = {
@@ -7906,17 +9181,17 @@
 
 
 /***/ },
-/* 116 */
+/* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(30);
-	const property_drawer_1 = __webpack_require__(57);
-	const property_renderer_1 = __webpack_require__(58);
-	const inspector_row_1 = __webpack_require__(95);
-	const checkbox_input_1 = __webpack_require__(100);
-	const binding_1 = __webpack_require__(51);
+	const property_drawer_1 = __webpack_require__(61);
+	const property_renderer_1 = __webpack_require__(62);
+	const inspector_row_1 = __webpack_require__(106);
+	const checkbox_input_1 = __webpack_require__(111);
+	const binding_1 = __webpack_require__(54);
 	let BooleanRenderer = class BooleanRenderer extends property_renderer_1.PropertyRenderer {
 	    createInitialStructure(children) {
 	        const editorData = this.attrs.editorData;
@@ -7933,23 +9208,34 @@
 
 
 /***/ },
-/* 117 */
+/* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(30);
-	const property_renderer_1 = __webpack_require__(58);
-	const color_1 = __webpack_require__(65);
-	const inspector_row_1 = __webpack_require__(95);
-	const inline_field_1 = __webpack_require__(103);
-	const number_input_1 = __webpack_require__(104);
-	const property_drawer_1 = __webpack_require__(57);
-	const binding_1 = __webpack_require__(51);
+	const property_renderer_1 = __webpack_require__(62);
+	const color_1 = __webpack_require__(68);
+	const inspector_row_1 = __webpack_require__(106);
+	const inline_field_1 = __webpack_require__(114);
+	const number_input_1 = __webpack_require__(115);
+	const property_drawer_1 = __webpack_require__(61);
+	const binding_1 = __webpack_require__(54);
+	const button_1 = __webpack_require__(85);
+	const util_1 = __webpack_require__(13);
 	let ColorRenderer = class ColorRenderer extends property_renderer_1.PropertyRenderer {
 	    updateColor() {
 	        const cmp = this.attrs.component;
 	        cmp.setColor(cmp.getColor());
+	    }
+	    randomize() {
+	        const c = new color_1.Color();
+	        c.r = util_1.getRandomInt(0, 255);
+	        c.g = util_1.getRandomInt(0, 255);
+	        c.b = util_1.getRandomInt(0, 255);
+	        c.a = 1;
+	        const cmp = this.attrs.component;
+	        cmp.setColor(c);
 	    }
 	    createInitialStructure() {
 	        const editorData = this.attrs.editorData;
@@ -7964,7 +9250,8 @@
 	            Hex.createElement(inline_field_1.InlineField, { label: "Blue" },
 	                Hex.createElement(number_input_1.NumberInput, { value: binding_1.CreateBinding(color, "b").onChange(() => this.updateColor()) })),
 	            Hex.createElement(inline_field_1.InlineField, { label: "Alpha" },
-	                Hex.createElement(number_input_1.NumberInput, { value: binding_1.CreateBinding(color, "a").onChange(() => this.updateColor()) })));
+	                Hex.createElement(number_input_1.NumberInput, { value: binding_1.CreateBinding(color, "a").onChange(() => this.updateColor()) })),
+	            Hex.createElement(button_1.Button, { onClick: this.randomize }, "Random"));
 	    }
 	};
 	ColorRenderer = tslib_1.__decorate([
@@ -7974,18 +9261,18 @@
 
 
 /***/ },
-/* 118 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(30);
-	const property_drawer_1 = __webpack_require__(57);
-	const property_renderer_1 = __webpack_require__(58);
+	const property_drawer_1 = __webpack_require__(61);
+	const property_renderer_1 = __webpack_require__(62);
 	const util_1 = __webpack_require__(13);
-	const number_input_1 = __webpack_require__(104);
-	const inspector_row_1 = __webpack_require__(95);
-	const binding_1 = __webpack_require__(51);
+	const number_input_1 = __webpack_require__(115);
+	const inspector_row_1 = __webpack_require__(106);
+	const binding_1 = __webpack_require__(54);
 	let NumberRenderer = class NumberRenderer extends property_renderer_1.PropertyRenderer {
 	    createInitialStructure() {
 	        const editorData = this.attrs.editorData;
@@ -8009,18 +9296,18 @@
 
 
 /***/ },
-/* 119 */
+/* 130 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(30);
-	const property_renderer_1 = __webpack_require__(58);
-	const property_drawer_1 = __webpack_require__(57);
+	const property_renderer_1 = __webpack_require__(62);
+	const property_drawer_1 = __webpack_require__(61);
 	const util_1 = __webpack_require__(13);
-	const inspector_row_1 = __webpack_require__(95);
-	const select_input_1 = __webpack_require__(120);
-	const binding_1 = __webpack_require__(51);
+	const inspector_row_1 = __webpack_require__(106);
+	const select_input_1 = __webpack_require__(131);
+	const binding_1 = __webpack_require__(54);
 	let EnumSelectRenderer = class EnumSelectRenderer extends property_renderer_1.PropertyRenderer {
 	    createOptions(e) {
 	        const retn = new Array();
@@ -8072,12 +9359,12 @@
 
 
 /***/ },
-/* 120 */
+/* 131 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(76);
+	const editor_input_1 = __webpack_require__(86);
 	class SelectInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return { tagName: "select" };
@@ -8108,16 +9395,16 @@
 
 
 /***/ },
-/* 121 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(30);
-	const property_drawer_1 = __webpack_require__(57);
-	const property_renderer_1 = __webpack_require__(58);
-	const inspector_row_1 = __webpack_require__(95);
-	const text_input_1 = __webpack_require__(94);
+	const property_drawer_1 = __webpack_require__(61);
+	const property_renderer_1 = __webpack_require__(62);
+	const inspector_row_1 = __webpack_require__(106);
+	const text_input_1 = __webpack_require__(105);
 	let StringRenderer = class StringRenderer extends property_renderer_1.PropertyRenderer {
 	    onChange() {
 	        if (this.attrs.onValueChanged) {
@@ -8139,19 +9426,19 @@
 
 
 /***/ },
-/* 122 */
+/* 133 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 123 */
+/* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_custom_element_1 = __webpack_require__(47);
-	class InspectorBody extends editor_custom_element_1.EditorCustomElement {
+	const editor_html_element_1 = __webpack_require__(15);
+	class InspectorBody extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "vertical" };
 	    }
@@ -8160,15 +9447,15 @@
 
 
 /***/ },
-/* 124 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const icon_1 = __webpack_require__(87);
-	const inspector_body_1 = __webpack_require__(123);
-	const editor_custom_element_1 = __webpack_require__(47);
-	class InspectorHeader extends editor_custom_element_1.EditorCustomElement {
+	const icon_1 = __webpack_require__(97);
+	const inspector_body_1 = __webpack_require__(134);
+	const editor_html_element_1 = __webpack_require__(15);
+	class InspectorHeader extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "horizontal" };
 	    }
@@ -8183,7 +9470,7 @@
 
 
 /***/ },
-/* 125 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8202,15 +9489,47 @@
 
 
 /***/ },
-/* 126 */
+/* 137 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const icon_1 = __webpack_require__(97);
+	const horizontal_1 = __webpack_require__(87);
+	class IconNameToggleRow extends horizontal_1.HorizontalBase {
+	    createInitialStructure() {
+	        let label = null;
+	        if (this.attrs.useBinding) {
+	            label = new window.EditorBindingElement(this, ["attrs", "label"]);
+	        }
+	        else {
+	            label = this.attrs.label;
+	        }
+	        let toggle = void 0;
+	        if (this.attrs.toggleElementFn) {
+	            toggle = Hex.createElement(icon_1.ToggleIcon, { visibilityTarget: this.attrs.toggleElementFn, class: "toggle", size: "small" });
+	        }
+	        return [
+	            Hex.createElement("div", { class: "icon-container" },
+	                toggle,
+	                Hex.createElement(icon_1.FontIcon, { style: "padding-left:4px", iconName: this.attrs.iconName })),
+	            Hex.createElement("span", { style: "padding-left:4px" }, label)
+	        ];
+	    }
+	}
+	exports.IconNameToggleRow = IconNameToggleRow;
+
+
+/***/ },
+/* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(30);
 	const editor_html_element_1 = __webpack_require__(15);
-	const drag_action_1 = __webpack_require__(35);
-	const drag_asset_item_action_1 = __webpack_require__(53);
+	const drag_action_1 = __webpack_require__(36);
+	const drag_asset_item_action_1 = __webpack_require__(57);
 	class AssetDropTargetInsert extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "asset-drop-target-insert" };
@@ -8242,22 +9561,6 @@
 	    }
 
 	`);
-
-
-/***/ },
-/* 127 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const drag_action_1 = __webpack_require__(35);
-	class HierarchyItemDragAction extends drag_action_1.DragAction {
-	    constructor(item) {
-	        super();
-	        this.item = item;
-	    }
-	}
-	exports.HierarchyItemDragAction = HierarchyItemDragAction;
 
 
 /***/ }

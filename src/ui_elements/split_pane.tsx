@@ -1,8 +1,8 @@
 import {WindowResized} from "../editor_events/evt_window_resized";
-import {EditorCustomElement} from "../editor_element/editor_custom_element"
 import {createElement} from "../editor_element/element_renderer";
 import {clamp01} from "../util";
 import {EditorElement} from "../editor_element/editor_element";
+import {EditorHTMLElement} from "../editor_element/editor_html_element";
 
 interface ISplitPaneAttrs extends IHTMLAttribute {
     axis? : SplitDirection;
@@ -10,7 +10,7 @@ interface ISplitPaneAttrs extends IHTMLAttribute {
     minSize? : number;
 }
 
-export class SplitPane extends EditorCustomElement<ISplitPaneAttrs> {
+export class SplitPane extends EditorHTMLElement<ISplitPaneAttrs> {
     public element = this;
     protected content0Node : HTMLElement;
     protected content1Node : HTMLElement;

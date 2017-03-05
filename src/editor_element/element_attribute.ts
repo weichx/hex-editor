@@ -21,7 +21,19 @@ export function IdAndEventsAttributes(context : EditorElement, element : EditorE
     }
 
     if (attributes['x-hidden'] !== void 0) {
-        element.setVisible(false);
+        element.setVisible(!attributes['x-hidden']);
+    }
+
+    if (attributes['x-visible'] !== void 0) {
+        if(attributes['x-visible']) return;
+        attributes['class'] = attributes['class'] || "";
+        attributes['class'] = "invisible " + attributes['class'];
+    }
+
+    if (attributes['x-invisible'] !== void 0) {
+        if(!attributes['x-invisible']) return;
+        attributes['class'] = attributes['class'] || "";
+        attributes['class'] = "invisible " + attributes['class'];
     }
 
     if (attributes['x-child-root']) {

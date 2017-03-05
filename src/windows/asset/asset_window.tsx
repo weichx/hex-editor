@@ -1,31 +1,34 @@
 import {EditorWindowElement} from "../../chrome/editor_window_element";
-import {AssetSection} from "./asset_folder";
 import {Vector2} from "../../runtime/vector2";
-import {DragAssetItemAction} from "../../editor/drag_actions/drag_asset_item_action";
-import {AssetSectionItem} from "./asset_item";
+import {EditorAssetItem} from "./asset_item";
 import {EditorElement} from "../../editor_element/editor_element";
 import {createElement} from "../../editor_element/element_renderer";
-import {PrefabAssetItem} from "./prefab_asset_item";
-import {PrefabTemplate} from "../../prefab_template";
+import {PrefabAssetItem} from "../../asset_types/prefab_asset_item";
+import {PrefabTemplate} from "../../asset_types/prefab_template";
+import {onRightClick, onMouseDown} from "../../editor_element/editor_element_annotations";
+import {EditorContextMenu} from "../../chrome/context_menu";
+import {WindowColors} from "../../editor/editor_theme";
+import {FolderAssetItem} from "../../asset_types/folder_asset_item";
+import {FolderAsset} from "../../asset_types/folder_asset";
+import {ToggleIcon} from "../../ui_elements/icon";
 
 interface IAssetWindowAttrs {
     title : string;
 }
 
-interface IAssetManifest {
-    id : number;
-    name : string;
-    type : string;
-    data : any;
+export interface IAssetManifest {
+    id? : number;
+    data? : any;
+    name? : string;
+    type? : string;
+    path : string;
+    children? : IAssetManifest[],
 }
 
 export class AssetWindow extends EditorWindowElement<IAssetWindowAttrs> {
 
     private mouse : Vector2 = new Vector2();
-
-    protected getDomData() : IDomData {
-        return { tagName: "div", classList: "asset-window" }
-    }
+    private selectedItem : EditorAssetItem<any> = null;
 
     public onRendered() : void {
         this.loadAssets();
@@ -39,30 +42,55 @@ export class AssetWindow extends EditorWindowElement<IAssetWindowAttrs> {
         });
     }
 
-    private loadAsset(asset : IAssetManifest) : any {
-        const data = asset.data;
-        switch (asset.type) {
+    private loadAsset(assetDescription : IAssetManifest, path = "") : any {
+        const name = assetDescription.name;
+        assetDescription.path = (path !== "") ? path + "/" + name : name;
+
+        const children = assetDescription.children.map((child : IAssetManifest) => {
+            return this.loadAsset(child, assetDescription.path);
+        });
+
+        switch (assetDescription.type) {
             case "folder":
-                const attrs = { name: asset.name, isOpen: data.isOpen as boolean };
-                const children : Array<EditorElement> = [];
-                data.contents.forEach((asset : IAssetManifest) => {
-                    const child = this.loadAsset(asset);
-                    if(child) {
-                        children.push(child);
-                    }
-                });
-                return createElement(AssetSection, attrs, children);
+                return createElement(FolderAssetItem, {
+                    asset: new FolderAsset(assetDescription)
+                }, ...children);
             case "image":
                 return null;//createElement(AssetSectionItem, data);
             case "prefab":
-                return createElement(PrefabAssetItem, { asset: new PrefabTemplate(asset) });
+                return createElement(PrefabAssetItem, {
+                    asset: new PrefabTemplate(assetDescription)
+                }, ...children);
         }
         return null;
     }
 
+    @onMouseDown
+    public select() : void {
+        const input = EditorRuntime.getInput();
+        input.getMousePosition(this.mouse);
+        const mouseOver = EditorRuntime.getEditorElementAtPoint(this.mouse);
+        if(mouseOver.getAncestorByType(ToggleIcon, true)) return;
+        if (this.selectedItem) {
+            this.selectedItem.deselect();
+        }
+        this.selectedItem = mouseOver.getAncestorByType(EditorAssetItem, true);
+        if (this.selectedItem) {
+            this.selectedItem.select();
+        }
+    }
+
+    @onRightClick
+    public showContextMenu() : void {
+        this.select();
+        EditorRuntime.showContextMenu(this.createContextMenu());
+    }
+
     public onUpdated() : void {
         const input = EditorRuntime.getInput();
-        if (!input.isMouseInEditorElement(this)) {
+        const inElement = input.isMouseInEditorElement(this);
+
+        if (!inElement) {
             return;
         }
 
@@ -70,7 +98,7 @@ export class AssetWindow extends EditorWindowElement<IAssetWindowAttrs> {
             input.getMouseDownDelta(this.mouse);
             if (this.mouse.lengthSquared() > 64) {
                 input.getMouseDownPosition(this.mouse);
-                let hoverElement = EditorRuntime.getEditorElementAtPoint(this.mouse, AssetSectionItem);
+                let hoverElement = EditorRuntime.getEditorElementAtPoint(this.mouse, EditorAssetItem);
                 if (!hoverElement) {
                     return;
                 }
@@ -80,19 +108,58 @@ export class AssetWindow extends EditorWindowElement<IAssetWindowAttrs> {
 
     }
 
+    private createFolder() : void {
+        let parent : EditorElement = this;
+        if(this.selectedItem) {
+            parent = this.selectedItem.getAncestorByType(FolderAssetItem, true) || this;
+        }
+        const path = (parent instanceof EditorAssetItem) ? parent.getPath() + "/" : "";
+        const asset = new FolderAsset({ path: path + "New Folder" });
+        const folder = createElement(FolderAssetItem, { asset });
+        parent.getChildRoot().addChild(folder);
+    }
 
-    public createInitialStructure() : JSXElement {
-        return [];
+    private renameAssetItem() : void {
+        const target = this.selectedItem.getAncestorByType(EditorAssetItem, true);
+        if (!target) return;
+        target.beginRename();
+    }
+
+    private createContextMenu() : any {
+        return createElement(EditorContextMenu, {
+            options: [
+                {
+                    name: "Create Folder",
+                    icon: "folder-o",
+                    action: () => this.createFolder(),
+                },
+                {
+                    name: "Rename",
+                    icon: "i-cursor",
+                    action: () => { this.renameAssetItem() }
+                },
+                {
+                    name: "Delete",
+                    icon: "remove",
+                    action: () => {}
+                }
+            ]
+        });
     }
 
 }
 
 createStyleSheet(`
 <style>
+
 .asset-window {
     overflow:scroll;
     width: 100%;
     height: 100%;
-    background: mediumaquamarine;
+    position: relative;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background: ${WindowColors.backgroundGrey};
 }
+
 </style>`);

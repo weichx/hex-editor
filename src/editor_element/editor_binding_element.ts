@@ -36,7 +36,7 @@ export class EditorBindingElement extends EditorElement {
         return this.textNode as any;
     }
 
-    public addChild(child : EditorElement) {
+    public addChild(child : EditorElement) : boolean {
         throw new Error("Bind Nodes cannot have children");
     }
 

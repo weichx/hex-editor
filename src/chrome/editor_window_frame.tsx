@@ -1,10 +1,10 @@
 import {EditorWindowElement} from "./editor_window_element";
 import {SplitPane} from "../ui_elements/split_pane";
-import {EditorCustomElement} from "../editor_element/editor_custom_element";
 import {WindowColors} from "../editor/editor_theme";
 import {createElement} from "../editor_element/element_renderer";
 import {WindowFrameTab} from "./editor_window_tab";
 import {Vector2} from "../runtime/vector2";
+import {EditorHTMLElement} from "../editor_element/editor_html_element";
 
 interface IWindowData {
     tab : WindowFrameTab;
@@ -24,7 +24,7 @@ coverDiv.style.position = "absolute";
 coverDiv.style.zIndex = "400";
 coverDiv.style.background = "magenta";
 
-export class WindowFrame extends EditorCustomElement<{}> {
+export class WindowFrame extends EditorHTMLElement<{}> {
     public element = this;
     private windows : Array<IWindowData>;
     private isCoverInDom : boolean;

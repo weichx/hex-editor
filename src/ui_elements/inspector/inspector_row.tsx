@@ -1,11 +1,11 @@
-import {EditorCustomElement} from "../../editor_element/editor_custom_element";
 import {titlize} from "../../util";
+import {EditorHTMLElement} from "../../editor_element/editor_html_element";
 
 interface IInspectorRowAttr {
     label : string;
 }
 
-export class InspectorRow extends EditorCustomElement<IInspectorRowAttr> {
+export class InspectorRow extends EditorHTMLElement<IInspectorRowAttr> {
 
     public onCreated() : void {
         this.attrs.label = titlize(this.attrs.label);

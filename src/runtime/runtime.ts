@@ -3,11 +3,11 @@ import {Vector2} from "./vector2";
 import {Input} from "./input";
 import {AppElement} from "./app_element";
 import {Component} from "./component";
-import {LifeCycleFlag} from "./enums/e_lifecycle_flags";
-import {LayoutComponent} from "./components/layout/layout_component";
+import {LayoutComponent} from "./components/layout/layout";
 import {DragAction} from "../editor/drag_actions/drag_action";
 import {RuntimeBase} from "../shared/runtime_base";
 import {AppElementParentChanged} from "../editor_events/evt_app_element_parent_changed";
+import {CommandType} from "./enums/e_command_type";
 
 export class RuntimeImpl extends RuntimeBase {
 
@@ -68,7 +68,6 @@ export class RuntimeImpl extends RuntimeBase {
     //todo this doesn't handle z-ordering at all
     //todo replace with range tree of 4d points http://stackoverflow.com/questions/17651215/storing-rectangles-circles-triangles-in-a-kd-tree
     private appElementAtPointStep(test : AppElement, point : Vector2) : AppElement {
-        if (!test.containsPoint(point)) return null;
         const childCount = test.getChildCount();
         for (let i = 0; i < childCount; i++) {
             const hit = this.appElementAtPointStep(test.getChildAt(i), point);
@@ -105,6 +104,7 @@ export class RuntimeImpl extends RuntimeBase {
             }
         }
         this.emit(AppElementParentChanged, appElement, newParent, oldParent);
+        this.sendCommand(CommandType.SetParent, { id: appElement.id, parentId: newParent.id });
     }
 
     public destroyElement(appElement : AppElement) : void {
