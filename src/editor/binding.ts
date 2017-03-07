@@ -1,30 +1,13 @@
 import {EditorElement} from "../editor_element/editor_element";
 import {getGetter, getSetter} from "../editor_ui_attrs/binding_compiler";
-import {EditorRuntimeImplementation} from "./editor_runtime";
 
 export interface IEditorBinding<T> {
     get() : T;
     set(value : T) : void;
     onUpdated() : void;
     onChange(fn : (newValue? : T, oldValue? : T) => any) : this;
-    setHost(host : EditorElement) : void;
+    setHost(host : EditorElement) : this;
 }
-
-// export function CreateBinding
-// <T extends object, U extends keyof T>
-// (context : T, one : U) : IEditorBinding<T[U]>;
-//
-// export function CreateBinding
-// <T extends object, U extends keyof T, V extends keyof T[U]>
-// (context : T, one : U, two : V) : IEditorBinding<T[U][V]>;
-//
-// export function CreateBinding
-// <T extends object, U extends keyof T, V extends keyof T[U], W extends keyof T[U][V]>
-// (context : T, one : U, two : V, three : W) : IEditorBinding<T[U][V][W]>;
-//
-// export function CreateBinding
-// <T extends object, U extends keyof T, V extends keyof T[U], W extends keyof T[U][V], X extends keyof T[U][V][W]>
-// (context : T, one : U, two : V, three : W, four : X) : IEditorBinding<T[U][V][W][X]>
 
 export function CreateBinding
 <T extends object, U extends keyof T>
@@ -68,7 +51,7 @@ export class EditorBinding<T> implements IEditorBinding<T> {
         this.context = context;
         this.getterFn = getGetter(path);
         this.setterFn = getSetter(path);
-        this.value = this.getterFn(this.context);
+        this.value = void 0;//this.getterFn(this.context);
         this.changeHandlers = [];
     }
 

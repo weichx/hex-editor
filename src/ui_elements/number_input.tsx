@@ -7,9 +7,9 @@ export class NumberInput extends InputRenderer<IInputRendererAttrs<number>, numb
     protected getDomData() : IDomData {
         return {
             tagName: "input",
-            style: "width: 100%",
             attributes: {
-                type: "text"
+                type: "text",
+                style: "width: 100%"
             }
         }
     }
@@ -31,7 +31,6 @@ export class NumberInput extends InputRenderer<IInputRendererAttrs<number>, numb
             this.htmlNode.value = this.formatNumber(this.binding.get()).toString();
         });
     }
-
 
     public onValueChanged(newValue : number) : void {
         this.htmlNode.value = this.formatNumber(newValue).toString();

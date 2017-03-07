@@ -1,4 +1,5 @@
 import {Vector2} from "./vector2";
+import {serializeClass} from "./persistance/TEMP_ANNOTATION";
 
 export enum BreakpointType {
     Mobile, Tablet, Laptop, Desktop
@@ -8,6 +9,7 @@ export enum BreakpointOrientation {
     Portrait, Landscape
 }
 
+@serializeClass
 export class Breakpoint {
 
     //todo this is super basic

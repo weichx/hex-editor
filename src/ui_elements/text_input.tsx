@@ -11,9 +11,9 @@ export class TextInput extends InputRenderer<IInputRendererAttrs<string>, string
     protected getDomData() : IDomData {
         return {
             tagName: "input",
-            style: "width: 100%",
             attributes: {
-                type: "text"
+                type: "text",
+                style: "width: 100%"
             }
         };
     }

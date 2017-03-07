@@ -98,6 +98,7 @@ interface INewable<T> {
 }
 
 interface IStyleDeclaration {
+    [str : string] : string;
     alignContent?: string | null;
     alignItems?: string | null;
     alignSelf?: string | null;
@@ -220,7 +221,6 @@ interface IStyleDeclaration {
     justifyContent?: string | null;
     kerning?: string | null;
     left?: string | null;
-    readonly length?: number;
     letterSpacing?: string | null;
     lightingColor?: string | null;
     lineHeight?: string | null;
@@ -307,7 +307,6 @@ interface IStyleDeclaration {
     pageBreakAfter?: string | null;
     pageBreakBefore?: string | null;
     pageBreakInside?: string | null;
-    readonly parentRule?: CSSRule;
     perspective?: string | null;
     perspectiveOrigin?: string | null;
     pointerEvents?: string | null;

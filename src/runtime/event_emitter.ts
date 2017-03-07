@@ -1,14 +1,17 @@
 export type EvtType<T> = {
     new () : T;
-    eventName? : string
+    eventName? : string;
 }
+
+
+//todo this needs an overhaul
 
 export class EventEmitter {
 
-    private listenerMap : Map<any, any>;
+    private listenerMap : Map<any, Array<any>>;
 
     constructor() {
-        this.listenerMap = new Map<any, any>();
+        this.listenerMap = new Map<any, Array<any>>();
     }
 
     public hasListeners<T>(evt : EvtType<T>) : boolean {

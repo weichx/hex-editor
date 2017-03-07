@@ -1,5 +1,7 @@
 import {Scene} from "../runtime/scene";
-export class SceneLoaded {
+import {RuntimeEvent} from "./runtime_event";
+
+export class SceneLoaded extends RuntimeEvent {
 
     public onSceneLoaded : (scene : Scene) => void;
 

@@ -16,11 +16,12 @@ export class EditorHTMLElement<T extends IHTMLAttribute> extends EditorElement {
     public tagName : string;
     public element = this; //this is for the updateTree -- but I don't like it
 
+    private __runtime_events__ : Map<any, any>; //set from the runtime event class
+
     constructor(attrs : T, tagName : string = "div") {
         super();
         this.attrs = attrs || {} as T;
         this.tagName = tagName;
-        const proto = this.constructor.prototype;
         const eventAnnotations = InputEventAnnotationMap.get(this.constructor.prototype);
 
         if (eventAnnotations) {
@@ -33,7 +34,13 @@ export class EditorHTMLElement<T extends IHTMLAttribute> extends EditorElement {
                 });
             }
         }
-
+        // todo -- handle events better, right now we never unsubscribe on destroy
+        // todo -- better to handle events on a per instance basis
+        // if (this.__runtime_events__) {
+        //     this.__runtime_events__.forEach((value : any, key : any) => {
+        //         EditorRuntime.on(value, this);
+        //     });
+        // }
     }
 
     protected getDomData() : IDomData {
@@ -62,6 +69,14 @@ export class EditorHTMLElement<T extends IHTMLAttribute> extends EditorElement {
 
     public toggleClass(className : string, force : boolean = false) {
         this.htmlNode.classList.toggle(className, force);
+    }
+
+    public setStyle(styles : IStyleDeclaration) : void {
+        const keys = Object.keys(styles);
+        for(let i = 0; i < keys.length; i++){
+            const key = keys[i];
+            (this.htmlNode.style as any)[key] = styles[key];
+        }
     }
 
     public setText(text : string) : void {

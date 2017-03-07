@@ -3,10 +3,8 @@ import {HierarchyItem} from "./hierarchy_item";
 import {SelectionChanged} from "../../editor_events/evt_selection_changed";
 import {SceneLoaded} from "../../editor_events/evt_scene_loaded_event";
 import {AppElementCreated} from "../../editor_events/evt_app_element_created";
-import {createElement, render} from "../../editor_element/element_renderer";
+import {createElement} from "../../editor_element/element_renderer";
 import {EditorWindowElement, IWindowAttrs} from "../../chrome/editor_window_element";
-import {WindowColors} from "../../editor/editor_theme";
-import {EditorElement} from "../../editor_element/editor_element";
 import {AppElement} from "../../runtime/app_element";
 import {Scene} from "../../runtime/scene";
 import {AppElementParentChanged} from "../../editor_events/evt_app_element_parent_changed";
@@ -15,6 +13,8 @@ import {Vector2} from "../../runtime/vector2";
 import {EditorContextMenu} from "../../chrome/context_menu";
 import {onRightClick, onClick} from "../../editor_element/editor_element_annotations";
 import {ToggleIcon} from "../../ui_elements/icon";
+import {AppElementIndexChanged} from "../../editor_events/evt_app_element_index_changed";
+import {RuntimeEvent} from "../../editor_events/runtime_event";
 
 export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
 
@@ -34,27 +34,22 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
         return item;
     }
 
-    private getHierarchyItemForElement(element : AppElement) : HierarchyItem {
-        return this.elementMap.get(element);
-    }
-
-    public onAppElementParentChanged(appElement : AppElement, newParent : AppElement, oldParent : AppElement) : void {
-        this.getHierarchyItemForElement(appElement).destroy();
-        this.elementMap.set(appElement, null);
-        const item = this.createHierarchyItem(appElement);
-        const parentItem = this.elementMap.get(newParent);
-        parentItem.getChildRoot().addChild(item);
+    public onAppElementParentChanged(appElement : AppElement, newParent : AppElement) : void {
+        const targetItem = this.elementMap.get(appElement);
+        const newParentItem = this.elementMap.get(newParent);
+        newParentItem.getChildRoot().addChild(targetItem);
+        EditorRuntime.select(appElement);
     }
 
     public onSelectionChanged(newSelection : AppElement, oldSelection : AppElement) : void {
         if (oldSelection) {
-            const item = this.getHierarchyItemForElement(oldSelection);
+            const item = this.elementMap.get(oldSelection);
             if (item) {
                 item.setSelected(false);
             }
         }
         if (newSelection) {
-            const selectedItem = this.getHierarchyItemForElement(newSelection);
+            const selectedItem = this.elementMap.get(newSelection);
             if (selectedItem) {
                 selectedItem.setSelected(true);
             }
@@ -62,15 +57,26 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
 
     }
 
-    @onRightClick
-    public showContextMenu() : void {
+    @onClick
+    private select() : AppElement {
         const input = EditorRuntime.getInput();
         input.getMousePosition(this.mouse);
         let mouseOver = EditorRuntime.getEditorElementAtPoint(this.mouse);
         if(!mouseOver || mouseOver.getAncestorByType(ToggleIcon, true)) return;
 
         let item = mouseOver.getAncestorByType(HierarchyItem, true);
-        if(item) this.contextSelection = item.attrs.element;
+        if(!item) {
+            EditorRuntime.select(null);
+            return null;
+        }
+        EditorRuntime.select(item.attrs.element);
+        return item.attrs.element;
+    }
+    
+    @onRightClick
+    public showContextMenu() : void {
+        this.contextSelection = this.select();
+        EditorRuntime.showContextMenu(this.createContextMenu());
     }
 
     public onUpdated() {
@@ -96,44 +102,40 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
     }
 
     public onRendered() {
+
         EditorRuntime.on(SelectionChanged, this);
         EditorRuntime.on(SceneLoaded, this);
 
         EditorRuntime.on(AppElementCreated, this);
+        EditorRuntime.on(AppElementIndexChanged, this);
         // EditorRuntime.on(AppElementDestroyed, this);
+
         EditorRuntime.on(AppElementParentChanged, this);
         EditorRuntime.updateTree.add(this);
         this.onSceneLoaded(EditorRuntime.getScene());
     }
 
+    @RuntimeEvent.on(AppElementCreated)
     public onAppElementCreated(appElement : AppElement) : void {
         const item = this.createHierarchyItem(appElement);
-        if (appElement.getParent().isRoot()) {
-            this.addChild(item);
-        }
-        else {
-            const parentItem = this.elementMap.get(appElement.getParent());
-            parentItem.addChild(item);
-        }
+        const parentItem = this.elementMap.get(appElement.getParent()) || this;
+        parentItem.getChildRoot().addChild(item);
+    }
+
+    public onAppElementIndexChanged(appElement : AppElement, newIndex : number) : void {
+        const item = this.elementMap.get(appElement);
+        item.parent.getChildRoot().insertChild(item, newIndex);
     }
 
     public onSceneLoaded(scene : Scene) : void {
         const root = AppElement.Root;
         const rootItem = this.createHierarchyItem(root);
-        this.addChild(rootItem);
-    }
-
-    @onClick
-    private clearSelection() {
-        EditorRuntime.select(null);
-    }
-
-    private addChildToContextSelection() {
-        new AppElement("Child Element", this.contextSelection);
+        this.getChildRoot().addChild(rootItem);
     }
 
     private destroyContextSelection() {
-        const hierarchyItem = this.getHierarchyItemForElement(this.contextSelection);
+        const hierarchyItem = this.elementMap.get(this.contextSelection);
+        if(!hierarchyItem) return;
         if (EditorRuntime.getSelection() === this.contextSelection) {
             EditorRuntime.select(null);
         }
@@ -161,7 +163,7 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
                 {
                     name: "Create",
                     icon: "object-group",
-                    action: () => this.addChildToContextSelection()
+                    action: () => this.createNewElement()
                 },
                 {
                     name: "Delete",
@@ -184,11 +186,6 @@ createStyleSheet(`
     width: 100%;
 }
 
-.hierarchy-main-body {
-    background: ${WindowColors.foregroundGrey};
-    color: black;
-    width:100%;
-}
 
 </style>
 `);

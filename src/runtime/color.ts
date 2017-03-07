@@ -1,3 +1,6 @@
+import {serializeClass} from "./persistance/TEMP_ANNOTATION";
+
+@serializeClass
 export class Color {
 
     public r : number;

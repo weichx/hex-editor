@@ -48,6 +48,10 @@ Runtime.setCommandSerializer(CommandType.SetParent, function (data : { id : numb
     return data;
 });
 
+Runtime.setCommandSerializer(CommandType.SetSiblingIndex, function (data : { id : number, index : number}) {
+   return data;
+});
+
 Runtime.setCommandSerializer(CommandType.SetText, function (data : { id : number, text : string, font : IFont }) {
     return data;
 });

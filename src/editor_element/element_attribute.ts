@@ -1,6 +1,7 @@
 import {XIf} from "../editor_ui_attrs/attr_x_if";
 import {XIfEval} from "../editor_ui_attrs/attr_x_if_eval";
 import {EditorElement} from "./editor_element";
+import {EditorBinding} from "../editor/binding";
 
 export function IdAndEventsAttributes(context : EditorElement, element : EditorElement, attributes : any) : void {
 
@@ -36,15 +37,40 @@ export function IdAndEventsAttributes(context : EditorElement, element : EditorE
         attributes['class'] = "invisible " + attributes['class'];
     }
 
+    if (attributes['x-bind-class']) {
+        const attr = attributes['x-bind-class'];
+        const keys = Object.keys(attr);
+        for(let i = 0; i < keys.length; i++) {
+            const className = keys[i];
+            const binding = attr[className];
+            if(binding instanceof EditorBinding) {
+                binding.setHost(element);
+                binding.onChange(function(newValue : any) {
+                    element.getDomNode().classList.toggle(className, !Boolean(newValue));
+                });
+
+            }
+        }
+    }
+
     if (attributes['x-child-root']) {
         context.setChildRoot(element);
     }
 
     if (attributes['x-bind-style']) {
-        const styleBindings = attributes['x-bind-style'];
-        Object.keys(styleBindings).forEach(function (key : string) {
-            //new XStyleBinding(element, key, styleBindings[key]);
-        });
+        const attr = attributes['x-bind-style'];
+        const keys = Object.keys(attr);
+        for(let i = 0; i < keys.length; i++) {
+            const styleName = keys[i];
+            const binding = attr[styleName];
+            if(binding instanceof EditorBinding) {
+                binding.setHost(element);
+                binding.onChange(function(newValue : any) {
+                    (element.getDomNode().style as any)[styleName] = newValue;
+                });
+
+            }
+        }
     }
 
     if (attributes['onClick']) {

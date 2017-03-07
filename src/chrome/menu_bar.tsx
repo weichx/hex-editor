@@ -32,16 +32,7 @@ export class MenuItem extends EditorHTMLElement<IMenuItem> {
 
 export class MenuBar extends EditorHTMLElement<IMenuBarAttributes> {
 
-    private menus : Indexable<MenuItem>;
-
-    constructor() {
-        super({});
-        this.menus = {};
-    }
-
-    protected getDomData() : IDomData {
-        return { tagName: "div", classList: "menu-bar" }
-    }
+    private menus : Indexable<MenuItem> = {};
 
     private getMenuParent(tokenizedPath : string[]) : any {
         if (tokenizedPath.length === 0) return null;

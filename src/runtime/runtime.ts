@@ -8,6 +8,7 @@ import {DragAction} from "../editor/drag_actions/drag_action";
 import {RuntimeBase} from "../shared/runtime_base";
 import {AppElementParentChanged} from "../editor_events/evt_app_element_parent_changed";
 import {CommandType} from "./enums/e_command_type";
+import {AppElementIndexChanged} from "../editor_events/evt_app_element_index_changed";
 
 export class RuntimeImpl extends RuntimeBase {
 
@@ -88,6 +89,7 @@ export class RuntimeImpl extends RuntimeBase {
         this.pendingComponents.push(component);
     }
 
+    //todo -- internalize
     public setParent(appElement : AppElement, newParent : AppElement, oldParent : AppElement) : void {
         const storage = new Array<Component>();
         if (oldParent) {
@@ -105,6 +107,12 @@ export class RuntimeImpl extends RuntimeBase {
         }
         this.emit(AppElementParentChanged, appElement, newParent, oldParent);
         this.sendCommand(CommandType.SetParent, { id: appElement.id, parentId: newParent.id });
+    }
+
+    //todo -- internalize
+    public setSiblingIndex(appElement : AppElement, index : number, oldIndex : number) : void {
+        this.emit(AppElementIndexChanged, appElement, index, oldIndex);
+        this.sendCommand(CommandType.SetSiblingIndex, {id : appElement.id, index});
     }
 
     public destroyElement(appElement : AppElement) : void {

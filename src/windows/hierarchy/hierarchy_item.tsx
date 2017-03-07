@@ -4,6 +4,8 @@ import {DragAction} from "../../editor/drag_actions/drag_action";
 import {HierarchyItemDragAction} from "../../editor/drag_actions/drag_hierarchy_item";
 import {EditorHTMLElement} from "../../editor_element/editor_html_element";
 import {HierarchyItemDropTarget} from "./hierarchy_insert_target";
+import {CreateBinding} from "../../editor/binding";
+import {AppElementParentChanged} from "../../editor_events/evt_app_element_parent_changed";
 
 interface IHierarchyItem {
     element : AppElement;
@@ -40,16 +42,25 @@ export class HierarchyItem extends EditorHTMLElement<IHierarchyItem> {
         action.appElement.setParent(elementParent);
     }
 
+    public onAppElementParentChanged(element : AppElement) : void {
+        if(this.attrs.element !== element) return;
+        const depth = element.getDepth();
+        this.getChildBySelector(".hierarchy-item-offset").setStyle({paddingLeft: `${depth * 12}px`});
+    }
+
+    public onRendered() {
+        EditorRuntime.on(AppElementParentChanged, this);
+    }
+
     public createInitialStructure(children : any) {
         const appElement = this.attrs.element;
         const depth = this.attrs.element.getDepth();
         const paddingLeft = "padding-left:" + (depth * 12) + "px";
-
+        const visBinding = CreateBinding((appElement as any).children, "length");
         return [
             <HierarchyItemDropTarget insert="before"/>,
-            <div class="hierarchy-item-offset" style={paddingLeft}>
-                <ToggleIcon x-id="toggle" x-if-eval={ () => appElement.getChildCount() > 0 }/>
-                {/*<FontIcon class="asset-icon" iconName={ this.getIconName() }/>*/}
+            <div class="hierarchy-item-offset" style={ paddingLeft }>
+                <ToggleIcon x-id="toggle" x-bind-class={ { invisible: visBinding } }/>
                 <div class="name-label"> {  Bind(appElement.name)  } </div>
             </div>,
             <HierarchyItemDropTarget insert="after"/>,
@@ -58,20 +69,6 @@ export class HierarchyItem extends EditorHTMLElement<IHierarchyItem> {
             </div>,
         ];
 
-        // return [
-        //     <div x-id="item-details"
-        //          class="hierarchy-item-details"
-        //          style={"padding-left:" + padding + "em"}
-        //          onClick={ () => EditorRuntime.select(appElement) }>
-        //
-        //         <ToggleIcon style={"padding-left:" + (appElement.getDepth() * 12) + "px" } class="hierarchy-toggle" x-if-eval={ () => appElement.getChildCount() > 0 }/>
-        //
-        //         <a> { Bind(appElement.name) } </a>
-        //
-        //     </div>,
-        //     <HierarchyInsertTarget/>,
-        //     <div x-child-root class="item-children"></div>
-        // ]
     }
 
 }

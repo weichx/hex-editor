@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "reactNamespace": "Hex",
+    "noImplicitAny": true,
+    "outDir": ".",
+    "preserveConstEnums": false,
+    "removeComments": true,
+    "target": "es6",
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "importHelpers": true
+  },
+  "exclude": [
+    "node_modules", "build", "spec"
+  ]
+}

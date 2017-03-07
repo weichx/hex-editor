@@ -8,6 +8,7 @@ export enum CommandType {
     SetDimensions,
     SetTransform,
     SetParent,
+    SetSiblingIndex,
 
     PaintBackground,
     SetText,

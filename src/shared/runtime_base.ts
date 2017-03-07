@@ -54,7 +54,7 @@ export abstract class RuntimeBase extends EventEmitter {
     }
 
     public sendCommand(commandType : CommandType, data : any) {
-        //todo - dedup this
+        //todo - dedup this, FIFO
         const command = this.commandPool.spawn(commandType, data, null);
         this.commandQueue.push(command);
     }

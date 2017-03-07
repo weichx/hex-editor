@@ -4,7 +4,8 @@ import {Vector2, ImmutableVector2} from "./vector2";
 import {LifeCycleFlag} from "./enums/e_lifecycle_flags";
 import {CommandType} from "./enums/e_command_type";
 import {TypeOf} from "./interfaces/i_typeof";
-import {traverseChildren} from "../util";
+import {traverseChildren, clamp} from "../util";
+import {serializeClass} from "./persistance/TEMP_ANNOTATION";
 
 let idGenerator = 0;
 
@@ -12,6 +13,7 @@ export enum Space {
     Local, World
 }
 
+@serializeClass
 export class AppElement {
 
     public name : string;
@@ -150,10 +152,11 @@ export class AppElement {
         //Runtime.enable(this);
     }
 
-    public setParent(parent : AppElement) : void {
+    public setParent(parent : AppElement, keepPosition = true) : void {
         if(parent && parent === this.parent) return;
         parent = parent || AppElement.Root;
         const oldParent = this.parent;
+        let currentPosition = this.getPosition();
         this.parent = parent;
         //todo ancestor check
         if(oldParent) {
@@ -169,7 +172,27 @@ export class AppElement {
             this.parentPosition.x = 0;
             this.parentPosition.y = 0;
         }
+        if(keepPosition) {
+            this.setPosition(currentPosition);
+        }
         Runtime.setParent(this, parent, oldParent);
+    }
+
+    public setSiblingIndex(index : number) : boolean {
+        const parent = this.parent;
+        if(!parent) return false;
+        const children = this.parent.children;
+        const currentIndex = children.indexOf(this);
+
+        if(index === currentIndex || currentIndex === -1) {
+            return false;
+        }
+
+        index = clamp(index, 0, children.length - 1);
+        children.remove(this);
+        children.insert(this, index);
+        Runtime.setSiblingIndex(this, index, currentIndex);
+        return true;
     }
 
     public getParent() : AppElement {

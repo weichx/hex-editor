@@ -1,4 +1,5 @@
 import {CommandType} from "../../runtime/enums/e_command_type";
+import {BrowserRuntimeImpl} from "../browser_runtime";
 
 function DeserializeComponent(component : any, element : HTMLElement) : any {
     if (component.handler) {
@@ -85,6 +86,12 @@ BrowserRuntime.setCommandInvoker(CommandType.SetParent, function(payload : IJson
     element.remove();
     const parentElement = BrowserRuntime.elementIdToDomNode(payload.parentId);
     parentElement.appendChild(element);
+});
+
+BrowserRuntime.setCommandInvoker(CommandType.SetSiblingIndex, function(payload : IJson) {
+    const element = BrowserRuntime.elementIdToDomNode(payload.id);
+    if(!element) return;
+    //todo -- unsure what goes here for now
 });
 
 BrowserRuntime.setCommandInvoker(CommandType.SetImage, function (payload : IJson) {

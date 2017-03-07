@@ -35,13 +35,16 @@ export class HierarchyItemDropTarget extends EditorHTMLElement<{ insert : "befor
 
         let idx = grandParent.getChildRoot().getChildIndex(this.target);
         if (this.attrs.insert === "after") idx++;
-
         if(action instanceof PrefabDragAction) {
             //create
         }
         else if(action instanceof HierarchyItemDragAction) {
-           // grandParent.getChildRoot().insertChild(action.item, idx);
-            action.appElement.setParent(this.target.attrs.element);
+            //if shares parent, set index
+            //else, set parent then index
+
+            //action.appElement.setParent(this.target.attrs.element);
+            action.appElement.setSiblingIndex(idx);
+            grandParent.getChildRoot().insertChild(action.item, idx);
         }
 
     }

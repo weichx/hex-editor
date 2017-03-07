@@ -1,5 +1,7 @@
 import {Vector2} from "./vector2";
+import {serializeClass} from "./persistance/TEMP_ANNOTATION";
 
+@serializeClass
 export class Rectangle {
 
     public x : number;

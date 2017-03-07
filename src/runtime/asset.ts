@@ -1,6 +1,8 @@
 import {randomPositiveInteger} from "../util";
 import {IAssetManifest} from "../windows/asset/asset_window";
+import {serializeClass} from "./persistance/TEMP_ANNOTATION";
 
+@serializeClass
 export class Asset {
 
     public readonly id : number;

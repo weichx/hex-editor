@@ -291,6 +291,7 @@ export class EditorElement {
         return this.children.indexOf(child);
     }
 
+    //todo need to remove all event handlers
     public destroy() {
         if (this.isDestroyed()) return;
         this.flags |= EditorElementFlags.Destroyed;
