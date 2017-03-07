@@ -9,26 +9,74 @@ function normalizePath(str : string) {
     return str.replace(/[\\\/]+/g, '/');
 }
 
-interface ICachedFile {
-    path : string;
-    snapshot : ts.IScriptSnapshot;
-    version : number;
-    dependencies : Array<string>;
-    alias : string;
+export class CacheFile {
+
+    public path : string;
+    public snapshot : ts.IScriptSnapshot;
+    public version : number;
+    public dependencies : Array<string>;
+    public alias : string;
+
+    constructor(path : string, snapshot : ts.IScriptSnapshot) {
+        this.path = path;
+        this.alias = path;
+        this.snapshot = snapshot;
+        this.dependencies = [];
+        this.version = 0;
+    }
+
+    public update() : void {
+
+    }
+
+    public setAlias(alias : string) : void {
+        this.alias = alias;
+    }
+
+    public addDependency(filePath : string) : void {
+        const idx = this.dependencies.indexOf(filePath);
+        if(idx === -1) {
+            this.dependencies.push(filePath);
+        }
+    }
+
+    public removeDependency(filePath : string) : void {
+        const idx = this.dependencies.indexOf(filePath);
+        if(idx !== -1) {
+            this.dependencies.splice(idx, 1);
+        }
+    }
+
+    public getDependencies() : string[] {
+        return this.dependencies.slice(0);
+    }
+
+    public clearDependencies() : void {
+        this.dependencies.length = 0;
+    }
+
 }
+
+// export interface ICachedFile {
+//     path : string;
+//     snapshot : ts.IScriptSnapshot;
+//     version : number;
+//     dependencies : Array<string>;
+//     alias : string;
+// }
 
 export class HexCompiler implements ts.LanguageServiceHost {
 
     private registry : ts.DocumentRegistry;
     private service : ts.LanguageService;
     private options : ts.CompilerOptions;
-    private fileCache : Map<string, ICachedFile>;
+    private fileCache : Map<string, CacheFile>;
     private fileNames : string[];
     private visitors : Array<Visitor>;
 
     constructor(files? : string[], options? : ts.CompilerOptions) {
         this.fileNames = files || [];
-        this.fileCache = new Map<string, ICachedFile>();
+        this.fileCache = new Map<string, CacheFile>();
         this.options = options || this.getCompilationSettings();
         this.registry = ts.createDocumentRegistry();
         this.service = ts.createLanguageService(this, this.registry);
@@ -54,8 +102,8 @@ export class HexCompiler implements ts.LanguageServiceHost {
         this.visitors.push(...visitors);
     }
 
-    public getCacheFile() : string {
-
+    public getCacheFile(fileName : string) : CacheFile {
+        return this.fileCache.get(fileName);
     }
     
     public addFile(path : string) : ts.SourceFile {
@@ -109,13 +157,7 @@ export class HexCompiler implements ts.LanguageServiceHost {
             const contents = fs.readFileSync(fileName).toString();
             const snapshot = ts.ScriptSnapshot.fromString(contents);
 
-            this.fileCache.set(fileName, {
-                version: 0,
-                alias: fileName,
-                dependencies: [],
-                path: fileName,
-                snapshot: snapshot
-            });
+            this.fileCache.set(fileName, new CacheFile(fileName, snapshot));
 
             return snapshot;
         }
@@ -147,24 +189,24 @@ export class HexCompiler implements ts.LanguageServiceHost {
         return ts.sys.fileExists(path);
     }
 
-    private getSourceFile(path : string) : ts.SourceFile {
-        let file = this.fileCache.get(path);
-        if (!file) {
-            this.getScriptSnapshot(path);
-        }
-        file = this.fileCache.get(path);
-        return this.registry.acquireDocument(path,
-            this.options,
-            file.snapshot,
-            file.version.toString()
-        );
-    }
+    // private getSourceFile(path : string) : ts.SourceFile {
+    //     let file = this.fileCache.get(path);
+    //     if (!file) {
+    //         this.getScriptSnapshot(path);
+    //     }
+    //     file = this.fileCache.get(path);
+    //     return this.registry.acquireDocument(path,
+    //         this.options,
+    //         file.snapshot,
+    //         file.version.toString()
+    //     );
+    // }
 
     private logErrors(fileName : string) {
         const p = this.getProgram() as ts.Program;
-        let allDiagnostics = p.getGlobalDiagnostics();
-        // .concat(this.service.getSyntacticDiagnostics())
-        // .concat(this.service.getSemanticDiagnostics());
+        let allDiagnostics = p.getGlobalDiagnostics()
+        .concat(this.service.getSyntacticDiagnostics(fileName))
+        .concat(this.service.getSemanticDiagnostics(fileName));
 
         allDiagnostics.forEach(diagnostic => {
             let message = ts.flattenDiagnosticMessageText(diagnostic.messageText, "\n");
@@ -183,11 +225,22 @@ export class HexCompiler implements ts.LanguageServiceHost {
         const program = this.service.getProgram();
         const ast = program.getSourceFile(path);
 
+        const d = (ast as any).parseDiagnostics;
+        if(d) {
+            console.log(d);
+        }
+
+        this.logErrors(path);
         // if(this.getDiagnostics()) {
         //     return
         // }
 
         let context = new VisitorContext(ast.fileName, this);
+
+        for(let i = 0; i < this.visitors.length; i++) {
+            const visitor = this.visitors[i];
+            this.traverseAst(ast, visitor, context);
+        }
 
         this.visitors.some((visitor : Visitor) => {
             this.traverseAst(ast, visitor, context);

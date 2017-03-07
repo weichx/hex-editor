@@ -8,6 +8,47 @@ var visitor_context_1 = require("./visitor_context");
 function normalizePath(str) {
     return str.replace(/[\\\/]+/g, '/');
 }
+var CacheFile = (function () {
+    function CacheFile(path, snapshot) {
+        this.path = path;
+        this.alias = path;
+        this.snapshot = snapshot;
+        this.dependencies = [];
+        this.version = 0;
+    }
+    CacheFile.prototype.update = function () {
+    };
+    CacheFile.prototype.setAlias = function (alias) {
+        this.alias = alias;
+    };
+    CacheFile.prototype.addDependency = function (filePath) {
+        var idx = this.dependencies.indexOf(filePath);
+        if (idx === -1) {
+            this.dependencies.push(filePath);
+        }
+    };
+    CacheFile.prototype.removeDependency = function (filePath) {
+        var idx = this.dependencies.indexOf(filePath);
+        if (idx !== -1) {
+            this.dependencies.splice(idx, 1);
+        }
+    };
+    CacheFile.prototype.getDependencies = function () {
+        return this.dependencies.slice(0);
+    };
+    CacheFile.prototype.clearDependencies = function () {
+        this.dependencies.length = 0;
+    };
+    return CacheFile;
+}());
+exports.CacheFile = CacheFile;
+// export interface ICachedFile {
+//     path : string;
+//     snapshot : ts.IScriptSnapshot;
+//     version : number;
+//     dependencies : Array<string>;
+//     alias : string;
+// }
 var HexCompiler = (function () {
     function HexCompiler(files, options) {
         this.fileNames = files || [];
@@ -37,6 +78,9 @@ var HexCompiler = (function () {
         }
         (_a = this.visitors).push.apply(_a, visitors);
         var _a;
+    };
+    HexCompiler.prototype.getCacheFile = function (fileName) {
+        return this.fileCache.get(fileName);
     };
     HexCompiler.prototype.addFile = function (path) {
         path = normalizePath(path);
@@ -83,11 +127,7 @@ var HexCompiler = (function () {
         if (fs.existsSync(fileName)) {
             var contents = fs.readFileSync(fileName).toString();
             var snapshot = ts.ScriptSnapshot.fromString(contents);
-            this.fileCache.set(fileName, {
-                version: 0,
-                path: fileName,
-                snapshot: snapshot
-            });
+            this.fileCache.set(fileName, new CacheFile(fileName, snapshot));
             return snapshot;
         }
         return void 0;
@@ -110,19 +150,23 @@ var HexCompiler = (function () {
     HexCompiler.prototype.fileExists = function (path) {
         return ts.sys.fileExists(path);
     };
-    HexCompiler.prototype.getSourceFile = function (path) {
-        var file = this.fileCache.get(path);
-        if (!file) {
-            this.getScriptSnapshot(path);
-        }
-        file = this.fileCache.get(path);
-        return this.registry.acquireDocument(path, this.options, file.snapshot, file.version.toString());
-    };
+    // private getSourceFile(path : string) : ts.SourceFile {
+    //     let file = this.fileCache.get(path);
+    //     if (!file) {
+    //         this.getScriptSnapshot(path);
+    //     }
+    //     file = this.fileCache.get(path);
+    //     return this.registry.acquireDocument(path,
+    //         this.options,
+    //         file.snapshot,
+    //         file.version.toString()
+    //     );
+    // }
     HexCompiler.prototype.logErrors = function (fileName) {
         var p = this.getProgram();
-        var allDiagnostics = p.getGlobalDiagnostics();
-        // .concat(this.service.getSyntacticDiagnostics())
-        // .concat(this.service.getSemanticDiagnostics());
+        var allDiagnostics = p.getGlobalDiagnostics()
+            .concat(this.service.getSyntacticDiagnostics(fileName))
+            .concat(this.service.getSemanticDiagnostics(fileName));
         allDiagnostics.forEach(function (diagnostic) {
             var message = ts.flattenDiagnosticMessageText(diagnostic.messageText, "\n");
             if (diagnostic.file) {
@@ -138,10 +182,19 @@ var HexCompiler = (function () {
         var _this = this;
         var program = this.service.getProgram();
         var ast = program.getSourceFile(path);
+        var d = ast.parseDiagnostics;
+        if (d) {
+            console.log(d);
+        }
+        this.logErrors(path);
         // if(this.getDiagnostics()) {
         //     return
         // }
         var context = new visitor_context_1.VisitorContext(ast.fileName, this);
+        for (var i = 0; i < this.visitors.length; i++) {
+            var visitor = this.visitors[i];
+            this.traverseAst(ast, visitor, context);
+        }
         this.visitors.some(function (visitor) {
             _this.traverseAst(ast, visitor, context);
             //todo try this on one line

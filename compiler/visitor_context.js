@@ -12,6 +12,12 @@ var VisitorContext = (function () {
         this._fileName = fileName;
         this.compiler = compiler;
     }
+    VisitorContext.prototype.getCurrentFile = function () {
+        return this.compiler.getCacheFile(this._fileName);
+    };
+    VisitorContext.prototype.cleanFilePath = function (input) {
+        return input.replace(/[\`"'\s]/g, "");
+    };
     VisitorContext.prototype.getFullPath = function (path) {
         return this.compiler.getModulePath(this._fileName, path);
     };

@@ -3,7 +3,7 @@ import {Action, ReplaceAction} from './mutable-source-code';
 import {FastAppendAction} from './mutable-source-code';
 import {FastRewriteAction} from './mutable-source-code';
 import {InsertAction} from './mutable-source-code';
-import {HexCompiler} from "./hex_compiler";
+import {HexCompiler, CacheFile} from "./hex_compiler";
 
 export class VisitorContext {
 
@@ -16,6 +16,10 @@ export class VisitorContext {
     constructor(fileName : string, compiler : HexCompiler) {
         this._fileName = fileName;
         this.compiler = compiler;
+    }
+
+    public getCurrentFile() : CacheFile {
+        return this.compiler.getCacheFile(this._fileName);
     }
 
     public cleanFilePath(input : string) : string {
