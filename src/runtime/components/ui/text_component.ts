@@ -1,6 +1,7 @@
 import {component} from "../../component";
 import {CommandType} from "../../enums/e_command_type";
 import {UIComponent} from "../ui_component";
+import {autoserialize} from "cerialize";
 
 export interface IFont {
     name : string;

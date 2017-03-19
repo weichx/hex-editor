@@ -10,11 +10,14 @@ import {Scene} from "../../runtime/scene";
 import {AppElementParentChanged} from "../../editor_events/evt_app_element_parent_changed";
 import {HierarchyItemDragAction} from "../../editor/drag_actions/drag_hierarchy_item";
 import {Vector2} from "../../runtime/vector2";
-import {EditorContextMenu} from "../../chrome/context_menu";
 import {onRightClick, onClick} from "../../editor_element/editor_element_annotations";
 import {ToggleIcon} from "../../ui_elements/icon";
 import {AppElementIndexChanged} from "../../editor_events/evt_app_element_index_changed";
 import {RuntimeEvent} from "../../editor_events/runtime_event";
+import {EditorRuntimeImplementation} from "../../editor/editor_runtime";
+import {ScrollComponent} from "../../runtime/components/scroll_component";
+import {SizingComponent} from "../../runtime/components/layout/sizing_component";
+import {getCreationMenu} from "../../menu_setup";
 
 export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
 
@@ -62,21 +65,21 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
         const input = EditorRuntime.getInput();
         input.getMousePosition(this.mouse);
         let mouseOver = EditorRuntime.getEditorElementAtPoint(this.mouse);
-        if(!mouseOver || mouseOver.getAncestorByType(ToggleIcon, true)) return;
+        if (!mouseOver || mouseOver.getAncestorByType(ToggleIcon, true)) return;
 
         let item = mouseOver.getAncestorByType(HierarchyItem, true);
-        if(!item) {
+        if (!item) {
             EditorRuntime.select(null);
             return null;
         }
         EditorRuntime.select(item.attrs.element);
         return item.attrs.element;
     }
-    
+
     @onRightClick
     public showContextMenu() : void {
         this.contextSelection = this.select();
-        EditorRuntime.showContextMenu(this.createContextMenu());
+        this.createContextMenu();
     }
 
     public onUpdated() {
@@ -128,14 +131,14 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
     }
 
     public onSceneLoaded(scene : Scene) : void {
-        const root = AppElement.Root;
-        const rootItem = this.createHierarchyItem(root);
-        this.getChildRoot().addChild(rootItem);
+        // const root = AppElement.Root;
+        // const rootItem = this.createHierarchyItem(root);
+        // this.getChildRoot().addChild(rootItem);
     }
 
     private destroyContextSelection() {
         const hierarchyItem = this.elementMap.get(this.contextSelection);
-        if(!hierarchyItem) return;
+        if (!hierarchyItem) return;
         if (EditorRuntime.getSelection() === this.contextSelection) {
             EditorRuntime.select(null);
         }
@@ -148,6 +151,13 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
         new AppElement("Element", EditorRuntime.getSelection());
     }
 
+    private createScrollElement() : void {
+        const element = new AppElement("Scroll Container");
+        element.addComponent(ScrollComponent);
+        const sizing = element.addComponent(SizingComponent);
+        // sizing.stretchBehavior = StretchBehavior.FillParent;
+    }
+
     public createInitialStructure(children : Array<HTMLElement>) {
         return [
             <div class="hierarchy-top-bar">
@@ -158,20 +168,15 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
     }
 
     private createContextMenu() : any {
-        return createElement(EditorContextMenu, {
-            options: [
-                {
-                    name: "Create",
-                    icon: "object-group",
-                    action: () => this.createNewElement()
-                },
-                {
-                    name: "Delete",
-                    icon: "remove",
-                    action: () => this.destroyContextSelection()
-                }
-            ]
-        });
+        EditorRuntime.getInput().getMousePosition(this.mouse);
+        const menu = new nw.Menu();
+        const creationMenu = getCreationMenu();
+
+        menu.append(new nw.MenuItem({ label: "Create Empty", click: () => this.createNewElement() }));
+        menu.append(new nw.MenuItem({ label: "Create", submenu: creationMenu }));
+        menu.append(new nw.MenuItem({ label: "Destroy", click: () => this.destroyContextSelection() }));
+
+        menu.popup(this.mouse.x, this.mouse.y);
     }
 }
 

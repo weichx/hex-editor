@@ -1,3 +1,5 @@
+require("./runtime/array");
+
 import {EditorRuntimeImplementation} from "./editor/editor_runtime";
 import {createElement} from "./editor_element/element_renderer";
 import {EditorBindingElement as EBindingElement, EditorBindingElement} from "./editor_element/editor_binding_element";
@@ -99,11 +101,11 @@ window.Bind = function (ctx : any, path : any) {
     return { ctx: ctx, path: path }
 };
 
-(window as any).Hex = {
-    createElement: createElement
-};
-
+(window as any).System = (global as any).System;
+(window as any).FileSystem = (global as any).FileSystem;
+(window as any).Hex = { createElement };
 (window as any).self = new EditorWorkerContext();
+
 window.HexWorker = EditorWorker;
 window.HexEnvironmentFlag |= EnvironmentFlag.EditorActive;
 window.BrowserRuntime = new BrowserRuntimeImpl("todo --- code url here", document.body);
@@ -115,4 +117,5 @@ function loop(delta : number) {
     (EditorRuntime as any).update(delta);
     requestAnimationFrame(loop);
 }
+
 requestAnimationFrame(loop);

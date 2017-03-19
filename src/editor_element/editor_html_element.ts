@@ -100,7 +100,7 @@ export class EditorHTMLElement<T extends IHTMLAttribute> extends EditorElement {
         let ptr = this.parent;
         while (ptr) {
             if (ptr instanceof EditorHTMLElement) {
-                return ptr.isVisible;
+                return ptr.isVisible();
             }
             ptr = ptr.parent;
         }
@@ -126,9 +126,9 @@ export class EditorHTMLElement<T extends IHTMLAttribute> extends EditorElement {
             this.htmlNode.className = this.attrs.class;
         }
 
-        if (domData.style) {
+        if (domData && domData.style) {
             const attrStyle = this.attrs.style || "";
-            this.htmlNode.setAttribute("style", domData.style + attrStyle);
+            this.htmlNode.setAttribute("style", domData.style + ";" +  attrStyle);
         }
         else if (this.attrs.style) {
             this.htmlNode.setAttribute("style", this.attrs.style);
@@ -141,6 +141,14 @@ export class EditorHTMLElement<T extends IHTMLAttribute> extends EditorElement {
                 if (a.indexOf("on") === 0) continue;
                 this.htmlNode.setAttribute(a, attrs[a])
             }
+        }
+
+        for(let a in this.attrs) {
+            if(typeof this.attrs[a] !== "string") continue;
+            if (a.indexOf("x-") === 0) continue;
+            if (a.indexOf("on") === 0) continue;
+            if (a === "style" || a === "class") continue;
+            this.htmlNode.setAttribute(a, (this.attrs as any)[a])
         }
 
         if (!this.isVisible()) {

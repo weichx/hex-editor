@@ -45,124 +45,149 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	__webpack_require__(39);
-	__webpack_require__(20);
-	__webpack_require__(37);
-	__webpack_require__(40);
-	__webpack_require__(41);
-	__webpack_require__(36);
-	(function webpackMissingModule() { throw new Error("Cannot find module \"./src/editor_element/editor_custom_element.ts\""); }());
-	__webpack_require__(43);
-	__webpack_require__(12);
-	__webpack_require__(15);
-	__webpack_require__(11);
-	__webpack_require__(6);
-	__webpack_require__(5);
-	__webpack_require__(16);
-	__webpack_require__(18);
-	__webpack_require__(44);
-	__webpack_require__(3);
-	__webpack_require__(4);
-	__webpack_require__(17);
-	__webpack_require__(45);
-	__webpack_require__(10);
-	__webpack_require__(7);
-	__webpack_require__(8);
-	__webpack_require__(46);
-	__webpack_require__(34);
-	__webpack_require__(47);
-	__webpack_require__(48);
-	__webpack_require__(49);
-	__webpack_require__(19);
-	__webpack_require__(2);
-	__webpack_require__(50);
-	__webpack_require__(38);
-	__webpack_require__(9);
-	(function webpackMissingModule() { throw new Error("Cannot find module \"./src/prefab_template.ts\""); }());
-	__webpack_require__(52);
 	__webpack_require__(53);
-	__webpack_require__(54);
-	__webpack_require__(25);
+	__webpack_require__(96);
+	__webpack_require__(98);
+	__webpack_require__(94);
+	__webpack_require__(66);
 	__webpack_require__(55);
-	__webpack_require__(56);
 	__webpack_require__(57);
-	__webpack_require__(58);
-	__webpack_require__(59);
-	__webpack_require__(61);
-	__webpack_require__(29);
-	__webpack_require__(60);
-	(function webpackMissingModule() { throw new Error("Cannot find module \"./src/runtime/components/layout/default/default_layout_component.ts\""); }());
-	(function webpackMissingModule() { throw new Error("Cannot find module \"./src/runtime/components/layout/default/default_sizing_component.ts\""); }());
-	(function webpackMissingModule() { throw new Error("Cannot find module \"./src/runtime/components/layout/layout_component.ts\""); }());
-	__webpack_require__(64);
-	__webpack_require__(67);
-	__webpack_require__(62);
-	__webpack_require__(68);
-	__webpack_require__(69);
-	__webpack_require__(28);
-	__webpack_require__(70);
-	__webpack_require__(27);
-	__webpack_require__(22);
-	__webpack_require__(32);
-	__webpack_require__(21);
-	__webpack_require__(71);
-	__webpack_require__(72);
-	__webpack_require__(26);
-	__webpack_require__(24);
-	__webpack_require__(33);
-	__webpack_require__(23);
-	__webpack_require__(14);
-	__webpack_require__(30);
-	__webpack_require__(73);
-	__webpack_require__(74);
-	__webpack_require__(75);
-	__webpack_require__(13);
-	__webpack_require__(76);
-	__webpack_require__(78);
-	__webpack_require__(77);
-	__webpack_require__(79);
-	__webpack_require__(87);
-	__webpack_require__(81);
-	__webpack_require__(82);
-	__webpack_require__(109);
-	__webpack_require__(110);
 	__webpack_require__(99);
-	__webpack_require__(97);
+	__webpack_require__(85);
+	__webpack_require__(100);
+	__webpack_require__(81);
+	__webpack_require__(101);
+	__webpack_require__(102);
+	__webpack_require__(104);
+	__webpack_require__(107);
+	__webpack_require__(109);
 	__webpack_require__(111);
 	__webpack_require__(112);
-	__webpack_require__(113);
 	__webpack_require__(114);
 	__webpack_require__(115);
-	__webpack_require__(117);
-	__webpack_require__(118);
-	__webpack_require__(98);
-	__webpack_require__(85);
-	__webpack_require__(101);
-	__webpack_require__(119);
-	__webpack_require__(120);
-	__webpack_require__(93);
-	__webpack_require__(102);
-	__webpack_require__(121);
-	__webpack_require__(116);
-	__webpack_require__(80);
-	__webpack_require__(95);
-	__webpack_require__(92);
-	__webpack_require__(105);
-	__webpack_require__(100);
-	__webpack_require__(91);
-	__webpack_require__(122);
-	(function webpackMissingModule() { throw new Error("Cannot find module \"./src/windows/asset/asset_folder.tsx\""); }());
-	__webpack_require__(106);
-	__webpack_require__(103);
-	(function webpackMissingModule() { throw new Error("Cannot find module \"./src/windows/asset/prefab_asset_item.tsx\""); }());
-	__webpack_require__(86);
 	__webpack_require__(84);
-	__webpack_require__(83);
-	__webpack_require__(90);
-	__webpack_require__(94);
-	__webpack_require__(96);
+	__webpack_require__(89);
+	__webpack_require__(61);
 	__webpack_require__(88);
-	module.exports = __webpack_require__(89);
+	__webpack_require__(116);
+	__webpack_require__(117);
+	__webpack_require__(77);
+	__webpack_require__(87);
+	__webpack_require__(118);
+	__webpack_require__(113);
+	__webpack_require__(54);
+	__webpack_require__(79);
+	__webpack_require__(75);
+	__webpack_require__(119);
+	__webpack_require__(86);
+	__webpack_require__(74);
+	__webpack_require__(120);
+	__webpack_require__(91);
+	__webpack_require__(90);
+	__webpack_require__(63);
+	__webpack_require__(60);
+	__webpack_require__(58);
+	__webpack_require__(73);
+	__webpack_require__(78);
+	__webpack_require__(80);
+	__webpack_require__(68);
+	__webpack_require__(69);
+	__webpack_require__(122);
+	__webpack_require__(123);
+	__webpack_require__(124);
+	__webpack_require__(97);
+	__webpack_require__(125);
+	__webpack_require__(95);
+	__webpack_require__(126);
+	__webpack_require__(24);
+	__webpack_require__(51);
+	__webpack_require__(127);
+	__webpack_require__(128);
+	__webpack_require__(50);
+	__webpack_require__(67);
+	__webpack_require__(15);
+	__webpack_require__(19);
+	__webpack_require__(14);
+	__webpack_require__(8);
+	__webpack_require__(7);
+	__webpack_require__(20);
+	__webpack_require__(22);
+	__webpack_require__(36);
+	__webpack_require__(35);
+	__webpack_require__(45);
+	__webpack_require__(129);
+	__webpack_require__(130);
+	__webpack_require__(65);
+	__webpack_require__(5);
+	__webpack_require__(21);
+	__webpack_require__(6);
+	__webpack_require__(131);
+	__webpack_require__(12);
+	__webpack_require__(9);
+	__webpack_require__(10);
+	__webpack_require__(13);
+	__webpack_require__(93);
+	__webpack_require__(38);
+	__webpack_require__(132);
+	__webpack_require__(121);
+	__webpack_require__(62);
+	__webpack_require__(64);
+	__webpack_require__(23);
+	__webpack_require__(3);
+	__webpack_require__(56);
+	__webpack_require__(52);
+	__webpack_require__(11);
+	__webpack_require__(43);
+	__webpack_require__(42);
+	__webpack_require__(108);
+	__webpack_require__(82);
+	__webpack_require__(29);
+	__webpack_require__(2);
+	__webpack_require__(44);
+	__webpack_require__(70);
+	__webpack_require__(133);
+	__webpack_require__(134);
+	__webpack_require__(110);
+	__webpack_require__(37);
+	__webpack_require__(135);
+	__webpack_require__(138);
+	__webpack_require__(103);
+	__webpack_require__(39);
+	__webpack_require__(41);
+	__webpack_require__(40);
+	__webpack_require__(139);
+	__webpack_require__(140);
+	__webpack_require__(141);
+	__webpack_require__(106);
+	__webpack_require__(142);
+	__webpack_require__(143);
+	__webpack_require__(105);
+	__webpack_require__(32);
+	__webpack_require__(144);
+	__webpack_require__(31);
+	__webpack_require__(26);
+	__webpack_require__(34);
+	__webpack_require__(25);
+	__webpack_require__(145);
+	__webpack_require__(146);
+	__webpack_require__(147);
+	__webpack_require__(148);
+	__webpack_require__(18);
+	__webpack_require__(149);
+	__webpack_require__(30);
+	__webpack_require__(28);
+	__webpack_require__(150);
+	__webpack_require__(27);
+	__webpack_require__(17);
+	__webpack_require__(33);
+	__webpack_require__(92);
+	__webpack_require__(59);
+	__webpack_require__(76);
+	__webpack_require__(83);
+	__webpack_require__(16);
+	__webpack_require__(151);
+	__webpack_require__(71);
+	module.exports = __webpack_require__(72);
 
 
 /***/ },
@@ -171,34 +196,35 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_runtime_1 = __webpack_require__(2);
-	const element_renderer_1 = __webpack_require__(5);
-	const editor_binding_element_1 = __webpack_require__(36);
-	const browser_runtime_1 = __webpack_require__(37);
-	const editor_worker_1 = __webpack_require__(38);
+	__webpack_require__(2);
+	const editor_runtime_1 = __webpack_require__(3);
+	const element_renderer_1 = __webpack_require__(7);
+	const editor_binding_element_1 = __webpack_require__(50);
+	const browser_runtime_1 = __webpack_require__(51);
+	const editor_worker_1 = __webpack_require__(52);
 	window.AppRootElementId = 0;
 	window.Runtime = null;
 	window.HexEnvironmentFlag = 0;
 	window.EmptyFunction = function () { };
 	window.EditorBindingElement = editor_binding_element_1.EditorBindingElement;
 	window.runtimeGuard = function (fn) {
-	    if ((window.HexEnvironmentFlag & 1) !== 0)
+	    if ((window.HexEnvironmentFlag & 1 /* RuntimeActive */) !== 0)
 	        fn();
 	};
 	window.editorGuard = function (fn) {
-	    if ((window.HexEnvironmentFlag & 2) !== 0)
+	    if ((window.HexEnvironmentFlag & 2 /* EditorActive */) !== 0)
 	        fn();
 	};
 	window.developmentGuard = function (fn) {
-	    if ((window.HexEnvironmentFlag & 4) !== 0)
+	    if ((window.HexEnvironmentFlag & 4 /* DevelopmentEnv */) !== 0)
 	        fn();
 	};
 	window.productionGuard = function (fn) {
-	    if ((window.HexEnvironmentFlag & 16) !== 0)
+	    if ((window.HexEnvironmentFlag & 16 /* TestEnvironment */) !== 0)
 	        fn();
 	};
 	window.productionGuard = function (fn) {
-	    if ((window.HexEnvironmentFlag & 8) !== 0)
+	    if ((window.HexEnvironmentFlag & 8 /* ProductionEnv */) !== 0)
 	        fn();
 	};
 	const DocumentHead = document.head || document.getElementsByTagName('head')[0];
@@ -218,12 +244,12 @@
 	window.Bind = function (ctx, path) {
 	    return { ctx: ctx, path: path };
 	};
-	window.Hex = {
-	    createElement: element_renderer_1.createElement
-	};
+	window.System = global.System;
+	window.FileSystem = global.FileSystem;
+	window.Hex = { createElement: element_renderer_1.createElement };
 	window.self = new editor_worker_1.EditorWorkerContext();
 	window.HexWorker = editor_worker_1.EditorWorker;
-	window.HexEnvironmentFlag |= 2;
+	window.HexEnvironmentFlag |= 2 /* EditorActive */;
 	window.BrowserRuntime = new browser_runtime_1.BrowserRuntimeImpl("todo --- code url here", document.body);
 	window.EditorRuntime = new editor_runtime_1.EditorRuntimeImplementation();
 	window.Runtime = EditorRuntime;
@@ -237,26 +263,87 @@
 
 /***/ },
 /* 2 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	Array.prototype.contains = function (item) {
+	    const length = this.length;
+	    for (let i = 0; i < length; i++) {
+	        if (this[i] === item)
+	            return true;
+	    }
+	    return false;
+	};
+	Array.prototype.getFirst = function () {
+	    return this[0];
+	};
+	Array.prototype.getLast = function () {
+	    return this[this.length - 1];
+	};
+	Array.prototype.remove = function (item) {
+	    const length = this.length;
+	    for (let i = 0; i < length; i++) {
+	        if (this[i] === item) {
+	            while (i < length) {
+	                this[i] = this[i + 1];
+	                i++;
+	            }
+	            this.length--;
+	            return true;
+	        }
+	    }
+	    return false;
+	};
+	Array.prototype.removeAt = function (index) {
+	    let len = this.length;
+	    if (!len) {
+	        return false;
+	    }
+	    while (index < len) {
+	        this[index] = this[index + 1];
+	        index++;
+	    }
+	    this.length--;
+	    return true;
+	};
+	Array.prototype.insert = function (item, index) {
+	    let i = this.length;
+	    this.length++;
+	    if (index >= this.length) {
+	        this[this.length - 1] = item;
+	        return;
+	    }
+	    while (i != index) {
+	        this[i] = this[--i];
+	    }
+	    this[index] = item;
+	};
+	exports.default = 0;
+
+
+/***/ },
+/* 3 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const evt_scene_loaded_event_1 = __webpack_require__(3);
-	const evt_selection_changed_1 = __webpack_require__(4);
-	const element_renderer_1 = __webpack_require__(5);
-	const evt_window_resized_1 = __webpack_require__(17);
-	const evt_app_element_created_1 = __webpack_require__(18);
-	const editor_element_1 = __webpack_require__(12);
-	const editor_input_1 = __webpack_require__(19);
-	const tree_1 = __webpack_require__(23);
-	const runtime_1 = __webpack_require__(24);
-	const app_element_1 = __webpack_require__(25);
-	const scene_1 = __webpack_require__(33);
-	const e_command_type_1 = __webpack_require__(28);
-	const component_1 = __webpack_require__(29);
-	const vector2_1 = __webpack_require__(14);
-	const drag_action_1 = __webpack_require__(34);
-	const horizontal_stack_layout_1 = __webpack_require__(128);
+	const tslib_1 = __webpack_require__(4);
+	const evt_selection_changed_1 = __webpack_require__(5);
+	const element_renderer_1 = __webpack_require__(7);
+	const evt_window_resized_1 = __webpack_require__(21);
+	const evt_app_element_created_1 = __webpack_require__(22);
+	const editor_element_1 = __webpack_require__(15);
+	const editor_input_1 = __webpack_require__(23);
+	const tree_1 = __webpack_require__(27);
+	const runtime_1 = __webpack_require__(28);
+	const app_element_1 = __webpack_require__(29);
+	const e_command_type_1 = __webpack_require__(32);
+	const component_1 = __webpack_require__(37);
+	const vector2_1 = __webpack_require__(17);
+	const drag_action_1 = __webpack_require__(38);
+	const horizontal_stack_layout_1 = __webpack_require__(39);
+	const project_1 = __webpack_require__(43);
 	let mouseCache = new vector2_1.Vector2();
 	class UpdateNode extends tree_1.ShadowTreeNode {
 	    traverse() {
@@ -264,6 +351,7 @@
 	        if (element.isDestroyed()) {
 	            return true;
 	        }
+	        //todo or disabled
 	        for (let i = 0; i < this.items.length; i++) {
 	            this.items[i].onUpdated();
 	            if (element.isDestroyed()) {
@@ -289,13 +377,13 @@
 	class EditorRuntimeImplementation extends runtime_1.RuntimeImpl {
 	    constructor() {
 	        super();
+	        this.project = null;
 	        this.selectedElement = null;
 	        this.editorApplicationRoot = null;
 	        this.input = new editor_input_1.EditorInput();
 	        this.updateTree = new tree_1.ShadowTree(UpdateNode);
 	        this.draggedAction = null;
 	        this.lastEnteredElement = null;
-	        this.activeContextMenu = null;
 	        this.rootDomNode = null;
 	    }
 	    setCursor(cursorString) {
@@ -304,55 +392,48 @@
 	    getAppRootElementDomNode() {
 	        return this.rootDomNode;
 	    }
-	    suppressAddElement(fn) {
-	        this.addElement = function () { };
-	        fn();
-	        this.addElement = EditorRuntimeImplementation.prototype.addElement;
-	    }
-	    createApplicationRoot() {
-	        if (!app_element_1.AppElement.Root) {
-	            this.suppressAddElement(() => {
-	                app_element_1.AppElement.Root = new app_element_1.AppElement("__Root__");
-	                app_element_1.AppElement.Root.addComponent(horizontal_stack_layout_1.HorizontalStackLayout);
-	                this.appElementRegistry[0] = app_element_1.AppElement.Root;
-	            });
-	        }
-	    }
-	    loadScene(sceneDescription) {
-	        this.createApplicationRoot();
-	        if (!this.scene)
-	            this.scene = new scene_1.Scene();
-	        this.scene.load(sceneDescription);
-	        const elements = sceneDescription.elements;
-	        const parentMap = {};
-	        this.suppressAddElement(() => {
-	            const ids = Object.keys(elements);
-	            for (let i = 0; i < ids.length; i++) {
-	                const id = ids[i];
-	                const elementDesc = elements[id];
-	                const appElement = new app_element_1.AppElement(elementDesc.name);
-	                appElement.id = parseInt(id);
-	                this.appElementRegistry[id] = appElement;
-	                parentMap[id] = elementDesc.parentId;
+	    loadProject(pathToProject) {
+	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
+	            if (pathToProject) {
+	                this.project = new project_1.Project("New Project", pathToProject);
 	            }
-	            const appElementIds = Object.keys(this.appElementRegistry);
-	            for (let i = 0; i < appElementIds.length; i++) {
-	                const appElement = this.appElementRegistry[appElementIds[i]];
-	                if (appElement.id === 0)
-	                    continue;
-	                const parentId = parentMap[appElement.id] || 0;
-	                appElement.setParent(this.appElementRegistry[parentId]);
+	            else {
+	                this.project = new project_1.Project("Scratch", "C:\\Users\\matth\\WebstormProjects\\hex-editor\\test_project\\project.hex");
 	            }
-	            for (let i = 0; i < ids.length; i++) {
-	                const appElement = this.appElementRegistry[ids[i]];
-	                if (appElement === app_element_1.AppElement.Root)
-	                    continue;
-	                const componentDescriptors = elements[ids[i]].components;
-	                this.sendCommand(e_command_type_1.CommandType.Create, appElement.id);
-	                this.createComponents(appElement, componentDescriptors);
-	            }
+	            return this.project.load();
+	            // const project = Hex.loadProject();
+	            // if (!this.scene) this.scene = new Scene();
+	            // this.scene.load(sceneDescription);
+	            // const elements = sceneDescription.elements;
+	            // const parentMap : Indexable<number> = {};
+	            // //todo use an instance id for elements?
+	            // this.suppressAddElement(() => {
+	            //     const ids = Object.keys(elements);
+	            //     for (let i = 0; i < ids.length; i++) {
+	            //         const id = ids[i];
+	            //         const elementDesc = elements[id];
+	            //         const appElement = new AppElement(elementDesc.name) as any;
+	            //         appElement.id = parseInt(id);
+	            //         this.appElementRegistry[id] = appElement;
+	            //         parentMap[id] = elementDesc.parentId;
+	            //     }
+	            //     const appElementIds = Object.keys(this.appElementRegistry);
+	            //     for (let i = 0; i < appElementIds.length; i++) {
+	            //         const appElement = this.appElementRegistry[appElementIds[i]] as any;
+	            //         if (appElement.id === 0) continue;
+	            //         const parentId = parentMap[appElement.id] || 0;
+	            //         appElement.setParent(this.appElementRegistry[parentId]);
+	            //     }
+	            //     for (let i = 0; i < ids.length; i++) {
+	            //         const appElement = this.appElementRegistry[ids[i]];
+	            //         if (appElement === AppElement.Root) continue;
+	            //         const componentDescriptors = elements[ids[i]].components;
+	            //         this.sendCommand(CommandType.Create, appElement.id);
+	            //         this.createComponents(appElement, componentDescriptors);
+	            //     }
+	            // });
+	            // this.emit(SceneLoaded, this.scene);
 	        });
-	        this.emit(evt_scene_loaded_event_1.SceneLoaded, this.scene);
 	    }
 	    createComponents(appElement, componentDescriptors) {
 	        for (let i = 0; i < componentDescriptors.length; i++) {
@@ -361,7 +442,7 @@
 	            if (type) {
 	                const cmp = appElement.addComponent(type);
 	                if (type.OnDeserialized) {
-	                    type.OnDeserialized(cmp, desc.data);
+	                    type.OnDeserialized(cmp, desc.data); //temp until i optimize cerialize for hex
 	                }
 	            }
 	        }
@@ -391,6 +472,10 @@
 	        for (let i = 0; i < this.pendingComponents.length; i++) {
 	            const cmp = this.pendingComponents[i];
 	            cmp.onMounted();
+	            //todo handle on editor gui
+	            // if(typeof cmp.onEditorUpdate === "function") {
+	            //
+	            // }
 	        }
 	        this.pendingComponents.length = 0;
 	        if (this.draggedAction) {
@@ -421,15 +506,25 @@
 	            this.layoutQueue[i].doLayout();
 	        }
 	        this.layoutQueue.length = 0;
+	        //the real runtime implementation of buffer building lives
+	        // on a worker thread and is decoded on a UI thread
 	        this.sendCommandBuffer();
+	        // this.decodeCommandBuffer(commandBuffer);
 	        this.input.update();
 	    }
+	    //todo hide this in the api
 	    addElement(appElement) {
+	        //root element has null parent, it is pre-created
+	        if (appElement.getParent() === null)
+	            return;
+	        //todo destroy this when element is nuked
 	        this.appElementRegistry[appElement.id] = appElement;
+	        //get UI Element
 	        this.emit(evt_app_element_created_1.AppElementCreated, appElement);
 	        this.sendCommand(e_command_type_1.CommandType.Create, appElement.id);
 	        const parent = appElement.getParent();
 	        if (parent) {
+	            //todo -- only if they are tagged for editor calls
 	            const components = parent.getAllComponents();
 	            for (let i = 0; i < components.length; i++) {
 	                components[i].onChildAdded(appElement);
@@ -444,70 +539,93 @@
 	        }
 	    }
 	    drawScene(selector) {
-	        this.createApplicationRoot();
 	        this.rootDomNode = BrowserRuntime.elementIdToDomNode(0);
 	        document.querySelector(selector).appendChild(this.rootDomNode);
 	    }
 	    getEditorElementAtPoint(point, type = null) {
 	        if (!type)
 	            type = editor_element_1.EditorElement;
+	        //todo find a better way to find elements
 	        const element = document.elementFromPoint(point.x, point.y).__editorElement;
 	        if (!element)
 	            return null;
 	        return element.getAncestorByType(type, true);
 	    }
-	    showContextMenu(menu) {
-	        if (this.activeContextMenu) {
-	            this.activeContextMenu.destroy();
-	        }
-	        this.activeContextMenu = menu;
-	        this.editorApplicationRoot.addChild(menu);
-	        const mp = this.input.getMousePosition();
-	        menu.setPosition(mp.x, mp.y);
-	    }
-	    hideContextMenu() {
-	        if (this.activeContextMenu) {
-	            this.activeContextMenu.destroy();
-	        }
-	    }
 	    start(appRoot, attrs = {}) {
-	        this.loadScene(__webpack_require__(35));
-	        this.editorApplicationRoot = element_renderer_1.createElement(appRoot, attrs);
-	        element_renderer_1.render(this.editorApplicationRoot, document.getElementById('root'));
-	        window.addEventListener("resize", () => {
-	            this.emit(evt_window_resized_1.WindowResized, window.innerWidth, window.innerHeight);
-	        });
+	        this.createMenuBar();
+	        this.createRoot(appRoot, attrs);
+	        this.loadProject();
+	        this.initListeners();
+	    }
+	    getProject() {
+	        return this.project;
 	    }
 	    getInput() {
 	        return this.input;
+	    }
+	    initListeners() {
+	        // prevent default behavior from changing page on dropped file
+	        window.ondragover = function (e) { e.preventDefault(); return false; };
+	        // NOTE: ondrop events WILL NOT WORK if you do not "preventDefault" in the ondragover event!!
+	        window.ondrop = function (e) { e.preventDefault(); return false; };
+	        window.addEventListener("resize", () => {
+	            this.emit(evt_window_resized_1.WindowResized, window.innerWidth, window.innerHeight);
+	        });
+	        var win = nw.Window.get();
+	        win.on("resize", (width, height) => {
+	            this.emit(evt_window_resized_1.WindowResized, width, height);
+	        });
+	        win.on("maximize", (width, height) => {
+	            this.emit(evt_window_resized_1.WindowResized, width, height);
+	        });
+	    }
+	    createRoot(appRoot, attrs) {
+	        app_element_1.AppElement.Root = new app_element_1.AppElement("__Root__");
+	        app_element_1.AppElement.Root.addComponent(horizontal_stack_layout_1.HorizontalStackLayout);
+	        this.appElementRegistry[0] = app_element_1.AppElement.Root;
+	        this.editorApplicationRoot = element_renderer_1.createElement(appRoot, attrs);
+	        element_renderer_1.render(this.editorApplicationRoot, document.getElementById('root'));
+	    }
+	    createMenuBar() {
+	        var win = nw.Window.get();
+	        var menu = new nw.Menu({ type: 'menubar' });
+	        var submenu = new nw.Menu();
+	        submenu.append(new nw.MenuItem({
+	            label: "New",
+	            click: () => {
+	                nw.Window.open("file_selector.html", (win) => {
+	                    win.setAlwaysOnTop(true);
+	                    win.on("closed", () => {
+	                    });
+	                });
+	            }
+	        }));
+	        submenu.append(new nw.MenuItem({
+	            label: 'Save', click: function () {
+	                EditorRuntime.getScene().save();
+	            }
+	        }));
+	        submenu.append(new nw.MenuItem({
+	            label: 'Load', click: function () {
+	            }
+	        }));
+	        menu.append(new nw.MenuItem({
+	            label: 'File',
+	            submenu: submenu,
+	            click: function () {
+	            },
+	        }));
+	        win.menu = menu;
 	    }
 	}
 	exports.EditorRuntimeImplementation = EditorRuntimeImplementation;
 
 
 /***/ },
-/* 3 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const runtime_event_1 = __webpack_require__(123);
-	class SceneLoaded extends runtime_event_1.RuntimeEvent {
-	}
-	exports.SceneLoaded = SceneLoaded;
-
-
-/***/ },
 /* 4 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const runtime_event_1 = __webpack_require__(123);
-	class SelectionChanged extends runtime_event_1.RuntimeEvent {
-	}
-	exports.SelectionChanged = SelectionChanged;
-
+	module.exports = require("tslib");
 
 /***/ },
 /* 5 */
@@ -515,11 +633,42 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const element_attribute_1 = __webpack_require__(6);
-	const editor_text_element_1 = __webpack_require__(11);
-	const editor_html_element_1 = __webpack_require__(15);
-	const render_context_stack_1 = __webpack_require__(16);
-	const editor_element_1 = __webpack_require__(12);
+	const runtime_event_1 = __webpack_require__(6);
+	class SelectionChanged extends runtime_event_1.RuntimeEvent {
+	}
+	exports.SelectionChanged = SelectionChanged;
+
+
+/***/ },
+/* 6 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	class RuntimeEvent {
+	    static on(eventType) {
+	        return function (target, propertyKey, descriptor) {
+	            const proto = target;
+	            proto.__runtime_events__ = proto.__runtime_events__ || new Map();
+	            const eventMap = proto.__runtime_events__;
+	            eventMap.set(eventType, propertyKey);
+	        };
+	    }
+	}
+	exports.RuntimeEvent = RuntimeEvent;
+
+
+/***/ },
+/* 7 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const element_attribute_1 = __webpack_require__(8);
+	const editor_text_element_1 = __webpack_require__(14);
+	const editor_html_element_1 = __webpack_require__(19);
+	const render_context_stack_1 = __webpack_require__(20);
+	const editor_element_1 = __webpack_require__(15);
 	const smartAttributes = [
 	    element_attribute_1.IdAndEventsAttributes
 	];
@@ -542,6 +691,13 @@
 	        root.addChild(children);
 	    }
 	}
+	// created -> no children have been built
+	// structured -> static children have been built
+	// enabled
+	// mounted -> structure is built but not in dom, all children are present
+	// rendered -> structure in dom
+	// disabled
+	// destroyed
 	function createHTMLElement(tag, attrs, children) {
 	    const retn = new editor_html_element_1.EditorHTMLElement(attrs, tag);
 	    const renderContext = render_context_stack_1.RenderContextStack.peek();
@@ -589,14 +745,14 @@
 
 
 /***/ },
-/* 6 */
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const attr_x_if_1 = __webpack_require__(7);
-	const attr_x_if_eval_1 = __webpack_require__(10);
-	const binding_1 = __webpack_require__(46);
+	const attr_x_if_1 = __webpack_require__(9);
+	const attr_x_if_eval_1 = __webpack_require__(12);
+	const binding_1 = __webpack_require__(13);
 	function IdAndEventsAttributes(context, element, attributes) {
 	    if (attributes['x-id']) {
 	        context.setChildIdAlias(attributes["x-id"], element);
@@ -780,13 +936,13 @@
 
 
 /***/ },
-/* 7 */
+/* 9 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const binding_compiler_1 = __webpack_require__(8);
-	const object_pool_1 = __webpack_require__(9);
+	const binding_compiler_1 = __webpack_require__(10);
+	const object_pool_1 = __webpack_require__(11);
 	class XIf {
 	    onSpawn(element, binding) {
 	        this.element = element;
@@ -804,7 +960,7 @@
 	            var value = this.getterFn(this.ctx);
 	            if (this.invert)
 	                value = !value;
-	            this.element.setVisible(value);
+	            this.element.setVisible(value); //todo this should be setEnabled() instead
 	        }
 	    }
 	    onDestroyed() {
@@ -817,7 +973,7 @@
 
 
 /***/ },
-/* 8 */
+/* 10 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -907,7 +1063,7 @@
 
 
 /***/ },
-/* 9 */
+/* 11 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -965,12 +1121,12 @@
 
 
 /***/ },
-/* 10 */
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const object_pool_1 = __webpack_require__(9);
+	const object_pool_1 = __webpack_require__(11);
 	class XIfEval {
 	    constructor() {
 	        this.element = null;
@@ -993,12 +1149,116 @@
 
 
 /***/ },
-/* 11 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_element_1 = __webpack_require__(12);
+	const binding_compiler_1 = __webpack_require__(10);
+	function CreateBinding(context, one, two, three, four) {
+	    const path = Array.prototype.slice.call(arguments, 1);
+	    if (context instanceof EditorBinding) {
+	        return new EditorSubBinding(context, path);
+	    }
+	    return new EditorBinding(context, path);
+	}
+	exports.CreateBinding = CreateBinding;
+	class EditorBinding {
+	    constructor(context, path) {
+	        this.element = null;
+	        this.context = context;
+	        this.getterFn = binding_compiler_1.getGetter(path);
+	        this.setterFn = binding_compiler_1.getSetter(path);
+	        this.value = void 0; //this.getterFn(this.context);
+	        this.changeHandlers = [];
+	    }
+	    onUpdated() {
+	        const value = this.getterFn(this.context);
+	        if (value !== this.value) {
+	            const oldValue = this.value;
+	            this.value = value;
+	            this.sendChanges(this.value, oldValue);
+	        }
+	    }
+	    set(value) {
+	        if (value === this.value)
+	            return;
+	        this.setterFn(this.context, value);
+	        const oldValue = this.value;
+	        this.value = value;
+	        this.sendChanges(this.value, oldValue);
+	    }
+	    get() {
+	        return this.value;
+	    }
+	    onChange(fn) {
+	        this.changeHandlers.push(fn);
+	        return this;
+	    }
+	    offChange(fn) {
+	        this.changeHandlers.remove(fn);
+	        return this;
+	    }
+	    setHost(host) {
+	        if (this.element) {
+	            EditorRuntime.updateTree.remove(this);
+	        }
+	        this.element = host;
+	        if (this.element) {
+	            EditorRuntime.updateTree.add(this);
+	        }
+	        return this;
+	    }
+	    destroy() {
+	        this.context = null;
+	        this.changeHandlers = null;
+	        EditorRuntime.updateTree.remove(this);
+	        this.getterFn = null;
+	        this.setterFn = null;
+	        this.value = null;
+	        this.element = null;
+	    }
+	    sendChanges(newValue, oldValue) {
+	        for (let i = 0; i < this.changeHandlers.length; i++) {
+	            this.changeHandlers[i](newValue, oldValue);
+	        }
+	    }
+	}
+	exports.EditorBinding = EditorBinding;
+	class EditorSubBinding extends EditorBinding {
+	    set(value) {
+	        if (value === this.value)
+	            return;
+	        this.setterFn(this.context.get(), value);
+	        const oldValue = this.value;
+	        this.value = value;
+	        this.sendChanges(this.value, oldValue);
+	    }
+	    onUpdated() {
+	        const value = this.getterFn(this.context.get());
+	        if (value !== this.value) {
+	            const oldValue = this.value;
+	            this.value = value;
+	            this.sendChanges(this.value, oldValue);
+	        }
+	    }
+	    sendChanges(newValue, oldValue) {
+	        super.sendChanges(newValue, oldValue);
+	        const parentValue = this.context.get();
+	        const parentContext = this.context;
+	        parentContext.sendChanges(parentValue, parentValue);
+	    }
+	}
+	exports.EditorSubBinding = EditorSubBinding;
+
+
+/***/ },
+/* 14 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const editor_element_1 = __webpack_require__(15);
 	class EditorTextElement extends editor_element_1.EditorElement {
 	    constructor(content) {
 	        super();
@@ -1026,13 +1286,13 @@
 
 
 /***/ },
-/* 12 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const util_1 = __webpack_require__(13);
-	const vector2_1 = __webpack_require__(14);
+	const util_1 = __webpack_require__(16);
+	const vector2_1 = __webpack_require__(17);
 	var EditorElementFlags;
 	(function (EditorElementFlags) {
 	    EditorElementFlags[EditorElementFlags["Rendered"] = 2] = "Rendered";
@@ -1049,7 +1309,7 @@
 	        this.children = [];
 	        this.parent = null;
 	        this.flags = EditorElementFlags.Visible | EditorElementFlags.Enabled;
-	        this.childIdMap = null;
+	        this.childIdMap = null; //todo make this global map?
 	        this.childRoot = null;
 	        this.renderContext = null;
 	        this.childRoot = this;
@@ -1066,6 +1326,7 @@
 	        if (this.htmlNode) {
 	            this.htmlNode.classList.toggle("hidden", !isVisible);
 	        }
+	        // this.onVisibilityChanged(isVisible);
 	    }
 	    setPosition(x, y) {
 	        const dom = this.getDomNode();
@@ -1121,6 +1382,7 @@
 	    }
 	    render(mountPoint) {
 	        this.mount(mountPoint);
+	        //todo get rid of onRerendered
 	        util_1.traverse(this, function (element) {
 	            if (element.isRendered()) {
 	                element.onRerendered();
@@ -1129,9 +1391,6 @@
 	                element.flags |= EditorElementFlags.Rendered;
 	                element.onRendered();
 	            }
-	        });
-	        util_1.traverseRootFirst(this, function (element) {
-	            element.onParentRendered();
 	        });
 	    }
 	    mount(mountPoint) {
@@ -1205,7 +1464,7 @@
 	    }
 	    getAncestorByType(type, allowSelf = false) {
 	        if (allowSelf && this instanceof type)
-	            return this;
+	            return this; //why do I need a cast and why can't it be T?
 	        let ptr = this.parent;
 	        while (ptr) {
 	            if (ptr instanceof type) {
@@ -1229,6 +1488,7 @@
 	        return this.childIdMap[id];
 	    }
 	    setChildRoot(element) {
+	        //todo assert child root is a child
 	        this.childRoot = element;
 	        if (!this.childRoot)
 	            this.childRoot = this;
@@ -1269,10 +1529,13 @@
 	    getChildIndex(child) {
 	        return this.children.indexOf(child);
 	    }
+	    //todo need to remove all event handlers
 	    destroy() {
 	        if (this.isDestroyed())
 	            return;
 	        this.flags |= EditorElementFlags.Destroyed;
+	        //maybe have 'isDestroyPending' flag
+	        //be careful with destroying the dom node since it is shared in a virtual tree
 	        this.onDestroyed();
 	        for (let i = 0; i < this.children.length; i++) {
 	            this.children[i].destroy();
@@ -1345,7 +1608,6 @@
 	    onUpdated() { }
 	    onRendered() { }
 	    onRerendered() { }
-	    onParentRendered() { }
 	    onParentChanged(newParent, oldParent) { }
 	    onMounted() { }
 	    onDisabled() { }
@@ -1356,7 +1618,7 @@
 
 
 /***/ },
-/* 13 */
+/* 16 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1419,8 +1681,8 @@
 	}
 	exports.clamp01 = clamp01;
 	function titlize(input) {
-	    return input.replace(/([A-Z])/g, ' $1')
-	        .replace(/^./, function (str) { return str.toUpperCase(); });
+	    return input.replace(/([A-Z])/g, ' $1') // insert a space before all caps
+	        .replace(/^./, function (str) { return str.toUpperCase(); }); // uppercase the first character
 	}
 	exports.titlize = titlize;
 	var STRING_DASHERIZE_REGEXP = (/([a-z\d])([A-Z])/g);
@@ -1450,8 +1712,9 @@
 	}
 	exports.getRandomInt = getRandomInt;
 	function distanceSquaredToLineSegment2(lx1, ly1, ldx, ldy, lineLengthSquared, px, py) {
-	    var t;
+	    var t; // t===0 at line pt 1 and t ===1 at line pt 2
 	    if (!lineLengthSquared) {
+	        // 0-length line segment. Any t will return same result
 	        t = 0;
 	    }
 	    else {
@@ -1464,10 +1727,21 @@
 	    var lx = lx1 + t * ldx, ly = ly1 + t * ldy, dx = px - lx, dy = py - ly;
 	    return dx * dx + dy * dy;
 	}
+	/**
+	 * Calculate the square of the distance between a finite line segment and a point.
+	 * @alias module:distance-to-line-segment.squared
+	 * @param {number} lx1 - x-coordinate of line segment's first point
+	 * @param {number} ly1 - y-coordinate of line segment's first point
+	 * @param {number} lx2 - x-coordinate of the line segment's second point
+	 * @param {number} ly2 - y-coordinate of the line segment's second point
+	 * @param {number} px - x coordinate of point
+	 * @param {number} py - y coordinate of point
+	 */
 	function distanceSquaredToLineSegment(lx1, ly1, lx2, ly2, px, py) {
 	    var ldx = lx2 - lx1, ldy = ly2 - ly1, lineLengthSquared = ldx * ldx + ldy * ldy;
 	    return distanceSquaredToLineSegment2(lx1, ly1, ldx, ldy, lineLengthSquared, px, py);
 	}
+	//used for rendering integer instead of float / double
 	class Integer {
 	}
 	exports.Integer = Integer;
@@ -1483,14 +1757,13 @@
 
 
 /***/ },
-/* 14 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const TEMP_ANNOTATION_1 = __webpack_require__(124);
-	var x = "hi";
+	const tslib_1 = __webpack_require__(4);
+	const TEMP_ANNOTATION_1 = __webpack_require__(18);
 	let Vector2 = Vector2_1 = class Vector2 {
 	    constructor(x = 0, y = 0) {
 	        this.x = x;
@@ -1615,6 +1888,7 @@
 	        return Math.atan2(this.y, this.x);
 	    }
 	    verticalAngle() {
+	        //noinspection JSSuspiciousNameCombination
 	        return Math.atan2(this.x, this.y);
 	    }
 	    rotate(radians) {
@@ -1665,21 +1939,45 @@
 
 
 /***/ },
-/* 15 */
+/* 18 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	exports.classMap = new Map();
+	function serializeClass(target) {
+	    exports.classMap.set(target.name, target);
+	}
+	exports.serializeClass = serializeClass;
+	function setSerializer(typeName, serializer) {
+	}
+	setSerializer("Map", function (target) {
+	    target.forEach(function (value, key) {
+	        //return {key: Serialize(key), value: Serialize(value)}
+	    });
+	});
+	function serialize() {
+	}
+	function Serialize(target) {
+	}
+
+
+/***/ },
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_element_1 = __webpack_require__(12);
-	const editor_text_element_1 = __webpack_require__(11);
+	const editor_element_1 = __webpack_require__(15);
+	const editor_text_element_1 = __webpack_require__(14);
+	const util_1 = __webpack_require__(16);
 	exports.InputEventAnnotationMap = new Map();
 	class EditorHTMLElement extends editor_element_1.EditorElement {
 	    constructor(attrs, tagName = "div") {
 	        super();
-	        this.element = this;
+	        this.element = this; //this is for the updateTree -- but I don't like it
 	        this.attrs = attrs || {};
 	        this.tagName = tagName;
-	        const proto = this.constructor.prototype;
 	        const eventAnnotations = exports.InputEventAnnotationMap.get(this.constructor.prototype);
 	        if (eventAnnotations) {
 	            for (let i = 0; i < eventAnnotations.length; i++) {
@@ -1687,12 +1985,28 @@
 	                this.addEventListener(annotation.type, (e) => {
 	                    this[annotation.methodName](e);
 	                    e.stopPropagation();
+	                    e.preventDefault();
 	                });
 	            }
 	        }
+	        // todo -- handle events better, right now we never unsubscribe on destroy
+	        // todo -- better to handle events on a per instance basis
+	        // if (this.__runtime_events__) {
+	        //     this.__runtime_events__.forEach((value : any, key : any) => {
+	        //         EditorRuntime.on(value, this);
+	        //     });
+	        // }
 	    }
 	    getDomData() {
-	        return { tagName: this.tagName };
+	        if (this.constructor.name === "EditorHTMLElement") {
+	            return { tagName: this.tagName };
+	        }
+	        else {
+	            return {
+	                tagName: this.tagName,
+	                classList: util_1.dasherize(this.constructor.name)
+	            };
+	        }
 	    }
 	    hasClass(className) {
 	        return this.htmlNode.classList.contains(className);
@@ -1706,6 +2020,13 @@
 	    toggleClass(className, force = false) {
 	        this.htmlNode.classList.toggle(className, force);
 	    }
+	    setStyle(styles) {
+	        const keys = Object.keys(styles);
+	        for (let i = 0; i < keys.length; i++) {
+	            const key = keys[i];
+	            this.htmlNode.style[key] = styles[key];
+	        }
+	    }
 	    setText(text) {
 	        const textChild = this.children[0];
 	        if (!textChild) {
@@ -1715,6 +2036,7 @@
 	            textChild.setText(text);
 	        }
 	        else {
+	            // no idea what to do here
 	        }
 	    }
 	    getText() {
@@ -1724,7 +2046,7 @@
 	        let ptr = this.parent;
 	        while (ptr) {
 	            if (ptr instanceof EditorHTMLElement) {
-	                return ptr.isVisible;
+	                return ptr.isVisible();
 	            }
 	            ptr = ptr.parent;
 	        }
@@ -1748,9 +2070,9 @@
 	        else if (this.attrs.class) {
 	            this.htmlNode.className = this.attrs.class;
 	        }
-	        if (domData.style) {
+	        if (domData && domData.style) {
 	            const attrStyle = this.attrs.style || "";
-	            this.htmlNode.setAttribute("style", domData.style + attrStyle);
+	            this.htmlNode.setAttribute("style", domData.style + ";" + attrStyle);
 	        }
 	        else if (this.attrs.style) {
 	            this.htmlNode.setAttribute("style", this.attrs.style);
@@ -1765,12 +2087,23 @@
 	                this.htmlNode.setAttribute(a, attrs[a]);
 	            }
 	        }
+	        for (let a in this.attrs) {
+	            if (typeof this.attrs[a] !== "string")
+	                continue;
+	            if (a.indexOf("x-") === 0)
+	                continue;
+	            if (a.indexOf("on") === 0)
+	                continue;
+	            if (a === "style" || a === "class")
+	                continue;
+	            this.htmlNode.setAttribute(a, this.attrs[a]);
+	        }
 	        if (!this.isVisible()) {
 	            this.htmlNode.classList.add("hidden");
 	        }
 	        return this.htmlNode;
 	    }
-	    getChildBySelector(selector) {
+	    getChildBySelector(selector, type = null) {
 	        const node = this.htmlNode.querySelector(":scope " + selector);
 	        if (node && node.__editorElement) {
 	            return node.__editorElement;
@@ -1803,7 +2136,7 @@
 
 
 /***/ },
-/* 16 */
+/* 20 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1823,24 +2156,24 @@
 
 
 /***/ },
-/* 17 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const runtime_event_1 = __webpack_require__(123);
+	const runtime_event_1 = __webpack_require__(6);
 	class WindowResized extends runtime_event_1.RuntimeEvent {
 	}
 	exports.WindowResized = WindowResized;
 
 
 /***/ },
-/* 18 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const runtime_event_1 = __webpack_require__(123);
+	const runtime_event_1 = __webpack_require__(6);
 	class AppElementCreated extends runtime_event_1.RuntimeEvent {
 	    onAppElementCreated(appElement) { }
 	}
@@ -1848,14 +2181,20 @@
 
 
 /***/ },
-/* 19 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_element_1 = __webpack_require__(12);
-	const vector2_1 = __webpack_require__(14);
-	const browser_input_1 = __webpack_require__(20);
+	const editor_element_1 = __webpack_require__(15);
+	const vector2_1 = __webpack_require__(17);
+	const browser_input_1 = __webpack_require__(24);
+	//in the editor we use real dom input events, unlike in the runtime
+	//the problem is that when we do a sync from dom -> runtime,
+	//local (real dom) event handlers fire but the input update hasn't been
+	//sent to the runtime yet. To combat this, EditorInput just extends
+	//BrowserInput. This *shouldn't* be a problem when in run mode
+	//because events are't stemming from the dom in that environment
 	class EditorInput extends browser_input_1.BrowserInput {
 	    isMouseInEditorElement(element) {
 	        let dom = (element instanceof editor_element_1.EditorElement) ? element.getDomNode() : element;
@@ -1885,12 +2224,12 @@
 
 
 /***/ },
-/* 20 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const input_1 = __webpack_require__(21);
+	const input_1 = __webpack_require__(25);
 	class BrowserInput extends input_1.Input {
 	    constructor(target = document.body) {
 	        super();
@@ -1914,6 +2253,7 @@
 	            this.mouseWheelDeltaX = input_1.Input.normalizeWheelValue(evt.deltaX);
 	            this.mouseWheelDeltaY = input_1.Input.normalizeWheelValue(evt.deltaY);
 	        }, true);
+	        //todo make this get focus somehow
 	        target.addEventListener("keydown", (evt) => {
 	            this.keyMapCurrent[evt.keyCode] = true;
 	        }, true);
@@ -1926,13 +2266,13 @@
 
 
 /***/ },
-/* 21 */
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const vector2_1 = __webpack_require__(14);
-	const e_mouse_state_1 = __webpack_require__(22);
+	const vector2_1 = __webpack_require__(17);
+	const e_mouse_state_1 = __webpack_require__(26);
 	class Input {
 	    constructor() {
 	        this.x = 0;
@@ -2074,6 +2414,7 @@
 	        this.mouseDownPosition.y = data.mouseDownPositionY;
 	        this.mouseWheelDeltaX = data.mouseWheelDeltaX;
 	        this.mouseWheelDeltaY = data.mouseWheelDeltaY;
+	        //todo - keyboard input
 	    }
 	    serialize() {
 	        return {
@@ -2088,6 +2429,10 @@
 	            mouseWheelDeltaX: this.mouseWheelDeltaX,
 	            mouseWheelDeltaY: this.mouseWheelDeltaY
 	        };
+	        // for(let i = 8; i < 222; i++) {
+	        //     input.keyMapPrevious[i] = this.keyMapPrevious[i];
+	        //     input.keyMapCurrent[i] = this.keyMapCurrent[i];
+	        // }
 	    }
 	    static normalizeWheelValue(value) {
 	        if (value === 0)
@@ -2101,7 +2446,7 @@
 
 
 /***/ },
-/* 22 */
+/* 26 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -2118,7 +2463,7 @@
 
 
 /***/ },
-/* 23 */
+/* 27 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -2184,6 +2529,7 @@
 	        parentTreeNode.children.push(treeNode);
 	    }
 	    insertAtRoot(treeNode) {
+	        //if any root nodes should be children of this node, remove from root and push to new node
 	        for (let i = 0; i < this.rootNodes.length; i++) {
 	            const node = this.rootNodes[i];
 	            if (ShadowTree.isDescendant(node.element, treeNode.element)) {
@@ -2227,17 +2573,17 @@
 
 
 /***/ },
-/* 24 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const input_1 = __webpack_require__(21);
-	const app_element_1 = __webpack_require__(25);
-	const runtime_base_1 = __webpack_require__(30);
-	const evt_app_element_parent_changed_1 = __webpack_require__(125);
-	const e_command_type_1 = __webpack_require__(28);
-	const evt_app_element_index_changed_1 = __webpack_require__(126);
+	const input_1 = __webpack_require__(25);
+	const app_element_1 = __webpack_require__(29);
+	const runtime_base_1 = __webpack_require__(33);
+	const evt_app_element_parent_changed_1 = __webpack_require__(35);
+	const e_command_type_1 = __webpack_require__(32);
+	const evt_app_element_index_changed_1 = __webpack_require__(36);
 	class RuntimeImpl extends runtime_base_1.RuntimeBase {
 	    constructor() {
 	        super();
@@ -2259,6 +2605,7 @@
 	    }
 	    queueLayout(layoutComponent) {
 	        const idx = this.layoutQueue.indexOf(layoutComponent);
+	        //todo this should be sorted top to bottom, use a shadow/skip tree
 	        if (!this.layoutQueue.contains(layoutComponent)) {
 	            this.layoutQueue.push(layoutComponent);
 	        }
@@ -2278,6 +2625,9 @@
 	            return app_element_1.AppElement.Root;
 	        return null;
 	    }
+	    //todo this could be more optimized
+	    //todo this doesn't handle z-ordering at all
+	    //todo replace with range tree of 4d points http://stackoverflow.com/questions/17651215/storing-rectangles-circles-triangles-in-a-kd-tree
 	    appElementAtPointStep(test, point) {
 	        const childCount = test.getChildCount();
 	        for (let i = 0; i < childCount; i++) {
@@ -2290,11 +2640,13 @@
 	    }
 	    addElement(appElement) {
 	        this.rootElementCandidates.push(appElement);
+	        //todo remove this when destroying app element
 	        this.appElementRegistry[appElement.id] = appElement;
 	    }
 	    addComponent(component) {
 	        this.pendingComponents.push(component);
 	    }
+	    //todo -- internalize
 	    setParent(appElement, newParent, oldParent) {
 	        const storage = new Array();
 	        if (oldParent) {
@@ -2313,6 +2665,7 @@
 	        this.emit(evt_app_element_parent_changed_1.AppElementParentChanged, appElement, newParent, oldParent);
 	        this.sendCommand(e_command_type_1.CommandType.SetParent, { id: appElement.id, parentId: newParent.id });
 	    }
+	    //todo -- internalize
 	    setSiblingIndex(appElement, index, oldIndex) {
 	        this.emit(evt_app_element_index_changed_1.AppElementIndexChanged, appElement, index, oldIndex);
 	        this.sendCommand(e_command_type_1.CommandType.SetSiblingIndex, { id: appElement.id, index });
@@ -2321,8 +2674,12 @@
 	        if (appElement.isDestroyed())
 	            return;
 	        appElement.destroy();
+	        // this.emit(AppElementDestroyed, appElement);
 	    }
 	    update(delta) {
+	        // for(let i = 0; i < this.layoutQueue.length; i++) {
+	        //     this.layoutQueue[i].doLayout();
+	        // }
 	    }
 	    getInput() {
 	        return this.input;
@@ -2332,18 +2689,18 @@
 
 
 /***/ },
-/* 25 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const rectangle_1 = __webpack_require__(26);
-	const vector2_1 = __webpack_require__(14);
-	const e_lifecycle_flags_1 = __webpack_require__(27);
-	const e_command_type_1 = __webpack_require__(28);
-	const util_1 = __webpack_require__(13);
-	const TEMP_ANNOTATION_1 = __webpack_require__(124);
+	const tslib_1 = __webpack_require__(4);
+	const rectangle_1 = __webpack_require__(30);
+	const vector2_1 = __webpack_require__(17);
+	const e_lifecycle_flags_1 = __webpack_require__(31);
+	const e_command_type_1 = __webpack_require__(32);
+	const util_1 = __webpack_require__(16);
+	const TEMP_ANNOTATION_1 = __webpack_require__(18);
 	let idGenerator = 0;
 	var Space;
 	(function (Space) {
@@ -2367,6 +2724,7 @@
 	        this.height = 0;
 	        this.rotation = 0;
 	        this.scale = new vector2_1.Vector2(1, 1);
+	        //todo don't allow components to be constructed outside of addComponent or this constructor
 	        Runtime.addElement(this);
 	    }
 	    setScale(scale) {
@@ -2382,6 +2740,9 @@
 	    }
 	    setWidth(width) {
 	        this.width = width;
+	        //todo get parent layout component and invoke layout
+	        //todo get layout component and invoke layout
+	        //todo use anchor settings
 	        Runtime.sendCommand(e_command_type_1.CommandType.SetDimensions, this.id);
 	    }
 	    getHeight() {
@@ -2445,10 +2806,23 @@
 	        return this.localPosition.addVectorNew(this.parentPosition);
 	    }
 	    getBoundingBox() {
+	        //todo axis aligned? handle rotation and scale
 	        const p = this.getPosition();
 	        return new rectangle_1.Rectangle(p.x, p.y, this.width, this.height);
 	    }
+	    setActive(isActive) {
+	        if (this.isEnabled() === isActive)
+	            return;
+	        this.lifeCycleFlags ^= e_lifecycle_flags_1.LifeCycleFlag.Enabled;
+	        if (isActive) {
+	            //on enable
+	        }
+	        else {
+	            //on disable
+	        }
+	    }
 	    enable() {
+	        //Runtime.enable(this);
 	    }
 	    setParent(parent, keepPosition = true) {
 	        if (parent && parent === this.parent)
@@ -2457,6 +2831,7 @@
 	        const oldParent = this.parent;
 	        let currentPosition = this.getPosition();
 	        this.parent = parent;
+	        //todo ancestor check
 	        if (oldParent) {
 	            oldParent.children.remove(this);
 	        }
@@ -2515,8 +2890,9 @@
 	        }
 	        return depth;
 	    }
+	    //todo component lifecycle
 	    addComponent(componentType) {
-	        const component = new componentType();
+	        const component = new componentType(); //cast to avoid read-only access
 	        component.appElement = this;
 	        this.components.push(component);
 	        Runtime.addComponent(component);
@@ -2532,11 +2908,12 @@
 	    getComponent(type) {
 	        for (let i = 0; i < this.components.length; i++) {
 	            if (this.components[i] instanceof type) {
-	                return this.components[i];
+	                return this.components[i]; //why do I need the cast?
 	            }
 	        }
 	        return null;
 	    }
+	    //Returns all components of Type type in the GameObject
 	    getComponents(type, storage) {
 	        const retn = storage || new Array();
 	        for (let i = 0; i < this.components.length; i++) {
@@ -2559,6 +2936,7 @@
 	        }
 	        return null;
 	    }
+	    //Returns all components of Type in the AppElement in it's direct children
 	    getComponentsInChildren(type, storage) {
 	        const retn = this.getComponents(type, storage);
 	        const childCount = this.children.length;
@@ -2589,7 +2967,7 @@
 	    }
 	    destroy() {
 	        if (!this.parent)
-	            return;
+	            return; //can't destroy root
 	        this.lifeCycleFlags |= e_lifecycle_flags_1.LifeCycleFlag.Destroyed;
 	        for (let i = 0; i < this.children.length; i++) {
 	            this.children[i].destroy();
@@ -2611,7 +2989,9 @@
 	        }
 	    }
 	    destroyFromParent() {
+	        //don't fire handlers n stuff
 	    }
+	    /*** Accessors ***/
 	    isRoot() {
 	        return this === AppElement_1.Root;
 	    }
@@ -2630,6 +3010,7 @@
 	    isDestroyed() {
 	        return (this.lifeCycleFlags & e_lifecycle_flags_1.LifeCycleFlag.Destroyed) !== 0;
 	    }
+	    /*** Helpers ***/
 	    containsPoint(point) {
 	        const p = this.getPosition();
 	        const x = p.x;
@@ -2640,6 +3021,8 @@
 	        const py = point.y;
 	        return px >= x && x + w >= px && py >= y && y + h >= py;
 	    }
+	    //this might be backwards
+	    //todo account for rotation
 	    containsRect(rect) {
 	        const p = this.getPosition();
 	        return rect.x + rect.width < (p.x + this.width)
@@ -2647,6 +3030,7 @@
 	            && (rect.y) > (p.y)
 	            && (rect.y + rect.height) < (p.y + this.height);
 	    }
+	    //todo account for rotation -- probably want to use algorithm of overlapping polygons instead
 	    overlapsRectangle(rect) {
 	        const p = this.getPosition();
 	        const minAx = p.x;
@@ -2664,6 +3048,7 @@
 	        return !(aLeftOfB || aRightOfB || aAboveB || aBelowB);
 	    }
 	};
+	/*** Static ***/
 	AppElement.Root = null;
 	AppElement = AppElement_1 = tslib_1.__decorate([
 	    TEMP_ANNOTATION_1.serializeClass
@@ -2673,13 +3058,13 @@
 
 
 /***/ },
-/* 26 */
+/* 30 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const TEMP_ANNOTATION_1 = __webpack_require__(124);
+	const tslib_1 = __webpack_require__(4);
+	const TEMP_ANNOTATION_1 = __webpack_require__(18);
 	let Rectangle = Rectangle_1 = class Rectangle {
 	    constructor(x = 0, y = 0, width = 0, height = 0) {
 	        this.x = x;
@@ -2725,7 +3110,7 @@
 
 
 /***/ },
-/* 27 */
+/* 31 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -2744,7 +3129,7 @@
 
 
 /***/ },
-/* 28 */
+/* 32 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -2767,95 +3152,15 @@
 
 
 /***/ },
-/* 29 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const TEMP_ANNOTATION_1 = __webpack_require__(124);
-	let Component = Component_1 = class Component {
-	    getComponent(type) {
-	        return this.appElement.getComponent(type);
-	    }
-	    getComponents(type) {
-	        return this.appElement.getComponents(type);
-	    }
-	    getComponentInChildren(type) {
-	        return this.appElement.getComponentInChildren(type);
-	    }
-	    getComponentsInChildren(type) {
-	        return this.appElement.getComponentsInChildren(type);
-	    }
-	    getComponentsInDescendants(type) {
-	        return this.appElement.getComponentsInDescendants(type);
-	    }
-	    getComponentInParent(type) {
-	        return this.appElement.getComponentInParent(type);
-	    }
-	    getComponentsInParent(type) {
-	        return this.appElement.getComponentsInParent(type);
-	    }
-	    onChildAdded(child) { }
-	    onChildRemoved(child) { }
-	    onCreated() { }
-	    onMounted() { }
-	    onEnabled() { }
-	    onDisabled() { }
-	    onDestroyed() { }
-	    update(deltaTime) { }
-	    destroy() {
-	        this.appElement = null;
-	    }
-	    static componentDecorator(path) {
-	        return function (target) {
-	            Component_1.types.set(path, target);
-	        };
-	    }
-	    static allowMultipleDecorator() {
-	    }
-	    static requireComponent() {
-	    }
-	    static getComponentFromPath(path) {
-	        return Component_1.types.get(path);
-	    }
-	    static getComponentTypePathPairs() {
-	        const retn = new Array();
-	        Component_1.types.forEach(function (value, key) {
-	            retn.push({ type: value, path: key });
-	        });
-	        return retn;
-	    }
-	    serialize() {
-	        return null;
-	    }
-	    static Serialize(component) {
-	        return {
-	            id: "blach", data: component.serialize()
-	        };
-	    }
-	};
-	Component.types = new Map();
-	Component = Component_1 = tslib_1.__decorate([
-	    TEMP_ANNOTATION_1.serializeClass
-	], Component);
-	exports.Component = Component;
-	exports.allowMultiple = Component.allowMultipleDecorator;
-	exports.component = Component.componentDecorator;
-	exports.requireComponent = Component.requireComponent;
-	var Component_1;
-
-
-/***/ },
-/* 30 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const e_command_type_1 = __webpack_require__(28);
-	const event_emitter_1 = __webpack_require__(32);
-	const object_pool_1 = __webpack_require__(9);
+	const tslib_1 = __webpack_require__(4);
+	const e_command_type_1 = __webpack_require__(32);
+	const event_emitter_1 = __webpack_require__(34);
+	const object_pool_1 = __webpack_require__(11);
 	class RuntimeCommand {
 	    constructor() {
 	        this.id = ++idGenerator;
@@ -2885,11 +3190,13 @@
 	        this.commandPool = new object_pool_1.ObjectPool3(RuntimeCommand);
 	    }
 	    sendCommand(commandType, data) {
+	        //todo - dedup this, FIFO
 	        const command = this.commandPool.spawn(commandType, data, null);
 	        this.commandQueue.push(command);
 	    }
 	    awaitCommand(commandType, payload) {
 	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
+	            //todo -- de-dup this w/ array of await fns
 	            return new Promise((resolve) => {
 	                const command = this.commandPool.spawn(commandType, payload, resolve);
 	                this.awaitedCommands.push(command);
@@ -2901,6 +3208,8 @@
 	        this.pendingBuffers.push(message.data);
 	    }
 	    sendCommandBuffer() {
+	        //todo using json for now but later will use a
+	        //format that doesn't need to use json.stringify/parse
 	        if (this.commandQueue.length === 0)
 	            return;
 	        var length = this.commandQueue.length;
@@ -2909,6 +3218,7 @@
 	            const command = this.commandQueue[i];
 	            buffer += this.serializeCommand(command);
 	            buffer += (i === length - 1) ? "]}" : ",";
+	            //if command has resolvers then we can't despawn it yet
 	            if (!command.resolve)
 	                this.commandPool.despawn(command);
 	        }
@@ -2917,6 +3227,7 @@
 	    }
 	    serializeCommand(command) {
 	        const serializer = this.serializers[command.type];
+	        //using short names so less data gets serialized
 	        __cacheSerializeContainer.id = command.id;
 	        __cacheSerializeContainer.r = command.resolve !== null;
 	        __cacheSerializeContainer.ct = command.type;
@@ -2951,6 +3262,8 @@
 	                const data = json.data;
 	                for (let j = 0; j < data.length; j++) {
 	                    const response = data[j];
+	                    //using an array because I don't expect this to have a size
+	                    //large enough for a map to make sense.
 	                    const idx = this.awaitedCommands.findIndex(a => a.id === response.id);
 	                    if (idx !== -1) {
 	                        const awaitedCommand = this.awaitedCommands[idx];
@@ -2967,6 +3280,7 @@
 	    sendResponseBuffer(response) {
 	        if (response.length === 0)
 	            return;
+	        //this.postMessage();
 	    }
 	    setCommandSerializer(commandType, serializer) {
 	        this.serializers[commandType] = serializer;
@@ -2980,146 +3294,12 @@
 
 
 /***/ },
-/* 31 */
-/***/ function(module, exports, __webpack_require__) {
-
-	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/* WEBPACK VAR INJECTION */(function(global) {/*! *****************************************************************************
-	Copyright (c) Microsoft Corporation. All rights reserved.
-	Licensed under the Apache License, Version 2.0 (the "License"); you may not use
-	this file except in compliance with the License. You may obtain a copy of the
-	License at http://www.apache.org/licenses/LICENSE-2.0
-
-	THIS CODE IS PROVIDED ON AN *AS IS* BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
-	KIND, EITHER EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
-	WARRANTIES OR CONDITIONS OF TITLE, FITNESS FOR A PARTICULAR PURPOSE,
-	MERCHANTABLITY OR NON-INFRINGEMENT.
-
-	See the Apache Version 2.0 License for specific language governing permissions
-	and limitations under the License.
-	***************************************************************************** */
-	/* global global, define, System, Reflect, Promise */
-	var __extends;
-	var __assign;
-	var __rest;
-	var __decorate;
-	var __param;
-	var __metadata;
-	var __awaiter;
-	var __generator;
-	(function (factory) {
-	    var root = typeof global === "object" ? global : typeof self === "object" ? self : typeof this === "object" ? this : {};
-	    if (true) {
-	        !(__WEBPACK_AMD_DEFINE_ARRAY__ = [exports], __WEBPACK_AMD_DEFINE_RESULT__ = function (exports) { factory(createExporter(root, createExporter(exports))); }.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__), __WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	    }
-	    else if (typeof module === "object" && typeof module.exports === "object") {
-	        factory(createExporter(root, createExporter(module.exports)));
-	    }
-	    else {
-	        factory(createExporter(root));
-	    }
-	    function createExporter(exports, previous) {
-	        return function (id, v) { return exports[id] = previous ? previous(id, v) : v; };
-	    }
-	})
-	(function (exporter) {
-	    var extendStatics = Object.setPrototypeOf ||
-	        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
-	        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
-
-	    __extends = function (d, b) {
-	        extendStatics(d, b);
-	        function __() { this.constructor = d; }
-	        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-	    };
-
-	    __assign = Object.assign || function (t) {
-	        for (var s, i = 1, n = arguments.length; i < n; i++) {
-	            s = arguments[i];
-	            for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
-	        }
-	        return t;
-	    };
-
-	    __rest = function (s, e) {
-	        var t = {};
-	        for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-	            t[p] = s[p];
-	        if (s != null && typeof Object.getOwnPropertySymbols === "function")
-	            for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) if (e.indexOf(p[i]) < 0)
-	                t[p[i]] = s[p[i]];
-	        return t;
-	    };
-
-	    __decorate = function (decorators, target, key, desc) {
-	        var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-	        if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-	        else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-	        return c > 3 && r && Object.defineProperty(target, key, r), r;
-	    };
-
-	    __param = function (paramIndex, decorator) {
-	        return function (target, key) { decorator(target, key, paramIndex); }
-	    };
-
-	    __metadata = function (metadataKey, metadataValue) {
-	        if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(metadataKey, metadataValue);
-	    };
-
-	    __awaiter = function (thisArg, _arguments, P, generator) {
-	        return new (P || (P = Promise))(function (resolve, reject) {
-	            function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-	            function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-	            function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
-	            step((generator = generator.apply(thisArg, _arguments || [])).next());
-	        });
-	    };
-
-	    __generator = function (thisArg, body) {
-	        var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t;
-	        return { next: verb(0), "throw": verb(1), "return": verb(2) };
-	        function verb(n) { return function (v) { return step([n, v]); }; }
-	        function step(op) {
-	            if (f) throw new TypeError("Generator is already executing.");
-	            while (_) try {
-	                if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
-	                if (y = 0, t) op = [0, t.value];
-	                switch (op[0]) {
-	                    case 0: case 1: t = op; break;
-	                    case 4: _.label++; return { value: op[1], done: false };
-	                    case 5: _.label++; y = op[1]; op = [0]; continue;
-	                    case 7: op = _.ops.pop(); _.trys.pop(); continue;
-	                    default:
-	                        if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-	                        if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-	                        if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-	                        if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-	                        if (t[2]) _.ops.pop();
-	                        _.trys.pop(); continue;
-	                }
-	                op = body.call(thisArg, _);
-	            } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-	            if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-	        }
-	    };
-
-	    exporter("__extends", __extends);
-	    exporter("__assign", __assign);
-	    exporter("__rest", __rest);
-	    exporter("__decorate", __decorate);
-	    exporter("__param", __param);
-	    exporter("__metadata", __metadata);
-	    exporter("__awaiter", __awaiter);
-	    exporter("__generator", __generator);
-	});
-
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
-
-/***/ },
-/* 32 */
+/* 34 */
 /***/ function(module, exports) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
+	//todo this needs an overhaul
 	class EventEmitter {
 	    constructor() {
 	        this.listenerMap = new Map();
@@ -3159,96 +3339,141 @@
 
 
 /***/ },
-/* 33 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const app_element_1 = __webpack_require__(25);
-	const component_1 = __webpack_require__(29);
-	const util_1 = __webpack_require__(13);
-	const type_1 = __webpack_require__(127);
-	let Scene = class Scene {
-	    constructor() {
-	        this.sceneRoots = [];
-	    }
-	    save() {
-	        var generateId = (function () {
-	            let id = 1;
-	            return function () {
-	                return id++;
-	            };
-	        })();
-	        function addToMap(o) {
-	            if (objectIdMap.has(o))
-	                return;
-	            objectIdMap.set(o, generateId());
-	        }
-	        let json = {};
-	        let objectIdMap = new Map();
-	        util_1.traverseChildren(app_element_1.AppElement.Root, (child) => {
-	            addToMap(child);
-	            objectIdMap.set(child, generateId());
-	            child.getAllComponents().forEach((component) => {
-	                addToMap(child);
-	                Object.keys(component).forEach((key) => {
-	                    const value = component[key];
-	                    if (value && typeof value === "object") {
-	                        addToMap(child);
-	                    }
-	                });
-	            });
-	        });
-	        util_1.traverseChildren(app_element_1.AppElement.Root, (child) => {
-	            json[objectIdMap.get(child)] = {
-	                id: child.id,
-	                name: child.name,
-	                parentId: child.getParent().id,
-	                localPosition: child.getLocalPosition(),
-	                localRotation: child.getRotation(),
-	                scale: child.getScale(),
-	                width: child.getWidth(),
-	                height: child.getHeight(),
-	                components: child.getAllComponents().forEach((component) => {
-	                    json[objectIdMap.get(component)] = "";
-	                })
-	            };
-	        });
-	    }
-	    destroy() {
-	    }
-	    load(sceneDescription) {
-	    }
-	    hydrateElement(definition, parent) {
-	        const appElement = new app_element_1.AppElement(definition.name, parent);
-	        for (let j = 0; j < definition.components.length; j++) {
-	            const compDesc = definition.components[j];
-	            const type = component_1.Component.getComponentFromPath(compDesc.type);
-	            const cmp = appElement.addComponent(type);
-	        }
-	        for (let k = 0; k < definition.children.length; k++) {
-	            this.hydrateElement(definition.children[k], appElement);
-	        }
-	        return appElement;
-	    }
-	    unload() {
-	    }
-	    addRootElement(element) {
-	        this.sceneRoots.push(element);
-	    }
-	    getRootElements() {
-	        return this.sceneRoots.slice(0);
-	    }
-	};
-	Scene = tslib_1.__decorate([
-	    type_1.setTypePath("Runtime/Scene")
-	], Scene);
-	exports.Scene = Scene;
+	const runtime_event_1 = __webpack_require__(6);
+	class AppElementParentChanged extends runtime_event_1.RuntimeEvent {
+	    onAppElementParentChanged(appElement, newParent, oldParent) { }
+	}
+	exports.AppElementParentChanged = AppElementParentChanged;
 
 
 /***/ },
-/* 34 */
+/* 36 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const runtime_event_1 = __webpack_require__(6);
+	class AppElementIndexChanged extends runtime_event_1.RuntimeEvent {
+	    onAppElementIndexChanged(appElement, index, oldIndex) { }
+	}
+	exports.AppElementIndexChanged = AppElementIndexChanged;
+
+
+/***/ },
+/* 37 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const TEMP_ANNOTATION_1 = __webpack_require__(18);
+	const e_lifecycle_flags_1 = __webpack_require__(31);
+	let Component = Component_1 = class Component {
+	    constructor() {
+	        this.lifeCycleFlags = e_lifecycle_flags_1.LifeCycleFlag.Enabled;
+	    }
+	    get isEnabled() {
+	        return (this.lifeCycleFlags & e_lifecycle_flags_1.LifeCycleFlag.Enabled) !== 0;
+	    }
+	    //todo -- need to incorporate 'ActiveAndEnabled'
+	    set isEnabled(value) {
+	        if (this.isEnabled === value)
+	            return;
+	        if (value) {
+	            this.lifeCycleFlags |= e_lifecycle_flags_1.LifeCycleFlag.Enabled;
+	            this.onEnabled();
+	        }
+	        else {
+	            this.lifeCycleFlags ^= e_lifecycle_flags_1.LifeCycleFlag.Enabled;
+	            this.onDisabled();
+	        }
+	    }
+	    getComponent(type) {
+	        return this.appElement.getComponent(type);
+	    }
+	    //Returns all components of Type type in the GameObject
+	    getComponents(type) {
+	        return this.appElement.getComponents(type);
+	    }
+	    getComponentInChildren(type) {
+	        return this.appElement.getComponentInChildren(type);
+	    }
+	    //Returns all components of Type in the AppElement in it's direct children
+	    getComponentsInChildren(type) {
+	        return this.appElement.getComponentsInChildren(type);
+	    }
+	    //Returns all components of Type in the AppElement recursively in its children
+	    getComponentsInDescendants(type) {
+	        return this.appElement.getComponentsInDescendants(type);
+	    }
+	    getComponentInParent(type) {
+	        return this.appElement.getComponentInParent(type);
+	    }
+	    getComponentsInParent(type) {
+	        return this.appElement.getComponentsInParent(type);
+	    }
+	    onChildAdded(child) { }
+	    onChildRemoved(child) { }
+	    onCreated() { }
+	    onMounted() { }
+	    onEnabled() { }
+	    onDisabled() { }
+	    onDestroyed() { }
+	    update(deltaTime) { }
+	    destroy() {
+	        this.appElement = null;
+	    }
+	    static componentDecorator(path) {
+	        return function (target) {
+	            Component_1.types.set(path, target);
+	        };
+	    }
+	    static allowMultipleDecorator() {
+	        // return function(target : any) {
+	        //     Component.types.set(path, {
+	        //
+	        //     })
+	        // }
+	    }
+	    static requireComponent() {
+	    }
+	    static getComponentFromPath(path) {
+	        return Component_1.types.get(path);
+	    }
+	    static getComponentTypePathPairs() {
+	        const retn = new Array();
+	        Component_1.types.forEach(function (value, key) {
+	            retn.push({ type: value, path: key });
+	        });
+	        return retn;
+	    }
+	    serialize() {
+	        return null;
+	    }
+	    static Serialize(component) {
+	        return {
+	            id: "blach", data: component.serialize()
+	        };
+	    }
+	};
+	Component.types = new Map();
+	Component = Component_1 = tslib_1.__decorate([
+	    TEMP_ANNOTATION_1.serializeClass
+	], Component);
+	exports.Component = Component;
+	exports.allowMultiple = Component.allowMultipleDecorator;
+	exports.component = Component.componentDecorator;
+	exports.requireComponent = Component.requireComponent;
+	var Component_1;
+
+
+/***/ },
+/* 38 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3258,6 +3483,13 @@
 	    onDragStart() { }
 	    onUpdate() { }
 	    onDrop(editorElement) { }
+	    //todo -- would be nicer to have drag actions live on a prototype
+	    static Inherit(target) {
+	        const handlers = DragAnnotationMap.get(target.__proto__);
+	        if (!handlers)
+	            return;
+	        DragAnnotationMap.set(target, handlers.clone());
+	    }
 	    static invokeDropHandlers(element, action) {
 	        DragAction.invoke(element, action, "drop");
 	    }
@@ -3272,6 +3504,7 @@
 	    }
 	    static invoke(element, action, eventType) {
 	        const actionType = action.constructor;
+	        //todo -- use shadow tree to make this faster
 	        while (element) {
 	            var handler = DragAnnotationMap.get(element.constructor);
 	            if (handler && handler.typeSet.has(actionType)) {
@@ -3304,6 +3537,14 @@
 	                element[annotation.methodName](action);
 	            }
 	        }
+	    }
+	    clone() {
+	        const retn = new DragAnnotationHandler();
+	        retn.handlers = this.handlers.slice(0);
+	        this.typeSet.forEach(function (t) {
+	            retn.typeSet.add(t);
+	        });
+	        return retn;
 	    }
 	}
 	function onDragActionMouseEnter(actionType) {
@@ -3341,73 +3582,692 @@
 
 
 /***/ },
-/* 35 */
-/***/ function(module, exports) {
-
-	module.exports = {
-	    elements: {
-	        // 1: {
-	        //     parentId: 0,
-	        //     name: "App Root 1",
-	        //     components: [
-	        //         {
-	        //             type: "Paint/Background",
-	        //             data: {
-	        //                 color: {
-	        //                     r: 255, g: 255, b: 255, a: 1
-	        //                 }
-	        //             }
-	        //         }
-	        //     ]
-	        // },
-	        // 2: {
-	        //     parentId: 0,
-	        //     name: "App Root 2",
-	        //     components: [{
-	        //         type: "Paint/Background",
-	        //         data: {
-	        //             color: {
-	        //                 r: 255, g: 0, b: 0, a: 1
-	        //             }
-	        //         }
-	        //     }]
-	        // },
-	        // 3: {
-	        //     parentId: 0,
-	        //     name: "Child 1",
-	        //     components: [{
-	        //         type: "Paint/Background",
-	        //         data: {
-	        //             color: {
-	        //                 r: 0, g: 255, b: 255, a: 1
-	        //             }
-	        //         }
-	        //     }]
-	        // },
-	        // 4: {
-	        //     parentId: 0,
-	        //     name: "Child 2",
-	        //     components: [{
-	        //         type: "Paint/Background",
-	        //         data: {
-	        //             color: {
-	        //                 r: 0, g: 255, b: 0, a: 1
-	        //             }
-	        //         }
-	        //     }]
-	        // }
-
-	    }
-	};
-
-/***/ },
-/* 36 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const binding_compiler_1 = __webpack_require__(8);
-	const editor_element_1 = __webpack_require__(12);
+	const tslib_1 = __webpack_require__(4);
+	const sizing_component_1 = __webpack_require__(40);
+	const layout_1 = __webpack_require__(41);
+	const expose_as_1 = __webpack_require__(42);
+	const component_1 = __webpack_require__(37);
+	const app_element_1 = __webpack_require__(29);
+	let HorizontalStackLayout = class HorizontalStackLayout extends layout_1.LayoutComponent {
+	    constructor() {
+	        super(...arguments);
+	        this.wrap = false;
+	        //I set text
+	        //I ask for height
+	        //block? that sucks
+	        //await this.element.getHeight()
+	        //this.setRect(rect)
+	        // -> do layout async?
+	        //what needs its layout computed?
+	        //only when width / height changes does anything change, position does not, unless set to stretch and child leaves bounds
+	        //const width = sizer.getWidthInPixels();
+	        //static sizing can be in percentages / fractions / or pixels (ignore ems for now)
+	        //defaults to 1 fr
+	        //fr will need a min size of some sort for overflow right?
+	        //static or tethered elements are not part of layout logic, the effectively 'float'
+	        //can have min/max/preferred sizes
+	        //get only non tethered children?
+	        //get only non static children?
+	        //each box has stretch behavior in each direction
+	        //all overflows are hidden outside of scroll elements
+	        // 'fit content' is tricky
+	        //in each dimension
+	        //each element gets the sum of all of it's (non static/non tethered) immediate children
+	        //default behavior is clamp width, stretch height
+	        //lets see how this works --
+	        //for fr sizes when the container scrolls
+	        //option 1: size them as though they get a proportional fraction of space left after percent + fixed
+	        //option 2: size them as though the total fractional space is equal to percent + fixed
+	        //option 3: require explicit min sizing with fr (bad)
+	        //option 4: add setting on container around how to handle fr, using option 1 or 2, or by including a fixed fr value
+	        //onLayoutRectChanged
+	        //parent -> Stretch Fit Children
+	        //parent -> Fixed
+	        //child -> Fill Parent
+	        //setTextAsync("Text")
+	        //-> Queues a text update
+	        //-> Does NOT update the rect value
+	        //-> Next Frame Rect is updated
+	        //-> getRect() still refers to original
+	        //await setTextAsync("text")
+	        //do stuff here, by now layout has occurred
+	        //two kinds of layout
+	        //-> top down = parent resize triggers child layout
+	        //-> bottom up = child resize triggers parent layout
+	    }
+	    doLayout() {
+	        //todo -- assuming height stretches to highest child for now, allow other clamp modes later
+	        var remainingSpace = this.appElement.getWidth();
+	        const sizings = new Array(this.sizingComponents.length);
+	        let totalFractions = 0;
+	        for (let i = 0; i < this.sizingComponents.length; i++) {
+	            const sizer = this.sizingComponents[i];
+	            if (sizer) {
+	                switch (sizer.sizingMode) {
+	                    case sizing_component_1.SizingMode.Percent:
+	                        const percentageValue = sizer.width * 0.01;
+	                        sizings[i] = (percentageValue * this.appElement.getWidth()) | 0;
+	                        remainingSpace -= sizings[i];
+	                        break;
+	                    case sizing_component_1.SizingMode.Fraction:
+	                        totalFractions++;
+	                        sizings[i] = sizer.width;
+	                        break;
+	                    case sizing_component_1.SizingMode.Fixed:
+	                        //todo handle fixed-em
+	                        sizings[i] = sizer.width;
+	                        remainingSpace -= sizings[i];
+	                        break;
+	                }
+	            }
+	            else {
+	                sizings[i] = -1;
+	            }
+	        }
+	        if (totalFractions > 0) {
+	            const pieceSize = remainingSpace / totalFractions;
+	            for (let i = 0; i < sizings.length; i++) {
+	                if (this.sizingComponents[i].sizingMode === sizing_component_1.SizingMode.Fraction) {
+	                    sizings[i] = pieceSize * (this.sizingComponents[i].width);
+	                }
+	            }
+	        }
+	        let allocatedSpace = 0;
+	        for (let i = 0; i < this.sizingComponents.length; i++) {
+	            const element = this.sizingComponents[i].appElement;
+	            element.setPositionValues(allocatedSpace, 0, app_element_1.Space.Local);
+	            element.setDimensions(sizings[i], this.appElement.getHeight());
+	            allocatedSpace += sizings[i];
+	        }
+	    }
+	};
+	tslib_1.__decorate([
+	    expose_as_1.exposeAs(Boolean)
+	], HorizontalStackLayout.prototype, "wrap", void 0);
+	HorizontalStackLayout = tslib_1.__decorate([
+	    component_1.component("Layout/HorizontalStack")
+	], HorizontalStackLayout);
+	exports.HorizontalStackLayout = HorizontalStackLayout;
+
+
+/***/ },
+/* 40 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const layout_1 = __webpack_require__(41);
+	const expose_as_1 = __webpack_require__(42);
+	const util_1 = __webpack_require__(16);
+	const component_1 = __webpack_require__(37);
+	var SizingMode;
+	(function (SizingMode) {
+	    SizingMode[SizingMode["Fixed"] = 0] = "Fixed";
+	    SizingMode[SizingMode["Percent"] = 1] = "Percent";
+	    SizingMode[SizingMode["Fraction"] = 2] = "Fraction";
+	    SizingMode[SizingMode["Anchor"] = 3] = "Anchor";
+	})(SizingMode = exports.SizingMode || (exports.SizingMode = {}));
+	let SizingComponent = class SizingComponent extends component_1.Component {
+	    constructor() {
+	        super(...arguments);
+	        this.sizingMode = SizingMode.Fraction;
+	        this.width = 1;
+	        this.height = 1;
+	    }
+	    setLayoutRect(rect) {
+	    }
+	    onLayoutRectChanged(layoutRect) {
+	    }
+	    onMounted() {
+	        const layout = this.getComponentInParent(layout_1.LayoutComponent);
+	        if (layout) {
+	            layout.addSizingComponent(this);
+	        }
+	    }
+	    onDestroyed() {
+	        if (!this.appElement.isDestroyed()) {
+	            const layout = this.getComponentInParent(layout_1.LayoutComponent);
+	            if (layout) {
+	                layout.removeSizingComponent(this);
+	            }
+	        }
+	    }
+	};
+	tslib_1.__decorate([
+	    expose_as_1.exposeAs(util_1.EnumSelect, SizingMode)
+	], SizingComponent.prototype, "sizingMode", void 0);
+	tslib_1.__decorate([
+	    expose_as_1.exposeAs(Number)
+	], SizingComponent.prototype, "width", void 0);
+	tslib_1.__decorate([
+	    expose_as_1.exposeAs(Number)
+	], SizingComponent.prototype, "height", void 0);
+	SizingComponent = tslib_1.__decorate([
+	    component_1.component("Layout/Sizing")
+	], SizingComponent);
+	exports.SizingComponent = SizingComponent;
+
+
+/***/ },
+/* 41 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const sizing_component_1 = __webpack_require__(40);
+	const component_1 = __webpack_require__(37);
+	class DefaultSizer {
+	    constructor(appElement) {
+	        this.appElement = appElement;
+	        this.width = 1;
+	        this.height = 1;
+	        this.sizingMode = sizing_component_1.SizingMode.Fraction;
+	    }
+	}
+	exports.DefaultSizer = DefaultSizer;
+	class LayoutComponent extends component_1.Component {
+	    constructor() {
+	        super(...arguments);
+	        this.sizingComponents = [];
+	    }
+	    doLayout() { }
+	    onMounted() {
+	        const childCount = this.appElement.getChildCount();
+	        for (let i = 0; i < childCount; i++) {
+	            const child = this.appElement.getChildAt(i);
+	            let sizing = child.getComponent(sizing_component_1.SizingComponent) || new DefaultSizer(child);
+	            this.sizingComponents.push(sizing);
+	        }
+	        Runtime.queueLayout(this);
+	    }
+	    getSlotAtPosition(position) {
+	        if (this.sizingComponents.length === 0)
+	            return;
+	    }
+	    onChildAdded(child) {
+	        const sizer = child.getComponent(sizing_component_1.SizingComponent) || new DefaultSizer(child);
+	        this.sizingComponents.push(sizer);
+	        Runtime.queueLayout(this);
+	    }
+	    onChildRemoved(child) {
+	        for (let i = 0; i < this.sizingComponents.length; i++) {
+	            if (this.sizingComponents[i].appElement === child) {
+	                this.sizingComponents.removeAt(i);
+	                break;
+	            }
+	        }
+	        Runtime.queueLayout(this);
+	    }
+	    onChildMoved(child) {
+	        //maybe just rebuild sizing component list
+	    }
+	    addSizingComponent(sizingComponent) {
+	        for (let i = 0; i < this.sizingComponents.length; i++) {
+	            const cmp = this.sizingComponents[i];
+	            if (cmp.appElement === sizingComponent.appElement) {
+	                this.sizingComponents[i] = sizingComponent;
+	                return;
+	            }
+	        }
+	        Runtime.queueLayout(this);
+	    }
+	    removeSizingComponent(sizingComponent) {
+	        for (let i = 0; i < this.sizingComponents.length; i++) {
+	            const cmp = this.sizingComponents[i];
+	            if (cmp.appElement === sizingComponent.appElement) {
+	                this.sizingComponents[i] = new DefaultSizer(sizingComponent.appElement);
+	                return;
+	            }
+	        }
+	        Runtime.queueLayout(this);
+	    }
+	}
+	exports.LayoutComponent = LayoutComponent;
+	//Margin -> Space Outside border
+	//Padding -> Space Inside border
+	//SetRect -> ComputeContentRect(Margin/Padding/Offset/Stretch/Anchor) -> DoLayout
+	//SetRect -> Stretch/Anchor -> Margin -> Border -> Padding -> Content -> Layout
+	//items that are laid out are allocated a given rect
+	//they can choose to ignore this rect, default behavior is to fill it
+	//could also fill in one direction, or apply margin / padding to it
+	//before filling it. Could also use this for centering / alignment / offsetting
+	//how are animation triggers handled? possibly using this layout rect
+	//tethers -> Sticky positioning based on screen size and tether point within some element (not only parent)
+	//anchors -> Stretch width/height based on anchor points on parent
+	//tether and anchor are mutually exclusive
+	//anchor drives size
+	//it is a subclass of SizingComponent
+	//Tether is a subclass of Layout?
+	//adjusting sizes
+	//layout items are locked
+	//sizing
+	//anchor
+	//percent of parent remaining
+	//percent of parent total space
+	//fraction of parent remaining space
+	//fraction of parent total space based on # of siblings
+	//min / max / preferred
+	//fit child content width
+	//fit child content height
+	//fill parent
+	//stretch left
+	//stretch right
+	//stretch up
+	//stretch down
+	//stretch to sibling
+	//margin / padding / border -> Ignored for layout, layout only deals with total width / height
+	//margin / padding / border -> Optionally collapsible
+	//onLayoutSet()
+	//onLayoutChanged()
+	//anything with an anchor is NOT part of layout children
+	//anything with a tether is NOT part of layout children
+	//absolute width / height
+	//position
+	//possible to use layout meta-elements that can declare sizing for their child
+	//these elements can have only 1 child but many components
+	//auto generated when attaching to child of layout
+
+
+/***/ },
+/* 42 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	//todo maybe swap to array
+	let editorDataMap = new Map();
+	let fnPrototype = Object.getPrototypeOf(function () { });
+	function getExposedFieldMap(target) {
+	    let map = null;
+	    let ptr = target.constructor;
+	    while (!map && ptr !== fnPrototype) {
+	        map = editorDataMap.get(ptr);
+	        if (map)
+	            return map;
+	        ptr = Object.getPrototypeOf(ptr);
+	    }
+	    return null;
+	}
+	exports.getExposedFieldMap = getExposedFieldMap;
+	function inspector(propertyType, ...propertyOptions) {
+	    return (target, propertyName) => {
+	        var fieldMap = editorDataMap.get(target.constructor);
+	        if (!fieldMap) {
+	            fieldMap = new Map();
+	            const parent = Object.getPrototypeOf(target.constructor);
+	            if (typeof parent === "function") {
+	                const parentFields = editorDataMap.get(parent);
+	                if (parentFields) {
+	                    parentFields.forEach(function (value, key) {
+	                        fieldMap.set(key, value);
+	                    });
+	                }
+	            }
+	            editorDataMap.set(target.constructor, fieldMap);
+	        }
+	        fieldMap.set(propertyName, { propertyName, propertyType, propertyOptions });
+	    };
+	}
+	exports.inspector = inspector;
+	function exposeAs(propertyType, ...propertyOptions) {
+	    return (target, propertyName) => {
+	        var fieldMap = editorDataMap.get(target.constructor);
+	        if (!fieldMap) {
+	            fieldMap = new Map();
+	            const parent = Object.getPrototypeOf(target.constructor);
+	            if (typeof parent === "function") {
+	                const parentFields = editorDataMap.get(parent);
+	                if (parentFields) {
+	                    parentFields.forEach(function (value, key) {
+	                        fieldMap.set(key, value);
+	                    });
+	                }
+	            }
+	            editorDataMap.set(target.constructor, fieldMap);
+	        }
+	        fieldMap.set(propertyName, { propertyName, propertyType, propertyOptions });
+	    };
+	}
+	exports.exposeAs = exposeAs;
+
+
+/***/ },
+/* 43 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const asset_1 = __webpack_require__(44);
+	const evt_asset_created_1 = __webpack_require__(45);
+	//asset is just a file pointer with an icon and extension and defines an inspector
+	//dragging an asset onto a field in the inspector just loads the asset
+	//an importer is just an operation applied to the data before writing it to disk
+	//there is only 1 kind of asset, no subclasses
+	//in terms of adding to assets (prefabs mostly, maybe animations)
+	//this can be done by the asset item itself and not via the project interface
+	//scripts need to be tracked as assets also for scene dependencies
+	//but they aren't (probably) loaded in the same way other assets are
+	//runtime asset bundle -> database of asset data with function for loading them unrelated to the file system
+	const fs = __webpack_require__(46);
+	const File = __webpack_require__(47);
+	const Path = __webpack_require__(48);
+	const globby = __webpack_require__(49);
+	function walkSync(dir, fileList = [], fileStats = []) {
+	    const files = File.readdirSync(dir);
+	    for (let i = 0; i < files.length; i++) {
+	        const fileName = Path.join(dir, files[i]);
+	        const stat = File.lstatSync(fileName);
+	        fileList.push(fileName);
+	        fileStats.push(stat);
+	        if (stat.isDirectory()) {
+	            walkSync(fileName, fileList, fileStats);
+	        }
+	    }
+	    return { fileList, fileStats };
+	}
+	class Project {
+	    constructor(name, projectRoot) {
+	        this.name = name;
+	        this.projectRoot = projectRoot;
+	        this.assetDatabase = {};
+	        const pathToProject = Path.resolve(projectRoot);
+	        if (Path.basename(pathToProject) !== "project.hex") {
+	            throw new Error("Projects must be created from a project.hex file, " + projectRoot + " does not point to a project.hex file");
+	        }
+	        if (!File.existsSync(pathToProject)) {
+	            throw new Error("Cannot find file at " + pathToProject);
+	        }
+	        this.projectRoot = Path.dirname(pathToProject);
+	        this.assetPath = Path.join(this.projectRoot, "assets");
+	        this.projectFilePath = Path.join(this.projectRoot, "project.hex");
+	    }
+	    getAssetRoot() {
+	        return this.assetPath;
+	    }
+	    pathToGuid(path) {
+	        return null;
+	    }
+	    guidToPath(guid) {
+	        const assetEntry = this.assetDatabase[guid];
+	        if (!assetEntry)
+	            return null;
+	        return assetEntry.filePath;
+	    }
+	    getAssetByGUID(guid) {
+	        return null;
+	    }
+	    getAssetAtPath(path, type) {
+	        return null;
+	    }
+	    createDirectory(pathToFolder) {
+	        // FileSystem.createDirectory(pathToFolder);
+	        return "Folder Name";
+	    }
+	    createAsset(pathToAsset, data) {
+	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
+	            if (!this.isPathInProject(pathToAsset))
+	                throw new Error("Path " + pathToAsset + " must be inside project root");
+	            const path = Path.resolve(pathToAsset);
+	            //const asset = Asset.create(path, data);
+	            return null;
+	        });
+	    }
+	    isPathInProject(path) {
+	        return Path.resolve(path).indexOf(this.projectRoot) === 0;
+	    }
+	    //dest path is relative to asset root if it is not an absolute path
+	    importAsset(pathToAsset, destinationPath) {
+	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
+	            pathToAsset = FileSystem.resolvePath(pathToAsset);
+	            let dest = FileSystem.resolvePath(destinationPath || System.AssetRoot + FileSystem.getFileName(pathToAsset));
+	            dest = FileSystem.getRelativePath(System.AssetRoot, dest);
+	            dest = FileSystem.createUniqueFilePath(dest);
+	            console.log(System.AssetRoot + dest);
+	            yield FileSystem.createDirectoriesInPath(System.AssetRoot + dest);
+	            const content = yield FileSystem.readFile(pathToAsset);
+	            if (!content) {
+	                return Promise.resolve(null);
+	            }
+	            const asset = yield asset_1.Asset.create(dest, content);
+	            EditorRuntime.emit(evt_asset_created_1.AssetCreated, asset);
+	            return Promise.resolve(asset);
+	        });
+	    }
+	    importAll(paths, relativeDestRoot = null) {
+	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
+	            if (!relativeDestRoot)
+	                relativeDestRoot = this.assetPath;
+	            for (let i = 0; i < paths.length; i++) {
+	                this.importAsset(paths[i], relativeDestRoot);
+	            }
+	        });
+	    }
+	    refresh() {
+	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
+	            return Promise.resolve(this);
+	        });
+	    }
+	    load() {
+	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
+	            //find files for all assets
+	            //if cant find by path, check by inode
+	            //if still can't find it, mark it as missing
+	            const fileList = [];
+	            const fileStats = [];
+	            walkSync(this.assetPath, fileList, fileStats);
+	            const projectData = this.loadProjectFile();
+	            const assetDatabase = projectData.assetDatabase || {};
+	            const assetGUIDS = Object.keys(assetDatabase);
+	            const missingAssets = new Array();
+	            const assetsByFileName = {};
+	            for (let i = 0; i < assetGUIDS.length; i++) {
+	                const guid = assetGUIDS[i];
+	                const assetData = assetDatabase[guid];
+	                assetData.guid = guid;
+	                let resolvedPath = Path.join(this.projectRoot, assetData.filePath);
+	                const fileIndex = fileList.indexOf(resolvedPath);
+	                const statIndex = fileStats.findIndex(function (value) {
+	                    return value.ino === assetData.inode;
+	                });
+	                if (fileIndex === -1) {
+	                    if (statIndex === void 0) {
+	                        missingAssets.push(assetData);
+	                        continue;
+	                    }
+	                    else {
+	                        assetData.filePath = Path.relative(this.projectRoot, fileList[statIndex]);
+	                    }
+	                }
+	                //we have the file but the inode is wrong
+	                if (statIndex === void 0) {
+	                    const stat = File.lstatSync(resolvedPath);
+	                    assetData.inode = stat.ino;
+	                }
+	                assetDatabase[guid] = assetData;
+	                assetsByFileName[assetData.filePath] = assetData;
+	            }
+	            for (let i = 0; i < fileList.length; i++) {
+	                const fileName = Path.relative(this.projectRoot, fileList[i]);
+	                const match = assetsByFileName[fileName];
+	                if (!match) {
+	                    //todo -- import this new file
+	                    const guid = System.createGUID();
+	                    assetDatabase[guid] = {
+	                        filePath: fileName,
+	                        inode: fs.lstatSync(fileList[i]).ino,
+	                        guid: guid,
+	                        data: {}
+	                    };
+	                }
+	            }
+	            //todo -- what happens with missing assets?
+	            this.assetDatabase = assetDatabase;
+	            return Promise.resolve(this);
+	        });
+	    }
+	    save() {
+	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
+	            const output = {
+	                name: this.name,
+	                assetDatabase: {}
+	            };
+	            const assetGUIDS = Object.keys(this.assetDatabase);
+	            for (let i = 0; i < assetGUIDS.length; i++) {
+	                const guid = assetGUIDS[i];
+	                const assetEntry = this.assetDatabase[guid];
+	                output.assetDatabase[guid] = {
+	                    filePath: assetEntry.filePath,
+	                    inode: assetEntry.inode,
+	                    data: assetEntry.data
+	                };
+	            }
+	            return File.writeFile(this.projectFilePath, JSON.stringify(output));
+	        });
+	    }
+	    getAssetCount() {
+	        return Object.keys(this.assetDatabase).length;
+	    }
+	    loadProjectFile() {
+	        return JSON.parse(File.readFileSync(this.projectFilePath).toString());
+	    }
+	}
+	exports.Project = Project;
+
+
+/***/ },
+/* 44 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	class Asset {
+	    constructor(path) {
+	        this.parent = null;
+	        this.children = [];
+	        this.guid = System.createGUID();
+	        this.pathSegments = FileSystem.getRelativePath(System.AssetRoot, path).split("/");
+	    }
+	    addChild(childAsset) {
+	        if (childAsset.parent === this)
+	            return;
+	        if (childAsset.parent) {
+	            childAsset.parent.removeChild(childAsset);
+	        }
+	        this.children.push(childAsset);
+	        const path = this.pathSegments.slice(0);
+	        path.push(childAsset.getName());
+	        childAsset.pathSegments = path;
+	    }
+	    removeChild(childAsset) {
+	        this.children.remove(childAsset);
+	    }
+	    move(path) {
+	        const name = this.getName();
+	        this.pathSegments = path.split("/");
+	        this.pathSegments.push(name);
+	    }
+	    setName(name) {
+	        name = name.replace(/\n/g, "");
+	        this.pathSegments[this.pathSegments.length - 1] = name;
+	        return name;
+	    }
+	    getName() {
+	        return FileSystem.getFileName(this.pathSegments[this.pathSegments.length - 1]);
+	    }
+	    getExtension() {
+	        return FileSystem.getExtension(this.getName());
+	    }
+	    getPath() {
+	        return this.pathSegments.join("/");
+	    }
+	    getPathSegments() {
+	        return this.pathSegments.slice(0);
+	    }
+	    getFullPath() {
+	        return System.AssetRoot + this.getPath();
+	    }
+	    getDepth() {
+	        return this.pathSegments.length - 1;
+	    }
+	    getWritableData() {
+	        return null;
+	    }
+	    static create(path, data) {
+	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
+	            return yield Asset.getImporter(FileSystem.getExtension(path)).import(path, data);
+	        });
+	    }
+	    static getImporter(extension) {
+	        return Asset.importers[extension] || Asset.defaultImporter;
+	    }
+	}
+	Asset.importers = {};
+	Asset.defaultImporter = {
+	    import(path, data) {
+	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
+	            const asset = new Asset(path);
+	            return FileSystem.writeFile(asset.getPath(), data).then(function () {
+	                return asset;
+	            });
+	        });
+	    }
+	};
+	exports.Asset = Asset;
+
+
+/***/ },
+/* 45 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const runtime_event_1 = __webpack_require__(6);
+	class AssetCreated extends runtime_event_1.RuntimeEvent {
+	    onAssetCreated(asset) { }
+	}
+	exports.AssetCreated = AssetCreated;
+
+
+/***/ },
+/* 46 */
+/***/ function(module, exports) {
+
+	module.exports = require("fs");
+
+/***/ },
+/* 47 */
+/***/ function(module, exports) {
+
+	module.exports = require("mz/fs");
+
+/***/ },
+/* 48 */
+/***/ function(module, exports) {
+
+	module.exports = require("path");
+
+/***/ },
+/* 49 */
+/***/ function(module, exports) {
+
+	module.exports = require("globby");
+
+/***/ },
+/* 50 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const binding_compiler_1 = __webpack_require__(10);
+	const editor_element_1 = __webpack_require__(15);
 	class EditorBindingElement extends editor_element_1.EditorElement {
 	    constructor(ctx, path) {
 	        super();
@@ -3455,14 +4315,14 @@
 
 
 /***/ },
-/* 37 */
+/* 51 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const runtime_base_1 = __webpack_require__(30);
-	const browser_input_1 = __webpack_require__(20);
-	const e_command_type_1 = __webpack_require__(28);
+	const runtime_base_1 = __webpack_require__(33);
+	const browser_input_1 = __webpack_require__(24);
+	const e_command_type_1 = __webpack_require__(32);
 	class BrowserRuntimeImpl extends runtime_base_1.RuntimeBase {
 	    constructor(codeurl, mountTarget = null) {
 	        super();
@@ -3502,9 +4362,10 @@
 
 
 /***/ },
-/* 38 */
+/* 52 */
 /***/ function(module, exports) {
 
+	//polyfill for webworker while in editor mode
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	class EditorWorker {
@@ -3512,6 +4373,7 @@
 	        if (!self.onmessage)
 	            return;
 	        setTimeout(function () {
+	            //sending to fake worker context instance
 	            self.onmessage({ origin: "", data: message });
 	        }, 0);
 	    }
@@ -3537,181 +4399,1174 @@
 
 
 /***/ },
-/* 39 */
+/* 53 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const split_pane_1 = __webpack_require__(54);
+	const editor_window_frame_1 = __webpack_require__(55);
+	const hierarchy_window_1 = __webpack_require__(58);
+	const scene_window_1 = __webpack_require__(68);
+	const inspector_window_1 = __webpack_require__(73);
+	const editor_theme_1 = __webpack_require__(56);
+	const asset_window_1 = __webpack_require__(90);
+	const editor_html_element_1 = __webpack_require__(19);
+	class EditorApplication extends editor_html_element_1.EditorHTMLElement {
+	    getDomData() {
+	        return { tagName: "div", classList: "editor-application" };
+	    }
+	    createInitialStructure(children) {
+	        return [
+	            Hex.createElement("input", { style: "display:none", id: "file-chooser", type: "file" }),
+	            Hex.createElement(split_pane_1.SplitPane, { distribution: 0.2 },
+	                Hex.createElement(split_pane_1.SplitPane, { axis: 1 /* Horizontal */ },
+	                    Hex.createElement(editor_window_frame_1.WindowFrame, null,
+	                        Hex.createElement(hierarchy_window_1.HierarchyWindow, { title: "Hierarchy", icon: "" })),
+	                    Hex.createElement(editor_window_frame_1.WindowFrame, null,
+	                        Hex.createElement(asset_window_1.AssetWindow, { title: "Assets", icon: "" }))),
+	                Hex.createElement(split_pane_1.SplitPane, { distribution: 0.7, axis: 0 /* Vertical */ },
+	                    Hex.createElement(editor_window_frame_1.WindowFrame, null,
+	                        Hex.createElement(scene_window_1.SceneWindow, { title: "Scene", icon: "" })),
+	                    Hex.createElement(editor_window_frame_1.WindowFrame, null,
+	                        Hex.createElement(inspector_window_1.InspectorWindow, { title: "Inspector", icon: "" }))))
+	        ];
+	    }
+	}
+	exports.EditorApplication = EditorApplication;
+	createStyleSheet(`<style>
+
+	.editor-application {
+	    overflow:hidden;
+	    width: 100%;
+	    height: 100%;
+	    background: ${editor_theme_1.WindowColors.backgroundGrey};
+	    position: relative;
+	}
+	</style>`);
+	EditorRuntime.start(EditorApplication);
+
+
+/***/ },
+/* 54 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const evt_window_resized_1 = __webpack_require__(21);
+	const element_renderer_1 = __webpack_require__(7);
+	const util_1 = __webpack_require__(16);
+	const editor_html_element_1 = __webpack_require__(19);
+	class SplitPaneGutter extends editor_html_element_1.EditorHTMLElement {
+	}
+	class SplitPane extends editor_html_element_1.EditorHTMLElement {
+	    constructor() {
+	        super(...arguments);
+	        this.element = this;
+	        this.gutterSize = 4;
+	    }
+	    getDomData() {
+	        let classList = "split-pane";
+	        if (!this.isVertical()) {
+	            classList += " horizontal";
+	        }
+	        return { tagName: "div", classList };
+	    }
+	    onWindowResized() {
+	        this.computeDimensions();
+	    }
+	    onRendered() {
+	        this.distribution = util_1.clamp01(this.attrs.distribution || 0.5);
+	        this.attrs.minSize = this.attrs.minSize || 200;
+	        this.content0Node = this.getChildById("content0").getDomNode();
+	        this.content1Node = this.getChildById("content1").getDomNode();
+	        this.gutterNode = this.getChildById("gutter").getDomNode();
+	        this.computeDimensions();
+	        EditorRuntime.on(evt_window_resized_1.WindowResized, this);
+	        let ticks = 0;
+	        const intervalId = setInterval(() => {
+	            ticks++;
+	            this.computeDimensions();
+	            if (ticks > 1000) {
+	                clearInterval(intervalId);
+	            }
+	        }, 16);
+	    }
+	    onDestroyed() {
+	        EditorRuntime.off(evt_window_resized_1.WindowResized, this);
+	    }
+	    computeDimensions() {
+	        if (!this.isRendered)
+	            return;
+	        this.updateTotalSize();
+	        //todo handle case where no children exist
+	        if (!this.content0Child) {
+	            this.c0Size = 0;
+	            this.c1Size = this.totalSize;
+	            this.getChildById("gutter").setVisible(false);
+	        }
+	        if (!this.content1Child) {
+	            this.c0Size = this.totalSize;
+	            this.c1Size = 0;
+	            this.getChildById("gutter").setVisible(false);
+	        }
+	        if (this.content0Child && this.content1Child) {
+	            this.c0Size = (this.totalSize * this.distribution) - (this.gutterSize * 0.5);
+	            this.c1Size = this.totalSize - this.c0Size - this.gutterSize;
+	            this.getChildById("gutter").setVisible(true);
+	        }
+	        this.applySizeChanges();
+	    }
+	    setPane0Content(element) {
+	        const container = this.getChildById("content0");
+	        container.orphanChildren();
+	        this.content0Child = element;
+	        if (element) {
+	            element.orphan();
+	            container.addChild(element);
+	        }
+	        this.computeDimensions();
+	    }
+	    getPane0Content() {
+	        return this.content0Child;
+	    }
+	    setPane1Content(element) {
+	        const container = this.getChildById("content1");
+	        container.orphanChildren();
+	        this.content1Child = element;
+	        if (element) {
+	            element.orphan();
+	            container.addChild(element);
+	        }
+	        this.computeDimensions();
+	    }
+	    getPane1Content() {
+	        return this.content1Child;
+	    }
+	    onUpdated() {
+	        const input = EditorRuntime.getInput();
+	        if (input.isMouseUp()) {
+	            EditorRuntime.updateTree.remove(this);
+	            return;
+	        }
+	        const delta = this.getMouseDelta();
+	        if (delta === 0)
+	            return;
+	        const total = this.c0Size + delta;
+	        const shrink = delta < 0 && total > this.attrs.minSize;
+	        const grow = delta > 0 && total < this.totalSize - this.attrs.minSize;
+	        if (shrink || grow) {
+	            this.c0Size += delta;
+	            this.c1Size -= delta;
+	            this.applySizeChanges();
+	            this.distribution = 1.0 - ((this.totalSize - this.c0Size) / this.totalSize);
+	            if (this.content0Child instanceof SplitPane) {
+	                this.content0Child.computeDimensions();
+	            }
+	            if (this.content1Child instanceof SplitPane) {
+	                this.content1Child.computeDimensions();
+	            }
+	        }
+	    }
+	    isVertical() {
+	        return this.attrs.axis === 0 /* Vertical */;
+	    }
+	    startGutterDrag() {
+	        EditorRuntime.updateTree.add(this);
+	    }
+	    getMouseDelta() {
+	        if (this.isVertical()) {
+	            return EditorRuntime.getInput().getMouseDelta().x;
+	        }
+	        else {
+	            return EditorRuntime.getInput().getMouseDelta().y;
+	        }
+	    }
+	    updateTotalSize() {
+	        if (this.isVertical()) {
+	            this.totalSize = (this.parent.getDomNode().clientWidth - (this.gutterSize * 0.5) | 0);
+	        }
+	        else {
+	            this.totalSize = (this.parent.getDomNode().clientHeight - (this.gutterSize * 0.5) | 0);
+	        }
+	    }
+	    applySizeChanges() {
+	        if (this.isVertical()) {
+	            this.content0Node.style.width = (this.c0Size | 0) + "px";
+	            this.gutterNode.style.left = (this.c0Size | 0) + "px";
+	            this.content1Node.style.left = ((this.gutterSize + this.c0Size) | 0) + "px";
+	            this.content1Node.style.width = (this.c1Size | 0) + "px";
+	        }
+	        else {
+	            this.content0Node.style.height = this.c0Size + "px";
+	            this.gutterNode.style.top = this.c0Size + "px";
+	            this.content1Node.style.top = (this.gutterSize + this.c0Size) + "px";
+	            this.content1Node.style.height = this.c1Size + "px";
+	        }
+	    }
+	    ensureOrientation() {
+	        if (this.attrs.axis !== 0 /* Vertical */
+	            && this.attrs.axis !== 1 /* Horizontal */) {
+	            this.attrs.axis = 0 /* Vertical */;
+	        }
+	    }
+	    createInitialStructure(children) {
+	        this.content0Child = children[0];
+	        this.content1Child = children[1];
+	        this.ensureOrientation();
+	        let gutterClass = "gutter-";
+	        gutterClass += this.isVertical() ? "vertical" : "horizontal";
+	        return [
+	            Hex.createElement("div", { "x-id": "content0", class: "split-pane-panel" }, children[0]),
+	            Hex.createElement("div", { "x-id": "gutter", class: gutterClass, onMouseDown: this.startGutterDrag }),
+	            Hex.createElement("div", { "x-id": "content1", class: "split-pane-panel" }, children[1])
+	        ];
+	    }
+	    setAxis(axis) {
+	        if (this.attrs.axis === axis)
+	            return;
+	        this.attrs.axis = axis;
+	        const gutterNode = this.getChildById("gutter").getDomNode();
+	        if (this.attrs.axis === 0 /* Vertical */) {
+	            gutterNode.classList.remove("gutter-horizontal");
+	            gutterNode.classList.add("gutter-vertical");
+	            gutterNode.style.top = "0";
+	        }
+	        else {
+	            gutterNode.classList.remove("gutter-vertical");
+	            gutterNode.classList.add("gutter-horizontal");
+	            gutterNode.style.left = "0";
+	        }
+	        this.computeDimensions();
+	    }
+	    setOrSplitPane0(element, axis = 0 /* Vertical */, distribution = 0.5) {
+	        const contentContainer = this.getChildById("content0");
+	        if (this.content0Child) {
+	            const split = element_renderer_1.createElement(SplitPane, { axis: axis });
+	            const child = this.content0Child;
+	            split.setPane0Content(element);
+	            split.setPane1Content(child);
+	            this.setPane0Content(split);
+	            split.computeDimensions();
+	        }
+	        else {
+	            this.setAxis(axis);
+	            contentContainer.addChild(element);
+	            this.content0Child = element;
+	        }
+	        if (distribution)
+	            this.distribution = util_1.clamp01(distribution);
+	        this.computeDimensions();
+	    }
+	    setOrSplitPane1(element, axis = 0 /* Vertical */, distribution = 0.5) {
+	        const contentContainer = this.getChildById("content1");
+	        if (this.content1Child) {
+	            const split = element_renderer_1.createElement(SplitPane, { axis: axis });
+	            const child = this.content1Child;
+	            split.setPane0Content(child);
+	            split.setPane1Content(element);
+	            this.setPane1Content(split);
+	            split.computeDimensions();
+	        }
+	        else {
+	            this.setAxis(axis);
+	            contentContainer.addChild(element);
+	            this.content1Child = element;
+	        }
+	        if (distribution)
+	            this.distribution = util_1.clamp01(distribution);
+	        this.computeDimensions();
+	    }
+	}
+	exports.SplitPane = SplitPane;
+	class VerticalSplitPane extends SplitPane {
+	    ensureOrientation() {
+	        this.attrs.axis = 0 /* Vertical */;
+	    }
+	}
+	exports.VerticalSplitPane = VerticalSplitPane;
+	class HorizontalSplitPane extends SplitPane {
+	    ensureOrientation() {
+	        this.attrs.axis = 1 /* Horizontal */;
+	    }
+	}
+	exports.HorizontalSplitPane = HorizontalSplitPane;
+	createStyleSheet(`<style>
+
+	.split-pane {
+	    width: 100%;
+	    height: 100%;
+	    position:relative;
+	    overflow: hidden;
+	}
+
+	.split-pane .split-pane-panel {
+	    height: 100%;
+	}
+
+	.split-pane.horizontal .split-pane-panel {
+	    width: 100%;
+	}
+
+	.split-pane-panel {
+	    overflow:hidden;
+	    position:absolute;
+	}
+
+	.gutter-vertical {
+	    width: 4px;
+	    min-width:4px;
+	    height:100%;
+	    /*cursor: ew-resize;*/
+	    position:absolute;;
+	}
+
+	.gutter-horizontal{
+	    width: 100%;
+	    height: 4px;
+	    min-height:4px;
+	    /*cursor: ns-resize;*/
+	    position:absolute;;
+	}
+
+	</style>`);
+
+
+/***/ },
+/* 55 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const split_pane_1 = __webpack_require__(54);
+	const editor_theme_1 = __webpack_require__(56);
+	const element_renderer_1 = __webpack_require__(7);
+	const editor_window_tab_1 = __webpack_require__(57);
+	const editor_html_element_1 = __webpack_require__(19);
+	//todo this is causing a problem with mouse selection -- quad tree fixes this
+	//this issue has to do with document.elementFromPoint not ignoring this element
+	const coverDiv = document.createElement('div');
+	coverDiv.style.position = "absolute";
+	coverDiv.style.zIndex = "400";
+	coverDiv.style.background = "magenta";
+	class WindowFrame extends editor_html_element_1.EditorHTMLElement {
+	    constructor() {
+	        super(...arguments);
+	        this.element = this;
+	    }
+	    onCreated() {
+	        this.windows = [];
+	        this.isCoverInDom = false;
+	        this.draggedWindowData = null;
+	    }
+	    getDomData() {
+	        return {
+	            tagName: "div",
+	            classList: "window-frame"
+	        };
+	    }
+	    onRendered() {
+	        this.setVisibleWindow(this.windows[0]);
+	        this.parentSplitPane = this.getAncestorByType(split_pane_1.SplitPane);
+	    }
+	    setVisibleWindow(window) {
+	        for (let i = 0; i < this.windows.length; i++) {
+	            if (this.windows[i] === window) {
+	                this.windows[i].tab.setActive(true);
+	                this.windows[i].content.setVisible(true);
+	            }
+	            else {
+	                this.windows[i].tab.setActive(false);
+	                this.windows[i].content.setVisible(false);
+	            }
+	        }
+	    }
+	    onUpdated() {
+	        const Input = EditorRuntime.getInput();
+	        if (Input.isMouseUp()) {
+	            this.isCoverInDom = false;
+	            coverDiv.remove();
+	            EditorRuntime.updateTree.remove(this);
+	            const mouse = Input.getMousePosition();
+	            const hoverElement = EditorRuntime.getEditorElementAtPoint(mouse);
+	            const windowFrame = hoverElement.getAncestorByType(WindowFrame);
+	            if (windowFrame) {
+	                const rect = windowFrame.getChildById("body").getClientBounds();
+	                if (WindowFrame.mouseOnLeft(mouse, rect)) {
+	                    const frame = element_renderer_1.createElement(WindowFrame);
+	                    this.parentSplitPane.setOrSplitPane0(frame, 0 /* Vertical */);
+	                    frame.addExistingWindow(this.draggedWindowData);
+	                }
+	                else if (WindowFrame.mouseOnRight(mouse, rect)) {
+	                    const frame = element_renderer_1.createElement(WindowFrame);
+	                    this.parentSplitPane.setOrSplitPane1(frame, 0 /* Vertical */);
+	                    frame.addExistingWindow(this.draggedWindowData);
+	                }
+	                else if (WindowFrame.mouseOnBottom(mouse, rect)) {
+	                    const frame = element_renderer_1.createElement(WindowFrame);
+	                    this.parentSplitPane.setOrSplitPane1(frame, 1 /* Horizontal */);
+	                    frame.addExistingWindow(this.draggedWindowData);
+	                }
+	                else if (this === windowFrame) {
+	                }
+	                else {
+	                    windowFrame.addExistingWindow(this.draggedWindowData);
+	                }
+	                //if in the center, add to tab list and set active
+	                //if left or right, split the pane vertically
+	                //if bottom split pane horizontally
+	            }
+	            this.draggedWindowData = null;
+	            return;
+	        }
+	        const mouse = Input.getMousePosition();
+	        const hoverElement = EditorRuntime.getEditorElementAtPoint(mouse);
+	        const windowFrame = hoverElement.getAncestorByType(WindowFrame);
+	        if (!windowFrame) {
+	            return;
+	        }
+	        const rect = windowFrame.getChildById("body").getClientBounds();
+	        if (mouse.y > rect.top && mouse.y < rect.top + (rect.height * 0.7)) {
+	            if (mouse.x > rect.left && mouse.x < rect.left + (0.3 * rect.width)) {
+	                coverDiv.style.left = rect.left + "px";
+	                coverDiv.style.top = rect.top + "px";
+	                coverDiv.style.width = (rect.width * 0.3) + "px";
+	                coverDiv.style.height = "100%";
+	                if (!this.isCoverInDom) {
+	                    this.isCoverInDom = true;
+	                    document.body.appendChild(coverDiv);
+	                }
+	            }
+	            else if (mouse.x > rect.left + (0.7 * rect.width) && mouse.x < rect.left + rect.width) {
+	                coverDiv.style.left = rect.left + (rect.width * 0.7) + "px";
+	                coverDiv.style.top = rect.top + "px";
+	                coverDiv.style.width = (rect.width * 0.3) + "px";
+	                coverDiv.style.height = "100%";
+	                if (!this.isCoverInDom) {
+	                    this.isCoverInDom = true;
+	                    document.body.appendChild(coverDiv);
+	                }
+	            }
+	            else if (this.isCoverInDom) {
+	                this.isCoverInDom = false;
+	                coverDiv.remove();
+	            }
+	        }
+	        else if (mouse.y > rect.top) {
+	            coverDiv.style.left = rect.left + "px";
+	            coverDiv.style.top = rect.top + (rect.height * 0.7) + "px";
+	            coverDiv.style.width = rect.width + "px";
+	            coverDiv.style.height = (rect.height * 0.7) + "px";
+	            if (!this.isCoverInDom) {
+	                this.isCoverInDom = true;
+	                document.body.appendChild(coverDiv);
+	            }
+	        }
+	    }
+	    static mouseOnLeft(mouse, rect) {
+	        return (mouse.y > rect.top && mouse.y < rect.top + (rect.height * 0.7))
+	            && (mouse.x > rect.left && mouse.x < rect.left + (0.3 * rect.width));
+	    }
+	    static mouseOnRight(mouse, rect) {
+	        return (mouse.y > rect.top && mouse.y < rect.top + (rect.height * 0.7))
+	            && (mouse.x > rect.left + (0.7 * rect.width) && mouse.x < rect.left + rect.width);
+	    }
+	    static mouseOnBottom(mouse, rect) {
+	        return !(mouse.y > rect.top && mouse.y < rect.top + (rect.height * 0.7)) && mouse.y > rect.top;
+	    }
+	    addExistingWindow(windowData) {
+	        const header = this.getChildById("header");
+	        const body = this.getChildById("body");
+	        const data = this.createWindowData(windowData.content);
+	        //can't reuse the tab because of the mouse listener context
+	        this.windows.push(data);
+	        header.addChild(data.tab);
+	        body.addChild(data.content);
+	        this.setVisibleWindow(data);
+	        windowData.parentWindow.removeWindow(windowData);
+	    }
+	    removeWindow(windowData) {
+	        windowData.tab.destroy();
+	        if (this.windows.length === 1) {
+	            this.destroy();
+	            if (this.parentSplitPane.getPane0Content() === this) {
+	                this.parentSplitPane.setPane0Content(null);
+	            }
+	            else if (this.parentSplitPane.getPane1Content() === this) {
+	                this.parentSplitPane.setPane1Content(null);
+	            }
+	        }
+	        else {
+	            const idx = this.windows.indexOf(windowData);
+	            if (idx === -1)
+	                return;
+	            this.windows.splice(idx, 1);
+	            this.setVisibleWindow(this.windows[0]);
+	        }
+	    }
+	    startTabDrag(windowData) {
+	        this.draggedWindowData = windowData;
+	        EditorRuntime.updateTree.add(this);
+	    }
+	    createWindowData(content) {
+	        const windowData = {
+	            parentWindow: this,
+	            content: content,
+	            tab: element_renderer_1.createElement(editor_window_tab_1.WindowFrameTab, {
+	                title: content.attrs.title, onMouseDown: () => {
+	                    this.setVisibleWindow(windowData);
+	                    this.startTabDrag(windowData);
+	                }
+	            })
+	        };
+	        this.windows.push(windowData);
+	        return windowData;
+	    }
+	    createInitialStructure(children) {
+	        const childWindows = children.map((child) => {
+	            return this.createWindowData(child);
+	        });
+	        return [
+	            Hex.createElement("div", { "x-id": "header", class: "window-frame-header" }, childWindows.map((w) => w.tab)),
+	            Hex.createElement("div", { "x-id": "body", "x-child-root": true, class: "window-frame-body" }, childWindows.map((w) => w.content)),
+	        ];
+	    }
+	}
+	exports.WindowFrame = WindowFrame;
+	createStyleSheet(`<style>
+
+	.editor-frame-container {
+	    width: 100%;
+	    height: 100%;
+	    background: gainsboro;
+	    position: relative;
+	}
+
+	.window-frame-header {
+	    background: ${editor_theme_1.WindowColors.backgroundGrey};
+	    margin: 0;
+	    display:flex;
+	    flex-direction: row;
+	    align-items: flex-start;
+	}
+
+	.window-frame-header h3 {
+	    margin: 0;
+	}
+
+	.window-frame-body {
+	    overflow:auto;
+	    width:100%;
+	    height: 100%;
+	    border: 1px solid #828282;
+	}
+
+	.window-frame {
+	    width:100%;
+	    height:100%;
+	    display:flex;
+	    flex-direction: column;
+	}
+
+
+	</style>`);
+
+
+/***/ },
+/* 56 */
 /***/ function(module, exports) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	function setUpperBits(field, value) {
-	    value = value | 0;
-	    if (value > 0xFFFF)
-	        value = 0xFFFF;
-	    return field;
+	exports.WindowColors = {
+	    backgroundGrey: "#A2A2A2",
+	    borderGrey: "#828282",
+	    foregroundGrey: "#C2C2C2",
+	    selectedTabBodyGrey: "#E4E4E4",
+	    selectedTabBorderGrey: "#858585",
+	    sceneBackground: "#5D5D5D"
+	};
+
+
+/***/ },
+/* 57 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const editor_theme_1 = __webpack_require__(56);
+	const editor_html_element_1 = __webpack_require__(19);
+	class WindowFrameTab extends editor_html_element_1.EditorHTMLElement {
+	    getDomData() {
+	        return {
+	            tagName: "div",
+	            classList: "window-frame-tab"
+	        };
+	    }
+	    setActive(isSelected) {
+	        if (isSelected) {
+	            this.getDomNode().classList.add('selected');
+	        }
+	        else {
+	            this.getDomNode().classList.remove('selected');
+	        }
+	    }
+	    createInitialStructure(children) {
+	        return this.attrs.title;
+	    }
 	}
-	exports.setUpperBits = setUpperBits;
+	exports.WindowFrameTab = WindowFrameTab;
+	createStyleSheet(`
+	<style>
+	.window-frame-tab {
+	    padding-left: 1em;
+	    padding-right: 1em;
+	    text-align: center;
+	    font-size: 0.9em;
+	    color: black;
+	}
+
+	.window-frame-tab.selected {
+	    background: ${editor_theme_1.WindowColors.selectedTabBodyGrey};
+	    border: 1px solid ${editor_theme_1.WindowColors.selectedTabBorderGrey};
+	    border-bottom:none;
+	    border-top-left-radius: 3px;
+	    border-top-right-radius: 3px;
+	}
+	</style>
+	`);
 
 
 /***/ },
-/* 40 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const e_command_type_1 = __webpack_require__(28);
-	function DeserializeComponent(component, element) {
-	    if (component.handler) {
+	const tslib_1 = __webpack_require__(4);
+	const button_1 = __webpack_require__(59);
+	const hierarchy_item_1 = __webpack_require__(60);
+	const evt_selection_changed_1 = __webpack_require__(5);
+	const evt_scene_loaded_event_1 = __webpack_require__(65);
+	const evt_app_element_created_1 = __webpack_require__(22);
+	const element_renderer_1 = __webpack_require__(7);
+	const editor_window_element_1 = __webpack_require__(66);
+	const app_element_1 = __webpack_require__(29);
+	const evt_app_element_parent_changed_1 = __webpack_require__(35);
+	const drag_hierarchy_item_1 = __webpack_require__(62);
+	const vector2_1 = __webpack_require__(17);
+	const editor_element_annotations_1 = __webpack_require__(67);
+	const icon_1 = __webpack_require__(61);
+	const evt_app_element_index_changed_1 = __webpack_require__(36);
+	const runtime_event_1 = __webpack_require__(6);
+	const scroll_component_1 = __webpack_require__(140);
+	const sizing_component_1 = __webpack_require__(40);
+	const menu_setup_1 = __webpack_require__(152);
+	class HierarchyWindow extends editor_window_element_1.EditorWindowElement {
+	    constructor() {
+	        super(...arguments);
+	        this.mouse = new vector2_1.Vector2();
+	        this.elementMap = new Map();
+	        this.contextSelection = null;
 	    }
-	    if (component.commands) {
-	        const commands = component.commands;
-	        for (let i = 0; i < commands.length; i++) {
-	            BrowserRuntime.invokeCommand(commands[i].type, commands[i].data);
+	    createHierarchyItem(element) {
+	        const item = element_renderer_1.createElement(hierarchy_item_1.HierarchyItem, { element: element });
+	        this.elementMap.set(element, item);
+	        const childCount = element.getChildCount();
+	        for (let i = 0; i < childCount; i++) {
+	            const appElement = element.getChildAt(i);
+	            const childItem = this.createHierarchyItem(appElement);
+	            item.getChildRoot().addChild(childItem);
 	        }
+	        return item;
+	    }
+	    onAppElementParentChanged(appElement, newParent) {
+	        const targetItem = this.elementMap.get(appElement);
+	        const newParentItem = this.elementMap.get(newParent);
+	        newParentItem.getChildRoot().addChild(targetItem);
+	        EditorRuntime.select(appElement);
+	    }
+	    onSelectionChanged(newSelection, oldSelection) {
+	        if (oldSelection) {
+	            const item = this.elementMap.get(oldSelection);
+	            if (item) {
+	                item.setSelected(false);
+	            }
+	        }
+	        if (newSelection) {
+	            const selectedItem = this.elementMap.get(newSelection);
+	            if (selectedItem) {
+	                selectedItem.setSelected(true);
+	            }
+	        }
+	    }
+	    select() {
+	        const input = EditorRuntime.getInput();
+	        input.getMousePosition(this.mouse);
+	        let mouseOver = EditorRuntime.getEditorElementAtPoint(this.mouse);
+	        if (!mouseOver || mouseOver.getAncestorByType(icon_1.ToggleIcon, true))
+	            return;
+	        let item = mouseOver.getAncestorByType(hierarchy_item_1.HierarchyItem, true);
+	        if (!item) {
+	            EditorRuntime.select(null);
+	            return null;
+	        }
+	        EditorRuntime.select(item.attrs.element);
+	        return item.attrs.element;
+	    }
+	    showContextMenu() {
+	        this.contextSelection = this.select();
+	        this.createContextMenu();
+	    }
+	    onUpdated() {
+	        const input = EditorRuntime.getInput();
+	        const inElement = input.isMouseInEditorElement(this);
+	        if (!inElement) {
+	            return;
+	        }
+	        if (!EditorRuntime.getCurrentDragAction() && input.isMouseDown()) {
+	            input.getMouseDownDelta(this.mouse);
+	            if (this.mouse.lengthSquared() > 64) {
+	                input.getMouseDownPosition(this.mouse);
+	                let dragElement = EditorRuntime.getEditorElementAtPoint(this.mouse, hierarchy_item_1.HierarchyItem);
+	                if (!dragElement) {
+	                    return;
+	                }
+	                EditorRuntime.beginDragAction(new drag_hierarchy_item_1.HierarchyItemDragAction(dragElement));
+	            }
+	        }
+	    }
+	    onRendered() {
+	        EditorRuntime.on(evt_selection_changed_1.SelectionChanged, this);
+	        EditorRuntime.on(evt_scene_loaded_event_1.SceneLoaded, this);
+	        EditorRuntime.on(evt_app_element_created_1.AppElementCreated, this);
+	        EditorRuntime.on(evt_app_element_index_changed_1.AppElementIndexChanged, this);
+	        // EditorRuntime.on(AppElementDestroyed, this);
+	        EditorRuntime.on(evt_app_element_parent_changed_1.AppElementParentChanged, this);
+	        EditorRuntime.updateTree.add(this);
+	        this.onSceneLoaded(EditorRuntime.getScene());
+	    }
+	    onAppElementCreated(appElement) {
+	        const item = this.createHierarchyItem(appElement);
+	        const parentItem = this.elementMap.get(appElement.getParent()) || this;
+	        parentItem.getChildRoot().addChild(item);
+	    }
+	    onAppElementIndexChanged(appElement, newIndex) {
+	        const item = this.elementMap.get(appElement);
+	        item.parent.getChildRoot().insertChild(item, newIndex);
+	    }
+	    onSceneLoaded(scene) {
+	        // const root = AppElement.Root;
+	        // const rootItem = this.createHierarchyItem(root);
+	        // this.getChildRoot().addChild(rootItem);
+	    }
+	    destroyContextSelection() {
+	        const hierarchyItem = this.elementMap.get(this.contextSelection);
+	        if (!hierarchyItem)
+	            return;
+	        if (EditorRuntime.getSelection() === this.contextSelection) {
+	            EditorRuntime.select(null);
+	        }
+	        hierarchyItem.destroy();
+	        this.contextSelection.destroy();
+	        this.contextSelection = null;
+	    }
+	    createNewElement() {
+	        new app_element_1.AppElement("Element", EditorRuntime.getSelection());
+	    }
+	    createScrollElement() {
+	        const element = new app_element_1.AppElement("Scroll Container");
+	        element.addComponent(scroll_component_1.ScrollComponent);
+	        const sizing = element.addComponent(sizing_component_1.SizingComponent);
+	        // sizing.stretchBehavior = StretchBehavior.FillParent;
+	    }
+	    createInitialStructure(children) {
+	        return [
+	            Hex.createElement("div", { class: "hierarchy-top-bar" },
+	                Hex.createElement(button_1.Button, { onClick: this.createNewElement }, "Create")),
+	            Hex.createElement("div", { "x-child-root": true, class: "hierarchy-main-body" })
+	        ];
+	    }
+	    createContextMenu() {
+	        EditorRuntime.getInput().getMousePosition(this.mouse);
+	        const menu = new nw.Menu();
+	        const creationMenu = menu_setup_1.getCreationMenu();
+	        menu.append(new nw.MenuItem({ label: "Create Empty", click: () => this.createNewElement() }));
+	        menu.append(new nw.MenuItem({ label: "Create", submenu: creationMenu }));
+	        menu.append(new nw.MenuItem({ label: "Destroy", click: () => this.destroyContextSelection() }));
+	        menu.popup(this.mouse.x, this.mouse.y);
 	    }
 	}
-	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetText, (function () {
-	    var ruler = document.createElement('span');
-	    var rulerStyle = ruler.style;
-	    rulerStyle.wordWrap = "none";
-	    rulerStyle.visibility = "hidden";
-	    document.body.appendChild(ruler);
-	    return function (payload) {
-	        const element = BrowserRuntime.elementIdToDomNode(payload.id);
-	        if (!element)
-	            return;
-	        element.innerText = payload.text;
-	        const font = payload.font;
-	        const style = element.style;
-	        if (payload.setFont) {
-	            style.fontSize = font.size + "px";
-	            style.fontFamily = font.name;
-	            style.fontWeight = font.weight;
-	            style.lineHeight = font.lineHeight;
-	            style.textDecoration = font.decoration;
-	        }
-	        rulerStyle.fontSize = font.size + "px";
-	        rulerStyle.fontFamily = font.name;
-	        rulerStyle.fontWeight = font.weight;
-	        rulerStyle.lineHeight = font.lineHeight;
-	        rulerStyle.textDecoration = font.decoration;
-	        ruler.innerText = payload.text;
-	        return ruler.offsetWidth;
-	    };
-	})());
-	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.Create, (function () {
-	    const elementTypeToTagName = {
-	        "Panel": "div",
-	        "Text": "div",
-	        "Button": "button",
-	        "Dropdown": "select",
-	        "Section": "section",
-	        "Image": "img"
-	    };
-	    return function (payload) {
-	        const element = document.createElement(elementTypeToTagName[payload.elementType]);
-	        if (!element)
-	            return;
-	        const parentId = payload.parentId;
-	        element.setAttribute("app-id", payload.id);
-	        BrowserRuntime.setDomNodeToElementId(payload.id, element);
-	        const components = payload.components;
-	        for (let i = 0; i < components.length; i++) {
-	            DeserializeComponent(components[i], element);
-	        }
-	        BrowserRuntime.elementIdToDomNode(parentId).appendChild(element);
-	    };
-	})());
-	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.Destroy, function (payload) {
-	    const element = BrowserRuntime.elementIdToDomNode(payload.id);
-	    element && element.remove();
-	    BrowserRuntime.setDomNodeToElementId(payload.id, null);
-	    for (let i = 0; i < payload.childIds; i++) {
-	        BrowserRuntime.setDomNodeToElementId(payload.childIds[i], null);
-	    }
-	});
-	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetParent, function (payload) {
-	    const element = BrowserRuntime.elementIdToDomNode(payload.id);
-	    if (!element)
-	        return;
-	    element.remove();
-	    const parentElement = BrowserRuntime.elementIdToDomNode(payload.parentId);
-	    parentElement.appendChild(element);
-	});
-	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetSiblingIndex, function (payload) {
-	    const element = BrowserRuntime.elementIdToDomNode(payload.id);
-	    if (!element)
-	        return;
-	});
-	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetImage, function (payload) {
-	    const el = BrowserRuntime.elementIdToDomNode(payload.id);
-	    if (!el)
-	        return;
-	    el.setAttribute("src", payload.image);
-	});
-	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetPosition, function (payload) {
-	    const el = BrowserRuntime.elementIdToDomNode(payload.id);
-	    if (!el)
-	        return;
-	    const x = payload.x | 0;
-	    const y = payload.y | 0;
-	    el.style.top = y === 0 ? null : y + "px";
-	    el.style.left = x === 0 ? null : x + "px";
-	});
-	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetDimensions, function (payload) {
-	    const el = BrowserRuntime.elementIdToDomNode(payload.id);
-	    if (!el)
-	        return;
-	    el.style.width = (payload.width | 0) + "px";
-	    el.style.height = (payload.height | 0) + "px";
-	});
-	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetTransform, function (payload) {
-	});
-	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetRect, function (payload) {
-	    const el = BrowserRuntime.elementIdToDomNode(payload.id);
-	    if (!el)
-	        return;
-	    const rect = payload.rect;
-	    const style = el.style;
-	    const x = rect.x | 0;
-	    const y = rect.y | 0;
-	    style.top = y === 0 ? null : y + "px";
-	    style.left = x === 0 ? null : x + "px";
-	    style.width = (rect.width | 0) + "px";
-	    style.height = (rect.height | 0) + "px";
-	});
-	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.PaintBackground, function (payload) {
-	    const el = BrowserRuntime.elementIdToDomNode(payload.id);
-	    if (!el)
-	        return;
-	    const c = payload.color;
-	    el.style.background = `rgba(${c.r}, ${c.g}, ${c.b}, ${c.a})`;
-	});
-	BrowserRuntime.setCommandInvoker(-1, function (payload) {
-	    for (let i = 0; i < payload.components.length; i++) {
-	        const cmp = payload.components[i];
-	    }
-	});
+	tslib_1.__decorate([
+	    editor_element_annotations_1.onClick
+	], HierarchyWindow.prototype, "select", null);
+	tslib_1.__decorate([
+	    editor_element_annotations_1.onRightClick
+	], HierarchyWindow.prototype, "showContextMenu", null);
+	tslib_1.__decorate([
+	    runtime_event_1.RuntimeEvent.on(evt_app_element_created_1.AppElementCreated)
+	], HierarchyWindow.prototype, "onAppElementCreated", null);
+	exports.HierarchyWindow = HierarchyWindow;
+	createStyleSheet(`
+	<style>
+
+
+	.hierarchy-window {
+	    display: flex;
+	    flex-direction: column;
+	    height: 100%;
+	    width: 100%;
+	}
+
+
+	</style>
+	`);
 
 
 /***/ },
-/* 41 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const e_command_type_1 = __webpack_require__(28);
-	BrowserRuntime.setCommandSerializer(e_command_type_1.CommandType.UpdateInput, function () {
-	    return BrowserRuntime.getInput().serialize();
-	});
+	const editor_html_element_1 = __webpack_require__(19);
+	class Button extends editor_html_element_1.EditorHTMLElement {
+	    getDomData() {
+	        return {
+	            tagName: "button",
+	            classList: "btn"
+	        };
+	    }
+	}
+	exports.Button = Button;
 
 
 /***/ },
-/* 42 */,
-/* 43 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(15);
+	const tslib_1 = __webpack_require__(4);
+	const icon_1 = __webpack_require__(61);
+	const drag_action_1 = __webpack_require__(38);
+	const drag_hierarchy_item_1 = __webpack_require__(62);
+	const editor_html_element_1 = __webpack_require__(19);
+	const hierarchy_insert_target_1 = __webpack_require__(63);
+	const binding_1 = __webpack_require__(13);
+	const evt_app_element_parent_changed_1 = __webpack_require__(35);
+	class HierarchyItem extends editor_html_element_1.EditorHTMLElement {
+	    setSelected(isSelected) {
+	        this.getChildBySelector(".hierarchy-item-offset").toggleClass("selected", isSelected);
+	    }
+	    onDestroyed() {
+	        this.attrs.element = null;
+	    }
+	    mouseEnterDetails(action) {
+	        if (!(action.item === this || action.item === this.parent)) {
+	            this.getChildBySelector(".hierarchy-item-offset").addClass("hovered");
+	        }
+	    }
+	    mouseExitDetails(item) {
+	        this.getChildBySelector(".hierarchy-item-offset").removeClass("hovered");
+	    }
+	    mouseDragDrop(action) {
+	        if (action.item === this || action.item === this.parent) {
+	            return;
+	        }
+	        const elementParent = this.attrs.element;
+	        action.appElement.setParent(elementParent);
+	    }
+	    onAppElementParentChanged(element) {
+	        if (this.attrs.element !== element)
+	            return;
+	        const depth = element.getDepth();
+	        this.getChildBySelector(".hierarchy-item-offset").setStyle({ paddingLeft: `${depth * 12}px` });
+	    }
+	    onRendered() {
+	        EditorRuntime.on(evt_app_element_parent_changed_1.AppElementParentChanged, this);
+	    }
+	    createInitialStructure(children) {
+	        const appElement = this.attrs.element;
+	        const depth = this.attrs.element.getDepth();
+	        const paddingLeft = "padding-left:" + (depth * 12) + "px";
+	        const visBinding = binding_1.CreateBinding(appElement.children, "length");
+	        return [
+	            Hex.createElement(hierarchy_insert_target_1.HierarchyItemDropTarget, { insert: "before" }),
+	            Hex.createElement("div", { class: "hierarchy-item-offset", style: paddingLeft },
+	                Hex.createElement(icon_1.ToggleIcon, { "x-id": "toggle", "x-bind-class": { invisible: visBinding } }),
+	                Hex.createElement("div", { class: "name-label" },
+	                    " ",
+	                    new window.EditorBindingElement(appElement, ["name"]),
+	                    " ")),
+	            Hex.createElement(hierarchy_insert_target_1.HierarchyItemDropTarget, { insert: "after" }),
+	            Hex.createElement("div", { "x-child-root": true, class: "hierarchy-item-children" }, children),
+	        ];
+	    }
+	}
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.MouseEnter(drag_hierarchy_item_1.HierarchyItemDragAction)
+	], HierarchyItem.prototype, "mouseEnterDetails", null);
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.MouseExit(drag_hierarchy_item_1.HierarchyItemDragAction)
+	], HierarchyItem.prototype, "mouseExitDetails", null);
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.Drop(drag_hierarchy_item_1.HierarchyItemDragAction)
+	], HierarchyItem.prototype, "mouseDragDrop", null);
+	exports.HierarchyItem = HierarchyItem;
+	createStyleSheet(`<style>
+
+	    .hierarchy-item-details.selected {
+	        background: #c8f8ff;
+	    }
+
+	    .hierarchy-item-offset.selected {
+	        color:white;
+	        background: #62b4ff;
+	    }
+	    
+	    .hierarchy-item-offset.hovered {
+	        background: #43ff5f;
+	    }
+	    
+	    .hierarchy-item-offset {
+	        display:flex;
+	        flex-direction: row;
+	    }
+	        
+	    .hierarchy-item-offset .name-label {
+	        flex:1;
+	        margin-right:2px;
+	        margin-left: 2px;
+	        padding-left:2px;
+	        padding-right:2px;
+	    }
+	    
+	    .hierarchy-item-offset .icon {
+	        color: black;
+	    }
+	    
+
+	`);
+
+
+/***/ },
+/* 61 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const editor_html_element_1 = __webpack_require__(19);
+	class FontIcon extends editor_html_element_1.EditorHTMLElement {
+	    constructor() {
+	        super(...arguments);
+	        this.prefix = "fa";
+	    }
+	    getDomData() {
+	        return { tagName: "i", classList: this.getClassList() };
+	    }
+	    getIconSize() {
+	        return " icon " + (this.attrs.size || "");
+	    }
+	    getClassList() {
+	        return this.prefix
+	            + " "
+	            + this.getPrefixedIconName(this.attrs.iconName)
+	            + this.getIconSize();
+	    }
+	    getPrefixedIconName(iconName) {
+	        return this.prefix + "-" + iconName;
+	    }
+	    ;
+	    setIcon(iconName) {
+	        const domNode = this.getDomNode();
+	        domNode.classList.remove(this.getPrefixedIconName(this.attrs.iconName));
+	        domNode.classList.add(this.getPrefixedIconName(iconName));
+	        this.attrs.iconName = iconName;
+	    }
+	}
+	exports.FontIcon = FontIcon;
+	class ToggleIcon extends editor_html_element_1.EditorHTMLElement {
+	    getDomData() {
+	        return { tagName: "i", classList: this.getClassList() };
+	    }
+	    onMounted() {
+	        const attrs = this.attrs;
+	        const htmlNode = this.htmlNode;
+	        attrs.visibilityTarget = attrs.visibilityTarget || (() => {
+	            return this.renderContext.getChildRoot();
+	        });
+	        htmlNode.addEventListener('click', (e) => {
+	            attrs.open = !attrs.open;
+	            if (this.attrs.onToggle) {
+	                this.attrs.onToggle(attrs.open);
+	            }
+	            else {
+	                attrs.visibilityTarget().setVisible(attrs.open);
+	            }
+	            htmlNode.classList.toggle("fa-caret-down", attrs.open);
+	            htmlNode.classList.toggle("fa-caret-right", !attrs.open);
+	            e.stopPropagation();
+	        }, true);
+	    }
+	    getClassList() {
+	        const attrs = this.attrs;
+	        attrs.open = attrs.open === void 0 ? true : Boolean(attrs.open);
+	        return "toggle-icon fa " + (this.attrs.open ? "fa-caret-down" : "fa-caret-right");
+	    }
+	}
+	exports.ToggleIcon = ToggleIcon;
+	createStyleSheet(`<style>
+	    .toggle-icon {
+	        width: 18px;
+	        padding: 0 4px;
+	    }
+	`);
+
+
+/***/ },
+/* 62 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const drag_action_1 = __webpack_require__(38);
+	class HierarchyItemDragAction extends drag_action_1.DragAction {
+	    constructor(item) {
+	        super();
+	        this.item = item;
+	        this.appElement = item.attrs.element;
+	    }
+	}
+	exports.HierarchyItemDragAction = HierarchyItemDragAction;
+
+
+/***/ },
+/* 63 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const editor_html_element_1 = __webpack_require__(19);
+	const hierarchy_item_1 = __webpack_require__(60);
+	const drag_action_1 = __webpack_require__(38);
+	const drag_hierarchy_item_1 = __webpack_require__(62);
+	const prefab_drag_action_1 = __webpack_require__(64);
+	class HierarchyItemDropTarget extends editor_html_element_1.EditorHTMLElement {
+	    onMounted() {
+	        this.target = this.parent;
+	    }
+	    onDragEnter(action) {
+	        this.addClass("hover");
+	    }
+	    onDragExit() {
+	        this.removeClass("hover");
+	    }
+	    onDrop(action) {
+	        const grandParent = this.target.getAncestorByType(hierarchy_item_1.HierarchyItem);
+	        if (!grandParent) {
+	            return;
+	        }
+	        let idx = grandParent.getChildRoot().getChildIndex(this.target);
+	        if (this.attrs.insert === "after")
+	            idx++;
+	        if (action instanceof prefab_drag_action_1.PrefabDragAction) {
+	            //create
+	        }
+	        else if (action instanceof drag_hierarchy_item_1.HierarchyItemDragAction) {
+	            //if shares parent, set index
+	            //else, set parent then index
+	            //action.appElement.setParent(this.target.attrs.element);
+	            action.appElement.setSiblingIndex(idx);
+	            grandParent.getChildRoot().insertChild(action.item, idx);
+	        }
+	    }
+	    createInitialStructure() {
+	        return Hex.createElement("div", { class: "hover-target-display" });
+	    }
+	}
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.MouseEnter(prefab_drag_action_1.PrefabDragAction),
+	    drag_action_1.DragAction.MouseEnter(drag_hierarchy_item_1.HierarchyItemDragAction)
+	], HierarchyItemDropTarget.prototype, "onDragEnter", null);
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.MouseExit(prefab_drag_action_1.PrefabDragAction),
+	    drag_action_1.DragAction.MouseExit(drag_hierarchy_item_1.HierarchyItemDragAction)
+	], HierarchyItemDropTarget.prototype, "onDragExit", null);
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.Drop(prefab_drag_action_1.PrefabDragAction),
+	    drag_action_1.DragAction.Drop(drag_hierarchy_item_1.HierarchyItemDragAction)
+	], HierarchyItemDropTarget.prototype, "onDrop", null);
+	exports.HierarchyItemDropTarget = HierarchyItemDropTarget;
+	createStyleSheet(`<style>
+	    
+	    .hierarchy-item-drop-target {
+	        position:relative;
+	    }
+	    
+	    .hierarchy-item-drop-target .hover-target-display {
+	        position: absolute;
+	        top: -2px;
+	        left: 0;
+	        height: 4px;
+	        width: 100%;
+	    }
+	    
+	    .hierarchy-item-drop-target.hover .hover-target-display {
+	        background: aliceblue;
+	    }
+	    
+	`);
+
+
+/***/ },
+/* 64 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const drag_action_1 = __webpack_require__(38);
+	class PrefabDragAction extends drag_action_1.DragAction {
+	    constructor(template) {
+	        super();
+	        this.template = template;
+	    }
+	}
+	exports.PrefabDragAction = PrefabDragAction;
+
+
+/***/ },
+/* 65 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const runtime_event_1 = __webpack_require__(6);
+	class SceneLoaded extends runtime_event_1.RuntimeEvent {
+	}
+	exports.SceneLoaded = SceneLoaded;
+
+
+/***/ },
+/* 66 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const editor_html_element_1 = __webpack_require__(19);
+	class EditorWindowElement extends editor_html_element_1.EditorHTMLElement {
+	}
+	exports.EditorWindowElement = EditorWindowElement;
+
+
+/***/ },
+/* 67 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const editor_html_element_1 = __webpack_require__(19);
 	function onClick(target, propertyKey, descriptor) {
 	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
 	    array.push({ type: "click", methodName: propertyKey });
@@ -3784,393 +5639,458 @@
 	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
 	}
 	exports.onKeyPress = onKeyPress;
+	function onFileDragEnter(target, propertyKey, descriptor) {
+	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
+	    array.push({ type: "dragenter", methodName: propertyKey });
+	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
+	}
+	exports.onFileDragEnter = onFileDragEnter;
+	function onFileDragExit(target, propertyKey, descriptor) {
+	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
+	    array.push({ type: "dragexit", methodName: propertyKey });
+	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
+	}
+	exports.onFileDragExit = onFileDragExit;
+	function onFileDragStart(target, propertyKey, descriptor) {
+	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
+	    array.push({ type: "dragstart", methodName: propertyKey });
+	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
+	}
+	exports.onFileDragStart = onFileDragStart;
+	function onFileDragEnd(target, propertyKey, descriptor) {
+	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
+	    array.push({ type: "dragend", methodName: propertyKey });
+	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
+	}
+	exports.onFileDragEnd = onFileDragEnd;
+	function onFileDrop(target, propertyKey, descriptor) {
+	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
+	    array.push({ type: "drop", methodName: propertyKey });
+	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
+	}
+	exports.onFileDrop = onFileDrop;
+	function onFileDragLeave(target, propertyKey, descriptor) {
+	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
+	    array.push({ type: "dragleave", methodName: propertyKey });
+	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
+	}
+	exports.onFileDragLeave = onFileDragLeave;
+	function onFileDrag(target, propertyKey, descriptor) {
+	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
+	    array.push({ type: "drag", methodName: propertyKey });
+	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
+	}
+	exports.onFileDrag = onFileDrag;
+	function onFileDragOver(target, propertyKey, descriptor) {
+	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
+	    array.push({ type: "dragover", methodName: propertyKey });
+	    editor_html_element_1.InputEventAnnotationMap.set(target, array);
+	}
+	exports.onFileDragOver = onFileDragOver;
 
 
 /***/ },
-/* 44 */
-/***/ function(module, exports) {
-
-	
-
-/***/ },
-/* 45 */
-/***/ function(module, exports) {
-
-	
-
-/***/ },
-/* 46 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const binding_compiler_1 = __webpack_require__(8);
-	function CreateBinding(context, one, two, three, four) {
-	    const path = Array.prototype.slice.call(arguments, 1);
-	    if (context instanceof EditorBinding) {
-	        return new EditorSubBinding(context, path);
+	const tslib_1 = __webpack_require__(4);
+	const editor_theme_1 = __webpack_require__(56);
+	const editor_window_element_1 = __webpack_require__(66);
+	const app_element_1 = __webpack_require__(29);
+	const scene_meta_bar_1 = __webpack_require__(69);
+	const vector2_1 = __webpack_require__(17);
+	const breakpoint_1 = __webpack_require__(70);
+	const drag_action_1 = __webpack_require__(38);
+	const prefab_drag_action_1 = __webpack_require__(64);
+	const rect_tool_1 = __webpack_require__(71);
+	const layout_1 = __webpack_require__(41);
+	class SceneWindow extends editor_window_element_1.EditorWindowElement {
+	    constructor() {
+	        super(...arguments);
+	        this.element = this;
+	        this.zoomLevel = 1;
+	        this.baseYOffset = 12;
+	        this.isPaintQueued = false;
+	        this.currentBreakpoint = breakpoint_1.BreakpointType.Mobile;
 	    }
-	    return new EditorBinding(context, path);
-	}
-	exports.CreateBinding = CreateBinding;
-	class EditorBinding {
-	    constructor(context, path) {
-	        this.element = null;
-	        this.context = context;
-	        this.getterFn = binding_compiler_1.getGetter(path);
-	        this.setterFn = binding_compiler_1.getSetter(path);
-	        this.value = this.getterFn(this.context);
-	        this.changeHandlers = [];
+	    getDomData() {
+	        return { tagName: "div", classList: "scene-window-root" };
+	    }
+	    getBreakpoint() {
+	        return this.currentBreakpoint;
+	    }
+	    setPreviewSize(breakpointType) {
+	        this.currentBreakpoint = breakpointType;
+	        this.frameDimensions = breakpoint_1.Breakpoint.getDimensions(breakpointType);
+	        this.panValue.x = ((this.width * 0.5) - (this.frameDimensions.x * 0.5)) | 0;
+	        this.panValue.y = this.baseYOffset;
+	        app_element_1.AppElement.Root.setPosition(this.panValue);
+	        app_element_1.AppElement.Root.setDimensions(this.frameDimensions.x, this.frameDimensions.y);
+	        this.resetZoom();
+	        this.drawFrameOutline();
+	        //invoke break point code
+	        this.paintScene();
+	    }
+	    paintScene() {
+	        this.isPaintQueued = true;
 	    }
 	    onUpdated() {
-	        const value = this.getterFn(this.context);
-	        if (value !== this.value) {
-	            const oldValue = this.value;
-	            this.value = value;
-	            this.sendChanges(this.value, oldValue);
+	        const input = EditorRuntime.getInput();
+	        if (input.isMouseInEditorElement(this.getChildRoot())) {
+	            this.zoom(input.getMouseWheelDelta().y);
 	        }
+	        //todo there is probably a way not to dirty check this
+	        const clientRect = this.getDomNode().getBoundingClientRect();
+	        if (clientRect.width !== this.width || clientRect.height !== this.height) {
+	            this.width = clientRect.width;
+	            this.height = clientRect.height;
+	            const renderRootBounds = this.getChildRoot().getDomNode().getBoundingClientRect();
+	            const renderRootWidth = renderRootBounds.width;
+	            const renderRootHeight = renderRootBounds.height;
+	            this.pixi.resize(renderRootWidth, renderRootHeight);
+	            this.setPreviewSize(this.currentBreakpoint);
+	        }
+	        this.currentTool.update();
+	        //if(this.isPaintQueued) {
+	        //    this.isPaintQueued = false;
+	        this.paintBackground();
+	        this.drawFrameOutline();
+	        this.drawSelection();
+	        this.pixi.render(this.stage);
+	        //}
 	    }
-	    set(value) {
-	        if (value === this.value)
+	    applyPanOffset(input) {
+	        input.x += this.panValue.x;
+	        input.y += this.panValue.y;
+	    }
+	    pan(delta) {
+	        if (delta.isZero())
 	            return;
-	        this.setterFn(this.context, value);
-	        const oldValue = this.value;
-	        this.value = value;
-	        this.sendChanges(this.value, oldValue);
+	        this.panValue.addVector(delta);
+	        app_element_1.AppElement.Root.setPosition(this.panValue);
+	        app_element_1.AppElement.Root.setDimensions(this.frameDimensions.x, this.frameDimensions.y);
+	        this.paintScene();
 	    }
-	    get() {
-	        return this.value;
+	    zoom(zoomDelta) {
+	        //todo -- disable until i have time to fix render scale
+	        //todo -- try to just set the canvas context scale
+	        // const oldWidth = this.frameDimensions.x * this.zoomLevel;
+	        // const oldHeight = this.frameDimensions.y * this.zoomLevel;
+	        // this.zoomLevel -= 0.05 * zoomDelta;
+	        // this.zoomLevel = clamp(this.zoomLevel, 0.1, 4);
+	        // const newWidth = this.frameDimensions.x * this.zoomLevel;
+	        // const newHeight = this.frameDimensions.y * this.zoomLevel;
+	        // const diff = new Vector2(
+	        //     (oldWidth - newWidth) * 0.5,
+	        //     (oldHeight - newHeight) * 0.5
+	        // );
+	        // this.pan(diff);
+	        // if(zoomDelta !== 0) {
+	        //     const childRootDom = this.getChildRoot().getDomNode();
+	        //     const appRootDom = childRootDom.firstElementChild as HTMLElement;
+	        //     appRootDom.style.transformOrigin = "top left";
+	        //     appRootDom.style.transform = "scale(" + this.zoomLevel + ")";
+	        // }
+	        // this.paintScene();
 	    }
-	    onChange(fn) {
-	        this.changeHandlers.push(fn);
-	        return this;
-	    }
-	    offChange(fn) {
-	        this.changeHandlers.remove(fn);
-	        return this;
-	    }
-	    setHost(host) {
-	        if (this.element) {
-	            EditorRuntime.updateTree.remove(this);
+	    resetZoom() {
+	        this.zoomLevel = 1;
+	        const width = this.width;
+	        const breakpointWidth = this.frameDimensions.x;
+	        if (breakpointWidth > width) {
+	            this.zoomLevel = width / breakpointWidth;
+	            this.panValue.x = ((this.zoomLevel * breakpointWidth * 0.5) - (width * 0.5)) | 0;
+	            this.panValue.y = this.baseYOffset;
 	        }
-	        this.element = host;
-	        if (this.element) {
-	            EditorRuntime.updateTree.add(this);
+	        this.zoom(0);
+	    }
+	    paintBackground() {
+	        this.canvas.width = this.width;
+	        this.canvas.height = this.height;
+	        this.ctx.clearRect(0, 0, this.width, this.height);
+	        this.ctx.fillStyle = editor_theme_1.WindowColors.sceneBackground;
+	        this.ctx.fillRect(0, 0, this.width, this.height);
+	        this.ctx.strokeStyle = '#FFFFFF';
+	        this.ctx.lineWidth = 0.5;
+	        this.ctx.globalAlpha = 0.2;
+	        this.ctx.beginPath();
+	        const spacing = 25;
+	        for (let i = 0; i < 100; i++) {
+	            const interval = i * spacing + 0.5;
+	            this.ctx.moveTo(0, interval);
+	            this.ctx.lineTo(this.width, interval);
+	            this.ctx.moveTo(interval, 0);
+	            this.ctx.lineTo(interval, this.height);
 	        }
-	        return this;
+	        this.ctx.closePath();
+	        this.ctx.stroke();
 	    }
-	    destroy() {
-	        this.context = null;
-	        this.changeHandlers = null;
-	        EditorRuntime.updateTree.remove(this);
-	        this.getterFn = null;
-	        this.setterFn = null;
-	        this.value = null;
-	        this.element = null;
+	    onRendered() {
+	        //todo swap tool based on layout type of parent of selection
+	        this.currentTool = new rect_tool_1.SceneRectTool(this); //new ScenePanTool(this);
+	        this.panValue = new vector2_1.Vector2();
+	        this.canvas = this.getChildBySelector('canvas').getDomNode();
+	        this.ctx = this.canvas.getContext("2d");
+	        EditorRuntime.drawScene(".scene-render-root");
+	        EditorRuntime.updateTree.add(this);
+	        PIXI.utils.skipHello();
+	        this.stage = new PIXI.Container();
+	        this.pixi = new PIXI.WebGLRenderer(256, 256, {
+	            autoResize: true,
+	            transparent: true,
+	            view: this.getChildById('foreground-canvas').getDomNode()
+	        });
+	        this.frameOutline = new PIXI.Graphics();
+	        this.dragThing = new PIXI.Graphics();
+	        this.selectionOutline = new PIXI.Graphics();
+	        this.stage.addChild(this.frameOutline);
+	        this.stage.addChild(this.dragThing);
+	        this.stage.addChild(this.selectionOutline);
+	        this.pixi.render(this.stage);
+	        this.setPreviewSize(this.currentBreakpoint);
 	    }
-	    sendChanges(newValue, oldValue) {
-	        for (let i = 0; i < this.changeHandlers.length; i++) {
-	            this.changeHandlers[i](newValue, oldValue);
+	    drawDragThing() {
+	        const input = EditorRuntime.getInput();
+	        const mouse = input.getMouseRelativeToEditorElement(this.getChildRoot());
+	        const mouseOver = Runtime.getAppElementAtPoint(mouse);
+	        if (mouseOver) {
+	            //see if we are over a layout element
+	            //if we are, simulate adding this to the layout at some fixed width (20px or something smallish)
+	            //might not need to do an actual layout
+	            //might get away with just shifting elements absolutely temporarily
+	            //if not in a layout element -- fill the current element
+	            //if in layout element within some gutter amount, do fancy preview
+	            this.dragThing.clear();
+	            this.dragThing.beginFill(0x00FF00, 0.2);
+	            this.dragThing.lineStyle(1, 0x00FF00);
+	            const position = mouseOver.getPosition();
+	            const layout = mouseOver.getComponent(layout_1.LayoutComponent);
+	            if (layout) {
+	                const slot = layout.getSlotAtPosition(mouse);
+	                //if slot !== last slot -> Cancel animation
+	                //draw layout position
+	                // this.dragThing.drawRect(
+	                //
+	                // )
+	            }
+	            else {
+	                //todo lerp this for sexiness
+	                this.dragThing.drawRect(position.x, position.y - 1, mouseOver.getWidth(), mouseOver.getHeight());
+	            }
 	        }
+	        else {
+	            this.dragThing.clear();
+	            this.dragThing.beginFill(0x00FF00, 0.2);
+	            this.dragThing.lineStyle(1, 0x00FF00);
+	            this.dragThing.drawRect(mouse.x - 50, mouse.y - 25, 100, 50);
+	        }
+	        this.paintScene();
 	    }
-	}
-	exports.EditorBinding = EditorBinding;
-	class EditorSubBinding extends EditorBinding {
-	    set(value) {
-	        if (value === this.value)
+	    drawFrameOutline() {
+	        this.frameOutline.clear();
+	        this.frameOutline.lineStyle(1, 0xFF00CD);
+	        this.frameOutline.drawRect(this.panValue.x, this.panValue.y - 1, this.zoomLevel * (this.frameDimensions.x + 1), this.zoomLevel * (this.frameDimensions.y));
+	    }
+	    drawSelection() {
+	        this.selectionOutline.clear();
+	        const selection = EditorRuntime.getSelection();
+	        if (!selection)
 	            return;
-	        this.setterFn(this.context.get(), value);
-	        const oldValue = this.value;
-	        this.value = value;
-	        this.sendChanges(this.value, oldValue);
-	    }
-	    onUpdated() {
-	        const value = this.getterFn(this.context.get());
-	        if (value !== this.value) {
-	            const oldValue = this.value;
-	            this.value = value;
-	            this.sendChanges(this.value, oldValue);
+	        const position = selection.getLocalPosition();
+	        const w = selection.getWidth();
+	        const h = selection.getHeight();
+	        this.selectionOutline.lineStyle(1, 0xFFFFFFFF);
+	        this.selectionOutline.rotation = selection.getRotation();
+	        //probably need to scale pan diff,
+	        //app root moves on zoom
+	        this.selectionOutline.drawRect(position.x, position.y - 1, (this.zoomLevel * w) + 1, this.zoomLevel * h);
+	        this.selectionOutline.lineStyle(1, 0x000000);
+	        this.selectionOutline.beginFill(0x87b0f2);
+	        this.selectionOutline.drawCircle(position.x, position.y, 5);
+	        this.selectionOutline.drawCircle(position.x + w, position.y, 5);
+	        this.selectionOutline.drawCircle(position.x + w, position.y + h, 5);
+	        this.selectionOutline.drawCircle(position.x, position.y + h, 5);
+	        this.selectionOutline.endFill();
+	        const parent = selection.getParent();
+	        let parentPosition = null;
+	        if (parent) {
+	            parentPosition = selection.getParent().getPosition();
 	        }
-	    }
-	    sendChanges(newValue, oldValue) {
-	        super.sendChanges(newValue, oldValue);
-	        const parentValue = this.context.get();
-	        const parentContext = this.context;
-	        parentContext.sendChanges(parentValue, parentValue);
-	    }
-	}
-	exports.EditorSubBinding = EditorSubBinding;
-
-
-/***/ },
-/* 47 */
-/***/ function(module, exports) {
-
-	
-
-/***/ },
-/* 48 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const drag_action_1 = __webpack_require__(34);
-	class DragAssetItemAction extends drag_action_1.DragAction {
-	    constructor(asset) {
-	        super();
-	        this.asset = asset;
-	    }
-	}
-	exports.DragAssetItemAction = DragAssetItemAction;
-
-
-/***/ },
-/* 49 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const drag_action_1 = __webpack_require__(34);
-	class PrefabDragAction extends drag_action_1.DragAction {
-	    constructor(template) {
-	        super();
-	        this.template = template;
-	    }
-	}
-	exports.PrefabDragAction = PrefabDragAction;
-
-
-/***/ },
-/* 50 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.WindowColors = {
-	    backgroundGrey: "#A2A2A2",
-	    borderGrey: "#828282",
-	    foregroundGrey: "#C2C2C2",
-	    selectedTabBodyGrey: "#E4E4E4",
-	    selectedTabBorderGrey: "#858585",
-	    sceneBackground: "#5D5D5D"
-	};
-
-
-/***/ },
-/* 51 */,
-/* 52 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	let editorDataMap = new Map();
-	let fnPrototype = Object.getPrototypeOf(function () { });
-	function getExposedFieldMap(target) {
-	    let map = null;
-	    let ptr = target.constructor;
-	    while (!map && ptr !== fnPrototype) {
-	        map = editorDataMap.get(ptr);
-	        if (map)
-	            return map;
-	        ptr = Object.getPrototypeOf(ptr);
-	    }
-	    return null;
-	}
-	exports.getExposedFieldMap = getExposedFieldMap;
-	function inspector(propertyType, ...propertyOptions) {
-	    return (target, propertyName) => {
-	        var fieldMap = editorDataMap.get(target.constructor);
-	        if (!fieldMap) {
-	            fieldMap = new Map();
-	            const parent = Object.getPrototypeOf(target.constructor);
-	            if (typeof parent === "function") {
-	                const parentFields = editorDataMap.get(parent);
-	                if (parentFields) {
-	                    parentFields.forEach(function (value, key) {
-	                        fieldMap.set(key, value);
-	                    });
-	                }
-	            }
-	            editorDataMap.set(target.constructor, fieldMap);
+	        else {
+	            parentPosition = selection.getPosition();
 	        }
-	        fieldMap.set(propertyName, { propertyName, propertyType, propertyOptions });
-	    };
-	}
-	exports.inspector = inspector;
-	function exposeAs(propertyType, ...propertyOptions) {
-	    return (target, propertyName) => {
-	        var fieldMap = editorDataMap.get(target.constructor);
-	        if (!fieldMap) {
-	            fieldMap = new Map();
-	            const parent = Object.getPrototypeOf(target.constructor);
-	            if (typeof parent === "function") {
-	                const parentFields = editorDataMap.get(parent);
-	                if (parentFields) {
-	                    parentFields.forEach(function (value, key) {
-	                        fieldMap.set(key, value);
-	                    });
-	                }
-	            }
-	            editorDataMap.set(target.constructor, fieldMap);
-	        }
-	        fieldMap.set(propertyName, { propertyName, propertyType, propertyOptions });
-	    };
-	}
-	exports.exposeAs = exposeAs;
-
-
-/***/ },
-/* 53 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const property_renderer_1 = __webpack_require__(54);
-	function propertyDrawer(typeToDraw) {
-	    return function (target) {
-	        property_renderer_1.PropertyRenderer.set(typeToDraw, target);
-	    };
-	}
-	exports.propertyDrawer = propertyDrawer;
-
-
-/***/ },
-/* 54 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const element_renderer_1 = __webpack_require__(5);
-	const editor_html_element_1 = __webpack_require__(15);
-	class PropertyRenderer extends editor_html_element_1.EditorHTMLElement {
+	        this.selectionOutline.position.set(parentPosition.x, parentPosition.y);
+	    }
 	    createInitialStructure(children) {
-	        return children;
+	        return [
+	            Hex.createElement(scene_meta_bar_1.SceneMetaBar, null),
+	            Hex.createElement("canvas", { "x-id": "background-canvas", class: "overlay-canvas" }),
+	            Hex.createElement("div", { "x-child-root": true, class: "scene-render-root" }),
+	            Hex.createElement("canvas", { "x-id": "foreground-canvas", class: "overlay-canvas" }),
+	        ];
 	    }
-	    static set(type, renderer) {
-	        PropertyRenderer.RendererMap.set(type, renderer);
+	    handleAssetDragEnter() {
+	        EditorRuntime.setCursor("-webkit-grabbing");
 	    }
-	    static get(component, editorData, attrs = null) {
-	        const rendererType = PropertyRenderer.RendererMap.get(editorData.propertyType);
-	        return element_renderer_1.createElement(rendererType, Object.assign({ component, editorData }, attrs));
+	    handleAssetDragHover() {
+	        this.drawDragThing();
+	    }
+	    handleAssetDragExit() {
+	        EditorRuntime.setCursor("default");
+	        this.dragThing.clear();
+	        this.paintScene();
+	    }
+	    handleAssetDrop(action) {
+	        const input = EditorRuntime.getInput();
+	        const mouse = input.getMouseRelativeToEditorElement(this.getChildRoot());
+	        const mouseOver = Runtime.getAppElementAtPoint(mouse);
+	        const appElement = action.template.create();
+	        if (mouseOver) {
+	            appElement.setParent(mouseOver);
+	            appElement.setPositionValues(0, 0, app_element_1.Space.Local);
+	            appElement.setDimensions(mouseOver.getWidth(), mouseOver.getHeight());
+	        }
+	        else {
+	            appElement.setParent(app_element_1.AppElement.Root);
+	            //todo handle pan value
+	            appElement.setPositionValues(mouse.x - 50, mouse.y - 25);
+	            appElement.setDimensions(100, 50);
+	        }
+	        EditorRuntime.select(appElement);
+	        this.dragThing.clear();
+	        this.paintScene();
 	    }
 	}
-	PropertyRenderer.RendererMap = new Map();
-	exports.PropertyRenderer = PropertyRenderer;
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.MouseEnter(prefab_drag_action_1.PrefabDragAction)
+	], SceneWindow.prototype, "handleAssetDragEnter", null);
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.MouseOver(prefab_drag_action_1.PrefabDragAction)
+	], SceneWindow.prototype, "handleAssetDragHover", null);
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.MouseExit(prefab_drag_action_1.PrefabDragAction)
+	], SceneWindow.prototype, "handleAssetDragExit", null);
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.Drop(prefab_drag_action_1.PrefabDragAction)
+	], SceneWindow.prototype, "handleAssetDrop", null);
+	exports.SceneWindow = SceneWindow;
+	createStyleSheet(`
+	<style>
+	        
+	.scene-window-root {
+	    overflow:hidden;
+	    width: 100%;
+	    height: 100%;
+	    display: flex;
+	    flex-direction: column;
+	    position: relative;
+	}
+
+	.scene-render-root {
+	    position: relative;
+	}
+
+	.overlay-canvas {
+	    position: absolute;
+	    top:21px; /*position under meta bar */
+	    left:0;
+	}
+
+	</style>`);
 
 
 /***/ },
-/* 55 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	Array.prototype.contains = function (item) {
-	    const length = this.length;
-	    for (let i = 0; i < length; i++) {
-	        if (this[i] === item)
-	            return true;
-	    }
-	    return false;
-	};
-	Array.prototype.getFirst = function () {
-	    return this[0];
-	};
-	Array.prototype.getLast = function () {
-	    return this[this.length - 1];
-	};
-	Array.prototype.remove = function (item) {
-	    const length = this.length;
-	    for (let i = 0; i < length; i++) {
-	        if (this[i] === item) {
-	            while (i < length) {
-	                this[i] = this[i + 1];
-	                i++;
-	            }
-	            this.length--;
-	            return true;
-	        }
-	    }
-	    return false;
-	};
-	Array.prototype.removeAt = function (index) {
-	    let len = this.length;
-	    if (!len) {
-	        return false;
-	    }
-	    while (index < len) {
-	        this[index] = this[index + 1];
-	        index++;
-	    }
-	    this.length--;
-	    return true;
-	};
-	Array.prototype.insert = function (item, index) {
-	    let i = this.length;
-	    this.length++;
-	    if (index >= this.length) {
-	        this[this.length - 1] = item;
-	        return;
-	    }
-	    while (i != index) {
-	        this[i] = this[--i];
-	    }
-	    this[index] = item;
-	};
-	exports.default = 0;
-
-
-/***/ },
-/* 56 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const util_1 = __webpack_require__(13);
-	const TEMP_ANNOTATION_1 = __webpack_require__(124);
-	let Asset = class Asset {
-	    constructor(assetDescription) {
-	        this.id = util_1.randomPositiveInteger();
-	        this.pathSegments = assetDescription.path.split("/");
+	const button_1 = __webpack_require__(59);
+	const scene_window_1 = __webpack_require__(68);
+	const editor_theme_1 = __webpack_require__(56);
+	const breakpoint_1 = __webpack_require__(70);
+	const editor_html_element_1 = __webpack_require__(19);
+	function round(places) {
+	    return function (value) {
+	        return value.toFixed(places);
+	    };
+	}
+	class SceneMetaBar extends editor_html_element_1.EditorHTMLElement {
+	    getDomData() {
+	        return { tagName: "div", classList: "scene-meta-bar" };
 	    }
-	    move(path) {
-	        const name = this.getName();
-	        this.pathSegments = path.split("/");
-	        this.pathSegments.push(name);
+	    onRendered() {
+	        this.scene = this.getAncestorByType(scene_window_1.SceneWindow);
+	        this.sceneSizeButtons = this.getChildBySelector(".scene-size").getChildrenByType(button_1.Button);
+	        this.setSelectedButton(this.scene.getBreakpoint());
 	    }
-	    setName(name) {
-	        name = name.replace(/\n/g, "");
-	        this.pathSegments[this.pathSegments.length - 1] = name;
-	        return name;
+	    createInitialStructure() {
+	        return [
+	            Hex.createElement("div", { class: "zoom-level" },
+	                Hex.createElement("span", null,
+	                    "Zoom Level \u00A0",
+	                    new window.EditorBindingElement(this, ["scene", "zoomLevel"]).format(round(2)))),
+	            Hex.createElement("div", { class: "scene-size" },
+	                Hex.createElement(button_1.Button, { onClick: () => { this.setScreenSize(breakpoint_1.BreakpointType.Mobile); } }, "Mobile"),
+	                Hex.createElement(button_1.Button, { onClick: () => { this.setScreenSize(breakpoint_1.BreakpointType.Tablet); } }, "Tablet"),
+	                Hex.createElement(button_1.Button, { onClick: () => { this.setScreenSize(breakpoint_1.BreakpointType.Laptop); } }, "Laptop"),
+	                Hex.createElement(button_1.Button, { onClick: () => { this.setScreenSize(breakpoint_1.BreakpointType.Desktop); } }, "Desktop"))
+	        ];
 	    }
-	    getName() {
-	        return this.pathSegments[this.pathSegments.length - 1];
+	    setScreenSize(breakpointType) {
+	        this.scene.setPreviewSize(breakpointType);
+	        this.setSelectedButton(breakpointType);
 	    }
-	    getPath() {
-	        return this.pathSegments.join("/");
+	    setSelectedButton(breakpointType) {
+	        this.sceneSizeButtons.forEach(function (button) {
+	            button.toggleClass("selected", breakpoint_1.BreakpointType[breakpointType] === button.getText());
+	        });
 	    }
-	    getPathSegments() {
-	        return this.pathSegments.slice(0);
-	    }
-	    getDepth() {
-	        return this.pathSegments.length - 1;
-	    }
-	};
-	Asset = tslib_1.__decorate([
-	    TEMP_ANNOTATION_1.serializeClass
-	], Asset);
-	exports.Asset = Asset;
+	}
+	exports.SceneMetaBar = SceneMetaBar;
+	createStyleSheet(`<style>
+
+	.zoom-level {
+	    position: absolute;
+	    left: 12px;
+	}
+
+	.scene-meta-bar {
+	    height: 21px;
+	    width: 100%;
+	    background: ${editor_theme_1.WindowColors.foregroundGrey};
+	    display: flex;
+	    flex-direction: row;
+	    align-items: center;
+	    justify-content: flex-end;
+	    z-index:2;
+	}
+
+	.scene-size .btn {
+	    background: none;
+	    border: none;
+	}
+
+	.scene-size .selected {
+	    background: aliceblue;
+	    border-left: 1px solid grey;
+	    border-right: 1px solid grey;
+	}
+
+	`);
 
 
 /***/ },
-/* 57 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const vector2_1 = __webpack_require__(14);
-	const TEMP_ANNOTATION_1 = __webpack_require__(124);
+	const tslib_1 = __webpack_require__(4);
+	const vector2_1 = __webpack_require__(17);
+	const TEMP_ANNOTATION_1 = __webpack_require__(18);
 	var BreakpointType;
 	(function (BreakpointType) {
 	    BreakpointType[BreakpointType["Mobile"] = 0] = "Mobile";
@@ -4184,16 +6104,17 @@
 	    BreakpointOrientation[BreakpointOrientation["Landscape"] = 1] = "Landscape";
 	})(BreakpointOrientation = exports.BreakpointOrientation || (exports.BreakpointOrientation = {}));
 	let Breakpoint = class Breakpoint {
+	    //todo this is super basic
 	    static getDimensions(name) {
 	        switch (name) {
 	            case BreakpointType.Mobile:
-	                return new vector2_1.Vector2(375, 667);
+	                return new vector2_1.Vector2(375, 667); //iphone 7
 	            case BreakpointType.Tablet:
-	                return new vector2_1.Vector2(768, 1024);
+	                return new vector2_1.Vector2(768, 1024); //ipad
 	            case BreakpointType.Laptop:
-	                return new vector2_1.Vector2(1280, 800);
+	                return new vector2_1.Vector2(1280, 800); //macbook
 	            case BreakpointType.Desktop:
-	                return new vector2_1.Vector2(1920, 1080);
+	                return new vector2_1.Vector2(1920, 1080); //hd desktop monitor
 	            default:
 	                return new vector2_1.Vector2(-1, -1);
 	        }
@@ -4206,679 +6127,14 @@
 
 
 /***/ },
-/* 58 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const e_command_type_1 = __webpack_require__(28);
-	Runtime.setCommandInvoker(e_command_type_1.CommandType.UpdateInput, function (data) {
-	    Runtime.getInput().deserialize(data);
-	});
-
-
-/***/ },
-/* 59 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const e_command_type_1 = __webpack_require__(28);
-	const background_component_1 = __webpack_require__(60);
-	const ui_component_1 = __webpack_require__(62);
-	const ComponentCache = new Array();
-	const ColorCache = {};
-	Runtime.setCommandSerializer(e_command_type_1.CommandType.Create, function (id) {
-	    ComponentCache.length = 0;
-	    const appElement = Runtime.getAppElementById(id);
-	    const components = appElement.getAllComponents(ComponentCache);
-	    const serializedComponents = new Array(components.length);
-	    for (let i = 0; i < components.length; i++) {
-	        serializedComponents[i] = components[i].serialize();
-	    }
-	    const uiComponent = appElement.getComponent(ui_component_1.UIComponent);
-	    let elementType = "Panel";
-	    if (uiComponent) {
-	        elementType = uiComponent.getTypeName();
-	    }
-	    return {
-	        id: id,
-	        elementType: elementType,
-	        components: serializedComponents,
-	        parentId: appElement.getParent().id
-	    };
-	});
-	Runtime.setCommandSerializer(e_command_type_1.CommandType.Destroy, function (data) {
-	    return data;
-	});
-	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetParent, function (data) {
-	    return data;
-	});
-	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetSiblingIndex, function (data) {
-	    return data;
-	});
-	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetText, function (data) {
-	    return data;
-	});
-	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetImage, function (data) {
-	    return { id: data.id, image: data.image };
-	});
-	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetPosition, function (id) {
-	    const appElement = Runtime.getAppElementById(id);
-	    const position = appElement.getLocalPosition();
-	    return { id: id, x: position.x | 0, y: position.y | 0 };
-	});
-	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetDimensions, function (id) {
-	    const appElement = Runtime.getAppElementById(id);
-	    return { id: id, width: appElement.getWidth(), height: appElement.getHeight() };
-	});
-	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetTransform, function (id) {
-	    const appElement = Runtime.getAppElementById(id);
-	    return { id: id, rotation: appElement.getRotation, scale: appElement.getScale() };
-	});
-	Runtime.setCommandSerializer(e_command_type_1.CommandType.PaintBackground, function (id) {
-	    const appElement = Runtime.getAppElementById(id);
-	    const background = appElement.getComponent(background_component_1.BackgroundComponent);
-	    return {
-	        id: id,
-	        color: background.color.copyTo(ColorCache)
-	    };
-	});
-
-
-/***/ },
-/* 60 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const component_1 = __webpack_require__(29);
-	const color_1 = __webpack_require__(61);
-	const e_command_type_1 = __webpack_require__(28);
-	const expose_as_1 = __webpack_require__(52);
-	const cerialize_1 = __webpack_require__(130);
-	let BackgroundComponent = class BackgroundComponent extends component_1.Component {
-	    constructor() {
-	        super(...arguments);
-	        this.color = color_1.Color.White;
-	    }
-	    setColor(color) {
-	        this.color.r = color.r;
-	        this.color.g = color.g;
-	        this.color.b = color.b;
-	        this.color.a = color.a;
-	        Runtime.sendCommand(e_command_type_1.CommandType.PaintBackground, this.appElement.id);
-	    }
-	    getColor() {
-	        return new color_1.Color(this.color.r, this.color.g, this.color.b, this.color.a);
-	    }
-	    static OnDeserialized(instance, json) {
-	        const c = json.color;
-	        instance.setColor(new color_1.Color(c.r, c.g, c.b, c.a));
-	    }
-	    serialize() {
-	        return {
-	            color: this.color.copyTo({})
-	        };
-	    }
-	};
-	tslib_1.__decorate([
-	    expose_as_1.inspector(color_1.Color),
-	    cerialize_1.serializeAs(color_1.Color)
-	], BackgroundComponent.prototype, "color", void 0);
-	BackgroundComponent = tslib_1.__decorate([
-	    component_1.component("Paint/Background")
-	], BackgroundComponent);
-	exports.BackgroundComponent = BackgroundComponent;
-
-
-/***/ },
-/* 61 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const TEMP_ANNOTATION_1 = __webpack_require__(124);
-	let Color = Color_1 = class Color {
-	    constructor(r = 0, g = 0, b = 0, a = 1) {
-	        this.r = r;
-	        this.g = g;
-	        this.b = b;
-	        this.a = a;
-	    }
-	    copyTo(input) {
-	        input.r = this.r;
-	        input.g = this.g;
-	        input.b = this.b;
-	        input.a = this.a;
-	        return input;
-	    }
-	    static get Black() { return new Color_1(0, 0, 0, 255); }
-	    static get Blue() { return new Color_1(0, 0, 255, 255); }
-	    static get Clear() { return new Color_1(0, 0, 0, 0); }
-	    static get Cyan() { return new Color_1(0, 255, 255, 255); }
-	    static get Gray() { return new Color_1(0.5, 0.5, 0.5, 255); }
-	    static get Green() { return new Color_1(0, 255, 0, 255); }
-	    static get Magenta() { return new Color_1(255, 0, 255, 255); }
-	    static get Red() { return new Color_1(255, 0, 0, 255); }
-	    static get Yellow() { return new Color_1(255, (0.92 * 255 | 0), (0.06 * 255 | 0), 255); }
-	    static get White() {
-	        return new Color_1(0, 0, 0, 255);
-	    }
-	};
-	Color = Color_1 = tslib_1.__decorate([
-	    TEMP_ANNOTATION_1.serializeClass
-	], Color);
-	exports.Color = Color;
-	var Color_1;
-
-
-/***/ },
-/* 62 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const component_1 = __webpack_require__(29);
-	const e_command_type_1 = __webpack_require__(28);
-	class Background {
-	    constructor() {
-	    }
-	    serialize() {
-	    }
-	}
-	exports.Background = Background;
-	class Transform {
-	}
-	exports.Transform = Transform;
-	let UIComponent = class UIComponent extends component_1.Component {
-	    setBackground() {
-	        Runtime.sendCommand(e_command_type_1.CommandType.PaintBackground, this.appElement.id);
-	    }
-	    getTypeName() {
-	        return this.constructor.name.replace("Component", "");
-	    }
-	    getBackground() {
-	        return this.background;
-	    }
-	    serialize() {
-	        return {
-	            commands: [
-	                {
-	                    type: e_command_type_1.CommandType.PaintBackground,
-	                    data: {}
-	                }
-	            ],
-	        };
-	    }
-	};
-	UIComponent = tslib_1.__decorate([
-	    component_1.component("UI")
-	], UIComponent);
-	exports.UIComponent = UIComponent;
-	class TextComponent extends UIComponent {
-	    serialize() {
-	        const retn = super.serialize();
-	        retn.commands.push({
-	            type: e_command_type_1.CommandType.SetText,
-	            data: { text: "hello world", font: "some font" }
-	        });
-	        return retn;
-	    }
-	}
-
-
-/***/ },
-/* 63 */,
-/* 64 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const layout_1 = __webpack_require__(129);
-	const expose_as_1 = __webpack_require__(52);
-	const util_1 = __webpack_require__(13);
-	const component_1 = __webpack_require__(29);
-	var SizingMode;
-	(function (SizingMode) {
-	    SizingMode[SizingMode["Fixed"] = 0] = "Fixed";
-	    SizingMode[SizingMode["Percent"] = 1] = "Percent";
-	    SizingMode[SizingMode["Fraction"] = 2] = "Fraction";
-	    SizingMode[SizingMode["Anchor"] = 3] = "Anchor";
-	})(SizingMode = exports.SizingMode || (exports.SizingMode = {}));
-	let SizingComponent = class SizingComponent extends component_1.Component {
-	    constructor() {
-	        super(...arguments);
-	        this.sizingMode = SizingMode.Fraction;
-	        this.width = 1;
-	        this.height = 1;
-	    }
-	    setLayoutRect(rect) {
-	    }
-	    onLayoutRectChanged(layoutRect) {
-	    }
-	    onMounted() {
-	        const layout = this.getComponentInParent(layout_1.LayoutComponent);
-	        if (layout) {
-	            layout.addSizingComponent(this);
-	        }
-	    }
-	    onDestroyed() {
-	        if (!this.appElement.isDestroyed()) {
-	            const layout = this.getComponentInParent(layout_1.LayoutComponent);
-	            if (layout) {
-	                layout.removeSizingComponent(this);
-	            }
-	        }
-	    }
-	};
-	tslib_1.__decorate([
-	    expose_as_1.exposeAs(util_1.EnumSelect, SizingMode)
-	], SizingComponent.prototype, "sizingMode", void 0);
-	tslib_1.__decorate([
-	    expose_as_1.exposeAs(Number)
-	], SizingComponent.prototype, "width", void 0);
-	tslib_1.__decorate([
-	    expose_as_1.exposeAs(Number)
-	], SizingComponent.prototype, "height", void 0);
-	SizingComponent = tslib_1.__decorate([
-	    component_1.component("Layout/Sizing")
-	], SizingComponent);
-	exports.SizingComponent = SizingComponent;
-
-
-/***/ },
-/* 65 */,
-/* 66 */,
-/* 67 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const ui_component_1 = __webpack_require__(62);
-	class Font {
-	}
-	exports.Font = Font;
-	class TypographyComponent extends ui_component_1.UIComponent {
-	    setTextAsync(text) {
-	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
-	            this.setTextPromise = new Promise((resolve) => {
-	            });
-	            return this.setTextPromise;
-	        });
-	    }
-	    setFontAsync(font) {
-	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
-	            return null;
-	        });
-	    }
-	}
-	exports.TypographyComponent = TypographyComponent;
-
-
-/***/ },
-/* 68 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const ui_component_1 = __webpack_require__(62);
-	const component_1 = __webpack_require__(29);
-	let PanelComponent = class PanelComponent extends ui_component_1.UIComponent {
-	    serialize() {
-	        return {
-	            elementType: "Panel"
-	        };
-	    }
-	};
-	PanelComponent = tslib_1.__decorate([
-	    component_1.component("UI/Panel")
-	], PanelComponent);
-	exports.PanelComponent = PanelComponent;
-
-
-/***/ },
-/* 69 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const component_1 = __webpack_require__(29);
-	const e_command_type_1 = __webpack_require__(28);
-	const ui_component_1 = __webpack_require__(62);
-	let TextComponent = class TextComponent extends ui_component_1.UIComponent {
-	    constructor() {
-	        super(...arguments);
-	        this.textContent = "";
-	        this.font = {
-	            name: "Roboto",
-	            size: 12,
-	            lineHeight: 1,
-	            weight: 400,
-	            decoration: "none"
-	        };
-	    }
-	    getFontSize() {
-	        return this.font.size;
-	    }
-	    getFontName() {
-	        return this.font.name;
-	    }
-	    getTextContent() {
-	        return this.textContent;
-	    }
-	    setTextAsync(text) {
-	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
-	            return yield Runtime.awaitCommand(e_command_type_1.CommandType.SetText, {
-	                id: this.appElement.id,
-	                text: text,
-	                font: this.font,
-	                setFont: false
-	            }).then((width) => {
-	                this.textContent = text;
-	                this.appElement.setWidth(width);
-	                return this.textContent;
-	            });
-	        });
-	    }
-	    setFontAsync(font) {
-	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
-	            return yield Runtime.awaitCommand(e_command_type_1.CommandType.SetText, {
-	                id: this.appElement.id,
-	                text: this.textContent,
-	                font: font,
-	                setFont: true
-	            }).then((width) => {
-	                this.font = font;
-	                this.appElement.setWidth(width);
-	                return this.font;
-	            });
-	        });
-	    }
-	    static OnDeserialized(instance, json) {
-	        instance.textContent = json.textContent;
-	    }
-	    serialize() {
-	        return {
-	            commands: [
-	                {
-	                    type: e_command_type_1.CommandType.SetText,
-	                    data: {
-	                        id: this.appElement.id,
-	                        text: this.textContent,
-	                        font: this.font
-	                    }
-	                }
-	            ]
-	        };
-	    }
-	};
-	TextComponent = tslib_1.__decorate([
-	    component_1.component("UI/Text")
-	], TextComponent);
-	exports.TextComponent = TextComponent;
-
-
-/***/ },
-/* 70 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	var KeyCode;
-	(function (KeyCode) {
-	    KeyCode[KeyCode["Backspace"] = 8] = "Backspace";
-	    KeyCode[KeyCode["Tab"] = 9] = "Tab";
-	    KeyCode[KeyCode["Enter"] = 13] = "Enter";
-	    KeyCode[KeyCode["Shift"] = 16] = "Shift";
-	    KeyCode[KeyCode["Ctrl"] = 17] = "Ctrl";
-	    KeyCode[KeyCode["Alt"] = 18] = "Alt";
-	    KeyCode[KeyCode["PauseBreak"] = 19] = "PauseBreak";
-	    KeyCode[KeyCode["CapsLock"] = 20] = "CapsLock";
-	    KeyCode[KeyCode["Escape"] = 27] = "Escape";
-	    KeyCode[KeyCode["Space"] = 32] = "Space";
-	    KeyCode[KeyCode["PageUp"] = 33] = "PageUp";
-	    KeyCode[KeyCode["PageDown"] = 34] = "PageDown";
-	    KeyCode[KeyCode["End"] = 35] = "End";
-	    KeyCode[KeyCode["Home"] = 36] = "Home";
-	    KeyCode[KeyCode["LeftArrow"] = 37] = "LeftArrow";
-	    KeyCode[KeyCode["UpArrow"] = 38] = "UpArrow";
-	    KeyCode[KeyCode["RightArrow"] = 39] = "RightArrow";
-	    KeyCode[KeyCode["DownArrow"] = 40] = "DownArrow";
-	    KeyCode[KeyCode["Insert"] = 45] = "Insert";
-	    KeyCode[KeyCode["Delete"] = 46] = "Delete";
-	    KeyCode[KeyCode["Zero"] = 48] = "Zero";
-	    KeyCode[KeyCode["One"] = 49] = "One";
-	    KeyCode[KeyCode["Two"] = 50] = "Two";
-	    KeyCode[KeyCode["Three"] = 51] = "Three";
-	    KeyCode[KeyCode["Four"] = 52] = "Four";
-	    KeyCode[KeyCode["Five"] = 53] = "Five";
-	    KeyCode[KeyCode["Six"] = 54] = "Six";
-	    KeyCode[KeyCode["Seven"] = 55] = "Seven";
-	    KeyCode[KeyCode["Eight"] = 56] = "Eight";
-	    KeyCode[KeyCode["Nine"] = 57] = "Nine";
-	    KeyCode[KeyCode["A"] = 65] = "A";
-	    KeyCode[KeyCode["B"] = 66] = "B";
-	    KeyCode[KeyCode["C"] = 67] = "C";
-	    KeyCode[KeyCode["D"] = 68] = "D";
-	    KeyCode[KeyCode["E"] = 69] = "E";
-	    KeyCode[KeyCode["F"] = 70] = "F";
-	    KeyCode[KeyCode["G"] = 71] = "G";
-	    KeyCode[KeyCode["H"] = 72] = "H";
-	    KeyCode[KeyCode["I"] = 73] = "I";
-	    KeyCode[KeyCode["J"] = 74] = "J";
-	    KeyCode[KeyCode["K"] = 75] = "K";
-	    KeyCode[KeyCode["L"] = 76] = "L";
-	    KeyCode[KeyCode["M"] = 77] = "M";
-	    KeyCode[KeyCode["N"] = 78] = "N";
-	    KeyCode[KeyCode["O"] = 79] = "O";
-	    KeyCode[KeyCode["P"] = 80] = "P";
-	    KeyCode[KeyCode["Q"] = 81] = "Q";
-	    KeyCode[KeyCode["R"] = 82] = "R";
-	    KeyCode[KeyCode["S"] = 83] = "S";
-	    KeyCode[KeyCode["T"] = 84] = "T";
-	    KeyCode[KeyCode["U"] = 85] = "U";
-	    KeyCode[KeyCode["V"] = 86] = "V";
-	    KeyCode[KeyCode["W"] = 87] = "W";
-	    KeyCode[KeyCode["X"] = 88] = "X";
-	    KeyCode[KeyCode["Y"] = 89] = "Y";
-	    KeyCode[KeyCode["Z"] = 90] = "Z";
-	    KeyCode[KeyCode["LeftWindows"] = 91] = "LeftWindows";
-	    KeyCode[KeyCode["RightWindows"] = 92] = "RightWindows";
-	    KeyCode[KeyCode["Select"] = 93] = "Select";
-	    KeyCode[KeyCode["Numpad0"] = 96] = "Numpad0";
-	    KeyCode[KeyCode["Numpad1"] = 97] = "Numpad1";
-	    KeyCode[KeyCode["Numpad2"] = 98] = "Numpad2";
-	    KeyCode[KeyCode["Numpad3"] = 99] = "Numpad3";
-	    KeyCode[KeyCode["Numpad4"] = 100] = "Numpad4";
-	    KeyCode[KeyCode["Numpad5"] = 101] = "Numpad5";
-	    KeyCode[KeyCode["Numpad6"] = 102] = "Numpad6";
-	    KeyCode[KeyCode["Numpad7"] = 103] = "Numpad7";
-	    KeyCode[KeyCode["Numpad8"] = 104] = "Numpad8";
-	    KeyCode[KeyCode["Numpad9"] = 105] = "Numpad9";
-	    KeyCode[KeyCode["Multiply"] = 106] = "Multiply";
-	    KeyCode[KeyCode["Add"] = 107] = "Add";
-	    KeyCode[KeyCode["Subtract"] = 109] = "Subtract";
-	    KeyCode[KeyCode["Decimal"] = 110] = "Decimal";
-	    KeyCode[KeyCode["Divide"] = 111] = "Divide";
-	    KeyCode[KeyCode["F1"] = 112] = "F1";
-	    KeyCode[KeyCode["F2"] = 113] = "F2";
-	    KeyCode[KeyCode["F3"] = 114] = "F3";
-	    KeyCode[KeyCode["F4"] = 115] = "F4";
-	    KeyCode[KeyCode["F5"] = 116] = "F5";
-	    KeyCode[KeyCode["F6"] = 117] = "F6";
-	    KeyCode[KeyCode["F7"] = 118] = "F7";
-	    KeyCode[KeyCode["F8"] = 119] = "F8";
-	    KeyCode[KeyCode["F9"] = 120] = "F9";
-	    KeyCode[KeyCode["F10"] = 121] = "F10";
-	    KeyCode[KeyCode["F11"] = 122] = "F11";
-	    KeyCode[KeyCode["F12"] = 123] = "F12";
-	    KeyCode[KeyCode["NumLock"] = 144] = "NumLock";
-	    KeyCode[KeyCode["ScrollLock"] = 145] = "ScrollLock";
-	    KeyCode[KeyCode["SemiColon"] = 186] = "SemiColon";
-	    KeyCode[KeyCode["Equal"] = 187] = "Equal";
-	    KeyCode[KeyCode["Comma"] = 188] = "Comma";
-	    KeyCode[KeyCode["Dash"] = 189] = "Dash";
-	    KeyCode[KeyCode["Period"] = 190] = "Period";
-	    KeyCode[KeyCode["ForwardSlash"] = 191] = "ForwardSlash";
-	    KeyCode[KeyCode["GraveAccent"] = 192] = "GraveAccent";
-	    KeyCode[KeyCode["OpenBracket"] = 219] = "OpenBracket";
-	    KeyCode[KeyCode["BackSlash"] = 220] = "BackSlash";
-	    KeyCode[KeyCode["CloseBracket"] = 221] = "CloseBracket";
-	    KeyCode[KeyCode["SingleQuote"] = 222] = "SingleQuote";
-	})(KeyCode = exports.KeyCode || (exports.KeyCode = {}));
-
-
-/***/ },
 /* 71 */
-/***/ function(module, exports) {
-
-	
-
-/***/ },
-/* 72 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-
-
-/***/ },
-/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(15);
-	class Button extends editor_html_element_1.EditorHTMLElement {
-	    getDomData() {
-	        return {
-	            tagName: "button",
-	            classList: "btn"
-	        };
-	    }
-	}
-	exports.Button = Button;
-
-
-/***/ },
-/* 74 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const binding_1 = __webpack_require__(46);
-	const editor_html_element_1 = __webpack_require__(15);
-	class InputRenderer extends editor_html_element_1.EditorHTMLElement {
-	    onCreated() {
-	        if (this.attrs.value instanceof binding_1.EditorBinding) {
-	            this.binding = this.attrs.value;
-	            this.binding.setHost(this);
-	            this.binding.onChange((a, b) => {
-	                this.onValueChanged(a, b);
-	            });
-	        }
-	        else {
-	            this.binding = binding_1.CreateBinding(this.attrs, "value");
-	        }
-	    }
-	    onValueChanged(newValue, oldValue) { }
-	}
-	exports.InputRenderer = InputRenderer;
-
-
-/***/ },
-/* 75 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(15);
-	class HorizontalBase extends editor_html_element_1.EditorHTMLElement {
-	    getDomData() {
-	        return HorizontalBase.DomData;
-	    }
-	}
-	HorizontalBase.DomData = { tagName: "div", classList: "horizontal" };
-	exports.HorizontalBase = HorizontalBase;
-	class Horizontal extends HorizontalBase {
-	}
-	exports.Horizontal = Horizontal;
-	createStyleSheet(`<style>
-	.horizontal {
-	    display:flex;
-	    flex-direction:row;
-	}
-	</style>`);
-
-
-/***/ },
-/* 76 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const scene_tool_1 = __webpack_require__(77);
-	class ScenePanTool extends scene_tool_1.SceneTool {
-	    constructor() {
-	        super(...arguments);
-	        this.panning = false;
-	    }
-	    update() {
-	        const input = EditorRuntime.getInput();
-	        if (!input.isMouseInEditorElement(this.sceneBodyRoot)) {
-	            this.panning = false;
-	            return;
-	        }
-	        if (input.isMouseDownThisFrame()) {
-	            this.panning = true;
-	            this.sceneWindow.pan(input.getMouseDelta());
-	        }
-	        else if (this.panning && input.isMouseDown()) {
-	            this.sceneWindow.pan(input.getMouseDelta());
-	        }
-	        else if (input.isMouseUp()) {
-	            this.panning = false;
-	        }
-	    }
-	}
-	exports.ScenePanTool = ScenePanTool;
-
-
-/***/ },
-/* 77 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	class SceneTool {
-	    constructor(sceneWindow) {
-	        this.sceneWindow = sceneWindow;
-	        this.sceneBodyRoot = this.sceneWindow.getChildRoot();
-	    }
-	    update() { }
-	    enable() { }
-	    disable() { }
-	}
-	exports.SceneTool = SceneTool;
-
-
-/***/ },
-/* 78 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const scene_tool_1 = __webpack_require__(77);
-	const util_1 = __webpack_require__(13);
-	const app_element_1 = __webpack_require__(25);
+	const scene_tool_1 = __webpack_require__(72);
+	const util_1 = __webpack_require__(16);
+	const app_element_1 = __webpack_require__(29);
 	var DragSide;
 	(function (DragSide) {
 	    DragSide[DragSide["None"] = 0] = "None";
@@ -4998,6 +6254,7 @@
 	        return DragSide.None;
 	    }
 	    updateDragSide(delta, appElement) {
+	        //todo may want this to be Axis-Aligned
 	        const rect = appElement.getBoundingBox();
 	        switch (this.draggedSide) {
 	            case DragSide.TopRight:
@@ -5057,1454 +6314,41 @@
 
 
 /***/ },
-/* 79 */
-/***/ function(module, exports, __webpack_require__) {
+/* 72 */
+/***/ function(module, exports) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const split_pane_1 = __webpack_require__(80);
-	const editor_window_frame_1 = __webpack_require__(81);
-	const hierarchy_window_1 = __webpack_require__(83);
-	const scene_window_1 = __webpack_require__(88);
-	const inspector_window_1 = __webpack_require__(90);
-	const editor_theme_1 = __webpack_require__(50);
-	const asset_window_1 = __webpack_require__(103);
-	const menu_bar_1 = __webpack_require__(109);
-	const editor_html_element_1 = __webpack_require__(15);
-	class EditorApplication extends editor_html_element_1.EditorHTMLElement {
-	    getDomData() {
-	        return { tagName: "div", classList: "editor-application" };
+	class SceneTool {
+	    constructor(sceneWindow) {
+	        this.sceneWindow = sceneWindow;
+	        this.sceneBodyRoot = this.sceneWindow.getChildRoot();
 	    }
-	    createInitialStructure(children) {
-	        return [
-	            Hex.createElement(menu_bar_1.MenuBar, null),
-	            Hex.createElement(split_pane_1.SplitPane, { distribution: 0.2 },
-	                Hex.createElement(split_pane_1.SplitPane, { axis: 1 },
-	                    Hex.createElement(editor_window_frame_1.WindowFrame, null,
-	                        Hex.createElement(hierarchy_window_1.HierarchyWindow, { title: "Hierarchy", icon: "" })),
-	                    Hex.createElement(editor_window_frame_1.WindowFrame, null,
-	                        Hex.createElement(asset_window_1.AssetWindow, { title: "Assets", icon: "" }))),
-	                Hex.createElement(split_pane_1.SplitPane, { distribution: 0.7, axis: 0 },
-	                    Hex.createElement(editor_window_frame_1.WindowFrame, null,
-	                        Hex.createElement(scene_window_1.SceneWindow, { title: "Scene", icon: "" })),
-	                    Hex.createElement(editor_window_frame_1.WindowFrame, null,
-	                        Hex.createElement(inspector_window_1.InspectorWindow, { title: "Inspector", icon: "" }))))
-	        ];
-	    }
+	    update() { }
+	    enable() { }
+	    disable() { }
 	}
-	exports.EditorApplication = EditorApplication;
-	createStyleSheet(`<style>
-
-	.editor-application {
-	    overflow:hidden;
-	    width: 100%;
-	    height: 100%;
-	    background: ${editor_theme_1.WindowColors.backgroundGrey};
-	    position: relative;
-	}
-	</style>`);
-	EditorRuntime.start(EditorApplication);
+	exports.SceneTool = SceneTool;
 
 
 /***/ },
-/* 80 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const evt_window_resized_1 = __webpack_require__(17);
-	const element_renderer_1 = __webpack_require__(5);
-	const util_1 = __webpack_require__(13);
-	const editor_html_element_1 = __webpack_require__(15);
-	class SplitPane extends editor_html_element_1.EditorHTMLElement {
-	    constructor() {
-	        super(...arguments);
-	        this.element = this;
-	        this.gutterSize = 4;
-	    }
-	    getDomData() {
-	        let classList = "split-pane";
-	        if (!this.isVertical()) {
-	            classList += " horizontal";
-	        }
-	        return { tagName: "div", classList };
-	    }
-	    onWindowResized() {
-	        this.computeDimensions();
-	    }
-	    onRendered() {
-	        this.distribution = util_1.clamp01(this.attrs.distribution || 0.5);
-	        this.attrs.minSize = this.attrs.minSize || 200;
-	        this.content0Node = this.getChildById("content0").getDomNode();
-	        this.content1Node = this.getChildById("content1").getDomNode();
-	        this.gutterNode = this.getChildById("gutter").getDomNode();
-	        this.computeDimensions();
-	        EditorRuntime.on(evt_window_resized_1.WindowResized, this);
-	    }
-	    onParentRendered() {
-	        this.computeDimensions();
-	    }
-	    onDestroyed() {
-	        EditorRuntime.off(evt_window_resized_1.WindowResized, this);
-	    }
-	    computeDimensions() {
-	        if (!this.isRendered)
-	            return;
-	        this.updateTotalSize();
-	        if (!this.content0Child) {
-	            this.c0Size = 0;
-	            this.c1Size = this.totalSize;
-	            this.getChildById("gutter").setVisible(false);
-	        }
-	        if (!this.content1Child) {
-	            this.c0Size = this.totalSize;
-	            this.c1Size = 0;
-	            this.getChildById("gutter").setVisible(false);
-	        }
-	        if (this.content0Child && this.content1Child) {
-	            this.c0Size = (this.totalSize * this.distribution) - (this.gutterSize * 0.5);
-	            this.c1Size = this.totalSize - this.c0Size - this.gutterSize;
-	            this.getChildById("gutter").setVisible(true);
-	        }
-	        this.applySizeChanges();
-	    }
-	    setPane0Content(element) {
-	        const container = this.getChildById("content0");
-	        container.orphanChildren();
-	        this.content0Child = element;
-	        if (element) {
-	            element.orphan();
-	            container.addChild(element);
-	        }
-	        this.computeDimensions();
-	    }
-	    getPane0Content() {
-	        return this.content0Child;
-	    }
-	    setPane1Content(element) {
-	        const container = this.getChildById("content1");
-	        container.orphanChildren();
-	        this.content1Child = element;
-	        if (element) {
-	            element.orphan();
-	            container.addChild(element);
-	        }
-	        this.computeDimensions();
-	    }
-	    getPane1Content() {
-	        return this.content1Child;
-	    }
-	    onUpdated() {
-	        const input = EditorRuntime.getInput();
-	        if (input.isMouseUp()) {
-	            EditorRuntime.updateTree.remove(this);
-	            return;
-	        }
-	        const delta = this.getMouseDelta();
-	        if (delta === 0)
-	            return;
-	        const total = this.c0Size + delta;
-	        const shrink = delta < 0 && total > this.attrs.minSize;
-	        const grow = delta > 0 && total < this.totalSize - this.attrs.minSize;
-	        if (shrink || grow) {
-	            this.c0Size += delta;
-	            this.c1Size -= delta;
-	            this.applySizeChanges();
-	            this.distribution = 1.0 - ((this.totalSize - this.c0Size) / this.totalSize);
-	            if (this.content0Child instanceof SplitPane) {
-	                this.content0Child.computeDimensions();
-	            }
-	            if (this.content1Child instanceof SplitPane) {
-	                this.content1Child.computeDimensions();
-	            }
-	        }
-	    }
-	    isVertical() {
-	        return this.attrs.axis === 0;
-	    }
-	    startGutterDrag() {
-	        EditorRuntime.updateTree.add(this);
-	    }
-	    getMouseDelta() {
-	        if (this.isVertical()) {
-	            return EditorRuntime.getInput().getMouseDelta().x;
-	        }
-	        else {
-	            return EditorRuntime.getInput().getMouseDelta().y;
-	        }
-	    }
-	    updateTotalSize() {
-	        if (this.isVertical()) {
-	            this.totalSize = (this.parent.getDomNode().clientWidth - (this.gutterSize * 0.5) | 0);
-	        }
-	        else {
-	            this.totalSize = (this.parent.getDomNode().clientHeight - (this.gutterSize * 0.5) | 0);
-	        }
-	    }
-	    applySizeChanges() {
-	        if (this.isVertical()) {
-	            this.content0Node.style.width = (this.c0Size | 0) + "px";
-	            this.gutterNode.style.left = (this.c0Size | 0) + "px";
-	            this.content1Node.style.left = ((this.gutterSize + this.c0Size) | 0) + "px";
-	            this.content1Node.style.width = (this.c1Size | 0) + "px";
-	        }
-	        else {
-	            this.content0Node.style.height = this.c0Size + "px";
-	            this.gutterNode.style.top = this.c0Size + "px";
-	            this.content1Node.style.top = (this.gutterSize + this.c0Size) + "px";
-	            this.content1Node.style.height = this.c1Size + "px";
-	        }
-	    }
-	    ensureOrientation() {
-	        if (this.attrs.axis !== 0
-	            && this.attrs.axis !== 1) {
-	            this.attrs.axis = 0;
-	        }
-	    }
-	    createInitialStructure(children) {
-	        this.content0Child = children[0];
-	        this.content1Child = children[1];
-	        this.ensureOrientation();
-	        let gutterClass = "gutter-";
-	        gutterClass += this.isVertical() ? "vertical" : "horizontal";
-	        return [
-	            Hex.createElement("div", { "x-id": "content0", class: "split-pane-panel" }, children[0]),
-	            Hex.createElement("div", { "x-id": "gutter", class: gutterClass, onMouseDown: this.startGutterDrag }),
-	            Hex.createElement("div", { "x-id": "content1", class: "split-pane-panel" }, children[1])
-	        ];
-	    }
-	    setAxis(axis) {
-	        if (this.attrs.axis === axis)
-	            return;
-	        this.attrs.axis = axis;
-	        const gutterNode = this.getChildById("gutter").getDomNode();
-	        if (this.attrs.axis === 0) {
-	            gutterNode.classList.remove("gutter-horizontal");
-	            gutterNode.classList.add("gutter-vertical");
-	            gutterNode.style.top = "0";
-	        }
-	        else {
-	            gutterNode.classList.remove("gutter-vertical");
-	            gutterNode.classList.add("gutter-horizontal");
-	            gutterNode.style.left = "0";
-	        }
-	        this.computeDimensions();
-	    }
-	    setOrSplitPane0(element, axis = 0, distribution = 0.5) {
-	        const contentContainer = this.getChildById("content0");
-	        if (this.content0Child) {
-	            const split = element_renderer_1.createElement(SplitPane, { axis: axis });
-	            const child = this.content0Child;
-	            split.setPane0Content(element);
-	            split.setPane1Content(child);
-	            this.setPane0Content(split);
-	            split.computeDimensions();
-	        }
-	        else {
-	            this.setAxis(axis);
-	            contentContainer.addChild(element);
-	            this.content0Child = element;
-	        }
-	        if (distribution)
-	            this.distribution = util_1.clamp01(distribution);
-	        this.computeDimensions();
-	    }
-	    setOrSplitPane1(element, axis = 0, distribution = 0.5) {
-	        const contentContainer = this.getChildById("content1");
-	        if (this.content1Child) {
-	            const split = element_renderer_1.createElement(SplitPane, { axis: axis });
-	            const child = this.content1Child;
-	            split.setPane0Content(child);
-	            split.setPane1Content(element);
-	            this.setPane1Content(split);
-	            split.computeDimensions();
-	        }
-	        else {
-	            this.setAxis(axis);
-	            contentContainer.addChild(element);
-	            this.content1Child = element;
-	        }
-	        if (distribution)
-	            this.distribution = util_1.clamp01(distribution);
-	        this.computeDimensions();
-	    }
-	}
-	exports.SplitPane = SplitPane;
-	class VerticalSplitPane extends SplitPane {
-	    ensureOrientation() {
-	        this.attrs.axis = 0;
-	    }
-	}
-	exports.VerticalSplitPane = VerticalSplitPane;
-	class HorizontalSplitPane extends SplitPane {
-	    ensureOrientation() {
-	        this.attrs.axis = 1;
-	    }
-	}
-	exports.HorizontalSplitPane = HorizontalSplitPane;
-	createStyleSheet(`<style>
-
-	.split-pane {
-	    width: 100%;
-	    height: 100%;
-	    position:relative;
-	    overflow: hidden;
-	}
-
-	.split-pane .split-pane-panel {
-	    height: 100%;
-	}
-
-	.split-pane.horizontal .split-pane-panel {
-	    width: 100%;
-	}
-
-	.split-pane-panel {
-	    overflow:hidden;
-	    position:absolute;
-	}
-
-	.gutter-vertical {
-	    width: 4px;
-	    min-width:4px;
-	    height:100%;
-	    /*cursor: ew-resize;*/
-	    position:absolute;;
-	}
-
-	.gutter-horizontal{
-	    width: 100%;
-	    height: 4px;
-	    min-height:4px;
-	    /*cursor: ns-resize;*/
-	    position:absolute;;
-	}
-
-	</style>`);
-
-
-/***/ },
-/* 81 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const split_pane_1 = __webpack_require__(80);
-	const editor_theme_1 = __webpack_require__(50);
-	const element_renderer_1 = __webpack_require__(5);
-	const editor_window_tab_1 = __webpack_require__(82);
-	const editor_html_element_1 = __webpack_require__(15);
-	const coverDiv = document.createElement('div');
-	coverDiv.style.position = "absolute";
-	coverDiv.style.zIndex = "400";
-	coverDiv.style.background = "magenta";
-	class WindowFrame extends editor_html_element_1.EditorHTMLElement {
-	    constructor() {
-	        super(...arguments);
-	        this.element = this;
-	    }
-	    onCreated() {
-	        this.windows = [];
-	        this.isCoverInDom = false;
-	        this.draggedWindowData = null;
-	    }
-	    getDomData() {
-	        return {
-	            tagName: "div",
-	            classList: "window-frame"
-	        };
-	    }
-	    onRendered() {
-	        this.setVisibleWindow(this.windows[0]);
-	        this.parentSplitPane = this.getAncestorByType(split_pane_1.SplitPane);
-	    }
-	    setVisibleWindow(window) {
-	        for (let i = 0; i < this.windows.length; i++) {
-	            if (this.windows[i] === window) {
-	                this.windows[i].tab.setActive(true);
-	                this.windows[i].content.setVisible(true);
-	            }
-	            else {
-	                this.windows[i].tab.setActive(false);
-	                this.windows[i].content.setVisible(false);
-	            }
-	        }
-	    }
-	    onUpdated() {
-	        const Input = EditorRuntime.getInput();
-	        if (Input.isMouseUp()) {
-	            this.isCoverInDom = false;
-	            coverDiv.remove();
-	            EditorRuntime.updateTree.remove(this);
-	            const mouse = Input.getMousePosition();
-	            const hoverElement = EditorRuntime.getEditorElementAtPoint(mouse);
-	            const windowFrame = hoverElement.getAncestorByType(WindowFrame);
-	            if (windowFrame) {
-	                const rect = windowFrame.getChildById("body").getClientBounds();
-	                if (WindowFrame.mouseOnLeft(mouse, rect)) {
-	                    const frame = element_renderer_1.createElement(WindowFrame);
-	                    this.parentSplitPane.setOrSplitPane0(frame, 0);
-	                    frame.addExistingWindow(this.draggedWindowData);
-	                }
-	                else if (WindowFrame.mouseOnRight(mouse, rect)) {
-	                    const frame = element_renderer_1.createElement(WindowFrame);
-	                    this.parentSplitPane.setOrSplitPane1(frame, 0);
-	                    frame.addExistingWindow(this.draggedWindowData);
-	                }
-	                else if (WindowFrame.mouseOnBottom(mouse, rect)) {
-	                    const frame = element_renderer_1.createElement(WindowFrame);
-	                    this.parentSplitPane.setOrSplitPane1(frame, 1);
-	                    frame.addExistingWindow(this.draggedWindowData);
-	                }
-	                else if (this === windowFrame) {
-	                }
-	                else {
-	                    windowFrame.addExistingWindow(this.draggedWindowData);
-	                }
-	            }
-	            this.draggedWindowData = null;
-	            return;
-	        }
-	        const mouse = Input.getMousePosition();
-	        const hoverElement = EditorRuntime.getEditorElementAtPoint(mouse);
-	        const windowFrame = hoverElement.getAncestorByType(WindowFrame);
-	        if (!windowFrame) {
-	            return;
-	        }
-	        const rect = windowFrame.getChildById("body").getClientBounds();
-	        if (mouse.y > rect.top && mouse.y < rect.top + (rect.height * 0.7)) {
-	            if (mouse.x > rect.left && mouse.x < rect.left + (0.3 * rect.width)) {
-	                coverDiv.style.left = rect.left + "px";
-	                coverDiv.style.top = rect.top + "px";
-	                coverDiv.style.width = (rect.width * 0.3) + "px";
-	                coverDiv.style.height = "100%";
-	                if (!this.isCoverInDom) {
-	                    this.isCoverInDom = true;
-	                    document.body.appendChild(coverDiv);
-	                }
-	            }
-	            else if (mouse.x > rect.left + (0.7 * rect.width) && mouse.x < rect.left + rect.width) {
-	                coverDiv.style.left = rect.left + (rect.width * 0.7) + "px";
-	                coverDiv.style.top = rect.top + "px";
-	                coverDiv.style.width = (rect.width * 0.3) + "px";
-	                coverDiv.style.height = "100%";
-	                if (!this.isCoverInDom) {
-	                    this.isCoverInDom = true;
-	                    document.body.appendChild(coverDiv);
-	                }
-	            }
-	            else if (this.isCoverInDom) {
-	                this.isCoverInDom = false;
-	                coverDiv.remove();
-	            }
-	        }
-	        else if (mouse.y > rect.top) {
-	            coverDiv.style.left = rect.left + "px";
-	            coverDiv.style.top = rect.top + (rect.height * 0.7) + "px";
-	            coverDiv.style.width = rect.width + "px";
-	            coverDiv.style.height = (rect.height * 0.7) + "px";
-	            if (!this.isCoverInDom) {
-	                this.isCoverInDom = true;
-	                document.body.appendChild(coverDiv);
-	            }
-	        }
-	    }
-	    static mouseOnLeft(mouse, rect) {
-	        return (mouse.y > rect.top && mouse.y < rect.top + (rect.height * 0.7))
-	            && (mouse.x > rect.left && mouse.x < rect.left + (0.3 * rect.width));
-	    }
-	    static mouseOnRight(mouse, rect) {
-	        return (mouse.y > rect.top && mouse.y < rect.top + (rect.height * 0.7))
-	            && (mouse.x > rect.left + (0.7 * rect.width) && mouse.x < rect.left + rect.width);
-	    }
-	    static mouseOnBottom(mouse, rect) {
-	        return !(mouse.y > rect.top && mouse.y < rect.top + (rect.height * 0.7)) && mouse.y > rect.top;
-	    }
-	    addExistingWindow(windowData) {
-	        const header = this.getChildById("header");
-	        const body = this.getChildById("body");
-	        const data = this.createWindowData(windowData.content);
-	        this.windows.push(data);
-	        header.addChild(data.tab);
-	        body.addChild(data.content);
-	        this.setVisibleWindow(data);
-	        windowData.parentWindow.removeWindow(windowData);
-	    }
-	    removeWindow(windowData) {
-	        windowData.tab.destroy();
-	        if (this.windows.length === 1) {
-	            this.destroy();
-	            if (this.parentSplitPane.getPane0Content() === this) {
-	                this.parentSplitPane.setPane0Content(null);
-	            }
-	            else if (this.parentSplitPane.getPane1Content() === this) {
-	                this.parentSplitPane.setPane1Content(null);
-	            }
-	        }
-	        else {
-	            const idx = this.windows.indexOf(windowData);
-	            if (idx === -1)
-	                return;
-	            this.windows.splice(idx, 1);
-	            this.setVisibleWindow(this.windows[0]);
-	        }
-	    }
-	    startTabDrag(windowData) {
-	        this.draggedWindowData = windowData;
-	        EditorRuntime.updateTree.add(this);
-	    }
-	    createWindowData(content) {
-	        const windowData = {
-	            parentWindow: this,
-	            content: content,
-	            tab: element_renderer_1.createElement(editor_window_tab_1.WindowFrameTab, {
-	                title: content.attrs.title, onMouseDown: () => {
-	                    this.setVisibleWindow(windowData);
-	                    this.startTabDrag(windowData);
-	                }
-	            })
-	        };
-	        this.windows.push(windowData);
-	        return windowData;
-	    }
-	    createInitialStructure(children) {
-	        const childWindows = children.map((child) => {
-	            return this.createWindowData(child);
-	        });
-	        return [
-	            Hex.createElement("div", { "x-id": "header", class: "window-frame-header" }, childWindows.map((w) => w.tab)),
-	            Hex.createElement("div", { "x-id": "body", "x-child-root": true, class: "window-frame-body" }, childWindows.map((w) => w.content)),
-	        ];
-	    }
-	}
-	exports.WindowFrame = WindowFrame;
-	createStyleSheet(`<style>
-
-	.editor-frame-container {
-	    width: 100%;
-	    height: 100%;
-	    background: gainsboro;
-	    position: relative;
-	}
-
-	.window-frame-header {
-	    background: ${editor_theme_1.WindowColors.backgroundGrey};
-	    margin: 0;
-	    display:flex;
-	    flex-direction: row;
-	    align-items: flex-start;
-	}
-
-	.window-frame-header h3 {
-	    margin: 0;
-	}
-
-	.window-frame-body {
-	    overflow:auto;
-	    width:100%;
-	    height: 100%;
-	    border: 1px solid #828282;
-	}
-
-	.window-frame {
-	    width:100%;
-	    height:100%;
-	    display:flex;
-	    flex-direction: column;
-	}
-
-
-	</style>`);
-
-
-/***/ },
-/* 82 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_theme_1 = __webpack_require__(50);
-	const editor_html_element_1 = __webpack_require__(15);
-	class WindowFrameTab extends editor_html_element_1.EditorHTMLElement {
-	    getDomData() {
-	        return {
-	            tagName: "div",
-	            classList: "window-frame-tab"
-	        };
-	    }
-	    setActive(isSelected) {
-	        if (isSelected) {
-	            this.getDomNode().classList.add('selected');
-	        }
-	        else {
-	            this.getDomNode().classList.remove('selected');
-	        }
-	    }
-	    createInitialStructure(children) {
-	        return this.attrs.title;
-	    }
-	}
-	exports.WindowFrameTab = WindowFrameTab;
-	createStyleSheet(`
-	<style>
-	.window-frame-tab {
-	    padding-left: 1em;
-	    padding-right: 1em;
-	    text-align: center;
-	    font-size: 0.9em;
-	    color: black;
-	}
-
-	.window-frame-tab.selected {
-	    background: ${editor_theme_1.WindowColors.selectedTabBodyGrey};
-	    border: 1px solid ${editor_theme_1.WindowColors.selectedTabBorderGrey};
-	    border-bottom:none;
-	    border-top-left-radius: 3px;
-	    border-top-right-radius: 3px;
-	}
-	</style>
-	`);
-
-
-/***/ },
-/* 83 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const button_1 = __webpack_require__(73);
-	const hierarchy_item_1 = __webpack_require__(84);
-	const evt_selection_changed_1 = __webpack_require__(4);
-	const evt_scene_loaded_event_1 = __webpack_require__(3);
-	const evt_app_element_created_1 = __webpack_require__(18);
-	const element_renderer_1 = __webpack_require__(5);
-	const editor_window_element_1 = __webpack_require__(87);
-	const app_element_1 = __webpack_require__(25);
-	const evt_app_element_parent_changed_1 = __webpack_require__(125);
-	const drag_hierarchy_item_1 = __webpack_require__(132);
-	const vector2_1 = __webpack_require__(14);
-	const context_menu_1 = __webpack_require__(133);
-	const editor_element_annotations_1 = __webpack_require__(43);
-	const icon_1 = __webpack_require__(85);
-	const evt_app_element_index_changed_1 = __webpack_require__(126);
-	const runtime_event_1 = __webpack_require__(123);
-	class HierarchyWindow extends editor_window_element_1.EditorWindowElement {
-	    constructor() {
-	        super(...arguments);
-	        this.mouse = new vector2_1.Vector2();
-	        this.elementMap = new Map();
-	        this.contextSelection = null;
-	    }
-	    createHierarchyItem(element) {
-	        const item = element_renderer_1.createElement(hierarchy_item_1.HierarchyItem, { element: element });
-	        this.elementMap.set(element, item);
-	        const childCount = element.getChildCount();
-	        for (let i = 0; i < childCount; i++) {
-	            const appElement = element.getChildAt(i);
-	            const childItem = this.createHierarchyItem(appElement);
-	            item.getChildRoot().addChild(childItem);
-	        }
-	        return item;
-	    }
-	    onAppElementParentChanged(appElement, newParent) {
-	        const targetItem = this.elementMap.get(appElement);
-	        const newParentItem = this.elementMap.get(newParent);
-	        newParentItem.getChildRoot().addChild(targetItem);
-	        EditorRuntime.select(appElement);
-	    }
-	    onSelectionChanged(newSelection, oldSelection) {
-	        if (oldSelection) {
-	            const item = this.elementMap.get(oldSelection);
-	            if (item) {
-	                item.setSelected(false);
-	            }
-	        }
-	        if (newSelection) {
-	            const selectedItem = this.elementMap.get(newSelection);
-	            if (selectedItem) {
-	                selectedItem.setSelected(true);
-	            }
-	        }
-	    }
-	    select() {
-	        const input = EditorRuntime.getInput();
-	        input.getMousePosition(this.mouse);
-	        let mouseOver = EditorRuntime.getEditorElementAtPoint(this.mouse);
-	        if (!mouseOver || mouseOver.getAncestorByType(icon_1.ToggleIcon, true))
-	            return;
-	        let item = mouseOver.getAncestorByType(hierarchy_item_1.HierarchyItem, true);
-	        if (!item) {
-	            EditorRuntime.select(null);
-	            return null;
-	        }
-	        EditorRuntime.select(item.attrs.element);
-	        return item.attrs.element;
-	    }
-	    showContextMenu() {
-	        this.contextSelection = this.select();
-	        EditorRuntime.showContextMenu(this.createContextMenu());
-	    }
-	    onUpdated() {
-	        const input = EditorRuntime.getInput();
-	        const inElement = input.isMouseInEditorElement(this);
-	        if (!inElement) {
-	            return;
-	        }
-	        if (!EditorRuntime.getCurrentDragAction() && input.isMouseDown()) {
-	            input.getMouseDownDelta(this.mouse);
-	            if (this.mouse.lengthSquared() > 64) {
-	                input.getMouseDownPosition(this.mouse);
-	                let dragElement = EditorRuntime.getEditorElementAtPoint(this.mouse, hierarchy_item_1.HierarchyItem);
-	                if (!dragElement) {
-	                    return;
-	                }
-	                EditorRuntime.beginDragAction(new drag_hierarchy_item_1.HierarchyItemDragAction(dragElement));
-	            }
-	        }
-	    }
-	    onRendered() {
-	        EditorRuntime.on(evt_selection_changed_1.SelectionChanged, this);
-	        EditorRuntime.on(evt_scene_loaded_event_1.SceneLoaded, this);
-	        EditorRuntime.on(evt_app_element_created_1.AppElementCreated, this);
-	        EditorRuntime.on(evt_app_element_index_changed_1.AppElementIndexChanged, this);
-	        EditorRuntime.on(evt_app_element_parent_changed_1.AppElementParentChanged, this);
-	        EditorRuntime.updateTree.add(this);
-	        this.onSceneLoaded(EditorRuntime.getScene());
-	    }
-	    onAppElementCreated(appElement) {
-	        const item = this.createHierarchyItem(appElement);
-	        const parentItem = this.elementMap.get(appElement.getParent()) || this;
-	        parentItem.getChildRoot().addChild(item);
-	    }
-	    onAppElementIndexChanged(appElement, newIndex) {
-	        const item = this.elementMap.get(appElement);
-	        item.parent.getChildRoot().insertChild(item, newIndex);
-	    }
-	    onSceneLoaded(scene) {
-	        const root = app_element_1.AppElement.Root;
-	        const rootItem = this.createHierarchyItem(root);
-	        this.getChildRoot().addChild(rootItem);
-	    }
-	    destroyContextSelection() {
-	        const hierarchyItem = this.elementMap.get(this.contextSelection);
-	        if (!hierarchyItem)
-	            return;
-	        if (EditorRuntime.getSelection() === this.contextSelection) {
-	            EditorRuntime.select(null);
-	        }
-	        hierarchyItem.destroy();
-	        this.contextSelection.destroy();
-	        this.contextSelection = null;
-	    }
-	    createNewElement() {
-	        new app_element_1.AppElement("Element", EditorRuntime.getSelection());
-	    }
-	    createInitialStructure(children) {
-	        return [
-	            Hex.createElement("div", { class: "hierarchy-top-bar" },
-	                Hex.createElement(button_1.Button, { onClick: this.createNewElement }, "Create")),
-	            Hex.createElement("div", { "x-child-root": true, class: "hierarchy-main-body" })
-	        ];
-	    }
-	    createContextMenu() {
-	        return element_renderer_1.createElement(context_menu_1.EditorContextMenu, {
-	            options: [
-	                {
-	                    name: "Create",
-	                    icon: "object-group",
-	                    action: () => this.createNewElement()
-	                },
-	                {
-	                    name: "Delete",
-	                    icon: "remove",
-	                    action: () => this.destroyContextSelection()
-	                }
-	            ]
-	        });
-	    }
-	}
-	tslib_1.__decorate([
-	    editor_element_annotations_1.onClick
-	], HierarchyWindow.prototype, "select", null);
-	tslib_1.__decorate([
-	    editor_element_annotations_1.onRightClick
-	], HierarchyWindow.prototype, "showContextMenu", null);
-	tslib_1.__decorate([
-	    runtime_event_1.RuntimeEvent.on(evt_app_element_created_1.AppElementCreated)
-	], HierarchyWindow.prototype, "onAppElementCreated", null);
-	exports.HierarchyWindow = HierarchyWindow;
-	createStyleSheet(`
-	<style>
-
-
-	.hierarchy-window {
-	    display: flex;
-	    flex-direction: column;
-	    height: 100%;
-	    width: 100%;
-	}
-
-
-	</style>
-	`);
-
-
-/***/ },
-/* 84 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const icon_1 = __webpack_require__(85);
-	const drag_action_1 = __webpack_require__(34);
-	const drag_hierarchy_item_1 = __webpack_require__(132);
-	const editor_html_element_1 = __webpack_require__(15);
-	const hierarchy_insert_target_1 = __webpack_require__(86);
-	const binding_1 = __webpack_require__(46);
-	const evt_app_element_parent_changed_1 = __webpack_require__(125);
-	class HierarchyItem extends editor_html_element_1.EditorHTMLElement {
-	    setSelected(isSelected) {
-	        this.getChildBySelector(".hierarchy-item-offset").toggleClass("selected", isSelected);
-	    }
-	    onDestroyed() {
-	        this.attrs.element = null;
-	    }
-	    mouseEnterDetails(action) {
-	        if (!(action.item === this || action.item === this.parent)) {
-	            this.getChildBySelector(".hierarchy-item-offset").addClass("hovered");
-	        }
-	    }
-	    mouseExitDetails(item) {
-	        this.getChildBySelector(".hierarchy-item-offset").removeClass("hovered");
-	    }
-	    mouseDragDrop(action) {
-	        if (action.item === this || action.item === this.parent) {
-	            return;
-	        }
-	        const elementParent = this.attrs.element;
-	        action.appElement.setParent(elementParent);
-	    }
-	    onAppElementParentChanged(element) {
-	        if (this.attrs.element !== element)
-	            return;
-	        const depth = element.getDepth();
-	        this.getChildBySelector(".hierarchy-item-offset").setStyle({ paddingLeft: `${depth * 12}px` });
-	    }
-	    onRendered() {
-	        EditorRuntime.on(evt_app_element_parent_changed_1.AppElementParentChanged, this);
-	    }
-	    createInitialStructure(children) {
-	        const appElement = this.attrs.element;
-	        const depth = this.attrs.element.getDepth();
-	        const paddingLeft = "padding-left:" + (depth * 12) + "px";
-	        const visBinding = binding_1.CreateBinding(appElement.children, "length");
-	        return [
-	            Hex.createElement(hierarchy_insert_target_1.HierarchyItemDropTarget, { insert: "before" }),
-	            Hex.createElement("div", { class: "hierarchy-item-offset", style: paddingLeft },
-	                Hex.createElement(icon_1.ToggleIcon, { "x-id": "toggle", "x-bind-class": { invisible: visBinding } }),
-	                Hex.createElement("div", { class: "name-label" },
-	                    " ",
-	                    new window.EditorBindingElement(appElement, ["name"]),
-	                    " ")),
-	            Hex.createElement(hierarchy_insert_target_1.HierarchyItemDropTarget, { insert: "after" }),
-	            Hex.createElement("div", { "x-child-root": true, class: "hierarchy-item-children" }, children),
-	        ];
-	    }
-	}
-	tslib_1.__decorate([
-	    drag_action_1.DragAction.MouseEnter(drag_hierarchy_item_1.HierarchyItemDragAction)
-	], HierarchyItem.prototype, "mouseEnterDetails", null);
-	tslib_1.__decorate([
-	    drag_action_1.DragAction.MouseExit(drag_hierarchy_item_1.HierarchyItemDragAction)
-	], HierarchyItem.prototype, "mouseExitDetails", null);
-	tslib_1.__decorate([
-	    drag_action_1.DragAction.Drop(drag_hierarchy_item_1.HierarchyItemDragAction)
-	], HierarchyItem.prototype, "mouseDragDrop", null);
-	exports.HierarchyItem = HierarchyItem;
-	createStyleSheet(`<style>
-
-	    .hierarchy-item-details.selected {
-	        background: #c8f8ff;
-	    }
-
-	    .hierarchy-item-offset.selected {
-	        color:white;
-	        background: #62b4ff;
-	    }
-	    
-	    .hierarchy-item-offset.hovered {
-	        background: #43ff5f;
-	    }
-	    
-	    .hierarchy-item-offset {
-	        display:flex;
-	        flex-direction: row;
-	    }
-	        
-	    .hierarchy-item-offset .name-label {
-	        flex:1;
-	        margin-right:2px;
-	        margin-left: 2px;
-	        padding-left:2px;
-	        padding-right:2px;
-	    }
-	    
-	    .hierarchy-item-offset .icon {
-	        color: black;
-	    }
-	    
-
-	`);
-
-
-/***/ },
-/* 85 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(15);
-	class FontIcon extends editor_html_element_1.EditorHTMLElement {
-	    constructor() {
-	        super(...arguments);
-	        this.prefix = "fa";
-	    }
-	    getDomData() {
-	        return { tagName: "i", classList: this.getClassList() };
-	    }
-	    getIconSize() {
-	        return " icon " + (this.attrs.size || "");
-	    }
-	    getClassList() {
-	        return this.prefix
-	            + " "
-	            + this.getPrefixedIconName(this.attrs.iconName)
-	            + this.getIconSize();
-	    }
-	    getPrefixedIconName(iconName) {
-	        return this.prefix + "-" + iconName;
-	    }
-	    ;
-	    setIcon(iconName) {
-	        const domNode = this.getDomNode();
-	        domNode.classList.remove(this.getPrefixedIconName(this.attrs.iconName));
-	        domNode.classList.add(this.getPrefixedIconName(iconName));
-	        this.attrs.iconName = iconName;
-	    }
-	}
-	exports.FontIcon = FontIcon;
-	class ToggleIcon extends editor_html_element_1.EditorHTMLElement {
-	    getDomData() {
-	        return { tagName: "i", classList: this.getClassList() };
-	    }
-	    onMounted() {
-	        const attrs = this.attrs;
-	        const htmlNode = this.htmlNode;
-	        attrs.visibilityTarget = attrs.visibilityTarget || (() => {
-	            return this.renderContext.getChildRoot();
-	        });
-	        htmlNode.addEventListener('click', (e) => {
-	            attrs.open = !attrs.open;
-	            if (this.attrs.onToggle) {
-	                this.attrs.onToggle(attrs.open);
-	            }
-	            else {
-	                attrs.visibilityTarget().setVisible(attrs.open);
-	            }
-	            htmlNode.classList.toggle("fa-caret-down", attrs.open);
-	            htmlNode.classList.toggle("fa-caret-right", !attrs.open);
-	            e.stopPropagation();
-	        }, true);
-	    }
-	    getClassList() {
-	        const attrs = this.attrs;
-	        attrs.open = attrs.open === void 0 ? true : Boolean(attrs.open);
-	        return "toggle-icon fa " + (this.attrs.open ? "fa-caret-down" : "fa-caret-right");
-	    }
-	}
-	exports.ToggleIcon = ToggleIcon;
-	createStyleSheet(`<style>
-	    .toggle-icon {
-	        width: 18px;
-	        padding: 0 4px;
-	    }
-	`);
-
-
-/***/ },
-/* 86 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const editor_html_element_1 = __webpack_require__(15);
-	const hierarchy_item_1 = __webpack_require__(84);
-	const drag_action_1 = __webpack_require__(34);
-	const drag_hierarchy_item_1 = __webpack_require__(132);
-	const prefab_drag_action_1 = __webpack_require__(49);
-	class HierarchyItemDropTarget extends editor_html_element_1.EditorHTMLElement {
-	    onMounted() {
-	        this.target = this.parent;
-	    }
-	    onDragEnter(action) {
-	        this.addClass("hover");
-	    }
-	    onDragExit() {
-	        this.removeClass("hover");
-	    }
-	    onDrop(action) {
-	        const grandParent = this.target.getAncestorByType(hierarchy_item_1.HierarchyItem);
-	        if (!grandParent) {
-	            return;
-	        }
-	        let idx = grandParent.getChildRoot().getChildIndex(this.target);
-	        if (this.attrs.insert === "after")
-	            idx++;
-	        if (action instanceof prefab_drag_action_1.PrefabDragAction) {
-	        }
-	        else if (action instanceof drag_hierarchy_item_1.HierarchyItemDragAction) {
-	            action.appElement.setSiblingIndex(idx);
-	            grandParent.getChildRoot().insertChild(action.item, idx);
-	        }
-	    }
-	    createInitialStructure() {
-	        return Hex.createElement("div", { class: "hover-target-display" });
-	    }
-	}
-	tslib_1.__decorate([
-	    drag_action_1.DragAction.MouseEnter(prefab_drag_action_1.PrefabDragAction),
-	    drag_action_1.DragAction.MouseEnter(drag_hierarchy_item_1.HierarchyItemDragAction)
-	], HierarchyItemDropTarget.prototype, "onDragEnter", null);
-	tslib_1.__decorate([
-	    drag_action_1.DragAction.MouseExit(prefab_drag_action_1.PrefabDragAction),
-	    drag_action_1.DragAction.MouseExit(drag_hierarchy_item_1.HierarchyItemDragAction)
-	], HierarchyItemDropTarget.prototype, "onDragExit", null);
-	tslib_1.__decorate([
-	    drag_action_1.DragAction.Drop(prefab_drag_action_1.PrefabDragAction),
-	    drag_action_1.DragAction.Drop(drag_hierarchy_item_1.HierarchyItemDragAction)
-	], HierarchyItemDropTarget.prototype, "onDrop", null);
-	exports.HierarchyItemDropTarget = HierarchyItemDropTarget;
-	createStyleSheet(`<style>
-	    
-	    .hierarchy-item-drop-target {
-	        position:relative;
-	    }
-	    
-	    .hierarchy-item-drop-target .hover-target-display {
-	        position: absolute;
-	        top: -2px;
-	        left: 0;
-	        height: 4px;
-	        width: 100%;
-	    }
-	    
-	    .hierarchy-item-drop-target.hover .hover-target-display {
-	        background: aliceblue;
-	    }
-	    
-	`);
-
-
-/***/ },
-/* 87 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(15);
-	class EditorWindowElement extends editor_html_element_1.EditorHTMLElement {
-	}
-	exports.EditorWindowElement = EditorWindowElement;
-
-
-/***/ },
-/* 88 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const editor_theme_1 = __webpack_require__(50);
-	const editor_window_element_1 = __webpack_require__(87);
-	const app_element_1 = __webpack_require__(25);
-	const scene_meta_bar_1 = __webpack_require__(89);
-	const vector2_1 = __webpack_require__(14);
-	const breakpoint_1 = __webpack_require__(57);
-	const util_1 = __webpack_require__(13);
-	const drag_action_1 = __webpack_require__(34);
-	const prefab_drag_action_1 = __webpack_require__(49);
-	const rect_tool_1 = __webpack_require__(78);
-	const layout_1 = __webpack_require__(129);
-	class SceneWindow extends editor_window_element_1.EditorWindowElement {
-	    constructor() {
-	        super(...arguments);
-	        this.element = this;
-	        this.zoomLevel = 1;
-	        this.baseYOffset = 12;
-	        this.isPaintQueued = false;
-	        this.currentBreakpoint = breakpoint_1.BreakpointType.Mobile;
-	    }
-	    getDomData() {
-	        return { tagName: "div", classList: "scene-window-root" };
-	    }
-	    getBreakpoint() {
-	        return this.currentBreakpoint;
-	    }
-	    setPreviewSize(breakpointType) {
-	        this.currentBreakpoint = breakpointType;
-	        this.frameDimensions = breakpoint_1.Breakpoint.getDimensions(breakpointType);
-	        this.panValue.x = ((this.width * 0.5) - (this.frameDimensions.x * 0.5)) | 0;
-	        this.panValue.y = this.baseYOffset;
-	        app_element_1.AppElement.Root.setPosition(this.panValue);
-	        app_element_1.AppElement.Root.setDimensions(this.frameDimensions.x, this.frameDimensions.y);
-	        this.resetZoom();
-	        this.drawFrameOutline();
-	        this.paintScene();
-	    }
-	    paintScene() {
-	        this.isPaintQueued = true;
-	    }
-	    onUpdated() {
-	        const input = EditorRuntime.getInput();
-	        if (input.isMouseInEditorElement(this.getChildRoot())) {
-	            this.zoom(input.getMouseWheelDelta().y);
-	        }
-	        const clientRect = this.getDomNode().getBoundingClientRect();
-	        if (clientRect.width !== this.width || clientRect.height !== this.height) {
-	            this.width = clientRect.width;
-	            this.height = clientRect.height;
-	            const renderRootBounds = this.getChildRoot().getDomNode().getBoundingClientRect();
-	            const renderRootWidth = renderRootBounds.width;
-	            const renderRootHeight = renderRootBounds.height;
-	            this.pixi.resize(renderRootWidth, renderRootHeight);
-	            this.setPreviewSize(this.currentBreakpoint);
-	        }
-	        this.currentTool.update();
-	        this.paintBackground();
-	        this.drawFrameOutline();
-	        this.drawSelection();
-	        this.pixi.render(this.stage);
-	    }
-	    applyPanOffset(input) {
-	        input.x += this.panValue.x;
-	        input.y += this.panValue.y;
-	    }
-	    pan(delta) {
-	        if (delta.isZero())
-	            return;
-	        this.panValue.addVector(delta);
-	        app_element_1.AppElement.Root.setPosition(this.panValue);
-	        app_element_1.AppElement.Root.setDimensions(this.frameDimensions.x, this.frameDimensions.y);
-	        this.paintScene();
-	    }
-	    zoom(zoomDelta) {
-	        const oldWidth = this.frameDimensions.x * this.zoomLevel;
-	        const oldHeight = this.frameDimensions.y * this.zoomLevel;
-	        this.zoomLevel -= 0.05 * zoomDelta;
-	        this.zoomLevel = util_1.clamp(this.zoomLevel, 0.1, 4);
-	        const newWidth = this.frameDimensions.x * this.zoomLevel;
-	        const newHeight = this.frameDimensions.y * this.zoomLevel;
-	        const diff = new vector2_1.Vector2((oldWidth - newWidth) * 0.5, (oldHeight - newHeight) * 0.5);
-	        this.pan(diff);
-	        if (zoomDelta !== 0) {
-	            const childRootDom = this.getChildRoot().getDomNode();
-	            const appRootDom = childRootDom.firstElementChild;
-	            appRootDom.style.transformOrigin = "top left";
-	            appRootDom.style.transform = "scale(" + this.zoomLevel + ")";
-	        }
-	        this.paintScene();
-	    }
-	    resetZoom() {
-	        this.zoomLevel = 1;
-	        const width = this.width;
-	        const breakpointWidth = this.frameDimensions.x;
-	        if (breakpointWidth > width) {
-	            this.zoomLevel = width / breakpointWidth;
-	            this.panValue.x = ((this.zoomLevel * breakpointWidth * 0.5) - (width * 0.5)) | 0;
-	            this.panValue.y = this.baseYOffset;
-	        }
-	        this.zoom(0);
-	    }
-	    paintBackground() {
-	        this.canvas.width = this.width;
-	        this.canvas.height = this.height;
-	        this.ctx.clearRect(0, 0, this.width, this.height);
-	        this.ctx.fillStyle = editor_theme_1.WindowColors.sceneBackground;
-	        this.ctx.fillRect(0, 0, this.width, this.height);
-	        this.ctx.strokeStyle = '#FFFFFF';
-	        this.ctx.lineWidth = 0.5;
-	        this.ctx.globalAlpha = 0.2;
-	        this.ctx.beginPath();
-	        const spacing = 25;
-	        for (let i = 0; i < 100; i++) {
-	            const interval = i * spacing + 0.5;
-	            this.ctx.moveTo(0, interval);
-	            this.ctx.lineTo(this.width, interval);
-	            this.ctx.moveTo(interval, 0);
-	            this.ctx.lineTo(interval, this.height);
-	        }
-	        this.ctx.closePath();
-	        this.ctx.stroke();
-	    }
-	    onRendered() {
-	        this.currentTool = new rect_tool_1.SceneRectTool(this);
-	        this.panValue = new vector2_1.Vector2();
-	        this.canvas = this.getChildBySelector('canvas').getDomNode();
-	        this.ctx = this.canvas.getContext("2d");
-	        EditorRuntime.drawScene(".scene-render-root");
-	        EditorRuntime.updateTree.add(this);
-	        PIXI.utils.skipHello();
-	        this.stage = new PIXI.Container();
-	        this.pixi = new PIXI.WebGLRenderer(256, 256, {
-	            autoResize: true,
-	            transparent: true,
-	            view: this.getChildById('foreground-canvas').getDomNode()
-	        });
-	        this.frameOutline = new PIXI.Graphics();
-	        this.dragThing = new PIXI.Graphics();
-	        this.selectionOutline = new PIXI.Graphics();
-	        this.stage.addChild(this.frameOutline);
-	        this.stage.addChild(this.dragThing);
-	        this.stage.addChild(this.selectionOutline);
-	        this.pixi.render(this.stage);
-	        this.setPreviewSize(this.currentBreakpoint);
-	    }
-	    drawDragThing() {
-	        const input = EditorRuntime.getInput();
-	        const mouse = input.getMouseRelativeToEditorElement(this.getChildRoot());
-	        const mouseOver = Runtime.getAppElementAtPoint(mouse);
-	        if (mouseOver) {
-	            this.dragThing.clear();
-	            this.dragThing.beginFill(0x00FF00, 0.2);
-	            this.dragThing.lineStyle(1, 0x00FF00);
-	            const position = mouseOver.getPosition();
-	            const layout = mouseOver.getComponent(layout_1.LayoutComponent);
-	            if (layout) {
-	                const slot = layout.getSlotAtPosition(mouse);
-	            }
-	            else {
-	                this.dragThing.drawRect(position.x, position.y - 1, mouseOver.getWidth(), mouseOver.getHeight());
-	            }
-	        }
-	        else {
-	            this.dragThing.clear();
-	            this.dragThing.beginFill(0x00FF00, 0.2);
-	            this.dragThing.lineStyle(1, 0x00FF00);
-	            this.dragThing.drawRect(mouse.x - 50, mouse.y - 25, 100, 50);
-	        }
-	        this.paintScene();
-	    }
-	    drawFrameOutline() {
-	        this.frameOutline.clear();
-	        this.frameOutline.lineStyle(1, 0xFF00CD);
-	        this.frameOutline.drawRect(this.panValue.x, this.panValue.y - 1, this.zoomLevel * (this.frameDimensions.x + 1), this.zoomLevel * (this.frameDimensions.y));
-	    }
-	    drawSelection() {
-	        this.selectionOutline.clear();
-	        const selection = EditorRuntime.getSelection();
-	        if (!selection)
-	            return;
-	        const position = selection.getLocalPosition();
-	        const w = selection.getWidth();
-	        const h = selection.getHeight();
-	        this.selectionOutline.lineStyle(1, 0xFFFFFFFF);
-	        this.selectionOutline.rotation = selection.getRotation();
-	        this.selectionOutline.drawRect(position.x, position.y - 1, (this.zoomLevel * w) + 1, this.zoomLevel * h);
-	        this.selectionOutline.lineStyle(1, 0x000000);
-	        this.selectionOutline.beginFill(0x87b0f2);
-	        this.selectionOutline.drawCircle(position.x, position.y, 5);
-	        this.selectionOutline.drawCircle(position.x + w, position.y, 5);
-	        this.selectionOutline.drawCircle(position.x + w, position.y + h, 5);
-	        this.selectionOutline.drawCircle(position.x, position.y + h, 5);
-	        this.selectionOutline.endFill();
-	        const parent = selection.getParent();
-	        let parentPosition = null;
-	        if (parent) {
-	            parentPosition = selection.getParent().getPosition();
-	        }
-	        else {
-	            parentPosition = selection.getPosition();
-	        }
-	        this.selectionOutline.position.set(parentPosition.x, parentPosition.y);
-	    }
-	    createInitialStructure(children) {
-	        return [
-	            Hex.createElement(scene_meta_bar_1.SceneMetaBar, null),
-	            Hex.createElement("canvas", { "x-id": "background-canvas", class: "overlay-canvas" }),
-	            Hex.createElement("div", { "x-child-root": true, class: "scene-render-root" }),
-	            Hex.createElement("canvas", { "x-id": "foreground-canvas", class: "overlay-canvas" }),
-	        ];
-	    }
-	    handleAssetDragEnter() {
-	        EditorRuntime.setCursor("-webkit-grabbing");
-	    }
-	    handleAssetDragHover() {
-	        this.drawDragThing();
-	    }
-	    handleAssetDragExit() {
-	        EditorRuntime.setCursor("default");
-	        this.dragThing.clear();
-	        this.paintScene();
-	    }
-	    handleAssetDrop(action) {
-	        const input = EditorRuntime.getInput();
-	        const mouse = input.getMouseRelativeToEditorElement(this.getChildRoot());
-	        const mouseOver = Runtime.getAppElementAtPoint(mouse);
-	        const appElement = action.template.create();
-	        if (mouseOver) {
-	            appElement.setParent(mouseOver);
-	            appElement.setPositionValues(0, 0, app_element_1.Space.Local);
-	            appElement.setDimensions(mouseOver.getWidth(), mouseOver.getHeight());
-	        }
-	        else {
-	            appElement.setParent(app_element_1.AppElement.Root);
-	            appElement.setPositionValues(mouse.x - 50, mouse.y - 25);
-	            appElement.setDimensions(100, 50);
-	        }
-	        EditorRuntime.select(appElement);
-	        this.dragThing.clear();
-	        this.paintScene();
-	    }
-	}
-	tslib_1.__decorate([
-	    drag_action_1.DragAction.MouseEnter(prefab_drag_action_1.PrefabDragAction)
-	], SceneWindow.prototype, "handleAssetDragEnter", null);
-	tslib_1.__decorate([
-	    drag_action_1.DragAction.MouseOver(prefab_drag_action_1.PrefabDragAction)
-	], SceneWindow.prototype, "handleAssetDragHover", null);
-	tslib_1.__decorate([
-	    drag_action_1.DragAction.MouseExit(prefab_drag_action_1.PrefabDragAction)
-	], SceneWindow.prototype, "handleAssetDragExit", null);
-	tslib_1.__decorate([
-	    drag_action_1.DragAction.Drop(prefab_drag_action_1.PrefabDragAction)
-	], SceneWindow.prototype, "handleAssetDrop", null);
-	exports.SceneWindow = SceneWindow;
-	createStyleSheet(`
-	<style>
-	        
-	.scene-window-root {
-	    overflow:hidden;
-	    width: 100%;
-	    height: 100%;
-	    display: flex;
-	    flex-direction: column;
-	    position: relative;
-	}
-
-	.scene-render-root {
-	    position: relative;
-	}
-
-	.overlay-canvas {
-	    position: absolute;
-	    top:21px; /*position under meta bar */
-	    left:0;
-	}
-
-	</style>`);
-
-
-/***/ },
-/* 89 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const button_1 = __webpack_require__(73);
-	const scene_window_1 = __webpack_require__(88);
-	const editor_theme_1 = __webpack_require__(50);
-	const breakpoint_1 = __webpack_require__(57);
-	const editor_html_element_1 = __webpack_require__(15);
-	function round(places) {
-	    return function (value) {
-	        return value.toFixed(places);
-	    };
-	}
-	class SceneMetaBar extends editor_html_element_1.EditorHTMLElement {
-	    getDomData() {
-	        return { tagName: "div", classList: "scene-meta-bar" };
-	    }
-	    onRendered() {
-	        this.scene = this.getAncestorByType(scene_window_1.SceneWindow);
-	        this.sceneSizeButtons = this.getChildBySelector(".scene-size").getChildrenByType(button_1.Button);
-	        this.setSelectedButton(this.scene.getBreakpoint());
-	    }
-	    createInitialStructure() {
-	        return [
-	            Hex.createElement("div", { class: "zoom-level" },
-	                Hex.createElement("span", null,
-	                    "Zoom Level \u00A0",
-	                    new window.EditorBindingElement(this, ["scene", "zoomLevel"]).format(round(2)))),
-	            Hex.createElement("div", { class: "scene-size" },
-	                Hex.createElement(button_1.Button, { onClick: () => { this.setScreenSize(breakpoint_1.BreakpointType.Mobile); } }, "Mobile"),
-	                Hex.createElement(button_1.Button, { onClick: () => { this.setScreenSize(breakpoint_1.BreakpointType.Tablet); } }, "Tablet"),
-	                Hex.createElement(button_1.Button, { onClick: () => { this.setScreenSize(breakpoint_1.BreakpointType.Laptop); } }, "Laptop"),
-	                Hex.createElement(button_1.Button, { onClick: () => { this.setScreenSize(breakpoint_1.BreakpointType.Desktop); } }, "Desktop"))
-	        ];
-	    }
-	    setScreenSize(breakpointType) {
-	        this.scene.setPreviewSize(breakpointType);
-	        this.setSelectedButton(breakpointType);
-	    }
-	    setSelectedButton(breakpointType) {
-	        this.sceneSizeButtons.forEach(function (button) {
-	            button.toggleClass("selected", breakpoint_1.BreakpointType[breakpointType] === button.getText());
-	        });
-	    }
-	}
-	exports.SceneMetaBar = SceneMetaBar;
-	createStyleSheet(`<style>
-
-	.zoom-level {
-	    position: absolute;
-	    left: 12px;
-	}
-
-	.scene-meta-bar {
-	    height: 21px;
-	    width: 100%;
-	    background: ${editor_theme_1.WindowColors.foregroundGrey};
-	    display: flex;
-	    flex-direction: row;
-	    align-items: center;
-	    justify-content: flex-end;
-	    z-index:2;
-	}
-
-	.scene-size .btn {
-	    background: none;
-	    border: none;
-	}
-
-	.scene-size .selected {
-	    background: aliceblue;
-	    border-left: 1px solid grey;
-	    border-right: 1px solid grey;
-	}
-
-	`);
-
-
-/***/ },
-/* 90 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const vertical_stack_1 = __webpack_require__(91);
-	const text_input_1 = __webpack_require__(92);
-	const evt_selection_changed_1 = __webpack_require__(4);
-	const editor_window_element_1 = __webpack_require__(87);
-	const inspector_row_1 = __webpack_require__(93);
-	const component_menu_1 = __webpack_require__(94);
-	const editor_theme_1 = __webpack_require__(50);
-	const component_renderer_1 = __webpack_require__(97);
-	const element_renderer_1 = __webpack_require__(5);
-	const app_element_inspector_1 = __webpack_require__(99);
-	const binding_1 = __webpack_require__(46);
+	const vertical_stack_1 = __webpack_require__(74);
+	const text_input_1 = __webpack_require__(75);
+	const evt_selection_changed_1 = __webpack_require__(5);
+	const editor_window_element_1 = __webpack_require__(66);
+	const inspector_row_1 = __webpack_require__(77);
+	const component_menu_1 = __webpack_require__(78);
+	const editor_theme_1 = __webpack_require__(56);
+	const component_renderer_1 = __webpack_require__(81);
+	const element_renderer_1 = __webpack_require__(7);
+	const app_element_inspector_1 = __webpack_require__(85);
+	const binding_1 = __webpack_require__(13);
+	const checkbox_input_1 = __webpack_require__(84);
 	class InspectorWindow extends editor_window_element_1.EditorWindowElement {
 	    onSelectionChanged(newSelection, oldSelection) {
 	        this.selection = newSelection;
@@ -6523,6 +6367,7 @@
 	    onUpdated() {
 	        if (!this.selection)
 	            return;
+	        this.proxy.isEnabled = this.selection.isEnabled();
 	        const components = this.selection.getAllComponents();
 	        for (let i = 0; i < components.length; i++) {
 	            const cmp = components[i];
@@ -6532,6 +6377,12 @@
 	        }
 	    }
 	    onRendered() {
+	        this.proxy = { isEnabled: true };
+	        this.isEnabledBinding = binding_1.CreateBinding(this.proxy, "isEnabled").onChange((value) => {
+	            if (this.selection) {
+	                this.selection.setActive(value);
+	            }
+	        });
 	        EditorRuntime.updateTree.add(this);
 	        EditorRuntime.on(evt_selection_changed_1.SelectionChanged, this);
 	        this.onSelectionChanged(EditorRuntime.getSelection(), null);
@@ -6541,7 +6392,9 @@
 	            Hex.createElement("div", { class: "inspector-header" },
 	                Hex.createElement("div", { "x-if": { ctx: this, invert: false, path: "selection" }, class: "inspector-name-field" },
 	                    Hex.createElement(inspector_row_1.InspectorRow, { label: "Name" },
-	                        Hex.createElement(text_input_1.TextInput, { value: binding_1.CreateBinding(this, "selection", "name") })))),
+	                        Hex.createElement(text_input_1.TextInput, { value: binding_1.CreateBinding(this, "selection", "name") })),
+	                    Hex.createElement(inspector_row_1.InspectorRow, { label: "Active" },
+	                        Hex.createElement(checkbox_input_1.CheckboxInput, { value: this.isEnabledBinding })))),
 	            Hex.createElement(vertical_stack_1.Vertical, { "x-child-root": true }));
 	    }
 	    createComponentDrawer(component) {
@@ -6564,18 +6417,19 @@
 
 	.inspector-header {
 	    background: ${editor_theme_1.WindowColors.foregroundGrey};
+	    border-bottom: 1px solid ${editor_theme_1.WindowColors.borderGrey};
 	}
 	  
 	</style>`);
 
 
 /***/ },
-/* 91 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(15);
+	const editor_html_element_1 = __webpack_require__(19);
 	class VerticalBase extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return VerticalBase.DomData;
@@ -6597,19 +6451,19 @@
 
 
 /***/ },
-/* 92 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(74);
+	const editor_input_1 = __webpack_require__(76);
 	class TextInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return {
 	            tagName: "input",
+	            style: "width: 100%",
 	            attributes: {
-	                type: "text",
-	                style: "width: 100%"
+	                type: "text"
 	            }
 	        };
 	    }
@@ -6631,13 +6485,40 @@
 
 
 /***/ },
-/* 93 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const util_1 = __webpack_require__(13);
-	const editor_html_element_1 = __webpack_require__(15);
+	const binding_1 = __webpack_require__(13);
+	const editor_html_element_1 = __webpack_require__(19);
+	class InputRenderer extends editor_html_element_1.EditorHTMLElement {
+	    onCreated() {
+	        if (this.attrs.value instanceof binding_1.EditorBinding) {
+	            this.binding = this.attrs.value;
+	            this.binding.setHost(this);
+	            this.binding.onChange((a, b) => {
+	                this.onValueChanged(a, b);
+	            });
+	        }
+	        else {
+	            //todo -- this should maybe just be fake / static
+	            this.binding = binding_1.CreateBinding(this.attrs, "value");
+	        }
+	    }
+	    onValueChanged(newValue, oldValue) { }
+	}
+	exports.InputRenderer = InputRenderer;
+
+
+/***/ },
+/* 77 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const util_1 = __webpack_require__(16);
+	const editor_html_element_1 = __webpack_require__(19);
 	class InspectorRow extends editor_html_element_1.EditorHTMLElement {
 	    onCreated() {
 	        this.attrs.label = util_1.titlize(this.attrs.label);
@@ -6669,18 +6550,18 @@
 
 
 /***/ },
-/* 94 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const vertical_stack_1 = __webpack_require__(91);
-	const text_box_icon_1 = __webpack_require__(95);
-	const button_1 = __webpack_require__(73);
-	const component_option_1 = __webpack_require__(96);
-	const component_1 = __webpack_require__(29);
-	const element_renderer_1 = __webpack_require__(5);
-	const editor_html_element_1 = __webpack_require__(15);
+	const vertical_stack_1 = __webpack_require__(74);
+	const text_box_icon_1 = __webpack_require__(79);
+	const button_1 = __webpack_require__(59);
+	const component_option_1 = __webpack_require__(80);
+	const component_1 = __webpack_require__(37);
+	const element_renderer_1 = __webpack_require__(7);
+	const editor_html_element_1 = __webpack_require__(19);
 	class ComponentMenu extends editor_html_element_1.EditorHTMLElement {
 	    constructor() {
 	        super(...arguments);
@@ -6751,12 +6632,12 @@
 
 
 /***/ },
-/* 95 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(15);
+	const editor_html_element_1 = __webpack_require__(19);
 	class TextBoxWithIcon extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return {
@@ -6811,12 +6692,12 @@
 
 
 /***/ },
-/* 96 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(15);
+	const editor_html_element_1 = __webpack_require__(19);
 	class ComponentOption extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "component-item" };
@@ -6829,20 +6710,21 @@
 
 
 /***/ },
-/* 97 */
+/* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const property_renderer_1 = __webpack_require__(54);
-	const horizontal_1 = __webpack_require__(75);
-	const icon_1 = __webpack_require__(85);
-	const element_renderer_1 = __webpack_require__(5);
-	const checkbox_input_1 = __webpack_require__(98);
-	const util_1 = __webpack_require__(13);
-	const editor_theme_1 = __webpack_require__(50);
-	const expose_as_1 = __webpack_require__(52);
-	const editor_html_element_1 = __webpack_require__(15);
+	const property_renderer_1 = __webpack_require__(82);
+	const horizontal_1 = __webpack_require__(83);
+	const icon_1 = __webpack_require__(61);
+	const element_renderer_1 = __webpack_require__(7);
+	const checkbox_input_1 = __webpack_require__(84);
+	const util_1 = __webpack_require__(16);
+	const editor_theme_1 = __webpack_require__(56);
+	const expose_as_1 = __webpack_require__(42);
+	const editor_html_element_1 = __webpack_require__(19);
+	const binding_1 = __webpack_require__(13);
 	class ComponentRenderer extends editor_html_element_1.EditorHTMLElement {
 	    constructor() {
 	        super(...arguments);
@@ -6865,7 +6747,7 @@
 	    createStandardHeaderStructure() {
 	        return Hex.createElement(horizontal_1.Horizontal, { style: "position:relative" },
 	            Hex.createElement(icon_1.ToggleIcon, { class: "inspector-toggle", visibilityTarget: () => this.getChildRoot() }),
-	            Hex.createElement(checkbox_input_1.CheckboxInput, { class: "enabled-input", value: true }),
+	            Hex.createElement(checkbox_input_1.CheckboxInput, { class: "enabled-input", value: binding_1.CreateBinding(this.component, "isEnabled") }),
 	            Hex.createElement("span", { class: "component-name" }, this.getDisplayName(this.attrs.component.constructor.name)));
 	    }
 	    createStandardBodyStructure(children) {
@@ -6936,12 +6818,65 @@
 
 
 /***/ },
-/* 98 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(74);
+	const element_renderer_1 = __webpack_require__(7);
+	const editor_html_element_1 = __webpack_require__(19);
+	class PropertyRenderer extends editor_html_element_1.EditorHTMLElement {
+	    createInitialStructure(children) {
+	        return children;
+	    }
+	    static set(type, renderer) {
+	        PropertyRenderer.RendererMap.set(type, renderer);
+	    }
+	    static get(component, editorData, attrs = null) {
+	        const rendererType = PropertyRenderer.RendererMap.get(editorData.propertyType);
+	        return element_renderer_1.createElement(rendererType, Object.assign({ component, editorData }, attrs));
+	    }
+	}
+	PropertyRenderer.RendererMap = new Map();
+	exports.PropertyRenderer = PropertyRenderer;
+	//change propogation
+	//input -> notify upwards of changes
+	//send every frame
+	//check every frame
+
+
+/***/ },
+/* 83 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const editor_html_element_1 = __webpack_require__(19);
+	class HorizontalBase extends editor_html_element_1.EditorHTMLElement {
+	    getDomData() {
+	        return HorizontalBase.DomData;
+	    }
+	}
+	HorizontalBase.DomData = { tagName: "div", classList: "horizontal" };
+	exports.HorizontalBase = HorizontalBase;
+	class Horizontal extends HorizontalBase {
+	}
+	exports.Horizontal = Horizontal;
+	createStyleSheet(`<style>
+	.horizontal {
+	    display:flex;
+	    flex-direction:row;
+	}
+	</style>`);
+
+
+/***/ },
+/* 84 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const editor_input_1 = __webpack_require__(76);
 	class CheckboxInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return {
@@ -6965,18 +6900,20 @@
 
 
 /***/ },
-/* 99 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(15);
-	const inspector_row_1 = __webpack_require__(93);
-	const vector2_input_1 = __webpack_require__(100);
-	const binding_1 = __webpack_require__(46);
-	const app_element_1 = __webpack_require__(25);
-	const number_input_1 = __webpack_require__(102);
-	const inline_field_1 = __webpack_require__(101);
+	const editor_html_element_1 = __webpack_require__(19);
+	const inspector_row_1 = __webpack_require__(77);
+	const vector2_input_1 = __webpack_require__(86);
+	const binding_1 = __webpack_require__(13);
+	const app_element_1 = __webpack_require__(29);
+	const number_input_1 = __webpack_require__(87);
+	const inline_field_1 = __webpack_require__(88);
+	const editor_theme_1 = __webpack_require__(56);
+	const dimension_input_1 = __webpack_require__(89);
 	class TransformInspector extends editor_html_element_1.EditorHTMLElement {
 	    onCreated() {
 	        this.appElement = this.attrs.appElement;
@@ -6984,8 +6921,10 @@
 	            localPosition: this.appElement.getLocalPosition(),
 	            localRotation: this.appElement.getRotation(),
 	            localScale: this.appElement.getScale(),
-	            width: this.appElement.getWidth(),
-	            height: this.appElement.getHeight()
+	            dimension: {
+	                width: this.appElement.getWidth(),
+	                height: this.appElement.getHeight()
+	            }
 	        };
 	        this.localPositionBinding = binding_1.CreateBinding(this.proxy, "localPosition").onChange((newValue) => {
 	            this.appElement.setPosition(newValue, app_element_1.Space.Local);
@@ -6996,11 +6935,9 @@
 	        this.localScaleBinding = binding_1.CreateBinding(this.proxy, "localScale").onChange((newValue) => {
 	            this.appElement.setScale(newValue);
 	        });
-	        this.widthBinding = binding_1.CreateBinding(this.appElement, "width").onChange((newValue) => {
-	            this.appElement.setWidth(newValue);
-	        });
-	        this.heightBinding = binding_1.CreateBinding(this.appElement, "height").onChange((newValue) => {
-	            this.appElement.setHeight(newValue);
+	        this.dimensionBinding = binding_1.CreateBinding(this.proxy, "dimension").onChange((newValue) => {
+	            this.appElement.setWidth(newValue.width);
+	            this.appElement.setHeight(newValue.height);
 	        });
 	        EditorRuntime.updateTree.add(this);
 	    }
@@ -7008,6 +6945,8 @@
 	        this.proxy.localPosition = this.appElement.getLocalPosition();
 	        this.proxy.localRotation = this.appElement.getRotation();
 	        this.proxy.localScale = this.appElement.getScale();
+	        this.proxy.dimension.width = this.appElement.getWidth();
+	        this.proxy.dimension.height = this.appElement.getHeight();
 	    }
 	    createInitialStructure() {
 	        return [
@@ -7019,79 +6958,68 @@
 	                Hex.createElement(inline_field_1.InlineField, { label: "" },
 	                    Hex.createElement(number_input_1.NumberInput, { value: this.localRotationBinding }))),
 	            Hex.createElement(inspector_row_1.InspectorRow, { label: "Dimensions" },
-	                Hex.createElement(inline_field_1.InlineField, { label: "Width" },
-	                    Hex.createElement(number_input_1.NumberInput, { value: this.widthBinding })),
-	                Hex.createElement(inline_field_1.InlineField, { label: "Height" },
-	                    Hex.createElement(number_input_1.NumberInput, { value: this.heightBinding })))
+	                Hex.createElement(dimension_input_1.DimensionInput, { value: this.dimensionBinding }))
 	        ];
 	    }
 	}
 	exports.TransformInspector = TransformInspector;
-
-
-/***/ },
-/* 100 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const inline_field_1 = __webpack_require__(101);
-	const number_input_1 = __webpack_require__(102);
-	const binding_1 = __webpack_require__(46);
-	const editor_input_1 = __webpack_require__(74);
-	class Vector2Input extends editor_input_1.InputRenderer {
-	    createInitialStructure(children) {
-	        return [
-	            Hex.createElement(inline_field_1.InlineField, { label: "X" },
-	                Hex.createElement(number_input_1.NumberInput, { value: binding_1.CreateBinding(this.binding, "x") })),
-	            Hex.createElement(inline_field_1.InlineField, { label: "Y" },
-	                Hex.createElement(number_input_1.NumberInput, { value: binding_1.CreateBinding(this.binding, "y") }))
-	        ];
-	    }
-	}
-	exports.Vector2Input = Vector2Input;
-
-
-/***/ },
-/* 101 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const horizontal_1 = __webpack_require__(75);
-	class InlineField extends horizontal_1.HorizontalBase {
-	    createInitialStructure(children) {
-	        return [
-	            Hex.createElement("span", { class: "inline-label" }, this.attrs.label),
-	            children
-	        ];
-	    }
-	}
-	exports.InlineField = InlineField;
 	createStyleSheet(`<style>
 
-	    .inline-label {
-	        /*padding-left: 1.8em;*/
-	        width: 125px;
-	    }
-	    
+	.transform-inspector {
+	    border-bottom: 1px solid ${editor_theme_1.WindowColors.borderGrey};
+	}
+
 	`);
 
 
 /***/ },
-/* 102 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(74);
+	const number_input_1 = __webpack_require__(87);
+	const binding_1 = __webpack_require__(13);
+	const editor_input_1 = __webpack_require__(76);
+	const horizontal_1 = __webpack_require__(83);
+	class Vector2Input extends editor_input_1.InputRenderer {
+	    createInitialStructure(children) {
+	        return Hex.createElement(horizontal_1.Horizontal, null,
+	            Hex.createElement("div", { class: "field-row" },
+	                Hex.createElement("span", { class: "field-label" }, "x = \u00A0"),
+	                Hex.createElement(number_input_1.NumberInput, { style: `padding-left: ${24}px`, value: binding_1.CreateBinding(this.binding, "x") })),
+	            Hex.createElement("div", { class: "field-row" },
+	                Hex.createElement("span", { class: "field-label" }, "y = \u00A0"),
+	                Hex.createElement(number_input_1.NumberInput, { style: `padding-left: ${24}px`, value: binding_1.CreateBinding(this.binding, "y") })));
+	    }
+	}
+	exports.Vector2Input = Vector2Input;
+	createStyleSheet(`<style>
+	    .field-row {
+	        position: relative;
+	    }
+	    
+	    .field-label {
+	        position: absolute;
+	        left: 2px;
+	    }
+	`);
+
+
+/***/ },
+/* 87 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const editor_input_1 = __webpack_require__(76);
 	class NumberInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return {
 	            tagName: "input",
+	            style: "width: 100%",
 	            attributes: {
 	                type: "text",
-	                style: "width: 100%"
 	            }
 	        };
 	    }
@@ -7128,24 +7056,87 @@
 
 
 /***/ },
-/* 103 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const editor_window_element_1 = __webpack_require__(87);
-	const vector2_1 = __webpack_require__(14);
-	const asset_item_1 = __webpack_require__(106);
-	const element_renderer_1 = __webpack_require__(5);
-	const prefab_asset_item_1 = __webpack_require__(136);
-	const prefab_template_1 = __webpack_require__(137);
-	const editor_element_annotations_1 = __webpack_require__(43);
-	const context_menu_1 = __webpack_require__(133);
-	const editor_theme_1 = __webpack_require__(50);
-	const folder_asset_item_1 = __webpack_require__(138);
-	const folder_asset_1 = __webpack_require__(139);
-	const icon_1 = __webpack_require__(85);
+	const horizontal_1 = __webpack_require__(83);
+	class InlineField extends horizontal_1.HorizontalBase {
+	    createInitialStructure(children) {
+	        return [
+	            Hex.createElement("span", { class: "inline-label" }, this.attrs.label),
+	            children
+	        ];
+	    }
+	}
+	exports.InlineField = InlineField;
+	createStyleSheet(`<style>
+
+	    .inline-label {
+	        /*padding-left: 1.8em;*/
+	        width: 125px;
+	    }
+	    
+	`);
+
+
+/***/ },
+/* 89 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const number_input_1 = __webpack_require__(87);
+	const binding_1 = __webpack_require__(13);
+	const editor_input_1 = __webpack_require__(76);
+	const horizontal_1 = __webpack_require__(83);
+	class DimensionInput extends editor_input_1.InputRenderer {
+	    createInitialStructure(children) {
+	        return Hex.createElement(horizontal_1.Horizontal, null,
+	            Hex.createElement("div", { class: "field-row" },
+	                Hex.createElement("span", { class: "field-label" }, "width = \u00A0"),
+	                Hex.createElement(number_input_1.NumberInput, { style: `padding-left: ${52}px`, value: binding_1.CreateBinding(this.binding, "width") })),
+	            Hex.createElement("div", { class: "field-row" },
+	                Hex.createElement("span", { class: "field-label" }, "height = \u00A0"),
+	                Hex.createElement(number_input_1.NumberInput, { style: `padding-left: ${56}px`, value: binding_1.CreateBinding(this.binding, "height") })));
+	    }
+	}
+	exports.DimensionInput = DimensionInput;
+	createStyleSheet(`<style>
+	    
+	    .dimension-input .field-row {
+	        position: relative;
+	    }
+	    
+	    .dimension-input .field-label {
+	        position: absolute;
+	        left: 2px;
+	    }
+	`);
+
+
+/***/ },
+/* 90 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const editor_window_element_1 = __webpack_require__(66);
+	const vector2_1 = __webpack_require__(17);
+	const asset_item_1 = __webpack_require__(91);
+	const element_renderer_1 = __webpack_require__(7);
+	const prefab_asset_item_1 = __webpack_require__(94);
+	const editor_element_annotations_1 = __webpack_require__(67);
+	const editor_theme_1 = __webpack_require__(56);
+	const folder_asset_item_1 = __webpack_require__(96);
+	const folder_asset_1 = __webpack_require__(97);
+	const icon_1 = __webpack_require__(61);
+	const drag_action_1 = __webpack_require__(38);
+	const drag_hierarchy_item_1 = __webpack_require__(62);
+	const evt_asset_created_1 = __webpack_require__(45);
+	const image_asset_item_1 = __webpack_require__(98);
 	class AssetWindow extends editor_window_element_1.EditorWindowElement {
 	    constructor() {
 	        super(...arguments);
@@ -7155,12 +7146,13 @@
 	    onRendered() {
 	        this.loadAssets();
 	        EditorRuntime.updateTree.add(this);
+	        EditorRuntime.on(evt_asset_created_1.AssetCreated, this);
 	    }
 	    loadAssets() {
-	        const manifest = __webpack_require__(108);
-	        manifest.forEach((data) => {
-	            this.getChildRoot().addChild(this.loadAsset(data));
-	        });
+	        // const manifest = require("../../_data/assets");
+	        // manifest.forEach((data : any) => {
+	        //     this.getChildRoot().addChild(this.loadAsset(data));
+	        // });
 	    }
 	    loadAsset(assetDescription, path = "") {
 	        const name = assetDescription.name;
@@ -7171,13 +7163,13 @@
 	        switch (assetDescription.type) {
 	            case "folder":
 	                return element_renderer_1.createElement(folder_asset_item_1.FolderAssetItem, {
-	                    asset: new folder_asset_1.FolderAsset(assetDescription)
+	                    asset: null //new FolderAsset(assetDescription)
 	                }, ...children);
 	            case "image":
-	                return null;
+	                return null; //createElement(AssetSectionItem, data);
 	            case "prefab":
 	                return element_renderer_1.createElement(prefab_asset_item_1.PrefabAssetItem, {
-	                    asset: new prefab_template_1.PrefabTemplate(assetDescription)
+	                    asset: null //new PrefabTemplate(assetDescription)
 	                }, ...children);
 	        }
 	        return null;
@@ -7198,7 +7190,7 @@
 	    }
 	    showContextMenu() {
 	        this.select();
-	        EditorRuntime.showContextMenu(this.createContextMenu());
+	        this.createContextMenu();
 	    }
 	    onUpdated() {
 	        const input = EditorRuntime.getInput();
@@ -7219,14 +7211,74 @@
 	        }
 	    }
 	    createFolder() {
-	        let parent = this;
-	        if (this.selectedItem) {
-	            parent = this.selectedItem.getAncestorByType(folder_asset_item_1.FolderAssetItem, true) || this;
+	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
+	            let path = System.AssetRoot;
+	            let parent = null;
+	            if (this.selectedItem) {
+	                parent = this.selectedItem.getAncestorByType(folder_asset_item_1.FolderAssetItem, true);
+	                if (parent)
+	                    path += parent.getPath() + "/";
+	            }
+	            path = FileSystem.createUniqueFilePath(path + "New Folder");
+	            alert(path);
+	            const asset = new folder_asset_1.FolderAsset(path);
+	            yield FileSystem.createDirectory(path);
+	            const folder = element_renderer_1.createElement(folder_asset_item_1.FolderAssetItem, { asset: new folder_asset_1.FolderAsset(path) });
+	            (parent || this).getChildRoot().addChild(folder);
+	        });
+	    }
+	    onHierarchyDragEnter() {
+	        this.htmlNode.style.backgroundColor = "red";
+	    }
+	    onHierarchyDragExit() {
+	        this.htmlNode.style.backgroundColor = null;
+	    }
+	    onHierarchyDrop(action) {
+	        //const prefab = PrefabTemplate.createFromAppElement(action.appElement);
+	        //this.getChildRoot().addChild(createElement(PrefabAssetItem, { asset: prefab }));
+	    }
+	    handleFileDrop(event) {
+	        const project = EditorRuntime.getProject();
+	        const files = event.dataTransfer.files;
+	        const fn = Array.prototype.map;
+	        project.importAll(fn.call(files, function (file) {
+	            return file.path;
+	        }));
+	    }
+	    onAssetCreated(asset) {
+	        //create corresponding asset item at correct hierarchy point
+	        const segments = asset.getPathSegments();
+	        let ptr = this.getChildRoot();
+	        let path = "";
+	        for (let i = 0; i < segments.length - 1; i++) {
+	            path += segments[i] + "/";
+	            const next = this.getFolderByName(ptr, segments[i]);
+	            if (!next) {
+	                ptr.addChild(element_renderer_1.createElement(folder_asset_item_1.FolderAssetItem, { asset: new folder_asset_1.FolderAsset(path) }));
+	            }
+	            ptr = ptr.getChildRoot();
 	        }
-	        const path = (parent instanceof asset_item_1.EditorAssetItem) ? parent.getPath() + "/" : "";
-	        const asset = new folder_asset_1.FolderAsset({ path: path + "New Folder" });
-	        const folder = element_renderer_1.createElement(folder_asset_item_1.FolderAssetItem, { asset });
-	        parent.getChildRoot().addChild(folder);
+	        this.getChildRoot().addChild(this.createItemType(asset));
+	    }
+	    getFolderByName(target, name) {
+	        const folders = target.getChildrenByType(folder_asset_item_1.FolderAssetItem);
+	        for (let i = 0; i < folders.length; i++) {
+	            // if(folders[i].getName() === name) {
+	            //     return folders[i];
+	            // }
+	        }
+	        return null;
+	    }
+	    onFolderCreated(folder) {
+	    }
+	    createItemType(asset) {
+	        switch (asset.getExtension()) {
+	            case "png":
+	                return element_renderer_1.createElement(image_asset_item_1.ImageAssetItem, { asset });
+	        }
+	        return null;
+	    }
+	    onAssetMoved() {
 	    }
 	    renameAssetItem() {
 	        const target = this.selectedItem.getAncestorByType(asset_item_1.EditorAssetItem, true);
@@ -7234,26 +7286,18 @@
 	            return;
 	        target.beginRename();
 	    }
-	    createContextMenu() {
-	        return element_renderer_1.createElement(context_menu_1.EditorContextMenu, {
-	            options: [
-	                {
-	                    name: "Create Folder",
-	                    icon: "folder-o",
-	                    action: () => this.createFolder(),
-	                },
-	                {
-	                    name: "Rename",
-	                    icon: "i-cursor",
-	                    action: () => { this.renameAssetItem(); }
-	                },
-	                {
-	                    name: "Delete",
-	                    icon: "remove",
-	                    action: () => { }
-	                }
-	            ]
+	    createScript() {
+	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
+	            //EditorRuntime.getProject().createAsset("Script");
 	        });
+	    }
+	    createContextMenu() {
+	        EditorRuntime.getInput().getMousePosition(this.mouse);
+	        const menu = new nw.Menu();
+	        menu.append(new nw.MenuItem({ label: "Create Folder", click: () => this.createFolder() }));
+	        menu.append(new nw.MenuItem({ label: "Create Script", click: () => this.createScript() }));
+	        menu.append(new nw.MenuItem({ label: "Rename", click: () => this.renameAssetItem() }));
+	        menu.popup(this.mouse.x, this.mouse.y);
 	    }
 	}
 	tslib_1.__decorate([
@@ -7262,6 +7306,18 @@
 	tslib_1.__decorate([
 	    editor_element_annotations_1.onRightClick
 	], AssetWindow.prototype, "showContextMenu", null);
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.MouseEnter(drag_hierarchy_item_1.HierarchyItemDragAction)
+	], AssetWindow.prototype, "onHierarchyDragEnter", null);
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.MouseExit(drag_hierarchy_item_1.HierarchyItemDragAction)
+	], AssetWindow.prototype, "onHierarchyDragExit", null);
+	tslib_1.__decorate([
+	    drag_action_1.DragAction.Drop(drag_hierarchy_item_1.HierarchyItemDragAction)
+	], AssetWindow.prototype, "onHierarchyDrop", null);
+	tslib_1.__decorate([
+	    editor_element_annotations_1.onFileDrop
+	], AssetWindow.prototype, "handleFileDrop", null);
 	exports.AssetWindow = AssetWindow;
 	createStyleSheet(`
 	<style>
@@ -7280,51 +7336,18 @@
 
 
 /***/ },
-/* 104 */,
-/* 105 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const icon_1 = __webpack_require__(85);
-	const horizontal_1 = __webpack_require__(75);
-	class IconNameToggleRow extends horizontal_1.HorizontalBase {
-	    createInitialStructure() {
-	        let label = null;
-	        if (this.attrs.useBinding) {
-	            label = new window.EditorBindingElement(this, ["attrs", "label"]);
-	        }
-	        else {
-	            label = this.attrs.label;
-	        }
-	        let toggle = void 0;
-	        if (this.attrs.toggleElementFn) {
-	            toggle = Hex.createElement(icon_1.ToggleIcon, { visibilityTarget: this.attrs.toggleElementFn, class: "toggle", size: "small" });
-	        }
-	        return [
-	            Hex.createElement("div", { class: "icon-container" },
-	                toggle,
-	                Hex.createElement(icon_1.FontIcon, { style: "padding-left:4px", iconName: this.attrs.iconName })),
-	            Hex.createElement("span", { style: "padding-left:4px" }, label)
-	        ];
-	    }
-	}
-	exports.IconNameToggleRow = IconNameToggleRow;
-
-
-/***/ },
-/* 106 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const editor_html_element_1 = __webpack_require__(15);
-	const asset_window_1 = __webpack_require__(103);
-	const icon_1 = __webpack_require__(85);
-	const text_selection_1 = __webpack_require__(134);
-	const drag_action_1 = __webpack_require__(34);
-	const asset_drag_action_1 = __webpack_require__(135);
+	const tslib_1 = __webpack_require__(4);
+	const editor_html_element_1 = __webpack_require__(19);
+	const asset_window_1 = __webpack_require__(90);
+	const icon_1 = __webpack_require__(61);
+	const text_selection_1 = __webpack_require__(92);
+	const drag_action_1 = __webpack_require__(38);
+	const asset_drag_action_1 = __webpack_require__(93);
 	class AssetItemDropTarget extends editor_html_element_1.EditorHTMLElement {
 	    onMounted() {
 	        this.target = this.parent;
@@ -7337,6 +7360,7 @@
 	    onDragExit() {
 	        this.removeClass("hover");
 	    }
+	    //@DragAction.Drop(AssetDragAction)
 	    onDrop(action) {
 	        const grandParent = this.target.getAncestorByType(EditorAssetItem);
 	        if (!grandParent || !grandParent.canNestAsset(action.asset)) {
@@ -7402,10 +7426,15 @@
 	            return;
 	        this.getChildRoot().addChild(action.item);
 	        action.asset.move(this.asset.getPath());
+	        //todo check for unique names
 	    }
 	    onParentChanged() {
 	        const parent = this.getAncestorByType(EditorAssetItem);
 	        parent.showToggleIcon(parent.getChildRoot().children.length > 0);
+	        parent.asset.addChild(this.asset);
+	        this.getChildBySelector(".asset-item-offset").setStyle({
+	            paddingLeft: (this.asset.getDepth() * 12) + "px"
+	        });
 	        parent.onChildAdded(this);
 	    }
 	    onChildAdded(item) { }
@@ -7497,282 +7526,209 @@
 
 
 /***/ },
-/* 107 */,
-/* 108 */
+/* 92 */
 /***/ function(module, exports) {
 
-	function Folder(name, contents, isOpen = true) {
-	    return {
-	        name: name,
-	        type: 'folder',
-	        data: {
-	            isOpen: isOpen,
-	            contents: contents
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	let blurListener = null;
+	let inputListener = null;
+	exports.TextSelection = {
+	    moveCaretToEnd(node) {
+	        if (!node)
+	            return;
+	        node.focus();
+	        const sel = window.getSelection();
+	        if (sel.rangeCount > 0) {
+	            var textNode = sel.focusNode;
+	            const nodeLength = (textNode) ? textNode.nodeValue.length : 0;
+	            var newOffset = sel.focusOffset + nodeLength;
+	            sel.collapse(textNode, Math.min(nodeLength, newOffset));
 	        }
+	    },
+	    makeEditable(node, inputCallback, blurOnEnter = false) {
+	        node.setAttribute("contenteditable", "true");
+	        this.moveCaretToEnd(node);
+	        blurListener = () => {
+	            let text = node.innerText;
+	            text = text.replace(/\/n/g, "");
+	            blurListener = null;
+	            inputListener = null;
+	            this.removeEditable(node);
+	            node.innerText = inputCallback(text) || text;
+	        };
+	        inputListener = () => {
+	            let text = node.innerText;
+	            if (blurOnEnter && text.indexOf("\n") !== -1) {
+	                text = text.replace(/\/n/g, "");
+	                blurListener = null;
+	                inputListener = null;
+	                this.removeEditable(node);
+	                node.innerText = inputCallback(text);
+	            }
+	            // node.innerText = inputCallback(text) || text;
+	        };
+	        node.addEventListener("input", inputListener);
+	        node.addEventListener("blur", blurListener);
+	    },
+	    removeEditable(node) {
+	        node.removeEventListener("input", inputListener);
+	        node.removeEventListener("blur", blurListener);
+	        node.removeAttribute("contenteditable");
 	    }
-	}
-
-	function Prefab(name, data, components) {
-	    return {
-	        type: 'prefab',
-	        name: name,
-	        data: data,
-	        components: components
-	    }
-	}
-
-	function Component(type, data) {
-	    return {
-	        type: type,
-	        data: data
-	    }
-	}
-
-	module.exports = [
-
-	    Prefab("Panel", {}, [
-	        Component("UI/Panel"),
-	        Component("Paint/Background", {
-	            color: {r: 255, g: 0, b: 0, a: 1}
-	        })
-	    ]),
-	    Prefab("Text", {}, [
-	        Component("UI/Text", {
-	            textContent: "Hex Yeah!"
-	        })
-	    ]),
-	    Prefab("Image", [
-	        Component("UI/Image", {
-	            assetId: "img/placeholder.svg" //todo formalize asset ids and resource management
-	        })
-	    ]),
-	    Prefab("Button", [
-	        Component("UI/Button", {
-	            text: "Click Me!"
-	        })
-	    ]),
-	    Prefab("Slider", []),
-	    Prefab("Toggle", []),
-	    Prefab("Input", []),
-	    Prefab("Dropdown", []),
-	    Prefab("Radio Button")
-	];
-
-
-	// module.exports = [
-	//     {
-	//         id: 0x0,
-	//         name: "thing",
-	//         type: "folder",
-	//         data: {
-	//             contents: [
-	//                 {
-	//                     id: 0x1,
-	//                     name: "Folder",
-	//                     type: "folder",
-	//                     data: {
-	//                         contents: [
-	//                             {
-	//                                 idx: 0x4,
-	//                                 name: "Some Item",
-	//                                 type: "image",
-	//                                 data: {
-	//                                     format: "png",
-	//                                     width: 300,
-	//                                     height: 300
-	//                                 }
-	//                             }
-	//                         ]
-	//                     }
-	//                 },
-	//                 {
-	//                     id: 0x2,
-	//                     name: "image",
-	//                     type: "image",
-	//                     data: {
-	//                         format: "png",
-	//                         width: 300,
-	//                         height: 300
-	//                     }
-	//                 },
-	//                 {
-	//
-	//                     id: 0x3,
-	//                     name: "image",
-	//                     type: "image",
-	//                     data: {
-	//                         format: "png",
-	//                         width: 300,
-	//                         height: 300
-	//                     }
-	//                 },
-	//                 {
-	//                     id: 0x5,
-	//                     name: 'prefab',
-	//                     type: "prefab",
-	//                     data: {
-	//                         transform: {
-	//                             position: "",
-	//                             rotation: "",
-	//                             width: "",
-	//                             height: "",
-	//                             scale: ""
-	//                         },
-	//                         components: [
-	//                             {
-	//                                 type: "UI/HorizontalLayout",
-	//                                 data: {
-	//                                     wrapMode: 1,
-	//                                     fillFrom: 'left',
-	//                                     overflow: 'hidden'
-	//                                 }
-	//                             },
-	//                             {
-	//                                 type: "UI/Anchor",
-	//                                 data: {
-	//                                     target: 0x1141,
-	//                                     topLeft: '',
-	//                                     topRight: '',
-	//                                     bottomLeft: "",
-	//                                     bottomRight: ""
-	//                                 }
-	//                             }
-	//                         ],
-	//                         children: [
-	//                             0x1, 0x2, 0x3
-	//                         ]
-	//                     }
-	//                 }
-	//             ]
-	//         }
-	//     }
-	// ];
+	};
 
 
 /***/ },
-/* 109 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(15);
-	class MenuItem extends editor_html_element_1.EditorHTMLElement {
-	    noOp() { }
-	    createInitialStructure(children) {
-	        if (!this.attrs.action) {
-	            this.attrs.action = this.noOp;
-	        }
-	        const pathSegments = this.attrs.path.split("/");
-	        const menuText = pathSegments[pathSegments.length - 1];
-	        const depth = pathSegments.length;
-	        const menuClasses = (depth > 1) ? "sub-menu expand-left" : "sub-menu";
-	        return Hex.createElement("li", { class: "menu-item", onClick: this.attrs.action },
-	            Hex.createElement("a", { "x-id": "menu-text" }, menuText),
-	            Hex.createElement("ul", { "x-child-root": true, class: menuClasses }, children));
+	const drag_action_1 = __webpack_require__(38);
+	class AssetDragAction extends drag_action_1.DragAction {
+	    constructor(asset, item) {
+	        super();
+	        this.asset = asset;
+	        this.item = item;
 	    }
 	}
-	exports.MenuItem = MenuItem;
-	class MenuBar extends editor_html_element_1.EditorHTMLElement {
-	    constructor() {
-	        super(...arguments);
-	        this.menus = {};
+	exports.AssetDragAction = AssetDragAction;
+
+
+/***/ },
+/* 94 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const prefab_asset_1 = __webpack_require__(95);
+	const asset_item_1 = __webpack_require__(91);
+	const drag_action_1 = __webpack_require__(38);
+	const prefab_drag_action_1 = __webpack_require__(64);
+	let PrefabAssetItem = class PrefabAssetItem extends asset_item_1.EditorAssetItem {
+	    getIconName() {
+	        return "object-group";
 	    }
-	    getMenuParent(tokenizedPath) {
-	        if (tokenizedPath.length === 0)
-	            return null;
-	        const path = tokenizedPath.join('/');
-	        if (this.menus[path]) {
-	            return this.menus[path];
-	        }
-	        else {
-	            return this.createMenuItem({ path: path, icon: "" });
-	        }
+	    canNestAsset(asset) {
+	        return asset instanceof prefab_asset_1.PrefabAsset;
 	    }
-	    createMenuItem(option) {
-	        const tokenizedPath = option.path.split("/").map((s) => s.trim());
-	        tokenizedPath.pop();
-	        const parent = this.getMenuParent(tokenizedPath);
-	        const item = Hex.createElement(MenuItem, { path: option.path, action: option.action, icon: option.icon });
-	        this.menus[option.path] = item;
-	        if (parent) {
-	            parent.getChildRoot().addChild(item);
-	        }
-	        else {
-	            this.getChildRoot().addChild(item);
-	        }
-	        return item;
+	    createDragAction() {
+	        return new prefab_drag_action_1.PrefabDragAction(this.asset);
+	    }
+	};
+	PrefabAssetItem = tslib_1.__decorate([
+	    drag_action_1.DragAction.Inherit
+	], PrefabAssetItem);
+	exports.PrefabAssetItem = PrefabAssetItem;
+
+
+/***/ },
+/* 95 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const app_element_1 = __webpack_require__(29);
+	const asset_1 = __webpack_require__(44);
+	class PrefabAsset extends asset_1.Asset {
+	    constructor(filePath) {
+	        super(filePath);
+	    }
+	    create() {
+	        return new app_element_1.AppElement(this.getName());
+	    }
+	    static createFromAppElement(appElement) {
+	        return null;
+	    }
+	}
+	exports.PrefabAsset = PrefabAsset;
+
+
+/***/ },
+/* 96 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const asset_item_1 = __webpack_require__(91);
+	const icon_1 = __webpack_require__(61);
+	const drag_action_1 = __webpack_require__(38);
+	let FolderAssetItem = class FolderAssetItem extends asset_item_1.EditorAssetItem {
+	    getIconName() {
+	        return "folder-open-o";
+	    }
+	    getName() {
+	        return this.attrs.asset.getName();
 	    }
 	    onRendered() {
-	        this.createMenuItem({
-	            path: "File/Save As", action: () => {
-	                EditorRuntime.getScene().save();
-	            }
-	        });
+	        if (this.getChildRoot().getChildCount() === 0) {
+	            this.setIcon("folder-o");
+	        }
+	        else if (this.asset.isOpen) {
+	            this.setIcon("folder-open-o");
+	        }
+	        else {
+	            this.setIcon("folder-o");
+	        }
 	    }
-	    createInitialStructure(children) {
-	        return Hex.createElement("ul", { "x-child-root": true, class: "menu-bar-root" });
+	    onChildAdded() {
+	        this.onRendered();
 	    }
-	}
-	exports.MenuBar = MenuBar;
-	const bgColor = '#6b6b6b';
-	createStyleSheet(`<style>
-	.menu-bar {
-	    width: 100%;
-	    height: 1.5em;
-	    background-color: ${bgColor};
-	    display:flex;
-	    flex-direction: column;
-	    align-items: flex-start;
-	    justify-items: center;
-	}
-
-	.menu-bar ul {
-	    margin: 0 0 1em 0;
-	    padding: 0;
-	    z-index:10;
-	}
-
-	.menu-bar-root {
-	    margin-left: 1em;
-	}
-
-	.menu-bar-root > .menu-item {
-	    display: inline-block;
-	    color: whitesmoke;
-	    padding-right: 1em;
-	    text-align: start;
-	}
-
-	.sub-menu {
-	    position: absolute;
-	    display:none;
-	    background: ${bgColor};
-	    padding-left: 1em;
-	    width: 200px;
-	    list-style: none;
-	}
-
-	.menu-item:hover > .sub-menu {
-	    display: block;
-	    background-color: whitesmoke;
-	}
-
-	.expand-left {
-	    left: 100%;
-	    margin-top: -20px; /* todo -- wrong value here */
-	}
-
-	</style>`);
+	    toggle(isOpen) {
+	        super.toggle(isOpen);
+	        const iconName = isOpen ? "folder-open-o" : "folder-o";
+	        this.getChildBySelector('.asset-icon', icon_1.FontIcon).setIcon(iconName);
+	    }
+	};
+	FolderAssetItem = tslib_1.__decorate([
+	    drag_action_1.DragAction.Inherit
+	], FolderAssetItem);
+	exports.FolderAssetItem = FolderAssetItem;
 
 
 /***/ },
-/* 110 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const button_1 = __webpack_require__(73);
-	const editor_html_element_1 = __webpack_require__(15);
+	const asset_1 = __webpack_require__(44);
+	class FolderAsset extends asset_1.Asset {
+	}
+	exports.FolderAsset = FolderAsset;
+
+
+/***/ },
+/* 98 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const asset_item_1 = __webpack_require__(91);
+	const drag_action_1 = __webpack_require__(38);
+	let ImageAssetItem = class ImageAssetItem extends asset_item_1.EditorAssetItem {
+	    getIconName() {
+	        return "object-group";
+	    }
+	};
+	ImageAssetItem = tslib_1.__decorate([
+	    drag_action_1.DragAction.Inherit
+	], ImageAssetItem);
+	exports.ImageAssetItem = ImageAssetItem;
+
+
+/***/ },
+/* 99 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const button_1 = __webpack_require__(59);
+	const editor_html_element_1 = __webpack_require__(19);
 	class Toolbar extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return {
@@ -7813,17 +7769,29 @@
 
 
 /***/ },
-/* 111 */
+/* 100 */
+/***/ function(module, exports) {
+
+	
+
+/***/ },
+/* 101 */
+/***/ function(module, exports) {
+
+	
+
+/***/ },
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const component_renderer_1 = __webpack_require__(97);
-	const sizing_component_1 = __webpack_require__(64);
-	const default_sizing_component_1 = __webpack_require__(140);
-	const inspector_row_1 = __webpack_require__(93);
-	const number_input_1 = __webpack_require__(102);
+	const tslib_1 = __webpack_require__(4);
+	const component_renderer_1 = __webpack_require__(81);
+	const sizing_component_1 = __webpack_require__(40);
+	const default_sizing_component_1 = __webpack_require__(103);
+	const inspector_row_1 = __webpack_require__(77);
+	const number_input_1 = __webpack_require__(87);
 	let SizingRenderer = class SizingRenderer extends component_renderer_1.ComponentRenderer {
 	    createInitialStructure(children) {
 	        const structure = [
@@ -7842,6 +7810,7 @@
 	    onModeChanged() {
 	        const childRoot = this.getChildRoot();
 	        const length = childRoot.children.length;
+	        //destroy all but first child
 	        for (let i = 1; i < length; i++) {
 	            childRoot.children[1].destroy();
 	        }
@@ -7912,17 +7881,238 @@
 
 
 /***/ },
-/* 112 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const property_drawer_1 = __webpack_require__(53);
-	const property_renderer_1 = __webpack_require__(54);
-	const inspector_row_1 = __webpack_require__(93);
-	const checkbox_input_1 = __webpack_require__(98);
-	const binding_1 = __webpack_require__(46);
+	const tslib_1 = __webpack_require__(4);
+	const sizing_component_1 = __webpack_require__(40);
+	const component_1 = __webpack_require__(37);
+	let DefaultSizingComponent = class DefaultSizingComponent extends sizing_component_1.SizingComponent {
+	    onMounted() {
+	    }
+	};
+	DefaultSizingComponent = tslib_1.__decorate([
+	    component_1.component("Layout/Sizing/Default")
+	], DefaultSizingComponent);
+	exports.DefaultSizingComponent = DefaultSizingComponent;
+
+
+/***/ },
+/* 104 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const component_renderer_1 = __webpack_require__(81);
+	const text_component_1 = __webpack_require__(105);
+	const inspector_row_1 = __webpack_require__(77);
+	const text_input_1 = __webpack_require__(75);
+	const binding_1 = __webpack_require__(13);
+	const number_input_1 = __webpack_require__(87);
+	let TextComponentRenderer = class TextComponentRenderer extends component_renderer_1.ComponentRenderer {
+	    onCreated() {
+	        this.proxy = {
+	            textContent: this.component.getTextContent(),
+	            font: {
+	                name: this.component.getFontName(),
+	                size: this.component.getFontSize(),
+	                lineHeight: 1,
+	                weight: 400,
+	                decoration: "none"
+	            }
+	        };
+	        this.textBinding = binding_1.CreateBinding(this.proxy, "textContent").onChange(() => {
+	            this.component.setTextAsync(this.proxy.textContent);
+	        });
+	        this.fontSizeBinding = binding_1.CreateBinding(this.proxy, "font", "size").onChange(() => {
+	            this.component.setFontAsync(this.proxy.font);
+	        });
+	        this.fontNameBinding = binding_1.CreateBinding(this.proxy, "font", "name").onChange(() => {
+	            this.component.setFontAsync(this.proxy.font);
+	        });
+	        this.textBinding.setHost(this);
+	        this.fontNameBinding.setHost(this);
+	        this.fontSizeBinding.setHost(this);
+	        EditorRuntime.updateTree.add(this);
+	    }
+	    createInitialStructure() {
+	        return [
+	            this.createStandardHeaderStructure(),
+	            this.createStandardBodyStructure([
+	                Hex.createElement(inspector_row_1.InspectorRow, { label: "Text" },
+	                    Hex.createElement(text_input_1.TextInput, { value: this.textBinding })),
+	                Hex.createElement(inspector_row_1.InspectorRow, { label: "Text" },
+	                    Hex.createElement(text_input_1.TextInput, { value: this.fontNameBinding })),
+	                Hex.createElement(inspector_row_1.InspectorRow, { label: "Font Size" },
+	                    Hex.createElement(number_input_1.NumberInput, { value: this.fontSizeBinding }))
+	            ])
+	        ];
+	    }
+	};
+	TextComponentRenderer = tslib_1.__decorate([
+	    component_renderer_1.renderer(text_component_1.TextComponent)
+	], TextComponentRenderer);
+	exports.TextComponentRenderer = TextComponentRenderer;
+
+
+/***/ },
+/* 105 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const component_1 = __webpack_require__(37);
+	const e_command_type_1 = __webpack_require__(32);
+	const ui_component_1 = __webpack_require__(106);
+	let TextComponent = class TextComponent extends ui_component_1.UIComponent {
+	    constructor() {
+	        super(...arguments);
+	        this.textContent = "";
+	        this.font = {
+	            name: "Roboto",
+	            size: 12,
+	            lineHeight: 1,
+	            weight: 400,
+	            decoration: "none"
+	        };
+	    }
+	    getFontSize() {
+	        return this.font.size;
+	    }
+	    getFontName() {
+	        return this.font.name;
+	    }
+	    getTextContent() {
+	        return this.textContent;
+	    }
+	    setTextAsync(text) {
+	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
+	            return yield Runtime.awaitCommand(e_command_type_1.CommandType.SetText, {
+	                id: this.appElement.id,
+	                text: text,
+	                font: this.font,
+	                setFont: false
+	            }).then((width) => {
+	                this.textContent = text;
+	                this.appElement.setWidth(width);
+	                return this.textContent;
+	            });
+	        });
+	    }
+	    setFontAsync(font) {
+	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
+	            return yield Runtime.awaitCommand(e_command_type_1.CommandType.SetText, {
+	                id: this.appElement.id,
+	                text: this.textContent,
+	                font: font,
+	                setFont: true
+	            }).then((width) => {
+	                this.font = font;
+	                this.appElement.setWidth(width);
+	                return this.font;
+	            });
+	        });
+	    }
+	    static OnDeserialized(instance, json) {
+	        instance.textContent = json.textContent;
+	        //instance.font = json.font || instance.font;
+	    }
+	    serialize() {
+	        return {
+	            commands: [
+	                {
+	                    type: e_command_type_1.CommandType.SetText,
+	                    data: {
+	                        id: this.appElement.id,
+	                        text: this.textContent,
+	                        font: this.font
+	                    }
+	                }
+	            ]
+	        };
+	    }
+	};
+	TextComponent = tslib_1.__decorate([
+	    component_1.component("UI/Text")
+	], TextComponent);
+	exports.TextComponent = TextComponent;
+
+
+/***/ },
+/* 106 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const component_1 = __webpack_require__(37);
+	const e_command_type_1 = __webpack_require__(32);
+	class Background {
+	    constructor() {
+	    }
+	    serialize() {
+	    }
+	}
+	exports.Background = Background;
+	class Transform {
+	}
+	exports.Transform = Transform;
+	let UIComponent = class UIComponent extends component_1.Component {
+	    setBackground() {
+	        Runtime.sendCommand(e_command_type_1.CommandType.PaintBackground, this.appElement.id);
+	    }
+	    getTypeName() {
+	        return this.constructor.name.replace("Component", "");
+	    }
+	    getBackground() {
+	        return this.background;
+	    }
+	    serialize() {
+	        return {
+	            commands: [
+	                {
+	                    type: e_command_type_1.CommandType.PaintBackground,
+	                    data: {}
+	                }
+	            ],
+	        };
+	    }
+	};
+	UIComponent = tslib_1.__decorate([
+	    component_1.component("UI")
+	], UIComponent);
+	exports.UIComponent = UIComponent;
+	class TextComponent extends UIComponent {
+	    serialize() {
+	        const retn = super.serialize();
+	        if (!retn.commands)
+	            retn.commands = [];
+	        retn.commands.push({
+	            type: e_command_type_1.CommandType.SetText,
+	            data: { text: "hello world", font: "some font" }
+	        });
+	        return retn;
+	    }
+	}
+	//spacing component for margin/padding? 
+
+
+/***/ },
+/* 107 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const property_drawer_1 = __webpack_require__(108);
+	const property_renderer_1 = __webpack_require__(82);
+	const inspector_row_1 = __webpack_require__(77);
+	const checkbox_input_1 = __webpack_require__(84);
+	const binding_1 = __webpack_require__(13);
 	let BooleanRenderer = class BooleanRenderer extends property_renderer_1.PropertyRenderer {
 	    createInitialStructure(children) {
 	        const editorData = this.attrs.editorData;
@@ -7939,25 +8129,40 @@
 
 
 /***/ },
-/* 113 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const property_renderer_1 = __webpack_require__(54);
-	const color_1 = __webpack_require__(61);
-	const inspector_row_1 = __webpack_require__(93);
-	const inline_field_1 = __webpack_require__(101);
-	const number_input_1 = __webpack_require__(102);
-	const property_drawer_1 = __webpack_require__(53);
-	const binding_1 = __webpack_require__(46);
-	const button_1 = __webpack_require__(73);
-	const util_1 = __webpack_require__(13);
+	const property_renderer_1 = __webpack_require__(82);
+	function propertyDrawer(typeToDraw) {
+	    return function (target) {
+	        property_renderer_1.PropertyRenderer.set(typeToDraw, target);
+	    };
+	}
+	exports.propertyDrawer = propertyDrawer;
+
+
+/***/ },
+/* 109 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const property_renderer_1 = __webpack_require__(82);
+	const color_1 = __webpack_require__(110);
+	const inspector_row_1 = __webpack_require__(77);
+	const inline_field_1 = __webpack_require__(88);
+	const number_input_1 = __webpack_require__(87);
+	const property_drawer_1 = __webpack_require__(108);
+	const binding_1 = __webpack_require__(13);
+	const button_1 = __webpack_require__(59);
+	const util_1 = __webpack_require__(16);
 	let ColorRenderer = class ColorRenderer extends property_renderer_1.PropertyRenderer {
 	    updateColor() {
-	        const cmp = this.attrs.component;
-	        cmp.setColor(cmp.getColor());
+	        const cmp = this.attrs.component; //temp! need to implement dirty checking
+	        cmp.color = cmp.color;
 	    }
 	    randomize() {
 	        const c = new color_1.Color();
@@ -7965,8 +8170,8 @@
 	        c.g = util_1.getRandomInt(0, 255);
 	        c.b = util_1.getRandomInt(0, 255);
 	        c.a = 1;
-	        const cmp = this.attrs.component;
-	        cmp.setColor(c);
+	        const cmp = this.attrs.component; //temp! need to implement dirty checking
+	        cmp.color = c;
 	    }
 	    createInitialStructure() {
 	        const editorData = this.attrs.editorData;
@@ -7992,18 +8197,60 @@
 
 
 /***/ },
-/* 114 */
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const property_drawer_1 = __webpack_require__(53);
-	const property_renderer_1 = __webpack_require__(54);
-	const util_1 = __webpack_require__(13);
-	const number_input_1 = __webpack_require__(102);
-	const inspector_row_1 = __webpack_require__(93);
-	const binding_1 = __webpack_require__(46);
+	const tslib_1 = __webpack_require__(4);
+	const TEMP_ANNOTATION_1 = __webpack_require__(18);
+	let Color = Color_1 = class Color {
+	    constructor(r = 0, g = 0, b = 0, a = 1) {
+	        this.r = r;
+	        this.g = g;
+	        this.b = b;
+	        this.a = a;
+	    }
+	    copyTo(input) {
+	        input.r = this.r;
+	        input.g = this.g;
+	        input.b = this.b;
+	        input.a = this.a;
+	        return input;
+	    }
+	    static get Black() { return new Color_1(0, 0, 0, 255); }
+	    static get Blue() { return new Color_1(0, 0, 255, 255); }
+	    static get Clear() { return new Color_1(0, 0, 0, 0); }
+	    static get Cyan() { return new Color_1(0, 255, 255, 255); }
+	    static get Gray() { return new Color_1(0.5, 0.5, 0.5, 255); }
+	    static get Green() { return new Color_1(0, 255, 0, 255); }
+	    static get Magenta() { return new Color_1(255, 0, 255, 255); }
+	    static get Red() { return new Color_1(255, 0, 0, 255); }
+	    static get Yellow() { return new Color_1(255, (0.92 * 255 | 0), (0.06 * 255 | 0), 255); }
+	    static get White() {
+	        return new Color_1(0, 0, 0, 255);
+	    }
+	};
+	Color = Color_1 = tslib_1.__decorate([
+	    TEMP_ANNOTATION_1.serializeClass
+	], Color);
+	exports.Color = Color;
+	var Color_1;
+
+
+/***/ },
+/* 111 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const property_drawer_1 = __webpack_require__(108);
+	const property_renderer_1 = __webpack_require__(82);
+	const util_1 = __webpack_require__(16);
+	const number_input_1 = __webpack_require__(87);
+	const inspector_row_1 = __webpack_require__(77);
+	const binding_1 = __webpack_require__(13);
 	let NumberRenderer = class NumberRenderer extends property_renderer_1.PropertyRenderer {
 	    createInitialStructure() {
 	        const editorData = this.attrs.editorData;
@@ -8027,18 +8274,18 @@
 
 
 /***/ },
-/* 115 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const property_renderer_1 = __webpack_require__(54);
-	const property_drawer_1 = __webpack_require__(53);
-	const util_1 = __webpack_require__(13);
-	const inspector_row_1 = __webpack_require__(93);
-	const select_input_1 = __webpack_require__(116);
-	const binding_1 = __webpack_require__(46);
+	const tslib_1 = __webpack_require__(4);
+	const property_renderer_1 = __webpack_require__(82);
+	const property_drawer_1 = __webpack_require__(108);
+	const util_1 = __webpack_require__(16);
+	const inspector_row_1 = __webpack_require__(77);
+	const select_input_1 = __webpack_require__(113);
+	const binding_1 = __webpack_require__(13);
 	let EnumSelectRenderer = class EnumSelectRenderer extends property_renderer_1.PropertyRenderer {
 	    createOptions(e) {
 	        const retn = new Array();
@@ -8090,12 +8337,12 @@
 
 
 /***/ },
-/* 116 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(74);
+	const editor_input_1 = __webpack_require__(76);
 	class SelectInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return { tagName: "select" };
@@ -8126,18 +8373,21 @@
 
 
 /***/ },
-/* 117 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const property_drawer_1 = __webpack_require__(53);
-	const property_renderer_1 = __webpack_require__(54);
-	const inspector_row_1 = __webpack_require__(93);
-	const text_input_1 = __webpack_require__(92);
+	const tslib_1 = __webpack_require__(4);
+	const property_drawer_1 = __webpack_require__(108);
+	const property_renderer_1 = __webpack_require__(82);
+	const inspector_row_1 = __webpack_require__(77);
+	const text_input_1 = __webpack_require__(75);
 	let StringRenderer = class StringRenderer extends property_renderer_1.PropertyRenderer {
 	    onChange() {
+	        // if(this.attrs.editorData.onValueChanged) {
+	        //
+	        // }
 	        if (this.attrs.onValueChanged) {
 	            this.attrs.onValueChanged("", "");
 	        }
@@ -8157,18 +8407,177 @@
 
 
 /***/ },
-/* 118 */
+/* 115 */
 /***/ function(module, exports) {
 
-	
+	// import {getSetter, getGetter} from "../editor_ui_attrs/binding_compiler";
+	// import {EditorCustomElement} from "../editor_element/editor_custom_element";
+	// import {ILifecycle} from "../editor/editor_runtime";
+	// import {Repeat} from "./repeat";
+	// import {EditorBindingElement} from "../editor_element/editor_binding_element";
+	// import {NumberInput} from "./number_input";
+	//
+	// interface IArrayInput {
+	//     binding : any;
+	//     onValueChanged? : (newValue? : string, oldValue? : string) => void;
+	// }
+	//
+	// //todo -- formatters
+	//
+	// class PropertyRenderer extends EditorCustomElement<any> {
+	//
+	//     constructor(attrs : any) {
+	//         super(attrs);
+	//         for(let key in attrs) {
+	//             Object.defineProperty(attrs.prototype, key, {
+	//                 get: function () {
+	//                     return this._bindings(key).get();
+	//                 },
+	//                 set: function (value : any) {
+	//                    this._bindings(key).set(value);
+	//                    this.attributeChanged(key, value, null);
+	//                 }
+	//             })
+	//         }
+	//     }
+	//
+	//     protected isAttrDirty(check : any) : boolean {
+	//         if(check instanceof Binding) {
+	//             return check.isDirty();
+	//         }
+	//         return false;
+	//     }
+	//
+	// }
+	//
+	//
+	//
+	// export class ArrayInput extends EditorCustomElement<IArrayInput> implements ILifecycle {
+	//
+	//     private getterFn : (renderCtx : any) => any;
+	//     private setterFn : (renderCtx : any, value : any) => void;
+	//     private lastValue : any;
+	//     private ctx : any;
+	//
+	//     protected getDomData() : IDomData {
+	//         return { tagName: "div" };
+	//     }
+	//
+	//     public createInitialStructure() : JSXElement {
+	//         return [
+	//             <NumberInput binding="" value={ Binding<string>(this, "lastValue") }/>
+	//             //<Repeat list={ Binding<string>(this.attrs.list) } itemFactory={null}></Repeat>
+	//             // /*
+	//             // *
+	//             // * <Repeat list={this.list} itemBuilder={ (index : number) => this.buildItem(index) >
+	//             // *     <Label> { Repeat.Index } </Label>
+	//             // *     <Value> { GetInspectorForType(Repeat.CurrentItem) </Value>
+	//             // * </Repeat>
+	//             // *
+	//             // * */
+	//         ]
+	//     }
+	//
+	//     public onMounted() {
+	//         this.ctx = this.attrs.binding.ctx;
+	//         this.getterFn = getGetter(this.attrs.binding.path);
+	//         this.setterFn = getSetter(this.attrs.binding.path);
+	//         const attrs = this.attrs as any;
+	//         Object.keys(attrs).forEach((key : string) => {
+	//             if(attrs[key] instanceof EditorBindingElement) {
+	//                 attrs[key].onChange(() => {
+	//
+	//                 })
+	//             }
+	//         })
+	//         // if(this.isBinding(this.attrs.value)) {
+	//         //
+	//         // }
+	//     }
+	//
+	//     public onFieldDirty(fieldPath : any, value : any, oldValue : any) : void {
+	//         if(fieldPath.ChangeSource === "Inspector") {
+	//
+	//         }
+	//         if(fieldPath.fieldName === "x") {
+	//
+	//         }
+	//     }
+	//
+	//     public onValueChanged() : void {
+	//         //getParent(ValueRenderer)
+	//         //if handler => handler.onValueChanged(this.path.slice(0).push(this.propertyName), value)
+	//     }
+	//
+	//     public onUpdated() {
+	//
+	//         /*
+	//
+	//         ComponentRenderer
+	//             FieldRenderer
+	//                 NumberInput
+	//
+	//             FieldRenderer
+	//                 ArrayRenderer
+	//                     ObjectRenderer
+	//                         FloatRenderer
+	//                         FloatRenderer
+	//                         ArrayRenderer
+	//                             ObjectRender
+	//                                 NumberRenderer
+	//
+	//         onInspectorFieldDirty(path, value, oldValue) {
+	//             [Transform.Position.X]
+	//             if(path.getReference() === this.transform.position) {
+	//
+	//             }
+	//             if(path.propertyName === "x") {
+	//
+	//             }
+	//
+	//         }
+	//
+	//         object.things[i].name
+	//         ObjectInspector
+	//             ArrayInspector
+	//                 IndexInspector
+	//                     StringInput
+	//
+	//             function recursiveDirtyCheck(index, item) {
+	//                 const child = getChildById(index)
+	//                 child.recursiveDirtyCheck();
+	//             }
+	//
+	//             foreach list item
+	//                 if(recursive dirty check item) {
+	//                     this.onValueChanged(index)
+	//                 }
+	//
+	//          */
+	//         // const value = this.getterFn(this.ctx) || "";
+	//         // if (this.lastValue !== value) {
+	//         //     if(this.attrs.onValueChanged) {
+	//         //         this.attrs.onValueChanged(value, this.lastValue);
+	//         //     }
+	//         //     this.lastValue = value;
+	//         //     (this.htmlNode as HTMLInputElement).value = value;
+	//         // }
+	//     }
+	//
+	//     public onRendered() {
+	//         EditorRuntime.updateTree.add(this);
+	//     }
+	//
+	// } 
+
 
 /***/ },
-/* 119 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(15);
+	const editor_html_element_1 = __webpack_require__(19);
 	class InspectorBody extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "vertical" };
@@ -8178,14 +8587,14 @@
 
 
 /***/ },
-/* 120 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const icon_1 = __webpack_require__(85);
-	const inspector_body_1 = __webpack_require__(119);
-	const editor_html_element_1 = __webpack_require__(15);
+	const icon_1 = __webpack_require__(61);
+	const inspector_body_1 = __webpack_require__(116);
+	const editor_html_element_1 = __webpack_require__(19);
 	class InspectorHeader extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "horizontal" };
@@ -8201,34 +8610,87 @@
 
 
 /***/ },
-/* 121 */
-/***/ function(module, exports, __webpack_require__) {
+/* 118 */
+/***/ function(module, exports) {
 
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(15);
-	class Repeat extends editor_html_element_1.EditorHTMLElement {
-	    onUpdated() {
-	        if (DirtyCheck(this.attrs, "list")) {
-	        }
-	    }
-	    createInitialStructure(children) {
-	        return [];
-	    }
+	// import {EditorHTMLElement} from "../editor_element/editor_html_element";
+	class Repeat {
 	}
-	exports.Repeat = Repeat;
+	// export class Repeat<T> extends EditorHTMLElement<IRepeatAttrs<T>> {
+	//
+	//     public onUpdated() {
+	//         if(DirtyCheck(this.attrs, "list")) {
+	//             //teardown entire list, recycle children
+	//             //this.children[i]
+	//             //<RepeatItem>  My index is { new window.EditorBindingElement(Repeat, ["Index"]) } </RepeatItem>
+	//             //
+	//             //  for each child
+	//             //      get binding
+	//             //      if binding
+	//             //          change value
+	//             //      recurse
+	//             //
+	//         }
+	//     }
+	//
+	//     public createInitialStructure(children : JSXElement) : JSXElement {
+	//         return [];
+	//     }
+	//
+	// } 
 
 
 /***/ },
-/* 122 */
+/* 119 */
+/***/ function(module, exports) {
+
+	// import {FontIcon, ToggleIcon} from "./icon";
+	// import {HorizontalBase} from "./horizontal";
+	// import {EditorElement} from "../editor_element/editor_element";
+	//
+	// interface IAttrs {
+	//     iconName : string;
+	//     label : string;
+	//     useBinding? : boolean;
+	//     toggleElementFn?: () => EditorElement;
+	// }
+	//
+	// export class IconNameToggleRow extends HorizontalBase<IAttrs> {
+	//
+	//     public createInitialStructure() : JSXElement {
+	//         let label : any = null;
+	//         if(this.attrs.useBinding) {
+	//             label = new window.EditorBindingElement(this, ["attrs","label"]);
+	//         }
+	//         else {
+	//             label = this.attrs.label;
+	//         }
+	//         let toggle : any = void 0;
+	//         if(this.attrs.toggleElementFn) {
+	//             toggle = <ToggleIcon visibilityTarget={ this.attrs.toggleElementFn } class="toggle" size="small"/>;
+	//         }
+	//         return [
+	//             <div class="icon-container">
+	//                 {toggle}
+	//                 <FontIcon style="padding-left:4px" iconName={this.attrs.iconName}/>
+	//             </div>,
+	//             <span style="padding-left:4px">{ label }</span>
+	//         ]
+	//     }
+	//
+	// } 
+
+
+/***/ },
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const editor_html_element_1 = __webpack_require__(15);
-	const drag_action_1 = __webpack_require__(34);
-	const drag_asset_item_action_1 = __webpack_require__(48);
+	const tslib_1 = __webpack_require__(4);
+	const editor_html_element_1 = __webpack_require__(19);
+	const drag_action_1 = __webpack_require__(38);
+	const drag_asset_item_action_1 = __webpack_require__(121);
 	class AssetDropTargetInsert extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "asset-drop-target-insert" };
@@ -8263,22 +8725,38 @@
 
 
 /***/ },
+/* 121 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const drag_action_1 = __webpack_require__(38);
+	class DragAssetItemAction extends drag_action_1.DragAction {
+	    constructor(asset) {
+	        super();
+	        this.asset = asset;
+	    }
+	}
+	exports.DragAssetItemAction = DragAssetItemAction;
+
+
+/***/ },
+/* 122 */
+/***/ function(module, exports) {
+
+	class Stuff {
+	}
+
+
+/***/ },
 /* 123 */
 /***/ function(module, exports) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	class RuntimeEvent {
-	    static on(eventType) {
-	        return function (target, propertyKey, descriptor) {
-	            const proto = target;
-	            proto.__runtime_events__ = proto.__runtime_events__ || new Map();
-	            const eventMap = proto.__runtime_events__;
-	            eventMap.set(eventType, propertyKey);
-	        };
-	    }
+	class DefaultAssetImporter {
 	}
-	exports.RuntimeEvent = RuntimeEvent;
+	exports.DefaultAssetImporter = DefaultAssetImporter;
 
 
 /***/ },
@@ -8287,21 +8765,9 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	exports.classMap = new Map();
-	function serializeClass(target) {
-	    exports.classMap.set(target.name, target);
+	class ImageImporter {
 	}
-	exports.serializeClass = serializeClass;
-	function setSerializer(typeName, serializer) {
-	}
-	setSerializer("Map", function (target) {
-	    target.forEach(function (value, key) {
-	    });
-	});
-	function serialize() {
-	}
-	function Serialize(target) {
-	}
+	exports.ImageImporter = ImageImporter;
 
 
 /***/ },
@@ -8310,43 +8776,228 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const runtime_event_1 = __webpack_require__(123);
-	class AppElementParentChanged extends runtime_event_1.RuntimeEvent {
-	    onAppElementParentChanged(appElement, newParent, oldParent) { }
-	}
-	exports.AppElementParentChanged = AppElementParentChanged;
+	const tslib_1 = __webpack_require__(4);
+	const asset_1 = __webpack_require__(44);
+	function AssetExtension(str) { }
+	let ImageAsset = class ImageAsset extends asset_1.Asset {
+	};
+	ImageAsset = tslib_1.__decorate([
+	    AssetExtension([".jpg", ".png", "svg"])
+	], ImageAsset);
+	exports.ImageAsset = ImageAsset;
 
 
 /***/ },
 /* 126 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const runtime_event_1 = __webpack_require__(123);
-	class AppElementIndexChanged extends runtime_event_1.RuntimeEvent {
-	    onAppElementIndexChanged(appElement, index, oldIndex) { }
-	}
-	exports.AppElementIndexChanged = AppElementIndexChanged;
-
-
-/***/ },
-/* 127 */
 /***/ function(module, exports) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const typeMap = new Map();
-	function getTypeFromPath(path) {
-	    return typeMap.get(path);
+	function setUpperBits(field, value) {
+	    value = value | 0;
+	    if (value > 0xFFFF)
+	        value = 0xFFFF;
+	    return field;
 	}
-	exports.getTypeFromPath = getTypeFromPath;
-	function setTypePath(path) {
-	    return function (target) {
-	        typeMap.set(path, target);
+	exports.setUpperBits = setUpperBits;
+	function getBits(value, offset, bitCount) {
+	    return (value >> offset) & (1 << bitCount) - 1;
+	}
+	exports.getBits = getBits;
+	//todo -- untested
+	function getMask(start, end) {
+	    return (~0 >> (32 - start - 1)) & (~0 << (32 - end));
+	}
+	function set1stByte(target, value) {
+	    return (target & 0xffffff00) | (value & 0x000000ff);
+	}
+	exports.set1stByte = set1stByte;
+	function setBytes(target, value, byteCount, offset) {
+	    // int x = (number >> (8*n)) & 0xff;
+	    return (target & 0xff000000) | (value & 0x00ffffff);
+	}
+	exports.setBytes = setBytes;
+	function getNthByte(value, byteNumber) {
+	    return (value >> (8 * byteNumber)) & 0xff;
+	}
+	exports.getNthByte = getNthByte;
+	//todo -- untested
+	function setBits(target, value, offset, bitCount) {
+	    var mask = getMask(0, bitCount);
+	    return (target & ~mask) | (value & mask);
+	}
+	exports.setBits = setBits;
+	function setHighLowBits(high, low) {
+	    return (high << 16) | (low & 0xffff);
+	}
+	exports.setHighLowBits = setHighLowBits;
+	function getLow16Bits(value) {
+	    return value & 0xFFFF;
+	}
+	exports.getLow16Bits = getLow16Bits;
+	function getHigh16Bits(value) {
+	    return (value >> 16) & (1 << 16) - 1;
+	}
+	exports.getHigh16Bits = getHigh16Bits;
+
+
+/***/ },
+/* 127 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const e_command_type_1 = __webpack_require__(32);
+	function DeserializeComponent(component, element) {
+	    if (component.handler) {
+	    }
+	    if (component.commands) {
+	        const commands = component.commands;
+	        for (let i = 0; i < commands.length; i++) {
+	            //todo -- response buffer
+	            BrowserRuntime.invokeCommand(commands[i].type, commands[i].data);
+	        }
+	    }
+	}
+	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetText, (function () {
+	    var ruler = document.createElement('span');
+	    var rulerStyle = ruler.style;
+	    rulerStyle.wordWrap = "none";
+	    rulerStyle.visibility = "hidden";
+	    document.body.appendChild(ruler);
+	    return function (payload) {
+	        const element = BrowserRuntime.elementIdToDomNode(payload.id);
+	        if (!element)
+	            return;
+	        element.innerText = payload.text;
+	        const font = payload.font;
+	        const style = element.style;
+	        if (payload.setFont) {
+	            style.fontSize = font.size + "px";
+	            style.fontFamily = font.name;
+	            style.fontWeight = font.weight;
+	            style.lineHeight = font.lineHeight;
+	            style.textDecoration = font.decoration;
+	        }
+	        //todo -- only measure when we need to
+	        rulerStyle.fontSize = font.size + "px";
+	        rulerStyle.fontFamily = font.name;
+	        rulerStyle.fontWeight = font.weight;
+	        rulerStyle.lineHeight = font.lineHeight;
+	        rulerStyle.textDecoration = font.decoration;
+	        ruler.innerText = payload.text;
+	        return ruler.offsetWidth; //todo this should be queued so we do write then read
 	    };
-	}
-	exports.setTypePath = setTypePath;
+	})());
+	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.Create, (function () {
+	    const elementTypeToTagName = {
+	        "Panel": "div",
+	        "Text": "p",
+	        "Button": "button",
+	        "Dropdown": "select",
+	        "DropdownOption": "option",
+	        "Image": "img",
+	        "Checkbox": "checkbox",
+	        "Slider": "slider",
+	        "NumberInput": "input",
+	        "TextInput": "text",
+	        "TextArea": "textarea"
+	    };
+	    return function (payload) {
+	        const element = document.createElement(elementTypeToTagName[payload.elementType]);
+	        if (!element)
+	            return;
+	        const parentId = payload.parentId;
+	        element.setAttribute("app-id", payload.id);
+	        BrowserRuntime.setDomNodeToElementId(payload.id, element);
+	        const components = payload.components;
+	        for (let i = 0; i < components.length; i++) {
+	            DeserializeComponent(components[i], element);
+	        }
+	        BrowserRuntime.elementIdToDomNode(parentId).appendChild(element);
+	    };
+	})());
+	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.Destroy, function (payload) {
+	    const element = BrowserRuntime.elementIdToDomNode(payload.id);
+	    element && element.remove();
+	    BrowserRuntime.setDomNodeToElementId(payload.id, null);
+	    for (let i = 0; i < payload.childIds; i++) {
+	        BrowserRuntime.setDomNodeToElementId(payload.childIds[i], null);
+	    }
+	});
+	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetParent, function (payload) {
+	    const element = BrowserRuntime.elementIdToDomNode(payload.id);
+	    if (!element)
+	        return;
+	    element.remove();
+	    const parentElement = BrowserRuntime.elementIdToDomNode(payload.parentId);
+	    parentElement.appendChild(element);
+	});
+	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetSiblingIndex, function (payload) {
+	    const element = BrowserRuntime.elementIdToDomNode(payload.id);
+	    if (!element)
+	        return;
+	    //todo -- unsure what goes here for now
+	});
+	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetImage, function (payload) {
+	    //todo this needs work
+	    //aspect ratio, width, height, stretch, filters, 9-slice, etc
+	    const el = BrowserRuntime.elementIdToDomNode(payload.id);
+	    if (!el)
+	        return;
+	    el.setAttribute("src", payload.image);
+	});
+	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetPosition, function (payload) {
+	    const el = BrowserRuntime.elementIdToDomNode(payload.id);
+	    if (!el)
+	        return;
+	    const x = payload.x | 0;
+	    const y = payload.y | 0;
+	    el.style.top = y === 0 ? null : y + "px";
+	    el.style.left = x === 0 ? null : x + "px";
+	});
+	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetDimensions, function (payload) {
+	    const el = BrowserRuntime.elementIdToDomNode(payload.id);
+	    if (!el)
+	        return;
+	    el.style.width = (payload.width | 0) + "px";
+	    el.style.height = (payload.height | 0) + "px";
+	});
+	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetTransform, function (payload) {
+	});
+	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.SetRect, function (payload) {
+	    const el = BrowserRuntime.elementIdToDomNode(payload.id);
+	    if (!el)
+	        return;
+	    const rect = payload.rect;
+	    const style = el.style;
+	    const x = rect.x | 0;
+	    const y = rect.y | 0;
+	    style.top = y === 0 ? null : y + "px";
+	    style.left = x === 0 ? null : x + "px";
+	    style.width = (rect.width | 0) + "px";
+	    style.height = (rect.height | 0) + "px";
+	});
+	BrowserRuntime.setCommandInvoker(e_command_type_1.CommandType.PaintBackground, function (payload) {
+	    const el = BrowserRuntime.elementIdToDomNode(payload.id);
+	    if (!el)
+	        return;
+	    const c = payload.color;
+	    if (c) {
+	        //todo = use a style cache to check for bg class
+	        el.style.backgroundColor = `rgba(${c.r}, ${c.g}, ${c.b}, ${c.a})`;
+	    }
+	    else {
+	        el.style.backgroundColor = null;
+	    }
+	});
+	BrowserRuntime.setCommandInvoker(-1, function (payload) {
+	    for (let i = 0; i < payload.components.length; i++) {
+	        const cmp = payload.components[i];
+	        //DeserializeComponent(cmp)
+	        //BrowserRuntime.invokeCommand(cmdType, cmp);
+	    }
+	});
 
 
 /***/ },
@@ -8355,68 +9006,10 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const sizing_component_1 = __webpack_require__(64);
-	const layout_1 = __webpack_require__(129);
-	const expose_as_1 = __webpack_require__(52);
-	const component_1 = __webpack_require__(29);
-	const app_element_1 = __webpack_require__(25);
-	let HorizontalStackLayout = class HorizontalStackLayout extends layout_1.LayoutComponent {
-	    constructor() {
-	        super(...arguments);
-	        this.wrap = false;
-	    }
-	    doLayout() {
-	        var remainingSpace = this.appElement.getWidth();
-	        const sizings = new Array(this.sizingComponents.length);
-	        let totalFractions = 0;
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            const sizer = this.sizingComponents[i];
-	            if (sizer) {
-	                switch (sizer.sizingMode) {
-	                    case sizing_component_1.SizingMode.Percent:
-	                        const percentageValue = sizer.width * 0.01;
-	                        sizings[i] = (percentageValue * this.appElement.getWidth()) | 0;
-	                        remainingSpace -= sizings[i];
-	                        break;
-	                    case sizing_component_1.SizingMode.Fraction:
-	                        totalFractions++;
-	                        sizings[i] = sizer.width;
-	                        break;
-	                    case sizing_component_1.SizingMode.Fixed:
-	                        sizings[i] = sizer.width;
-	                        remainingSpace -= sizings[i];
-	                        break;
-	                }
-	            }
-	            else {
-	                sizings[i] = -1;
-	            }
-	        }
-	        if (totalFractions > 0) {
-	            const pieceSize = remainingSpace / totalFractions;
-	            for (let i = 0; i < sizings.length; i++) {
-	                if (this.sizingComponents[i].sizingMode === sizing_component_1.SizingMode.Fraction) {
-	                    sizings[i] = pieceSize * (this.sizingComponents[i].width);
-	                }
-	            }
-	        }
-	        let allocatedSpace = 0;
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            const element = this.sizingComponents[i].appElement;
-	            element.setPositionValues(allocatedSpace, 0, app_element_1.Space.Local);
-	            element.setDimensions(sizings[i], this.appElement.getHeight());
-	            allocatedSpace += sizings[i];
-	        }
-	    }
-	};
-	tslib_1.__decorate([
-	    expose_as_1.exposeAs(Boolean)
-	], HorizontalStackLayout.prototype, "wrap", void 0);
-	HorizontalStackLayout = tslib_1.__decorate([
-	    component_1.component("Layout/HorizontalStack")
-	], HorizontalStackLayout);
-	exports.HorizontalStackLayout = HorizontalStackLayout;
+	const e_command_type_1 = __webpack_require__(32);
+	BrowserRuntime.setCommandSerializer(e_command_type_1.CommandType.UpdateInput, function () {
+	    return BrowserRuntime.getInput().serialize();
+	});
 
 
 /***/ },
@@ -8425,87 +9018,212 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const sizing_component_1 = __webpack_require__(64);
-	const component_1 = __webpack_require__(29);
-	class DefaultSizer {
-	    constructor(appElement) {
-	        this.appElement = appElement;
-	        this.width = 1;
-	        this.height = 1;
-	        this.sizingMode = sizing_component_1.SizingMode.Fraction;
-	    }
+	const runtime_event_1 = __webpack_require__(6);
+	class AssetImported extends runtime_event_1.RuntimeEvent {
+	    onAssetImported(asset) { }
 	}
-	exports.DefaultSizer = DefaultSizer;
-	class LayoutComponent extends component_1.Component {
-	    constructor() {
-	        super(...arguments);
-	        this.sizingComponents = [];
-	    }
-	    doLayout() { }
-	    onMounted() {
-	        const childCount = this.appElement.getChildCount();
-	        for (let i = 0; i < childCount; i++) {
-	            const child = this.appElement.getChildAt(i);
-	            let sizing = child.getComponent(sizing_component_1.SizingComponent) || new DefaultSizer(child);
-	            this.sizingComponents.push(sizing);
-	        }
-	        Runtime.queueLayout(this);
-	    }
-	    getSlotAtPosition(position) {
-	        if (this.sizingComponents.length === 0)
-	            return;
-	    }
-	    onChildAdded(child) {
-	        const sizer = child.getComponent(sizing_component_1.SizingComponent) || new DefaultSizer(child);
-	        this.sizingComponents.push(sizer);
-	        Runtime.queueLayout(this);
-	    }
-	    onChildRemoved(child) {
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            if (this.sizingComponents[i].appElement === child) {
-	                this.sizingComponents.removeAt(i);
-	                break;
-	            }
-	        }
-	        Runtime.queueLayout(this);
-	    }
-	    onChildMoved(child) {
-	    }
-	    addSizingComponent(sizingComponent) {
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            const cmp = this.sizingComponents[i];
-	            if (cmp.appElement === sizingComponent.appElement) {
-	                this.sizingComponents[i] = sizingComponent;
-	                return;
-	            }
-	        }
-	        Runtime.queueLayout(this);
-	    }
-	    removeSizingComponent(sizingComponent) {
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            const cmp = this.sizingComponents[i];
-	            if (cmp.appElement === sizingComponent.appElement) {
-	                this.sizingComponents[i] = new DefaultSizer(sizingComponent.appElement);
-	                return;
-	            }
-	        }
-	        Runtime.queueLayout(this);
-	    }
-	}
-	exports.LayoutComponent = LayoutComponent;
+	exports.AssetImported = AssetImported;
 
 
 /***/ },
 /* 130 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	module.exports = __webpack_require__(131);
+	//
+	// export class BreakpointChanged {
+	//
+	//     public onBreakpointChanged(breakpoint : Breakpoint) : void {}
+	//
+	// }
+
 
 /***/ },
 /* 131 */
 /***/ function(module, exports) {
 
-	/* WEBPACK VAR INJECTION */(function(global) {"use strict";
+	// import {createGetter} from "./binding_compiler";
+	// import {EditorElement} from "../editor_element/editor_element";
+	//
+	// export class XBind {
+	//
+	//     public element : EditorElement;
+	//     private getterFn : (ctx : any) => any;
+	//     private ctx : any;
+	//
+	//     constructor(element : EditorElement, binding : { ctx : any, path : string }) {
+	//         this.element = element;
+	//         this.ctx = binding.ctx;
+	//         this.getterFn = createGetter(binding.path.split("."));
+	//         EditorRuntime.updateTree.add(this);
+	//     }
+	//
+	//     public onUpdated() : void {
+	//         if (this.element.isDestroyed) {
+	//             EditorRuntime.removeUpdater(this);
+	//             this.element = null;
+	//             this.getterFn = null;
+	//         }
+	//         else if (this.element.isRendered) {
+	//             var value = this.getterFn(this.ctx);
+	//             //this.element.setText(value);
+	//         }
+	//     }
+	// }
+	//
+
+
+/***/ },
+/* 132 */
+/***/ function(module, exports) {
+
+	
+
+/***/ },
+/* 133 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const e_command_type_1 = __webpack_require__(32);
+	Runtime.setCommandInvoker(e_command_type_1.CommandType.UpdateInput, function (data) {
+	    Runtime.getInput().deserialize(data);
+	});
+
+
+/***/ },
+/* 134 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const e_command_type_1 = __webpack_require__(32);
+	const ui_component_1 = __webpack_require__(106);
+	const ComponentCache = new Array();
+	const ColorCache = {};
+	Runtime.setCommandSerializer(e_command_type_1.CommandType.Create, function (id) {
+	    ComponentCache.length = 0;
+	    const appElement = Runtime.getAppElementById(id);
+	    const components = appElement.getAllComponents(ComponentCache);
+	    const serializedComponents = new Array();
+	    for (let i = 0; i < components.length; i++) {
+	        const serialized = components[i].serialize();
+	        if (serialized) {
+	            serializedComponents.push(serialized);
+	        }
+	    }
+	    //todo -- call onCreate after we get the response buffer back
+	    //component.onCreate() or maybe onInitialize() or onMount()
+	    //maybe fire the response when we get it back
+	    //maybe only do that if in run mode
+	    //Component.Serialize(component)
+	    const uiComponent = appElement.getComponent(ui_component_1.UIComponent);
+	    let elementType = "Panel"; //temp until we get meta-elements
+	    if (uiComponent) {
+	        elementType = uiComponent.getTypeName();
+	    }
+	    return {
+	        id: id,
+	        elementType: elementType,
+	        components: serializedComponents,
+	        parentId: appElement.getParent().id
+	    };
+	});
+	Runtime.setCommandSerializer(e_command_type_1.CommandType.Destroy, function (data) {
+	    return data;
+	});
+	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetParent, function (data) {
+	    return data;
+	});
+	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetSiblingIndex, function (data) {
+	    return data;
+	});
+	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetText, function (data) {
+	    return data;
+	});
+	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetImage, function (data) {
+	    return { id: data.id, image: data.image };
+	});
+	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetPosition, function (id) {
+	    const appElement = Runtime.getAppElementById(id);
+	    const position = appElement.getLocalPosition();
+	    return { id: id, x: position.x | 0, y: position.y | 0 };
+	});
+	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetDimensions, function (id) {
+	    const appElement = Runtime.getAppElementById(id);
+	    return { id: id, width: appElement.getWidth(), height: appElement.getHeight() };
+	});
+	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetTransform, function (id) {
+	    const appElement = Runtime.getAppElementById(id);
+	    return { id: id, rotation: appElement.getRotation, scale: appElement.getScale() };
+	});
+	Runtime.setCommandSerializer(e_command_type_1.CommandType.PaintBackground, function (data) {
+	    return data;
+	});
+
+
+/***/ },
+/* 135 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const component_1 = __webpack_require__(37);
+	const color_1 = __webpack_require__(110);
+	const e_command_type_1 = __webpack_require__(32);
+	const expose_as_1 = __webpack_require__(42);
+	const cerialize_1 = __webpack_require__(136);
+	let BackgroundComponent = class BackgroundComponent extends component_1.Component {
+	    constructor() {
+	        super(...arguments);
+	        this._color = color_1.Color.White;
+	    }
+	    get color() {
+	        return this._color;
+	    }
+	    set color(color) {
+	        this._color.r = color.r;
+	        this._color.g = color.g;
+	        this._color.b = color.b;
+	        this._color.a = color.a;
+	        Runtime.sendCommand(e_command_type_1.CommandType.PaintBackground, { id: this.appElement.id, color: this._color });
+	    }
+	    onEnabled() {
+	        Runtime.sendCommand(e_command_type_1.CommandType.PaintBackground, { id: this.appElement.id, color: this._color });
+	    }
+	    onDisabled() {
+	        Runtime.sendCommand(e_command_type_1.CommandType.PaintBackground, { id: this.appElement.id, color: null });
+	    }
+	    static OnDeserialized(instance, json) {
+	        instance.color = json.color;
+	    }
+	    serialize() {
+	        return {
+	            color: this.color.copyTo({})
+	        };
+	    }
+	};
+	tslib_1.__decorate([
+	    expose_as_1.inspector(color_1.Color),
+	    cerialize_1.serializeAs(color_1.Color)
+	], BackgroundComponent.prototype, "_color", void 0);
+	BackgroundComponent = tslib_1.__decorate([
+	    component_1.component("Paint/Background")
+	], BackgroundComponent);
+	exports.BackgroundComponent = BackgroundComponent;
+
+
+/***/ },
+/* 136 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(137);
+
+/***/ },
+/* 137 */
+/***/ function(module, exports) {
+
+	"use strict";
 	var win = null;
 	try {
 	    win = window;
@@ -9156,231 +9874,6 @@
 	exports.SerializableEnumeration = SerializableEnumeration;
 	//expose the type map
 
-	/* WEBPACK VAR INJECTION */}.call(exports, (function() { return this; }())))
-
-/***/ },
-/* 132 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const drag_action_1 = __webpack_require__(34);
-	class HierarchyItemDragAction extends drag_action_1.DragAction {
-	    constructor(item) {
-	        super();
-	        this.item = item;
-	        this.appElement = item.attrs.element;
-	    }
-	}
-	exports.HierarchyItemDragAction = HierarchyItemDragAction;
-
-
-/***/ },
-/* 133 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const editor_html_element_1 = __webpack_require__(15);
-	const element_renderer_1 = __webpack_require__(5);
-	const editor_element_annotations_1 = __webpack_require__(43);
-	const icon_1 = __webpack_require__(85);
-	class EditorContextMenu extends editor_html_element_1.EditorHTMLElement {
-	    getDomData() {
-	        return { tagName: "div", classList: "editor-context-menu" };
-	    }
-	    onCreated() {
-	        EditorRuntime.updateTree.add(this);
-	    }
-	    onUpdated() {
-	        const input = EditorRuntime.getInput();
-	        if (input.isMouseDownThisFrame()) {
-	            const mp = EditorRuntime.getInput().getMousePosition();
-	            const el = EditorRuntime.getEditorElementAtPoint(mp);
-	            if (!this.isDescendant(el)) {
-	                EditorRuntime.hideContextMenu();
-	            }
-	        }
-	    }
-	    createInitialStructure() {
-	        return this.createMenu(this.attrs.options);
-	    }
-	    createMenu(options) {
-	        return options.map((option) => {
-	            return element_renderer_1.createElement(EditorContextMenuItem, option);
-	        });
-	    }
-	}
-	exports.EditorContextMenu = EditorContextMenu;
-	class EditorContextMenuItem extends editor_html_element_1.EditorHTMLElement {
-	    getDomData() {
-	        return { tagName: "div", classList: "editor-context-menu-item" };
-	    }
-	    onClick() {
-	        if (this.attrs.action) {
-	            this.attrs.action();
-	        }
-	        EditorRuntime.hideContextMenu();
-	    }
-	    createInitialStructure() {
-	        return [
-	            Hex.createElement(icon_1.FontIcon, { iconName: this.attrs.icon }),
-	            this.attrs.name
-	        ];
-	    }
-	}
-	tslib_1.__decorate([
-	    editor_element_annotations_1.onClick
-	], EditorContextMenuItem.prototype, "onClick", null);
-	createStyleSheet(`
-	<style>
-
-	.editor-context-menu {
-	    position: absolute;
-	    z-index: 100;
-	    min-width: 200px;
-	    background: #d4d4d4;
-	    display: flex;
-	    flex-direction: column;
-	    color: black;
-	    border-radius: 3px;
-	    padding: 0.5em;
-	}
-
-	.editor-context-menu-item:hover {
-	    background: lightblue;
-	}
-
-
-	`);
-
-
-/***/ },
-/* 134 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	let blurListener = null;
-	let inputListener = null;
-	exports.TextSelection = {
-	    moveCaretToEnd(node) {
-	        if (!node)
-	            return;
-	        node.focus();
-	        const sel = window.getSelection();
-	        if (sel.rangeCount > 0) {
-	            var textNode = sel.focusNode;
-	            const nodeLength = (textNode) ? textNode.nodeValue.length : 0;
-	            var newOffset = sel.focusOffset + nodeLength;
-	            sel.collapse(textNode, Math.min(nodeLength, newOffset));
-	        }
-	    },
-	    makeEditable(node, inputCallback, blurOnEnter = false) {
-	        node.setAttribute("contenteditable", "true");
-	        this.moveCaretToEnd(node);
-	        blurListener = () => {
-	            let text = node.innerText;
-	            text = text.replace(/\/n/g, "");
-	            blurListener = null;
-	            inputListener = null;
-	            this.removeEditable(node);
-	            node.innerText = inputCallback(text) || text;
-	        };
-	        inputListener = () => {
-	            let text = node.innerText;
-	            if (blurOnEnter && text.indexOf("\n") !== -1) {
-	                text = text.replace(/\/n/g, "");
-	                blurListener = null;
-	                inputListener = null;
-	                this.removeEditable(node);
-	                node.innerText = inputCallback(text);
-	            }
-	        };
-	        node.addEventListener("input", inputListener);
-	        node.addEventListener("blur", blurListener);
-	    },
-	    removeEditable(node) {
-	        node.removeEventListener("input", inputListener);
-	        node.removeEventListener("blur", blurListener);
-	        node.removeAttribute("contenteditable");
-	    }
-	};
-
-
-/***/ },
-/* 135 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const drag_action_1 = __webpack_require__(34);
-	class AssetDragAction extends drag_action_1.DragAction {
-	    constructor(asset, item) {
-	        super();
-	        this.asset = asset;
-	        this.item = item;
-	    }
-	}
-	exports.AssetDragAction = AssetDragAction;
-
-
-/***/ },
-/* 136 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const prefab_template_1 = __webpack_require__(137);
-	const asset_item_1 = __webpack_require__(106);
-	const drag_action_1 = __webpack_require__(34);
-	let PrefabAssetItem = class PrefabAssetItem extends asset_item_1.EditorAssetItem {
-	    getIconName() {
-	        return "object-group";
-	    }
-	    canNestAsset(asset) {
-	        return asset instanceof prefab_template_1.PrefabTemplate;
-	    }
-	};
-	PrefabAssetItem = tslib_1.__decorate([
-	    drag_action_1.DragAction.Inherit
-	], PrefabAssetItem);
-	exports.PrefabAssetItem = PrefabAssetItem;
-
-
-/***/ },
-/* 137 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const app_element_1 = __webpack_require__(25);
-	const component_1 = __webpack_require__(29);
-	const asset_1 = __webpack_require__(56);
-	class PrefabTemplate extends asset_1.Asset {
-	    constructor(assetDef) {
-	        super(assetDef);
-	        this.assetDef = assetDef;
-	    }
-	    create() {
-	        const appElement = new app_element_1.AppElement(this.assetDef.name);
-	        for (let i = 0; i < this.assetDef.components.length; i++) {
-	            const desc = this.assetDef.components[i];
-	            const type = component_1.Component.getComponentFromPath(desc.type);
-	            if (type) {
-	                const cmp = appElement.addComponent(type);
-	                if (type.OnDeserialized) {
-	                    type.OnDeserialized(cmp, desc.data);
-	                }
-	            }
-	        }
-	        return appElement;
-	    }
-	}
-	exports.PrefabTemplate = PrefabTemplate;
-
 
 /***/ },
 /* 138 */
@@ -9388,42 +9881,21 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const asset_item_1 = __webpack_require__(106);
-	const icon_1 = __webpack_require__(85);
-	const drag_action_1 = __webpack_require__(34);
-	let FolderAssetItem = class FolderAssetItem extends asset_item_1.EditorAssetItem {
-	    getIconName() {
-	        return "folder-open-o";
+	const sizing_component_1 = __webpack_require__(40);
+	class FitContentSizeComponent extends sizing_component_1.SizingComponent {
+	    onCreated() {
+	        this.sizingMode = sizing_component_1.SizingMode.Fixed;
+	        this.width = this.appElement.getWidth();
+	        this.height = this.appElement.getHeight();
 	    }
-	    onRendered() {
-	        if (this.getChildRoot().getChildCount() === 0) {
-	            this.setIcon("folder-o");
-	        }
-	        else if (this.asset.isOpen) {
-	            this.setIcon("folder-open-o");
-	        }
-	        else {
-	            this.setIcon("folder-o");
-	        }
+	    getPixelWidth(totalWidth, totalHeight) {
+	        return this.appElement.getWidth();
 	    }
-	    onChildAdded() {
-	        this.onRendered();
+	    getPixelHeight(totalWidth, totalHeight) {
+	        return this.appElement.getHeight();
 	    }
-	    toggle(isOpen) {
-	        super.toggle(isOpen);
-	        const iconName = isOpen ? "folder-open-o" : "folder-o";
-	        this.getChildBySelector('.asset-icon', icon_1.FontIcon).setIcon(iconName);
-	    }
-	};
-	FolderAssetItem = tslib_1.__decorate([
-	    drag_action_1.DragAction.Inherit
-	], FolderAssetItem);
-	exports.FolderAssetItem = FolderAssetItem;
-	createStyleSheet(`<style>
-
-	         
-	`);
+	}
+	exports.FitContentSizeComponent = FitContentSizeComponent;
 
 
 /***/ },
@@ -9432,15 +9904,61 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const asset_1 = __webpack_require__(56);
-	class FolderAsset extends asset_1.Asset {
-	    constructor(assetDefinition) {
-	        super(assetDefinition);
-	        const data = assetDefinition.data;
-	        this.isOpen = data ? data.isOpen : true;
+	const tslib_1 = __webpack_require__(4);
+	const sizing_component_1 = __webpack_require__(40);
+	const layout_1 = __webpack_require__(41);
+	const component_1 = __webpack_require__(37);
+	const app_element_1 = __webpack_require__(29);
+	let VerticalStackLayout = class VerticalStackLayout extends layout_1.LayoutComponent {
+	    doLayout() {
+	        var remainingSpace = this.appElement.getHeight();
+	        const sizings = new Array(this.sizingComponents.length);
+	        let totalFractions = 0;
+	        for (let i = 0; i < this.sizingComponents.length; i++) {
+	            const sizer = this.sizingComponents[i];
+	            if (sizer) {
+	                switch (sizer.sizingMode) {
+	                    case sizing_component_1.SizingMode.Percent:
+	                        const percentageValue = sizer.height * 0.01;
+	                        sizings[i] = (percentageValue * this.appElement.getHeight()) | 0;
+	                        remainingSpace -= sizings[i];
+	                        break;
+	                    case sizing_component_1.SizingMode.Fraction:
+	                        totalFractions++;
+	                        sizings[i] = sizer.height;
+	                        break;
+	                    case sizing_component_1.SizingMode.Fixed:
+	                        //todo handle fixed-em
+	                        sizings[i] = sizer.height;
+	                        remainingSpace -= sizings[i];
+	                        break;
+	                }
+	            }
+	            else {
+	                sizings[i] = -1;
+	            }
+	        }
+	        if (totalFractions > 0) {
+	            const pieceSize = remainingSpace / totalFractions;
+	            for (let i = 0; i < sizings.length; i++) {
+	                if (this.sizingComponents[i].sizingMode === sizing_component_1.SizingMode.Fraction) {
+	                    sizings[i] = pieceSize * (this.sizingComponents[i].height);
+	                }
+	            }
+	        }
+	        let allocatedSpace = 0;
+	        for (let i = 0; i < this.sizingComponents.length; i++) {
+	            const element = this.sizingComponents[i].appElement;
+	            element.setPositionValues(0, allocatedSpace, app_element_1.Space.Local);
+	            element.setDimensions(this.appElement.getWidth(), sizings[i]);
+	            allocatedSpace += sizings[i];
+	        }
 	    }
-	}
-	exports.FolderAsset = FolderAsset;
+	};
+	VerticalStackLayout = tslib_1.__decorate([
+	    component_1.component("Layout/VerticalStack")
+	], VerticalStackLayout);
+	exports.VerticalStackLayout = VerticalStackLayout;
 
 
 /***/ },
@@ -9449,17 +9967,748 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(31);
-	const sizing_component_1 = __webpack_require__(64);
-	const component_1 = __webpack_require__(29);
-	let DefaultSizingComponent = class DefaultSizingComponent extends sizing_component_1.SizingComponent {
-	    onMounted() {
+	const tslib_1 = __webpack_require__(4);
+	const ui_component_1 = __webpack_require__(106);
+	const component_1 = __webpack_require__(37);
+	var ScrollBarVisibility;
+	(function (ScrollBarVisibility) {
+	    ScrollBarVisibility[ScrollBarVisibility["Never"] = 0] = "Never";
+	    ScrollBarVisibility[ScrollBarVisibility["Always"] = 1] = "Always";
+	    ScrollBarVisibility[ScrollBarVisibility["Auto"] = 2] = "Auto";
+	})(ScrollBarVisibility = exports.ScrollBarVisibility || (exports.ScrollBarVisibility = {}));
+	let ScrollComponent = class ScrollComponent extends ui_component_1.UIComponent {
+	};
+	ScrollComponent = tslib_1.__decorate([
+	    component_1.component("UI/Scroll")
+	], ScrollComponent);
+	exports.ScrollComponent = ScrollComponent;
+
+
+/***/ },
+/* 141 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const ui_component_1 = __webpack_require__(106);
+	class Font {
+	}
+	exports.Font = Font;
+	class TypographyComponent extends ui_component_1.UIComponent {
+	    setTextAsync(text) {
+	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
+	            this.setTextPromise = new Promise((resolve) => {
+	                // Runtime.sendCommand(CommandType.SetText, this.appElement.id, (rect : Rectangle) => {
+	                //     this.appElement.setRect(rect);
+	                //     resolve(text);
+	                // });
+	            });
+	            return this.setTextPromise;
+	        });
+	    }
+	    setFontAsync(font) {
+	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
+	            return null;
+	        });
+	    }
+	}
+	exports.TypographyComponent = TypographyComponent;
+
+
+/***/ },
+/* 142 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const ui_component_1 = __webpack_require__(106);
+	const expose_as_1 = __webpack_require__(42);
+	const component_1 = __webpack_require__(37);
+	const e_command_type_1 = __webpack_require__(32);
+	let ImageComponent = class ImageComponent extends ui_component_1.UIComponent {
+	    setImageAsync(image) {
+	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
+	            return null;
+	        });
+	    }
+	    serialize() {
+	        return {
+	            elementType: "Image",
+	            commands: [
+	                {
+	                    type: e_command_type_1.CommandType.SetImage,
+	                    data: {
+	                        id: this.appElement.id,
+	                        image: "img/placeholder.svg"
+	                    }
+	                }
+	            ]
+	        };
 	    }
 	};
-	DefaultSizingComponent = tslib_1.__decorate([
-	    component_1.component("Layout/Sizing/Default")
-	], DefaultSizingComponent);
-	exports.DefaultSizingComponent = DefaultSizingComponent;
+	tslib_1.__decorate([
+	    expose_as_1.inspector(String)
+	], ImageComponent.prototype, "image", void 0);
+	ImageComponent = tslib_1.__decorate([
+	    component_1.component("UI/Image")
+	], ImageComponent);
+	exports.ImageComponent = ImageComponent;
+
+
+/***/ },
+/* 143 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const ui_component_1 = __webpack_require__(106);
+	const component_1 = __webpack_require__(37);
+	let PanelComponent = class PanelComponent extends ui_component_1.UIComponent {
+	    serialize() {
+	        return {
+	            elementType: "Panel"
+	        };
+	    }
+	};
+	PanelComponent = tslib_1.__decorate([
+	    component_1.component("UI/Panel")
+	], PanelComponent);
+	exports.PanelComponent = PanelComponent;
+
+
+/***/ },
+/* 144 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	var KeyCode;
+	(function (KeyCode) {
+	    KeyCode[KeyCode["Backspace"] = 8] = "Backspace";
+	    KeyCode[KeyCode["Tab"] = 9] = "Tab";
+	    KeyCode[KeyCode["Enter"] = 13] = "Enter";
+	    KeyCode[KeyCode["Shift"] = 16] = "Shift";
+	    KeyCode[KeyCode["Ctrl"] = 17] = "Ctrl";
+	    KeyCode[KeyCode["Alt"] = 18] = "Alt";
+	    KeyCode[KeyCode["PauseBreak"] = 19] = "PauseBreak";
+	    KeyCode[KeyCode["CapsLock"] = 20] = "CapsLock";
+	    KeyCode[KeyCode["Escape"] = 27] = "Escape";
+	    KeyCode[KeyCode["Space"] = 32] = "Space";
+	    KeyCode[KeyCode["PageUp"] = 33] = "PageUp";
+	    KeyCode[KeyCode["PageDown"] = 34] = "PageDown";
+	    KeyCode[KeyCode["End"] = 35] = "End";
+	    KeyCode[KeyCode["Home"] = 36] = "Home";
+	    KeyCode[KeyCode["LeftArrow"] = 37] = "LeftArrow";
+	    KeyCode[KeyCode["UpArrow"] = 38] = "UpArrow";
+	    KeyCode[KeyCode["RightArrow"] = 39] = "RightArrow";
+	    KeyCode[KeyCode["DownArrow"] = 40] = "DownArrow";
+	    KeyCode[KeyCode["Insert"] = 45] = "Insert";
+	    KeyCode[KeyCode["Delete"] = 46] = "Delete";
+	    KeyCode[KeyCode["Zero"] = 48] = "Zero";
+	    KeyCode[KeyCode["One"] = 49] = "One";
+	    KeyCode[KeyCode["Two"] = 50] = "Two";
+	    KeyCode[KeyCode["Three"] = 51] = "Three";
+	    KeyCode[KeyCode["Four"] = 52] = "Four";
+	    KeyCode[KeyCode["Five"] = 53] = "Five";
+	    KeyCode[KeyCode["Six"] = 54] = "Six";
+	    KeyCode[KeyCode["Seven"] = 55] = "Seven";
+	    KeyCode[KeyCode["Eight"] = 56] = "Eight";
+	    KeyCode[KeyCode["Nine"] = 57] = "Nine";
+	    KeyCode[KeyCode["A"] = 65] = "A";
+	    KeyCode[KeyCode["B"] = 66] = "B";
+	    KeyCode[KeyCode["C"] = 67] = "C";
+	    KeyCode[KeyCode["D"] = 68] = "D";
+	    KeyCode[KeyCode["E"] = 69] = "E";
+	    KeyCode[KeyCode["F"] = 70] = "F";
+	    KeyCode[KeyCode["G"] = 71] = "G";
+	    KeyCode[KeyCode["H"] = 72] = "H";
+	    KeyCode[KeyCode["I"] = 73] = "I";
+	    KeyCode[KeyCode["J"] = 74] = "J";
+	    KeyCode[KeyCode["K"] = 75] = "K";
+	    KeyCode[KeyCode["L"] = 76] = "L";
+	    KeyCode[KeyCode["M"] = 77] = "M";
+	    KeyCode[KeyCode["N"] = 78] = "N";
+	    KeyCode[KeyCode["O"] = 79] = "O";
+	    KeyCode[KeyCode["P"] = 80] = "P";
+	    KeyCode[KeyCode["Q"] = 81] = "Q";
+	    KeyCode[KeyCode["R"] = 82] = "R";
+	    KeyCode[KeyCode["S"] = 83] = "S";
+	    KeyCode[KeyCode["T"] = 84] = "T";
+	    KeyCode[KeyCode["U"] = 85] = "U";
+	    KeyCode[KeyCode["V"] = 86] = "V";
+	    KeyCode[KeyCode["W"] = 87] = "W";
+	    KeyCode[KeyCode["X"] = 88] = "X";
+	    KeyCode[KeyCode["Y"] = 89] = "Y";
+	    KeyCode[KeyCode["Z"] = 90] = "Z";
+	    KeyCode[KeyCode["LeftWindows"] = 91] = "LeftWindows";
+	    KeyCode[KeyCode["RightWindows"] = 92] = "RightWindows";
+	    KeyCode[KeyCode["Select"] = 93] = "Select";
+	    KeyCode[KeyCode["Numpad0"] = 96] = "Numpad0";
+	    KeyCode[KeyCode["Numpad1"] = 97] = "Numpad1";
+	    KeyCode[KeyCode["Numpad2"] = 98] = "Numpad2";
+	    KeyCode[KeyCode["Numpad3"] = 99] = "Numpad3";
+	    KeyCode[KeyCode["Numpad4"] = 100] = "Numpad4";
+	    KeyCode[KeyCode["Numpad5"] = 101] = "Numpad5";
+	    KeyCode[KeyCode["Numpad6"] = 102] = "Numpad6";
+	    KeyCode[KeyCode["Numpad7"] = 103] = "Numpad7";
+	    KeyCode[KeyCode["Numpad8"] = 104] = "Numpad8";
+	    KeyCode[KeyCode["Numpad9"] = 105] = "Numpad9";
+	    KeyCode[KeyCode["Multiply"] = 106] = "Multiply";
+	    KeyCode[KeyCode["Add"] = 107] = "Add";
+	    KeyCode[KeyCode["Subtract"] = 109] = "Subtract";
+	    KeyCode[KeyCode["Decimal"] = 110] = "Decimal";
+	    KeyCode[KeyCode["Divide"] = 111] = "Divide";
+	    KeyCode[KeyCode["F1"] = 112] = "F1";
+	    KeyCode[KeyCode["F2"] = 113] = "F2";
+	    KeyCode[KeyCode["F3"] = 114] = "F3";
+	    KeyCode[KeyCode["F4"] = 115] = "F4";
+	    KeyCode[KeyCode["F5"] = 116] = "F5";
+	    KeyCode[KeyCode["F6"] = 117] = "F6";
+	    KeyCode[KeyCode["F7"] = 118] = "F7";
+	    KeyCode[KeyCode["F8"] = 119] = "F8";
+	    KeyCode[KeyCode["F9"] = 120] = "F9";
+	    KeyCode[KeyCode["F10"] = 121] = "F10";
+	    KeyCode[KeyCode["F11"] = 122] = "F11";
+	    KeyCode[KeyCode["F12"] = 123] = "F12";
+	    KeyCode[KeyCode["NumLock"] = 144] = "NumLock";
+	    KeyCode[KeyCode["ScrollLock"] = 145] = "ScrollLock";
+	    KeyCode[KeyCode["SemiColon"] = 186] = "SemiColon";
+	    KeyCode[KeyCode["Equal"] = 187] = "Equal";
+	    KeyCode[KeyCode["Comma"] = 188] = "Comma";
+	    KeyCode[KeyCode["Dash"] = 189] = "Dash";
+	    KeyCode[KeyCode["Period"] = 190] = "Period";
+	    KeyCode[KeyCode["ForwardSlash"] = 191] = "ForwardSlash";
+	    KeyCode[KeyCode["GraveAccent"] = 192] = "GraveAccent";
+	    KeyCode[KeyCode["OpenBracket"] = 219] = "OpenBracket";
+	    KeyCode[KeyCode["BackSlash"] = 220] = "BackSlash";
+	    KeyCode[KeyCode["CloseBracket"] = 221] = "CloseBracket";
+	    KeyCode[KeyCode["SingleQuote"] = 222] = "SingleQuote";
+	})(KeyCode = exports.KeyCode || (exports.KeyCode = {}));
+
+
+/***/ },
+/* 145 */
+/***/ function(module, exports) {
+
+	
+
+/***/ },
+/* 146 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+
+
+/***/ },
+/* 147 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	class ObjectId {
+	    static generate() {
+	        return ++ObjectId.value;
+	    }
+	    static seed(seed) {
+	        ObjectId.value = seed;
+	    }
+	}
+	ObjectId.value = 1;
+	exports.ObjectId = ObjectId;
+
+
+/***/ },
+/* 148 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	function isPrimitive(value) {
+	    const type = typeof value;
+	    return (type !== "object" && type !== "function");
+	}
+	class TypeSerializer {
+	    serialize() {
+	    }
+	    deserialize() {
+	        return null;
+	    }
+	}
+	//todo most of this gets replaced by generated type information
+	//@Serialize(Class)
+	// names can be made unique in a single blob, then name refs are just start / end indices
+	// thisisabiglistofstringsthatcanbehuffmancompressedandindexedinto
+	//
+	// //some flags can be combined, type, base type, interfaces for example
+	// objetRef: {
+	//     typeId: id,
+	//     decorators: [id, id, id]
+	//     fields: {id, accessFlag(public/readonly/etc), serializedFlag, name, type},
+	//     methods: {id, static flag, overrideFlags, decoratorids, name, paramTypes, retnType}
+	//     interfaces: [id, id, id]
+	//     baseType: id
+	// }
+	//
+	// objectRefid : id / fieldCount/ total bytes
+	// fieldId: id / bytelength
+	// bytes: bytes
+	class Serializer {
+	    constructor() {
+	        this.refId = 1;
+	        this.storage = {};
+	        this.objectIdMap = new Map();
+	        this.objectQueue = [];
+	    }
+	    add(obj) {
+	        if (this.objectIdMap.has(obj))
+	            return;
+	        const id = this.getRefId(obj);
+	        this.storage[id] = this.serialize(obj);
+	    }
+	    write() {
+	        while (this.objectQueue.length) {
+	            this.serialize(this.objectQueue.shift());
+	        }
+	        return "";
+	    }
+	    isSerializable(value) {
+	        if (isPrimitive(value))
+	            return true;
+	        if (Array.isArray(value))
+	            return true;
+	    }
+	    toJSON() {
+	    }
+	    toString() {
+	        return JSON.stringify(this.toJSON());
+	    }
+	    serialize(target) {
+	        const id = this.getRefId(target);
+	        const keys = Object.keys(target);
+	        //write type
+	        var types = {};
+	        types[id] = target.constructor.name;
+	        const serializer = this.getSerializer(target.constructor);
+	        /*
+
+	        types: {
+	            id: "some/path"
+	        },
+	        arrays: {
+	        },
+	        objects: {
+	            id: [0] = typeId
+	                [1...end] = fields
+	                [%3] = 1 field
+
+	            {
+	                type: typeId,
+	                fields: [
+	                    {name: name, value: value, type: type} //dont need the object wrapper, can use array offset
+	                ]
+	            }
+	        }
+	        * */
+	    }
+	    getSerializer(target) {
+	        if (Array.isArray(target)) {
+	        }
+	        else if (target instanceof Date) {
+	        }
+	        else if (target instanceof RegExp) {
+	        }
+	        else if (target instanceof Function) {
+	        }
+	        else {
+	            return (target) => {
+	                const keys = Object.keys(target);
+	                const retn = [];
+	                for (let i = 0; i < keys.length; i++) {
+	                    const key = keys[i];
+	                    const value = this.serializeValue(target[key]);
+	                    const type = this.getType(value);
+	                    retn.push(key, value, type);
+	                }
+	                return retn;
+	            };
+	        }
+	    }
+	    getType(target) {
+	    }
+	    serializeValue(target) {
+	        if (isPrimitive(target))
+	            return target;
+	        if (Array.isArray(target)) {
+	            //queue target
+	        }
+	    }
+	    getRefId(target) {
+	        if (target == null)
+	            return -1;
+	        let id = this.objectIdMap.get(target);
+	        if (!id) {
+	            id = this.refId++;
+	            this.objectIdMap.set(target, id);
+	        }
+	        return id;
+	    }
+	}
+	exports.Serializer = Serializer;
+
+
+/***/ },
+/* 149 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const typeMap = new Map();
+	function getTypeFromPath(path) {
+	    return typeMap.get(path);
+	}
+	exports.getTypeFromPath = getTypeFromPath;
+	function setTypePath(path) {
+	    return function (target) {
+	        typeMap.set(path, target);
+	    };
+	}
+	exports.setTypePath = setTypePath;
+
+
+/***/ },
+/* 150 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const app_element_1 = __webpack_require__(29);
+	const component_1 = __webpack_require__(37);
+	const util_1 = __webpack_require__(16);
+	const type_1 = __webpack_require__(149);
+	let Scene = class Scene {
+	    constructor() {
+	        this.sceneRoots = [];
+	    }
+	    save() {
+	        var generateId = (function () {
+	            let id = 1;
+	            return function () {
+	                return id++;
+	            };
+	        })();
+	        function addToMap(o) {
+	            if (objectIdMap.has(o))
+	                return;
+	            objectIdMap.set(o, generateId());
+	        }
+	        let json = {};
+	        let objectIdMap = new Map();
+	        //give all objects an id
+	        util_1.traverseChildren(app_element_1.AppElement.Root, (child) => {
+	            addToMap(child);
+	            objectIdMap.set(child, generateId());
+	            child.getAllComponents().forEach((component) => {
+	                addToMap(child);
+	                Object.keys(component).forEach((key) => {
+	                    const value = component[key];
+	                    if (value && typeof value === "object") {
+	                        addToMap(child);
+	                    }
+	                });
+	            });
+	        });
+	        util_1.traverseChildren(app_element_1.AppElement.Root, (child) => {
+	            json[objectIdMap.get(child)] = {
+	                id: child.id,
+	                name: child.name,
+	                parentId: child.getParent().id,
+	                localPosition: child.getLocalPosition(),
+	                localRotation: child.getRotation(),
+	                scale: child.getScale(),
+	                width: child.getWidth(),
+	                height: child.getHeight(),
+	                components: child.getAllComponents().forEach((component) => {
+	                    json[objectIdMap.get(component)] = "";
+	                })
+	            };
+	        });
+	    }
+	    destroy() {
+	        //todo -- tear down existing scene
+	    }
+	    load(sceneDescription) {
+	        // this.destroy();
+	        // const elements = sceneDescription.elements;
+	        // for(let i = 0; i < elements.length; i++) {
+	        //     this.sceneRoots.push(this.hydrateElement(elements[i]));
+	        // }
+	    }
+	    hydrateElement(definition, parent) {
+	        const appElement = new app_element_1.AppElement(definition.name, parent);
+	        for (let j = 0; j < definition.components.length; j++) {
+	            const compDesc = definition.components[j];
+	            const type = component_1.Component.getComponentFromPath(compDesc.type);
+	            const cmp = appElement.addComponent(type);
+	        }
+	        for (let k = 0; k < definition.children.length; k++) {
+	            this.hydrateElement(definition.children[k], appElement);
+	        }
+	        return appElement;
+	    }
+	    unload() {
+	    }
+	    addRootElement(element) {
+	        this.sceneRoots.push(element);
+	    }
+	    getRootElements() {
+	        return this.sceneRoots.slice(0);
+	    }
+	};
+	Scene = tslib_1.__decorate([
+	    type_1.setTypePath("Runtime/Scene")
+	], Scene);
+	exports.Scene = Scene;
+
+
+/***/ },
+/* 151 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const scene_tool_1 = __webpack_require__(72);
+	class ScenePanTool extends scene_tool_1.SceneTool {
+	    constructor() {
+	        super(...arguments);
+	        this.panning = false;
+	    }
+	    update() {
+	        const input = EditorRuntime.getInput();
+	        if (!input.isMouseInEditorElement(this.sceneBodyRoot)) {
+	            this.panning = false;
+	            return;
+	        }
+	        if (input.isMouseDownThisFrame()) {
+	            this.panning = true;
+	            this.sceneWindow.pan(input.getMouseDelta());
+	        }
+	        else if (this.panning && input.isMouseDown()) {
+	            this.sceneWindow.pan(input.getMouseDelta());
+	        }
+	        else if (input.isMouseUp()) {
+	            this.panning = false;
+	        }
+	    }
+	}
+	exports.ScenePanTool = ScenePanTool;
+
+
+/***/ },
+/* 152 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const app_element_1 = __webpack_require__(29);
+	const text_component_1 = __webpack_require__(105);
+	const panel_component_1 = __webpack_require__(143);
+	const image_component_1 = __webpack_require__(142);
+	const button_component_1 = __webpack_require__(153);
+	const checkbox_component_1 = __webpack_require__(154);
+	const slider_component_1 = __webpack_require__(155);
+	const dropdown_component_1 = __webpack_require__(156);
+	const text_input_component_1 = __webpack_require__(157);
+	const number_input_component_1 = __webpack_require__(158);
+	const text_area_component_1 = __webpack_require__(159);
+	function createTextElement() {
+	    const element = new app_element_1.AppElement("Text");
+	    element.addComponent(text_component_1.TextComponent);
+	    return element;
+	}
+	function createPanelElement() {
+	    const element = new app_element_1.AppElement("Panel");
+	    element.addComponent(panel_component_1.PanelComponent);
+	    return element;
+	}
+	function createImageElement() {
+	    const element = new app_element_1.AppElement("Image");
+	    element.addComponent(image_component_1.ImageComponent);
+	    return element;
+	}
+	function createButtonElement() {
+	    const element = new app_element_1.AppElement("Button");
+	    element.addComponent(button_component_1.ButtonComponent);
+	    return element;
+	}
+	function createCheckboxElement() {
+	    const element = new app_element_1.AppElement("Toggle");
+	    element.addComponent(checkbox_component_1.CheckboxComponent);
+	    return element;
+	}
+	function createSliderElement() {
+	    const element = new app_element_1.AppElement("Slider");
+	    element.addComponent(slider_component_1.SliderComponent);
+	    return element;
+	}
+	function createDropdownElement() {
+	    const element = new app_element_1.AppElement("Dropdown");
+	    element.addComponent(dropdown_component_1.DropdownComponent);
+	    return element;
+	}
+	function createTextInputElement() {
+	    const element = new app_element_1.AppElement("Text Input");
+	    element.addComponent(text_input_component_1.TextInputComponent);
+	    return element;
+	}
+	function createNumberInputElement() {
+	    const element = new app_element_1.AppElement("Number Input");
+	    element.addComponent(number_input_component_1.NumberInputComponent);
+	    return element;
+	}
+	function createTextAreaElement() {
+	    const element = new app_element_1.AppElement("Text Area Input");
+	    element.addComponent(text_area_component_1.TextAreaComponent);
+	    return element;
+	}
+	function getCreationMenu() {
+	    const creationMenu = new nw.Menu();
+	    creationMenu.append(new nw.MenuItem({ label: "Text", click: createTextElement }));
+	    creationMenu.append(new nw.MenuItem({ label: "Panel", click: createPanelElement }));
+	    creationMenu.append(new nw.MenuItem({ label: "Image", click: createImageElement }));
+	    creationMenu.append(new nw.MenuItem({ label: "Button", click: createButtonElement }));
+	    creationMenu.append(new nw.MenuItem({ label: "Toggle", click: createCheckboxElement }));
+	    creationMenu.append(new nw.MenuItem({ label: "Slider", click: createSliderElement }));
+	    creationMenu.append(new nw.MenuItem({ label: "Dropdown", click: createDropdownElement }));
+	    creationMenu.append(new nw.MenuItem({ label: "Text Input", click: createTextInputElement }));
+	    creationMenu.append(new nw.MenuItem({ label: "Number Input", click: createNumberInputElement }));
+	    creationMenu.append(new nw.MenuItem({ label: "Text Area", click: createTextAreaElement }));
+	    return creationMenu;
+	}
+	exports.getCreationMenu = getCreationMenu;
+
+
+/***/ },
+/* 153 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const ui_component_1 = __webpack_require__(106);
+	const component_1 = __webpack_require__(37);
+	let ButtonComponent = class ButtonComponent extends ui_component_1.UIComponent {
+	};
+	ButtonComponent = tslib_1.__decorate([
+	    component_1.component("UI/Button")
+	], ButtonComponent);
+	exports.ButtonComponent = ButtonComponent;
+
+
+/***/ },
+/* 154 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const ui_component_1 = __webpack_require__(106);
+	const component_1 = __webpack_require__(37);
+	let CheckboxComponent = class CheckboxComponent extends ui_component_1.UIComponent {
+	};
+	CheckboxComponent = tslib_1.__decorate([
+	    component_1.component("UI/Checkbox")
+	], CheckboxComponent);
+	exports.CheckboxComponent = CheckboxComponent;
+
+
+/***/ },
+/* 155 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const ui_component_1 = __webpack_require__(106);
+	const component_1 = __webpack_require__(37);
+	let SliderComponent = class SliderComponent extends ui_component_1.UIComponent {
+	};
+	SliderComponent = tslib_1.__decorate([
+	    component_1.component("UI/Slider")
+	], SliderComponent);
+	exports.SliderComponent = SliderComponent;
+
+
+/***/ },
+/* 156 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const ui_component_1 = __webpack_require__(106);
+	const component_1 = __webpack_require__(37);
+	let DropdownComponent = class DropdownComponent extends ui_component_1.UIComponent {
+	};
+	DropdownComponent = tslib_1.__decorate([
+	    component_1.component("UI/Dropdown")
+	], DropdownComponent);
+	exports.DropdownComponent = DropdownComponent;
+
+
+/***/ },
+/* 157 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const ui_component_1 = __webpack_require__(106);
+	const component_1 = __webpack_require__(37);
+	let TextInputComponent = class TextInputComponent extends ui_component_1.UIComponent {
+	};
+	TextInputComponent = tslib_1.__decorate([
+	    component_1.component("UI/TextInput")
+	], TextInputComponent);
+	exports.TextInputComponent = TextInputComponent;
+
+
+/***/ },
+/* 158 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const ui_component_1 = __webpack_require__(106);
+	const component_1 = __webpack_require__(37);
+	let NumberInputComponent = class NumberInputComponent extends ui_component_1.UIComponent {
+	};
+	NumberInputComponent = tslib_1.__decorate([
+	    component_1.component("UI/NumberInput")
+	], NumberInputComponent);
+	exports.NumberInputComponent = NumberInputComponent;
+
+
+/***/ },
+/* 159 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const ui_component_1 = __webpack_require__(106);
+	const component_1 = __webpack_require__(37);
+	let TextAreaComponent = class TextAreaComponent extends ui_component_1.UIComponent {
+	};
+	TextAreaComponent = tslib_1.__decorate([
+	    component_1.component("UI/TextArea")
+	], TextAreaComponent);
+	exports.TextAreaComponent = TextAreaComponent;
 
 
 /***/ }

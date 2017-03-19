@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create New Project</title>
+</head>
+<body>
+<form>
+    <label for="location">Location</label>
+    <input id="location" value="" type="text"/>
+    <button>...</button>
+</form>
+<input type="file" style="display:none"/>
+<script>
+
+    const inputBox = document.getElementById("location");
+    inputBox.value = global.Hex.getRootDirectory() + "untitled";
+
+    window.getFilePath = function () {
+        return inputBox.value;
+    }
+
+</script>
+</body>
+</html>

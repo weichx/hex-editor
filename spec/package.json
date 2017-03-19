@@ -1,0 +1,11 @@
+{
+  "name": "Test Project",
+  "main": "spec_runner.html",
+  "devDependencies": {
+    "jasmine-core": "^2.5.2"
+  },
+  "window": {
+    "min-width": "1200",
+    "min-height": "800"
+  }
+}

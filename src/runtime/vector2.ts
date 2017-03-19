@@ -1,5 +1,5 @@
 import {serializeClass} from "./persistance/TEMP_ANNOTATION";
-var x : number = "hi";
+
 @serializeClass
 export class Vector2 {
 

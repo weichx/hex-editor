@@ -10,11 +10,17 @@ import {AppElement} from "../runtime/app_element";
 import {Component} from "../runtime/component";
 import {createElement} from "../editor_element/element_renderer";
 import {TransformInspector} from "../renderers/component/app_element_inspector";
-import {CreateBinding} from "../editor/binding";
+import {CreateBinding, IEditorBinding} from "../editor/binding";
+import {CheckboxInput} from "../ui_elements/checkbox_input";
 
 export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
 
     public readonly selection : AppElement;
+    private isEnabledBinding : IEditorBinding<boolean>;
+
+    private proxy : {
+        isEnabled: boolean;
+    };
 
     public onSelectionChanged(newSelection : AppElement, oldSelection : AppElement) : void {
         (this as any).selection = newSelection;
@@ -31,28 +37,38 @@ export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
     }
 
     public onUpdated() : void {
-        if(!this.selection) return;
+        if (!this.selection) return;
+        this.proxy.isEnabled = this.selection.isEnabled();
         const components = this.selection.getAllComponents();
-        for(let i = 0; i < components.length; i++) {
+        for (let i = 0; i < components.length; i++) {
             const cmp = components[i] as any;
-            if(cmp.onInspectorUpdated) {
+            if (cmp.onInspectorUpdated) {
                 cmp.onInspectorUpdated();
             }
         }
     }
 
     public onRendered() {
+        this.proxy = { isEnabled: true };
+        this.isEnabledBinding = CreateBinding(this.proxy, "isEnabled").onChange((value : boolean) => {
+            if(this.selection) {
+                this.selection.setActive(value);
+            }
+        });
         EditorRuntime.updateTree.add(this);
         EditorRuntime.on(SelectionChanged, this);
         this.onSelectionChanged(EditorRuntime.getSelection() as AppElement, null);
     }
 
-    public createInitialStructure(children : any) : JSX.Element<{}> {
+    public createInitialStructure(children : JSXElement) : JSXElement {
         return <div class="inspector-window">
             <div class="inspector-header">
                 <div x-if={this.selection} class="inspector-name-field">
                     <InspectorRow label="Name">
                         <TextInput value={ CreateBinding(this, "selection", "name") }/>
+                    </InspectorRow>
+                    <InspectorRow label="Active">
+                        <CheckboxInput value={ this.isEnabledBinding }/>
                     </InspectorRow>
                 </div>
             </div>
@@ -83,6 +99,7 @@ createStyleSheet(`
 
 .inspector-header {
     background: ${WindowColors.foregroundGrey};
+    border-bottom: 1px solid ${WindowColors.borderGrey};
 }
   
 </style>`);

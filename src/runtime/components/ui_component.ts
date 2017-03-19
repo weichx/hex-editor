@@ -65,7 +65,8 @@ export class UIComponent extends Component {
 class TextComponent extends UIComponent {
 
     public serialize() : Indexable<any> {
-        const retn = super.serialize();
+        const retn = super.serialize() as any;
+        if(!retn.commands) retn.commands = [];
         retn.commands.push( {
             type: CommandType.SetText,
             data: { text: "hello world", font: "some font" }

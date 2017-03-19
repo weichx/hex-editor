@@ -148,6 +148,17 @@ export class AppElement {
         return new Rectangle(p.x, p.y, this.width, this.height);
     }
 
+    public setActive(isActive : boolean) : void {
+        if(this.isEnabled() === isActive) return;
+        this.lifeCycleFlags ^= LifeCycleFlag.Enabled;
+        if(isActive) {
+            //on enable
+        }
+        else {
+            //on disable
+        }
+    }
+
     public enable() : void {
         //Runtime.enable(this);
     }

@@ -14,6 +14,7 @@ export class CheckboxInput extends InputRenderer<IInputRendererAttrs<boolean>, b
 
     public onMounted() {
 
+
         this.binding.onChange(() => {
             this.htmlNode.checked = Boolean(this.binding.get());
         });

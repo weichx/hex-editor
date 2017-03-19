@@ -1,11 +1,30 @@
 import {AppElement} from "./app_element";
 import {TypeOf} from "./interfaces/i_typeof";
 import {serializeClass} from "./persistance/TEMP_ANNOTATION";
+import {LifeCycleFlag} from "./enums/e_lifecycle_flags";
 
 @serializeClass
 export class Component {
 
     public readonly appElement : AppElement;
+    private lifeCycleFlags : LifeCycleFlag = LifeCycleFlag.Enabled;
+
+    public get isEnabled() : boolean {
+        return (this.lifeCycleFlags & LifeCycleFlag.Enabled) !== 0;
+    }
+
+    //todo -- need to incorporate 'ActiveAndEnabled'
+    public set isEnabled(value : boolean) {
+        if(this.isEnabled === value) return;
+        if(value) {
+            this.lifeCycleFlags |= LifeCycleFlag.Enabled;
+            this.onEnabled();
+        }
+        else {
+            this.lifeCycleFlags ^= LifeCycleFlag.Enabled;
+            this.onDisabled();
+        }
+    }
 
     public getComponent<T extends Component>(type : TypeOf<T>) : T {
         return this.appElement.getComponent(type);

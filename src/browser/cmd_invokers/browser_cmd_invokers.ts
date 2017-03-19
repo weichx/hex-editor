@@ -1,5 +1,4 @@
 import {CommandType} from "../../runtime/enums/e_command_type";
-import {BrowserRuntimeImpl} from "../browser_runtime";
 
 function DeserializeComponent(component : any, element : HTMLElement) : any {
     if (component.handler) {
@@ -50,11 +49,16 @@ BrowserRuntime.setCommandInvoker(CommandType.Create, (function () {
 
     const elementTypeToTagName : any = {
         "Panel": "div",
-        "Text": "div",
+        "Text": "p",
         "Button": "button",
         "Dropdown": "select",
-        "Section": "section",
-        "Image": "img"
+        "DropdownOption": "option",
+        "Image": "img",
+        "Checkbox": "checkbox",
+        "Slider": "slider",
+        "NumberInput": "input",
+        "TextInput": "text",
+        "TextArea": "textarea"
     };
 
     return function (payload : IJson) {
@@ -139,8 +143,13 @@ BrowserRuntime.setCommandInvoker(CommandType.PaintBackground, function (payload 
     const el = BrowserRuntime.elementIdToDomNode(payload.id);
     if(!el) return;
     const c = payload.color;
-    //todo = use a style cache to check for bg class
-    el.style.background = `rgba(${c.r}, ${c.g}, ${c.b}, ${c.a})`;
+    if(c) {
+        //todo = use a style cache to check for bg class
+        el.style.backgroundColor = `rgba(${c.r}, ${c.g}, ${c.b}, ${c.a})`;
+    }
+    else {
+        el.style.backgroundColor = null;
+    }
 });
 
 BrowserRuntime.setCommandInvoker(-1, function (payload : IJson) {

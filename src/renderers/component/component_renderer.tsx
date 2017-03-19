@@ -9,6 +9,7 @@ import {getExposedFieldMap} from "./expose_as";
 import {Component} from "../../runtime/component";
 import {TypeOf} from "../../runtime/interfaces/i_typeof";
 import {EditorHTMLElement} from "../../editor_element/editor_html_element";
+import {CreateBinding} from "../../editor/binding";
 
 interface IAttrs<T extends Component> {
     component : T;
@@ -38,7 +39,7 @@ export class ComponentRenderer<T extends Component> extends EditorHTMLElement<IA
     public createStandardHeaderStructure() : JSXElement {
         return <Horizontal style="position:relative">
             <ToggleIcon class="inspector-toggle" visibilityTarget={ () => this.getChildRoot() }/>
-            <CheckboxInput class="enabled-input" value={true}/>
+            <CheckboxInput class="enabled-input" value={ CreateBinding(this.component, "isEnabled") }/>
             <span class="component-name">
                     {this.getDisplayName(this.attrs.component.constructor.name)}
                 </span>

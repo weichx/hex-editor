@@ -5,13 +5,13 @@
     "noImplicitAny": true,
     "outDir": "./build/",
     "preserveConstEnums": false,
-    "removeComments": true,
+    "removeComments": false,
     "target": "ES6",
     "module": "commonjs",
     "experimentalDecorators": true,
     "importHelpers": true
   },
   "exclude": [
-    "node_modules", "build", "spec"
+    "node_modules", "build", "spec", "compiler", "server/"
   ]
 }

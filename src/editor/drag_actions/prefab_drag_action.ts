@@ -1,11 +1,11 @@
 import {DragAction} from "./drag_action";
-import {PrefabTemplate} from "../../asset_types/prefab_template";
+import {PrefabAsset} from "../../asset_types/prefab_asset";
 
 export class PrefabDragAction extends DragAction {
 
-    public readonly template : PrefabTemplate;
+    public readonly template : PrefabAsset;
 
-    constructor(template : PrefabTemplate) {
+    constructor(template : PrefabAsset) {
         super();
         this.template = template;
     }

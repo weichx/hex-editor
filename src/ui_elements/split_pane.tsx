@@ -3,11 +3,16 @@ import {createElement} from "../editor_element/element_renderer";
 import {clamp01} from "../util";
 import {EditorElement} from "../editor_element/editor_element";
 import {EditorHTMLElement} from "../editor_element/editor_html_element";
+import {EditorRuntimeImplementation} from "../editor/editor_runtime";
 
 interface ISplitPaneAttrs extends IHTMLAttribute {
     axis? : SplitDirection;
     distribution? : number;
     minSize? : number;
+}
+
+class SplitPaneGutter extends EditorHTMLElement<{}> {
+
 }
 
 export class SplitPane extends EditorHTMLElement<ISplitPaneAttrs> {
@@ -47,10 +52,15 @@ export class SplitPane extends EditorHTMLElement<ISplitPaneAttrs> {
         this.gutterNode = this.getChildById("gutter").getDomNode();
         this.computeDimensions();
         EditorRuntime.on(WindowResized, this);
-    }
 
-    public onParentRendered() {
-        this.computeDimensions();
+        let ticks = 0;
+        const intervalId = setInterval(() => {
+            ticks++;
+            this.computeDimensions();
+            if(ticks > 1000) {
+                clearInterval(intervalId);
+            }
+        }, 16);
     }
 
     public onDestroyed() {
@@ -197,7 +207,9 @@ export class SplitPane extends EditorHTMLElement<ISplitPaneAttrs> {
             <div x-id="content0" class="split-pane-panel">
                 {children[0]}
             </div>,
-            <div x-id="gutter" class={gutterClass} onMouseDown={ this.startGutterDrag } />,
+            <div x-id="gutter"
+                 class={gutterClass}
+                 onMouseDown={ this.startGutterDrag } />,
             <div x-id="content1" class="split-pane-panel">
                 {children[1]}
             </div>

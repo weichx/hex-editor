@@ -1,13 +1,10 @@
-///<reference path="../../node_modules/@types/pixi.js/index.d.ts"/>
 import {WindowColors} from "../editor/editor_theme";
 import {EditorWindowElement, IWindowAttrs} from "../chrome/editor_window_element";
-import {EditorElement} from "../editor_element/editor_element";
 import {SceneTool} from "./scene/scene_tool";
 import {AppElement, Space} from "../runtime/app_element";
 import {SceneMetaBar} from "./scene/scene_meta_bar";
 import {Vector2} from "../runtime/vector2";
 import {Breakpoint, BreakpointType} from "../runtime/breakpoint";
-import {ScenePanTool} from "./scene/pan_tool";
 import {clamp} from "../util";
 import {DragAction} from "../editor/drag_actions/drag_action";
 import {PrefabDragAction} from "../editor/drag_actions/prefab_drag_action";
@@ -101,24 +98,26 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
     }
 
     private zoom(zoomDelta : number) : void {
-        const oldWidth = this.frameDimensions.x * this.zoomLevel;
-        const oldHeight = this.frameDimensions.y * this.zoomLevel;
-        this.zoomLevel -= 0.05 * zoomDelta;
-        this.zoomLevel = clamp(this.zoomLevel, 0.1, 4);
-        const newWidth = this.frameDimensions.x * this.zoomLevel;
-        const newHeight = this.frameDimensions.y * this.zoomLevel;
-        const diff = new Vector2(
-            (oldWidth - newWidth) * 0.5,
-            (oldHeight - newHeight) * 0.5
-        );
-        this.pan(diff);
-        if(zoomDelta !== 0) {
-            const childRootDom = this.getChildRoot().getDomNode();
-            const appRootDom = childRootDom.firstElementChild as HTMLElement;
-            appRootDom.style.transformOrigin = "top left";
-            appRootDom.style.transform = "scale(" + this.zoomLevel + ")";
-        }
-        this.paintScene();
+        //todo -- disable until i have time to fix render scale
+        //todo -- try to just set the canvas context scale
+        // const oldWidth = this.frameDimensions.x * this.zoomLevel;
+        // const oldHeight = this.frameDimensions.y * this.zoomLevel;
+        // this.zoomLevel -= 0.05 * zoomDelta;
+        // this.zoomLevel = clamp(this.zoomLevel, 0.1, 4);
+        // const newWidth = this.frameDimensions.x * this.zoomLevel;
+        // const newHeight = this.frameDimensions.y * this.zoomLevel;
+        // const diff = new Vector2(
+        //     (oldWidth - newWidth) * 0.5,
+        //     (oldHeight - newHeight) * 0.5
+        // );
+        // this.pan(diff);
+        // if(zoomDelta !== 0) {
+        //     const childRootDom = this.getChildRoot().getDomNode();
+        //     const appRootDom = childRootDom.firstElementChild as HTMLElement;
+        //     appRootDom.style.transformOrigin = "top left";
+        //     appRootDom.style.transform = "scale(" + this.zoomLevel + ")";
+        // }
+        // this.paintScene();
     }
 
     private resetZoom() : void {

@@ -115,6 +115,10 @@ export class EditorAssetItem<T extends Asset> extends EditorHTMLElement<{ asset 
     public onParentChanged() : void {
         const parent = this.getAncestorByType(EditorAssetItem);
         parent.showToggleIcon(parent.getChildRoot().children.length > 0);
+        parent.asset.addChild(this.asset);
+        this.getChildBySelector(".asset-item-offset").setStyle({
+            paddingLeft: (this.asset.getDepth() * 12) + "px"
+        });
         parent.onChildAdded(this);
     }
 

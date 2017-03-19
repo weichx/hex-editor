@@ -5,7 +5,6 @@ import {SceneWindow} from "./windows/scene_window";
 import {InspectorWindow} from "./windows/inspector_window";
 import {WindowColors} from "./editor/editor_theme";
 import {AssetWindow} from "./windows/asset/asset_window";
-import {MenuBar} from "./chrome/menu_bar";
 import {EditorHTMLElement} from "./editor_element/editor_html_element";
 
 export class EditorApplication extends EditorHTMLElement<{}> {
@@ -16,7 +15,7 @@ export class EditorApplication extends EditorHTMLElement<{}> {
 
     public createInitialStructure(children : any) : JSXElement {
         return [
-            <MenuBar/>,
+            <input style="display:none" id="file-chooser" type="file"/>,
             <SplitPane distribution={0.2}>
                 <SplitPane axis={SplitDirection.Horizontal}>
 

@@ -21,6 +21,23 @@ class TypeSerializer<T> {
 
 //@Serialize(Class)
 
+// names can be made unique in a single blob, then name refs are just start / end indices
+// thisisabiglistofstringsthatcanbehuffmancompressedandindexedinto
+//
+// //some flags can be combined, type, base type, interfaces for example
+// objetRef: {
+//     typeId: id,
+//     decorators: [id, id, id]
+//     fields: {id, accessFlag(public/readonly/etc), serializedFlag, name, type},
+//     methods: {id, static flag, overrideFlags, decoratorids, name, paramTypes, retnType}
+//     interfaces: [id, id, id]
+//     baseType: id
+// }
+//
+// objectRefid : id / fieldCount/ total bytes
+// fieldId: id / bytelength
+// bytes: bytes
+
 export class Serializer {
 
     private storage : Indexable<any>;

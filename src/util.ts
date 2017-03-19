@@ -85,7 +85,7 @@ export function getRandomInt(min : number, max : number) : number {
 }
 
 function distanceSquaredToLineSegment2(lx1 : number, ly1 : number, ldx : number, ldy : number, lineLengthSquared : number, px : number, py : number) {
-    var t; // t===0 at line pt 1 and t ===1 at line pt 2
+    var t : number; // t===0 at line pt 1 and t ===1 at line pt 2
     if (!lineLengthSquared) {
         // 0-length line segment. Any t will return same result
         t = 0;

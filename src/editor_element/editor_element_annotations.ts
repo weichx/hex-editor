@@ -1,6 +1,8 @@
 import {InputEventAnnotationMap} from "./editor_html_element";
 export type MouseEventHandler = (e? : MouseEvent) => any;
 export type MouseDescriptor = TypedPropertyDescriptor<MouseEventHandler>;
+export type FileDragHandler = (e? : DragEvent) => any;
+export type FileDragDescriptor = TypedPropertyDescriptor<FileDragHandler>;
 
 export function onClick(target : Object, propertyKey : string, descriptor : MouseDescriptor) {
     const array = InputEventAnnotationMap.get(target) || new Array<any>();
@@ -74,3 +76,50 @@ export function onKeyPress(target : Object, propertyKey : string, descriptor : M
     InputEventAnnotationMap.set(target, array);
 }
 
+export function onFileDragEnter(target : Object, propertyKey : string, descriptor : FileDragDescriptor) {
+    const array = InputEventAnnotationMap.get(target) || new Array<any>();
+    array.push({ type: "dragenter", methodName: propertyKey });
+    InputEventAnnotationMap.set(target, array);
+}
+
+export function onFileDragExit(target : Object, propertyKey : string, descriptor : FileDragDescriptor) {
+    const array = InputEventAnnotationMap.get(target) || new Array<any>();
+    array.push({ type: "dragexit", methodName: propertyKey });
+    InputEventAnnotationMap.set(target, array);
+}
+
+export function onFileDragStart(target : Object, propertyKey : string, descriptor : FileDragDescriptor) {
+    const array = InputEventAnnotationMap.get(target) || new Array<any>();
+    array.push({ type: "dragstart", methodName: propertyKey });
+    InputEventAnnotationMap.set(target, array);
+}
+
+export function onFileDragEnd(target : Object, propertyKey : string, descriptor : FileDragDescriptor) {
+    const array = InputEventAnnotationMap.get(target) || new Array<any>();
+    array.push({ type: "dragend", methodName: propertyKey });
+    InputEventAnnotationMap.set(target, array);
+}
+
+export function onFileDrop(target : Object, propertyKey : string, descriptor : FileDragDescriptor) {
+    const array = InputEventAnnotationMap.get(target) || new Array<any>();
+    array.push({ type: "drop", methodName: propertyKey });
+    InputEventAnnotationMap.set(target, array);
+}
+
+export function onFileDragLeave(target : Object, propertyKey : string, descriptor : FileDragDescriptor) {
+    const array = InputEventAnnotationMap.get(target) || new Array<any>();
+    array.push({ type: "dragleave", methodName: propertyKey });
+    InputEventAnnotationMap.set(target, array);
+}
+
+export function onFileDrag(target : Object, propertyKey : string, descriptor : FileDragDescriptor) {
+    const array = InputEventAnnotationMap.get(target) || new Array<any>();
+    array.push({ type: "drag", methodName: propertyKey });
+    InputEventAnnotationMap.set(target, array);
+}
+
+export function onFileDragOver(target : Object, propertyKey : string, descriptor : FileDragDescriptor) {
+    const array = InputEventAnnotationMap.get(target) || new Array<any>();
+    array.push({ type: "dragover", methodName: propertyKey });
+    InputEventAnnotationMap.set(target, array);
+}

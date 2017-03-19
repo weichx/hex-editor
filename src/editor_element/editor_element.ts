@@ -131,9 +131,6 @@ export class EditorElement {
             }
         });
 
-        traverseRootFirst(this, function (element : EditorElement) {
-            element.onParentRendered();
-        });
     }
 
     public mount(mountPoint : HTMLElement) : void {
@@ -392,8 +389,6 @@ export class EditorElement {
     public onRendered() { }
 
     public onRerendered() {}
-
-    public onParentRendered() { }
 
     public onParentChanged(newParent : EditorElement, oldParent : EditorElement) {}
 

@@ -6,16 +6,17 @@ import {AppElement, Space} from "../../runtime/app_element";
 import {Vector2} from "../../runtime/vector2";
 import {NumberInput} from "../../ui_elements/number_input";
 import {InlineField} from "../../ui_elements/inline_field";
+import {WindowColors} from "../../editor/editor_theme";
+import {DimensionInput} from "../../ui_elements/dimension_input";
 
 export class TransformInspector extends EditorHTMLElement<{ appElement : AppElement }> {
 
     private proxy : any;
     private appElement : AppElement;
+    private dimensionBinding : IEditorBinding<IDimension>;
     private localPositionBinding : IEditorBinding<Vector2>;
     private localRotationBinding : IEditorBinding<number>;
     private localScaleBinding : IEditorBinding<Vector2>;
-    private widthBinding : IEditorBinding<number>;
-    private heightBinding : IEditorBinding<number>;
 
     public onCreated() : void {
         this.appElement = this.attrs.appElement;
@@ -23,8 +24,10 @@ export class TransformInspector extends EditorHTMLElement<{ appElement : AppElem
             localPosition: this.appElement.getLocalPosition(),
             localRotation: this.appElement.getRotation(),
             localScale: this.appElement.getScale(),
-            width : this.appElement.getWidth(),
-            height: this.appElement.getHeight()
+            dimension: {
+                width: this.appElement.getWidth(),
+                height: this.appElement.getHeight()
+            }
         };
         this.localPositionBinding = CreateBinding(this.proxy, "localPosition").onChange((newValue : Vector2) => {
             this.appElement.setPosition(newValue, Space.Local);
@@ -38,12 +41,9 @@ export class TransformInspector extends EditorHTMLElement<{ appElement : AppElem
             this.appElement.setScale(newValue);
         });
 
-        this.widthBinding = CreateBinding(this.appElement as any, "width").onChange((newValue : number) => {
-            this.appElement.setWidth(newValue);
-        });
-
-        this.heightBinding = CreateBinding(this.appElement as any, "height").onChange((newValue : number) => {
-            this.appElement.setHeight(newValue);
+        this.dimensionBinding = CreateBinding(this.proxy, "dimension").onChange((newValue : IDimension) => {
+            this.appElement.setWidth(newValue.width);
+            this.appElement.setHeight(newValue.height);
         });
 
         EditorRuntime.updateTree.add(this);
@@ -53,6 +53,8 @@ export class TransformInspector extends EditorHTMLElement<{ appElement : AppElem
         this.proxy.localPosition = this.appElement.getLocalPosition();
         this.proxy.localRotation = this.appElement.getRotation();
         this.proxy.localScale = this.appElement.getScale();
+        this.proxy.dimension.width = this.appElement.getWidth();
+        this.proxy.dimension.height = this.appElement.getHeight();
     }
 
     public createInitialStructure() : JSXElement {
@@ -69,14 +71,17 @@ export class TransformInspector extends EditorHTMLElement<{ appElement : AppElem
                 </InlineField>
             </InspectorRow>,
             <InspectorRow label="Dimensions">
-                <InlineField label="Width">
-                    <NumberInput value={ this.widthBinding }/>
-                </InlineField>
-                <InlineField label="Height">
-                    <NumberInput value={ this.heightBinding }/>
-                </InlineField>
+                <DimensionInput value={ this.dimensionBinding }/>
             </InspectorRow>
         ];
     }
 
 }
+
+createStyleSheet(`<style>
+
+.transform-inspector {
+    border-bottom: 1px solid ${WindowColors.borderGrey};
+}
+
+`);

@@ -7,9 +7,9 @@ export class NumberInput extends InputRenderer<IInputRendererAttrs<number>, numb
     protected getDomData() : IDomData {
         return {
             tagName: "input",
+            style: "width: 100%",
             attributes: {
                 type: "text",
-                style: "width: 100%"
             }
         }
     }

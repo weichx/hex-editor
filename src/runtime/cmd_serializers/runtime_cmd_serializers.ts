@@ -3,6 +3,7 @@ import {BackgroundComponent} from "../components/background_component";
 import {Component} from "../component";
 import {UIComponent} from "../components/ui_component";
 import {IFont} from "../components/ui/text_component";
+import {Color} from "../color";
 
 const ComponentCache = new Array<Component>();
 const ColorCache = {};
@@ -12,10 +13,12 @@ Runtime.setCommandSerializer(CommandType.Create, function (id : any) {
     ComponentCache.length = 0;
     const appElement = Runtime.getAppElementById(id);
     const components = appElement.getAllComponents(ComponentCache);
-    const serializedComponents = new Array<IJson>(components.length);
-
+    const serializedComponents = new Array<IJson>();
     for (let i = 0; i < components.length; i++) {
-        serializedComponents[i] = components[i].serialize();
+        const serialized = components[i].serialize();
+        if(serialized) {
+            serializedComponents.push(serialized);
+        }
     }
 
     //todo -- call onCreate after we get the response buffer back
@@ -76,11 +79,6 @@ Runtime.setCommandSerializer(CommandType.SetTransform, function (id : any) {
     return { id: id, rotation: appElement.getRotation, scale: appElement.getScale() };
 });
 
-Runtime.setCommandSerializer(CommandType.PaintBackground, function (id : any) {
-    const appElement = Runtime.getAppElementById(id);
-    const background = appElement.getComponent(BackgroundComponent);
-    return {
-        id: id,
-        color: (background as any).color.copyTo(ColorCache)
-    };
+Runtime.setCommandSerializer(CommandType.PaintBackground, function (data : {id : number, color: Color}) {
+    return data;
 });

@@ -7,7 +7,7 @@ import {propertyDrawer} from "./property_drawer";
 import {BackgroundComponent} from "../../runtime/components/background_component";
 import {CreateBinding} from "../../editor/binding";
 import {Button} from "../../ui_elements/button";
-import {randomPositiveInteger, getRandomInt} from "../../util";
+import {getRandomInt} from "../../util";
 
 interface IColorRenderAttrs extends IPropertyRendererAttrs {
     onValueChanged? (newValue : Color, oldValue : Color) : void;
@@ -18,7 +18,7 @@ export class ColorRenderer extends PropertyRenderer<IColorRenderAttrs> {
 
     private updateColor() : void {
         const cmp = this.attrs.component as BackgroundComponent; //temp! need to implement dirty checking
-        cmp.setColor(cmp.getColor());
+        cmp.color = cmp.color;
     }
 
     private randomize() : void {
@@ -26,9 +26,9 @@ export class ColorRenderer extends PropertyRenderer<IColorRenderAttrs> {
         c.r = getRandomInt(0, 255);
         c.g = getRandomInt(0, 255);
         c.b = getRandomInt(0, 255);
-        c.a = 1;//getRandomInt(0, 255);
+        c.a = 1;
         const cmp = this.attrs.component as BackgroundComponent; //temp! need to implement dirty checking
-        cmp.setColor(c);
+        cmp.color = c;
     }
 
     public createInitialStructure() {
