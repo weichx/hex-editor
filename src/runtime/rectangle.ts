@@ -16,6 +16,14 @@ export class Rectangle {
         this.height = height;
     }
 
+    public setFromPoints(minX : number, minY : number, maxX : number, maxY : number) {
+        this.x = minX;
+        this.y = minY;
+        this.width = maxX - minX;
+        this.height = maxY - minY;
+        return this;
+    }
+
     public containsRectangle(rect : Rectangle) : boolean {
         return false;
     }

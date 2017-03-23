@@ -14,6 +14,8 @@ import {TypeOf} from "../runtime/interfaces/i_typeof";
 import {DragAction} from "./drag_actions/drag_action";
 import {HorizontalStackLayout} from "../runtime/components/layout/horizontal_stack_layout";
 import {Project} from "../project";
+import {BackgroundComponent} from "../runtime/components/background_component";
+import {Color} from "../runtime/color";
 
 let mouseCache = new Vector2();
 
@@ -297,8 +299,9 @@ export class EditorRuntimeImplementation extends RuntimeImpl {
 
     private createRoot(appRoot : typeof EditorElement, attrs : any) : void {
         AppElement.Root = new AppElement("__Root__");
-        AppElement.Root.addComponent(HorizontalStackLayout);
         this.appElementRegistry[0] = AppElement.Root;
+        const bg = AppElement.Root.addComponent(BackgroundComponent);
+        bg.color = Color.Black;
         this.editorApplicationRoot = createElement(appRoot, attrs);
         render(this.editorApplicationRoot, document.getElementById('root'));
     }

@@ -12,6 +12,4 @@ export class ScrollComponent extends UIComponent {
     public enableYScrolling : boolean;
     public scrollBarVisibility : ScrollBarVisibility;
 
-
-
 }

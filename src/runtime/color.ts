@@ -1,6 +1,4 @@
-import {serializeClass} from "./persistance/TEMP_ANNOTATION";
 
-@serializeClass
 export class Color {
 
     public r : number;
@@ -41,8 +39,6 @@ export class Color {
 
     public static get Yellow() { return new Color(255, (0.92 * 255 | 0), (0.06 * 255 | 0), 255); }
 
-    public static get White() {
-        return new Color(0, 0, 0, 255);
-    }
+    public static get White() { return new Color(255, 255, 255, 255); }
 }
 

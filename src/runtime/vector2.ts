@@ -1,4 +1,5 @@
 import {serializeClass} from "./persistance/TEMP_ANNOTATION";
+import {Matrix3x3} from "./matrix3x3";
 
 @serializeClass
 export class Vector2 {
@@ -9,6 +10,12 @@ export class Vector2 {
     constructor(x : number = 0, y : number = 0) {
         this.x = x;
         this.y = y;
+    }
+
+    public set(x : number, y : number) : Vector2 {
+        this.x = x;
+        this.y = y;
+        return this;
     }
 
     public scale(factor : number) : Vector2 {
@@ -157,17 +164,32 @@ export class Vector2 {
     }
 
     public rotate(radians : number) : Vector2 {
-        const nx = (this.x * Math.cos(radians)) - (this.y * Math.sin(radians));
-        const ny = (this.x * Math.sin(radians)) + (this.y * Math.cos(radians));
+        const sin = Math.sin(radians);
+        const cos = Math.cos(radians);
+        const nx = (this.x * cos) - (this.y * sin);
+        const ny = (this.x * sin) + (this.y * cos);
         this.x = nx;
         this.y = ny;
         return this;
     }
 
     public rotateNew(radians : number) : Vector2 {
-        const nx = (this.x * Math.cos(radians)) - (this.y * Math.sin(radians));
-        const ny = (this.x * Math.sin(radians)) + (this.y * Math.cos(radians));
-        return new Vector2(nx, ny);
+        const sin = Math.sin(radians);
+        const cos = Math.cos(radians);
+        return new Vector2(
+            (this.x * cos) - (this.y * sin),
+            (this.x * sin) + (this.y * cos)
+        );
+    }
+
+    public rotateAround(radians : number, pivot : ImmutableVector2) : Vector2 {
+        let x = this.x - pivot.x;
+        let y = this.y - pivot.y;
+        const sin = Math.sin(radians);
+        const cos = Math.cos(radians);
+        this.x = ((x * cos) - (y * sin)) + pivot.x;
+        this.y = ((x * sin) + (y * cos)) + pivot.y;
+        return this;
     }
 
     public project(other : { x : number, y : number }) : Vector2 {
@@ -188,6 +210,12 @@ export class Vector2 {
         return dx * dx + dy * dy;
     }
 
+    public copy(other : IVector2) : this {
+        this.x = other.x;
+        this.y = other.y;
+        return this;
+    }
+
     public clone() : Vector2 {
         return new Vector2(this.x, this.y);
     }
@@ -204,6 +232,38 @@ export class Vector2 {
         return `{x: ${this.x}, y: ${this.y}}`;
     }
 
+    public static readonly up : ImmutableVector2  = new Vector2(0, 1);
+
+    public static readonly right : ImmutableVector2  = new Vector2(1, 0);
+
+    public static readonly down: ImmutableVector2 = new Vector2(0, -1);
+
+    public static readonly left : ImmutableVector2 = new Vector2(-1, 0);
+
+    public static transformCoordinates(vector : Vector2, matrix : Matrix3x3, out? : Vector2) : Vector2 {
+        out = out || new Vector2();
+        const x = vector.x;
+        const y = vector.y;
+        out.x = (x * matrix.a) + (y * matrix.c) + matrix.tx;
+        out.y = (x * matrix.b) + (y * matrix.d) + matrix.ty;
+        return out;
+    }
+
+    public static transformFloatCoordinates(x : number, y : number,  matrix : Matrix3x3, out? : Vector2) : Vector2 {
+        out = out || new Vector2();
+        out.x = (x * matrix.a) + (y * matrix.c) + matrix.tx;
+        out.y = (x * matrix.b) + (y * matrix.d) + matrix.ty;
+        return out;
+    }
+
+    public static transformDirection(vector : Vector2, matrix : Matrix3x3, out? : Vector2) : Vector2 {
+        out = out || new Vector2();
+        const x = vector.x;
+        const y = vector.y;
+        out.x = (x * matrix.a) + (y * matrix.c);
+        out.y = (x * matrix.b) + (y * matrix.d);
+        return out;
+    }
 }
 
 
@@ -222,4 +282,7 @@ export interface ImmutableVector2 {
 
     horizontalAngle() : number;
     verticalAngle() : number;
+
+    invertNew() : Vector2;
+
 }

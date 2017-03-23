@@ -1,8 +1,11 @@
 import {SceneTool} from "./scene_tool";
-import {distanceTestPoint, hitTestLine} from "../../util";
-import {Rectangle} from "../../runtime/rectangle";
-import {AppElement} from "../../runtime/app_element";
+import {distanceTestPoint, hitTestLine, hitTestLine2} from "../../util";
+import {AppElement, Space} from "../../runtime/app_element";
 import {Vector2} from "../../runtime/vector2";
+import {BoundingBox} from "../../runtime/bounding_box";
+import {onFileDragLeave} from "../../editor_element/editor_element_annotations";
+import {MathUtil} from "../../math_util";
+import {Matrix3x3} from "../../runtime/matrix3x3";
 
 enum DragSide {
     None, Center, Top, Left, Right, Bottom, TopRight, TopLeft, BottomRight, BottomLeft
@@ -17,12 +20,12 @@ export class SceneRectTool extends SceneTool {
 
         const input = EditorRuntime.getInput();
         const selection = EditorRuntime.getSelection();
-        const mouse = input.getMouseRelativeToEditorElement(this.sceneBodyRoot);
-        const inElement = input.isMouseInEditorElement(this.sceneBodyRoot);
+        const mouse = this.stageWindow.getStageMousePosition();
+        const inElement = input.isMouseInEditorElement(this.stageBodyRoot);
 
         if (selection) {
 
-            let rect = selection.getBoundingBox();
+            const rect = selection.getBoundingBox();
 
             if (input.isMouseDownThisFrame() && inElement) {
 
@@ -38,13 +41,12 @@ export class SceneRectTool extends SceneTool {
                 }
                 return;
             }
-
             else if (input.isMouseDown()) {
                 if (this.draggedSide !== DragSide.None) {
                     this.updateDragSide(input.getMouseDelta(), selection);
                 }
                 else if (this.panning) {
-                    this.sceneWindow.pan(input.getMouseDelta());
+                    this.stageWindow.pan(input.getMouseDelta());
                 }
             }
             else if (input.isMouseUp()) {
@@ -71,7 +73,7 @@ export class SceneRectTool extends SceneTool {
             }
 
             if (this.panning) {
-                this.sceneWindow.pan(input.getMouseDelta());
+                this.stageWindow.pan(input.getMouseDelta());
             }
         }
     }
@@ -100,21 +102,22 @@ export class SceneRectTool extends SceneTool {
         }
     }
 
-    private static hitTestDragSide(point : Vector2, bounds : Rectangle) : DragSide {
-        const x = bounds.x;
-        const y = bounds.y;
-        const xw = bounds.x + bounds.width;
-        const yh = bounds.y + bounds.height;
+    private static hitTestDragSide(point : Vector2, bounds : BoundingBox) : DragSide {
 
-        if (distanceTestPoint(x, y, point, 5)) return DragSide.TopLeft;
-        if (distanceTestPoint(xw, y, point, 5)) return DragSide.TopRight;
-        if (distanceTestPoint(x, yh, point, 5)) return DragSide.BottomLeft;
-        if (distanceTestPoint(xw, yh, point, 5)) return DragSide.BottomRight;
+        const topLeft = bounds.topLeft;
+        const topRight = bounds.topRight;
+        const bottomRight = bounds.bottomRight;
+        const bottomLeft = bounds.bottomLeft;
 
-        if (hitTestLine(x, y, xw, y, point, 3)) return DragSide.Top;
-        if (hitTestLine(x, y, x, yh, point, 3)) return DragSide.Left;
-        if (hitTestLine(x, yh, xw, yh, point, 3)) return DragSide.Bottom;
-        if (hitTestLine(xw, y, xw, yh, point, 3)) return DragSide.Right;
+        if (distanceTestPoint(topLeft, point, 5)) return DragSide.TopLeft;
+        if (distanceTestPoint(topRight, point, 5)) return DragSide.TopRight;
+        if (distanceTestPoint(bottomLeft, point, 5)) return DragSide.BottomLeft;
+        if (distanceTestPoint(bottomRight, point, 5)) return DragSide.BottomRight;
+
+        if (hitTestLine2(topLeft, topRight, point, 3)) return DragSide.Top;
+        if (hitTestLine2(topLeft, bottomLeft, point, 3)) return DragSide.Left;
+        if (hitTestLine2(bottomLeft, bottomRight, point, 3)) return DragSide.Bottom;
+        if (hitTestLine2(topRight, bottomRight, point, 3)) return DragSide.Right;
 
         if (bounds.containsPoint(point)) return DragSide.Center;
 
@@ -122,58 +125,63 @@ export class SceneRectTool extends SceneTool {
     }
 
     private updateDragSide(delta : Vector2, appElement : AppElement) {
-        //todo may want this to be Axis-Aligned
-        const rect = appElement.getBoundingBox();
+        //const p = appElement.getPosition();
+        let width = appElement.getWidth();
+        let height = appElement.getHeight();
         switch (this.draggedSide) {
             case DragSide.TopRight:
-                rect.y += delta.y;
-                rect.width += delta.x;
-                rect.height -= delta.y;
+             //   p.y += delta.y;
+                width += delta.x;
+                height -= delta.y;
                 break;
             case DragSide.TopLeft:
-                rect.x += delta.x;
-                rect.y += delta.y;
-                rect.width -= delta.x;
-                rect.height -= delta.y;
+               // p.x += delta.x;
+               // p.y += delta.y;
+                width -= delta.x;
+                height -= delta.y;
                 break;
             case DragSide.BottomLeft:
-                rect.x += delta.x;
-                rect.width -= delta.x;
-                rect.height += delta.y;
+            //    p.x += delta.x;
+                width -= delta.x;
+                height += delta.y;
                 break;
             case DragSide.BottomRight:
-                rect.width += delta.x;
-                rect.height += delta.y;
+                width += delta.x;
+                height += delta.y;
                 break;
             case DragSide.Top:
-                rect.y += delta.y;
-                rect.height -= delta.y;
+              //  p.y += delta.y;
+                height -= delta.y;
                 break;
             case DragSide.Left:
-                rect.x += delta.x;
-                rect.width -= delta.x;
+              //  p.x += delta.x;
+                width -= delta.x;
                 break;
             case DragSide.Right:
-                rect.width += delta.x;
+                width += delta.x;
                 break;
             case DragSide.Bottom:
-                rect.height += delta.y;
+                height += delta.y;
                 break;
             case DragSide.Center:
-                rect.x += delta.x;
-                rect.y += delta.y;
+                //p.x += delta.x;
+                //p.y += delta.y;
+                var p = appElement.getPosition();
+                // p = appElement.worldToLocal(p.addVectorNew(delta));
+                appElement.setPosition(p.addVectorNew(delta), Space.World);
+                 //appElement.setPosition(p.addVectorNew(delta), Space.World);
                 break;
         }
-        if (rect.width < 1) rect.width = 1;
-        if (rect.height < 1) rect.height = 1;
-        if (rect.height === 1 && delta.y > 0) {
-            rect.y -= delta.y;
+        if (width < 1) width = 1;
+        if (height < 1) height = 1;
+        if (height === 1 && delta.y > 0) {
+         //   p.y -= delta.y;
         }
-        if (rect.width === 1 && delta.x > 0) {
-            rect.x -= delta.x;
+        if (width === 1 && delta.x > 0) {
+         //   p.x -= delta.x;
         }
-        appElement.setPositionValues(rect.x, rect.y);
-        appElement.setDimensions(rect.width, rect.height);
+        //appElement.setPositionValues(p.x, p.y);
+        appElement.setDimensions(width, height);
     }
 
 }

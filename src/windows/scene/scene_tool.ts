@@ -1,14 +1,14 @@
-import {SceneWindow} from "../scene_window";
+import {StageWindow} from "./stage_window";
 import {EditorElement} from "../../editor_element/editor_element";
 
 export class SceneTool {
 
-    public sceneWindow : SceneWindow;
-    public sceneBodyRoot : EditorElement;
+    public stageWindow : StageWindow;
+    public stageBodyRoot : EditorElement;
 
-    constructor(sceneWindow : SceneWindow) {
-        this.sceneWindow = sceneWindow;
-        this.sceneBodyRoot = this.sceneWindow.getChildRoot();
+    constructor(stageWindow : StageWindow) {
+        this.stageWindow = stageWindow;
+        this.stageBodyRoot = this.stageWindow.getChildRoot();
     }
 
     public update() : void {}

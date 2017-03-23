@@ -2,7 +2,6 @@ import {LayoutComponent, ISizingComponent} from "./layout";
 import {exposeAs} from "../../../renderers/component/expose_as";
 import {EnumSelect} from "../../../util";
 import {component, Component} from "../../component";
-import {Rectangle} from "../../rectangle";
 
 export enum SizingMode {
     Fixed, Percent, Fraction, Anchor
@@ -17,18 +16,13 @@ export class SizingComponent extends Component implements ISizingComponent {
     @exposeAs(Number) public width : number = 1;
     @exposeAs(Number) public height : number = 1;
 
-    public setLayoutRect(rect : Rectangle) : void {
-
-    }
-
-    public onLayoutRectChanged(layoutRect : Rectangle) : void {
-
-    }
-
     public onMounted() : void {
         const layout = this.getComponentInParent(LayoutComponent);
         if(layout) {
             layout.addSizingComponent(this);
+        }
+        else {
+            this.appElement.setDimensions(this.width, this.height);
         }
     }
 

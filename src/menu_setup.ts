@@ -9,80 +9,95 @@ import {DropdownComponent} from "./runtime/components/ui/dropdown_component";
 import {TextInputComponent} from "./runtime/components/ui/text_input_component";
 import {NumberInputComponent} from "./runtime/components/ui/number_input_component";
 import {TextAreaComponent} from "./runtime/components/ui/text_area_component";
+import {BackgroundComponent} from "./runtime/components/background_component";
+import {Color} from "./runtime/color";
+import {SizingComponent} from "./runtime/components/layout/sizing_component";
 
-function createTextElement() : AppElement {
-    const element = new AppElement("Text");
-    element.addComponent(TextComponent);
+function createTextElement(parent : AppElement = null) : AppElement {
+    const element = new AppElement("Text", parent);
+    const text = element.addComponent(TextComponent);
+    text.setTextAsync("Enter Text Here");
+    const sizing = element.addComponent(SizingComponent);
+    sizing.width = 100;
+    sizing.height = 20;
     return element;
 }
 
-function createPanelElement() : AppElement {
-    const element = new AppElement("Panel");
+function createPanelElement(parent : AppElement = null) : AppElement {
+    const element = new AppElement("Panel", parent);
     element.addComponent(PanelComponent);
+    const bg = element.addComponent(BackgroundComponent);
+    bg.color = Color.White;
+    const size = element.addComponent(SizingComponent);
+    size.width = 100;
+    size.height = 100;
     return element;
 }
 
-function createImageElement() : AppElement {
-    const element = new AppElement("Image");
+function createImageElement(parent : AppElement = null) : AppElement {
+    const element = new AppElement("Image", parent);
     element.addComponent(ImageComponent);
     return element;
 }
 
-function createButtonElement() : AppElement {
-    const element = new AppElement("Button");
+function createButtonElement(parent : AppElement = null) : AppElement {
+    const element = new AppElement("Button", parent);
     element.addComponent(ButtonComponent);
+    const size = element.addComponent(SizingComponent);
+    size.width = 100;
+    size.height = 20;
     return element;
 }
 
-function createCheckboxElement() : AppElement {
-    const element = new AppElement("Toggle");
+function createCheckboxElement(parent : AppElement = null) : AppElement {
+    const element = new AppElement("Toggle", parent);
     element.addComponent(CheckboxComponent);
     return element;
 }
 
-function createSliderElement() : AppElement {
-    const element = new AppElement("Slider");
+function createSliderElement(parent : AppElement = null) : AppElement {
+    const element = new AppElement("Slider", parent);
     element.addComponent(SliderComponent);
     return element;
 }
 
-function createDropdownElement() : AppElement {
-    const element = new AppElement("Dropdown");
+function createDropdownElement(parent : AppElement = null) : AppElement {
+    const element = new AppElement("Dropdown", parent);
     element.addComponent(DropdownComponent);
     return element;
 }
 
-function createTextInputElement() : AppElement {
-    const element = new AppElement("Text Input");
+function createTextInputElement(parent : AppElement = null) : AppElement {
+    const element = new AppElement("Text Input", parent);
     element.addComponent(TextInputComponent);
     return element;
 }
 
-function createNumberInputElement() : AppElement {
-    const element = new AppElement("Number Input");
+function createNumberInputElement(parent : AppElement = null) : AppElement {
+    const element = new AppElement("Number Input", parent);
     element.addComponent(NumberInputComponent);
     return element;
 }
 
-function createTextAreaElement() : AppElement {
-    const element = new AppElement("Text Area Input");
+function createTextAreaElement(parent : AppElement = null) : AppElement {
+    const element = new AppElement("Text Area Input", parent);
     element.addComponent(TextAreaComponent);
     return element;
 }
 
-export function getCreationMenu() : nw.Menu {
+export function getCreationMenu(selection : AppElement = null) : nw.Menu {
     const creationMenu = new nw.Menu();
 
-    creationMenu.append(new nw.MenuItem({label: "Text", click: createTextElement }));
-    creationMenu.append(new nw.MenuItem({label: "Panel", click: createPanelElement }));
-    creationMenu.append(new nw.MenuItem({label: "Image", click: createImageElement }));
-    creationMenu.append(new nw.MenuItem({label: "Button", click:  createButtonElement }));
-    creationMenu.append(new nw.MenuItem({label: "Toggle", click:  createCheckboxElement }));
-    creationMenu.append(new nw.MenuItem({label: "Slider", click:  createSliderElement }));
-    creationMenu.append(new nw.MenuItem({label: "Dropdown", click:  createDropdownElement }));
-    creationMenu.append(new nw.MenuItem({label: "Text Input", click:  createTextInputElement }));
-    creationMenu.append(new nw.MenuItem({label: "Number Input", click:  createNumberInputElement }));
-    creationMenu.append(new nw.MenuItem({label: "Text Area", click:  createTextAreaElement }));
+    creationMenu.append(new nw.MenuItem({label: "Text", click: function() {  createTextElement(selection) }} ));
+    creationMenu.append(new nw.MenuItem({label: "Panel", click: function() {  createPanelElement(selection) }} ));
+    creationMenu.append(new nw.MenuItem({label: "Image", click: function() {  createImageElement(selection) }} ));
+    creationMenu.append(new nw.MenuItem({label: "Button", click: function() {   createButtonElement(selection) }} ));
+    creationMenu.append(new nw.MenuItem({label: "Toggle", click: function() {   createCheckboxElement(selection) }} ));
+    creationMenu.append(new nw.MenuItem({label: "Slider", click: function() {   createSliderElement(selection) }} ));
+    creationMenu.append(new nw.MenuItem({label: "Dropdown", click: function() {   createDropdownElement(selection) }} ));
+    creationMenu.append(new nw.MenuItem({label: "Text Input", click: function() {   createTextInputElement(selection) }} ));
+    creationMenu.append(new nw.MenuItem({label: "Number Input", click: function() {   createNumberInputElement(selection) }} ));
+    creationMenu.append(new nw.MenuItem({label: "Text Area", click: function() {   createTextAreaElement(selection) }} ));
 
     return creationMenu;
 }

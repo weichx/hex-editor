@@ -1,8 +1,8 @@
 import {Button} from "../../ui_elements/button";
-import {SceneWindow} from "../scene_window";
 import {WindowColors} from "../../editor/editor_theme";
 import {BreakpointType} from "../../runtime/breakpoint";
 import {EditorHTMLElement} from "../../editor_element/editor_html_element";
+import {StageWindow} from "./stage_window";
 
 function round(places : number) {
     return function (value : number) {
@@ -12,7 +12,7 @@ function round(places : number) {
 
 export class SceneMetaBar extends EditorHTMLElement<{}> {
 
-    private scene : SceneWindow;
+    private scene : StageWindow;
     private sceneSizeButtons : Button[];
 
     protected getDomData() : IDomData {
@@ -20,7 +20,7 @@ export class SceneMetaBar extends EditorHTMLElement<{}> {
     }
 
     public onRendered() {
-        this.scene = this.getAncestorByType(SceneWindow);
+        this.scene = this.getAncestorByType(StageWindow);
         this.sceneSizeButtons = this.getChildBySelector(".scene-size").getChildrenByType(Button);
         this.setSelectedButton(this.scene.getBreakpoint());
     }
@@ -62,6 +62,7 @@ createStyleSheet(`<style>
 }
 
 .scene-meta-bar {
+    min-height: 21px;
     height: 21px;
     width: 100%;
     background: ${WindowColors.foregroundGrey};
@@ -69,7 +70,7 @@ createStyleSheet(`<style>
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
-    z-index:2;
+    z-index:200;
 }
 
 .scene-size .btn {

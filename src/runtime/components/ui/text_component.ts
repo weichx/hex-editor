@@ -1,7 +1,6 @@
 import {component} from "../../component";
 import {CommandType} from "../../enums/e_command_type";
 import {UIComponent} from "../ui_component";
-import {autoserialize} from "cerialize";
 
 export interface IFont {
     name : string;
@@ -37,6 +36,7 @@ export class TextComponent extends UIComponent {
     }
 
     public async setTextAsync(text : string) : Promise<string> {
+        this.textContent = text;
         return await Runtime.awaitCommand<number>(CommandType.SetText, {
             id: this.appElement.id,
             text: text,
@@ -64,7 +64,6 @@ export class TextComponent extends UIComponent {
 
     public static OnDeserialized(instance : TextComponent, json : IJson) : void {
         instance.textContent = json.textContent;
-        //instance.font = json.font || instance.font;
     }
 
     public serialize() : any {

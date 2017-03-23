@@ -19,12 +19,12 @@ html, body, #root {
 }
 
 .scene-render-root * {
-    position: absolute;
     display: block;
-    transform: translate(0, 0);
     overflow: visible;
     margin: 0;
     padding: 0;
+    transform-origin: top left;
+    position: absolute;
     top: 0;
     left: 0;
 }

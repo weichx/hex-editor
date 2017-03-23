@@ -49,6 +49,7 @@ BrowserRuntime.setCommandInvoker(CommandType.Create, (function () {
 
     const elementTypeToTagName : any = {
         "Panel": "div",
+        "InlinePanel": "span",
         "Text": "p",
         "Button": "button",
         "Dropdown": "select",
@@ -106,15 +107,6 @@ BrowserRuntime.setCommandInvoker(CommandType.SetImage, function (payload : IJson
     el.setAttribute("src", payload.image);
 });
 
-BrowserRuntime.setCommandInvoker(CommandType.SetPosition, function (payload : IJson) {
-    const el = BrowserRuntime.elementIdToDomNode(payload.id);
-    if(!el) return;
-    const x = payload.x | 0;
-    const y = payload.y | 0;
-    el.style.top = y === 0 ? null : y + "px";
-    el.style.left = x === 0 ? null : x + "px";
-});
-
 BrowserRuntime.setCommandInvoker(CommandType.SetDimensions, function (payload : IJson) {
     const el = BrowserRuntime.elementIdToDomNode(payload.id);
     if(!el) return;
@@ -123,7 +115,12 @@ BrowserRuntime.setCommandInvoker(CommandType.SetDimensions, function (payload : 
 });
 
 BrowserRuntime.setCommandInvoker(CommandType.SetTransform, function (payload : IJson) {
-
+    const el = BrowserRuntime.elementIdToDomNode(payload.id);
+    if(!el) return;
+    el.style.transform = payload.matrix;
+    if(payload.origin) {
+        el.style.transformOrigin = payload.origin;
+    }
 });
 
 BrowserRuntime.setCommandInvoker(CommandType.SetRect, function (payload : IJson) {

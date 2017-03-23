@@ -45,7 +45,8 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	module.exports = __webpack_require__(53);
+	__webpack_require__(57);
+	module.exports = __webpack_require__(59);
 
 
 /***/ },
@@ -57,9 +58,9 @@
 	__webpack_require__(2);
 	const editor_runtime_1 = __webpack_require__(3);
 	const element_renderer_1 = __webpack_require__(7);
-	const editor_binding_element_1 = __webpack_require__(50);
-	const browser_runtime_1 = __webpack_require__(51);
-	const editor_worker_1 = __webpack_require__(52);
+	const editor_binding_element_1 = __webpack_require__(54);
+	const browser_runtime_1 = __webpack_require__(55);
+	const editor_worker_1 = __webpack_require__(56);
 	window.AppRootElementId = 0;
 	window.Runtime = null;
 	window.HexEnvironmentFlag = 0;
@@ -196,12 +197,13 @@
 	const tree_1 = __webpack_require__(27);
 	const runtime_1 = __webpack_require__(28);
 	const app_element_1 = __webpack_require__(29);
-	const e_command_type_1 = __webpack_require__(32);
-	const component_1 = __webpack_require__(37);
+	const e_command_type_1 = __webpack_require__(31);
+	const component_1 = __webpack_require__(40);
 	const vector2_1 = __webpack_require__(17);
-	const drag_action_1 = __webpack_require__(38);
-	const horizontal_stack_layout_1 = __webpack_require__(39);
-	const project_1 = __webpack_require__(43);
+	const drag_action_1 = __webpack_require__(41);
+	const project_1 = __webpack_require__(42);
+	const background_component_1 = __webpack_require__(49);
+	const color_1 = __webpack_require__(50);
 	let mouseCache = new vector2_1.Vector2();
 	class UpdateNode extends tree_1.ShadowTreeNode {
 	    traverse() {
@@ -439,8 +441,9 @@
 	    }
 	    createRoot(appRoot, attrs) {
 	        app_element_1.AppElement.Root = new app_element_1.AppElement("__Root__");
-	        app_element_1.AppElement.Root.addComponent(horizontal_stack_layout_1.HorizontalStackLayout);
 	        this.appElementRegistry[0] = app_element_1.AppElement.Root;
+	        const bg = app_element_1.AppElement.Root.addComponent(background_component_1.BackgroundComponent);
+	        bg.color = color_1.Color.Black;
 	        this.editorApplicationRoot = element_renderer_1.createElement(appRoot, attrs);
 	        element_renderer_1.render(this.editorApplicationRoot, document.getElementById('root'));
 	    }
@@ -1553,10 +1556,16 @@
 	    return point.x >= x && x + w >= point.x && point.y >= y && y + h >= point.y;
 	}
 	exports.hitTestRect = hitTestRect;
-	function distanceTestPoint(x, y, point, radius) {
+	function distanceTestPoint(test, point, radius) {
+	    const x = test.x;
+	    const y = test.y;
 	    return ((x - point.x) * (x - point.x)) + ((y - point.y) * (y - point.y)) < radius * radius;
 	}
 	exports.distanceTestPoint = distanceTestPoint;
+	function hitTestLine2(p0, p1, point, threshold = 1) {
+	    return hitTestLine(p0.x, p0.y, p1.x, p1.y, point, threshold);
+	}
+	exports.hitTestLine2 = hitTestLine2;
 	function hitTestLine(x1, y1, x2, y2, point, threshold = 1) {
 	    return distanceSquaredToLineSegment(x1, y1, x2, y2, point.x, point.y) <= threshold * threshold;
 	}
@@ -1626,6 +1635,11 @@
 	    constructor(x = 0, y = 0) {
 	        this.x = x;
 	        this.y = y;
+	    }
+	    set(x, y) {
+	        this.x = x;
+	        this.y = y;
+	        return this;
 	    }
 	    scale(factor) {
 	        this.x *= factor;
@@ -1750,16 +1764,27 @@
 	        return Math.atan2(this.x, this.y);
 	    }
 	    rotate(radians) {
-	        const nx = (this.x * Math.cos(radians)) - (this.y * Math.sin(radians));
-	        const ny = (this.x * Math.sin(radians)) + (this.y * Math.cos(radians));
+	        const sin = Math.sin(radians);
+	        const cos = Math.cos(radians);
+	        const nx = (this.x * cos) - (this.y * sin);
+	        const ny = (this.x * sin) + (this.y * cos);
 	        this.x = nx;
 	        this.y = ny;
 	        return this;
 	    }
 	    rotateNew(radians) {
-	        const nx = (this.x * Math.cos(radians)) - (this.y * Math.sin(radians));
-	        const ny = (this.x * Math.sin(radians)) + (this.y * Math.cos(radians));
-	        return new Vector2_1(nx, ny);
+	        const sin = Math.sin(radians);
+	        const cos = Math.cos(radians);
+	        return new Vector2_1((this.x * cos) - (this.y * sin), (this.x * sin) + (this.y * cos));
+	    }
+	    rotateAround(radians, pivot) {
+	        let x = this.x - pivot.x;
+	        let y = this.y - pivot.y;
+	        const sin = Math.sin(radians);
+	        const cos = Math.cos(radians);
+	        this.x = ((x * cos) - (y * sin)) + pivot.x;
+	        this.y = ((x * sin) + (y * cos)) + pivot.y;
+	        return this;
 	    }
 	    project(other) {
 	        const e = ((this.x * other.x) + (this.y * other.y)) / ((other.x * other.x) + (other.y * other.y));
@@ -1787,6 +1812,18 @@
 	    }
 	    toString() {
 	        return `{x: ${this.x}, y: ${this.y}}`;
+	    }
+	    static up() {
+	        return new Vector2_1(0, 1);
+	    }
+	    static right() {
+	        return new Vector2_1(1, 0);
+	    }
+	    static down() {
+	        return new Vector2_1(0, -1);
+	    }
+	    static left() {
+	        return new Vector2_1(-1, 0);
 	    }
 	};
 	Vector2 = Vector2_1 = tslib_1.__decorate([
@@ -2438,10 +2475,10 @@
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const input_1 = __webpack_require__(25);
 	const app_element_1 = __webpack_require__(29);
-	const runtime_base_1 = __webpack_require__(33);
-	const evt_app_element_parent_changed_1 = __webpack_require__(35);
-	const e_command_type_1 = __webpack_require__(32);
-	const evt_app_element_index_changed_1 = __webpack_require__(36);
+	const runtime_base_1 = __webpack_require__(36);
+	const evt_app_element_parent_changed_1 = __webpack_require__(38);
+	const e_command_type_1 = __webpack_require__(31);
+	const evt_app_element_index_changed_1 = __webpack_require__(39);
 	class RuntimeImpl extends runtime_base_1.RuntimeBase {
 	    constructor() {
 	        super();
@@ -2552,25 +2589,36 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(4);
-	const rectangle_1 = __webpack_require__(30);
 	const vector2_1 = __webpack_require__(17);
-	const e_lifecycle_flags_1 = __webpack_require__(31);
-	const e_command_type_1 = __webpack_require__(32);
+	const e_lifecycle_flags_1 = __webpack_require__(30);
+	const e_command_type_1 = __webpack_require__(31);
 	const util_1 = __webpack_require__(16);
-	const TEMP_ANNOTATION_1 = __webpack_require__(18);
+	const matrix3x3_1 = __webpack_require__(32);
+	const bounding_box_1 = __webpack_require__(34);
+	const math_util_1 = __webpack_require__(33);
 	let idGenerator = 0;
+	const scratchVector = new vector2_1.Vector2();
 	var Space;
 	(function (Space) {
 	    Space[Space["Local"] = 0] = "Local";
 	    Space[Space["World"] = 1] = "World";
 	})(Space = exports.Space || (exports.Space = {}));
-	let AppElement = AppElement_1 = class AppElement {
+	var ElementDirtyFlag;
+	(function (ElementDirtyFlag) {
+	    ElementDirtyFlag[ElementDirtyFlag["Position"] = 1] = "Position";
+	    ElementDirtyFlag[ElementDirtyFlag["Scale"] = 2] = "Scale";
+	    ElementDirtyFlag[ElementDirtyFlag["Rotation"] = 4] = "Rotation";
+	    ElementDirtyFlag[ElementDirtyFlag["Width"] = 8] = "Width";
+	    ElementDirtyFlag[ElementDirtyFlag["Height"] = 16] = "Height";
+	    ElementDirtyFlag[ElementDirtyFlag["WidthOrHeight"] = 24] = "WidthOrHeight";
+	    ElementDirtyFlag[ElementDirtyFlag["Transform"] = 7] = "Transform";
+	})(ElementDirtyFlag || (ElementDirtyFlag = {}));
+	class AppElement {
 	    constructor(name, parent = null) {
 	        this.id = idGenerator++;
 	        this.name = name || "App Element";
 	        this.lifeCycleFlags = 0;
-	        this.parent = parent || AppElement_1.Root;
+	        this.parent = parent || AppElement.Root;
 	        this.children = [];
 	        this.components = [];
 	        this.localPosition = new vector2_1.Vector2();
@@ -2581,11 +2629,42 @@
 	        this.width = 0;
 	        this.height = 0;
 	        this.rotation = 0;
+	        this.dirtyFlags = 0;
 	        this.scale = new vector2_1.Vector2(1, 1);
+	        this.pivot = new vector2_1.Vector2();
+	        this.boundingBox = new bounding_box_1.BoundingBox(this);
 	        //todo don't allow components to be constructed outside of addComponent or this constructor
 	        Runtime.addElement(this);
 	    }
+	    setPivot(x, y) {
+	        this.pivot.x = util_1.clamp01(x);
+	        this.pivot.y = util_1.clamp01(y);
+	    }
+	    getPivot(out = null) {
+	        out = out || new vector2_1.Vector2();
+	        out.x = this.pivot.x;
+	        out.y = this.pivot.y;
+	        return out;
+	    }
+	    getWorldMatrix() {
+	        if (!this.parent)
+	            return this.getMatrix();
+	        return this.parent.getWorldMatrix().multiply(this.getMatrix());
+	    }
+	    getMatrix(out = null) {
+	        if (out)
+	            out.identity();
+	        out = out || new matrix3x3_1.Matrix3x3();
+	        // mat4 result = glm::translate(-pivot) *
+	        // glm::scale(..) *
+	        // glm::rotate(..) *
+	        // glm::translate(pivot) *
+	        // glm::translate(..);
+	        return out.translate(this.localPosition).rotate(this.rotation, null, math_util_1.AngleUnit.Degrees).scale(this.scale);
+	    }
 	    setScale(scale) {
+	        if (this.scale.isEqual(scale))
+	            return;
 	        this.scale.x = scale.x;
 	        this.scale.y = scale.y;
 	        Runtime.sendCommand(e_command_type_1.CommandType.SetTransform, this.id);
@@ -2597,6 +2676,8 @@
 	        return this.width;
 	    }
 	    setWidth(width) {
+	        if (width === this.width)
+	            return;
 	        this.width = width;
 	        //todo get parent layout component and invoke layout
 	        //todo get layout component and invoke layout
@@ -2607,6 +2688,8 @@
 	        return this.height;
 	    }
 	    setHeight(height) {
+	        if (this.height === height)
+	            return;
 	        this.height = height;
 	        Runtime.sendCommand(e_command_type_1.CommandType.SetDimensions, this.id);
 	    }
@@ -2628,6 +2711,8 @@
 	        return this.rotation;
 	    }
 	    setRotation(value) {
+	        if (this.rotation === value)
+	            return;
 	        this.rotation = value;
 	        Runtime.sendCommand(e_command_type_1.CommandType.SetTransform, this.id);
 	    }
@@ -2635,6 +2720,8 @@
 	        this.setPositionValues(position.x, position.y, relativeTo);
 	    }
 	    setPositionValues(x, y, relativeTo = Space.World) {
+	        const oldX = this.localPosition.x;
+	        const oldY = this.localPosition.y;
 	        if (relativeTo === Space.Local) {
 	            this.localPosition.x = x;
 	            this.localPosition.y = y;
@@ -2643,13 +2730,15 @@
 	            this.localPosition.x = x - this.parentPosition.x;
 	            this.localPosition.y = y - this.parentPosition.y;
 	        }
-	        Runtime.sendCommand(e_command_type_1.CommandType.SetPosition, this.id);
-	        const worldX = this.localPosition.x + this.parentPosition.x;
-	        const worldY = this.localPosition.y + this.parentPosition.y;
-	        for (let i = 0; i < this.children.length; i++) {
-	            const position = this.children[i].parentPosition;
-	            position.x = worldX;
-	            position.y = worldY;
+	        if (oldX !== this.localPosition.x || oldY !== this.localPosition.y) {
+	            Runtime.sendCommand(e_command_type_1.CommandType.SetTransform, this.id);
+	            const worldX = this.localPosition.x + this.parentPosition.x;
+	            const worldY = this.localPosition.y + this.parentPosition.y;
+	            for (let i = 0; i < this.children.length; i++) {
+	                const position = this.children[i].parentPosition;
+	                position.x = worldX;
+	                position.y = worldY;
+	            }
 	        }
 	    }
 	    getLocalPosition() {
@@ -2664,9 +2753,12 @@
 	        return this.localPosition.addVectorNew(this.parentPosition);
 	    }
 	    getBoundingBox() {
-	        //todo axis aligned? handle rotation and scale
-	        const p = this.getPosition();
-	        return new rectangle_1.Rectangle(p.x, p.y, this.width, this.height);
+	        this.boundingBox.update();
+	        return this.boundingBox;
+	    }
+	    getAxisAlignedBoundingBox() {
+	        this.boundingBox.update();
+	        return this.boundingBox.getAxisAlignedBoundingBox();
 	    }
 	    setActive(isActive) {
 	        if (this.isEnabled() === isActive)
@@ -2685,7 +2777,7 @@
 	    setParent(parent, keepPosition = true) {
 	        if (parent && parent === this.parent)
 	            return;
-	        parent = parent || AppElement_1.Root;
+	        parent = parent || AppElement.Root;
 	        const oldParent = this.parent;
 	        let currentPosition = this.getPosition();
 	        this.parent = parent;
@@ -2738,11 +2830,11 @@
 	        }
 	    }
 	    getDepth() {
-	        if (this === AppElement_1.Root)
+	        if (this === AppElement.Root)
 	            return 0;
 	        let ptr = this.parent;
 	        let depth = 1;
-	        while (ptr !== AppElement_1.Root) {
+	        while (ptr !== AppElement.Root) {
 	            depth++;
 	            ptr = ptr.parent;
 	        }
@@ -2845,13 +2937,17 @@
 	            });
 	            Runtime.sendCommand(e_command_type_1.CommandType.Destroy, { id: this.id, childIds });
 	        }
+	        this.components = null;
+	        this.boundingBox = null;
+	        this.children = null;
+	        this.parent = null;
 	    }
 	    destroyFromParent() {
 	        //don't fire handlers n stuff
 	    }
 	    /*** Accessors ***/
 	    isRoot() {
-	        return this === AppElement_1.Root;
+	        return this === AppElement.Root;
 	    }
 	    isCreated() {
 	        return (this.lifeCycleFlags & e_lifecycle_flags_1.LifeCycleFlag.Created) !== 0;
@@ -2905,18 +3001,511 @@
 	        const aBelowB = maxAy < minBy;
 	        return !(aLeftOfB || aRightOfB || aAboveB || aBelowB);
 	    }
-	};
+	}
 	/*** Static ***/
 	AppElement.Root = null;
-	AppElement = AppElement_1 = tslib_1.__decorate([
-	    TEMP_ANNOTATION_1.serializeClass
-	], AppElement);
 	exports.AppElement = AppElement;
-	var AppElement_1;
 
 
 /***/ },
 /* 30 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	var LifeCycleFlag;
+	(function (LifeCycleFlag) {
+	    LifeCycleFlag[LifeCycleFlag["Invalid"] = 1] = "Invalid";
+	    LifeCycleFlag[LifeCycleFlag["Created"] = 2] = "Created";
+	    LifeCycleFlag[LifeCycleFlag["Enabled"] = 4] = "Enabled";
+	    LifeCycleFlag[LifeCycleFlag["Disabled"] = 8] = "Disabled";
+	    LifeCycleFlag[LifeCycleFlag["Rendered"] = 16] = "Rendered";
+	    LifeCycleFlag[LifeCycleFlag["Mounted"] = 32] = "Mounted";
+	    LifeCycleFlag[LifeCycleFlag["Destroyed"] = 64] = "Destroyed";
+	    LifeCycleFlag[LifeCycleFlag["Structured"] = 128] = "Structured";
+	})(LifeCycleFlag = exports.LifeCycleFlag || (exports.LifeCycleFlag = {}));
+
+
+/***/ },
+/* 31 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	var CommandType;
+	(function (CommandType) {
+	    CommandType[CommandType["Create"] = 0] = "Create";
+	    CommandType[CommandType["Destroy"] = 1] = "Destroy";
+	    CommandType[CommandType["SetRect"] = 2] = "SetRect";
+	    CommandType[CommandType["SetImage"] = 3] = "SetImage";
+	    CommandType[CommandType["SetDimensions"] = 4] = "SetDimensions";
+	    CommandType[CommandType["SetTransform"] = 5] = "SetTransform";
+	    CommandType[CommandType["SetParent"] = 6] = "SetParent";
+	    CommandType[CommandType["SetSiblingIndex"] = 7] = "SetSiblingIndex";
+	    CommandType[CommandType["PaintBackground"] = 8] = "PaintBackground";
+	    CommandType[CommandType["SetText"] = 9] = "SetText";
+	    CommandType[CommandType["UpdateInput"] = 10] = "UpdateInput";
+	})(CommandType = exports.CommandType || (exports.CommandType = {}));
+
+
+/***/ },
+/* 32 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const vector2_1 = __webpack_require__(17);
+	const math_util_1 = __webpack_require__(33);
+	/*
+	 * Layout
+	 * [ a  c  tx ]
+	 * [ b  d  ty ]
+	 * [ 0  0  1  ]
+	 *
+	 *
+	 * */
+	class Matrix3x3 {
+	    constructor() {
+	        this.a = this.d = 1;
+	        this.b = this.c = this.tx = this.ty = 0;
+	    }
+	    set(a, b, c, d, tx, ty) {
+	        this.a = a;
+	        this.b = b;
+	        this.c = c;
+	        this.d = d;
+	        this.tx = tx;
+	        this.ty = ty;
+	        return this;
+	    }
+	    identity() {
+	        this.a = this.d = 1;
+	        this.b = this.c = this.tx = this.ty = 0;
+	        return this;
+	    }
+	    translate(point) {
+	        const x = point.x;
+	        const y = point.y;
+	        this.tx += x * this.a + y * this.c;
+	        this.ty += x * this.b + y * this.d;
+	        return this;
+	    }
+	    scale(scale, center = null) {
+	        if (center) {
+	            this.translate(center);
+	        }
+	        this.a *= scale.x;
+	        this.b *= scale.x;
+	        this.c *= scale.y;
+	        this.d *= scale.y;
+	        if (center) {
+	            this.translate(new vector2_1.Vector2(center.x * -1, center.y * -1));
+	        }
+	        return this;
+	    }
+	    //todo should translation be in here?
+	    rotate(angle, center = null, angleUnit = math_util_1.AngleUnit.Radians) {
+	        if (angleUnit === math_util_1.AngleUnit.Degrees) {
+	            angle *= math_util_1.MathUtil.DegreesToRadians;
+	        }
+	        if (center) {
+	            var x = center.x;
+	            var y = center.y;
+	        }
+	        else {
+	            var x = this.tx;
+	            var y = this.ty;
+	        }
+	        const cos = Math.cos(angle);
+	        const sin = Math.sin(angle);
+	        const tx = x - x * cos + y * sin;
+	        const ty = y - x * sin - y * cos;
+	        const a = this.a;
+	        const b = this.b;
+	        const c = this.c;
+	        const d = this.d;
+	        this.a = cos * a + sin * c;
+	        this.b = cos * b + sin * d;
+	        this.c = -sin * a + cos * c;
+	        this.d = -sin * b + cos * d;
+	        this.tx += tx * a + ty * c;
+	        this.ty += tx * b + ty * d;
+	        return this;
+	    }
+	    multiply(mx) {
+	        const a1 = this.a;
+	        const b1 = this.b;
+	        const c1 = this.c;
+	        const d1 = this.d;
+	        const a2 = mx.a;
+	        const b2 = mx.c;
+	        const c2 = mx.b;
+	        const d2 = mx.d;
+	        const tx2 = mx.tx;
+	        const ty2 = mx.ty;
+	        this.a = a2 * a1 + c2 * c1;
+	        this.c = b2 * a1 + d2 * c1;
+	        this.b = a2 * b1 + c2 * d1;
+	        this.d = b2 * b1 + d2 * d1;
+	        this.tx += tx2 * a1 + ty2 * c1;
+	        this.ty += tx2 * b1 + ty2 * d1;
+	        return this;
+	    }
+	    invert() {
+	        var a = this.a, b = this.b, c = this.c, d = this.d, tx = this.tx, ty = this.ty, det = a * d - b * c, res = null;
+	        if (det && !isNaN(det) && isFinite(tx) && isFinite(ty)) {
+	            this.a = d / det;
+	            this.b = -b / det;
+	            this.c = -c / det;
+	            this.d = a / det;
+	            this.tx = (c * ty - d * tx) / det;
+	            this.ty = (b * tx - a * ty) / det;
+	            res = this;
+	        }
+	        return res;
+	    }
+	    isIdentity() {
+	        return this.a === 1 && this.b === 0 && this.c === 0 && this.d === 1
+	            && this.tx === 0 && this.ty === 0;
+	    }
+	    transformDirection(point) {
+	        return point.rotate(this.getRotation());
+	    }
+	    transformPoint(point) {
+	        const x = point.x;
+	        const y = point.y;
+	        point.x = x * this.a + y * this.c + this.tx;
+	        point.y = x * this.b + y * this.d + this.ty;
+	        return point;
+	    }
+	    transformPointNew(point) {
+	        const x = point.x;
+	        const y = point.y;
+	        return new vector2_1.Vector2(x * this.a + y * this.c + this.tx, x * this.b + y * this.d + this.ty);
+	    }
+	    inverseTransform(point) {
+	        const a = this.a;
+	        const b = this.b;
+	        const c = this.c;
+	        const d = this.d;
+	        const tx = this.tx;
+	        const ty = this.ty;
+	        const det = a * d - b * c;
+	        let res = null;
+	        if (det && !isNaN(det) && isFinite(tx) && isFinite(ty)) {
+	            const x = point.x - this.tx;
+	            const y = point.y - this.ty;
+	            res = new vector2_1.Vector2((x * d - y * c) / det, (y * a - x * b) / det);
+	        }
+	        return res;
+	    }
+	    // public decompose() {
+	    //     var a = this.a;
+	    //     var b = this.b;
+	    //     var c = this.c;
+	    //     var d = this.d;
+	    //     var det = a * d - b * c;
+	    //     var sqrt = Math.sqrt;
+	    //     var degrees = 180 / Math.PI;
+	    //     var rotate;
+	    //     var scale = new Vector2();
+	    //
+	    //     if (a !== 0 || b !== 0) {
+	    //         var r = sqrt(a * a + b * b);
+	    //         rotate = Math.acos(a / r) * (b > 0 ? 1 : -1);
+	    //         scale.x = r;
+	    //         scale.y = det / r;
+	    //     } else if (c !== 0 || d !== 0) {
+	    //         var s = sqrt(c * c + d * d);
+	    //         rotate = Math.asin(c / s) * (d > 0 ? 1 : -1);
+	    //         scale.x = det / s;
+	    //         scale.y = s;
+	    //     } else { // a = b = c = d = 0
+	    //         rotate = 0;
+	    //         scale.x = 0;
+	    //         scale.y = 0;
+	    //     }
+	    //     return {
+	    //         translation: new Vector2(this.tx, this.ty),
+	    //         rotation: rotate * degrees,
+	    //         scale: scale
+	    //     };
+	    // }
+	    getTranslation(out = null) {
+	        out = out || new vector2_1.Vector2();
+	        out.x = this.tx;
+	        out.y = this.ty;
+	        return out;
+	    }
+	    getScale(out = null) {
+	        var a = this.a;
+	        var b = this.b;
+	        var c = this.c;
+	        var d = this.d;
+	        var det = a * d - b * c;
+	        out = out || new vector2_1.Vector2();
+	        if (a !== 0 || b !== 0) {
+	            var r = Math.sqrt(a * a + b * b);
+	            out.x = r;
+	            out.y = det / r;
+	        }
+	        else if (c !== 0 || d !== 0) {
+	            var s = Math.sqrt(c * c + d * d);
+	            out.x = det / s;
+	            out.y = s;
+	        }
+	        else {
+	            out.x = 0;
+	            out.y = 0;
+	        }
+	        return out;
+	    }
+	    getRotation(unitType = math_util_1.AngleUnit.Radians) {
+	        var a = this.a;
+	        var b = this.b;
+	        var c = this.c;
+	        var d = this.d;
+	        var rotation = 0;
+	        if (a !== 0 || b !== 0) {
+	            var r = Math.sqrt(a * a + b * b);
+	            rotation = Math.acos(a / r) * (b > 0 ? 1 : -1);
+	        }
+	        else if (c !== 0 || d !== 0) {
+	            var s = Math.sqrt(c * c + d * d);
+	            rotation = Math.asin(c / s) * (d > 0 ? 1 : -1);
+	        }
+	        else {
+	            rotation = 0;
+	        }
+	        return unitType === math_util_1.AngleUnit.Degrees ? rotation * math_util_1.MathUtil.RadiansToDegrees : rotation;
+	    }
+	    equals(other) {
+	        return other.a === this.a && other.b === this.b && other.c === this.c &&
+	            other.d === this.d && other.tx === this.tx && other.ty === this.ty;
+	    }
+	    clone() {
+	        return new Matrix3x3().set(this.a, this.b, this.c, this.d, this.tx, this.ty);
+	    }
+	    static createIdentity() {
+	        return new Matrix3x3();
+	    }
+	    static createRotation(radians) {
+	        const result = new Matrix3x3();
+	        const a = result.a;
+	        const b = result.b;
+	        const c = result.c;
+	        const d = result.d;
+	        const cos = Math.cos(radians);
+	        const sin = Math.sin(radians);
+	        result.a = cos * a + sin * c;
+	        result.b = cos * b + sin * d;
+	        result.c = -sin * a + cos * c;
+	        result.d = -sin * b + cos * d;
+	        return result;
+	    }
+	    static createScale(xScale, yScale) {
+	        const result = new Matrix3x3();
+	        result.a = xScale;
+	        result.d = yScale;
+	        return result;
+	    }
+	    static createTranslation(x, y) {
+	        const result = new Matrix3x3();
+	        result.tx = x;
+	        result.ty = y;
+	        return result;
+	    }
+	}
+	exports.Matrix3x3 = Matrix3x3;
+
+
+/***/ },
+/* 33 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	var AngleUnit;
+	(function (AngleUnit) {
+	    AngleUnit[AngleUnit["Radians"] = 0] = "Radians";
+	    AngleUnit[AngleUnit["Degrees"] = 1] = "Degrees";
+	})(AngleUnit = exports.AngleUnit || (exports.AngleUnit = {}));
+	exports.MathUtil = {
+	    RadiansToDegrees: 57.2957795130823,
+	    DegreesToRadians: 0.01745329251994,
+	    E: Math.E,
+	    Log2E: Math.LOG2E,
+	    Log10E: Math.LOG10E,
+	    Pi: Math.PI,
+	    PiOver2: Math.PI / 2.0,
+	    PiOver4: Math.PI / 4.0,
+	    TwoPi: Math.PI * 2.0,
+	    clamp(value, min, max) {
+	        value = (value > max) ? max : value;
+	        value = (value < min) ? min : value;
+	        return value;
+	    },
+	    clamp01(value) {
+	        value = (value > 1) ? 1 : value;
+	        value = (value < 0) ? 0 : value;
+	        return value;
+	    },
+	    distance(value1, value2) {
+	        return Math.abs(value1 - value2);
+	    },
+	    barycentric(value1, value2, value3, amount1, amount2) {
+	        return value1 + (value2 - value1) * amount1 + (value3 - value1) * amount2;
+	    },
+	    catmullRom(value1, value2, value3, value4, amount) {
+	        // Using formula from http://www.mvps.org/directx/articles/catmull/
+	        const amountSquared = amount * amount;
+	        const amountCubed = amountSquared * amount;
+	        return (0.5 * (2.0 * value2 +
+	            (value3 - value1) * amount +
+	            (2.0 * value1 - 5.0 * value2 + 4.0 * value3 - value4) * amountSquared +
+	            (3.0 * value2 - value1 - 3.0 * value3 + value4) * amountCubed));
+	    },
+	    hermite(value1, tangent1, value2, tangent2, amount) {
+	        let v1 = value1;
+	        let v2 = value2;
+	        let t1 = tangent1;
+	        let t2 = tangent2;
+	        let s = amount;
+	        let result = 0;
+	        let sCubed = s * s * s;
+	        let sSquared = s * s;
+	        if (amount == 0)
+	            result = value1;
+	        else if (amount == 1)
+	            result = value2;
+	        else
+	            result = (2 * v1 - 2 * v2 + t2 + t1) * sCubed +
+	                (3 * v2 - 3 * v1 - 2 * t1 - t2) * sSquared +
+	                t1 * s +
+	                v1;
+	        return result;
+	    },
+	    lerp(value1, value2, amount) {
+	        return ((1 - amount) * value1) + (value2 * amount);
+	    },
+	    smoothStep(value1, value2, amount) {
+	        return this.hermite(value1, 0, value2, 0, this.clamp01(amount));
+	    },
+	    wrapAngle(angle) {
+	        const PI = Math.PI;
+	        const TwoPI = PI * 2;
+	        if ((angle > -PI) && (angle <= PI)) {
+	            return angle;
+	        }
+	        angle %= TwoPI;
+	        if (angle <= -PI) {
+	            return angle + TwoPI;
+	        }
+	        if (angle > PI) {
+	            return angle - TwoPI;
+	        }
+	        return angle;
+	    },
+	    isPowerOf2(value) {
+	        var int = value | 0;
+	        if (value !== int)
+	            return false;
+	        return (int > 0) && ((int & (int - 1)) == 0);
+	    }
+	};
+
+
+/***/ },
+/* 34 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const vector2_1 = __webpack_require__(17);
+	const rectangle_1 = __webpack_require__(35);
+	class BoundingBox {
+	    constructor(appElement) {
+	        this.appElement = appElement;
+	        this.topLeft = new vector2_1.Vector2();
+	        this.topRight = new vector2_1.Vector2();
+	        this.bottomLeft = new vector2_1.Vector2();
+	        this.bottomRight = new vector2_1.Vector2();
+	        this.points = [this.topLeft, this.topRight, this.bottomRight, this.bottomLeft];
+	        this.update();
+	    }
+	    update() {
+	        const element = this.appElement;
+	        const wm = element.getWorldMatrix();
+	        const scale = wm.getScale();
+	        const rotation = wm.getRotation() * (Math.PI / 180);
+	        const theta = -rotation;
+	        const position = element.getLocalPosition();
+	        const pivot = element.getPivot();
+	        const w = element.getWidth() * scale.x;
+	        const h = element.getHeight() * scale.y;
+	        const pivotPoint = new vector2_1.Vector2(pivot.x * w, pivot.y * h);
+	        const parent = element.getParent();
+	        if (parent) {
+	            const p = parent.getPosition();
+	            //maybe this needs to be done for all parents and get the result?
+	            position.x = p.x + (position.x * scale.x);
+	            position.y = p.y + (position.y * scale.y);
+	        }
+	        //should maybe rotate around parent position
+	        //todo - when moving something, cant just add to its position, need to do equivelent of Transform.translate() or Transform.MoveTo()
+	        // public void Translate(Vector3 translation, [DefaultValue("Space.Self")] Space relativeTo)
+	        //     {
+	        //         if (relativeTo == Space.World)
+	        //             this.position += translation;
+	        //         else
+	        //             this.position += this.TransformDirection(translation);
+	        //     }
+	        this.topLeft.set(0, 0).rotateAround(theta, pivotPoint).addVector(position);
+	        this.topRight.set(w, 0).rotateAround(theta, pivotPoint).addVector(position);
+	        this.bottomRight.set(w, h).rotateAround(theta, pivotPoint).addVector(position);
+	        this.bottomLeft.set(0, h).rotateAround(theta, pivotPoint).addVector(position);
+	    }
+	    containsPoint(point) {
+	        const points = this.points;
+	        let c = false;
+	        for (let i = 0, j = points.length - 1; i < points.length; j = i++) {
+	            const pointI = points[i];
+	            const pointJ = points[j];
+	            if (((pointI.y >= point.y) !== (pointJ.y >= point.y)) &&
+	                (point.x <= (pointJ.x - pointI.x) * (point.y - pointI.y) / (pointJ.y - pointI.y) + pointI.x)) {
+	                c = !c;
+	            }
+	        }
+	        return c;
+	    }
+	    getAxisAlignedBoundingBox() {
+	        let minX = this.topLeft.x;
+	        let minY = this.topLeft.y;
+	        let maxX = this.topLeft.x;
+	        let maxY = this.topLeft.y;
+	        for (let i = 0; i < this.points.length; i++) {
+	            const v = this.points[i];
+	            if (v.x > maxX) {
+	                maxX = v.x;
+	            }
+	            if (v.x < minX) {
+	                minX = v.x;
+	            }
+	            if (v.y > maxY) {
+	                maxY = v.y;
+	            }
+	            if (v.y < minY) {
+	                minY = v.y;
+	            }
+	        }
+	        return new rectangle_1.Rectangle().setFromPoints(minX, minY, maxX, maxY);
+	    }
+	}
+	exports.BoundingBox = BoundingBox;
+
+
+/***/ },
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2929,6 +3518,13 @@
 	        this.y = y;
 	        this.width = width;
 	        this.height = height;
+	    }
+	    setFromPoints(minX, minY, maxX, maxY) {
+	        this.x = minX;
+	        this.y = minY;
+	        this.width = maxX - minX;
+	        this.height = maxY - minY;
+	        return this;
 	    }
 	    containsRectangle(rect) {
 	        return false;
@@ -2968,56 +3564,14 @@
 
 
 /***/ },
-/* 31 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	var LifeCycleFlag;
-	(function (LifeCycleFlag) {
-	    LifeCycleFlag[LifeCycleFlag["Invalid"] = 1] = "Invalid";
-	    LifeCycleFlag[LifeCycleFlag["Created"] = 2] = "Created";
-	    LifeCycleFlag[LifeCycleFlag["Enabled"] = 4] = "Enabled";
-	    LifeCycleFlag[LifeCycleFlag["Disabled"] = 8] = "Disabled";
-	    LifeCycleFlag[LifeCycleFlag["Rendered"] = 16] = "Rendered";
-	    LifeCycleFlag[LifeCycleFlag["Mounted"] = 32] = "Mounted";
-	    LifeCycleFlag[LifeCycleFlag["Destroyed"] = 64] = "Destroyed";
-	    LifeCycleFlag[LifeCycleFlag["Structured"] = 128] = "Structured";
-	})(LifeCycleFlag = exports.LifeCycleFlag || (exports.LifeCycleFlag = {}));
-
-
-/***/ },
-/* 32 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	var CommandType;
-	(function (CommandType) {
-	    CommandType[CommandType["Create"] = 0] = "Create";
-	    CommandType[CommandType["Destroy"] = 1] = "Destroy";
-	    CommandType[CommandType["SetRect"] = 2] = "SetRect";
-	    CommandType[CommandType["SetImage"] = 3] = "SetImage";
-	    CommandType[CommandType["SetPosition"] = 4] = "SetPosition";
-	    CommandType[CommandType["SetDimensions"] = 5] = "SetDimensions";
-	    CommandType[CommandType["SetTransform"] = 6] = "SetTransform";
-	    CommandType[CommandType["SetParent"] = 7] = "SetParent";
-	    CommandType[CommandType["SetSiblingIndex"] = 8] = "SetSiblingIndex";
-	    CommandType[CommandType["PaintBackground"] = 9] = "PaintBackground";
-	    CommandType[CommandType["SetText"] = 10] = "SetText";
-	    CommandType[CommandType["UpdateInput"] = 11] = "UpdateInput";
-	})(CommandType = exports.CommandType || (exports.CommandType = {}));
-
-
-/***/ },
-/* 33 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const e_command_type_1 = __webpack_require__(32);
-	const event_emitter_1 = __webpack_require__(34);
+	const e_command_type_1 = __webpack_require__(31);
+	const event_emitter_1 = __webpack_require__(37);
 	const object_pool_1 = __webpack_require__(11);
 	class RuntimeCommand {
 	    constructor() {
@@ -3152,7 +3706,7 @@
 
 
 /***/ },
-/* 34 */
+/* 37 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3197,7 +3751,7 @@
 
 
 /***/ },
-/* 35 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3210,7 +3764,7 @@
 
 
 /***/ },
-/* 36 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3223,14 +3777,14 @@
 
 
 /***/ },
-/* 37 */
+/* 40 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
 	const TEMP_ANNOTATION_1 = __webpack_require__(18);
-	const e_lifecycle_flags_1 = __webpack_require__(31);
+	const e_lifecycle_flags_1 = __webpack_require__(30);
 	let Component = Component_1 = class Component {
 	    constructor() {
 	        this.lifeCycleFlags = e_lifecycle_flags_1.LifeCycleFlag.Enabled;
@@ -3331,7 +3885,7 @@
 
 
 /***/ },
-/* 38 */
+/* 41 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3440,370 +3994,14 @@
 
 
 /***/ },
-/* 39 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(4);
-	const sizing_component_1 = __webpack_require__(40);
-	const layout_1 = __webpack_require__(41);
-	const expose_as_1 = __webpack_require__(42);
-	const component_1 = __webpack_require__(37);
-	const app_element_1 = __webpack_require__(29);
-	let HorizontalStackLayout = class HorizontalStackLayout extends layout_1.LayoutComponent {
-	    constructor() {
-	        super(...arguments);
-	        this.wrap = false;
-	        //I set text
-	        //I ask for height
-	        //block? that sucks
-	        //await this.element.getHeight()
-	        //this.setRect(rect)
-	        // -> do layout async?
-	        //what needs its layout computed?
-	        //only when width / height changes does anything change, position does not, unless set to stretch and child leaves bounds
-	        //const width = sizer.getWidthInPixels();
-	        //static sizing can be in percentages / fractions / or pixels (ignore ems for now)
-	        //defaults to 1 fr
-	        //fr will need a min size of some sort for overflow right?
-	        //static or tethered elements are not part of layout logic, the effectively 'float'
-	        //can have min/max/preferred sizes
-	        //get only non tethered children?
-	        //get only non static children?
-	        //each box has stretch behavior in each direction
-	        //all overflows are hidden outside of scroll elements
-	        // 'fit content' is tricky
-	        //in each dimension
-	        //each element gets the sum of all of it's (non static/non tethered) immediate children
-	        //default behavior is clamp width, stretch height
-	        //lets see how this works --
-	        //for fr sizes when the container scrolls
-	        //option 1: size them as though they get a proportional fraction of space left after percent + fixed
-	        //option 2: size them as though the total fractional space is equal to percent + fixed
-	        //option 3: require explicit min sizing with fr (bad)
-	        //option 4: add setting on container around how to handle fr, using option 1 or 2, or by including a fixed fr value
-	        //onLayoutRectChanged
-	        //parent -> Stretch Fit Children
-	        //parent -> Fixed
-	        //child -> Fill Parent
-	        //setTextAsync("Text")
-	        //-> Queues a text update
-	        //-> Does NOT update the rect value
-	        //-> Next Frame Rect is updated
-	        //-> getRect() still refers to original
-	        //await setTextAsync("text")
-	        //do stuff here, by now layout has occurred
-	        //two kinds of layout
-	        //-> top down = parent resize triggers child layout
-	        //-> bottom up = child resize triggers parent layout
-	    }
-	    doLayout() {
-	        //todo -- assuming height stretches to highest child for now, allow other clamp modes later
-	        var remainingSpace = this.appElement.getWidth();
-	        const sizings = new Array(this.sizingComponents.length);
-	        let totalFractions = 0;
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            const sizer = this.sizingComponents[i];
-	            if (sizer) {
-	                switch (sizer.sizingMode) {
-	                    case sizing_component_1.SizingMode.Percent:
-	                        const percentageValue = sizer.width * 0.01;
-	                        sizings[i] = (percentageValue * this.appElement.getWidth()) | 0;
-	                        remainingSpace -= sizings[i];
-	                        break;
-	                    case sizing_component_1.SizingMode.Fraction:
-	                        totalFractions++;
-	                        sizings[i] = sizer.width;
-	                        break;
-	                    case sizing_component_1.SizingMode.Fixed:
-	                        //todo handle fixed-em
-	                        sizings[i] = sizer.width;
-	                        remainingSpace -= sizings[i];
-	                        break;
-	                }
-	            }
-	            else {
-	                sizings[i] = -1;
-	            }
-	        }
-	        if (totalFractions > 0) {
-	            const pieceSize = remainingSpace / totalFractions;
-	            for (let i = 0; i < sizings.length; i++) {
-	                if (this.sizingComponents[i].sizingMode === sizing_component_1.SizingMode.Fraction) {
-	                    sizings[i] = pieceSize * (this.sizingComponents[i].width);
-	                }
-	            }
-	        }
-	        let allocatedSpace = 0;
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            const element = this.sizingComponents[i].appElement;
-	            element.setPositionValues(allocatedSpace, 0, app_element_1.Space.Local);
-	            element.setDimensions(sizings[i], this.appElement.getHeight());
-	            allocatedSpace += sizings[i];
-	        }
-	    }
-	};
-	tslib_1.__decorate([
-	    expose_as_1.exposeAs(Boolean)
-	], HorizontalStackLayout.prototype, "wrap", void 0);
-	HorizontalStackLayout = tslib_1.__decorate([
-	    component_1.component("Layout/HorizontalStack")
-	], HorizontalStackLayout);
-	exports.HorizontalStackLayout = HorizontalStackLayout;
-
-
-/***/ },
-/* 40 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(4);
-	const layout_1 = __webpack_require__(41);
-	const expose_as_1 = __webpack_require__(42);
-	const util_1 = __webpack_require__(16);
-	const component_1 = __webpack_require__(37);
-	var SizingMode;
-	(function (SizingMode) {
-	    SizingMode[SizingMode["Fixed"] = 0] = "Fixed";
-	    SizingMode[SizingMode["Percent"] = 1] = "Percent";
-	    SizingMode[SizingMode["Fraction"] = 2] = "Fraction";
-	    SizingMode[SizingMode["Anchor"] = 3] = "Anchor";
-	})(SizingMode = exports.SizingMode || (exports.SizingMode = {}));
-	let SizingComponent = class SizingComponent extends component_1.Component {
-	    constructor() {
-	        super(...arguments);
-	        this.sizingMode = SizingMode.Fraction;
-	        this.width = 1;
-	        this.height = 1;
-	    }
-	    setLayoutRect(rect) {
-	    }
-	    onLayoutRectChanged(layoutRect) {
-	    }
-	    onMounted() {
-	        const layout = this.getComponentInParent(layout_1.LayoutComponent);
-	        if (layout) {
-	            layout.addSizingComponent(this);
-	        }
-	    }
-	    onDestroyed() {
-	        if (!this.appElement.isDestroyed()) {
-	            const layout = this.getComponentInParent(layout_1.LayoutComponent);
-	            if (layout) {
-	                layout.removeSizingComponent(this);
-	            }
-	        }
-	    }
-	};
-	tslib_1.__decorate([
-	    expose_as_1.exposeAs(util_1.EnumSelect, SizingMode)
-	], SizingComponent.prototype, "sizingMode", void 0);
-	tslib_1.__decorate([
-	    expose_as_1.exposeAs(Number)
-	], SizingComponent.prototype, "width", void 0);
-	tslib_1.__decorate([
-	    expose_as_1.exposeAs(Number)
-	], SizingComponent.prototype, "height", void 0);
-	SizingComponent = tslib_1.__decorate([
-	    component_1.component("Layout/Sizing")
-	], SizingComponent);
-	exports.SizingComponent = SizingComponent;
-
-
-/***/ },
-/* 41 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const sizing_component_1 = __webpack_require__(40);
-	const component_1 = __webpack_require__(37);
-	class DefaultSizer {
-	    constructor(appElement) {
-	        this.appElement = appElement;
-	        this.width = 1;
-	        this.height = 1;
-	        this.sizingMode = sizing_component_1.SizingMode.Fraction;
-	    }
-	}
-	exports.DefaultSizer = DefaultSizer;
-	class LayoutComponent extends component_1.Component {
-	    constructor() {
-	        super(...arguments);
-	        this.sizingComponents = [];
-	    }
-	    doLayout() { }
-	    onMounted() {
-	        const childCount = this.appElement.getChildCount();
-	        for (let i = 0; i < childCount; i++) {
-	            const child = this.appElement.getChildAt(i);
-	            let sizing = child.getComponent(sizing_component_1.SizingComponent) || new DefaultSizer(child);
-	            this.sizingComponents.push(sizing);
-	        }
-	        Runtime.queueLayout(this);
-	    }
-	    getSlotAtPosition(position) {
-	        if (this.sizingComponents.length === 0)
-	            return;
-	    }
-	    onChildAdded(child) {
-	        const sizer = child.getComponent(sizing_component_1.SizingComponent) || new DefaultSizer(child);
-	        this.sizingComponents.push(sizer);
-	        Runtime.queueLayout(this);
-	    }
-	    onChildRemoved(child) {
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            if (this.sizingComponents[i].appElement === child) {
-	                this.sizingComponents.removeAt(i);
-	                break;
-	            }
-	        }
-	        Runtime.queueLayout(this);
-	    }
-	    onChildMoved(child) {
-	        //maybe just rebuild sizing component list
-	    }
-	    addSizingComponent(sizingComponent) {
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            const cmp = this.sizingComponents[i];
-	            if (cmp.appElement === sizingComponent.appElement) {
-	                this.sizingComponents[i] = sizingComponent;
-	                return;
-	            }
-	        }
-	        Runtime.queueLayout(this);
-	    }
-	    removeSizingComponent(sizingComponent) {
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            const cmp = this.sizingComponents[i];
-	            if (cmp.appElement === sizingComponent.appElement) {
-	                this.sizingComponents[i] = new DefaultSizer(sizingComponent.appElement);
-	                return;
-	            }
-	        }
-	        Runtime.queueLayout(this);
-	    }
-	}
-	exports.LayoutComponent = LayoutComponent;
-	//Margin -> Space Outside border
-	//Padding -> Space Inside border
-	//SetRect -> ComputeContentRect(Margin/Padding/Offset/Stretch/Anchor) -> DoLayout
-	//SetRect -> Stretch/Anchor -> Margin -> Border -> Padding -> Content -> Layout
-	//items that are laid out are allocated a given rect
-	//they can choose to ignore this rect, default behavior is to fill it
-	//could also fill in one direction, or apply margin / padding to it
-	//before filling it. Could also use this for centering / alignment / offsetting
-	//how are animation triggers handled? possibly using this layout rect
-	//tethers -> Sticky positioning based on screen size and tether point within some element (not only parent)
-	//anchors -> Stretch width/height based on anchor points on parent
-	//tether and anchor are mutually exclusive
-	//anchor drives size
-	//it is a subclass of SizingComponent
-	//Tether is a subclass of Layout?
-	//adjusting sizes
-	//layout items are locked
-	//sizing
-	//anchor
-	//percent of parent remaining
-	//percent of parent total space
-	//fraction of parent remaining space
-	//fraction of parent total space based on # of siblings
-	//min / max / preferred
-	//fit child content width
-	//fit child content height
-	//fill parent
-	//stretch left
-	//stretch right
-	//stretch up
-	//stretch down
-	//stretch to sibling
-	//margin / padding / border -> Ignored for layout, layout only deals with total width / height
-	//margin / padding / border -> Optionally collapsible
-	//onLayoutSet()
-	//onLayoutChanged()
-	//anything with an anchor is NOT part of layout children
-	//anything with a tether is NOT part of layout children
-	//absolute width / height
-	//position
-	//possible to use layout meta-elements that can declare sizing for their child
-	//these elements can have only 1 child but many components
-	//auto generated when attaching to child of layout
-
-
-/***/ },
 /* 42 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	//todo maybe swap to array
-	let editorDataMap = new Map();
-	let fnPrototype = Object.getPrototypeOf(function () { });
-	function getExposedFieldMap(target) {
-	    let map = null;
-	    let ptr = target.constructor;
-	    while (!map && ptr !== fnPrototype) {
-	        map = editorDataMap.get(ptr);
-	        if (map)
-	            return map;
-	        ptr = Object.getPrototypeOf(ptr);
-	    }
-	    return null;
-	}
-	exports.getExposedFieldMap = getExposedFieldMap;
-	function inspector(propertyType, ...propertyOptions) {
-	    return (target, propertyName) => {
-	        var fieldMap = editorDataMap.get(target.constructor);
-	        if (!fieldMap) {
-	            fieldMap = new Map();
-	            const parent = Object.getPrototypeOf(target.constructor);
-	            if (typeof parent === "function") {
-	                const parentFields = editorDataMap.get(parent);
-	                if (parentFields) {
-	                    parentFields.forEach(function (value, key) {
-	                        fieldMap.set(key, value);
-	                    });
-	                }
-	            }
-	            editorDataMap.set(target.constructor, fieldMap);
-	        }
-	        fieldMap.set(propertyName, { propertyName, propertyType, propertyOptions });
-	    };
-	}
-	exports.inspector = inspector;
-	function exposeAs(propertyType, ...propertyOptions) {
-	    return (target, propertyName) => {
-	        var fieldMap = editorDataMap.get(target.constructor);
-	        if (!fieldMap) {
-	            fieldMap = new Map();
-	            const parent = Object.getPrototypeOf(target.constructor);
-	            if (typeof parent === "function") {
-	                const parentFields = editorDataMap.get(parent);
-	                if (parentFields) {
-	                    parentFields.forEach(function (value, key) {
-	                        fieldMap.set(key, value);
-	                    });
-	                }
-	            }
-	            editorDataMap.set(target.constructor, fieldMap);
-	        }
-	        fieldMap.set(propertyName, { propertyName, propertyType, propertyOptions });
-	    };
-	}
-	exports.exposeAs = exposeAs;
-
-
-/***/ },
-/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const asset_1 = __webpack_require__(44);
-	const evt_asset_created_1 = __webpack_require__(45);
+	const asset_1 = __webpack_require__(43);
+	const evt_asset_created_1 = __webpack_require__(44);
 	//asset is just a file pointer with an icon and extension and defines an inspector
 	//dragging an asset onto a field in the inspector just loads the asset
 	//an importer is just an operation applied to the data before writing it to disk
@@ -3813,10 +4011,10 @@
 	//scripts need to be tracked as assets also for scene dependencies
 	//but they aren't (probably) loaded in the same way other assets are
 	//runtime asset bundle -> database of asset data with function for loading them unrelated to the file system
-	const fs = __webpack_require__(46);
-	const File = __webpack_require__(47);
-	const Path = __webpack_require__(48);
-	const globby = __webpack_require__(49);
+	const fs = __webpack_require__(45);
+	const File = __webpack_require__(46);
+	const Path = __webpack_require__(47);
+	const globby = __webpack_require__(48);
 	function walkSync(dir, fileList = [], fileStats = []) {
 	    const files = File.readdirSync(dir);
 	    for (let i = 0; i < files.length; i++) {
@@ -4000,7 +4198,7 @@
 
 
 /***/ },
-/* 44 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4082,7 +4280,7 @@
 
 
 /***/ },
-/* 45 */
+/* 44 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4095,31 +4293,842 @@
 
 
 /***/ },
-/* 46 */
+/* 45 */
 /***/ function(module, exports) {
 
 	module.exports = require("fs");
 
 /***/ },
-/* 47 */
+/* 46 */
 /***/ function(module, exports) {
 
 	module.exports = require("mz/fs");
 
 /***/ },
-/* 48 */
+/* 47 */
 /***/ function(module, exports) {
 
 	module.exports = require("path");
 
 /***/ },
-/* 49 */
+/* 48 */
 /***/ function(module, exports) {
 
 	module.exports = require("globby");
 
 /***/ },
+/* 49 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const component_1 = __webpack_require__(40);
+	const color_1 = __webpack_require__(50);
+	const e_command_type_1 = __webpack_require__(31);
+	const expose_as_1 = __webpack_require__(51);
+	const cerialize_1 = __webpack_require__(52);
+	let BackgroundComponent = class BackgroundComponent extends component_1.Component {
+	    constructor() {
+	        super(...arguments);
+	        this._color = color_1.Color.White;
+	    }
+	    get color() {
+	        return this._color;
+	    }
+	    set color(color) {
+	        this._color.r = color.r;
+	        this._color.g = color.g;
+	        this._color.b = color.b;
+	        this._color.a = color.a;
+	        Runtime.sendCommand(e_command_type_1.CommandType.PaintBackground, { id: this.appElement.id, color: this._color });
+	    }
+	    onEnabled() {
+	        Runtime.sendCommand(e_command_type_1.CommandType.PaintBackground, { id: this.appElement.id, color: this._color });
+	    }
+	    onDisabled() {
+	        Runtime.sendCommand(e_command_type_1.CommandType.PaintBackground, { id: this.appElement.id, color: null });
+	    }
+	    static OnDeserialized(instance, json) {
+	        instance.color = json.color;
+	    }
+	    serialize() {
+	        return {
+	            color: this.color.copyTo({})
+	        };
+	    }
+	};
+	tslib_1.__decorate([
+	    expose_as_1.inspector(color_1.Color),
+	    cerialize_1.serializeAs(color_1.Color)
+	], BackgroundComponent.prototype, "_color", void 0);
+	BackgroundComponent = tslib_1.__decorate([
+	    component_1.component("Paint/Background")
+	], BackgroundComponent);
+	exports.BackgroundComponent = BackgroundComponent;
+
+
+/***/ },
 /* 50 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	class Color {
+	    constructor(r = 0, g = 0, b = 0, a = 1) {
+	        this.r = r;
+	        this.g = g;
+	        this.b = b;
+	        this.a = a;
+	    }
+	    copyTo(input) {
+	        input.r = this.r;
+	        input.g = this.g;
+	        input.b = this.b;
+	        input.a = this.a;
+	        return input;
+	    }
+	    static get Black() { return new Color(0, 0, 0, 255); }
+	    static get Blue() { return new Color(0, 0, 255, 255); }
+	    static get Clear() { return new Color(0, 0, 0, 0); }
+	    static get Cyan() { return new Color(0, 255, 255, 255); }
+	    static get Gray() { return new Color(0.5, 0.5, 0.5, 255); }
+	    static get Green() { return new Color(0, 255, 0, 255); }
+	    static get Magenta() { return new Color(255, 0, 255, 255); }
+	    static get Red() { return new Color(255, 0, 0, 255); }
+	    static get Yellow() { return new Color(255, (0.92 * 255 | 0), (0.06 * 255 | 0), 255); }
+	    static get White() { return new Color(255, 255, 255, 255); }
+	}
+	exports.Color = Color;
+
+
+/***/ },
+/* 51 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	//todo maybe swap to array
+	let editorDataMap = new Map();
+	let fnPrototype = Object.getPrototypeOf(function () { });
+	function getExposedFieldMap(target) {
+	    let map = null;
+	    let ptr = target.constructor;
+	    while (!map && ptr !== fnPrototype) {
+	        map = editorDataMap.get(ptr);
+	        if (map)
+	            return map;
+	        ptr = Object.getPrototypeOf(ptr);
+	    }
+	    return null;
+	}
+	exports.getExposedFieldMap = getExposedFieldMap;
+	function inspector(propertyType, ...propertyOptions) {
+	    return (target, propertyName) => {
+	        var fieldMap = editorDataMap.get(target.constructor);
+	        if (!fieldMap) {
+	            fieldMap = new Map();
+	            const parent = Object.getPrototypeOf(target.constructor);
+	            if (typeof parent === "function") {
+	                const parentFields = editorDataMap.get(parent);
+	                if (parentFields) {
+	                    parentFields.forEach(function (value, key) {
+	                        fieldMap.set(key, value);
+	                    });
+	                }
+	            }
+	            editorDataMap.set(target.constructor, fieldMap);
+	        }
+	        fieldMap.set(propertyName, { propertyName, propertyType, propertyOptions });
+	    };
+	}
+	exports.inspector = inspector;
+	function exposeAs(propertyType, ...propertyOptions) {
+	    return (target, propertyName) => {
+	        var fieldMap = editorDataMap.get(target.constructor);
+	        if (!fieldMap) {
+	            fieldMap = new Map();
+	            const parent = Object.getPrototypeOf(target.constructor);
+	            if (typeof parent === "function") {
+	                const parentFields = editorDataMap.get(parent);
+	                if (parentFields) {
+	                    parentFields.forEach(function (value, key) {
+	                        fieldMap.set(key, value);
+	                    });
+	                }
+	            }
+	            editorDataMap.set(target.constructor, fieldMap);
+	        }
+	        fieldMap.set(propertyName, { propertyName, propertyType, propertyOptions });
+	    };
+	}
+	exports.exposeAs = exposeAs;
+
+
+/***/ },
+/* 52 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__(53);
+
+/***/ },
+/* 53 */
+/***/ function(module, exports) {
+
+	"use strict";
+	var win = null;
+	try {
+	    win = window;
+	}
+	catch (e) {
+	    win = global;
+	}
+	//some other modules might want access to the serialization meta data, expose it here
+	var TypeMap = win.__CerializeTypeMap = new Map();
+	exports.__TypeMap = TypeMap;
+	//convert strings like my_camel_string to myCamelString
+	function CamelCase(str) {
+	    var STRING_CAMELIZE_REGEXP = (/(\-|_|\.|\s)+(.)?/g);
+	    return str.replace(STRING_CAMELIZE_REGEXP, function (match, separator, chr) {
+	        return chr ? chr.toUpperCase() : '';
+	    }).replace(/^([A-Z])/, function (match, separator, chr) {
+	        return match.toLowerCase();
+	    });
+	}
+	exports.CamelCase = CamelCase;
+	//convert strings like MyCamelString to my_camel_string
+	function SnakeCase(str) {
+	    var STRING_DECAMELIZE_REGEXP = (/([a-z\d])([A-Z])/g);
+	    return str.replace(STRING_DECAMELIZE_REGEXP, '$1_$2').toLowerCase();
+	}
+	exports.SnakeCase = SnakeCase;
+	//convert strings like myCamelCase to my_camel_case
+	function UnderscoreCase(str) {
+	    var STRING_UNDERSCORE_REGEXP_1 = (/([a-z\d])([A-Z]+)/g);
+	    var STRING_UNDERSCORE_REGEXP_2 = (/\-|\s+/g);
+	    return str.replace(STRING_UNDERSCORE_REGEXP_1, '$1_$2').replace(STRING_UNDERSCORE_REGEXP_2, '_').toLowerCase();
+	}
+	exports.UnderscoreCase = UnderscoreCase;
+	//convert strings like my_camelCase to my-camel-case
+	function DashCase(str) {
+	    var STRING_DASHERIZE_REGEXP = (/([a-z\d])([A-Z])/g);
+	    str = str.replace(/_/g, '-');
+	    return str.replace(STRING_DASHERIZE_REGEXP, '$1-$2').toLowerCase();
+	}
+	exports.DashCase = DashCase;
+	//gets meta data for a key name, creating a new meta data instance
+	//if the input array doesn't already define one for the given keyName
+	function getMetaData(array, keyName) {
+	    for (var i = 0; i < array.length; i++) {
+	        if (array[i].keyName === keyName) {
+	            return array[i];
+	        }
+	    }
+	    array.push(new MetaData(keyName));
+	    return array[array.length - 1];
+	}
+	//helper for grabbing the type and keyname from a multi-type input variable
+	function getTypeAndKeyName(keyNameOrType, keyName) {
+	    var type = null;
+	    var key = null;
+	    if (typeof keyNameOrType === "string") {
+	        key = keyNameOrType;
+	    }
+	    else if (keyNameOrType && typeof keyNameOrType === "function" || typeof keyNameOrType === "object") {
+	        type = keyNameOrType;
+	        key = keyName;
+	    }
+	    return { key: key, type: type };
+	}
+	//todo instance.constructor.prototype.__proto__ === parent class, maybe use this?
+	//because types are stored in a JS Map keyed by constructor, serialization is not inherited by default
+	//keeping this seperate by default also allows sub classes to serialize differently than their parent
+	function inheritSerialization(parentType) {
+	    return function (childType) {
+	        var parentMetaData = TypeMap.get(parentType) || [];
+	        var childMetaData = TypeMap.get(childType) || [];
+	        for (var i = 0; i < parentMetaData.length; i++) {
+	            var keyName = parentMetaData[i].keyName;
+	            if (!MetaData.hasKeyName(childMetaData, keyName)) {
+	                childMetaData.push(MetaData.clone(parentMetaData[i]));
+	            }
+	        }
+	        TypeMap.set(childType, childMetaData);
+	    };
+	}
+	exports.inheritSerialization = inheritSerialization;
+	//an untyped serialization property annotation, gets existing meta data for the target or creates
+	//a new one and assigns the serialization key for that type in the meta data
+	function serialize(target, keyName) {
+	    if (!target || !keyName)
+	        return;
+	    var metaDataList = TypeMap.get(target.constructor) || [];
+	    var metadata = getMetaData(metaDataList, keyName);
+	    metadata.serializedKey = keyName;
+	    TypeMap.set(target.constructor, metaDataList);
+	}
+	exports.serialize = serialize;
+	//an untyped deserialization property annotation, gets existing meta data for the target or creates
+	//a new one and assigns the deserialization key for that type in the meta data
+	function deserialize(target, keyName) {
+	    if (!target || !keyName)
+	        return;
+	    var metaDataList = TypeMap.get(target.constructor) || [];
+	    var metadata = getMetaData(metaDataList, keyName);
+	    metadata.deserializedKey = keyName;
+	    TypeMap.set(target.constructor, metaDataList);
+	}
+	exports.deserialize = deserialize;
+	//this combines @serialize and @deserialize as defined above
+	function autoserialize(target, keyName) {
+	    if (!target || !keyName)
+	        return;
+	    var metaDataList = TypeMap.get(target.constructor) || [];
+	    var metadata = getMetaData(metaDataList, keyName);
+	    metadata.serializedKey = keyName;
+	    metadata.deserializedKey = keyName;
+	    TypeMap.set(target.constructor, metaDataList);
+	}
+	exports.autoserialize = autoserialize;
+	//We dont actually need the type to serialize but I like the consistency with deserializeAs which definitely does
+	//serializes a type using 1.) a custom key name, 2.) a custom type, or 3.) both custom key and type
+	function serializeAs(keyNameOrType, keyName) {
+	    if (!keyNameOrType)
+	        return;
+	    var _a = getTypeAndKeyName(keyNameOrType, keyName), key = _a.key, type = _a.type;
+	    return function (target, actualKeyName) {
+	        if (!target || !actualKeyName)
+	            return;
+	        var metaDataList = TypeMap.get(target.constructor) || [];
+	        var metadata = getMetaData(metaDataList, actualKeyName);
+	        metadata.serializedKey = (key) ? key : actualKeyName;
+	        metadata.serializedType = type;
+	        //this allows the type to be a stand alone function instead of a class
+	        if (type !== Date && type !== RegExp && !TypeMap.get(type) && typeof type === "function") {
+	            metadata.serializedType = {
+	                Serialize: type
+	            };
+	        }
+	        TypeMap.set(target.constructor, metaDataList);
+	    };
+	}
+	exports.serializeAs = serializeAs;
+	//Supports serializing of dictionary-like map objects, ie: { x: {}, y: {} }
+	function serializeIndexable(type, keyName) {
+	    if (!type)
+	        return;
+	    return function (target, actualKeyName) {
+	        if (!target || !actualKeyName)
+	            return;
+	        var metaDataList = TypeMap.get(target.constructor) || [];
+	        var metadata = getMetaData(metaDataList, actualKeyName);
+	        metadata.serializedKey = (keyName) ? keyName : actualKeyName;
+	        metadata.serializedType = type;
+	        metadata.indexable = true;
+	        //this allows the type to be a stand alone function instead of a class
+	        if (type !== Date && type !== RegExp && !TypeMap.get(type) && typeof type === "function") {
+	            metadata.serializedType = {
+	                Serialize: type
+	            };
+	        }
+	        TypeMap.set(target.constructor, metaDataList);
+	    };
+	}
+	exports.serializeIndexable = serializeIndexable;
+	//deserializes a type using 1.) a custom key name, 2.) a custom type, or 3.) both custom key and type
+	function deserializeAs(keyNameOrType, keyName) {
+	    if (!keyNameOrType)
+	        return;
+	    var _a = getTypeAndKeyName(keyNameOrType, keyName), key = _a.key, type = _a.type;
+	    return function (target, actualKeyName) {
+	        if (!target || !actualKeyName)
+	            return;
+	        var metaDataList = TypeMap.get(target.constructor) || [];
+	        var metadata = getMetaData(metaDataList, actualKeyName);
+	        metadata.deserializedKey = (key) ? key : actualKeyName;
+	        metadata.deserializedType = type;
+	        //this allows the type to be a stand alone function instead of a class
+	        if (!TypeMap.get(type) && type !== Date && type !== RegExp && typeof type === "function") {
+	            metadata.deserializedType = {
+	                Deserialize: type
+	            };
+	        }
+	        TypeMap.set(target.constructor, metaDataList);
+	    };
+	}
+	exports.deserializeAs = deserializeAs;
+	//Supports deserializing of dictionary-like map objects, ie: { x: {}, y: {} }
+	function deserializeIndexable(type, keyName) {
+	    if (!type)
+	        return;
+	    var key = keyName;
+	    return function (target, actualKeyName) {
+	        if (!target || !actualKeyName)
+	            return;
+	        var metaDataList = TypeMap.get(target.constructor) || [];
+	        var metadata = getMetaData(metaDataList, actualKeyName);
+	        metadata.deserializedKey = (key) ? key : actualKeyName;
+	        metadata.deserializedType = type;
+	        metadata.indexable = true;
+	        if (!TypeMap.get(type) && type !== Date && type !== RegExp && typeof type === "function") {
+	            metadata.deserializedType = {
+	                Deserialize: type
+	            };
+	        }
+	        TypeMap.set(target.constructor, metaDataList);
+	    };
+	}
+	exports.deserializeIndexable = deserializeIndexable;
+	//serializes and deserializes a type using 1.) a custom key name, 2.) a custom type, or 3.) both custom key and type
+	function autoserializeAs(keyNameOrType, keyName) {
+	    if (!keyNameOrType)
+	        return;
+	    var _a = getTypeAndKeyName(keyNameOrType, keyName), key = _a.key, type = _a.type;
+	    return function (target, actualKeyName) {
+	        if (!target || !actualKeyName)
+	            return;
+	        var metaDataList = TypeMap.get(target.constructor) || [];
+	        var metadata = getMetaData(metaDataList, actualKeyName);
+	        var serialKey = (key) ? key : actualKeyName;
+	        metadata.deserializedKey = serialKey;
+	        metadata.deserializedType = type;
+	        metadata.serializedKey = serialKey;
+	        metadata.serializedType = type;
+	        if (!TypeMap.get(type) && type !== Date && type !== RegExp && typeof type === "function") {
+	            metadata.deserializedType = {
+	                Deserialize: type
+	            };
+	        }
+	        TypeMap.set(target.constructor, metaDataList);
+	    };
+	}
+	exports.autoserializeAs = autoserializeAs;
+	//Supports serializing/deserializing of dictionary-like map objects, ie: { x: {}, y: {} }
+	function autoserializeIndexable(type, keyName) {
+	    if (!type)
+	        return;
+	    var key = keyName;
+	    return function (target, actualKeyName) {
+	        if (!target || !actualKeyName)
+	            return;
+	        var metaDataList = TypeMap.get(target.constructor) || [];
+	        var metadata = getMetaData(metaDataList, actualKeyName);
+	        var serialKey = (key) ? key : actualKeyName;
+	        metadata.deserializedKey = serialKey;
+	        metadata.deserializedType = type;
+	        metadata.serializedKey = serialKey;
+	        metadata.serializedType = type;
+	        metadata.indexable = true;
+	        if (!TypeMap.get(type) && type !== Date && type !== RegExp && typeof type === "function") {
+	            metadata.deserializedType = {
+	                Deserialize: type
+	            };
+	        }
+	        TypeMap.set(target.constructor, metaDataList);
+	    };
+	}
+	exports.autoserializeIndexable = autoserializeIndexable;
+	//helper class to contain serialization meta data for a property, each property
+	//in a type tagged with a serialization annotation will contain an array of these
+	//objects each describing one property
+	var MetaData = (function () {
+	    function MetaData(keyName) {
+	        this.keyName = keyName;
+	        this.serializedKey = null;
+	        this.deserializedKey = null;
+	        this.deserializedType = null;
+	        this.serializedType = null;
+	        this.indexable = false;
+	    }
+	    //checks for a key name in a meta data array
+	    MetaData.hasKeyName = function (metadataArray, key) {
+	        for (var i = 0; i < metadataArray.length; i++) {
+	            if (metadataArray[i].keyName === key)
+	                return true;
+	        }
+	        return false;
+	    };
+	    //clone a meta data instance, used for inheriting serialization properties
+	    MetaData.clone = function (data) {
+	        var metadata = new MetaData(data.keyName);
+	        metadata.deserializedKey = data.deserializedKey;
+	        metadata.serializedKey = data.serializedKey;
+	        metadata.serializedType = data.serializedType;
+	        metadata.deserializedType = data.deserializedType;
+	        metadata.indexable = data.indexable;
+	        return metadata;
+	    };
+	    return MetaData;
+	}());
+	//merges two primitive objects recursively, overwriting or defining properties on
+	//`instance` as they defined in `json`. Works on objects, arrays and primitives
+	function mergePrimitiveObjects(instance, json) {
+	    if (!json)
+	        return instance; //if we dont have a json value, just use what the instance defines already
+	    if (!instance)
+	        return json; //if we dont have an instance value, just use the json
+	    //for each key in the input json we need to do a merge into the instance object
+	    Object.keys(json).forEach(function (key) {
+	        var transformedKey = key;
+	        if (typeof deserializeKeyTransform === "function") {
+	            transformedKey = deserializeKeyTransform(key);
+	        }
+	        var jsonValue = json[key];
+	        var instanceValue = instance[key];
+	        if (Array.isArray(jsonValue)) {
+	            //in the array case we reuse the items that exist already where possible
+	            //so reset the instance array length (or make it an array if it isnt)
+	            //then call mergePrimitiveObjects recursively
+	            instanceValue = Array.isArray(instanceValue) ? instanceValue : [];
+	            instanceValue.length = jsonValue.length;
+	            for (var i = 0; i < instanceValue.length; i++) {
+	                instanceValue[i] = mergePrimitiveObjects(instanceValue[i], jsonValue[i]);
+	            }
+	        }
+	        else if (jsonValue && typeof jsonValue === "object") {
+	            if (!instanceValue || typeof instanceValue !== "object") {
+	                instanceValue = {};
+	            }
+	            instanceValue = mergePrimitiveObjects(instanceValue, jsonValue);
+	        }
+	        else {
+	            //primitive case, just use straight assignment
+	            instanceValue = jsonValue;
+	        }
+	        instance[transformedKey] = instanceValue;
+	    });
+	    return instance;
+	}
+	//takes an array defined in json and deserializes it into an array that ist stuffed with instances of `type`.
+	//any instances already defined in `arrayInstance` will be re-used where possible to maintain referential integrity.
+	function deserializeArrayInto(source, type, arrayInstance) {
+	    if (!Array.isArray(arrayInstance)) {
+	        arrayInstance = new Array(source.length);
+	    }
+	    //extend or truncate the target array to match the source array
+	    arrayInstance.length = source.length;
+	    for (var i = 0; i < source.length; i++) {
+	        arrayInstance[i] = DeserializeInto(source[i], type, arrayInstance[i] || new type());
+	    }
+	    return arrayInstance;
+	}
+	//takes an object defined in json and deserializes it into a `type` instance or populates / overwrites
+	//properties on `instance` if it is provided.
+	function deserializeObjectInto(json, type, instance) {
+	    var metadataArray = TypeMap.get(type);
+	    //if we dont have an instance we need to create a new `type`
+	    if (instance === null || instance === void 0) {
+	        if (type) {
+	            instance = new type();
+	        }
+	    }
+	    //if we dont have any meta data and we dont have a type to inflate, just merge the objects
+	    if (instance && !type && !metadataArray) {
+	        return mergePrimitiveObjects(instance, json);
+	    }
+	    //if we dont have meta data just bail out and keep what we have
+	    if (!metadataArray) {
+	        invokeDeserializeHook(instance, json, type);
+	        return instance;
+	    }
+	    //for each property in meta data, try to hydrate that property with its corresponding json value
+	    for (var i = 0; i < metadataArray.length; i++) {
+	        var metadata = metadataArray[i];
+	        //these are not the droids we're looking for (to deserialize), moving along
+	        if (!metadata.deserializedKey)
+	            continue;
+	        var serializedKey = metadata.deserializedKey;
+	        if (metadata.deserializedKey === metadata.keyName) {
+	            if (typeof deserializeKeyTransform === "function") {
+	                serializedKey = deserializeKeyTransform(metadata.keyName);
+	            }
+	        }
+	        var source = json[serializedKey];
+	        if (source === void 0)
+	            continue;
+	        var keyName = metadata.keyName;
+	        //if there is a custom deserialize function, use that
+	        if (metadata.deserializedType && typeof metadata.deserializedType.Deserialize === "function") {
+	            instance[keyName] = metadata.deserializedType.Deserialize(source);
+	        }
+	        else if (Array.isArray(source)) {
+	            if (metadata.deserializedType) {
+	                instance[keyName] = deserializeArrayInto(source, metadata.deserializedType, instance[keyName]);
+	            }
+	            else {
+	                instance[keyName] = deserializeArray(source, null);
+	            }
+	        }
+	        else if ((typeof source === "string" || source instanceof Date) && metadata.deserializedType === Date) {
+	            var deserializedDate = new Date(source);
+	            if (instance[keyName] instanceof Date) {
+	                instance[keyName].setTime(deserializedDate.getTime());
+	            }
+	            else {
+	                instance[keyName] = deserializedDate;
+	            }
+	        }
+	        else if (typeof source === "string" && type === RegExp) {
+	            instance[keyName] = new RegExp(source);
+	        }
+	        else if (source && typeof source === "object") {
+	            if (metadata.indexable) {
+	                instance[keyName] = deserializeIndexableObjectInto(source, metadata.deserializedType, instance[keyName]);
+	            }
+	            else {
+	                instance[keyName] = deserializeObjectInto(source, metadata.deserializedType, instance[keyName]);
+	            }
+	        }
+	        else {
+	            instance[keyName] = source;
+	        }
+	    }
+	    //invoke our after deserialized callback if provided
+	    invokeDeserializeHook(instance, json, type);
+	    return instance;
+	}
+	//deserializes a bit of json into a `type`
+	function Deserialize(json, type) {
+	    if (Array.isArray(json)) {
+	        return deserializeArray(json, type);
+	    }
+	    else if (json && typeof json === "object") {
+	        return deserializeObject(json, type);
+	    }
+	    else if ((typeof json === "string" || json instanceof Date) && type === Date) {
+	        return new Date(json);
+	    }
+	    else if (typeof json === "string" && type === RegExp) {
+	        return new RegExp(json);
+	    }
+	    else {
+	        return json;
+	    }
+	}
+	exports.Deserialize = Deserialize;
+	//takes some json, a type, and a target object and deserializes the json into that object
+	function DeserializeInto(source, type, target) {
+	    if (Array.isArray(source)) {
+	        return deserializeArrayInto(source, type, target || []);
+	    }
+	    else if (source && typeof source === "object") {
+	        return deserializeObjectInto(source, type, target || new type());
+	    }
+	    else {
+	        return target || (type && new type()) || null;
+	    }
+	}
+	exports.DeserializeInto = DeserializeInto;
+	//deserializes an array of json into an array of `type`
+	function deserializeArray(source, type) {
+	    var retn = new Array(source.length);
+	    for (var i = 0; i < source.length; i++) {
+	        retn[i] = Deserialize(source[i], type);
+	    }
+	    return retn;
+	}
+	function invokeDeserializeHook(instance, json, type) {
+	    if (type && typeof (type).OnDeserialized === "function") {
+	        type.OnDeserialized(instance, json);
+	    }
+	}
+	function invokeSerializeHook(instance, json) {
+	    if (typeof (instance.constructor).OnSerialized === "function") {
+	        (instance.constructor).OnSerialized(instance, json);
+	    }
+	}
+	//deserialize a bit of json into an instance of `type`
+	function deserializeObject(json, type) {
+	    var metadataArray = TypeMap.get(type);
+	    //if we dont have meta data, just decode the json and use that
+	    if (!metadataArray) {
+	        var inst = null;
+	        if (!type) {
+	            inst = JSON.parse(JSON.stringify(json));
+	        }
+	        else {
+	            inst = new type(); //todo this probably wrong
+	            invokeDeserializeHook(inst, json, type);
+	        }
+	        return inst;
+	    }
+	    var instance = new type();
+	    //for each tagged property on the source type, try to deserialize it
+	    for (var i = 0; i < metadataArray.length; i++) {
+	        var metadata = metadataArray[i];
+	        if (!metadata.deserializedKey)
+	            continue;
+	        var serializedKey = metadata.deserializedKey;
+	        if (metadata.deserializedKey === metadata.keyName) {
+	            if (typeof deserializeKeyTransform === "function") {
+	                serializedKey = deserializeKeyTransform(metadata.keyName);
+	            }
+	        }
+	        var source = json[serializedKey];
+	        var keyName = metadata.keyName;
+	        if (source === void 0)
+	            continue;
+	        //if there is a custom deserialize function, use that
+	        if (metadata.deserializedType && typeof metadata.deserializedType.Deserialize === "function") {
+	            instance[keyName] = metadata.deserializedType.Deserialize(source);
+	        }
+	        else if (Array.isArray(source)) {
+	            instance[keyName] = deserializeArray(source, metadata.deserializedType || null);
+	        }
+	        else if ((typeof source === "string" || source instanceof Date) && metadata.deserializedType === Date) {
+	            instance[keyName] = new Date(source);
+	        }
+	        else if (typeof source === "string" && metadata.deserializedType === RegExp) {
+	            instance[keyName] = new RegExp(json);
+	        }
+	        else if (source && typeof source === "object") {
+	            if (metadata.indexable) {
+	                instance[keyName] = deserializeIndexableObject(source, metadata.deserializedType);
+	            }
+	            else {
+	                instance[keyName] = deserializeObject(source, metadata.deserializedType);
+	            }
+	        }
+	        else {
+	            instance[keyName] = source;
+	        }
+	    }
+	    invokeDeserializeHook(instance, json, type);
+	    return instance;
+	}
+	function deserializeIndexableObject(source, type) {
+	    var retn = {};
+	    //todo apply key transformation here?
+	    Object.keys(source).forEach(function (key) {
+	        retn[key] = deserializeObject(source[key], type);
+	    });
+	    return retn;
+	}
+	function deserializeIndexableObjectInto(source, type, instance) {
+	    //todo apply key transformation here?
+	    Object.keys(source).forEach(function (key) {
+	        instance[key] = deserializeObjectInto(source[key], type, instance[key]);
+	    });
+	    return instance;
+	}
+	//take an array and spit out json
+	function serializeArray(source, type) {
+	    var serializedArray = new Array(source.length);
+	    for (var j = 0; j < source.length; j++) {
+	        serializedArray[j] = Serialize(source[j], type);
+	    }
+	    return serializedArray;
+	}
+	//take an instance of something and try to spit out json for it based on property annotaitons
+	function serializeTypedObject(instance, type) {
+	    var json = {};
+	    var metadataArray;
+	    if (type) {
+	        metadataArray = TypeMap.get(type);
+	    }
+	    else {
+	        metadataArray = TypeMap.get(instance.constructor);
+	    }
+	    for (var i = 0; i < metadataArray.length; i++) {
+	        var metadata = metadataArray[i];
+	        if (!metadata.serializedKey)
+	            continue;
+	        var serializedKey = metadata.serializedKey;
+	        if (metadata.serializedKey === metadata.keyName) {
+	            if (typeof serializeKeyTransform === "function") {
+	                serializedKey = serializeKeyTransform(metadata.keyName);
+	            }
+	        }
+	        var source = instance[metadata.keyName];
+	        if (source === void 0)
+	            continue;
+	        if (Array.isArray(source)) {
+	            json[serializedKey] = serializeArray(source);
+	        }
+	        else if (metadata.serializedType && typeof metadata.serializedType.Serialize === "function") {
+	            //todo -- serializeIndexableObject probably isn't needed because of how serialize works
+	            json[serializedKey] = metadata.serializedType.Serialize(source);
+	        }
+	        else {
+	            var value = Serialize(source);
+	            if (value !== void 0) {
+	                json[serializedKey] = value;
+	            }
+	        }
+	    }
+	    invokeSerializeHook(instance, json);
+	    return json;
+	}
+	//take an instance of something and spit out some json
+	function Serialize(instance, type) {
+	    if (instance === null || instance === void 0)
+	        return null;
+	    if (Array.isArray(instance)) {
+	        return serializeArray(instance, type);
+	    }
+	    if (type && TypeMap.has(type)) {
+	        return serializeTypedObject(instance, type);
+	    }
+	    if (instance.constructor && TypeMap.has(instance.constructor)) {
+	        return serializeTypedObject(instance);
+	    }
+	    if (instance instanceof Date) {
+	        return instance.toISOString();
+	    }
+	    if (instance instanceof RegExp) {
+	        return instance.toString();
+	    }
+	    if (instance && typeof instance === 'object' || typeof instance === 'function') {
+	        var keys = Object.keys(instance);
+	        var json = {};
+	        for (var i = 0; i < keys.length; i++) {
+	            //todo this probably needs a key transform
+	            json[keys[i]] = Serialize(instance[keys[i]]);
+	        }
+	        invokeSerializeHook(instance, json);
+	        return json;
+	    }
+	    return instance;
+	}
+	exports.Serialize = Serialize;
+	function GenericDeserialize(json, type) {
+	    return Deserialize(json, type);
+	}
+	exports.GenericDeserialize = GenericDeserialize;
+	function GenericDeserializeInto(json, type, instance) {
+	    return DeserializeInto(json, type, instance);
+	}
+	exports.GenericDeserializeInto = GenericDeserializeInto;
+	//these are used for transforming keys from one format to another
+	var serializeKeyTransform = null;
+	var deserializeKeyTransform = null;
+	//setter for deserializing key transform
+	function DeserializeKeysFrom(transform) {
+	    deserializeKeyTransform = transform;
+	}
+	exports.DeserializeKeysFrom = DeserializeKeysFrom;
+	//setter for serializing key transform
+	function SerializeKeysTo(transform) {
+	    serializeKeyTransform = transform;
+	}
+	exports.SerializeKeysTo = SerializeKeysTo;
+	//this is kinda dumb but typescript doesnt treat enums as a type, but sometimes you still
+	//want them to be serialized / deserialized, this does the trick but must be called after
+	//the enum is defined.
+	function SerializableEnumeration(e) {
+	    e.Serialize = function (x) {
+	        return e[x];
+	    };
+	    e.Deserialize = function (x) {
+	        return e[x];
+	    };
+	}
+	exports.SerializableEnumeration = SerializableEnumeration;
+	//expose the type map
+
+
+/***/ },
+/* 54 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4173,14 +5182,14 @@
 
 
 /***/ },
-/* 51 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const runtime_base_1 = __webpack_require__(33);
+	const runtime_base_1 = __webpack_require__(36);
 	const browser_input_1 = __webpack_require__(24);
-	const e_command_type_1 = __webpack_require__(32);
+	const e_command_type_1 = __webpack_require__(31);
 	class BrowserRuntimeImpl extends runtime_base_1.RuntimeBase {
 	    constructor(codeurl, mountTarget = null) {
 	        super();
@@ -4220,7 +5229,7 @@
 
 
 /***/ },
-/* 52 */
+/* 56 */
 /***/ function(module, exports) {
 
 	//polyfill for webworker while in editor mode
@@ -4257,14 +5266,14 @@
 
 
 /***/ },
-/* 53 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const project_1 = __webpack_require__(43);
-	const fsp = __webpack_require__(54);
-	const path = __webpack_require__(48);
+	const project_1 = __webpack_require__(42);
+	const fsp = __webpack_require__(58);
+	const path = __webpack_require__(47);
 	describe("Project Tests", function () {
 	    it("should create a project with a proper hex reference", function () {
 	        expect(new project_1.Project("Spec Project", path.join("test_project1", "project.hex"))).toBeTruthy();
@@ -4326,10 +5335,46 @@
 
 
 /***/ },
-/* 54 */
+/* 58 */
 /***/ function(module, exports) {
 
 	module.exports = require("fs-promise");
+
+/***/ },
+/* 59 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const vector2_1 = __webpack_require__(17);
+	const math_util_1 = __webpack_require__(33);
+	const matrix3x3_1 = __webpack_require__(32);
+	describe("Vectors", function () {
+	    it("should rotate correctly", function () {
+	        const v = new vector2_1.Vector2(1, 1);
+	        v.rotate(math_util_1.MathUtil.DegreesToRadians * 45);
+	        expect(v.x).toBeCloseTo(0, 5);
+	        expect(v.y).toBeCloseTo(1.414214, 5);
+	        v.x = 5;
+	        v.y = 11;
+	        v.rotate(math_util_1.MathUtil.DegreesToRadians * 33);
+	        expect(v.x).toBeCloseTo(-1.797677, 5);
+	        expect(v.y).toBeCloseTo(11.948571, 5);
+	    });
+	});
+	describe("Matrix 3x3", function () {
+	    it("should transform a direction", function () {
+	        const m = new matrix3x3_1.Matrix3x3();
+	        const rad = 33 * math_util_1.MathUtil.DegreesToRadians;
+	        m.rotate(45, null, math_util_1.AngleUnit.Degrees);
+	        expect(m.getRotation(math_util_1.AngleUnit.Degrees)).toBeCloseTo(45, 1);
+	        const v = new vector2_1.Vector2(1, 1);
+	        m.transformDirection(v);
+	        expect(v.x).toBeCloseTo(0, 5);
+	        expect(v.y).toBeCloseTo(1.414214, 5);
+	    });
+	});
+
 
 /***/ }
 /******/ ]);

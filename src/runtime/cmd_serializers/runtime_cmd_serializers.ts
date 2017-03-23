@@ -4,9 +4,10 @@ import {Component} from "../component";
 import {UIComponent} from "../components/ui_component";
 import {IFont} from "../components/ui/text_component";
 import {Color} from "../color";
+import {Vector2} from "../vector2";
+import {Matrix3x3} from "../matrix3x3";
 
 const ComponentCache = new Array<Component>();
-const ColorCache = {};
 
 Runtime.setCommandSerializer(CommandType.Create, function (id : any) {
 
@@ -16,7 +17,7 @@ Runtime.setCommandSerializer(CommandType.Create, function (id : any) {
     const serializedComponents = new Array<IJson>();
     for (let i = 0; i < components.length; i++) {
         const serialized = components[i].serialize();
-        if(serialized) {
+        if (serialized) {
             serializedComponents.push(serialized);
         }
     }
@@ -51,8 +52,8 @@ Runtime.setCommandSerializer(CommandType.SetParent, function (data : { id : numb
     return data;
 });
 
-Runtime.setCommandSerializer(CommandType.SetSiblingIndex, function (data : { id : number, index : number}) {
-   return data;
+Runtime.setCommandSerializer(CommandType.SetSiblingIndex, function (data : { id : number, index : number }) {
+    return data;
 });
 
 Runtime.setCommandSerializer(CommandType.SetText, function (data : { id : number, text : string, font : IFont }) {
@@ -63,22 +64,23 @@ Runtime.setCommandSerializer(CommandType.SetImage, function (data : { id : numbe
     return { id: data.id, image: data.image };
 });
 
-Runtime.setCommandSerializer(CommandType.SetPosition, function (id : any) {
-    const appElement = Runtime.getAppElementById(id);
-    const position = appElement.getLocalPosition();
-    return { id: id, x: position.x | 0, y: position.y | 0 };
-});
 
 Runtime.setCommandSerializer(CommandType.SetDimensions, function (id : any) {
     const appElement = Runtime.getAppElementById(id);
     return { id: id, width: appElement.getWidth(), height: appElement.getHeight() }
 });
 
+let scratchVector = new Vector2();
+let scratchMatrix = new Matrix3x3();
 Runtime.setCommandSerializer(CommandType.SetTransform, function (id : any) {
     const appElement = Runtime.getAppElementById(id);
-    return { id: id, rotation: appElement.getRotation, scale: appElement.getScale() };
+    const pivot = appElement.getPivot(scratchVector);
+    const m = appElement.getMatrix(scratchMatrix);
+    const localPosition = appElement.getLocalPosition();
+    const str = `matrix(${m.a},${m.c},${m.b},${m.d},${localPosition.x},${localPosition.y})`;
+    return { id: id, matrix: str };// origin: `${pivot.x}% ${pivot.y}%` };
 });
 
-Runtime.setCommandSerializer(CommandType.PaintBackground, function (data : {id : number, color: Color}) {
+Runtime.setCommandSerializer(CommandType.PaintBackground, function (data : { id : number, color : Color }) {
     return data;
 });

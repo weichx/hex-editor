@@ -64,15 +64,21 @@ export function dasherize(str : string) : string {
     return str.replace(STRING_DASHERIZE_REGEXP, '$1-$2').toLowerCase();
 }
 
-export function hitTestRect(x : number, y : number, w : number, h : number, point : {x: number, y : number}) {
+export function hitTestRect(x : number, y : number, w : number, h : number, point : IVector2) {
     return point.x >= x && x + w >= point.x && point.y >= y && y + h >= point.y
 }
 
-export function distanceTestPoint(x : number, y : number, point : {x: number, y : number}, radius : number) {
+export function distanceTestPoint(test : IVector2, point : IVector2, radius : number) {
+    const x = test.x;
+    const y = test.y;
     return ((x - point.x) * (x - point.x)) + ((y - point.y) * (y - point.y)) < radius * radius;
 }
 
-export function hitTestLine(x1 : number, y1 : number, x2 : number, y2 : number, point : {x: number, y : number}, threshold = 1) {
+export function hitTestLine2(p0 : IVector2, p1 : IVector2, point : IVector2, threshold : number = 1) {
+    return hitTestLine(p0.x, p0.y, p1.x, p1.y, point, threshold);
+}
+
+export function hitTestLine(x1 : number, y1 : number, x2 : number, y2 : number, point : IVector2, threshold = 1) {
     return distanceSquaredToLineSegment(x1, y1, x2, y2, point.x, point.y) <= threshold * threshold;
 }
 

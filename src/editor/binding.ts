@@ -9,9 +9,7 @@ export interface IEditorBinding<T> {
     setHost(host : EditorElement) : this;
 }
 
-export function CreateBinding
-<T extends object, U extends keyof T>
-(context : T|IEditorBinding<T>, one : U) : IEditorBinding<T[U]>;
+export function CreateBinding<T extends object, U extends keyof T>(context : T|IEditorBinding<T>, one : U) : IEditorBinding<T[U]>;
 
 export function CreateBinding
 <T extends object, U extends keyof T, V extends keyof T[U]>

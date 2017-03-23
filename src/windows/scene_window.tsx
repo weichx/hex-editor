@@ -12,7 +12,7 @@ import {SceneRectTool} from "./scene/rect_tool";
 import {LayoutComponent} from "../runtime/components/layout/layout";
 
 export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
-    public element = this;
+
     private currentTool : SceneTool;
     private ctx : CanvasRenderingContext2D;
     private canvas : HTMLCanvasElement;
@@ -29,10 +29,7 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
     private frameDimensions : Vector2;
     private isPaintQueued : boolean = false;
     private currentBreakpoint : BreakpointType = BreakpointType.Mobile;
-
-    public getDomData() : IDomData {
-        return { tagName: "div", classList: "scene-window-root" }
-    }
+    private scaledMousePosition : PIXI.Graphics;
 
     public getBreakpoint() : BreakpointType {
         return this.currentBreakpoint;
@@ -47,9 +44,7 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
         AppElement.Root.setPosition(this.panValue);
         AppElement.Root.setDimensions(this.frameDimensions.x, this.frameDimensions.y);
 
-        this.resetZoom();
         this.drawFrameOutline();
-        //invoke break point code
         this.paintScene();
     }
 
@@ -59,7 +54,7 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
 
     public onUpdated() : void {
         const input = EditorRuntime.getInput();
-        if(input.isMouseInEditorElement(this.getChildRoot())) {
+        if (input.isMouseInEditorElement(this.getChildRoot())) {
             this.zoom(input.getMouseWheelDelta().y);
         }
 
@@ -75,22 +70,16 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
             this.setPreviewSize(this.currentBreakpoint);
         }
         this.currentTool.update();
-        //if(this.isPaintQueued) {
-        //    this.isPaintQueued = false;
-            this.paintBackground();
-            this.drawFrameOutline();
-            this.drawSelection();
-            this.pixi.render(this.stage);
-        //}
-    }
-
-    public applyPanOffset(input : IVector2) : void {
-        input.x += this.panValue.x;
-        input.y += this.panValue.y;
+        // this.stage.position.set(this.panValue.x, this.panValue.y);
+        this.paintBackground();
+        this.drawFrameOutline();
+        this.drawSelection();
+        this.drawMouseScaled();
+        this.pixi.render(this.stage);
     }
 
     public pan(delta : Vector2) : void {
-        if(delta.isZero()) return;
+        if (delta.isZero()) return;
         this.panValue.addVector(delta);
         AppElement.Root.setPosition(this.panValue);
         AppElement.Root.setDimensions(this.frameDimensions.x, this.frameDimensions.y);
@@ -98,26 +87,19 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
     }
 
     private zoom(zoomDelta : number) : void {
-        //todo -- disable until i have time to fix render scale
-        //todo -- try to just set the canvas context scale
-        // const oldWidth = this.frameDimensions.x * this.zoomLevel;
-        // const oldHeight = this.frameDimensions.y * this.zoomLevel;
-        // this.zoomLevel -= 0.05 * zoomDelta;
-        // this.zoomLevel = clamp(this.zoomLevel, 0.1, 4);
-        // const newWidth = this.frameDimensions.x * this.zoomLevel;
-        // const newHeight = this.frameDimensions.y * this.zoomLevel;
-        // const diff = new Vector2(
-        //     (oldWidth - newWidth) * 0.5,
-        //     (oldHeight - newHeight) * 0.5
-        // );
-        // this.pan(diff);
-        // if(zoomDelta !== 0) {
-        //     const childRootDom = this.getChildRoot().getDomNode();
-        //     const appRootDom = childRootDom.firstElementChild as HTMLElement;
-        //     appRootDom.style.transformOrigin = "top left";
-        //     appRootDom.style.transform = "scale(" + this.zoomLevel + ")";
-        // }
-        // this.paintScene();
+
+        this.zoomLevel -= 0.05 * zoomDelta;
+        this.zoomLevel = clamp(this.zoomLevel, 0.1, 4);
+        // this.stage.scale.set(this.zoomLevel);
+
+        if (zoomDelta !== 0) {
+            const childRootDom = this.getChildRoot().getDomNode();
+            const appRootDom = childRootDom.firstElementChild as HTMLElement;
+            appRootDom.style.transformOrigin = "top left";
+            appRootDom.style.transform = "scale(" + this.zoomLevel + ")";
+        }
+
+        this.paintScene();
     }
 
     private resetZoom() : void {
@@ -125,8 +107,8 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
         const width = this.width;
         const breakpointWidth = this.frameDimensions.x;
 
-        if(breakpointWidth > width) {
-            this.zoomLevel =  width / breakpointWidth;
+        if (breakpointWidth > width) {
+            this.zoomLevel = width / breakpointWidth;
             this.panValue.x = ((this.zoomLevel * breakpointWidth * 0.5) - (width * 0.5)) | 0;
             this.panValue.y = this.baseYOffset;
         }
@@ -160,7 +142,7 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
 
     public onRendered() {
         //todo swap tool based on layout type of parent of selection
-        this.currentTool = new SceneRectTool(this);//new ScenePanTool(this);
+        // this.currentTool = new SceneRectTool(this);
         this.panValue = new Vector2();
         this.canvas = this.getChildBySelector('canvas').getDomNode() as HTMLCanvasElement;
         this.ctx = this.canvas.getContext("2d");
@@ -170,120 +152,122 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
         this.stage = new PIXI.Container();
         this.pixi = new PIXI.WebGLRenderer(256, 256, {
             autoResize: true,
+            antialias:true,
             transparent: true,
             view: this.getChildById('foreground-canvas').getDomNode() as HTMLCanvasElement
         });
         this.frameOutline = new PIXI.Graphics();
         this.dragThing = new PIXI.Graphics();
         this.selectionOutline = new PIXI.Graphics();
+        this.scaledMousePosition = new PIXI.Graphics();
         this.stage.addChild(this.frameOutline);
         this.stage.addChild(this.dragThing);
         this.stage.addChild(this.selectionOutline);
+        this.stage.addChild(this.scaledMousePosition);
         this.pixi.render(this.stage);
         this.setPreviewSize(this.currentBreakpoint);
     }
 
+    public drawMouseScaled() {
+        this.scaledMousePosition.clear();
+        const relMP = EditorRuntime.getInput().getMouseRelativeToEditorElement(this.getChildById("foreground-canvas"));
+        this.scaledMousePosition.lineStyle(1, 0x00FF00);
+        this.scaledMousePosition.drawCircle(relMP.x * this.zoomLevel, relMP.y * this.zoomLevel, 5);
+    }
+
     public drawDragThing() : void {
-        const input = EditorRuntime.getInput();
-        const mouse = input.getMouseRelativeToEditorElement(this.getChildRoot());
-        const mouseOver = Runtime.getAppElementAtPoint(mouse);
-
-        if(mouseOver) {
-            //see if we are over a layout element
-            //if we are, simulate adding this to the layout at some fixed width (20px or something smallish)
-            //might not need to do an actual layout
-            //might get away with just shifting elements absolutely temporarily
-
-            //if not in a layout element -- fill the current element
-            //if in layout element within some gutter amount, do fancy preview
-
-            this.dragThing.clear();
-            this.dragThing.beginFill(0x00FF00, 0.2);
-            this.dragThing.lineStyle(1, 0x00FF00);
-            const position = mouseOver.getPosition();
-            const layout = mouseOver.getComponent(LayoutComponent);
-            if(layout) {
-                const slot = layout.getSlotAtPosition(mouse);
-                //if slot !== last slot -> Cancel animation
-                //draw layout position
-                // this.dragThing.drawRect(
-                //
-                // )
-            }
-            else {
-                //todo lerp this for sexiness
-                this.dragThing.drawRect(
-                    position.x,
-                    position. y - 1,
-                    mouseOver.getWidth(),
-                    mouseOver.getHeight()
-                );
-            }
-        }
-        else {
-            this.dragThing.clear();
-            this.dragThing.beginFill(0x00FF00, 0.2);
-            this.dragThing.lineStyle(1, 0x00FF00);
-            this.dragThing.drawRect(mouse.x - 50, mouse.y - 25, 100, 50);
-        }
-
-        this.paintScene();
+        // const input = EditorRuntime.getInput();
+        // const mouse = input.getMouseRelativeToEditorElement(this.getChildRoot());
+        // const mouseOver = Runtime.getAppElementAtPoint(mouse);
+        //
+        // if (mouseOver) {
+        //     //see if we are over a layout element
+        //     //if we are, simulate adding this to the layout at some fixed width (20px or something smallish)
+        //     //might not need to do an actual layout
+        //     //might get away with just shifting elements absolutely temporarily
+        //
+        //     //if not in a layout element -- fill the current element
+        //     //if in layout element within some gutter amount, do fancy preview
+        //
+        //     this.dragThing.clear();
+        //     this.dragThing.beginFill(0x00FF00, 0.2);
+        //     this.dragThing.lineStyle(1, 0x00FF00);
+        //     const position = mouseOver.getPosition();
+        //     const layout = mouseOver.getComponent(LayoutComponent);
+        //     if (layout) {
+        //
+        //     }
+        //     else {
+        //         //todo lerp this for sexiness
+        //         this.dragThing.drawRect(
+        //             position.x,
+        //             position.y - 1,
+        //             mouseOver.getWidth(),
+        //             mouseOver.getHeight()
+        //         );
+        //     }
+        // }
+        // else {
+        //     this.dragThing.clear();
+        //     this.dragThing.beginFill(0x00FF00, 0.2);
+        //     this.dragThing.lineStyle(1, 0x00FF00);
+        //     this.dragThing.drawRect(mouse.x - 50, mouse.y - 25, 100, 50);
+        // }
+        //
+        // this.paintScene();
     }
 
     private drawFrameOutline() : void {
         this.frameOutline.clear();
-        this.frameOutline.lineStyle(1, 0xFF00CD);
+        this.frameOutline.lineStyle(2, 0xFF00CD);
         this.frameOutline.drawRect(
-            this.panValue.x,
-            this.panValue.y - 1,
-            this.zoomLevel * (this.frameDimensions.x + 1),
-            this.zoomLevel * (this.frameDimensions.y)
+            0, //this.panValue.x,
+            0, //this.panValue.y - 1,
+            this.frameDimensions.x,
+            this.frameDimensions.y
         );
     }
 
     public drawSelection() : void {
-        this.selectionOutline.clear();
-        const selection = EditorRuntime.getSelection();
-        if(!selection) return;
-
-        const position = selection.getLocalPosition();
-        const w = selection.getWidth();
-        const h = selection.getHeight();
-
-        this.selectionOutline.lineStyle(1, 0xFFFFFFFF);
-        this.selectionOutline.rotation = selection.getRotation();
-        //probably need to scale pan diff,
-        //app root moves on zoom
-
-        this.selectionOutline.drawRect(
-            position.x,
-            position.y - 1,
-            (this.zoomLevel * w) + 1,
-            this.zoomLevel * h
-        );
-        this.selectionOutline.lineStyle(1, 0x000000);
-        this.selectionOutline.beginFill(0x87b0f2);
-        this.selectionOutline.drawCircle(position.x, position.y, 5);
-        this.selectionOutline.drawCircle(position.x + w, position.y, 5);
-        this.selectionOutline.drawCircle(position.x + w, position.y + h, 5);
-        this.selectionOutline.drawCircle(position.x, position.y + h, 5);
-
-        this.selectionOutline.endFill();
-        const parent = selection.getParent();
-        let parentPosition : Vector2 = null;
-        if(parent) {
-            parentPosition = selection.getParent().getPosition();
-        }
-        else {
-            parentPosition = selection.getPosition();
-        }
-        this.selectionOutline.position.set(parentPosition.x, parentPosition.y);
+        // this.selectionOutline.clear();
+        // const selection = EditorRuntime.getSelection();
+        // if (!selection) return;
+        //
+        // const position = selection.getLocalPosition();
+        // const w = selection.getWidth();
+        // const h = selection.getHeight();
+        //
+        // this.selectionOutline.lineStyle(1, 0xFFFFFFFF);
+        // this.selectionOutline.rotation = selection.getRotation();
+        //
+        // this.selectionOutline.lineStyle(1, 0x000000);
+        // this.selectionOutline.beginFill(0x87b0f2);
+        // this.selectionOutline.drawCircle(position.x, position.y, 5);
+        // this.selectionOutline.drawCircle(position.x + w, position.y, 5);
+        // this.selectionOutline.drawCircle(position.x + w, position.y + h, 5);
+        // this.selectionOutline.drawCircle(position.x, position.y + h, 5);
+        //
+        // this.selectionOutline.drawCircle(position.x + (w * 0.5), position.y, 5);
+        // this.selectionOutline.drawCircle(position.x + w, position.y + ( 0.5 * h), 5);
+        // this.selectionOutline.drawCircle(position.x, position.y + (0.5 * h), 5);
+        // this.selectionOutline.drawCircle(position.x + (w * 0.5), position.y + h, 5);
+        //
+        // this.selectionOutline.endFill();
+        // const parent = selection.getParent();
+        // let parentPosition : Vector2 = null;
+        // if (parent) {
+        //     parentPosition = selection.getParent().getPosition();
+        // }
+        // else {
+        //     parentPosition = selection.getPosition();
+        // }
+        //this.selectionOutline.position.set(parentPosition.x, parentPosition.y);
     }
 
     public createInitialStructure(children : any) : JSXElement {
         return [
             <SceneMetaBar/>,
-            <canvas x-id="background-canvas" class="overlay-canvas" />,
+            <canvas x-id="background-canvas" class="overlay-canvas"/>,
             <div x-child-root class="scene-render-root"/>,
             <canvas x-id="foreground-canvas" class="overlay-canvas"/>,
         ]
@@ -312,7 +296,7 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
         const mouse = input.getMouseRelativeToEditorElement(this.getChildRoot());
         const mouseOver = Runtime.getAppElementAtPoint(mouse);
         const appElement = action.template.create();
-        if(mouseOver) {
+        if (mouseOver) {
             appElement.setParent(mouseOver);
             appElement.setPositionValues(0, 0, Space.Local);
             appElement.setDimensions(mouseOver.getWidth(), mouseOver.getHeight());
@@ -332,27 +316,27 @@ export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
     }
 
 }
-
-createStyleSheet(`
-<style>
-        
-.scene-window-root {
-    overflow:hidden;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-}
-
-.scene-render-root {
-    position: relative;
-}
-
-.overlay-canvas {
-    position: absolute;
-    top:21px; /*position under meta bar */
-    left:0;
-}
-
-</style>`);
+//
+// createStyleSheet(`
+// <style>
+//
+// .scene-window {
+//     overflow:hidden;
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     position: relative;
+// }
+//
+// .scene-render-root {
+//     position: relative;
+// }
+//
+// .overlay-canvas {
+//     position: absolute;
+//     top:21px; /*position under meta bar */
+//     left:0;
+// }
+//
+// </style>`);
