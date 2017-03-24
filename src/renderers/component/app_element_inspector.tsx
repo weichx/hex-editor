@@ -6,16 +6,16 @@ import {AngleInput, NumberInput} from "../../ui_elements/number_input";
 import {InlineField} from "../../ui_elements/inline_field";
 import {WindowColors} from "../../editor/editor_theme";
 import {DimensionInput} from "../../ui_elements/dimension_input";
-import {Vector3} from "../../runtime/vector3";
+import {Vector2} from "../../runtime/Vector2";
 
 export class TransformInspector extends EditorHTMLElement<{ appElement : AppElement }> {
 
     private proxy : any;
     private appElement : AppElement;
     private dimensionBinding : IEditorBinding<IDimension>;
-    private localPositionBinding : IEditorBinding<Vector3>;
+    private localPositionBinding : IEditorBinding<Vector2>;
     private localRotationBinding : IEditorBinding<number>;
-    private localScaleBinding : IEditorBinding<Vector3>;
+    private localScaleBinding : IEditorBinding<Vector2>;
 
     public onCreated() : void {
         this.appElement = this.attrs.appElement;
@@ -28,7 +28,7 @@ export class TransformInspector extends EditorHTMLElement<{ appElement : AppElem
                 height: this.appElement.getHeight()
             }
         };
-        this.localPositionBinding = CreateBinding(this.proxy, "localPosition").onChange((newValue : Vector3) => {
+        this.localPositionBinding = CreateBinding(this.proxy, "localPosition").onChange((newValue : Vector2) => {
             this.appElement.setPosition(newValue, Space.Local);
         });
 
@@ -36,7 +36,7 @@ export class TransformInspector extends EditorHTMLElement<{ appElement : AppElem
             this.appElement.setRotation(newValue);
         });
 
-        this.localScaleBinding = CreateBinding(this.proxy, "localScale").onChange((newValue : Vector3) => {
+        this.localScaleBinding = CreateBinding(this.proxy, "localScale").onChange((newValue : Vector2) => {
             this.appElement.setScale(newValue);
         });
 

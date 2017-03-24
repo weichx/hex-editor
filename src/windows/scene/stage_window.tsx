@@ -8,7 +8,8 @@ import {StageForeground} from "./stage_foreground";
 import {clamp} from "../../util";
 import {SceneTool} from "./scene_tool";
 import {SceneRectTool} from "./rect_tool";
-import {Vector3} from "../../runtime/vector3";
+import {onRightClick} from "../../editor_element/editor_element_annotations";
+import {getCreationMenu} from "../../menu_setup";
 
 export class StageWindow extends EditorWindowElement<IWindowAttrs> {
 
@@ -71,7 +72,7 @@ export class StageWindow extends EditorWindowElement<IWindowAttrs> {
     public pan(delta : Vector2) : void {
         if (delta.isZero()) return;
         this.panValue.addVector(delta);
-        AppElement.Root.setPosition(new Vector3(this.panValue.x, this.panValue.y, 0));
+        AppElement.Root.setPosition(new Vector2(this.panValue.x, this.panValue.y));
         AppElement.Root.setDimensions(this.frameSize.x, this.frameSize.y);
     }
 
@@ -85,7 +86,7 @@ export class StageWindow extends EditorWindowElement<IWindowAttrs> {
         this.panValue.x = ((this.width * 0.5) - (this.frameSize.x * 0.5)) | 0;
         this.panValue.y = 1;
 
-        AppElement.Root.setPosition(new Vector3(this.panValue.x, this.panValue.y, 0));
+        AppElement.Root.setPosition(new Vector2(this.panValue.x, this.panValue.y));
         AppElement.Root.setDimensions(this.frameSize.x, this.frameSize.y);
 
     }
@@ -102,10 +103,26 @@ export class StageWindow extends EditorWindowElement<IWindowAttrs> {
         this.zoomLevel = clamp(this.zoomLevel, 0.1, 4);
 
         if (zoomDelta !== 0) {
-            // AppElement.Root.setPivot(0.5, 0.5);
-            AppElement.Root.setScale(new Vector3(this.zoomLevel, this.zoomLevel, this.zoomLevel));
+            AppElement.Root.setScale(new Vector2(this.zoomLevel, this.zoomLevel));
         }
 
+    }
+
+    public drawPrimitive(selection : AppElement) {
+
+    }
+
+    @onRightClick
+    public onContextClick() {
+        const selection = EditorRuntime.getSelection();
+        EditorRuntime.getInput().getMousePosition(Vector2.scratch0);
+        const menu = new nw.Menu();
+
+        menu.append(new nw.MenuItem({ label: "Create", submenu: getCreationMenu(selection) }));
+        menu.append(new nw.MenuItem({ label: "Box", click: () => { this.drawPrimitive(selection) } }));
+        // menu.append(new nw.MenuItem({ label: "Destroy", click: () => this.destroyContextSelection() }));
+
+        menu.popup(Vector2.scratch0.x, Vector2.scratch0.y);
     }
 }
 

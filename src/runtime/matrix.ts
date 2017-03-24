@@ -3,19 +3,17 @@ import {Quaternion} from "./quaternion";
 import {Vector3} from "./vector3";
 import {Vector4} from "./vector4";
 
-export const ToGammaSpace = 1 / 2.2;
-export const ToLinearSpace = 2.2;
 export const Epsilon = 0.001;
 
 
 export class Matrix {
 
-    public m : Float32Array = new Float32Array(16);
+    public readonly m : Float32Array;
 
-    // Properties
-    /**
-     * Boolean : True is the matrix is the identity matrix
-     */
+    constructor() {
+        this.m = new Float32Array(16);
+    }
+
     public isIdentity() : boolean {
         if (this.m[0] !== 1.0 || this.m[5] !== 1.0 || this.m[10] !== 1.0 || this.m[15] !== 1.0)
             return false;
@@ -43,25 +41,6 @@ export class Matrix {
         (this.m[3] * (((this.m[4] * temp3) - (this.m[5] * temp5)) + (this.m[6] * temp6))));
     }
 
-    // Methods
-    /**
-     * Returns the matrix underlying array.
-     */
-    public toArray() : Float32Array {
-        return this.m;
-    }
-
-    /**
-     * Returns the matrix underlying array.
-     */
-    public asArray() : Float32Array {
-        return this.toArray();
-    }
-
-    /**
-     * Inverts in place the Matrix.
-     * Returns the Matrix inverted.
-     */
     public invert() : Matrix {
         this.invertToRef(this);
         return this;
@@ -226,40 +205,18 @@ export class Matrix {
         return this;
     }
 
-    /**
-     * Returns a new Matrix set with the multiplication result of the current Matrix and the passed one.
-     */
     public multiply(other : Matrix) : Matrix {
-        var result = new Matrix();
-        this.multiplyToRef(other, result);
-        return result;
+        return Matrix.Multiply(this, other, this);
+        //this.multiplyToRef(other, result);
     }
 
-    /**
-     * Updates the current Matrix from the passed one values.
-     * Returns the updated Matrix.
-     */
-    public copyFrom(other : Matrix) : Matrix {
+    public copy(other : Matrix) : Matrix {
         for (var index = 0; index < 16; index++) {
             this.m[index] = other.m[index];
         }
         return this;
     }
 
-    /**
-     * Populates the passed array from the starting index with the Matrix values.
-     * Returns the Matrix.
-     */
-    public copyToArray(array : Float32Array, offset : number = 0) : Matrix {
-        for (var index = 0; index < 16; index++) {
-            array[offset + index] = this.m[index];
-        }
-        return this;
-    }
-
-    /**
-     * Sets the passed matrix "result" with the multiplication result of the current Matrix and the passed one.
-     */
     public multiplyToRef(other : Matrix, result : Matrix) : Matrix {
         this.multiplyToArray(other, result.m, 0);
         return this;
@@ -340,11 +297,12 @@ export class Matrix {
     /**
      * Returns a new Matrix from the current Matrix.
      */
-    public clone() : Matrix {
-        return Matrix.FromValues(this.m[0], this.m[1], this.m[2], this.m[3],
+    public clone(out? : Matrix) : Matrix {
+        out = out || new Matrix();
+        return Matrix.FromValuesToRef(this.m[0], this.m[1], this.m[2], this.m[3],
             this.m[4], this.m[5], this.m[6], this.m[7],
             this.m[8], this.m[9], this.m[10], this.m[11],
-            this.m[12], this.m[13], this.m[14], this.m[15]);
+            this.m[12], this.m[13], this.m[14], this.m[15], out);
     }
 
     /**
@@ -398,7 +356,7 @@ export class Matrix {
             this.m[8] / scale.z, this.m[9] / scale.z, this.m[10] / scale.z, 0,
             0, 0, 0, 1, internalScratch0);
 
-        Quaternion.FromRotationMatrixToRef(internalScratch0, rotation);
+        Quaternion.FromRotationMatrix(internalScratch0, rotation);
 
         return true;
     }
@@ -473,7 +431,7 @@ export class Matrix {
     public static FromValuesToRef(initialM11 : number, initialM12 : number, initialM13 : number, initialM14 : number,
                                   initialM21 : number, initialM22 : number, initialM23 : number, initialM24 : number,
                                   initialM31 : number, initialM32 : number, initialM33 : number, initialM34 : number,
-                                  initialM41 : number, initialM42 : number, initialM43 : number, initialM44 : number, result : Matrix) : void {
+                                  initialM41 : number, initialM42 : number, initialM43 : number, initialM44 : number, result : Matrix) : Matrix {
 
         result.m[0] = initialM11;
         result.m[1] = initialM12;
@@ -491,6 +449,7 @@ export class Matrix {
         result.m[13] = initialM42;
         result.m[14] = initialM43;
         result.m[15] = initialM44;
+        return result;
     }
 
     /**
@@ -595,23 +554,13 @@ export class Matrix {
     /**
      * Returns a new indentity Matrix.
      */
-    public static Identity() : Matrix {
-        return Matrix.FromValues(1.0, 0.0, 0.0, 0.0,
+    public static Identity(out? : Matrix) : Matrix {
+        out = out || new Matrix();
+        return Matrix.FromValuesToRef(1.0, 0.0, 0.0, 0.0,
             0.0, 1.0, 0.0, 0.0,
             0.0, 0.0, 1.0, 0.0,
-            0.0, 0.0, 0.0, 1.0);
+            0.0, 0.0, 0.0, 1.0, out);
     }
-
-    /**
-     * Sets the passed "result" as an identity matrix.
-     */
-    public static IdentityToRef(result : Matrix) : void {
-        Matrix.FromValuesToRef(1.0, 0.0, 0.0, 0.0,
-            0.0, 1.0, 0.0, 0.0,
-            0.0, 0.0, 1.0, 0.0,
-            0.0, 0.0, 0.0, 1.0, result);
-    }
-
     /**
      * Returns a new zero Matrix.
      */
@@ -637,6 +586,67 @@ export class Matrix {
     public static Invert(source : Matrix) : Matrix {
         var result = new Matrix();
         source.invertToRef(result);
+        return result;
+    }
+
+    public static Multiply(mat0 : Matrix, mat1 : Matrix, result? : Matrix) : Matrix {
+        result = result || new Matrix();
+        const retnArray = result.m;
+        const mat0Array = mat0.m;
+        const mat1Array = mat1.m;
+        const tm0 = mat0Array[0];
+        const tm1 = mat0Array[1];
+        const tm2 = mat0Array[2];
+        const tm3 = mat0Array[3];
+        const tm4 = mat0Array[4];
+        const tm5 = mat0Array[5];
+        const tm6 = mat0Array[6];
+        const tm7 = mat0Array[7];
+        const tm8 = mat0Array[8];
+        const tm9 = mat0Array[9];
+        const tm10 = mat0Array[10];
+        const tm11 = mat0Array[11];
+        const tm12 = mat0Array[12];
+        const tm13 = mat0Array[13];
+        const tm14 = mat0Array[14];
+        const tm15 = mat0Array[15];
+
+        const om0 = mat1Array[0];
+        const om1 = mat1Array[1];
+        const om2 = mat1Array[2];
+        const om3 = mat1Array[3];
+        const om4 = mat1Array[4];
+        const om5 = mat1Array[5];
+        const om6 = mat1Array[6];
+        const om7 = mat1Array[7];
+        const om8 = mat1Array[8];
+        const om9 = mat1Array[9];
+        const om10 = mat1Array[10];
+        const om11 = mat1Array[11];
+        const om12 = mat1Array[12];
+        const om13 = mat1Array[13];
+        const om14 = mat1Array[14];
+        const om15 = mat1Array[15];
+
+        retnArray[0] = tm0 * om0 + tm1 * om4 + tm2 * om8 + tm3 * om12;
+        retnArray[1] = tm0 * om1 + tm1 * om5 + tm2 * om9 + tm3 * om13;
+        retnArray[2] = tm0 * om2 + tm1 * om6 + tm2 * om10 + tm3 * om14;
+        retnArray[3] = tm0 * om3 + tm1 * om7 + tm2 * om11 + tm3 * om15;
+
+        retnArray[4] = tm4 * om0 + tm5 * om4 + tm6 * om8 + tm7 * om12;
+        retnArray[5] = tm4 * om1 + tm5 * om5 + tm6 * om9 + tm7 * om13;
+        retnArray[6] = tm4 * om2 + tm5 * om6 + tm6 * om10 + tm7 * om14;
+        retnArray[7] = tm4 * om3 + tm5 * om7 + tm6 * om11 + tm7 * om15;
+
+        retnArray[8] = tm8 * om0 + tm9 * om4 + tm10 * om8 + tm11 * om12;
+        retnArray[9] = tm8 * om1 + tm9 * om5 + tm10 * om9 + tm11 * om13;
+        retnArray[10] = tm8 * om2 + tm9 * om6 + tm10 * om10 + tm11 * om14;
+        retnArray[11] = tm8 * om3 + tm9 * om7 + tm10 * om11 + tm11 * om15;
+
+        retnArray[12] = tm12 * om0 + tm13 * om4 + tm14 * om8 + tm15 * om12;
+        retnArray[13] = tm12 * om1 + tm13 * om5 + tm14 * om9 + tm15 * om13;
+        retnArray[14] = tm12 * om2 + tm13 * om6 + tm14 * om10 + tm15 * om14;
+        retnArray[15] = tm12 * om3 + tm13 * om7 + tm14 * om11 + tm15 * om15;
         return result;
     }
 
@@ -779,34 +789,15 @@ export class Matrix {
     /**
      * Returns a new Matrix as a rotation matrix from the Euler angles (y, x, z).
      */
-    public static RotationYawPitchRoll(yaw : number, pitch : number, roll : number) : Matrix {
-        var result = new Matrix();
-        Matrix.RotationYawPitchRollToRef(yaw, pitch, roll, result);
-        return result;
+    public static RotationYawPitchRoll(yaw : number, pitch : number, roll : number, out? : Matrix) : Matrix {
+        out = out || new Matrix();
+        const q = Quaternion.scratch0;
+        Quaternion.RotationYawPitchRoll(yaw, pitch, roll, q);
+        return q.toRotationMatrix(out);
     }
 
-    /**
-     * Sets the passed matrix "result" as a rotation matrix from the Euler angles (y, x, z).
-     */
-    public static RotationYawPitchRollToRef(yaw : number, pitch : number, roll : number, result : Matrix) : void {
-        const q = new Quaternion();
-        Quaternion.RotationYawPitchRollToRef(yaw, pitch, roll, q);
-        q.toRotationMatrix(result);
-    }
-
-    /**
-     * Returns a new Matrix as a scaling matrix from the passed floats (x, y, z).
-     */
-    public static Scaling(x : number, y : number, z : number) : Matrix {
-        var result = Matrix.Zero();
-        Matrix.ScalingToRef(x, y, z, result);
-        return result;
-    }
-
-    /**
-     * Sets the passed matrix "result" as a scaling matrix from the passed floats (x, y, z).
-     */
-    public static ScalingToRef(x : number, y : number, z : number, result : Matrix) : void {
+    public static CreateScale(x : number, y : number, z : number, result? : Matrix) : Matrix {
+        result = result || new Matrix();
         result.m[0] = x;
         result.m[1] = 0.0;
         result.m[2] = 0.0;
@@ -823,25 +814,14 @@ export class Matrix {
         result.m[13] = 0.0;
         result.m[14] = 0.0;
         result.m[15] = 1.0;
-    }
-
-    /**
-     * Returns a new Matrix as a translation matrix from the passed floats (x, y, z).
-     */
-    public static Translation(x : number, y : number, z : number) : Matrix {
-        var result = Matrix.Identity();
-        Matrix.TranslationToRef(x, y, z, result);
         return result;
     }
 
-    /**
-     * Sets the passed matrix "result" as a translation matrix from the passed floats (x, y, z).
-     */
-    public static TranslationToRef(x : number, y : number, z : number, result : Matrix) : void {
-        Matrix.FromValuesToRef(1.0, 0.0, 0.0, 0.0,
+    public static CreateTranslation(x : number, y : number, z : number, out? : Matrix) : Matrix {
+        return Matrix.FromValuesToRef(1.0, 0.0, 0.0, 0.0,
             0.0, 1.0, 0.0, 0.0,
             0.0, 0.0, 1.0, 0.0,
-            x, y, z, 1.0, result);
+            x, y, z, 1.0, out || new Matrix());
     }
 
     /**
@@ -996,6 +976,13 @@ export class Matrix {
 
         result.m[15] = 1.0;
     }
+
+    public static scratch0  = new Matrix;
+    public static scratch1  = new Matrix;
+    public static scratch2  = new Matrix;
+    public static scratch3  = new Matrix;
+    public static scratch4  = new Matrix;
+    public static scratch5  = new Matrix;
 
     // public static getCSSMatrix(source : Matrix) {
     //     const m = source.m;

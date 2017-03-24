@@ -2,63 +2,24 @@ import {Matrix} from "./matrix";
 import {Vector3} from "./vector3";
 
 export class Quaternion {
-    /**
-     * Creates a new Quaternion from the passed floats.
-     */
-    constructor(public x : number = 0.0, public y : number = 0.0, public z : number = 0.0, public w : number = 1.0) {
+
+    public x : number;
+    public y : number;
+    public z : number;
+    public w : number;
+
+    constructor(x : number = 0.0, y : number = 0.0, z : number = 0.0, w : number = 1.0) {
+        this.x = x;
+        this.y = y;
+        this.z = z;
+        this.w = w;
     }
 
-    /**
-     * Returns a string with the Quaternion coordinates.
-     */
-    public toString() : string {
-        return "{X: " + this.x + " Y:" + this.y + " Z:" + this.z + " W:" + this.w + "}";
+    public clone(out? : Quaternion) : Quaternion {
+        return (out || new Quaternion()).set(this.x, this.y, this.z, this.w);
     }
 
-    /**
-     * Returns the string "Quaternion".
-     */
-    public getClassName() : string {
-        return "Quaternion";
-    }
-
-    /**
-     * Returns the Quaternion hash code.
-     */
-    public getHashCode() : number {
-        let hash = this.x || 0;
-        hash = (hash * 397) ^ (this.y || 0);
-        hash = (hash * 397) ^ (this.z || 0);
-        hash = (hash * 397) ^ (this.w || 0);
-        return hash;
-    }
-
-    /**
-     * Returns a new array populated with 4 elements : the Quaternion coordinates.
-     */
-    public asArray() : number[] {
-        return [this.x, this.y, this.z, this.w];
-    }
-
-    /**
-     * Boolean : True if the current Quaterion and the passed one coordinates are strictly equal.
-     */
-    public equals(otherQuaternion : Quaternion) : boolean {
-        return otherQuaternion && this.x === otherQuaternion.x && this.y === otherQuaternion.y && this.z === otherQuaternion.z && this.w === otherQuaternion.w;
-    }
-
-    /**
-     * Returns a new Quaternion copied from the current one.
-     */
-    public clone() : Quaternion {
-        return new Quaternion(this.x, this.y, this.z, this.w);
-    }
-
-    /**
-     * Updates the current Quaternion from the passed one coordinates.
-     * Returns the updated Quaterion.
-     */
-    public copyFrom(other : Quaternion) : Quaternion {
+    public copy(other : Quaternion) : Quaternion {
         this.x = other.x;
         this.y = other.y;
         this.z = other.z;
@@ -66,11 +27,7 @@ export class Quaternion {
         return this;
     }
 
-    /**
-     * Updates the current Quaternion from the passed float coordinates.
-     * Returns the updated Quaterion.
-     */
-    public copyFromFloats(x : number, y : number, z : number, w : number) : Quaternion {
+    public set(x : number, y : number, z : number, w : number) : Quaternion {
         this.x = x;
         this.y = y;
         this.z = z;
@@ -78,105 +35,42 @@ export class Quaternion {
         return this;
     }
 
-    /**
-     * Updates the current Quaternion from the passed float coordinates.
-     * Returns the updated Quaterion.
-     */
-    public set(x : number, y : number, z : number, w : number) : Quaternion {
-        return this.copyFromFloats(x, y, z, w);
+    public addQuaternion(other : Quaternion) : Quaternion {
+        this.x += other.x;
+        this.y += other.y;
+        this.z += other.z;
+        this.w += other.w;
+        return this;
     }
 
-    /**
-     * Returns a new Quaternion as the addition result of the passed one and the current Quaternion.
-     */
-    public add(other : Quaternion) : Quaternion {
-        return new Quaternion(this.x + other.x, this.y + other.y, this.z + other.z, this.w + other.w);
+    public subQuaternion(other : Quaternion) : Quaternion {
+        this.x -= other.x;
+        this.y -= other.y;
+        this.z -= other.z;
+        this.w -= other.w;
+        return this;
     }
 
-    /**
-     * Returns a new Quaternion as the subtraction result of the passed one from the current Quaternion.
-     */
-    public subtract(other : Quaternion) : Quaternion {
-        return new Quaternion(this.x - other.x, this.y - other.y, this.z - other.z, this.w - other.w);
-    }
-
-    /**
-     * Returns a new Quaternion set by multiplying the current Quaterion coordinates by the float "scale".
-     */
     public scale(value : number) : Quaternion {
-        return new Quaternion(this.x * value, this.y * value, this.z * value, this.w * value);
+        this.x *= value;
+        this.y *= value;
+        this.z *= value;
+        this.w *= value;
+        return this;
     }
 
-    /**
-     * Returns a new Quaternion set as the quaternion mulplication result of the current one with the passed one "q1".
-     */
     public multiply(q1 : Quaternion) : Quaternion {
-        var result = new Quaternion(0, 0, 0, 1.0);
-        this.multiplyToRef(q1, result);
-        return result;
+        return Quaternion.Multiply(this, q1, this);
     }
 
-    /**
-     * Sets the passed "result" as the quaternion mulplication result of the current one with the passed one "q1".
-     * Returns the current Quaternion.
-     */
-    public multiplyToRef(q1 : Quaternion, result : Quaternion) : Quaternion {
-        var x = this.x * q1.w + this.y * q1.z - this.z * q1.y + this.w * q1.x;
-        var y = -this.x * q1.z + this.y * q1.w + this.z * q1.x + this.w * q1.y;
-        var z = this.x * q1.y - this.y * q1.x + this.z * q1.w + this.w * q1.z;
-        var w = -this.x * q1.x - this.y * q1.y - this.z * q1.z + this.w * q1.w;
-        result.copyFromFloats(x, y, z, w);
-        return this;
-    }
-
-    /**
-     * Updates the current Quaternion with the quaternion mulplication result of itself with the passed one "q1".
-     * Returns the updated Quaternion.
-     */
-    public multiplyInPlace(q1 : Quaternion) : Quaternion {
-        this.multiplyToRef(q1, this);
-        return this;
-    }
-
-    /**
-     * Sets the passed "ref" with the conjugation of the current Quaternion.
-     * Returns the current Quaternion.
-     */
-    public conjugateToRef(ref : Quaternion) : Quaternion {
-        ref.copyFromFloats(-this.x, -this.y, -this.z, this.w);
-        return this;
-    }
-
-    /**
-     * Conjugates in place the current Quaternion.
-     * Returns the updated Quaternion.
-     */
-    public conjugateInPlace() : Quaternion {
-        this.x *= -1;
-        this.y *= -1;
-        this.z *= -1;
-        return this;
-    }
-
-    /**
-     * Returns a new Quaternion as the conjugate of the current Quaternion.
-     */
     public conjugate() : Quaternion {
-        var result = new Quaternion(-this.x, -this.y, -this.z, this.w);
-        return result;
+        return Quaternion.Conjugate(this, this);
     }
 
-    /**
-     * Returns the Quaternion length (float).
-     */
     public length() : number {
         return Math.sqrt((this.x * this.x) + (this.y * this.y) + (this.z * this.z) + (this.w * this.w));
     }
 
-    /**
-     * Normalize in place the current Quaternion.
-     * Returns the updated Quaternion.
-     */
     public normalize() : Quaternion {
         var length = 1.0 / this.length();
         this.x *= length;
@@ -186,33 +80,20 @@ export class Quaternion {
         return this;
     }
 
-    /**
-     * Returns a new Vector3 set with the Euler angles translated from the current Quaternion.
-     */
-    public toEulerAngles(order = "YZX") : Vector3 {
-        var result = Vector3.Zero();
-        this.toEulerAnglesToRef(result, order);
-        return result;
-    }
+    public toEulerAngles(out? : Vector3) : Vector3 {
+        const result = out || new Vector3();
+        const qz = this.z;
+        const qx = this.x;
+        const qy = this.y;
+        const qw = this.w;
 
-    /**
-     * Sets the passed vector3 "result" with the Euler angles translated from the current Quaternion.
-     * Returns the current Quaternion.
-     */
-    public toEulerAnglesToRef(result : Vector3, order = "YZX") : Quaternion {
+        const sqw = qw * qw;
+        const sqz = qz * qz;
+        const sqx = qx * qx;
+        const sqy = qy * qy;
 
-        var qz = this.z;
-        var qx = this.x;
-        var qy = this.y;
-        var qw = this.w;
-
-        var sqw = qw * qw;
-        var sqz = qz * qz;
-        var sqx = qx * qx;
-        var sqy = qy * qy;
-
-        var zAxisY = qy * qz - qx * qw;
-        var limit = .4999999;
+        const zAxisY = qy * qz - qx * qw;
+        const limit = .4999999;
 
         if (zAxisY < -limit) {
             result.y = 2 * Math.atan2(qy, qw);
@@ -227,16 +108,73 @@ export class Quaternion {
             result.x = Math.asin(-2.0 * (qz * qy - qx * qw));
             result.y = Math.atan2(2.0 * (qz * qx + qy * qw), (sqz - sqx - sqy + sqw));
         }
-
-        return this;
-
+        return result;
     }
 
-    /**
-     * Updates the passed rotation matrix with the current Quaternion values.
-     * Returns the current Quaternion.
-     */
-    public toRotationMatrix(result : Matrix) : Quaternion {
+    public getRotationX() : number {
+        const qz = this.z;
+        const qx = this.x;
+        const qy = this.y;
+        const qw = this.w;
+
+        const zAxisY = qy * qz - qx * qw;
+        const limit = .4999999;
+
+        if (zAxisY < -limit) {
+            return Math.PI / 2;
+        } else if (zAxisY > limit) {
+            return -Math.PI / 2;
+        } else {
+            return Math.asin(-2.0 * (qz * qy - qx * qw));
+        }
+    }
+
+    public getRotationY() : number {
+        const qz = this.z;
+        const qx = this.x;
+        const qy = this.y;
+        const qw = this.w;
+
+        const sqw = qw * qw;
+        const sqz = qz * qz;
+        const sqx = qx * qx;
+        const sqy = qy * qy;
+
+        const zAxisY = qy * qz - qx * qw;
+        const limit = .4999999;
+
+        if (zAxisY < -limit) {
+            return 2 * Math.atan2(qy, qw);
+        } else if (zAxisY > limit) {
+            return 2 * Math.atan2(qy, qw);
+        } else {
+            return Math.atan2(2.0 * (qz * qx + qy * qw), (sqz - sqx - sqy + sqw));
+        }
+    }
+
+    public getRotationZ() : number {
+        const qz = this.z;
+        const qx = this.x;
+        const qy = this.y;
+        const qw = this.w;
+
+        const sqw = qw * qw;
+        const sqz = qz * qz;
+        const sqx = qx * qx;
+        const sqy = qy * qy;
+
+        const zAxisY = qy * qz - qx * qw;
+        const limit = .4999999;
+
+        if (zAxisY < -limit || zAxisY > limit) {
+            return 0;
+        } else {
+            return Math.atan2(2.0 * (qx * qy + qz * qw), (-sqz - sqx + sqy + sqw));
+        }
+    }
+
+    public toRotationMatrix(result? : Matrix) : Matrix {
+        result = result || new Matrix();
         var xx = this.x * this.x;
         var yy = this.y * this.y;
         var zz = this.z * this.z;
@@ -263,32 +201,52 @@ export class Quaternion {
         result.m[13] = 0;
         result.m[14] = 0;
         result.m[15] = 1.0;
-        return this;
-    }
-
-    /**
-     * Updates the current Quaternion from the passed rotation matrix values.
-     * Returns the updated Quaternion.
-     */
-    public fromRotationMatrix(matrix : Matrix) : Quaternion {
-        Quaternion.FromRotationMatrixToRef(matrix, this);
-        return this;
-    }
-
-    // Statics
-    /**
-     * Returns a new Quaternion set from the passed rotation matrix values.
-     */
-    public static FromRotationMatrix(matrix : Matrix) : Quaternion {
-        var result = new Quaternion();
-        Quaternion.FromRotationMatrixToRef(matrix, result);
         return result;
     }
 
-    /**
-     * Updates the passed quaternion "result" with the passed rotation matrix values.
-     */
-    public static FromRotationMatrixToRef(matrix : Matrix, result : Quaternion) : void {
+    public fromRotationMatrix(matrix : Matrix) : Quaternion {
+        return Quaternion.FromRotationMatrix(matrix, this);
+    }
+
+    public toString() : string {
+        return "{x: " + this.x + " y:" + this.y + " z:" + this.z + " w:" + this.w + "}";
+    }
+
+    public getHashCode() : number {
+        let hash = this.x || 0;
+        hash = (hash * 397) ^ (this.y || 0);
+        hash = (hash * 397) ^ (this.z || 0);
+        hash = (hash * 397) ^ (this.w || 0);
+        return hash;
+    }
+
+    public equals(otherQuaternion : Quaternion) : boolean {
+        return otherQuaternion && this.x === otherQuaternion.x && this.y === otherQuaternion.y && this.z === otherQuaternion.z && this.w === otherQuaternion.w;
+    }
+
+    public static Conjugate(q0 : Quaternion, out? : Quaternion) {
+        out = out || new Quaternion();
+        out.x = -q0.x;
+        out.y = -q0.y;
+        out.z = -q0.z;
+        return out;
+    }
+
+    public static Multiply(q0 : Quaternion, q1 : Quaternion, out? : Quaternion) : Quaternion {
+        out = out || new Quaternion();
+        var x = q0.x * q1.w + q0.y * q1.z - q0.z * q1.y + q0.w * q1.x;
+        var y = -q0.x * q1.z + q0.y * q1.w + q0.z * q1.x + q0.w * q1.y;
+        var z = q0.x * q1.y - q0.y * q1.x + q0.z * q1.w + q0.w * q1.z;
+        var w = -q0.x * q1.x - q0.y * q1.y - q0.z * q1.z + q0.w * q1.w;
+        out.x = x;
+        out.y = y;
+        out.z = z;
+        out.w = w;
+        return out;
+    }
+
+    public static FromRotationMatrix(matrix : Matrix, out? : Quaternion) : Quaternion {
+        var result = out || new Quaternion();
         var data = matrix.m;
         var m11 = data[0], m12 = data[4], m13 = data[8];
         var m21 = data[1], m22 = data[5], m23 = data[9];
@@ -329,77 +287,33 @@ export class Quaternion {
             result.y = (m23 + m32) / s;
             result.z = 0.25 * s;
         }
+        return result;
     }
 
-    /**
-     * Returns a new Quaternion set to (0.0, 0.0, 0.0).
-     */
-    public static Zero() : Quaternion {
-        return new Quaternion(0.0, 0.0, 0.0, 0.0);
-    }
-
-    /**
-     * Returns a new Quaternion as the inverted current Quaternion.
-     */
-    public static Inverse(q : Quaternion) : Quaternion {
-        return new Quaternion(-q.x, -q.y, -q.z, q.w);
-    }
-
-    /**
-     * Returns the identity Quaternion.
-     */
-    public static Identity() : Quaternion {
-        return new Quaternion(0.0, 0.0, 0.0, 1.0);
+    public static Invert(q : Quaternion, out? : Quaternion) : Quaternion {
+        return (out || new Quaternion()).set(-q.x, -q.y, -q.z, q.w);
     }
 
     public static IsIdentity(quaternion : Quaternion) {
         return quaternion && quaternion.x === 0 && quaternion.y === 0 && quaternion.z === 0 && quaternion.w === 1;
     }
 
-    /**
-     * Returns a new Quaternion set from the passed axis (Vector3) and angle in radians (float).
-     */
-    public static RotationAxis(axis : Vector3, angle : number) : Quaternion {
-        return Quaternion.RotationAxisToRef(axis, angle, new Quaternion());
-    }
+    public static readonly Zero : Readonly<Quaternion> = new Quaternion(0, 0, 0, 0);
+    public static readonly Identity : Readonly<Quaternion> = new Quaternion(0.0, 0.0, 0.0, 1.0);
 
-    /**
-     * Sets the passed quaternion "result" from the passed axis (Vector3) and angle in radians (float).
-     */
-    public static RotationAxisToRef(axis : Vector3, angle : number, result : Quaternion) : Quaternion {
-        var sin = Math.sin(angle / 2);
+    public static RotationAxis(axis : Vector3, angle : number, out? : Quaternion) : Quaternion {
+        out = out || new Quaternion();
+        var sin = Math.sin(angle * 0.5);
         axis.normalize();
-        result.w = Math.cos(angle / 2);
-        result.x = axis.x * sin;
-        result.y = axis.y * sin;
-        result.z = axis.z * sin;
-        return result;
+        out.w = Math.cos(angle * 0.5);
+        out.x = axis.x * sin;
+        out.y = axis.y * sin;
+        out.z = axis.z * sin;
+        return out;
     }
 
-    /**
-     * Retuns a new Quaternion set from the starting index of the passed array.
-     */
-    public static FromArray(array : number[], offset? : number) : Quaternion {
-        if (!offset) {
-            offset = 0;
-        }
-        return new Quaternion(array[offset], array[offset + 1], array[offset + 2], array[offset + 3]);
-    }
-
-    /**
-     * Returns a new Quaternion set from the passed Euler float angles (y, x, z).
-     */
-    public static RotationYawPitchRoll(yaw : number, pitch : number, roll : number) : Quaternion {
-        var q = new Quaternion();
-        Quaternion.RotationYawPitchRollToRef(yaw, pitch, roll, q);
-        return q;
-    }
-
-    /**
-     * Sets the passed quaternion "result" from the passed float Euler angles (y, x, z).
-     */
-    public static RotationYawPitchRollToRef(yaw : number, pitch : number, roll : number, result : Quaternion) : void {
-        // Produces a quaternion from Euler angles in the z-y-x orientation (Tait-Bryan angles)
+    public static RotationYawPitchRoll(yaw : number, pitch : number, roll : number, out? : Quaternion) : Quaternion {
+        out = out || new Quaternion();
         var halfRoll = roll * 0.5;
         var halfPitch = pitch * 0.5;
         var halfYaw = yaw * 0.5;
@@ -411,69 +325,40 @@ export class Quaternion {
         var sinYaw = Math.sin(halfYaw);
         var cosYaw = Math.cos(halfYaw);
 
-        result.x = (cosYaw * sinPitch * cosRoll) + (sinYaw * cosPitch * sinRoll);
-        result.y = (sinYaw * cosPitch * cosRoll) - (cosYaw * sinPitch * sinRoll);
-        result.z = (cosYaw * cosPitch * sinRoll) - (sinYaw * sinPitch * cosRoll);
-        result.w = (cosYaw * cosPitch * cosRoll) + (sinYaw * sinPitch * sinRoll);
+        out.x = (cosYaw * sinPitch * cosRoll) + (sinYaw * cosPitch * sinRoll);
+        out.y = (sinYaw * cosPitch * cosRoll) - (cosYaw * sinPitch * sinRoll);
+        out.z = (cosYaw * cosPitch * sinRoll) - (sinYaw * sinPitch * cosRoll);
+        out.w = (cosYaw * cosPitch * cosRoll) + (sinYaw * sinPitch * sinRoll);
+
+        return out;
     }
 
-    /**
-     * Returns a new Quaternion from the passed float Euler angles expressed in z-x-z orientation
-     */
-    public static RotationAlphaBetaGamma(alpha : number, beta : number, gamma : number) : Quaternion {
-        var result = new Quaternion();
-        Quaternion.RotationAlphaBetaGammaToRef(alpha, beta, gamma, result);
-        return result;
-    }
-
-    /**
-     * Sets the passed quaternion "result" from the passed float Euler angles expressed in z-x-z orientation
-     */
-    public static RotationAlphaBetaGammaToRef(alpha : number, beta : number, gamma : number, result : Quaternion) : void {
-        // Produces a quaternion from Euler angles in the z-x-z orientation
+    public static RotationAlphaBetaGamma(alpha : number, beta : number, gamma : number, out? : Quaternion) : Quaternion {
+        var out = out || new Quaternion();
         var halfGammaPlusAlpha = (gamma + alpha) * 0.5;
         var halfGammaMinusAlpha = (gamma - alpha) * 0.5;
         var halfBeta = beta * 0.5;
 
-        result.x = Math.cos(halfGammaMinusAlpha) * Math.sin(halfBeta);
-        result.y = Math.sin(halfGammaMinusAlpha) * Math.sin(halfBeta);
-        result.z = Math.sin(halfGammaPlusAlpha) * Math.cos(halfBeta);
-        result.w = Math.cos(halfGammaPlusAlpha) * Math.cos(halfBeta);
+        out.x = Math.cos(halfGammaMinusAlpha) * Math.sin(halfBeta);
+        out.y = Math.sin(halfGammaMinusAlpha) * Math.sin(halfBeta);
+        out.z = Math.sin(halfGammaPlusAlpha) * Math.cos(halfBeta);
+        out.w = Math.cos(halfGammaPlusAlpha) * Math.cos(halfBeta);
+        return out;
     }
 
-    /**
-     * Returns a new Quaternion as the quaternion rotation value to reach the target (axis1, axis2, axis3) orientation as a rotated XYZ system.
-     * cf to Vector3.RotationFromAxis() documentation.
-     * Note : axis1, axis2 and axis3 are normalized during this operation.
-     */
-    public static RotationQuaternionFromAxis(axis1 : Vector3, axis2 : Vector3, axis3 : Vector3, ref : Quaternion) : Quaternion {
-        var quat = new Quaternion(0.0, 0.0, 0.0, 0.0);
-        Quaternion.RotationQuaternionFromAxisToRef(axis1, axis2, axis3, quat);
-        return quat;
-    }
-
-    /**
-     * Sets the passed quaternion "ref" with the quaternion rotation value to reach the target (axis1, axis2, axis3) orientation as a rotated XYZ system.
-     * cf to Vector3.RotationFromAxis() documentation.
-     * Note : axis1, axis2 and axis3 are normalized during this operation.
-     */
-    public static RotationQuaternionFromAxisToRef(axis1 : Vector3, axis2 : Vector3, axis3 : Vector3, ref : Quaternion) : void {
-        var rotMat = Matrix.Identity();
+    //returns rotation value to reach the target orientation
+    public static RotationQuaternionFromAxis(axis1 : Vector3, axis2 : Vector3, axis3 : Vector3, out? : Quaternion) : Quaternion {
+        out = out || new Quaternion();
+        var rotMat = Matrix.Identity(Matrix.scratch0);
         Matrix.FromXYZAxesToRef(axis1.normalize(), axis2.normalize(), axis3.normalize(), rotMat);
-        Quaternion.FromRotationMatrixToRef(rotMat, ref);
+        Quaternion.FromRotationMatrix(rotMat, out);
+        return out;
     }
 
-    public static Slerp(left : Quaternion, right : Quaternion, amount : number) : Quaternion {
+    public static Slerp(left : Quaternion, right : Quaternion, amount : number, out? : Quaternion) : Quaternion {
 
-        var result = Quaternion.Identity();
+        out = out || new Quaternion();
 
-        Quaternion.SlerpToRef(left, right, amount, result);
-
-        return result;
-
-    }
-
-    public static SlerpToRef(left : Quaternion, right : Quaternion, amount : number, result : Quaternion) : void {
         var num2;
         var num3;
         var num = amount;
@@ -496,10 +381,17 @@ export class Quaternion {
             num2 = flag ? ((-Math.sin(num * num5)) * num6) : ((Math.sin(num * num5)) * num6);
         }
 
-        result.x = (num3 * left.x) + (num2 * right.x);
-        result.y = (num3 * left.y) + (num2 * right.y);
-        result.z = (num3 * left.z) + (num2 * right.z);
-        result.w = (num3 * left.w) + (num2 * right.w);
+        out.x = (num3 * left.x) + (num2 * right.x);
+        out.y = (num3 * left.y) + (num2 * right.y);
+        out.z = (num3 * left.z) + (num2 * right.z);
+        out.w = (num3 * left.w) + (num2 * right.w);
+        return out;
 
     }
+
+    public static readonly scratch0 = new Quaternion();
+    public static readonly scratch1 = new Quaternion();
+    public static readonly scratch2 = new Quaternion();
+    public static readonly scratch3 = new Quaternion();
+
 }

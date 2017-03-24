@@ -1,11 +1,12 @@
+import {Vector2} from "./runtime/vector2";
 require("./runtime/array");
-
 import {EditorRuntimeImplementation} from "./editor/editor_runtime";
 import {createElement} from "./editor_element/element_renderer";
 import {EditorBindingElement as EBindingElement, EditorBindingElement} from "./editor_element/editor_binding_element";
 import {RuntimeImpl} from "./runtime/runtime";
 import {BrowserRuntimeImpl} from "./browser/browser_runtime";
 import {EditorWorker, EditorWorkerContext} from "./editor/editor_worker";
+
 
 const enum EnvironmentFlag {
     RuntimeActive = 1 << 0,

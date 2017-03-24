@@ -1,4 +1,5 @@
 
+//color values expected to be 0 - 255
 export class Color {
 
     public r : number;
@@ -6,7 +7,7 @@ export class Color {
     public b : number;
     public a : number;
 
-    constructor(r = 0, g = 0, b = 0, a = 1) {
+    constructor(r = 0, g = 0, b = 0, a = 255) {
         this.r = r;
         this.g = g;
         this.b = b;
@@ -19,6 +20,32 @@ export class Color {
         input.b = this.b;
         input.a = this.a;
         return input;
+    }
+
+    public toHex() : number {
+        const intR = (this.r) | 0;
+        const intG = (this.g) | 0;
+        const intB = (this.b) | 0;
+        return ((intR & 0xff) << 16) + ((intG & 0xff) << 8) + (intB & 0xff);
+    }
+
+    public toHexAlpha() : number {
+        const intR = (this.r) | 0;
+        const intG = (this.g) | 0;
+        const intB = (this.b) | 0;
+        const intA = (this.a) | 0;
+        return ((intR & 0xff) << 24) +
+            ((intG & 0xff) << 16) +
+            ((intB & 0xff) << 8) +
+            (intA & 0xff);
+    }
+
+    public toHexString() : string {
+        return "#" + this.toHex().toString(16);
+    }
+
+    public toHexAString() : string {
+        return "#" + this.toHexAlpha().toString(16);
     }
 
     public static get Black() : Color { return new Color(0, 0, 0, 255); }

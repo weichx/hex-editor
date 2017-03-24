@@ -6,11 +6,12 @@ import {traverseChildren, clamp, clamp01} from "../util";
 import {BoundingBox} from "./bounding_box";
 import {MathUtil} from "../math_util";
 import {Matrix} from "./matrix";
-import {Vector3} from "./vector3";
 import {Quaternion} from "./quaternion";
+import {Vector2} from "./vector2";
+import {Vector3} from "./vector3";
 
 let idGenerator = 0;
-const scratchVector = new Vector3();
+const scratchVector = new Vector2();
 
 export enum Space {
     Local, World
@@ -36,14 +37,14 @@ export class AppElement {
     private children : Array<AppElement>;
     private boundingBox : BoundingBox;
     private lifeCycleFlags : LifeCycleFlag;
-    //private localPosition : Vector3;
-    //private parentPosition : Vector3;
-    private position : Vector3;
-    private scale : Vector3;
+    //private localPosition : Vector2;
+    //private parentPosition : Vector2;
+    private position : Vector2;
+    private scale : Vector2;
     private rotation : number;
     private width : number;
     private height : number;
-    private pivot : Vector3;
+    private pivot : Vector2;
     private dirtyFlags : ElementDirtyFlag;
     private localMatrix : Matrix;
     private worldMatrix : Matrix;
@@ -62,9 +63,9 @@ export class AppElement {
         this.height = 0;
         this.rotation = 0;
         this.dirtyFlags = 0;
-        this.scale = new Vector3(1, 1, 1);
-        this.pivot = new Vector3();
-        this.position = new Vector3();
+        this.scale = new Vector2(1, 1);
+        this.pivot = new Vector2();
+        this.position = new Vector2();
         this.localMatrix = new Matrix();
         this.worldMatrix = new Matrix();
         this.boundingBox = new BoundingBox(this);
@@ -79,57 +80,58 @@ export class AppElement {
     // }
     //
 
-    public getPivot() : Vector3 {
-        const out = new Vector3();
+    public getPivot() : Vector2 {
+        const out = new Vector2();
         out.x = this.pivot.x;
         out.y = this.pivot.y;
         return out;
     }
 
-    public worldToLocal(vector : Vector3, out? : Vector3) : Vector3 {
+    public worldToLocal(vector : Vector2, out? : Vector2) : Vector2 {
         this.updateWorldMatrix();
-        //return Vector3.transformCoordinates(vector, this.worldMatrix.invertNew(Matrix3x3.scratch0), out);
+        //return Vector2.transformCoordinates(vector, this.worldMatrix.invertNew(Matrix3x3.scratch0), out);
         return null;
     }
 
-    public localToWorld(vector : Vector3, out? : Vector3) : Vector3 {
+    public localToWorld(vector : Vector2, out? : Vector2) : Vector2 {
         this.updateWorldMatrix();
-       // return Vector3.transformCoordinates(vector, this.worldMatrix, out);
+        // return Vector2.transformCoordinates(vector, this.worldMatrix, out);
         return null;
     }
 
     public getWorldMatrix() : Matrix {
         this.updateWorldMatrix();
-       // return this.worldMatrix.clone(out || new Matrix3x3());
+        // return this.worldMatrix.clone(out || new Matrix3x3());
         return this.worldMatrix.clone();
     }
 
     public updateWorldMatrix() {
-        // Scaling
-        const scaling = new Matrix();
-        const rotation = new Matrix();
-        const translate = new Matrix();
-        const rotationAndScale = new Matrix();
-        Matrix.ScalingToRef(this.scale.x, this.scale.y, this.scale.z, scaling);
-        const rotQuat = Quaternion.RotationAxis(Vector3.Forward(), this.rotation * MathUtil.DegreesToRadians);
-        rotQuat.toRotationMatrix(rotation);
 
         //mat 0 = rotation matrix
         //mat 1 = scale matrix
         //mat 2 = translation matrix
-        //mat 3 = ??
         //mat 4 = pivot * scale
         //mat 5 = mat4 * rotation
         //local world = mat5 * translation
         //worldMatrix = parent.getWorldMatrix() * localWorld
-        Matrix.TranslationToRef(this.position.x, this.position.y, this.position.z, translate);
-        scaling.multiplyToRef(rotation, rotationAndScale);
-        rotationAndScale.multiplyToRef(translate, this.localMatrix);
+
+        const scaling = Matrix.scratch0;
+        const rotation = Matrix.scratch1;
+        const translate = Matrix.scratch2;
+        const rotationAndScale = Matrix.scratch3;
+        const radians = this.rotation * MathUtil.DegreesToRadians;
+
+        Quaternion.RotationAxis(Vector3.Forward, radians).toRotationMatrix(rotation);
+        Matrix.CreateScale(this.scale.x, this.scale.y, 1, scaling);
+        Matrix.CreateTranslation(this.position.x, this.position.y, 0, translate);
+        Matrix.Multiply(scaling, rotation, rotationAndScale);
+        Matrix.Multiply(rotationAndScale, translate, this.localMatrix);
 
         if (this.parent) {
-            this.localMatrix.multiplyToRef(this.parent.getWorldMatrix(), this.worldMatrix);
-        } else {
-            this.worldMatrix.copyFrom(this.localMatrix);
+            Matrix.Multiply(this.localMatrix, this.parent.getWorldMatrix(), this.worldMatrix);
+        }
+        else {
+            this.worldMatrix.copy(this.localMatrix);
         }
         return this.worldMatrix;
     }
@@ -139,17 +141,16 @@ export class AppElement {
         return this.localMatrix.clone();
     }
 
-    public setScale(scale : Vector3) : void {
-        //if (this.scale.isEqual(scale)) return;
+    public setScale(scale : Vector2) : void {
+        if (this.scale.equals(scale)) return;
         this.scale.x = scale.x;
         this.scale.y = scale.y;
-        this.scale.z = scale.z;
         this.dirtyFlags |= ElementDirtyFlag.Scale;
         Runtime.sendCommand(CommandType.SetTransform, this.id);
     }
 
-    public getScale() : Vector3 {
-        return this.scale.clone();
+    public getScale(out? : Vector2) : Vector2 {
+        return this.scale.clone(out);
     }
 
     public getWidth() : number {
@@ -205,7 +206,7 @@ export class AppElement {
         Runtime.sendCommand(CommandType.SetTransform, this.id);
     }
 
-    public setPosition(position : Vector3, relativeTo : Space = Space.World) : void {
+    public setPosition(position : Vector2, relativeTo : Space = Space.World) : void {
         this.setPositionValues(position.x, position.y, relativeTo);
     }
 
@@ -213,25 +214,27 @@ export class AppElement {
         if (this.parent && relativeTo === Space.World) {
             var invertParentWorldMatrix = this.parent.getWorldMatrix().clone();
             invertParentWorldMatrix.invert();
-            var worldPosition = new Vector3(x, y, 0);
-            this.position = Vector3.TransformCoordinates(worldPosition, invertParentWorldMatrix);
+            var worldPosition = new Vector2(x, y);
+            const scratch = Vector3.scratch0.set(x, y, 0);
+            Vector3.TransformCoordinates(scratch, invertParentWorldMatrix, scratch);
+            this.position.x = scratch.x;
+            this.position.y = scratch.y;
         }
         else {
             this.position.x = x;
             this.position.y = y;
-            this.position.z = 0;
         }
         this.dirtyFlags |= ElementDirtyFlag.Position;
         Runtime.sendCommand(CommandType.SetTransform, this.id);
     }
 
-    public getLocalPosition() : Vector3 {
+    public getLocalPosition() : Vector2 {
         return this.position.clone();
     }
 
-    public getPosition() : Vector3 {
+    public getPosition(out? : Vector2) : Vector2 {
         this.updateWorldMatrix();
-        return new Vector3(this.worldMatrix.m[12], this.worldMatrix.m[13], this.worldMatrix.m[14]);
+        return (out || new Vector2()).set(this.worldMatrix.m[12], this.worldMatrix.m[13]);
     }
 
     public getBoundingBox() : BoundingBox {
@@ -472,7 +475,7 @@ export class AppElement {
 
     /*** Helpers ***/
 
-    public containsPoint(point : Vector3) : boolean {
+    public containsPoint(point : Vector2) : boolean {
         return false;
         // const p = this.getPosition();
         // const x = p.x;

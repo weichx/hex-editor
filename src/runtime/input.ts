@@ -2,7 +2,6 @@ import {Vector2} from "./vector2";
 import {AppElement} from "./app_element";
 import {KeyCode} from "./enums/e_keycode";
 import {MouseButtonState} from "./enums/e_mouse_state";
-import {Vector3} from "./vector3";
 
 export class Input {
     //todo consider making use of ImmutableVector2 to cut down on new Vector() calls
@@ -152,7 +151,7 @@ export class Input {
     }
 
     public isMouseInAppElement(element : AppElement) : boolean {
-        return element.containsPoint(new Vector3(this.x, this.y, 0));
+        return element.containsPoint(new Vector2(this.x, this.y));
     }
 
     public getMouseRelative(element : AppElement, cache? : Vector2) {
