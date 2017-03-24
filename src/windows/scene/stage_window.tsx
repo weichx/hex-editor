@@ -8,6 +8,7 @@ import {StageForeground} from "./stage_foreground";
 import {clamp} from "../../util";
 import {SceneTool} from "./scene_tool";
 import {SceneRectTool} from "./rect_tool";
+import {Vector3} from "../../runtime/vector3";
 
 export class StageWindow extends EditorWindowElement<IWindowAttrs> {
 
@@ -70,7 +71,7 @@ export class StageWindow extends EditorWindowElement<IWindowAttrs> {
     public pan(delta : Vector2) : void {
         if (delta.isZero()) return;
         this.panValue.addVector(delta);
-        AppElement.Root.setPosition(this.panValue);
+        AppElement.Root.setPosition(new Vector3(this.panValue.x, this.panValue.y, 0));
         AppElement.Root.setDimensions(this.frameSize.x, this.frameSize.y);
     }
 
@@ -84,7 +85,7 @@ export class StageWindow extends EditorWindowElement<IWindowAttrs> {
         this.panValue.x = ((this.width * 0.5) - (this.frameSize.x * 0.5)) | 0;
         this.panValue.y = 1;
 
-        AppElement.Root.setPosition(this.panValue);
+        AppElement.Root.setPosition(new Vector3(this.panValue.x, this.panValue.y, 0));
         AppElement.Root.setDimensions(this.frameSize.x, this.frameSize.y);
 
     }
@@ -102,7 +103,7 @@ export class StageWindow extends EditorWindowElement<IWindowAttrs> {
 
         if (zoomDelta !== 0) {
             // AppElement.Root.setPivot(0.5, 0.5);
-            AppElement.Root.setScale(new Vector2(this.zoomLevel, this.zoomLevel));
+            AppElement.Root.setScale(new Vector3(this.zoomLevel, this.zoomLevel, this.zoomLevel));
         }
 
     }

@@ -264,6 +264,13 @@ export class Vector2 {
         out.y = (x * matrix.b) + (y * matrix.d);
         return out;
     }
+
+    public static scratch0 = new Vector2();
+    public static scratch1 = new Vector2();
+    public static scratch2 = new Vector2();
+    public static scratch3 = new Vector2();
+    public static scratch4 = new Vector2();
+
 }
 
 

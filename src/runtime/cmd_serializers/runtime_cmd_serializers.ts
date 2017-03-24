@@ -70,14 +70,14 @@ Runtime.setCommandSerializer(CommandType.SetDimensions, function (id : any) {
     return { id: id, width: appElement.getWidth(), height: appElement.getHeight() }
 });
 
-let scratchVector = new Vector2();
-let scratchMatrix = new Matrix3x3();
 Runtime.setCommandSerializer(CommandType.SetTransform, function (id : any) {
     const appElement = Runtime.getAppElementById(id);
-    const pivot = appElement.getPivot(scratchVector);
-    const m = appElement.getMatrix(scratchMatrix);
-    const localPosition = appElement.getLocalPosition();
-    const str = `matrix(${m.a},${m.c},${m.b},${m.d},${localPosition.x},${localPosition.y})`;
+    const m = appElement.getMatrix();
+    let str = "matrix3d(";
+    for(let i = 0; i < m.m.length - 1; i++) {
+        str += m.m[i] + ",";
+    }
+    str += m.m[15] + ")";
     return { id: id, matrix: str };// origin: `${pivot.x}% ${pivot.y}%` };
 });
 

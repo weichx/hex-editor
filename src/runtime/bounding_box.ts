@@ -1,7 +1,8 @@
 import {AppElement} from "./app_element";
 import {Vector2} from "./vector2";
 import {Rectangle} from "./rectangle";
-import {MathUtil} from "../math_util";
+import {Vector3} from "./vector3";
+import {Quaternion} from "./quaternion";
 
 export class BoundingBox {
 
@@ -25,31 +26,21 @@ export class BoundingBox {
     public update() : void {
         const element = this.appElement;
         const wm = element.getWorldMatrix();
-        const scale = wm.getScale();
-        const rotation = wm.getRotation();
-        const theta = -rotation;
-        const position = element.getLocalPosition();
+        const scale = new Vector3();
+        const rotation = new Quaternion();
+        const position = new Vector3();
+        wm.decompose(scale, rotation, position);
 
+        const theta = rotation.toEulerAngles().z;
         const pivot = element.getPivot();
         const w = element.getWidth() * scale.x;
         const h = element.getHeight() * scale.y;
         const pivotPoint = new Vector2(pivot.x * w, pivot.y * h);
-        const parent = element.getParent();
-
-        if(parent) {
-            const p = parent.getPosition();
-            //maybe this needs to be done for all parents and get the result?
-            position.x = p.x + (position.x * scale.x); //this may incorrectly add 1 when scale === 1
-            position.y = p.y + (position.y * scale.y);
-        }
 
         (this.topLeft as Vector2).set(0, 0).rotateAround(theta, pivotPoint).addVector(position);
         (this.topRight as Vector2).set(w, 0).rotateAround(theta, pivotPoint).addVector(position);
         (this.bottomRight as Vector2).set(w, h).rotateAround(theta, pivotPoint).addVector(position);
         (this.bottomLeft as Vector2).set(0, h).rotateAround(theta, pivotPoint).addVector(position);
-
-        //now rotate around parent
-
     }
 
     public containsPoint(point : IVector2) : boolean {

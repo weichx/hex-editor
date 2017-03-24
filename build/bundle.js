@@ -45,67 +45,67 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	__webpack_require__(57);
-	__webpack_require__(110);
-	__webpack_require__(112);
-	__webpack_require__(108);
-	__webpack_require__(70);
-	__webpack_require__(59);
-	__webpack_require__(61);
-	__webpack_require__(120);
-	__webpack_require__(99);
-	__webpack_require__(121);
-	__webpack_require__(95);
-	__webpack_require__(122);
+	__webpack_require__(60);
+	__webpack_require__(113);
+	__webpack_require__(115);
+	__webpack_require__(111);
+	__webpack_require__(73);
+	__webpack_require__(62);
+	__webpack_require__(64);
 	__webpack_require__(123);
+	__webpack_require__(102);
+	__webpack_require__(124);
+	__webpack_require__(98);
 	__webpack_require__(125);
 	__webpack_require__(126);
 	__webpack_require__(128);
 	__webpack_require__(129);
-	__webpack_require__(130);
+	__webpack_require__(131);
 	__webpack_require__(132);
 	__webpack_require__(133);
-	__webpack_require__(98);
-	__webpack_require__(103);
-	__webpack_require__(65);
-	__webpack_require__(102);
-	__webpack_require__(134);
 	__webpack_require__(135);
-	__webpack_require__(91);
-	__webpack_require__(100);
 	__webpack_require__(136);
-	__webpack_require__(131);
-	__webpack_require__(58);
-	__webpack_require__(93);
-	__webpack_require__(89);
+	__webpack_require__(101);
+	__webpack_require__(106);
+	__webpack_require__(68);
+	__webpack_require__(105);
 	__webpack_require__(137);
 	__webpack_require__(138);
-	__webpack_require__(88);
-	__webpack_require__(139);
-	__webpack_require__(105);
-	__webpack_require__(104);
-	__webpack_require__(67);
-	__webpack_require__(64);
-	__webpack_require__(62);
-	__webpack_require__(87);
-	__webpack_require__(92);
 	__webpack_require__(94);
+	__webpack_require__(103);
+	__webpack_require__(139);
+	__webpack_require__(134);
+	__webpack_require__(61);
+	__webpack_require__(96);
+	__webpack_require__(92);
+	__webpack_require__(140);
 	__webpack_require__(141);
-	__webpack_require__(114);
-	__webpack_require__(113);
+	__webpack_require__(91);
 	__webpack_require__(142);
-	__webpack_require__(143);
+	__webpack_require__(108);
+	__webpack_require__(107);
+	__webpack_require__(70);
+	__webpack_require__(67);
+	__webpack_require__(65);
+	__webpack_require__(90);
+	__webpack_require__(95);
+	__webpack_require__(97);
 	__webpack_require__(144);
-	__webpack_require__(111);
+	__webpack_require__(117);
+	__webpack_require__(116);
 	__webpack_require__(145);
-	__webpack_require__(109);
 	__webpack_require__(146);
-	__webpack_require__(24);
-	__webpack_require__(55);
 	__webpack_require__(147);
+	__webpack_require__(114);
 	__webpack_require__(148);
-	__webpack_require__(54);
-	__webpack_require__(71);
+	__webpack_require__(112);
+	__webpack_require__(149);
+	__webpack_require__(24);
+	__webpack_require__(58);
+	__webpack_require__(150);
+	__webpack_require__(151);
+	__webpack_require__(57);
+	__webpack_require__(74);
 	__webpack_require__(15);
 	__webpack_require__(19);
 	__webpack_require__(14);
@@ -113,97 +113,101 @@
 	__webpack_require__(7);
 	__webpack_require__(20);
 	__webpack_require__(22);
-	__webpack_require__(39);
-	__webpack_require__(38);
-	__webpack_require__(44);
-	__webpack_require__(149);
-	__webpack_require__(150);
-	__webpack_require__(69);
+	__webpack_require__(42);
+	__webpack_require__(41);
+	__webpack_require__(47);
+	__webpack_require__(152);
+	__webpack_require__(153);
+	__webpack_require__(72);
 	__webpack_require__(5);
 	__webpack_require__(21);
 	__webpack_require__(6);
-	__webpack_require__(151);
+	__webpack_require__(154);
 	__webpack_require__(12);
 	__webpack_require__(9);
 	__webpack_require__(10);
 	__webpack_require__(13);
-	__webpack_require__(107);
-	__webpack_require__(41);
-	__webpack_require__(152);
-	__webpack_require__(140);
-	__webpack_require__(66);
-	__webpack_require__(68);
+	__webpack_require__(110);
+	__webpack_require__(44);
+	__webpack_require__(155);
+	__webpack_require__(143);
+	__webpack_require__(69);
+	__webpack_require__(71);
 	__webpack_require__(23);
 	__webpack_require__(3);
-	__webpack_require__(60);
-	__webpack_require__(56);
-	__webpack_require__(33);
-	__webpack_require__(76);
-	__webpack_require__(11);
-	__webpack_require__(42);
-	__webpack_require__(51);
-	__webpack_require__(127);
-	__webpack_require__(96);
-	__webpack_require__(29);
-	__webpack_require__(2);
-	__webpack_require__(43);
-	__webpack_require__(34);
-	__webpack_require__(115);
-	__webpack_require__(153);
-	__webpack_require__(154);
-	__webpack_require__(50);
-	__webpack_require__(40);
-	__webpack_require__(49);
-	__webpack_require__(155);
-	__webpack_require__(124);
-	__webpack_require__(156);
-	__webpack_require__(75);
-	__webpack_require__(74);
-	__webpack_require__(157);
-	__webpack_require__(72);
-	__webpack_require__(158);
-	__webpack_require__(73);
-	__webpack_require__(80);
-	__webpack_require__(81);
-	__webpack_require__(83);
-	__webpack_require__(79);
-	__webpack_require__(85);
-	__webpack_require__(78);
-	__webpack_require__(82);
-	__webpack_require__(86);
-	__webpack_require__(77);
-	__webpack_require__(84);
-	__webpack_require__(31);
-	__webpack_require__(101);
+	__webpack_require__(63);
+	__webpack_require__(59);
 	__webpack_require__(30);
-	__webpack_require__(26);
+	__webpack_require__(79);
+	__webpack_require__(11);
+	__webpack_require__(45);
+	__webpack_require__(54);
+	__webpack_require__(130);
+	__webpack_require__(99);
+	__webpack_require__(34);
+	__webpack_require__(2);
+	__webpack_require__(46);
 	__webpack_require__(37);
-	__webpack_require__(25);
+	__webpack_require__(118);
+	__webpack_require__(156);
+	__webpack_require__(157);
+	__webpack_require__(53);
+	__webpack_require__(43);
+	__webpack_require__(52);
+	__webpack_require__(158);
+	__webpack_require__(127);
 	__webpack_require__(159);
+	__webpack_require__(78);
+	__webpack_require__(77);
 	__webpack_require__(160);
+	__webpack_require__(75);
 	__webpack_require__(161);
-	__webpack_require__(32);
+	__webpack_require__(76);
+	__webpack_require__(83);
+	__webpack_require__(84);
+	__webpack_require__(86);
+	__webpack_require__(82);
+	__webpack_require__(88);
+	__webpack_require__(81);
+	__webpack_require__(85);
+	__webpack_require__(89);
+	__webpack_require__(80);
+	__webpack_require__(87);
+	__webpack_require__(36);
+	__webpack_require__(104);
+	__webpack_require__(35);
+	__webpack_require__(26);
+	__webpack_require__(40);
+	__webpack_require__(25);
 	__webpack_require__(162);
 	__webpack_require__(163);
-	__webpack_require__(18);
+	__webpack_require__(29);
 	__webpack_require__(164);
 	__webpack_require__(165);
-	__webpack_require__(35);
-	__webpack_require__(28);
 	__webpack_require__(166);
-	__webpack_require__(27);
-	__webpack_require__(17);
-	__webpack_require__(36);
-	__webpack_require__(106);
-	__webpack_require__(63);
-	__webpack_require__(90);
-	__webpack_require__(97);
-	__webpack_require__(16);
+	__webpack_require__(18);
 	__webpack_require__(167);
-	__webpack_require__(118);
+	__webpack_require__(168);
+	__webpack_require__(28);
+	__webpack_require__(38);
+	__webpack_require__(33);
+	__webpack_require__(169);
+	__webpack_require__(32);
+	__webpack_require__(170);
+	__webpack_require__(17);
+	__webpack_require__(27);
+	__webpack_require__(31);
+	__webpack_require__(39);
+	__webpack_require__(109);
+	__webpack_require__(66);
+	__webpack_require__(93);
+	__webpack_require__(100);
+	__webpack_require__(16);
+	__webpack_require__(171);
+	__webpack_require__(121);
+	__webpack_require__(122);
 	__webpack_require__(119);
-	__webpack_require__(116);
-	module.exports = __webpack_require__(117);
+	module.exports = __webpack_require__(120);
 
 
 /***/ },
@@ -215,9 +219,9 @@
 	__webpack_require__(2);
 	const editor_runtime_1 = __webpack_require__(3);
 	const element_renderer_1 = __webpack_require__(7);
-	const editor_binding_element_1 = __webpack_require__(54);
-	const browser_runtime_1 = __webpack_require__(55);
-	const editor_worker_1 = __webpack_require__(56);
+	const editor_binding_element_1 = __webpack_require__(57);
+	const browser_runtime_1 = __webpack_require__(58);
+	const editor_worker_1 = __webpack_require__(59);
 	window.AppRootElementId = 0;
 	window.Runtime = null;
 	window.HexEnvironmentFlag = 0;
@@ -351,16 +355,16 @@
 	const evt_app_element_created_1 = __webpack_require__(22);
 	const editor_element_1 = __webpack_require__(15);
 	const editor_input_1 = __webpack_require__(23);
-	const tree_1 = __webpack_require__(27);
-	const runtime_1 = __webpack_require__(28);
-	const app_element_1 = __webpack_require__(29);
-	const e_command_type_1 = __webpack_require__(31);
-	const component_1 = __webpack_require__(40);
+	const tree_1 = __webpack_require__(32);
+	const runtime_1 = __webpack_require__(33);
+	const app_element_1 = __webpack_require__(34);
+	const e_command_type_1 = __webpack_require__(36);
+	const component_1 = __webpack_require__(43);
 	const vector2_1 = __webpack_require__(17);
-	const drag_action_1 = __webpack_require__(41);
-	const project_1 = __webpack_require__(42);
-	const background_component_1 = __webpack_require__(49);
-	const color_1 = __webpack_require__(50);
+	const drag_action_1 = __webpack_require__(44);
+	const project_1 = __webpack_require__(45);
+	const background_component_1 = __webpack_require__(52);
+	const color_1 = __webpack_require__(53);
 	let mouseCache = new vector2_1.Vector2();
 	class UpdateNode extends tree_1.ShadowTreeNode {
 	    traverse() {
@@ -2002,6 +2006,11 @@
 	Vector2.right = new Vector2_1(1, 0);
 	Vector2.down = new Vector2_1(0, -1);
 	Vector2.left = new Vector2_1(-1, 0);
+	Vector2.scratch0 = new Vector2_1();
+	Vector2.scratch1 = new Vector2_1();
+	Vector2.scratch2 = new Vector2_1();
+	Vector2.scratch3 = new Vector2_1();
+	Vector2.scratch4 = new Vector2_1();
 	Vector2 = Vector2_1 = tslib_1.__decorate([
 	    TEMP_ANNOTATION_1.serializeClass
 	], Vector2);
@@ -2344,6 +2353,7 @@
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const vector2_1 = __webpack_require__(17);
 	const e_mouse_state_1 = __webpack_require__(26);
+	const vector3_1 = __webpack_require__(27);
 	class Input {
 	    constructor() {
 	        this.x = 0;
@@ -2454,7 +2464,7 @@
 	        return this.mouseDownPosition.clone();
 	    }
 	    isMouseInAppElement(element) {
-	        return element.containsPoint(new vector2_1.Vector2(this.x, this.y));
+	        return element.containsPoint(new vector3_1.Vector3(this.x, this.y, 0));
 	    }
 	    getMouseRelative(element, cache) {
 	        const rect = element.rect;
@@ -2535,6 +2545,2503 @@
 
 /***/ },
 /* 27 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const quaternion_1 = __webpack_require__(28);
+	class Vector3 {
+	    constructor(x = 0, y = 0, z = 0) {
+	        this.x = x;
+	        this.y = y;
+	        this.z = z;
+	    }
+	    /**
+	     * Returns a string with the Vector3 coordinates.
+	     */
+	    toString() {
+	        return "{x: " + this.x + " y:" + this.y + " z:" + this.z + "}";
+	    }
+	    getHashCode() {
+	        let hash = this.x || 0;
+	        hash = (hash * 397) ^ (this.y || 0);
+	        hash = (hash * 397) ^ (this.z || 0);
+	        return hash;
+	    }
+	    // Operators
+	    /**
+	     * Returns a new array with three elements : the coordinates the Vector3.
+	     */
+	    asArray() {
+	        var result = [];
+	        this.toArray(result, 0);
+	        return result;
+	    }
+	    /**
+	     * Populates the passed array or Float32Array from the passed index with the successive coordinates of the Vector3.
+	     * Returns the Vector3.
+	     */
+	    toArray(array, index = 0) {
+	        array[index] = this.x;
+	        array[index + 1] = this.y;
+	        array[index + 2] = this.z;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Quaternion object, computed from the Vector3 coordinates.
+	     */
+	    toQuaternion() {
+	        var result = new quaternion_1.Quaternion(0.0, 0.0, 0.0, 1.0);
+	        var cosxPlusz = Math.cos((this.x + this.z) * 0.5);
+	        var sinxPlusz = Math.sin((this.x + this.z) * 0.5);
+	        var coszMinusx = Math.cos((this.z - this.x) * 0.5);
+	        var sinzMinusx = Math.sin((this.z - this.x) * 0.5);
+	        var cosy = Math.cos(this.y * 0.5);
+	        var siny = Math.sin(this.y * 0.5);
+	        result.x = coszMinusx * siny;
+	        result.y = -sinzMinusx * siny;
+	        result.z = sinxPlusz * cosy;
+	        result.w = cosxPlusz * cosy;
+	        return result;
+	    }
+	    /**
+	     * Adds the passed vector to the current Vector3.
+	     * Returns the updated Vector3.
+	     */
+	    addInPlace(otherVector) {
+	        this.x += otherVector.x;
+	        this.y += otherVector.y;
+	        this.z += otherVector.z;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Vector3, result of the addition the current Vector3 and the passed vector.
+	     */
+	    add(otherVector) {
+	        return new Vector3(this.x + otherVector.x, this.y + otherVector.y, this.z + otherVector.z);
+	    }
+	    /**
+	     * Adds the current Vector3 to the passed one and stores the result in the vector "result".
+	     * Returns the current Vector3.
+	     */
+	    addToRef(otherVector, result) {
+	        result.x = this.x + otherVector.x;
+	        result.y = this.y + otherVector.y;
+	        result.z = this.z + otherVector.z;
+	        return this;
+	    }
+	    /**
+	     * Subtract the passed vector from the current Vector3.
+	     * Returns the updated Vector3.
+	     */
+	    subtractInPlace(otherVector) {
+	        this.x -= otherVector.x;
+	        this.y -= otherVector.y;
+	        this.z -= otherVector.z;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Vector3, result of the subtraction of the passed vector from the current Vector3.
+	     */
+	    subtract(otherVector) {
+	        return new Vector3(this.x - otherVector.x, this.y - otherVector.y, this.z - otherVector.z);
+	    }
+	    /**
+	     * Subtracts the passed vector from the current Vector3 and stores the result in the vector "result".
+	     * Returns the current Vector3.
+	     */
+	    subtractToRef(otherVector, result) {
+	        result.x = this.x - otherVector.x;
+	        result.y = this.y - otherVector.y;
+	        result.z = this.z - otherVector.z;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Vector3 set with the subtraction of the passed floats from the current Vector3 coordinates.
+	     */
+	    subtractFromFloats(x, y, z) {
+	        return new Vector3(this.x - x, this.y - y, this.z - z);
+	    }
+	    /**
+	     * Subtracts the passed floats from the current Vector3 coordinates and set the passed vector "result" with this result.
+	     * Returns the current Vector3.
+	     */
+	    subtractFromFloatsToRef(x, y, z, result) {
+	        result.x = this.x - x;
+	        result.y = this.y - y;
+	        result.z = this.z - z;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Vector3 set with the current Vector3 negated coordinates.
+	     */
+	    negate() {
+	        return new Vector3(-this.x, -this.y, -this.z);
+	    }
+	    /**
+	     * Multiplies the Vector3 coordinates by the float "scale".
+	     * Returns the updated Vector3.
+	     */
+	    scaleInPlace(scale) {
+	        this.x *= scale;
+	        this.y *= scale;
+	        this.z *= scale;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Vector3 set with the current Vector3 coordinates multiplied by the float "scale".
+	     */
+	    scale(scale) {
+	        return new Vector3(this.x * scale, this.y * scale, this.z * scale);
+	    }
+	    /**
+	     * Multiplies the current Vector3 coordinates by the float "scale" and stores the result in the passed vector "result" coordinates.
+	     * Returns the current Vector3.
+	     */
+	    scaleToRef(scale, result) {
+	        result.x = this.x * scale;
+	        result.y = this.y * scale;
+	        result.z = this.z * scale;
+	        return this;
+	    }
+	    /**
+	     * Boolean : True if the current Vector3 and the passed vector coordinates are strictly equal.
+	     */
+	    equals(otherVector) {
+	        return otherVector && this.x === otherVector.x && this.y === otherVector.y && this.z === otherVector.z;
+	    }
+	    /**
+	     * Boolean : True if the current Vector3 coordinate equal the passed floats.
+	     */
+	    equalsToFloats(x, y, z) {
+	        return this.x === x && this.y === y && this.z === z;
+	    }
+	    /**
+	     * Muliplies the current Vector3 coordinates by the passed ones.
+	     * Returns the updated Vector3.
+	     */
+	    multiplyInPlace(otherVector) {
+	        this.x *= otherVector.x;
+	        this.y *= otherVector.y;
+	        this.z *= otherVector.z;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Vector3, result of the multiplication of the current Vector3 by the passed vector.
+	     */
+	    multiply(otherVector) {
+	        return new Vector3(this.x * otherVector.x, this.y * otherVector.y, this.z * otherVector.z);
+	    }
+	    /**
+	     * Multiplies the current Vector3 by the passed one and stores the result in the passed vector "result".
+	     * Returns the current Vector3.
+	     */
+	    multiplyToRef(otherVector, result) {
+	        result.x = this.x * otherVector.x;
+	        result.y = this.y * otherVector.y;
+	        result.z = this.z * otherVector.z;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Vector3 set witth the result of the mulliplication of the current Vector3 coordinates by the passed floats.
+	     */
+	    multiplyByFloats(x, y, z) {
+	        return new Vector3(this.x * x, this.y * y, this.z * z);
+	    }
+	    /**
+	     * Returns a new Vector3 set witth the result of the division of the current Vector3 coordinates by the passed ones.
+	     */
+	    divide(otherVector) {
+	        return new Vector3(this.x / otherVector.x, this.y / otherVector.y, this.z / otherVector.z);
+	    }
+	    /**
+	     * Divides the current Vector3 coordinates by the passed ones and stores the result in the passed vector "result".
+	     * Returns the current Vector3.
+	     */
+	    divideToRef(otherVector, result) {
+	        result.x = this.x / otherVector.x;
+	        result.y = this.y / otherVector.y;
+	        result.z = this.z / otherVector.z;
+	        return this;
+	    }
+	    /**
+	     * Updates the current Vector3 with the minimal coordinate values between its and the passed vector ones.
+	     * Returns the updated Vector3.
+	     */
+	    minimize(other) {
+	        if (other.x < this.x)
+	            this.x = other.x;
+	        if (other.y < this.y)
+	            this.y = other.y;
+	        if (other.z < this.z)
+	            this.z = other.z;
+	        return this;
+	    }
+	    /**
+	     * Updates the current Vector3 with the maximal coordinate values between its and the passed vector ones.
+	     * Returns the updated Vector3.
+	     */
+	    maximize(other) {
+	        if (other.x > this.x)
+	            this.x = other.x;
+	        if (other.y > this.y)
+	            this.y = other.y;
+	        if (other.z > this.z)
+	            this.z = other.z;
+	        return this;
+	    }
+	    // Properties
+	    /**
+	     * Returns the length of the Vector3 (float).
+	     */
+	    length() {
+	        return Math.sqrt(this.x * this.x + this.y * this.y + this.z * this.z);
+	    }
+	    /**
+	     * Returns the squared length of the Vector3 (float).
+	     */
+	    lengthSquared() {
+	        return (this.x * this.x + this.y * this.y + this.z * this.z);
+	    }
+	    // Methods
+	    /**
+	     * Normalize the current Vector3.
+	     * Returns the updated Vector3.
+	     */
+	    normalize() {
+	        var len = this.length();
+	        if (len === 0 || len === 1.0)
+	            return this;
+	        var num = 1.0 / len;
+	        this.x *= num;
+	        this.y *= num;
+	        this.z *= num;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Vector3 copied from the current Vector3.
+	     */
+	    clone(out) {
+	        out = out || new Vector3();
+	        out.x = this.x;
+	        out.y = this.y;
+	        out.z = this.z;
+	        return out;
+	    }
+	    /**
+	     * Copies the passed vector coordinates to the current Vector3 ones.
+	     * Returns the updated Vector3.
+	     */
+	    copy(source) {
+	        this.x = source.x;
+	        this.y = source.y;
+	        this.z = source.z;
+	        return this;
+	    }
+	    /**
+	     * Copies the passed floats to the current Vector3 coordinates.
+	     * Returns the updated Vector3.
+	     */
+	    set(x, y, z) {
+	        this.x = x;
+	        this.y = y;
+	        this.z = z;
+	        return this;
+	    }
+	    static GetClipFactor(vector0, vector1, axis, size) {
+	        var d0 = Vector3.Dot(vector0, axis) - size;
+	        var d1 = Vector3.Dot(vector1, axis) - size;
+	        return d0 / (d0 - d1);
+	    }
+	    /**
+	     * Returns a new Vector3 set from the index "offset" of the passed array or Float32Array.
+	     */
+	    static FromArray(array, offset) {
+	        if (!offset) {
+	            offset = 0;
+	        }
+	        return new Vector3(array[offset], array[offset + 1], array[offset + 2]);
+	    }
+	    /**
+	     * Returns a new Vector3 set from the index "offset" of the passed Float32Array.
+	     */
+	    static FromFloatArray(array, offset) {
+	        if (!offset) {
+	            offset = 0;
+	        }
+	        return new Vector3(array[offset], array[offset + 1], array[offset + 2]);
+	    }
+	    /**
+	     * Sets the passed vector "result" with the element values from the index "offset" of the passed array or Float32Array.
+	     */
+	    static FromArrayToRef(array, offset, result) {
+	        result.x = array[offset];
+	        result.y = array[offset + 1];
+	        result.z = array[offset + 2];
+	    }
+	    /**
+	     * Sets the passed vector "result" with the element values from the index "offset" of the passed Float32Array.
+	     */
+	    static FromFloatArrayToRef(array, offset, result) {
+	        result.x = array[offset];
+	        result.y = array[offset + 1];
+	        result.z = array[offset + 2];
+	    }
+	    /**
+	     * Sets the passed vector "result" with the passed floats.
+	     */
+	    static FromFloatsToRef(x, y, z, result) {
+	        result.x = x;
+	        result.y = y;
+	        result.z = z;
+	    }
+	    /**
+	     * Returns a new Vector3 set to (0.0, 0.0, 0.0).
+	     */
+	    static Zero() {
+	        return new Vector3(0.0, 0.0, 0.0);
+	    }
+	    /**
+	     * Returns a new Vector3 set to (0.0, 1.0, 0.0)
+	     */
+	    static Up() {
+	        return new Vector3(0.0, 1.0, 0.0);
+	    }
+	    /**
+	     * Returns a new Vector3 set to (0.0, 0.0, 1.0)
+	     */
+	    static Forward() {
+	        return new Vector3(0.0, 0.0, 1.0);
+	    }
+	    /**
+	     * Returns a new Vector3 set to (1.0, 0.0, 0.0)
+	     */
+	    static Right() {
+	        return new Vector3(1.0, 0.0, 0.0);
+	    }
+	    /**
+	     * Returns a new Vector3 set to (-1.0, 0.0, 0.0)
+	     */
+	    static Left() {
+	        return new Vector3(-1.0, 0.0, 0.0);
+	    }
+	    /**
+	     * Returns a new Vector3 set with the result of the transformation by the passed matrix of the passed vector.
+	     * This method computes tranformed coordinates only, not transformed direction vectors.
+	     */
+	    static TransformCoordinates(vector, transformation) {
+	        var result = Vector3.Zero();
+	        Vector3.TransformCoordinatesToRef(vector, transformation, result);
+	        return result;
+	    }
+	    /**
+	     * Sets the passed vector "result" coordinates with the result of the transformation by the passed matrix of the passed vector.
+	     * This method computes tranformed coordinates only, not transformed direction vectors.
+	     */
+	    static TransformCoordinatesToRef(vector, transformation, result) {
+	        var x = (vector.x * transformation.m[0]) + (vector.y * transformation.m[4]) + (vector.z * transformation.m[8]) + transformation.m[12];
+	        var y = (vector.x * transformation.m[1]) + (vector.y * transformation.m[5]) + (vector.z * transformation.m[9]) + transformation.m[13];
+	        var z = (vector.x * transformation.m[2]) + (vector.y * transformation.m[6]) + (vector.z * transformation.m[10]) + transformation.m[14];
+	        var w = (vector.x * transformation.m[3]) + (vector.y * transformation.m[7]) + (vector.z * transformation.m[11]) + transformation.m[15];
+	        result.x = x / w;
+	        result.y = y / w;
+	        result.z = z / w;
+	    }
+	    /**
+	     * Sets the passed vector "result" coordinates with the result of the transformation by the passed matrix of the passed floats (x, y, z).
+	     * This method computes tranformed coordinates only, not transformed direction vectors.
+	     */
+	    static TransformCoordinatesFromFloatsToRef(x, y, z, transformation, result) {
+	        var rx = (x * transformation.m[0]) + (y * transformation.m[4]) + (z * transformation.m[8]) + transformation.m[12];
+	        var ry = (x * transformation.m[1]) + (y * transformation.m[5]) + (z * transformation.m[9]) + transformation.m[13];
+	        var rz = (x * transformation.m[2]) + (y * transformation.m[6]) + (z * transformation.m[10]) + transformation.m[14];
+	        var rw = (x * transformation.m[3]) + (y * transformation.m[7]) + (z * transformation.m[11]) + transformation.m[15];
+	        result.x = rx / rw;
+	        result.y = ry / rw;
+	        result.z = rz / rw;
+	    }
+	    /**
+	     * Returns a new Vector3 set with the result of the normal transformation by the passed matrix of the passed vector.
+	     * This methods computes transformed normalized direction vectors only.
+	     */
+	    static TransformNormal(vector, transformation) {
+	        var result = Vector3.Zero();
+	        Vector3.TransformNormalToRef(vector, transformation, result);
+	        return result;
+	    }
+	    /**
+	     * Sets the passed vector "result" with the result of the normal transformation by the passed matrix of the passed vector.
+	     * This methods computes transformed normalized direction vectors only.
+	     */
+	    static TransformNormalToRef(vector, transformation, result) {
+	        var x = (vector.x * transformation.m[0]) + (vector.y * transformation.m[4]) + (vector.z * transformation.m[8]);
+	        var y = (vector.x * transformation.m[1]) + (vector.y * transformation.m[5]) + (vector.z * transformation.m[9]);
+	        var z = (vector.x * transformation.m[2]) + (vector.y * transformation.m[6]) + (vector.z * transformation.m[10]);
+	        result.x = x;
+	        result.y = y;
+	        result.z = z;
+	    }
+	    /**
+	     * Sets the passed vector "result" with the result of the normal transformation by the passed matrix of the passed floats (x, y, z).
+	     * This methods computes transformed normalized direction vectors only.
+	     */
+	    static TransformNormalFromFloatsToRef(x, y, z, transformation, result) {
+	        result.x = (x * transformation.m[0]) + (y * transformation.m[4]) + (z * transformation.m[8]);
+	        result.y = (x * transformation.m[1]) + (y * transformation.m[5]) + (z * transformation.m[9]);
+	        result.z = (x * transformation.m[2]) + (y * transformation.m[6]) + (z * transformation.m[10]);
+	    }
+	    /**
+	     * Returns a new Vector3 located for "amount" on the CatmullRom interpolation spline defined by the vectors "value1", "value2", "value3", "value4".
+	     */
+	    static CatmullRom(value1, value2, value3, value4, amount) {
+	        var squared = amount * amount;
+	        var cubed = amount * squared;
+	        var x = 0.5 * ((((2.0 * value2.x) + ((-value1.x + value3.x) * amount)) +
+	            (((((2.0 * value1.x) - (5.0 * value2.x)) + (4.0 * value3.x)) - value4.x) * squared)) +
+	            ((((-value1.x + (3.0 * value2.x)) - (3.0 * value3.x)) + value4.x) * cubed));
+	        var y = 0.5 * ((((2.0 * value2.y) + ((-value1.y + value3.y) * amount)) +
+	            (((((2.0 * value1.y) - (5.0 * value2.y)) + (4.0 * value3.y)) - value4.y) * squared)) +
+	            ((((-value1.y + (3.0 * value2.y)) - (3.0 * value3.y)) + value4.y) * cubed));
+	        var z = 0.5 * ((((2.0 * value2.z) + ((-value1.z + value3.z) * amount)) +
+	            (((((2.0 * value1.z) - (5.0 * value2.z)) + (4.0 * value3.z)) - value4.z) * squared)) +
+	            ((((-value1.z + (3.0 * value2.z)) - (3.0 * value3.z)) + value4.z) * cubed));
+	        return new Vector3(x, y, z);
+	    }
+	    /**
+	     * Returns a new Vector3 set with the coordinates of "value", if the vector "value" is in the cube defined by the vectors "min" and "max".
+	     * If a coordinate value of "value" is lower than one of the "min" coordinate, then this "value" coordinate is set with the "min" one.
+	     * If a coordinate value of "value" is greater than one of the "max" coordinate, then this "value" coordinate is set with the "max" one.
+	     */
+	    static Clamp(value, min, max) {
+	        var x = value.x;
+	        x = (x > max.x) ? max.x : x;
+	        x = (x < min.x) ? min.x : x;
+	        var y = value.y;
+	        y = (y > max.y) ? max.y : y;
+	        y = (y < min.y) ? min.y : y;
+	        var z = value.z;
+	        z = (z > max.z) ? max.z : z;
+	        z = (z < min.z) ? min.z : z;
+	        return new Vector3(x, y, z);
+	    }
+	    /**
+	     * Returns a new Vector3 located for "amount" (float) on the Hermite interpolation spline defined by the vectors "value1", "tangent1", "value2", "tangent2".
+	     */
+	    static Hermite(value1, tangent1, value2, tangent2, amount) {
+	        var squared = amount * amount;
+	        var cubed = amount * squared;
+	        var part1 = ((2.0 * cubed) - (3.0 * squared)) + 1.0;
+	        var part2 = (-2.0 * cubed) + (3.0 * squared);
+	        var part3 = (cubed - (2.0 * squared)) + amount;
+	        var part4 = cubed - squared;
+	        var x = (((value1.x * part1) + (value2.x * part2)) + (tangent1.x * part3)) + (tangent2.x * part4);
+	        var y = (((value1.y * part1) + (value2.y * part2)) + (tangent1.y * part3)) + (tangent2.y * part4);
+	        var z = (((value1.z * part1) + (value2.z * part2)) + (tangent1.z * part3)) + (tangent2.z * part4);
+	        return new Vector3(x, y, z);
+	    }
+	    /**
+	     * Returns a new Vector3 located for "amount" (float) on the linear interpolation between the vectors "start" and "end".
+	     */
+	    static Lerp(start, end, amount) {
+	        var result = new Vector3(0, 0, 0);
+	        Vector3.LerpToRef(start, end, amount, result);
+	        return result;
+	    }
+	    /**
+	     * Sets the passed vector "result" with the result of the linear interpolation from the vector "start" for "amount" to the vector "end".
+	     */
+	    static LerpToRef(start, end, amount, result) {
+	        result.x = start.x + ((end.x - start.x) * amount);
+	        result.y = start.y + ((end.y - start.y) * amount);
+	        result.z = start.z + ((end.z - start.z) * amount);
+	    }
+	    /**
+	     * Returns the dot product (float) between the vectors "left" and "right".
+	     */
+	    static Dot(left, right) {
+	        return (left.x * right.x + left.y * right.y + left.z * right.z);
+	    }
+	    /**
+	     * Returns a new Vector3 as the cross product of the vectors "left" and "right".
+	     * The cross product is then orthogonal to both "left" and "right".
+	     */
+	    static Cross(left, right) {
+	        var result = Vector3.Zero();
+	        Vector3.CrossToRef(left, right, result);
+	        return result;
+	    }
+	    /**
+	     * Sets the passed vector "result" with the cross product of "left" and "right".
+	     * The cross product is then orthogonal to both "left" and "right".
+	     */
+	    static CrossToRef(left, right, result) {
+	        result.x = left.y * right.z - left.z * right.y;
+	        result.y = left.z * right.x - left.x * right.z;
+	        result.z = left.x * right.y - left.y * right.x;
+	    }
+	    /**
+	     * Returns a new Vector3 as the normalization of the passed vector.
+	     */
+	    static Normalize(vector) {
+	        var result = Vector3.Zero();
+	        Vector3.NormalizeToRef(vector, result);
+	        return result;
+	    }
+	    /**
+	     * Sets the passed vector "result" with the normalization of the passed first vector.
+	     */
+	    static NormalizeToRef(vector, result) {
+	        result.copy(vector);
+	        result.normalize();
+	    }
+	    static minimize(left, right) {
+	        var min = left.clone();
+	        min.minimize(right);
+	        return min;
+	    }
+	    static Maximize(left, right) {
+	        var max = left.clone();
+	        max.maximize(right);
+	        return max;
+	    }
+	    /**
+	     * Returns the distance (float) between the vectors "value1" and "value2".
+	     */
+	    static Distance(value1, value2) {
+	        return Math.sqrt(Vector3.DistanceSquared(value1, value2));
+	    }
+	    /**
+	     * Returns the squared distance (float) between the vectors "value1" and "value2".
+	     */
+	    static DistanceSquared(value1, value2) {
+	        var x = value1.x - value2.x;
+	        var y = value1.y - value2.y;
+	        var z = value1.z - value2.z;
+	        return (x * x) + (y * y) + (z * z);
+	    }
+	    /**
+	     * Returns a new Vector3 located at the center between "value1" and "value2".
+	     */
+	    static Center(value1, value2) {
+	        var center = value1.add(value2);
+	        center.scaleInPlace(0.5);
+	        return center;
+	    }
+	    /**
+	     * Given three orthogonal normalized left-handed oriented Vector3 axis in space (target system),
+	     * RotationFromAxis() returns the rotation Euler angles (ex : rotation.x, rotation.y, rotation.z) to apply
+	     * to something in order to rotate it from its local system to the given target system.
+	     * Note : axis1, axis2 and axis3 are normalized during this operation.
+	     * Returns a new Vector3.
+	     */
+	    static RotationFromAxis(axis1, axis2, axis3) {
+	        var rotation = Vector3.Zero();
+	        Vector3.RotationFromAxisToRef(axis1, axis2, axis3, rotation);
+	        return rotation;
+	    }
+	    /**
+	     * The same than RotationFromAxis but updates the passed ref Vector3 parameter instead of returning a new Vector3.
+	     */
+	    static RotationFromAxisToRef(axis1, axis2, axis3, ref) {
+	        var quat = quaternion_1.Quaternion.Identity();
+	        quaternion_1.Quaternion.RotationQuaternionFromAxisToRef(axis1, axis2, axis3, quat);
+	        quat.toEulerAnglesToRef(ref);
+	    }
+	}
+	exports.Vector3 = Vector3;
+
+
+/***/ },
+/* 28 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const matrix_1 = __webpack_require__(29);
+	const vector3_1 = __webpack_require__(27);
+	class Quaternion {
+	    /**
+	     * Creates a new Quaternion from the passed floats.
+	     */
+	    constructor(x = 0.0, y = 0.0, z = 0.0, w = 1.0) {
+	        this.x = x;
+	        this.y = y;
+	        this.z = z;
+	        this.w = w;
+	    }
+	    /**
+	     * Returns a string with the Quaternion coordinates.
+	     */
+	    toString() {
+	        return "{X: " + this.x + " Y:" + this.y + " Z:" + this.z + " W:" + this.w + "}";
+	    }
+	    /**
+	     * Returns the string "Quaternion".
+	     */
+	    getClassName() {
+	        return "Quaternion";
+	    }
+	    /**
+	     * Returns the Quaternion hash code.
+	     */
+	    getHashCode() {
+	        let hash = this.x || 0;
+	        hash = (hash * 397) ^ (this.y || 0);
+	        hash = (hash * 397) ^ (this.z || 0);
+	        hash = (hash * 397) ^ (this.w || 0);
+	        return hash;
+	    }
+	    /**
+	     * Returns a new array populated with 4 elements : the Quaternion coordinates.
+	     */
+	    asArray() {
+	        return [this.x, this.y, this.z, this.w];
+	    }
+	    /**
+	     * Boolean : True if the current Quaterion and the passed one coordinates are strictly equal.
+	     */
+	    equals(otherQuaternion) {
+	        return otherQuaternion && this.x === otherQuaternion.x && this.y === otherQuaternion.y && this.z === otherQuaternion.z && this.w === otherQuaternion.w;
+	    }
+	    /**
+	     * Returns a new Quaternion copied from the current one.
+	     */
+	    clone() {
+	        return new Quaternion(this.x, this.y, this.z, this.w);
+	    }
+	    /**
+	     * Updates the current Quaternion from the passed one coordinates.
+	     * Returns the updated Quaterion.
+	     */
+	    copyFrom(other) {
+	        this.x = other.x;
+	        this.y = other.y;
+	        this.z = other.z;
+	        this.w = other.w;
+	        return this;
+	    }
+	    /**
+	     * Updates the current Quaternion from the passed float coordinates.
+	     * Returns the updated Quaterion.
+	     */
+	    copyFromFloats(x, y, z, w) {
+	        this.x = x;
+	        this.y = y;
+	        this.z = z;
+	        this.w = w;
+	        return this;
+	    }
+	    /**
+	     * Updates the current Quaternion from the passed float coordinates.
+	     * Returns the updated Quaterion.
+	     */
+	    set(x, y, z, w) {
+	        return this.copyFromFloats(x, y, z, w);
+	    }
+	    /**
+	     * Returns a new Quaternion as the addition result of the passed one and the current Quaternion.
+	     */
+	    add(other) {
+	        return new Quaternion(this.x + other.x, this.y + other.y, this.z + other.z, this.w + other.w);
+	    }
+	    /**
+	     * Returns a new Quaternion as the subtraction result of the passed one from the current Quaternion.
+	     */
+	    subtract(other) {
+	        return new Quaternion(this.x - other.x, this.y - other.y, this.z - other.z, this.w - other.w);
+	    }
+	    /**
+	     * Returns a new Quaternion set by multiplying the current Quaterion coordinates by the float "scale".
+	     */
+	    scale(value) {
+	        return new Quaternion(this.x * value, this.y * value, this.z * value, this.w * value);
+	    }
+	    /**
+	     * Returns a new Quaternion set as the quaternion mulplication result of the current one with the passed one "q1".
+	     */
+	    multiply(q1) {
+	        var result = new Quaternion(0, 0, 0, 1.0);
+	        this.multiplyToRef(q1, result);
+	        return result;
+	    }
+	    /**
+	     * Sets the passed "result" as the quaternion mulplication result of the current one with the passed one "q1".
+	     * Returns the current Quaternion.
+	     */
+	    multiplyToRef(q1, result) {
+	        var x = this.x * q1.w + this.y * q1.z - this.z * q1.y + this.w * q1.x;
+	        var y = -this.x * q1.z + this.y * q1.w + this.z * q1.x + this.w * q1.y;
+	        var z = this.x * q1.y - this.y * q1.x + this.z * q1.w + this.w * q1.z;
+	        var w = -this.x * q1.x - this.y * q1.y - this.z * q1.z + this.w * q1.w;
+	        result.copyFromFloats(x, y, z, w);
+	        return this;
+	    }
+	    /**
+	     * Updates the current Quaternion with the quaternion mulplication result of itself with the passed one "q1".
+	     * Returns the updated Quaternion.
+	     */
+	    multiplyInPlace(q1) {
+	        this.multiplyToRef(q1, this);
+	        return this;
+	    }
+	    /**
+	     * Sets the passed "ref" with the conjugation of the current Quaternion.
+	     * Returns the current Quaternion.
+	     */
+	    conjugateToRef(ref) {
+	        ref.copyFromFloats(-this.x, -this.y, -this.z, this.w);
+	        return this;
+	    }
+	    /**
+	     * Conjugates in place the current Quaternion.
+	     * Returns the updated Quaternion.
+	     */
+	    conjugateInPlace() {
+	        this.x *= -1;
+	        this.y *= -1;
+	        this.z *= -1;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Quaternion as the conjugate of the current Quaternion.
+	     */
+	    conjugate() {
+	        var result = new Quaternion(-this.x, -this.y, -this.z, this.w);
+	        return result;
+	    }
+	    /**
+	     * Returns the Quaternion length (float).
+	     */
+	    length() {
+	        return Math.sqrt((this.x * this.x) + (this.y * this.y) + (this.z * this.z) + (this.w * this.w));
+	    }
+	    /**
+	     * Normalize in place the current Quaternion.
+	     * Returns the updated Quaternion.
+	     */
+	    normalize() {
+	        var length = 1.0 / this.length();
+	        this.x *= length;
+	        this.y *= length;
+	        this.z *= length;
+	        this.w *= length;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Vector3 set with the Euler angles translated from the current Quaternion.
+	     */
+	    toEulerAngles(order = "YZX") {
+	        var result = vector3_1.Vector3.Zero();
+	        this.toEulerAnglesToRef(result, order);
+	        return result;
+	    }
+	    /**
+	     * Sets the passed vector3 "result" with the Euler angles translated from the current Quaternion.
+	     * Returns the current Quaternion.
+	     */
+	    toEulerAnglesToRef(result, order = "YZX") {
+	        var qz = this.z;
+	        var qx = this.x;
+	        var qy = this.y;
+	        var qw = this.w;
+	        var sqw = qw * qw;
+	        var sqz = qz * qz;
+	        var sqx = qx * qx;
+	        var sqy = qy * qy;
+	        var zAxisY = qy * qz - qx * qw;
+	        var limit = .4999999;
+	        if (zAxisY < -limit) {
+	            result.y = 2 * Math.atan2(qy, qw);
+	            result.x = Math.PI / 2;
+	            result.z = 0;
+	        }
+	        else if (zAxisY > limit) {
+	            result.y = 2 * Math.atan2(qy, qw);
+	            result.x = -Math.PI / 2;
+	            result.z = 0;
+	        }
+	        else {
+	            result.z = Math.atan2(2.0 * (qx * qy + qz * qw), (-sqz - sqx + sqy + sqw));
+	            result.x = Math.asin(-2.0 * (qz * qy - qx * qw));
+	            result.y = Math.atan2(2.0 * (qz * qx + qy * qw), (sqz - sqx - sqy + sqw));
+	        }
+	        return this;
+	    }
+	    /**
+	     * Updates the passed rotation matrix with the current Quaternion values.
+	     * Returns the current Quaternion.
+	     */
+	    toRotationMatrix(result) {
+	        var xx = this.x * this.x;
+	        var yy = this.y * this.y;
+	        var zz = this.z * this.z;
+	        var xy = this.x * this.y;
+	        var zw = this.z * this.w;
+	        var zx = this.z * this.x;
+	        var yw = this.y * this.w;
+	        var yz = this.y * this.z;
+	        var xw = this.x * this.w;
+	        result.m[0] = 1.0 - (2.0 * (yy + zz));
+	        result.m[1] = 2.0 * (xy + zw);
+	        result.m[2] = 2.0 * (zx - yw);
+	        result.m[3] = 0;
+	        result.m[4] = 2.0 * (xy - zw);
+	        result.m[5] = 1.0 - (2.0 * (zz + xx));
+	        result.m[6] = 2.0 * (yz + xw);
+	        result.m[7] = 0;
+	        result.m[8] = 2.0 * (zx + yw);
+	        result.m[9] = 2.0 * (yz - xw);
+	        result.m[10] = 1.0 - (2.0 * (yy + xx));
+	        result.m[11] = 0;
+	        result.m[12] = 0;
+	        result.m[13] = 0;
+	        result.m[14] = 0;
+	        result.m[15] = 1.0;
+	        return this;
+	    }
+	    /**
+	     * Updates the current Quaternion from the passed rotation matrix values.
+	     * Returns the updated Quaternion.
+	     */
+	    fromRotationMatrix(matrix) {
+	        Quaternion.FromRotationMatrixToRef(matrix, this);
+	        return this;
+	    }
+	    // Statics
+	    /**
+	     * Returns a new Quaternion set from the passed rotation matrix values.
+	     */
+	    static FromRotationMatrix(matrix) {
+	        var result = new Quaternion();
+	        Quaternion.FromRotationMatrixToRef(matrix, result);
+	        return result;
+	    }
+	    /**
+	     * Updates the passed quaternion "result" with the passed rotation matrix values.
+	     */
+	    static FromRotationMatrixToRef(matrix, result) {
+	        var data = matrix.m;
+	        var m11 = data[0], m12 = data[4], m13 = data[8];
+	        var m21 = data[1], m22 = data[5], m23 = data[9];
+	        var m31 = data[2], m32 = data[6], m33 = data[10];
+	        var trace = m11 + m22 + m33;
+	        var s;
+	        if (trace > 0) {
+	            s = 0.5 / Math.sqrt(trace + 1.0);
+	            result.w = 0.25 / s;
+	            result.x = (m32 - m23) * s;
+	            result.y = (m13 - m31) * s;
+	            result.z = (m21 - m12) * s;
+	        }
+	        else if (m11 > m22 && m11 > m33) {
+	            s = 2.0 * Math.sqrt(1.0 + m11 - m22 - m33);
+	            result.w = (m32 - m23) / s;
+	            result.x = 0.25 * s;
+	            result.y = (m12 + m21) / s;
+	            result.z = (m13 + m31) / s;
+	        }
+	        else if (m22 > m33) {
+	            s = 2.0 * Math.sqrt(1.0 + m22 - m11 - m33);
+	            result.w = (m13 - m31) / s;
+	            result.x = (m12 + m21) / s;
+	            result.y = 0.25 * s;
+	            result.z = (m23 + m32) / s;
+	        }
+	        else {
+	            s = 2.0 * Math.sqrt(1.0 + m33 - m11 - m22);
+	            result.w = (m21 - m12) / s;
+	            result.x = (m13 + m31) / s;
+	            result.y = (m23 + m32) / s;
+	            result.z = 0.25 * s;
+	        }
+	    }
+	    /**
+	     * Returns a new Quaternion set to (0.0, 0.0, 0.0).
+	     */
+	    static Zero() {
+	        return new Quaternion(0.0, 0.0, 0.0, 0.0);
+	    }
+	    /**
+	     * Returns a new Quaternion as the inverted current Quaternion.
+	     */
+	    static Inverse(q) {
+	        return new Quaternion(-q.x, -q.y, -q.z, q.w);
+	    }
+	    /**
+	     * Returns the identity Quaternion.
+	     */
+	    static Identity() {
+	        return new Quaternion(0.0, 0.0, 0.0, 1.0);
+	    }
+	    static IsIdentity(quaternion) {
+	        return quaternion && quaternion.x === 0 && quaternion.y === 0 && quaternion.z === 0 && quaternion.w === 1;
+	    }
+	    /**
+	     * Returns a new Quaternion set from the passed axis (Vector3) and angle in radians (float).
+	     */
+	    static RotationAxis(axis, angle) {
+	        return Quaternion.RotationAxisToRef(axis, angle, new Quaternion());
+	    }
+	    /**
+	     * Sets the passed quaternion "result" from the passed axis (Vector3) and angle in radians (float).
+	     */
+	    static RotationAxisToRef(axis, angle, result) {
+	        var sin = Math.sin(angle / 2);
+	        axis.normalize();
+	        result.w = Math.cos(angle / 2);
+	        result.x = axis.x * sin;
+	        result.y = axis.y * sin;
+	        result.z = axis.z * sin;
+	        return result;
+	    }
+	    /**
+	     * Retuns a new Quaternion set from the starting index of the passed array.
+	     */
+	    static FromArray(array, offset) {
+	        if (!offset) {
+	            offset = 0;
+	        }
+	        return new Quaternion(array[offset], array[offset + 1], array[offset + 2], array[offset + 3]);
+	    }
+	    /**
+	     * Returns a new Quaternion set from the passed Euler float angles (y, x, z).
+	     */
+	    static RotationYawPitchRoll(yaw, pitch, roll) {
+	        var q = new Quaternion();
+	        Quaternion.RotationYawPitchRollToRef(yaw, pitch, roll, q);
+	        return q;
+	    }
+	    /**
+	     * Sets the passed quaternion "result" from the passed float Euler angles (y, x, z).
+	     */
+	    static RotationYawPitchRollToRef(yaw, pitch, roll, result) {
+	        // Produces a quaternion from Euler angles in the z-y-x orientation (Tait-Bryan angles)
+	        var halfRoll = roll * 0.5;
+	        var halfPitch = pitch * 0.5;
+	        var halfYaw = yaw * 0.5;
+	        var sinRoll = Math.sin(halfRoll);
+	        var cosRoll = Math.cos(halfRoll);
+	        var sinPitch = Math.sin(halfPitch);
+	        var cosPitch = Math.cos(halfPitch);
+	        var sinYaw = Math.sin(halfYaw);
+	        var cosYaw = Math.cos(halfYaw);
+	        result.x = (cosYaw * sinPitch * cosRoll) + (sinYaw * cosPitch * sinRoll);
+	        result.y = (sinYaw * cosPitch * cosRoll) - (cosYaw * sinPitch * sinRoll);
+	        result.z = (cosYaw * cosPitch * sinRoll) - (sinYaw * sinPitch * cosRoll);
+	        result.w = (cosYaw * cosPitch * cosRoll) + (sinYaw * sinPitch * sinRoll);
+	    }
+	    /**
+	     * Returns a new Quaternion from the passed float Euler angles expressed in z-x-z orientation
+	     */
+	    static RotationAlphaBetaGamma(alpha, beta, gamma) {
+	        var result = new Quaternion();
+	        Quaternion.RotationAlphaBetaGammaToRef(alpha, beta, gamma, result);
+	        return result;
+	    }
+	    /**
+	     * Sets the passed quaternion "result" from the passed float Euler angles expressed in z-x-z orientation
+	     */
+	    static RotationAlphaBetaGammaToRef(alpha, beta, gamma, result) {
+	        // Produces a quaternion from Euler angles in the z-x-z orientation
+	        var halfGammaPlusAlpha = (gamma + alpha) * 0.5;
+	        var halfGammaMinusAlpha = (gamma - alpha) * 0.5;
+	        var halfBeta = beta * 0.5;
+	        result.x = Math.cos(halfGammaMinusAlpha) * Math.sin(halfBeta);
+	        result.y = Math.sin(halfGammaMinusAlpha) * Math.sin(halfBeta);
+	        result.z = Math.sin(halfGammaPlusAlpha) * Math.cos(halfBeta);
+	        result.w = Math.cos(halfGammaPlusAlpha) * Math.cos(halfBeta);
+	    }
+	    /**
+	     * Returns a new Quaternion as the quaternion rotation value to reach the target (axis1, axis2, axis3) orientation as a rotated XYZ system.
+	     * cf to Vector3.RotationFromAxis() documentation.
+	     * Note : axis1, axis2 and axis3 are normalized during this operation.
+	     */
+	    static RotationQuaternionFromAxis(axis1, axis2, axis3, ref) {
+	        var quat = new Quaternion(0.0, 0.0, 0.0, 0.0);
+	        Quaternion.RotationQuaternionFromAxisToRef(axis1, axis2, axis3, quat);
+	        return quat;
+	    }
+	    /**
+	     * Sets the passed quaternion "ref" with the quaternion rotation value to reach the target (axis1, axis2, axis3) orientation as a rotated XYZ system.
+	     * cf to Vector3.RotationFromAxis() documentation.
+	     * Note : axis1, axis2 and axis3 are normalized during this operation.
+	     */
+	    static RotationQuaternionFromAxisToRef(axis1, axis2, axis3, ref) {
+	        var rotMat = matrix_1.Matrix.Identity();
+	        matrix_1.Matrix.FromXYZAxesToRef(axis1.normalize(), axis2.normalize(), axis3.normalize(), rotMat);
+	        Quaternion.FromRotationMatrixToRef(rotMat, ref);
+	    }
+	    static Slerp(left, right, amount) {
+	        var result = Quaternion.Identity();
+	        Quaternion.SlerpToRef(left, right, amount, result);
+	        return result;
+	    }
+	    static SlerpToRef(left, right, amount, result) {
+	        var num2;
+	        var num3;
+	        var num = amount;
+	        var num4 = (((left.x * right.x) + (left.y * right.y)) + (left.z * right.z)) + (left.w * right.w);
+	        var flag = false;
+	        if (num4 < 0) {
+	            flag = true;
+	            num4 = -num4;
+	        }
+	        if (num4 > 0.999999) {
+	            num3 = 1 - num;
+	            num2 = flag ? -num : num;
+	        }
+	        else {
+	            var num5 = Math.acos(num4);
+	            var num6 = (1.0 / Math.sin(num5));
+	            num3 = (Math.sin((1.0 - num) * num5)) * num6;
+	            num2 = flag ? ((-Math.sin(num * num5)) * num6) : ((Math.sin(num * num5)) * num6);
+	        }
+	        result.x = (num3 * left.x) + (num2 * right.x);
+	        result.y = (num3 * left.y) + (num2 * right.y);
+	        result.z = (num3 * left.z) + (num2 * right.z);
+	        result.w = (num3 * left.w) + (num2 * right.w);
+	    }
+	}
+	exports.Quaternion = Quaternion;
+
+
+/***/ },
+/* 29 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const math_util_1 = __webpack_require__(30);
+	const quaternion_1 = __webpack_require__(28);
+	const vector3_1 = __webpack_require__(27);
+	const vector4_1 = __webpack_require__(31);
+	exports.ToGammaSpace = 1 / 2.2;
+	exports.ToLinearSpace = 2.2;
+	exports.Epsilon = 0.001;
+	class Matrix {
+	    constructor() {
+	        this.m = new Float32Array(16);
+	        // public static getCSSMatrix(source : Matrix) {
+	        //     const m = source.m;
+	        //     // matrix.m[0], matrix.m[1], matrix.m[2],
+	        //     // matrix.m[4], matrix.m[5], matrix.m[6],
+	        //     // matrix.m[8], matrix.m[9], matrix.m[10]
+	        //     return {
+	        //         a: m[0],
+	        //         b: m[1],
+	        //         c: m[5],
+	        //         d: m[6],
+	        //         tx: m[12],
+	        //         ty: m[13]
+	        //     }
+	        // }
+	    }
+	    // Properties
+	    /**
+	     * Boolean : True is the matrix is the identity matrix
+	     */
+	    isIdentity() {
+	        if (this.m[0] !== 1.0 || this.m[5] !== 1.0 || this.m[10] !== 1.0 || this.m[15] !== 1.0)
+	            return false;
+	        return !(this.m[1] !== 0.0 || this.m[2] !== 0.0 || this.m[3] !== 0.0 ||
+	            this.m[4] !== 0.0 || this.m[6] !== 0.0 || this.m[7] !== 0.0 ||
+	            this.m[8] !== 0.0 || this.m[9] !== 0.0 || this.m[11] !== 0.0 ||
+	            this.m[12] !== 0.0 || this.m[13] !== 0.0 || this.m[14] !== 0.0);
+	    }
+	    /**
+	     * Returns the matrix determinant (float).
+	     */
+	    determinant() {
+	        var temp1 = (this.m[10] * this.m[15]) - (this.m[11] * this.m[14]);
+	        var temp2 = (this.m[9] * this.m[15]) - (this.m[11] * this.m[13]);
+	        var temp3 = (this.m[9] * this.m[14]) - (this.m[10] * this.m[13]);
+	        var temp4 = (this.m[8] * this.m[15]) - (this.m[11] * this.m[12]);
+	        var temp5 = (this.m[8] * this.m[14]) - (this.m[10] * this.m[12]);
+	        var temp6 = (this.m[8] * this.m[13]) - (this.m[9] * this.m[12]);
+	        return ((((this.m[0] * (((this.m[5] * temp1) - (this.m[6] * temp2)) + (this.m[7] * temp3))) - (this.m[1] * (((this.m[4] * temp1) -
+	            (this.m[6] * temp4)) + (this.m[7] * temp5)))) + (this.m[2] * (((this.m[4] * temp2) - (this.m[5] * temp4)) + (this.m[7] * temp6)))) -
+	            (this.m[3] * (((this.m[4] * temp3) - (this.m[5] * temp5)) + (this.m[6] * temp6))));
+	    }
+	    // Methods
+	    /**
+	     * Returns the matrix underlying array.
+	     */
+	    toArray() {
+	        return this.m;
+	    }
+	    /**
+	     * Returns the matrix underlying array.
+	     */
+	    asArray() {
+	        return this.toArray();
+	    }
+	    /**
+	     * Inverts in place the Matrix.
+	     * Returns the Matrix inverted.
+	     */
+	    invert() {
+	        this.invertToRef(this);
+	        return this;
+	    }
+	    /**
+	     * Sets all the matrix elements to zero.
+	     * Returns the Matrix.
+	     */
+	    reset() {
+	        for (var index = 0; index < 16; index++) {
+	            this.m[index] = 0.0;
+	        }
+	        return this;
+	    }
+	    /**
+	     * Returns a new Matrix as the addition result of the current Matrix and the passed one.
+	     */
+	    add(other) {
+	        var result = new Matrix();
+	        this.addToRef(other, result);
+	        return result;
+	    }
+	    /**
+	     * Sets the passed matrix "result" with the addition result of the current Matrix and the passed one.
+	     * Returns the Matrix.
+	     */
+	    addToRef(other, result) {
+	        for (var index = 0; index < 16; index++) {
+	            result.m[index] = this.m[index] + other.m[index];
+	        }
+	        return this;
+	    }
+	    /**
+	     * Adds in place the passed matrix to the current Matrix.
+	     * Returns the updated Matrix.
+	     */
+	    addToSelf(other) {
+	        for (var index = 0; index < 16; index++) {
+	            this.m[index] += other.m[index];
+	        }
+	        return this;
+	    }
+	    /**
+	     * Sets the passed matrix with the current inverted Matrix.
+	     * Returns the unmodified current Matrix.
+	     */
+	    invertToRef(other) {
+	        var l1 = this.m[0];
+	        var l2 = this.m[1];
+	        var l3 = this.m[2];
+	        var l4 = this.m[3];
+	        var l5 = this.m[4];
+	        var l6 = this.m[5];
+	        var l7 = this.m[6];
+	        var l8 = this.m[7];
+	        var l9 = this.m[8];
+	        var l10 = this.m[9];
+	        var l11 = this.m[10];
+	        var l12 = this.m[11];
+	        var l13 = this.m[12];
+	        var l14 = this.m[13];
+	        var l15 = this.m[14];
+	        var l16 = this.m[15];
+	        var l17 = (l11 * l16) - (l12 * l15);
+	        var l18 = (l10 * l16) - (l12 * l14);
+	        var l19 = (l10 * l15) - (l11 * l14);
+	        var l20 = (l9 * l16) - (l12 * l13);
+	        var l21 = (l9 * l15) - (l11 * l13);
+	        var l22 = (l9 * l14) - (l10 * l13);
+	        var l23 = ((l6 * l17) - (l7 * l18)) + (l8 * l19);
+	        var l24 = -(((l5 * l17) - (l7 * l20)) + (l8 * l21));
+	        var l25 = ((l5 * l18) - (l6 * l20)) + (l8 * l22);
+	        var l26 = -(((l5 * l19) - (l6 * l21)) + (l7 * l22));
+	        var l27 = 1.0 / ((((l1 * l23) + (l2 * l24)) + (l3 * l25)) + (l4 * l26));
+	        var l28 = (l7 * l16) - (l8 * l15);
+	        var l29 = (l6 * l16) - (l8 * l14);
+	        var l30 = (l6 * l15) - (l7 * l14);
+	        var l31 = (l5 * l16) - (l8 * l13);
+	        var l32 = (l5 * l15) - (l7 * l13);
+	        var l33 = (l5 * l14) - (l6 * l13);
+	        var l34 = (l7 * l12) - (l8 * l11);
+	        var l35 = (l6 * l12) - (l8 * l10);
+	        var l36 = (l6 * l11) - (l7 * l10);
+	        var l37 = (l5 * l12) - (l8 * l9);
+	        var l38 = (l5 * l11) - (l7 * l9);
+	        var l39 = (l5 * l10) - (l6 * l9);
+	        other.m[0] = l23 * l27;
+	        other.m[4] = l24 * l27;
+	        other.m[8] = l25 * l27;
+	        other.m[12] = l26 * l27;
+	        other.m[1] = -(((l2 * l17) - (l3 * l18)) + (l4 * l19)) * l27;
+	        other.m[5] = (((l1 * l17) - (l3 * l20)) + (l4 * l21)) * l27;
+	        other.m[9] = -(((l1 * l18) - (l2 * l20)) + (l4 * l22)) * l27;
+	        other.m[13] = (((l1 * l19) - (l2 * l21)) + (l3 * l22)) * l27;
+	        other.m[2] = (((l2 * l28) - (l3 * l29)) + (l4 * l30)) * l27;
+	        other.m[6] = -(((l1 * l28) - (l3 * l31)) + (l4 * l32)) * l27;
+	        other.m[10] = (((l1 * l29) - (l2 * l31)) + (l4 * l33)) * l27;
+	        other.m[14] = -(((l1 * l30) - (l2 * l32)) + (l3 * l33)) * l27;
+	        other.m[3] = -(((l2 * l34) - (l3 * l35)) + (l4 * l36)) * l27;
+	        other.m[7] = (((l1 * l34) - (l3 * l37)) + (l4 * l38)) * l27;
+	        other.m[11] = -(((l1 * l35) - (l2 * l37)) + (l4 * l39)) * l27;
+	        other.m[15] = (((l1 * l36) - (l2 * l38)) + (l3 * l39)) * l27;
+	        return this;
+	    }
+	    /**
+	     * Inserts the translation vector (using 3 x floats) in the current Matrix.
+	     * Returns the updated Matrix.
+	     */
+	    setTranslationFromFloats(x, y, z) {
+	        this.m[12] = x;
+	        this.m[13] = y;
+	        this.m[14] = z;
+	        return this;
+	    }
+	    /**
+	     * Inserts the translation vector in the current Matrix.
+	     * Returns the updated Matrix.
+	     */
+	    setTranslation(vector3) {
+	        this.m[12] = vector3.x;
+	        this.m[13] = vector3.y;
+	        this.m[14] = vector3.z;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Vector3 as the extracted translation from the Matrix.
+	     */
+	    getTranslation() {
+	        return new vector3_1.Vector3(this.m[12], this.m[13], this.m[14]);
+	    }
+	    /**
+	     * Fill a Vector3 with the extracted translation from the Matrix.
+	     */
+	    getTranslationToRef(result) {
+	        result.x = this.m[12];
+	        result.y = this.m[13];
+	        result.z = this.m[14];
+	        return this;
+	    }
+	    /**
+	     * Remove rotation and scaling part from the Matrix.
+	     * Returns the updated Matrix.
+	     */
+	    removeRotationAndScaling() {
+	        this.setRowFromFloats(0, 1, 0, 0, 0);
+	        this.setRowFromFloats(1, 0, 1, 0, 0);
+	        this.setRowFromFloats(2, 0, 0, 1, 0);
+	        return this;
+	    }
+	    /**
+	     * Returns a new Matrix set with the multiplication result of the current Matrix and the passed one.
+	     */
+	    multiply(other) {
+	        var result = new Matrix();
+	        this.multiplyToRef(other, result);
+	        return result;
+	    }
+	    /**
+	     * Updates the current Matrix from the passed one values.
+	     * Returns the updated Matrix.
+	     */
+	    copyFrom(other) {
+	        for (var index = 0; index < 16; index++) {
+	            this.m[index] = other.m[index];
+	        }
+	        return this;
+	    }
+	    /**
+	     * Populates the passed array from the starting index with the Matrix values.
+	     * Returns the Matrix.
+	     */
+	    copyToArray(array, offset = 0) {
+	        for (var index = 0; index < 16; index++) {
+	            array[offset + index] = this.m[index];
+	        }
+	        return this;
+	    }
+	    /**
+	     * Sets the passed matrix "result" with the multiplication result of the current Matrix and the passed one.
+	     */
+	    multiplyToRef(other, result) {
+	        this.multiplyToArray(other, result.m, 0);
+	        return this;
+	    }
+	    /**
+	     * Sets the Float32Array "result" from the passed index "offset" with the multiplication result of the current Matrix and the passed one.
+	     */
+	    multiplyToArray(other, result, offset) {
+	        var tm0 = this.m[0];
+	        var tm1 = this.m[1];
+	        var tm2 = this.m[2];
+	        var tm3 = this.m[3];
+	        var tm4 = this.m[4];
+	        var tm5 = this.m[5];
+	        var tm6 = this.m[6];
+	        var tm7 = this.m[7];
+	        var tm8 = this.m[8];
+	        var tm9 = this.m[9];
+	        var tm10 = this.m[10];
+	        var tm11 = this.m[11];
+	        var tm12 = this.m[12];
+	        var tm13 = this.m[13];
+	        var tm14 = this.m[14];
+	        var tm15 = this.m[15];
+	        var om0 = other.m[0];
+	        var om1 = other.m[1];
+	        var om2 = other.m[2];
+	        var om3 = other.m[3];
+	        var om4 = other.m[4];
+	        var om5 = other.m[5];
+	        var om6 = other.m[6];
+	        var om7 = other.m[7];
+	        var om8 = other.m[8];
+	        var om9 = other.m[9];
+	        var om10 = other.m[10];
+	        var om11 = other.m[11];
+	        var om12 = other.m[12];
+	        var om13 = other.m[13];
+	        var om14 = other.m[14];
+	        var om15 = other.m[15];
+	        result[offset] = tm0 * om0 + tm1 * om4 + tm2 * om8 + tm3 * om12;
+	        result[offset + 1] = tm0 * om1 + tm1 * om5 + tm2 * om9 + tm3 * om13;
+	        result[offset + 2] = tm0 * om2 + tm1 * om6 + tm2 * om10 + tm3 * om14;
+	        result[offset + 3] = tm0 * om3 + tm1 * om7 + tm2 * om11 + tm3 * om15;
+	        result[offset + 4] = tm4 * om0 + tm5 * om4 + tm6 * om8 + tm7 * om12;
+	        result[offset + 5] = tm4 * om1 + tm5 * om5 + tm6 * om9 + tm7 * om13;
+	        result[offset + 6] = tm4 * om2 + tm5 * om6 + tm6 * om10 + tm7 * om14;
+	        result[offset + 7] = tm4 * om3 + tm5 * om7 + tm6 * om11 + tm7 * om15;
+	        result[offset + 8] = tm8 * om0 + tm9 * om4 + tm10 * om8 + tm11 * om12;
+	        result[offset + 9] = tm8 * om1 + tm9 * om5 + tm10 * om9 + tm11 * om13;
+	        result[offset + 10] = tm8 * om2 + tm9 * om6 + tm10 * om10 + tm11 * om14;
+	        result[offset + 11] = tm8 * om3 + tm9 * om7 + tm10 * om11 + tm11 * om15;
+	        result[offset + 12] = tm12 * om0 + tm13 * om4 + tm14 * om8 + tm15 * om12;
+	        result[offset + 13] = tm12 * om1 + tm13 * om5 + tm14 * om9 + tm15 * om13;
+	        result[offset + 14] = tm12 * om2 + tm13 * om6 + tm14 * om10 + tm15 * om14;
+	        result[offset + 15] = tm12 * om3 + tm13 * om7 + tm14 * om11 + tm15 * om15;
+	        return this;
+	    }
+	    /**
+	     * Boolean : True is the current Matrix and the passed one values are strictly equal.
+	     */
+	    equals(value) {
+	        return value &&
+	            (this.m[0] === value.m[0] && this.m[1] === value.m[1] && this.m[2] === value.m[2] && this.m[3] === value.m[3] &&
+	                this.m[4] === value.m[4] && this.m[5] === value.m[5] && this.m[6] === value.m[6] && this.m[7] === value.m[7] &&
+	                this.m[8] === value.m[8] && this.m[9] === value.m[9] && this.m[10] === value.m[10] && this.m[11] === value.m[11] &&
+	                this.m[12] === value.m[12] && this.m[13] === value.m[13] && this.m[14] === value.m[14] && this.m[15] === value.m[15]);
+	    }
+	    /**
+	     * Returns a new Matrix from the current Matrix.
+	     */
+	    clone() {
+	        return Matrix.FromValues(this.m[0], this.m[1], this.m[2], this.m[3], this.m[4], this.m[5], this.m[6], this.m[7], this.m[8], this.m[9], this.m[10], this.m[11], this.m[12], this.m[13], this.m[14], this.m[15]);
+	    }
+	    /**
+	     * Returns the string "Matrix"
+	     */
+	    getClassName() {
+	        return "Matrix";
+	    }
+	    /**
+	     * Returns the Matrix hash code.
+	     */
+	    getHashCode() {
+	        let hash = this.m[0] || 0;
+	        for (let i = 1; i < 16; i++) {
+	            hash = (hash * 397) ^ (this.m[i] || 0);
+	        }
+	        return hash;
+	    }
+	    /**
+	     * Decomposes the current Matrix into :
+	     * - a scale vector3 passed as a reference to update,
+	     * - a rotation quaternion passed as a reference to update,
+	     * - a translation vector3 passed as a reference to update.
+	     * Returns the boolean `true`.
+	     */
+	    decompose(scale, rotation, translation) {
+	        translation.x = this.m[12];
+	        translation.y = this.m[13];
+	        translation.z = this.m[14];
+	        var xs = math_util_1.MathUtil.sign(this.m[0] * this.m[1] * this.m[2] * this.m[3]) < 0 ? -1 : 1;
+	        var ys = math_util_1.MathUtil.sign(this.m[4] * this.m[5] * this.m[6] * this.m[7]) < 0 ? -1 : 1;
+	        var zs = math_util_1.MathUtil.sign(this.m[8] * this.m[9] * this.m[10] * this.m[11]) < 0 ? -1 : 1;
+	        scale.x = xs * Math.sqrt(this.m[0] * this.m[0] + this.m[1] * this.m[1] + this.m[2] * this.m[2]);
+	        scale.y = ys * Math.sqrt(this.m[4] * this.m[4] + this.m[5] * this.m[5] + this.m[6] * this.m[6]);
+	        scale.z = zs * Math.sqrt(this.m[8] * this.m[8] + this.m[9] * this.m[9] + this.m[10] * this.m[10]);
+	        if (scale.x === 0 || scale.y === 0 || scale.z === 0) {
+	            rotation.x = 0;
+	            rotation.y = 0;
+	            rotation.z = 0;
+	            rotation.w = 1;
+	            return false;
+	        }
+	        Matrix.FromValuesToRef(this.m[0] / scale.x, this.m[1] / scale.x, this.m[2] / scale.x, 0, this.m[4] / scale.y, this.m[5] / scale.y, this.m[6] / scale.y, 0, this.m[8] / scale.z, this.m[9] / scale.z, this.m[10] / scale.z, 0, 0, 0, 0, 1, internalScratch0);
+	        quaternion_1.Quaternion.FromRotationMatrixToRef(internalScratch0, rotation);
+	        return true;
+	    }
+	    /**
+	     * Returns a new Matrix as the extracted rotation matrix from the current one.
+	     */
+	    getRotationMatrix() {
+	        var result = Matrix.Identity();
+	        this.getRotationMatrixToRef(result);
+	        return result;
+	    }
+	    /**
+	     * Extracts the rotation matrix from the current one and sets it as the passed "result".
+	     * Returns the current Matrix.
+	     */
+	    getRotationMatrixToRef(result) {
+	        var m = this.m;
+	        var xs = m[0] * m[1] * m[2] * m[3] < 0 ? -1 : 1;
+	        var ys = m[4] * m[5] * m[6] * m[7] < 0 ? -1 : 1;
+	        var zs = m[8] * m[9] * m[10] * m[11] < 0 ? -1 : 1;
+	        var sx = xs * Math.sqrt(m[0] * m[0] + m[1] * m[1] + m[2] * m[2]);
+	        var sy = ys * Math.sqrt(m[4] * m[4] + m[5] * m[5] + m[6] * m[6]);
+	        var sz = zs * Math.sqrt(m[8] * m[8] + m[9] * m[9] + m[10] * m[10]);
+	        Matrix.FromValuesToRef(m[0] / sx, m[1] / sx, m[2] / sx, 0, m[4] / sy, m[5] / sy, m[6] / sy, 0, m[8] / sz, m[9] / sz, m[10] / sz, 0, 0, 0, 0, 1, result);
+	        return this;
+	    }
+	    // Statics
+	    /**
+	     * Returns a new Matrix set from the starting index of the passed array.
+	     */
+	    static FromArray(array, offset) {
+	        var result = new Matrix();
+	        if (!offset) {
+	            offset = 0;
+	        }
+	        Matrix.FromArrayToRef(array, offset, result);
+	        return result;
+	    }
+	    /**
+	     * Sets the passed "result" matrix from the starting index of the passed array.
+	     */
+	    static FromArrayToRef(array, offset, result) {
+	        for (var index = 0; index < 16; index++) {
+	            result.m[index] = array[index + offset];
+	        }
+	    }
+	    /**
+	     * Sets the passed "result" matrix from the starting index of the passed Float32Array by multiplying each element by the float "scale".
+	     */
+	    static FromFloat32ArrayToRefScaled(array, offset, scale, result) {
+	        for (var index = 0; index < 16; index++) {
+	            result.m[index] = array[index + offset] * scale;
+	        }
+	    }
+	    /**
+	     * Sets the passed matrix "result" with the 16 passed floats.
+	     */
+	    static FromValuesToRef(initialM11, initialM12, initialM13, initialM14, initialM21, initialM22, initialM23, initialM24, initialM31, initialM32, initialM33, initialM34, initialM41, initialM42, initialM43, initialM44, result) {
+	        result.m[0] = initialM11;
+	        result.m[1] = initialM12;
+	        result.m[2] = initialM13;
+	        result.m[3] = initialM14;
+	        result.m[4] = initialM21;
+	        result.m[5] = initialM22;
+	        result.m[6] = initialM23;
+	        result.m[7] = initialM24;
+	        result.m[8] = initialM31;
+	        result.m[9] = initialM32;
+	        result.m[10] = initialM33;
+	        result.m[11] = initialM34;
+	        result.m[12] = initialM41;
+	        result.m[13] = initialM42;
+	        result.m[14] = initialM43;
+	        result.m[15] = initialM44;
+	    }
+	    /**
+	     * Returns the index-th row of the current matrix as a new Vector4.
+	     */
+	    getRow(index) {
+	        if (index < 0 || index > 3) {
+	            return null;
+	        }
+	        var i = index * 4;
+	        return new vector4_1.Vector4(this.m[i + 0], this.m[i + 1], this.m[i + 2], this.m[i + 3]);
+	    }
+	    /**
+	     * Sets the index-th row of the current matrix with the passed Vector4 values.
+	     * Returns the updated Matrix.
+	     */
+	    setRow(index, row) {
+	        if (index < 0 || index > 3) {
+	            return this;
+	        }
+	        var i = index * 4;
+	        this.m[i + 0] = row.x;
+	        this.m[i + 1] = row.y;
+	        this.m[i + 2] = row.z;
+	        this.m[i + 3] = row.w;
+	        return this;
+	    }
+	    /**
+	     * Sets the index-th row of the current matrix with the passed 4 x float values.
+	     * Returns the updated Matrix.
+	     */
+	    setRowFromFloats(index, x, y, z, w) {
+	        if (index < 0 || index > 3) {
+	            return this;
+	        }
+	        var i = index * 4;
+	        this.m[i + 0] = x;
+	        this.m[i + 1] = y;
+	        this.m[i + 2] = z;
+	        this.m[i + 3] = w;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Matrix set from the 16 passed floats.
+	     */
+	    static FromValues(initialM11, initialM12, initialM13, initialM14, initialM21, initialM22, initialM23, initialM24, initialM31, initialM32, initialM33, initialM34, initialM41, initialM42, initialM43, initialM44) {
+	        var result = new Matrix();
+	        result.m[0] = initialM11;
+	        result.m[1] = initialM12;
+	        result.m[2] = initialM13;
+	        result.m[3] = initialM14;
+	        result.m[4] = initialM21;
+	        result.m[5] = initialM22;
+	        result.m[6] = initialM23;
+	        result.m[7] = initialM24;
+	        result.m[8] = initialM31;
+	        result.m[9] = initialM32;
+	        result.m[10] = initialM33;
+	        result.m[11] = initialM34;
+	        result.m[12] = initialM41;
+	        result.m[13] = initialM42;
+	        result.m[14] = initialM43;
+	        result.m[15] = initialM44;
+	        return result;
+	    }
+	    /**
+	     * Returns a new Matrix composed by the passed scale (vector3), rotation (quaternion) and translation (vector3).
+	     */
+	    static Compose(scale, rotation, translation) {
+	        var result = Matrix.Identity();
+	        Matrix.ComposeToRef(scale, rotation, translation, result);
+	        return result;
+	    }
+	    /**
+	     * Update a Matrix with values composed by the passed scale (vector3), rotation (quaternion) and translation (vector3).
+	     */
+	    static ComposeToRef(scale, rotation, translation, result) {
+	        const m = internalScratch0;
+	        const m1 = internalScratch1;
+	        Matrix.FromValuesToRef(scale.x, 0, 0, 0, 0, scale.y, 0, 0, 0, 0, scale.z, 0, 0, 0, 0, 1, internalScratch0);
+	        rotation.toRotationMatrix(internalScratch1);
+	        internalScratch0.multiplyToRef(internalScratch1, result);
+	        result.setTranslation(translation);
+	    }
+	    /**
+	     * Returns a new indentity Matrix.
+	     */
+	    static Identity() {
+	        return Matrix.FromValues(1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0);
+	    }
+	    /**
+	     * Sets the passed "result" as an identity matrix.
+	     */
+	    static IdentityToRef(result) {
+	        Matrix.FromValuesToRef(1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, result);
+	    }
+	    /**
+	     * Returns a new zero Matrix.
+	     */
+	    static Zero() {
+	        return Matrix.FromValues(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
+	    }
+	    /**
+	     * Returns a new rotation matrix for "angle" radians around the X axis.
+	     */
+	    static RotationX(angle) {
+	        var result = new Matrix();
+	        Matrix.RotationXToRef(angle, result);
+	        return result;
+	    }
+	    /**
+	     * Returns a new Matrix as the passed inverted one.
+	     */
+	    static Invert(source) {
+	        var result = new Matrix();
+	        source.invertToRef(result);
+	        return result;
+	    }
+	    /**
+	     * Sets the passed matrix "result" as a rotation matrix for "angle" radians around the X axis.
+	     */
+	    static RotationXToRef(angle, result) {
+	        var s = Math.sin(angle);
+	        var c = Math.cos(angle);
+	        result.m[0] = 1.0;
+	        result.m[15] = 1.0;
+	        result.m[5] = c;
+	        result.m[10] = c;
+	        result.m[9] = -s;
+	        result.m[6] = s;
+	        result.m[1] = 0.0;
+	        result.m[2] = 0.0;
+	        result.m[3] = 0.0;
+	        result.m[4] = 0.0;
+	        result.m[7] = 0.0;
+	        result.m[8] = 0.0;
+	        result.m[11] = 0.0;
+	        result.m[12] = 0.0;
+	        result.m[13] = 0.0;
+	        result.m[14] = 0.0;
+	    }
+	    /**
+	     * Returns a new rotation matrix for "angle" radians around the Y axis.
+	     */
+	    static RotationY(angle) {
+	        var result = new Matrix();
+	        Matrix.RotationYToRef(angle, result);
+	        return result;
+	    }
+	    /**
+	     * Sets the passed matrix "result" as a rotation matrix for "angle" radians around the Y axis.
+	     */
+	    static RotationYToRef(angle, result) {
+	        var s = Math.sin(angle);
+	        var c = Math.cos(angle);
+	        result.m[5] = 1.0;
+	        result.m[15] = 1.0;
+	        result.m[0] = c;
+	        result.m[2] = -s;
+	        result.m[8] = s;
+	        result.m[10] = c;
+	        result.m[1] = 0.0;
+	        result.m[3] = 0.0;
+	        result.m[4] = 0.0;
+	        result.m[6] = 0.0;
+	        result.m[7] = 0.0;
+	        result.m[9] = 0.0;
+	        result.m[11] = 0.0;
+	        result.m[12] = 0.0;
+	        result.m[13] = 0.0;
+	        result.m[14] = 0.0;
+	    }
+	    /**
+	     * Returns a new rotation matrix for "angle" radians around the Z axis.
+	     */
+	    static RotationZ(angle) {
+	        var result = new Matrix();
+	        Matrix.RotationZToRef(angle, result);
+	        return result;
+	    }
+	    /**
+	     * Sets the passed matrix "result" as a rotation matrix for "angle" radians around the Z axis.
+	     */
+	    static RotationZToRef(angle, result) {
+	        var s = Math.sin(angle);
+	        var c = Math.cos(angle);
+	        result.m[10] = 1.0;
+	        result.m[15] = 1.0;
+	        result.m[0] = c;
+	        result.m[1] = s;
+	        result.m[4] = -s;
+	        result.m[5] = c;
+	        result.m[2] = 0.0;
+	        result.m[3] = 0.0;
+	        result.m[6] = 0.0;
+	        result.m[7] = 0.0;
+	        result.m[8] = 0.0;
+	        result.m[9] = 0.0;
+	        result.m[11] = 0.0;
+	        result.m[12] = 0.0;
+	        result.m[13] = 0.0;
+	        result.m[14] = 0.0;
+	    }
+	    /**
+	     * Returns a new rotation matrix for "angle" radians around the passed axis.
+	     */
+	    static RotationAxis(axis, angle) {
+	        var result = Matrix.Zero();
+	        Matrix.RotationAxisToRef(axis, angle, result);
+	        return result;
+	    }
+	    /**
+	     * Sets the passed matrix "result" as a rotation matrix for "angle" radians around the passed axis.
+	     */
+	    static RotationAxisToRef(axis, angle, result) {
+	        var s = Math.sin(-angle);
+	        var c = Math.cos(-angle);
+	        var c1 = 1 - c;
+	        axis.normalize();
+	        result.m[0] = (axis.x * axis.x) * c1 + c;
+	        result.m[1] = (axis.x * axis.y) * c1 - (axis.z * s);
+	        result.m[2] = (axis.x * axis.z) * c1 + (axis.y * s);
+	        result.m[3] = 0.0;
+	        result.m[4] = (axis.y * axis.x) * c1 + (axis.z * s);
+	        result.m[5] = (axis.y * axis.y) * c1 + c;
+	        result.m[6] = (axis.y * axis.z) * c1 - (axis.x * s);
+	        result.m[7] = 0.0;
+	        result.m[8] = (axis.z * axis.x) * c1 - (axis.y * s);
+	        result.m[9] = (axis.z * axis.y) * c1 + (axis.x * s);
+	        result.m[10] = (axis.z * axis.z) * c1 + c;
+	        result.m[11] = 0.0;
+	        result.m[15] = 1.0;
+	    }
+	    /**
+	     * Returns a new Matrix as a rotation matrix from the Euler angles (y, x, z).
+	     */
+	    static RotationYawPitchRoll(yaw, pitch, roll) {
+	        var result = new Matrix();
+	        Matrix.RotationYawPitchRollToRef(yaw, pitch, roll, result);
+	        return result;
+	    }
+	    /**
+	     * Sets the passed matrix "result" as a rotation matrix from the Euler angles (y, x, z).
+	     */
+	    static RotationYawPitchRollToRef(yaw, pitch, roll, result) {
+	        const q = new quaternion_1.Quaternion();
+	        quaternion_1.Quaternion.RotationYawPitchRollToRef(yaw, pitch, roll, q);
+	        q.toRotationMatrix(result);
+	    }
+	    /**
+	     * Returns a new Matrix as a scaling matrix from the passed floats (x, y, z).
+	     */
+	    static Scaling(x, y, z) {
+	        var result = Matrix.Zero();
+	        Matrix.ScalingToRef(x, y, z, result);
+	        return result;
+	    }
+	    /**
+	     * Sets the passed matrix "result" as a scaling matrix from the passed floats (x, y, z).
+	     */
+	    static ScalingToRef(x, y, z, result) {
+	        result.m[0] = x;
+	        result.m[1] = 0.0;
+	        result.m[2] = 0.0;
+	        result.m[3] = 0.0;
+	        result.m[4] = 0.0;
+	        result.m[5] = y;
+	        result.m[6] = 0.0;
+	        result.m[7] = 0.0;
+	        result.m[8] = 0.0;
+	        result.m[9] = 0.0;
+	        result.m[10] = z;
+	        result.m[11] = 0.0;
+	        result.m[12] = 0.0;
+	        result.m[13] = 0.0;
+	        result.m[14] = 0.0;
+	        result.m[15] = 1.0;
+	    }
+	    /**
+	     * Returns a new Matrix as a translation matrix from the passed floats (x, y, z).
+	     */
+	    static Translation(x, y, z) {
+	        var result = Matrix.Identity();
+	        Matrix.TranslationToRef(x, y, z, result);
+	        return result;
+	    }
+	    /**
+	     * Sets the passed matrix "result" as a translation matrix from the passed floats (x, y, z).
+	     */
+	    static TranslationToRef(x, y, z, result) {
+	        Matrix.FromValuesToRef(1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, x, y, z, 1.0, result);
+	    }
+	    /**
+	     * Returns a new Matrix whose values are the interpolated values for "gradien" (float) between the ones of the matrices "startValue" and "endValue".
+	     */
+	    static Lerp(startValue, endValue, gradient) {
+	        var result = Matrix.Zero();
+	        for (var index = 0; index < 16; index++) {
+	            result.m[index] = startValue.m[index] * (1.0 - gradient) + endValue.m[index] * gradient;
+	        }
+	        return result;
+	    }
+	    /**
+	     * Returns a new Matrix whose values are computed by :
+	     * - decomposing the the "startValue" and "endValue" matrices into their respective scale, rotation and translation matrices,
+	     * - interpolating for "gradient" (float) the values between each of these decomposed matrices between the start and the end,
+	     * - recomposing a new matrix from these 3 interpolated scale, rotation and translation matrices.
+	     */
+	    static DecomposeLerp(startValue, endValue, gradient) {
+	        var startScale = new vector3_1.Vector3(0, 0, 0);
+	        var startRotation = new quaternion_1.Quaternion();
+	        var startTranslation = new vector3_1.Vector3(0, 0, 0);
+	        startValue.decompose(startScale, startRotation, startTranslation);
+	        var endScale = new vector3_1.Vector3(0, 0, 0);
+	        var endRotation = new quaternion_1.Quaternion();
+	        var endTranslation = new vector3_1.Vector3(0, 0, 0);
+	        endValue.decompose(endScale, endRotation, endTranslation);
+	        var resultScale = vector3_1.Vector3.Lerp(startScale, endScale, gradient);
+	        var resultRotation = quaternion_1.Quaternion.Slerp(startRotation, endRotation, gradient);
+	        var resultTranslation = vector3_1.Vector3.Lerp(startTranslation, endTranslation, gradient);
+	        return Matrix.Compose(resultScale, resultRotation, resultTranslation);
+	    }
+	    /**
+	    * Returns a new Float32Array array with 4 elements : the 2x2 matrix extracted from the passed Matrix.
+	    */
+	    static GetAsMatrix2x2(matrix) {
+	        return new Float32Array([
+	            matrix.m[0], matrix.m[1],
+	            matrix.m[4], matrix.m[5]
+	        ]);
+	    }
+	    /**
+	     * Returns a new Float32Array array with 9 elements : the 3x3 matrix extracted from the passed Matrix.
+	     */
+	    static GetAsMatrix3x3(matrix) {
+	        return new Float32Array([
+	            matrix.m[0], matrix.m[1], matrix.m[2],
+	            matrix.m[4], matrix.m[5], matrix.m[6],
+	            matrix.m[8], matrix.m[9], matrix.m[10]
+	        ]);
+	    }
+	    /**
+	     * Compute the transpose of the passed Matrix.
+	     * Returns a new Matrix.
+	     */
+	    static Transpose(matrix) {
+	        var result = new Matrix();
+	        result.m[0] = matrix.m[0];
+	        result.m[1] = matrix.m[4];
+	        result.m[2] = matrix.m[8];
+	        result.m[3] = matrix.m[12];
+	        result.m[4] = matrix.m[1];
+	        result.m[5] = matrix.m[5];
+	        result.m[6] = matrix.m[9];
+	        result.m[7] = matrix.m[13];
+	        result.m[8] = matrix.m[2];
+	        result.m[9] = matrix.m[6];
+	        result.m[10] = matrix.m[10];
+	        result.m[11] = matrix.m[14];
+	        result.m[12] = matrix.m[3];
+	        result.m[13] = matrix.m[7];
+	        result.m[14] = matrix.m[11];
+	        result.m[15] = matrix.m[15];
+	        return result;
+	    }
+	    /**
+	     * Sets the passed matrix "mat" as a rotation matrix composed from the 3 passed  left handed axis.
+	     */
+	    static FromXYZAxesToRef(xaxis, yaxis, zaxis, mat) {
+	        mat.m[0] = xaxis.x;
+	        mat.m[1] = xaxis.y;
+	        mat.m[2] = xaxis.z;
+	        mat.m[3] = 0.0;
+	        mat.m[4] = yaxis.x;
+	        mat.m[5] = yaxis.y;
+	        mat.m[6] = yaxis.z;
+	        mat.m[7] = 0.0;
+	        mat.m[8] = zaxis.x;
+	        mat.m[9] = zaxis.y;
+	        mat.m[10] = zaxis.z;
+	        mat.m[11] = 0.0;
+	        mat.m[12] = 0.0;
+	        mat.m[13] = 0.0;
+	        mat.m[14] = 0.0;
+	        mat.m[15] = 1.0;
+	    }
+	    /**
+	     * Sets the passed matrix "result" as a rotation matrix according to the passed quaternion.
+	     */
+	    static FromQuaternionToRef(quat, result) {
+	        var xx = quat.x * quat.x;
+	        var yy = quat.y * quat.y;
+	        var zz = quat.z * quat.z;
+	        var xy = quat.x * quat.y;
+	        var zw = quat.z * quat.w;
+	        var zx = quat.z * quat.x;
+	        var yw = quat.y * quat.w;
+	        var yz = quat.y * quat.z;
+	        var xw = quat.x * quat.w;
+	        result.m[0] = 1.0 - (2.0 * (yy + zz));
+	        result.m[1] = 2.0 * (xy + zw);
+	        result.m[2] = 2.0 * (zx - yw);
+	        result.m[3] = 0.0;
+	        result.m[4] = 2.0 * (xy - zw);
+	        result.m[5] = 1.0 - (2.0 * (zz + xx));
+	        result.m[6] = 2.0 * (yz + xw);
+	        result.m[7] = 0.0;
+	        result.m[8] = 2.0 * (zx + yw);
+	        result.m[9] = 2.0 * (yz - xw);
+	        result.m[10] = 1.0 - (2.0 * (yy + xx));
+	        result.m[11] = 0.0;
+	        result.m[12] = 0.0;
+	        result.m[13] = 0.0;
+	        result.m[14] = 0.0;
+	        result.m[15] = 1.0;
+	    }
+	}
+	exports.Matrix = Matrix;
+	const internalScratch0 = new Matrix();
+	const internalScratch1 = new Matrix();
+
+
+/***/ },
+/* 30 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	var AngleUnit;
+	(function (AngleUnit) {
+	    AngleUnit[AngleUnit["Radians"] = 0] = "Radians";
+	    AngleUnit[AngleUnit["Degrees"] = 1] = "Degrees";
+	})(AngleUnit = exports.AngleUnit || (exports.AngleUnit = {}));
+	exports.MathUtil = {
+	    RadiansToDegrees: 57.2957795130823,
+	    DegreesToRadians: 0.01745329251994,
+	    E: Math.E,
+	    Log2E: Math.LOG2E,
+	    Log10E: Math.LOG10E,
+	    Pi: Math.PI,
+	    PiOver2: Math.PI / 2.0,
+	    PiOver4: Math.PI / 4.0,
+	    TwoPi: Math.PI * 2.0,
+	    sign(value) {
+	        if (value === 0 || isNaN(value))
+	            return value;
+	        return value > 0 ? 1 : -1;
+	    },
+	    clamp(value, min, max) {
+	        value = (value > max) ? max : value;
+	        value = (value < min) ? min : value;
+	        return value;
+	    },
+	    clamp01(value) {
+	        value = (value > 1) ? 1 : value;
+	        value = (value < 0) ? 0 : value;
+	        return value;
+	    },
+	    distance(value1, value2) {
+	        return Math.abs(value1 - value2);
+	    },
+	    barycentric(value1, value2, value3, amount1, amount2) {
+	        return value1 + (value2 - value1) * amount1 + (value3 - value1) * amount2;
+	    },
+	    catmullRom(value1, value2, value3, value4, amount) {
+	        // Using formula from http://www.mvps.org/directx/articles/catmull/
+	        const amountSquared = amount * amount;
+	        const amountCubed = amountSquared * amount;
+	        return (0.5 * (2.0 * value2 +
+	            (value3 - value1) * amount +
+	            (2.0 * value1 - 5.0 * value2 + 4.0 * value3 - value4) * amountSquared +
+	            (3.0 * value2 - value1 - 3.0 * value3 + value4) * amountCubed));
+	    },
+	    hermite(value1, tangent1, value2, tangent2, amount) {
+	        let v1 = value1;
+	        let v2 = value2;
+	        let t1 = tangent1;
+	        let t2 = tangent2;
+	        let s = amount;
+	        let result = 0;
+	        let sCubed = s * s * s;
+	        let sSquared = s * s;
+	        if (amount == 0)
+	            result = value1;
+	        else if (amount == 1)
+	            result = value2;
+	        else
+	            result = (2 * v1 - 2 * v2 + t2 + t1) * sCubed +
+	                (3 * v2 - 3 * v1 - 2 * t1 - t2) * sSquared +
+	                t1 * s +
+	                v1;
+	        return result;
+	    },
+	    lerp(value1, value2, amount) {
+	        return ((1 - amount) * value1) + (value2 * amount);
+	    },
+	    smoothStep(value1, value2, amount) {
+	        return this.hermite(value1, 0, value2, 0, this.clamp01(amount));
+	    },
+	    wrapAngleDegrees(angle) {
+	        let x = angle % 360;
+	        if (x < 0)
+	            x += 360;
+	        return x;
+	    },
+	    wrapAngle(angle) {
+	        const PI = Math.PI;
+	        const TwoPI = PI * 2;
+	        if ((angle > -PI) && (angle <= PI)) {
+	            return angle;
+	        }
+	        angle %= TwoPI;
+	        if (angle <= -PI) {
+	            return angle + TwoPI;
+	        }
+	        if (angle > PI) {
+	            return angle - TwoPI;
+	        }
+	        return angle;
+	    },
+	    normalizeAngle180(angle) {
+	        let x = (angle + 180) % 360;
+	        if (x < 0)
+	            x += 360;
+	        return x - 180;
+	    },
+	    isPowerOf2(value) {
+	        var int = value | 0;
+	        if (value !== int)
+	            return false;
+	        return (int > 0) && ((int & (int - 1)) == 0);
+	    }
+	};
+
+
+/***/ },
+/* 31 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const vector3_1 = __webpack_require__(27);
+	class Vector4 {
+	    /**
+	     * Creates a Vector4 object from the passed floats.
+	     */
+	    constructor(x, y, z, w) {
+	        this.x = x;
+	        this.y = y;
+	        this.z = z;
+	        this.w = w;
+	    }
+	    /**
+	     * Returns the string with the Vector4 coordinates.
+	     */
+	    toString() {
+	        return "{X: " + this.x + " Y:" + this.y + " Z:" + this.z + " W:" + this.w + "}";
+	    }
+	    /**
+	     * Returns the string "Vector4".
+	     */
+	    getClassName() {
+	        return "Vector4";
+	    }
+	    /**
+	     * Returns the Vector4 hash code.
+	     */
+	    getHashCode() {
+	        let hash = this.x || 0;
+	        hash = (hash * 397) ^ (this.y || 0);
+	        hash = (hash * 397) ^ (this.z || 0);
+	        hash = (hash * 397) ^ (this.w || 0);
+	        return hash;
+	    }
+	    // Operators
+	    /**
+	     * Returns a new array populated with 4 elements : the Vector4 coordinates.
+	     */
+	    asArray() {
+	        var result = [];
+	        this.toArray(result, 0);
+	        return result;
+	    }
+	    /**
+	     * Populates the passed array from the passed index with the Vector4 coordinates.
+	     * Returns the Vector4.
+	     */
+	    toArray(array, index) {
+	        if (index === undefined) {
+	            index = 0;
+	        }
+	        array[index] = this.x;
+	        array[index + 1] = this.y;
+	        array[index + 2] = this.z;
+	        array[index + 3] = this.w;
+	        return this;
+	    }
+	    /**
+	     * Adds the passed vector to the current Vector4.
+	     * Returns the updated Vector4.
+	     */
+	    addInPlace(otherVector) {
+	        this.x += otherVector.x;
+	        this.y += otherVector.y;
+	        this.z += otherVector.z;
+	        this.w += otherVector.w;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Vector4 as the result of the addition of the current Vector4 and the passed one.
+	     */
+	    add(otherVector) {
+	        return new Vector4(this.x + otherVector.x, this.y + otherVector.y, this.z + otherVector.z, this.w + otherVector.w);
+	    }
+	    /**
+	     * Updates the passed vector "result" with the result of the addition of the current Vector4 and the passed one.
+	     * Returns the current Vector4.
+	     */
+	    addToRef(otherVector, result) {
+	        result.x = this.x + otherVector.x;
+	        result.y = this.y + otherVector.y;
+	        result.z = this.z + otherVector.z;
+	        result.w = this.w + otherVector.w;
+	        return this;
+	    }
+	    /**
+	     * Subtract in place the passed vector from the current Vector4.
+	     * Returns the updated Vector4.
+	     */
+	    subtractInPlace(otherVector) {
+	        this.x -= otherVector.x;
+	        this.y -= otherVector.y;
+	        this.z -= otherVector.z;
+	        this.w -= otherVector.w;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Vector4 with the result of the subtraction of the passed vector from the current Vector4.
+	     */
+	    subtract(otherVector) {
+	        return new Vector4(this.x - otherVector.x, this.y - otherVector.y, this.z - otherVector.z, this.w - otherVector.w);
+	    }
+	    /**
+	     * Sets the passed vector "result" with the result of the subtraction of the passed vector from the current Vector4.
+	     * Returns the current Vector4.
+	     */
+	    subtractToRef(otherVector, result) {
+	        result.x = this.x - otherVector.x;
+	        result.y = this.y - otherVector.y;
+	        result.z = this.z - otherVector.z;
+	        result.w = this.w - otherVector.w;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Vector4 set with the result of the subtraction of the passed floats from the current Vector4 coordinates.
+	     */
+	    subtractFromFloats(x, y, z, w) {
+	        return new Vector4(this.x - x, this.y - y, this.z - z, this.w - w);
+	    }
+	    /**
+	     * Sets the passed vector "result" set with the result of the subtraction of the passed floats from the current Vector4 coordinates.
+	     * Returns the current Vector4.
+	     */
+	    subtractFromFloatsToRef(x, y, z, w, result) {
+	        result.x = this.x - x;
+	        result.y = this.y - y;
+	        result.z = this.z - z;
+	        result.w = this.w - w;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Vector4 set with the current Vector4 negated coordinates.
+	     */
+	    negate() {
+	        return new Vector4(-this.x, -this.y, -this.z, -this.w);
+	    }
+	    /**
+	     * Multiplies the current Vector4 coordinates by scale (float).
+	     * Returns the updated Vector4.
+	     */
+	    scaleInPlace(scale) {
+	        this.x *= scale;
+	        this.y *= scale;
+	        this.z *= scale;
+	        this.w *= scale;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Vector4 set with the current Vector4 coordinates multiplied by scale (float).
+	     */
+	    scale(scale) {
+	        return new Vector4(this.x * scale, this.y * scale, this.z * scale, this.w * scale);
+	    }
+	    /**
+	     * Sets the passed vector "result" with the current Vector4 coordinates multiplied by scale (float).
+	     * Returns the current Vector4.
+	     */
+	    scaleToRef(scale, result) {
+	        result.x = this.x * scale;
+	        result.y = this.y * scale;
+	        result.z = this.z * scale;
+	        result.w = this.w * scale;
+	        return this;
+	    }
+	    /**
+	     * Boolean : True if the current Vector4 coordinates are stricly equal to the passed ones.
+	     */
+	    equals(otherVector) {
+	        return otherVector && this.x === otherVector.x && this.y === otherVector.y && this.z === otherVector.z && this.w === otherVector.w;
+	    }
+	    /**
+	     * Boolean : True if the passed floats are strictly equal to the current Vector4 coordinates.
+	     */
+	    equalsToFloats(x, y, z, w) {
+	        return this.x === x && this.y === y && this.z === z && this.w === w;
+	    }
+	    /**
+	     * Multiplies in place the current Vector4 by the passed one.
+	     * Returns the updated Vector4.
+	     */
+	    multiplyInPlace(otherVector) {
+	        this.x *= otherVector.x;
+	        this.y *= otherVector.y;
+	        this.z *= otherVector.z;
+	        this.w *= otherVector.w;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Vector4 set with the multiplication result of the current Vector4 and the passed one.
+	     */
+	    multiply(otherVector) {
+	        return new Vector4(this.x * otherVector.x, this.y * otherVector.y, this.z * otherVector.z, this.w * otherVector.w);
+	    }
+	    /**
+	     * Updates the passed vector "result" with the multiplication result of the current Vector4 and the passed one.
+	     * Returns the current Vector4.
+	     */
+	    multiplyToRef(otherVector, result) {
+	        result.x = this.x * otherVector.x;
+	        result.y = this.y * otherVector.y;
+	        result.z = this.z * otherVector.z;
+	        result.w = this.w * otherVector.w;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Vector4 set with the multiplication result of the passed floats and the current Vector4 coordinates.
+	     */
+	    multiplyByFloats(x, y, z, w) {
+	        return new Vector4(this.x * x, this.y * y, this.z * z, this.w * w);
+	    }
+	    /**
+	     * Returns a new Vector4 set with the division result of the current Vector4 by the passed one.
+	     */
+	    divide(otherVector) {
+	        return new Vector4(this.x / otherVector.x, this.y / otherVector.y, this.z / otherVector.z, this.w / otherVector.w);
+	    }
+	    /**
+	     * Updates the passed vector "result" with the division result of the current Vector4 by the passed one.
+	     * Returns the current Vector4.
+	     */
+	    divideToRef(otherVector, result) {
+	        result.x = this.x / otherVector.x;
+	        result.y = this.y / otherVector.y;
+	        result.z = this.z / otherVector.z;
+	        result.w = this.w / otherVector.w;
+	        return this;
+	    }
+	    /**
+	     * Updates the Vector4 coordinates with the minimum values between its own and the passed vector ones.
+	     */
+	    MinimizeInPlace(other) {
+	        if (other.x < this.x)
+	            this.x = other.x;
+	        if (other.y < this.y)
+	            this.y = other.y;
+	        if (other.z < this.z)
+	            this.z = other.z;
+	        if (other.w < this.w)
+	            this.w = other.w;
+	        return this;
+	    }
+	    /**
+	     * Updates the Vector4 coordinates with the maximum values between its own and the passed vector ones.
+	     */
+	    MaximizeInPlace(other) {
+	        if (other.x > this.x)
+	            this.x = other.x;
+	        if (other.y > this.y)
+	            this.y = other.y;
+	        if (other.z > this.z)
+	            this.z = other.z;
+	        if (other.w > this.w)
+	            this.w = other.w;
+	        return this;
+	    }
+	    // Properties
+	    /**
+	     * Returns the Vector4 length (float).
+	     */
+	    length() {
+	        return Math.sqrt(this.x * this.x + this.y * this.y + this.z * this.z + this.w * this.w);
+	    }
+	    /**
+	     * Returns the Vector4 squared length (float).
+	     */
+	    lengthSquared() {
+	        return (this.x * this.x + this.y * this.y + this.z * this.z + this.w * this.w);
+	    }
+	    // Methods
+	    /**
+	     * Normalizes in place the Vector4.
+	     * Returns the updated Vector4.
+	     */
+	    normalize() {
+	        var len = this.length();
+	        if (len === 0)
+	            return this;
+	        var num = 1.0 / len;
+	        this.x *= num;
+	        this.y *= num;
+	        this.z *= num;
+	        this.w *= num;
+	        return this;
+	    }
+	    /**
+	     * Returns a new Vector3 from the Vector4 (x, y, z) coordinates.
+	     */
+	    toVector3() {
+	        return new vector3_1.Vector3(this.x, this.y, this.z);
+	    }
+	    /**
+	     * Returns a new Vector4 copied from the current one.
+	     */
+	    clone() {
+	        return new Vector4(this.x, this.y, this.z, this.w);
+	    }
+	    /**
+	     * Updates the current Vector4 with the passed one coordinates.
+	     * Returns the updated Vector4.
+	     */
+	    copyFrom(source) {
+	        this.x = source.x;
+	        this.y = source.y;
+	        this.z = source.z;
+	        this.w = source.w;
+	        return this;
+	    }
+	    /**
+	     * Updates the current Vector4 coordinates with the passed floats.
+	     * Returns the updated Vector4.
+	     */
+	    copyFromFloats(x, y, z, w) {
+	        this.x = x;
+	        this.y = y;
+	        this.z = z;
+	        this.w = w;
+	        return this;
+	    }
+	    /**
+	     * Updates the current Vector4 coordinates with the passed floats.
+	     * Returns the updated Vector4.
+	     */
+	    set(x, y, z, w) {
+	        return this.copyFromFloats(x, y, z, w);
+	    }
+	    // Statics
+	    /**
+	     * Returns a new Vector4 set from the starting index of the passed array.
+	     */
+	    static FromArray(array, offset) {
+	        if (!offset) {
+	            offset = 0;
+	        }
+	        return new Vector4(array[offset], array[offset + 1], array[offset + 2], array[offset + 3]);
+	    }
+	    /**
+	     * Updates the passed vector "result" from the starting index of the passed array.
+	     */
+	    static FromArrayToRef(array, offset, result) {
+	        result.x = array[offset];
+	        result.y = array[offset + 1];
+	        result.z = array[offset + 2];
+	        result.w = array[offset + 3];
+	    }
+	    /**
+	     * Updates the passed vector "result" from the starting index of the passed Float32Array.
+	     */
+	    static FromFloatArrayToRef(array, offset, result) {
+	        result.x = array[offset];
+	        result.y = array[offset + 1];
+	        result.z = array[offset + 2];
+	        result.w = array[offset + 3];
+	    }
+	    /**
+	     * Updates the passed vector "result" coordinates from the passed floats.
+	     */
+	    static FromFloatsToRef(x, y, z, w, result) {
+	        result.x = x;
+	        result.y = y;
+	        result.z = z;
+	        result.w = w;
+	    }
+	    /**
+	     * Returns a new Vector4 set to (0.0, 0.0, 0.0, 0.0)
+	     */
+	    static Zero() {
+	        return new Vector4(0.0, 0.0, 0.0, 0.0);
+	    }
+	    /**
+	     * Returns a new normalized Vector4 from the passed one.
+	     */
+	    static Normalize(vector) {
+	        var result = Vector4.Zero();
+	        Vector4.NormalizeToRef(vector, result);
+	        return result;
+	    }
+	    /**
+	     * Updates the passed vector "result" from the normalization of the passed one.
+	     */
+	    static NormalizeToRef(vector, result) {
+	        result.copyFrom(vector);
+	        result.normalize();
+	    }
+	    static Minimize(left, right) {
+	        var min = left.clone();
+	        min.MinimizeInPlace(right);
+	        return min;
+	    }
+	    static Maximize(left, right) {
+	        var max = left.clone();
+	        max.MaximizeInPlace(right);
+	        return max;
+	    }
+	    /**
+	     * Returns the distance (float) between the vectors "value1" and "value2".
+	     */
+	    static Distance(value1, value2) {
+	        return Math.sqrt(Vector4.DistanceSquared(value1, value2));
+	    }
+	    /**
+	     * Returns the squared distance (float) between the vectors "value1" and "value2".
+	     */
+	    static DistanceSquared(value1, value2) {
+	        var x = value1.x - value2.x;
+	        var y = value1.y - value2.y;
+	        var z = value1.z - value2.z;
+	        var w = value1.w - value2.w;
+	        return (x * x) + (y * y) + (z * z) + (w * w);
+	    }
+	    /**
+	     * Returns a new Vector4 located at the center between the vectors "value1" and "value2".
+	     */
+	    static Center(value1, value2) {
+	        var center = value1.add(value2);
+	        center.scaleInPlace(0.5);
+	        return center;
+	    }
+	    /**
+	     * Returns a new Vector4 set with the result of the normal transformation by the passed matrix of the passed vector.
+	     * This methods computes transformed normalized direction vectors only.
+	     */
+	    static TransformNormal(vector, transformation) {
+	        var result = Vector4.Zero();
+	        Vector4.TransformNormalToRef(vector, transformation, result);
+	        return result;
+	    }
+	    /**
+	     * Sets the passed vector "result" with the result of the normal transformation by the passed matrix of the passed vector.
+	     * This methods computes transformed normalized direction vectors only.
+	     */
+	    static TransformNormalToRef(vector, transformation, result) {
+	        var x = (vector.x * transformation.m[0]) + (vector.y * transformation.m[4]) + (vector.z * transformation.m[8]);
+	        var y = (vector.x * transformation.m[1]) + (vector.y * transformation.m[5]) + (vector.z * transformation.m[9]);
+	        var z = (vector.x * transformation.m[2]) + (vector.y * transformation.m[6]) + (vector.z * transformation.m[10]);
+	        result.x = x;
+	        result.y = y;
+	        result.z = z;
+	        result.w = vector.w;
+	    }
+	    /**
+	     * Sets the passed vector "result" with the result of the normal transformation by the passed matrix of the passed floats (x, y, z, w).
+	     * This methods computes transformed normalized direction vectors only.
+	     */
+	    static TransformNormalFromFloatsToRef(x, y, z, w, transformation, result) {
+	        result.x = (x * transformation.m[0]) + (y * transformation.m[4]) + (z * transformation.m[8]);
+	        result.y = (x * transformation.m[1]) + (y * transformation.m[5]) + (z * transformation.m[9]);
+	        result.z = (x * transformation.m[2]) + (y * transformation.m[6]) + (z * transformation.m[10]);
+	        result.w = w;
+	    }
+	}
+	exports.Vector4 = Vector4;
+
+
+/***/ },
+/* 32 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -2644,17 +5151,17 @@
 
 
 /***/ },
-/* 28 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const input_1 = __webpack_require__(25);
-	const app_element_1 = __webpack_require__(29);
-	const runtime_base_1 = __webpack_require__(36);
-	const evt_app_element_parent_changed_1 = __webpack_require__(38);
-	const e_command_type_1 = __webpack_require__(31);
-	const evt_app_element_index_changed_1 = __webpack_require__(39);
+	const app_element_1 = __webpack_require__(34);
+	const runtime_base_1 = __webpack_require__(39);
+	const evt_app_element_parent_changed_1 = __webpack_require__(41);
+	const e_command_type_1 = __webpack_require__(36);
+	const evt_app_element_index_changed_1 = __webpack_require__(42);
 	class RuntimeImpl extends runtime_base_1.RuntimeBase {
 	    constructor() {
 	        super();
@@ -2692,8 +5199,7 @@
 	                return hit;
 	            }
 	        }
-	        if (app_element_1.AppElement.Root.containsPoint(point))
-	            return app_element_1.AppElement.Root;
+	        //if (AppElement.Root.containsPoint(point)) return AppElement.Root;
 	        return null;
 	    }
 	    //todo this could be more optimized
@@ -2760,20 +5266,21 @@
 
 
 /***/ },
-/* 29 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const vector2_1 = __webpack_require__(17);
-	const e_lifecycle_flags_1 = __webpack_require__(30);
-	const e_command_type_1 = __webpack_require__(31);
+	const e_lifecycle_flags_1 = __webpack_require__(35);
+	const e_command_type_1 = __webpack_require__(36);
 	const util_1 = __webpack_require__(16);
-	const matrix3x3_1 = __webpack_require__(32);
-	const bounding_box_1 = __webpack_require__(34);
-	const math_util_1 = __webpack_require__(33);
+	const bounding_box_1 = __webpack_require__(37);
+	const math_util_1 = __webpack_require__(30);
+	const matrix_1 = __webpack_require__(29);
+	const vector3_1 = __webpack_require__(27);
+	const quaternion_1 = __webpack_require__(28);
 	let idGenerator = 0;
-	const scratchVector = new vector2_1.Vector2();
+	const scratchVector = new vector3_1.Vector3();
 	var Space;
 	(function (Space) {
 	    Space[Space["Local"] = 0] = "Local";
@@ -2804,61 +5311,79 @@
 	        this.height = 0;
 	        this.rotation = 0;
 	        this.dirtyFlags = 0;
-	        this.scale = new vector2_1.Vector2(1, 1);
-	        this.pivot = new vector2_1.Vector2();
-	        this.position = new vector2_1.Vector2();
-	        this.localMatrix = new matrix3x3_1.Matrix3x3();
-	        this.worldMatrix = new matrix3x3_1.Matrix3x3();
+	        this.scale = new vector3_1.Vector3(1, 1, 1);
+	        this.pivot = new vector3_1.Vector3();
+	        this.position = new vector3_1.Vector3();
+	        this.localMatrix = new matrix_1.Matrix();
+	        this.worldMatrix = new matrix_1.Matrix();
 	        this.boundingBox = new bounding_box_1.BoundingBox(this);
 	        //todo don't allow components to be constructed outside of addComponent or this constructor
 	        Runtime.addElement(this);
 	    }
-	    setPivot(x, y) {
-	        this.pivot.x = util_1.clamp01(x);
-	        this.pivot.y = util_1.clamp01(y);
-	    }
-	    getPivot(out = null) {
-	        out = out || new vector2_1.Vector2();
+	    //
+	    // public setPivot(x : number, y : number) : void {
+	    //     this.pivot.x = clamp01(x);
+	    //     this.pivot.y = clamp01(y);
+	    // }
+	    //
+	    getPivot() {
+	        const out = new vector3_1.Vector3();
 	        out.x = this.pivot.x;
 	        out.y = this.pivot.y;
 	        return out;
 	    }
 	    worldToLocal(vector, out) {
 	        this.updateWorldMatrix();
-	        return vector2_1.Vector2.transformCoordinates(vector, this.worldMatrix.invertNew(matrix3x3_1.Matrix3x3.scratch0), out);
+	        //return Vector3.transformCoordinates(vector, this.worldMatrix.invertNew(Matrix3x3.scratch0), out);
+	        return null;
 	    }
 	    localToWorld(vector, out) {
 	        this.updateWorldMatrix();
-	        return vector2_1.Vector2.transformCoordinates(vector, this.worldMatrix, out);
+	        // return Vector3.transformCoordinates(vector, this.worldMatrix, out);
+	        return null;
 	    }
-	    getWorldMatrix(out) {
+	    getWorldMatrix() {
 	        this.updateWorldMatrix();
-	        return this.worldMatrix.clone(out || new matrix3x3_1.Matrix3x3());
+	        // return this.worldMatrix.clone(out || new Matrix3x3());
+	        return this.worldMatrix.clone();
 	    }
 	    updateWorldMatrix() {
-	        //if((this.dirtyFlags & ElementDirtyFlag.Transform) !== 0) {
-	        const scaleMatrix = matrix3x3_1.Matrix3x3.createScale(this.scale.x, this.scale.y, matrix3x3_1.Matrix3x3.scratch0);
-	        const rotationMatrix = matrix3x3_1.Matrix3x3.createRotation(this.rotation * math_util_1.MathUtil.DegreesToRadians, matrix3x3_1.Matrix3x3.scratch1);
-	        const translationMatrix = matrix3x3_1.Matrix3x3.createTranslation(this.position.x, this.position.y, matrix3x3_1.Matrix3x3.scratch2);
-	        const scaleAndRotation = matrix3x3_1.Matrix3x3.multiply(scaleMatrix, rotationMatrix, matrix3x3_1.Matrix3x3.scratch0);
-	        matrix3x3_1.Matrix3x3.multiply(translationMatrix, rotationMatrix, this.localMatrix);
+	        // Scaling
+	        const scaling = new matrix_1.Matrix();
+	        const rotation = new matrix_1.Matrix();
+	        const translate = new matrix_1.Matrix();
+	        const rotationAndScale = new matrix_1.Matrix();
+	        matrix_1.Matrix.ScalingToRef(this.scale.x, this.scale.y, this.scale.z, scaling);
+	        const rotQuat = quaternion_1.Quaternion.RotationAxis(vector3_1.Vector3.Forward(), this.rotation * math_util_1.MathUtil.DegreesToRadians);
+	        rotQuat.toRotationMatrix(rotation);
+	        //mat 0 = rotation matrix
+	        //mat 1 = scale matrix
+	        //mat 2 = translation matrix
+	        //mat 3 = ??
+	        //mat 4 = pivot * scale
+	        //mat 5 = mat4 * rotation
+	        //local world = mat5 * translation
+	        //worldMatrix = parent.getWorldMatrix() * localWorld
+	        matrix_1.Matrix.TranslationToRef(this.position.x, this.position.y, this.position.z, translate);
+	        scaling.multiplyToRef(rotation, rotationAndScale);
+	        rotationAndScale.multiplyToRef(translate, this.localMatrix);
 	        if (this.parent) {
-	            matrix3x3_1.Matrix3x3.multiply(this.parent.getWorldMatrix(), this.localMatrix, this.worldMatrix);
+	            this.localMatrix.multiplyToRef(this.parent.getWorldMatrix(), this.worldMatrix);
 	        }
 	        else {
-	            this.worldMatrix.copy(this.localMatrix);
+	            this.worldMatrix.copyFrom(this.localMatrix);
 	        }
-	        this.dirtyFlags &= ~ElementDirtyFlag.Transform;
+	        return this.worldMatrix;
 	    }
 	    getMatrix(out) {
 	        this.updateWorldMatrix();
-	        return this.localMatrix.clone(out || new matrix3x3_1.Matrix3x3());
+	        return this.localMatrix.clone();
 	    }
 	    setScale(scale) {
-	        if (this.scale.isEqual(scale))
-	            return;
+	        //if (this.scale.isEqual(scale)) return;
 	        this.scale.x = scale.x;
 	        this.scale.y = scale.y;
+	        this.scale.z = scale.z;
 	        this.dirtyFlags |= ElementDirtyFlag.Scale;
 	        Runtime.sendCommand(e_command_type_1.CommandType.SetTransform, this.id);
 	    }
@@ -2918,25 +5443,25 @@
 	    }
 	    setPositionValues(x, y, relativeTo = Space.World) {
 	        if (this.parent && relativeTo === Space.World) {
-	            const t = matrix3x3_1.Matrix3x3.createTranslation(x, y);
-	            var invertedWorld = this.parent.getWorldMatrix().invert();
-	            const f = invertedWorld.multiply(t);
-	            console.log(f.getTranslation());
-	            f.getTranslation(this.position);
-	            this.updateWorldMatrix();
+	            var invertParentWorldMatrix = this.parent.getWorldMatrix().clone();
+	            invertParentWorldMatrix.invert();
+	            var worldPosition = new vector3_1.Vector3(x, y, 0);
+	            this.position = vector3_1.Vector3.TransformCoordinates(worldPosition, invertParentWorldMatrix);
 	        }
 	        else {
-	            this.position.set(x, y);
+	            this.position.x = x;
+	            this.position.y = y;
+	            this.position.z = 0;
 	        }
 	        this.dirtyFlags |= ElementDirtyFlag.Position;
 	        Runtime.sendCommand(e_command_type_1.CommandType.SetTransform, this.id);
 	    }
-	    getLocalPosition(out) {
-	        return (out || new vector2_1.Vector2()).copy(this.position);
+	    getLocalPosition() {
+	        return this.position.clone();
 	    }
-	    getPosition(out) {
+	    getPosition() {
 	        this.updateWorldMatrix();
-	        return (out || new vector2_1.Vector2()).set(this.worldMatrix.tx, this.worldMatrix.ty);
+	        return new vector3_1.Vector3(this.worldMatrix.m[12], this.worldMatrix.m[13], this.worldMatrix.m[14]);
 	    }
 	    getBoundingBox() {
 	        this.boundingBox.update();
@@ -3193,7 +5718,7 @@
 
 
 /***/ },
-/* 30 */
+/* 35 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3212,7 +5737,7 @@
 
 
 /***/ },
-/* 31 */
+/* 36 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3234,474 +5759,15 @@
 
 
 /***/ },
-/* 32 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const vector2_1 = __webpack_require__(17);
-	const math_util_1 = __webpack_require__(33);
-	/*
-	 * Layout
-	 * [ a  c  tx ]
-	 * [ b  d  ty ]
-	 * [ 0  0  1  ]
-	 *
-	 *
-	 * */
-	class Matrix3x3 {
-	    constructor() {
-	        this.a = this.d = 1;
-	        this.b = this.c = this.tx = this.ty = 0;
-	    }
-	    get m0() {
-	        return this.a;
-	    }
-	    get m1() {
-	        return this.b;
-	    }
-	    get m2() {
-	        return 0;
-	    }
-	    get m3() {
-	        return this.c;
-	    }
-	    get m4() {
-	        return this.d;
-	    }
-	    get m5() {
-	        return 0;
-	    }
-	    get m6() {
-	        return this.tx;
-	    }
-	    get m7() {
-	        return this.ty;
-	    }
-	    get m8() {
-	        return 1;
-	    }
-	    set(a, b, c, d, tx, ty) {
-	        this.a = a;
-	        this.b = b;
-	        this.c = c;
-	        this.d = d;
-	        this.tx = tx;
-	        this.ty = ty;
-	        return this;
-	    }
-	    identity() {
-	        this.a = this.d = 1;
-	        this.b = this.c = this.tx = this.ty = 0;
-	        return this;
-	    }
-	    translate(point) {
-	        const x = point.x;
-	        const y = point.y;
-	        this.tx += x * this.a + y * this.c;
-	        this.ty += x * this.b + y * this.d;
-	        return this;
-	    }
-	    scale(scale, center) {
-	        if (center) {
-	            this.translate(center);
-	        }
-	        this.a *= scale.x;
-	        this.b *= scale.x;
-	        this.c *= scale.y;
-	        this.d *= scale.y;
-	        if (center) {
-	            this.translate(new vector2_1.Vector2(center.x * -1, center.y * -1));
-	        }
-	        return this;
-	    }
-	    //todo should translation be in here?
-	    rotate(angle, center, angleUnit = math_util_1.AngleUnit.Radians) {
-	        if (angleUnit === math_util_1.AngleUnit.Degrees) {
-	            angle *= math_util_1.MathUtil.DegreesToRadians;
-	        }
-	        if (center) {
-	            var x = center.x;
-	            var y = center.y;
-	        }
-	        else {
-	            var x = this.tx;
-	            var y = this.ty;
-	        }
-	        const cos = Math.cos(angle);
-	        const sin = Math.sin(angle);
-	        const tx = x - x * cos + y * sin;
-	        const ty = y - x * sin - y * cos;
-	        const a = this.a;
-	        const b = this.b;
-	        const c = this.c;
-	        const d = this.d;
-	        this.a = cos * a + sin * c;
-	        this.b = cos * b + sin * d;
-	        this.c = -sin * a + cos * c;
-	        this.d = -sin * b + cos * d;
-	        this.tx += tx * a + ty * c;
-	        this.ty += tx * b + ty * d;
-	        return this;
-	    }
-	    multiply(mx) {
-	        const a1 = this.a;
-	        const b1 = this.b;
-	        const c1 = this.c;
-	        const d1 = this.d;
-	        const a2 = mx.a;
-	        const b2 = mx.c;
-	        const c2 = mx.b;
-	        const d2 = mx.d;
-	        const tx2 = mx.tx;
-	        const ty2 = mx.ty;
-	        this.a = a2 * a1 + c2 * c1;
-	        this.c = b2 * a1 + d2 * c1;
-	        this.b = a2 * b1 + c2 * d1;
-	        this.d = b2 * b1 + d2 * d1;
-	        this.tx += tx2 * a1 + ty2 * c1;
-	        this.ty += tx2 * b1 + ty2 * d1;
-	        return this;
-	    }
-	    invert() {
-	        var a = this.a, b = this.b, c = this.c, d = this.d, tx = this.tx, ty = this.ty, det = a * d - b * c, res = null;
-	        if (det && !isNaN(det) && isFinite(tx) && isFinite(ty)) {
-	            this.a = d / det;
-	            this.b = -b / det;
-	            this.c = -c / det;
-	            this.d = a / det;
-	            this.tx = (c * ty - d * tx) / det;
-	            this.ty = (b * tx - a * ty) / det;
-	            res = this;
-	        }
-	        return res;
-	    }
-	    invertNew(out) {
-	        const a = this.a;
-	        const b = this.b;
-	        const c = this.c;
-	        const d = this.d;
-	        const tx = this.tx;
-	        const ty = this.ty;
-	        const det = a * d - b * c;
-	        if (det && !isNaN(det) && isFinite(tx) && isFinite(ty)) {
-	            const retn = out || new Matrix3x3();
-	            retn.a = d / det;
-	            retn.b = -b / det;
-	            retn.c = -c / det;
-	            retn.d = a / det;
-	            retn.tx = (c * ty - d * tx) / det;
-	            retn.ty = (b * tx - a * ty) / det;
-	            return retn;
-	        }
-	        return null;
-	    }
-	    isIdentity() {
-	        return this.a === 1 && this.b === 0 && this.c === 0 && this.d === 1
-	            && this.tx === 0 && this.ty === 0;
-	    }
-	    transformDirection(point) {
-	        const x = point.x;
-	        const y = point.y;
-	        point.x = x * this.a + y * this.c;
-	        point.y = x * this.b + y * this.d;
-	        return point;
-	    }
-	    transformPoint(point) {
-	        const x = point.x;
-	        const y = point.y;
-	        point.x = x * this.a + y * this.c + this.tx;
-	        point.y = x * this.b + y * this.d + this.ty;
-	        return point;
-	    }
-	    transformPointNew(point) {
-	        const x = point.x;
-	        const y = point.y;
-	        return new vector2_1.Vector2(x * this.a + y * this.c + this.tx, x * this.b + y * this.d + this.ty);
-	    }
-	    inverseTransform(point) {
-	        const a = this.a;
-	        const b = this.b;
-	        const c = this.c;
-	        const d = this.d;
-	        const tx = this.tx;
-	        const ty = this.ty;
-	        const det = a * d - b * c;
-	        let res = null;
-	        if (det && !isNaN(det) && isFinite(tx) && isFinite(ty)) {
-	            const x = point.x - this.tx;
-	            const y = point.y - this.ty;
-	            res = new vector2_1.Vector2((x * d - y * c) / det, (y * a - x * b) / det);
-	        }
-	        return res;
-	    }
-	    // public decompose() {
-	    //     var a = this.a;
-	    //     var b = this.b;
-	    //     var c = this.c;
-	    //     var d = this.d;
-	    //     var det = a * d - b * c;
-	    //     var sqrt = Math.sqrt;
-	    //     var degrees = 180 / Math.PI;
-	    //     var rotate;
-	    //     var scale = new Vector2();
-	    //
-	    //     if (a !== 0 || b !== 0) {
-	    //         var r = sqrt(a * a + b * b);
-	    //         rotate = Math.acos(a / r) * (b > 0 ? 1 : -1);
-	    //         scale.x = r;
-	    //         scale.y = det / r;
-	    //     } else if (c !== 0 || d !== 0) {
-	    //         var s = sqrt(c * c + d * d);
-	    //         rotate = Math.asin(c / s) * (d > 0 ? 1 : -1);
-	    //         scale.x = det / s;
-	    //         scale.y = s;
-	    //     } else { // a = b = c = d = 0
-	    //         rotate = 0;
-	    //         scale.x = 0;
-	    //         scale.y = 0;
-	    //     }
-	    //     return {
-	    //         translation: new Vector2(this.tx, this.ty),
-	    //         rotation: rotate * degrees,
-	    //         scale: scale
-	    //     };
-	    // }
-	    getTranslation(out) {
-	        out = out || new vector2_1.Vector2();
-	        out.x = this.tx;
-	        out.y = this.ty;
-	        return out;
-	    }
-	    getScale(out) {
-	        var a = this.a;
-	        var b = this.b;
-	        var c = this.c;
-	        var d = this.d;
-	        var det = a * d - b * c;
-	        out = out || new vector2_1.Vector2();
-	        if (a !== 0 || b !== 0) {
-	            var r = Math.sqrt(a * a + b * b);
-	            out.x = r;
-	            out.y = det / r;
-	        }
-	        else if (c !== 0 || d !== 0) {
-	            var s = Math.sqrt(c * c + d * d);
-	            out.x = det / s;
-	            out.y = s;
-	        }
-	        else {
-	            out.x = 0;
-	            out.y = 0;
-	        }
-	        return out;
-	    }
-	    getRotation(unitType = math_util_1.AngleUnit.Radians) {
-	        var a = this.a;
-	        var b = this.b;
-	        var c = this.c;
-	        var d = this.d;
-	        var rotation = 0;
-	        if (a !== 0 || b !== 0) {
-	            var r = Math.sqrt(a * a + b * b);
-	            rotation = Math.acos(a / r) * (b > 0 ? 1 : -1);
-	        }
-	        else if (c !== 0 || d !== 0) {
-	            var s = Math.sqrt(c * c + d * d);
-	            rotation = Math.asin(c / s) * (d > 0 ? 1 : -1);
-	        }
-	        else {
-	            rotation = 0;
-	        }
-	        return unitType === math_util_1.AngleUnit.Degrees ? rotation * math_util_1.MathUtil.RadiansToDegrees : rotation;
-	    }
-	    copy(other) {
-	        this.a = other.a;
-	        this.b = other.b;
-	        this.c = other.c;
-	        this.d = other.d;
-	        this.tx = other.tx;
-	        this.ty = other.ty;
-	        return this;
-	    }
-	    equals(other) {
-	        return other.a === this.a && other.b === this.b && other.c === this.c &&
-	            other.d === this.d && other.tx === this.tx && other.ty === this.ty;
-	    }
-	    clone(out) {
-	        return (out || new Matrix3x3()).set(this.a, this.b, this.c, this.d, this.tx, this.ty);
-	    }
-	    static createIdentity() {
-	        return new Matrix3x3();
-	    }
-	    static createRotation(radians, out) {
-	        const result = out || new Matrix3x3();
-	        const cos = Math.cos(radians);
-	        const sin = Math.sin(radians);
-	        result.a = cos;
-	        result.b = sin;
-	        result.c = -sin;
-	        result.d = cos;
-	        result.tx = 0;
-	        result.ty = 0;
-	        return result;
-	    }
-	    static createScale(xScale, yScale, out) {
-	        const result = out || new Matrix3x3();
-	        result.a = xScale;
-	        result.b = 0;
-	        result.d = yScale;
-	        result.c = 0;
-	        result.tx = 0;
-	        result.ty = 0;
-	        return result;
-	    }
-	    static createTranslation(x, y, out) {
-	        const result = out || new Matrix3x3();
-	        result.a = 1;
-	        result.b = 0;
-	        result.c = 0;
-	        result.d = 1;
-	        result.tx = x;
-	        result.ty = y;
-	        return result;
-	    }
-	    static multiply(mat1, mat2, out) {
-	        out = out || new Matrix3x3();
-	        out.copy(mat1);
-	        out.multiply(mat2);
-	        return out;
-	    }
-	}
-	Matrix3x3.scratch0 = new Matrix3x3();
-	Matrix3x3.scratch1 = new Matrix3x3();
-	Matrix3x3.scratch2 = new Matrix3x3();
-	Matrix3x3.scratch3 = new Matrix3x3();
-	Matrix3x3.scratch4 = new Matrix3x3();
-	exports.Matrix3x3 = Matrix3x3;
-
-
-/***/ },
-/* 33 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	var AngleUnit;
-	(function (AngleUnit) {
-	    AngleUnit[AngleUnit["Radians"] = 0] = "Radians";
-	    AngleUnit[AngleUnit["Degrees"] = 1] = "Degrees";
-	})(AngleUnit = exports.AngleUnit || (exports.AngleUnit = {}));
-	exports.MathUtil = {
-	    RadiansToDegrees: 57.2957795130823,
-	    DegreesToRadians: 0.01745329251994,
-	    E: Math.E,
-	    Log2E: Math.LOG2E,
-	    Log10E: Math.LOG10E,
-	    Pi: Math.PI,
-	    PiOver2: Math.PI / 2.0,
-	    PiOver4: Math.PI / 4.0,
-	    TwoPi: Math.PI * 2.0,
-	    sign(value) {
-	        if (value === 0 || isNaN(value))
-	            return value;
-	        return value > 0 ? 1 : -1;
-	    },
-	    clamp(value, min, max) {
-	        value = (value > max) ? max : value;
-	        value = (value < min) ? min : value;
-	        return value;
-	    },
-	    clamp01(value) {
-	        value = (value > 1) ? 1 : value;
-	        value = (value < 0) ? 0 : value;
-	        return value;
-	    },
-	    distance(value1, value2) {
-	        return Math.abs(value1 - value2);
-	    },
-	    barycentric(value1, value2, value3, amount1, amount2) {
-	        return value1 + (value2 - value1) * amount1 + (value3 - value1) * amount2;
-	    },
-	    catmullRom(value1, value2, value3, value4, amount) {
-	        // Using formula from http://www.mvps.org/directx/articles/catmull/
-	        const amountSquared = amount * amount;
-	        const amountCubed = amountSquared * amount;
-	        return (0.5 * (2.0 * value2 +
-	            (value3 - value1) * amount +
-	            (2.0 * value1 - 5.0 * value2 + 4.0 * value3 - value4) * amountSquared +
-	            (3.0 * value2 - value1 - 3.0 * value3 + value4) * amountCubed));
-	    },
-	    hermite(value1, tangent1, value2, tangent2, amount) {
-	        let v1 = value1;
-	        let v2 = value2;
-	        let t1 = tangent1;
-	        let t2 = tangent2;
-	        let s = amount;
-	        let result = 0;
-	        let sCubed = s * s * s;
-	        let sSquared = s * s;
-	        if (amount == 0)
-	            result = value1;
-	        else if (amount == 1)
-	            result = value2;
-	        else
-	            result = (2 * v1 - 2 * v2 + t2 + t1) * sCubed +
-	                (3 * v2 - 3 * v1 - 2 * t1 - t2) * sSquared +
-	                t1 * s +
-	                v1;
-	        return result;
-	    },
-	    lerp(value1, value2, amount) {
-	        return ((1 - amount) * value1) + (value2 * amount);
-	    },
-	    smoothStep(value1, value2, amount) {
-	        return this.hermite(value1, 0, value2, 0, this.clamp01(amount));
-	    },
-	    wrapAngleDegrees(angle) {
-	        let x = angle % 360;
-	        if (x < 0)
-	            x += 360;
-	        return x;
-	    },
-	    wrapAngle(angle) {
-	        const PI = Math.PI;
-	        const TwoPI = PI * 2;
-	        if ((angle > -PI) && (angle <= PI)) {
-	            return angle;
-	        }
-	        angle %= TwoPI;
-	        if (angle <= -PI) {
-	            return angle + TwoPI;
-	        }
-	        if (angle > PI) {
-	            return angle - TwoPI;
-	        }
-	        return angle;
-	    },
-	    normalizeAngle180(angle) {
-	        let x = (angle + 180) % 360;
-	        if (x < 0)
-	            x += 360;
-	        return x - 180;
-	    },
-	    isPowerOf2(value) {
-	        var int = value | 0;
-	        if (value !== int)
-	            return false;
-	        return (int > 0) && ((int & (int - 1)) == 0);
-	    }
-	};
-
-
-/***/ },
-/* 34 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const vector2_1 = __webpack_require__(17);
-	const rectangle_1 = __webpack_require__(35);
+	const rectangle_1 = __webpack_require__(38);
+	const vector3_1 = __webpack_require__(27);
+	const quaternion_1 = __webpack_require__(28);
 	class BoundingBox {
 	    constructor(appElement) {
 	        this.appElement = appElement;
@@ -3715,26 +5781,19 @@
 	    update() {
 	        const element = this.appElement;
 	        const wm = element.getWorldMatrix();
-	        const scale = wm.getScale();
-	        const rotation = wm.getRotation();
-	        const theta = -rotation;
-	        const position = element.getLocalPosition();
+	        const scale = new vector3_1.Vector3();
+	        const rotation = new quaternion_1.Quaternion();
+	        const position = new vector3_1.Vector3();
+	        wm.decompose(scale, rotation, position);
+	        const theta = rotation.toEulerAngles().z;
 	        const pivot = element.getPivot();
 	        const w = element.getWidth() * scale.x;
 	        const h = element.getHeight() * scale.y;
 	        const pivotPoint = new vector2_1.Vector2(pivot.x * w, pivot.y * h);
-	        const parent = element.getParent();
-	        if (parent) {
-	            const p = parent.getPosition();
-	            //maybe this needs to be done for all parents and get the result?
-	            position.x = p.x + (position.x * scale.x); //this may incorrectly add 1 when scale === 1
-	            position.y = p.y + (position.y * scale.y);
-	        }
 	        this.topLeft.set(0, 0).rotateAround(theta, pivotPoint).addVector(position);
 	        this.topRight.set(w, 0).rotateAround(theta, pivotPoint).addVector(position);
 	        this.bottomRight.set(w, h).rotateAround(theta, pivotPoint).addVector(position);
 	        this.bottomLeft.set(0, h).rotateAround(theta, pivotPoint).addVector(position);
-	        //now rotate around parent
 	    }
 	    containsPoint(point) {
 	        const points = this.points;
@@ -3776,19 +5835,53 @@
 
 
 /***/ },
-/* 35 */
+/* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(4);
-	const TEMP_ANNOTATION_1 = __webpack_require__(18);
-	let Rectangle = Rectangle_1 = class Rectangle {
+	const vector2_1 = __webpack_require__(17);
+	class Rectangle {
 	    constructor(x = 0, y = 0, width = 0, height = 0) {
 	        this.x = x;
 	        this.y = y;
 	        this.width = width;
 	        this.height = height;
+	        this._center = null;
+	        this._min = null;
+	        this._max = null;
+	    }
+	    get centerX() {
+	        return this.x + (this.width * 0.5);
+	    }
+	    get centerY() {
+	        return this.y + (this.height * 0.5);
+	    }
+	    get min() {
+	        if (!this._min)
+	            this._min = new vector2_1.Vector2();
+	        this._min.x = this.x;
+	        this._min.y = this.y;
+	        return this._min;
+	    }
+	    get max() {
+	        if (!this._max)
+	            this._max = new vector2_1.Vector2();
+	        this._max.x = this.x + this.width;
+	        this._max.y = this.y + this.height;
+	        return this._max;
+	    }
+	    get center() {
+	        if (!this._center)
+	            this._center = new vector2_1.Vector2();
+	        this._center.x = this.x + (this.width * 0.5);
+	        this._center.y = this.y + (this.height * 0.5);
+	        return this._center;
+	    }
+	    get outerRadius() {
+	        var min = vector2_1.Vector2.scratch0.set(this.x, this.y);
+	        var max = vector2_1.Vector2.scratch1.set(this.x + this.width, this.y + this.height);
+	        return max.subVector(min).length() * 0.5;
 	    }
 	    setFromPoints(minX, minY, maxX, maxY) {
 	        this.x = minX;
@@ -3804,7 +5897,7 @@
 	        return false;
 	    }
 	    containsPoint(point) {
-	        return Rectangle_1.pointInsideRect(point, this);
+	        return Rectangle.pointInsideRect(point, this);
 	    }
 	    static pointInsideRect(point, rect) {
 	        const x = rect.x;
@@ -3816,7 +5909,7 @@
 	        return px >= x && x + w >= px && py >= y && y + h >= py;
 	    }
 	    clone() {
-	        return new Rectangle_1(this.x, this.y, this.width, this.height);
+	        return new Rectangle(this.x, this.y, this.width, this.height);
 	    }
 	    copyTo(input) {
 	        input.x = this.x;
@@ -3825,24 +5918,20 @@
 	        input.height = this.height;
 	        return input;
 	    }
-	};
-	Rectangle.Zero = new Rectangle_1();
-	Rectangle = Rectangle_1 = tslib_1.__decorate([
-	    TEMP_ANNOTATION_1.serializeClass
-	], Rectangle);
+	}
+	Rectangle.Zero = new Rectangle();
 	exports.Rectangle = Rectangle;
-	var Rectangle_1;
 
 
 /***/ },
-/* 36 */
+/* 39 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const e_command_type_1 = __webpack_require__(31);
-	const event_emitter_1 = __webpack_require__(37);
+	const e_command_type_1 = __webpack_require__(36);
+	const event_emitter_1 = __webpack_require__(40);
 	const object_pool_1 = __webpack_require__(11);
 	class RuntimeCommand {
 	    constructor() {
@@ -3977,7 +6066,7 @@
 
 
 /***/ },
-/* 37 */
+/* 40 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -4022,7 +6111,7 @@
 
 
 /***/ },
-/* 38 */
+/* 41 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4035,7 +6124,7 @@
 
 
 /***/ },
-/* 39 */
+/* 42 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4048,14 +6137,14 @@
 
 
 /***/ },
-/* 40 */
+/* 43 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
 	const TEMP_ANNOTATION_1 = __webpack_require__(18);
-	const e_lifecycle_flags_1 = __webpack_require__(30);
+	const e_lifecycle_flags_1 = __webpack_require__(35);
 	let Component = Component_1 = class Component {
 	    constructor() {
 	        this.lifeCycleFlags = e_lifecycle_flags_1.LifeCycleFlag.Enabled;
@@ -4156,7 +6245,7 @@
 
 
 /***/ },
-/* 41 */
+/* 44 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -4265,14 +6354,14 @@
 
 
 /***/ },
-/* 42 */
+/* 45 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const asset_1 = __webpack_require__(43);
-	const evt_asset_created_1 = __webpack_require__(44);
+	const asset_1 = __webpack_require__(46);
+	const evt_asset_created_1 = __webpack_require__(47);
 	//asset is just a file pointer with an icon and extension and defines an inspector
 	//dragging an asset onto a field in the inspector just loads the asset
 	//an importer is just an operation applied to the data before writing it to disk
@@ -4282,10 +6371,10 @@
 	//scripts need to be tracked as assets also for scene dependencies
 	//but they aren't (probably) loaded in the same way other assets are
 	//runtime asset bundle -> database of asset data with function for loading them unrelated to the file system
-	const fs = __webpack_require__(45);
-	const File = __webpack_require__(46);
-	const Path = __webpack_require__(47);
-	const globby = __webpack_require__(48);
+	const fs = __webpack_require__(48);
+	const File = __webpack_require__(49);
+	const Path = __webpack_require__(50);
+	const globby = __webpack_require__(51);
 	function walkSync(dir, fileList = [], fileStats = []) {
 	    const files = File.readdirSync(dir);
 	    for (let i = 0; i < files.length; i++) {
@@ -4469,7 +6558,7 @@
 
 
 /***/ },
-/* 43 */
+/* 46 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4551,7 +6640,7 @@
 
 
 /***/ },
-/* 44 */
+/* 47 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -4564,41 +6653,41 @@
 
 
 /***/ },
-/* 45 */
+/* 48 */
 /***/ function(module, exports) {
 
 	module.exports = require("fs");
 
 /***/ },
-/* 46 */
+/* 49 */
 /***/ function(module, exports) {
 
 	module.exports = require("mz/fs");
 
 /***/ },
-/* 47 */
+/* 50 */
 /***/ function(module, exports) {
 
 	module.exports = require("path");
 
 /***/ },
-/* 48 */
+/* 51 */
 /***/ function(module, exports) {
 
 	module.exports = require("globby");
 
 /***/ },
-/* 49 */
+/* 52 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const component_1 = __webpack_require__(40);
-	const color_1 = __webpack_require__(50);
-	const e_command_type_1 = __webpack_require__(31);
-	const expose_as_1 = __webpack_require__(51);
-	const cerialize_1 = __webpack_require__(52);
+	const component_1 = __webpack_require__(43);
+	const color_1 = __webpack_require__(53);
+	const e_command_type_1 = __webpack_require__(36);
+	const expose_as_1 = __webpack_require__(54);
+	const cerialize_1 = __webpack_require__(55);
 	let BackgroundComponent = class BackgroundComponent extends component_1.Component {
 	    constructor() {
 	        super(...arguments);
@@ -4640,7 +6729,7 @@
 
 
 /***/ },
-/* 50 */
+/* 53 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -4674,7 +6763,7 @@
 
 
 /***/ },
-/* 51 */
+/* 54 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -4737,13 +6826,13 @@
 
 
 /***/ },
-/* 52 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(53);
+	module.exports = __webpack_require__(56);
 
 /***/ },
-/* 53 */
+/* 56 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -5399,7 +7488,7 @@
 
 
 /***/ },
-/* 54 */
+/* 57 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5453,14 +7542,14 @@
 
 
 /***/ },
-/* 55 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const runtime_base_1 = __webpack_require__(36);
+	const runtime_base_1 = __webpack_require__(39);
 	const browser_input_1 = __webpack_require__(24);
-	const e_command_type_1 = __webpack_require__(31);
+	const e_command_type_1 = __webpack_require__(36);
 	class BrowserRuntimeImpl extends runtime_base_1.RuntimeBase {
 	    constructor(codeurl, mountTarget = null) {
 	        super();
@@ -5500,7 +7589,7 @@
 
 
 /***/ },
-/* 56 */
+/* 59 */
 /***/ function(module, exports) {
 
 	//polyfill for webworker while in editor mode
@@ -5537,19 +7626,19 @@
 
 
 /***/ },
-/* 57 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const split_pane_1 = __webpack_require__(58);
-	const editor_window_frame_1 = __webpack_require__(59);
-	const hierarchy_window_1 = __webpack_require__(62);
-	const inspector_window_1 = __webpack_require__(87);
-	const editor_theme_1 = __webpack_require__(60);
-	const asset_window_1 = __webpack_require__(104);
+	const split_pane_1 = __webpack_require__(61);
+	const editor_window_frame_1 = __webpack_require__(62);
+	const hierarchy_window_1 = __webpack_require__(65);
+	const inspector_window_1 = __webpack_require__(90);
+	const editor_theme_1 = __webpack_require__(63);
+	const asset_window_1 = __webpack_require__(107);
 	const editor_html_element_1 = __webpack_require__(19);
-	const stage_window_1 = __webpack_require__(113);
+	const stage_window_1 = __webpack_require__(116);
 	class EditorApplication extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "editor-application" };
@@ -5586,7 +7675,7 @@
 
 
 /***/ },
-/* 58 */
+/* 61 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -5871,15 +7960,15 @@
 
 
 /***/ },
-/* 59 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const split_pane_1 = __webpack_require__(58);
-	const editor_theme_1 = __webpack_require__(60);
+	const split_pane_1 = __webpack_require__(61);
+	const editor_theme_1 = __webpack_require__(63);
 	const element_renderer_1 = __webpack_require__(7);
-	const editor_window_tab_1 = __webpack_require__(61);
+	const editor_window_tab_1 = __webpack_require__(64);
 	const editor_html_element_1 = __webpack_require__(19);
 	//todo this is causing a problem with mouse selection -- quad tree fixes this
 	//this issue has to do with document.elementFromPoint not ignoring this element
@@ -6111,7 +8200,7 @@
 
 
 /***/ },
-/* 60 */
+/* 63 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -6127,12 +8216,12 @@
 
 
 /***/ },
-/* 61 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_theme_1 = __webpack_require__(60);
+	const editor_theme_1 = __webpack_require__(63);
 	const editor_html_element_1 = __webpack_require__(19);
 	class WindowFrameTab extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
@@ -6176,33 +8265,33 @@
 
 
 /***/ },
-/* 62 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const button_1 = __webpack_require__(63);
-	const hierarchy_item_1 = __webpack_require__(64);
+	const button_1 = __webpack_require__(66);
+	const hierarchy_item_1 = __webpack_require__(67);
 	const evt_selection_changed_1 = __webpack_require__(5);
-	const evt_scene_loaded_event_1 = __webpack_require__(69);
+	const evt_scene_loaded_event_1 = __webpack_require__(72);
 	const evt_app_element_created_1 = __webpack_require__(22);
 	const element_renderer_1 = __webpack_require__(7);
-	const editor_window_element_1 = __webpack_require__(70);
-	const app_element_1 = __webpack_require__(29);
-	const evt_app_element_parent_changed_1 = __webpack_require__(38);
-	const drag_hierarchy_item_1 = __webpack_require__(66);
+	const editor_window_element_1 = __webpack_require__(73);
+	const app_element_1 = __webpack_require__(34);
+	const evt_app_element_parent_changed_1 = __webpack_require__(41);
+	const drag_hierarchy_item_1 = __webpack_require__(69);
 	const vector2_1 = __webpack_require__(17);
-	const editor_element_annotations_1 = __webpack_require__(71);
-	const icon_1 = __webpack_require__(65);
-	const evt_app_element_index_changed_1 = __webpack_require__(39);
+	const editor_element_annotations_1 = __webpack_require__(74);
+	const icon_1 = __webpack_require__(68);
+	const evt_app_element_index_changed_1 = __webpack_require__(42);
 	const runtime_event_1 = __webpack_require__(6);
-	const scroll_component_1 = __webpack_require__(72);
-	const sizing_component_1 = __webpack_require__(74);
-	const menu_setup_1 = __webpack_require__(76);
-	const color_1 = __webpack_require__(50);
-	const background_component_1 = __webpack_require__(49);
-	const panel_component_1 = __webpack_require__(78);
+	const scroll_component_1 = __webpack_require__(75);
+	const sizing_component_1 = __webpack_require__(77);
+	const menu_setup_1 = __webpack_require__(79);
+	const color_1 = __webpack_require__(53);
+	const background_component_1 = __webpack_require__(52);
+	const panel_component_1 = __webpack_require__(81);
 	class HierarchyWindow extends editor_window_element_1.EditorWindowElement {
 	    constructor() {
 	        super(...arguments);
@@ -6387,7 +8476,7 @@
 
 
 /***/ },
-/* 63 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6405,19 +8494,19 @@
 
 
 /***/ },
-/* 64 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const icon_1 = __webpack_require__(65);
-	const drag_action_1 = __webpack_require__(41);
-	const drag_hierarchy_item_1 = __webpack_require__(66);
+	const icon_1 = __webpack_require__(68);
+	const drag_action_1 = __webpack_require__(44);
+	const drag_hierarchy_item_1 = __webpack_require__(69);
 	const editor_html_element_1 = __webpack_require__(19);
-	const hierarchy_insert_target_1 = __webpack_require__(67);
+	const hierarchy_insert_target_1 = __webpack_require__(70);
 	const binding_1 = __webpack_require__(13);
-	const evt_app_element_parent_changed_1 = __webpack_require__(38);
+	const evt_app_element_parent_changed_1 = __webpack_require__(41);
 	class HierarchyItem extends editor_html_element_1.EditorHTMLElement {
 	    setSelected(isSelected) {
 	        this.getChildBySelector(".hierarchy-item-offset").toggleClass("selected", isSelected);
@@ -6514,7 +8603,7 @@
 
 
 /***/ },
-/* 65 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6588,12 +8677,12 @@
 
 
 /***/ },
-/* 66 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const drag_action_1 = __webpack_require__(41);
+	const drag_action_1 = __webpack_require__(44);
 	class HierarchyItemDragAction extends drag_action_1.DragAction {
 	    constructor(item) {
 	        super();
@@ -6605,17 +8694,17 @@
 
 
 /***/ },
-/* 67 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
 	const editor_html_element_1 = __webpack_require__(19);
-	const hierarchy_item_1 = __webpack_require__(64);
-	const drag_action_1 = __webpack_require__(41);
-	const drag_hierarchy_item_1 = __webpack_require__(66);
-	const prefab_drag_action_1 = __webpack_require__(68);
+	const hierarchy_item_1 = __webpack_require__(67);
+	const drag_action_1 = __webpack_require__(44);
+	const drag_hierarchy_item_1 = __webpack_require__(69);
+	const prefab_drag_action_1 = __webpack_require__(71);
 	class HierarchyItemDropTarget extends editor_html_element_1.EditorHTMLElement {
 	    onMounted() {
 	        this.target = this.parent;
@@ -6684,12 +8773,12 @@
 
 
 /***/ },
-/* 68 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const drag_action_1 = __webpack_require__(41);
+	const drag_action_1 = __webpack_require__(44);
 	class PrefabDragAction extends drag_action_1.DragAction {
 	    constructor(template) {
 	        super();
@@ -6700,7 +8789,7 @@
 
 
 /***/ },
-/* 69 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6712,7 +8801,7 @@
 
 
 /***/ },
-/* 70 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6724,7 +8813,7 @@
 
 
 /***/ },
-/* 71 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6853,14 +8942,14 @@
 
 
 /***/ },
-/* 72 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(73);
-	const component_1 = __webpack_require__(40);
+	const ui_component_1 = __webpack_require__(76);
+	const component_1 = __webpack_require__(43);
 	var ScrollBarVisibility;
 	(function (ScrollBarVisibility) {
 	    ScrollBarVisibility[ScrollBarVisibility["Never"] = 0] = "Never";
@@ -6876,13 +8965,13 @@
 
 
 /***/ },
-/* 73 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const component_1 = __webpack_require__(40);
+	const component_1 = __webpack_require__(43);
 	let UIComponent = class UIComponent extends component_1.Component {
 	    getTypeName() {
 	        return this.constructor.name.replace("Component", "");
@@ -6900,16 +8989,16 @@
 
 
 /***/ },
-/* 74 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const layout_1 = __webpack_require__(75);
-	const expose_as_1 = __webpack_require__(51);
+	const layout_1 = __webpack_require__(78);
+	const expose_as_1 = __webpack_require__(54);
 	const util_1 = __webpack_require__(16);
-	const component_1 = __webpack_require__(40);
+	const component_1 = __webpack_require__(43);
 	var SizingMode;
 	(function (SizingMode) {
 	    SizingMode[SizingMode["Fixed"] = 0] = "Fixed";
@@ -6958,13 +9047,13 @@
 
 
 /***/ },
-/* 75 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const sizing_component_1 = __webpack_require__(74);
-	const component_1 = __webpack_require__(40);
+	const sizing_component_1 = __webpack_require__(77);
+	const component_1 = __webpack_require__(43);
 	class DefaultSizer {
 	    constructor(appElement) {
 	        this.appElement = appElement;
@@ -7078,25 +9167,25 @@
 
 
 /***/ },
-/* 76 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const app_element_1 = __webpack_require__(29);
-	const text_component_1 = __webpack_require__(77);
-	const panel_component_1 = __webpack_require__(78);
-	const image_component_1 = __webpack_require__(79);
-	const button_component_1 = __webpack_require__(80);
-	const checkbox_component_1 = __webpack_require__(81);
-	const slider_component_1 = __webpack_require__(82);
-	const dropdown_component_1 = __webpack_require__(83);
-	const text_input_component_1 = __webpack_require__(84);
-	const number_input_component_1 = __webpack_require__(85);
-	const text_area_component_1 = __webpack_require__(86);
-	const background_component_1 = __webpack_require__(49);
-	const color_1 = __webpack_require__(50);
-	const sizing_component_1 = __webpack_require__(74);
+	const app_element_1 = __webpack_require__(34);
+	const text_component_1 = __webpack_require__(80);
+	const panel_component_1 = __webpack_require__(81);
+	const image_component_1 = __webpack_require__(82);
+	const button_component_1 = __webpack_require__(83);
+	const checkbox_component_1 = __webpack_require__(84);
+	const slider_component_1 = __webpack_require__(85);
+	const dropdown_component_1 = __webpack_require__(86);
+	const text_input_component_1 = __webpack_require__(87);
+	const number_input_component_1 = __webpack_require__(88);
+	const text_area_component_1 = __webpack_require__(89);
+	const background_component_1 = __webpack_require__(52);
+	const color_1 = __webpack_require__(53);
+	const sizing_component_1 = __webpack_require__(77);
 	function createTextElement(parent = null) {
 	    const element = new app_element_1.AppElement("Text", parent);
 	    const text = element.addComponent(text_component_1.TextComponent);
@@ -7177,15 +9266,15 @@
 
 
 /***/ },
-/* 77 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const component_1 = __webpack_require__(40);
-	const e_command_type_1 = __webpack_require__(31);
-	const ui_component_1 = __webpack_require__(73);
+	const component_1 = __webpack_require__(43);
+	const e_command_type_1 = __webpack_require__(36);
+	const ui_component_1 = __webpack_require__(76);
 	let TextComponent = class TextComponent extends ui_component_1.UIComponent {
 	    constructor() {
 	        super(...arguments);
@@ -7261,14 +9350,14 @@
 
 
 /***/ },
-/* 78 */
+/* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(73);
-	const component_1 = __webpack_require__(40);
+	const ui_component_1 = __webpack_require__(76);
+	const component_1 = __webpack_require__(43);
 	let PanelComponent = class PanelComponent extends ui_component_1.UIComponent {
 	    serialize() {
 	        return {
@@ -7283,16 +9372,16 @@
 
 
 /***/ },
-/* 79 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(73);
-	const expose_as_1 = __webpack_require__(51);
-	const component_1 = __webpack_require__(40);
-	const e_command_type_1 = __webpack_require__(31);
+	const ui_component_1 = __webpack_require__(76);
+	const expose_as_1 = __webpack_require__(54);
+	const component_1 = __webpack_require__(43);
+	const e_command_type_1 = __webpack_require__(36);
 	let ImageComponent = class ImageComponent extends ui_component_1.UIComponent {
 	    setImageAsync(image) {
 	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
@@ -7324,14 +9413,14 @@
 
 
 /***/ },
-/* 80 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(73);
-	const component_1 = __webpack_require__(40);
+	const ui_component_1 = __webpack_require__(76);
+	const component_1 = __webpack_require__(43);
 	let ButtonComponent = class ButtonComponent extends ui_component_1.UIComponent {
 	};
 	ButtonComponent = tslib_1.__decorate([
@@ -7341,14 +9430,14 @@
 
 
 /***/ },
-/* 81 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(73);
-	const component_1 = __webpack_require__(40);
+	const ui_component_1 = __webpack_require__(76);
+	const component_1 = __webpack_require__(43);
 	let CheckboxComponent = class CheckboxComponent extends ui_component_1.UIComponent {
 	};
 	CheckboxComponent = tslib_1.__decorate([
@@ -7358,14 +9447,14 @@
 
 
 /***/ },
-/* 82 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(73);
-	const component_1 = __webpack_require__(40);
+	const ui_component_1 = __webpack_require__(76);
+	const component_1 = __webpack_require__(43);
 	let SliderComponent = class SliderComponent extends ui_component_1.UIComponent {
 	};
 	SliderComponent = tslib_1.__decorate([
@@ -7375,14 +9464,14 @@
 
 
 /***/ },
-/* 83 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(73);
-	const component_1 = __webpack_require__(40);
+	const ui_component_1 = __webpack_require__(76);
+	const component_1 = __webpack_require__(43);
 	let DropdownComponent = class DropdownComponent extends ui_component_1.UIComponent {
 	};
 	DropdownComponent = tslib_1.__decorate([
@@ -7392,14 +9481,14 @@
 
 
 /***/ },
-/* 84 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(73);
-	const component_1 = __webpack_require__(40);
+	const ui_component_1 = __webpack_require__(76);
+	const component_1 = __webpack_require__(43);
 	let TextInputComponent = class TextInputComponent extends ui_component_1.UIComponent {
 	};
 	TextInputComponent = tslib_1.__decorate([
@@ -7409,14 +9498,14 @@
 
 
 /***/ },
-/* 85 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(73);
-	const component_1 = __webpack_require__(40);
+	const ui_component_1 = __webpack_require__(76);
+	const component_1 = __webpack_require__(43);
 	let NumberInputComponent = class NumberInputComponent extends ui_component_1.UIComponent {
 	};
 	NumberInputComponent = tslib_1.__decorate([
@@ -7426,14 +9515,14 @@
 
 
 /***/ },
-/* 86 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(73);
-	const component_1 = __webpack_require__(40);
+	const ui_component_1 = __webpack_require__(76);
+	const component_1 = __webpack_require__(43);
 	let TextAreaComponent = class TextAreaComponent extends ui_component_1.UIComponent {
 	};
 	TextAreaComponent = tslib_1.__decorate([
@@ -7443,23 +9532,23 @@
 
 
 /***/ },
-/* 87 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const vertical_stack_1 = __webpack_require__(88);
-	const text_input_1 = __webpack_require__(89);
+	const vertical_stack_1 = __webpack_require__(91);
+	const text_input_1 = __webpack_require__(92);
 	const evt_selection_changed_1 = __webpack_require__(5);
-	const editor_window_element_1 = __webpack_require__(70);
-	const inspector_row_1 = __webpack_require__(91);
-	const component_menu_1 = __webpack_require__(92);
-	const editor_theme_1 = __webpack_require__(60);
-	const component_renderer_1 = __webpack_require__(95);
+	const editor_window_element_1 = __webpack_require__(73);
+	const inspector_row_1 = __webpack_require__(94);
+	const component_menu_1 = __webpack_require__(95);
+	const editor_theme_1 = __webpack_require__(63);
+	const component_renderer_1 = __webpack_require__(98);
 	const element_renderer_1 = __webpack_require__(7);
-	const app_element_inspector_1 = __webpack_require__(99);
+	const app_element_inspector_1 = __webpack_require__(102);
 	const binding_1 = __webpack_require__(13);
-	const checkbox_input_1 = __webpack_require__(98);
+	const checkbox_input_1 = __webpack_require__(101);
 	class InspectorWindow extends editor_window_element_1.EditorWindowElement {
 	    onSelectionChanged(newSelection, oldSelection) {
 	        this.selection = newSelection;
@@ -7535,7 +9624,7 @@
 
 
 /***/ },
-/* 88 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7562,12 +9651,12 @@
 
 
 /***/ },
-/* 89 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(90);
+	const editor_input_1 = __webpack_require__(93);
 	class TextInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return {
@@ -7596,7 +9685,7 @@
 
 
 /***/ },
-/* 90 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7623,7 +9712,7 @@
 
 
 /***/ },
-/* 91 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7661,16 +9750,16 @@
 
 
 /***/ },
-/* 92 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const vertical_stack_1 = __webpack_require__(88);
-	const text_box_icon_1 = __webpack_require__(93);
-	const button_1 = __webpack_require__(63);
-	const component_option_1 = __webpack_require__(94);
-	const component_1 = __webpack_require__(40);
+	const vertical_stack_1 = __webpack_require__(91);
+	const text_box_icon_1 = __webpack_require__(96);
+	const button_1 = __webpack_require__(66);
+	const component_option_1 = __webpack_require__(97);
+	const component_1 = __webpack_require__(43);
 	const element_renderer_1 = __webpack_require__(7);
 	const editor_html_element_1 = __webpack_require__(19);
 	class ComponentMenu extends editor_html_element_1.EditorHTMLElement {
@@ -7743,7 +9832,7 @@
 
 
 /***/ },
-/* 93 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7803,7 +9892,7 @@
 
 
 /***/ },
-/* 94 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7821,19 +9910,19 @@
 
 
 /***/ },
-/* 95 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const property_renderer_1 = __webpack_require__(96);
-	const horizontal_1 = __webpack_require__(97);
-	const icon_1 = __webpack_require__(65);
+	const property_renderer_1 = __webpack_require__(99);
+	const horizontal_1 = __webpack_require__(100);
+	const icon_1 = __webpack_require__(68);
 	const element_renderer_1 = __webpack_require__(7);
-	const checkbox_input_1 = __webpack_require__(98);
+	const checkbox_input_1 = __webpack_require__(101);
 	const util_1 = __webpack_require__(16);
-	const editor_theme_1 = __webpack_require__(60);
-	const expose_as_1 = __webpack_require__(51);
+	const editor_theme_1 = __webpack_require__(63);
+	const expose_as_1 = __webpack_require__(54);
 	const editor_html_element_1 = __webpack_require__(19);
 	const binding_1 = __webpack_require__(13);
 	class ComponentRenderer extends editor_html_element_1.EditorHTMLElement {
@@ -7929,7 +10018,7 @@
 
 
 /***/ },
-/* 96 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7957,7 +10046,7 @@
 
 
 /***/ },
-/* 97 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7982,12 +10071,12 @@
 
 
 /***/ },
-/* 98 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(90);
+	const editor_input_1 = __webpack_require__(93);
 	class CheckboxInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return {
@@ -8011,19 +10100,19 @@
 
 
 /***/ },
-/* 99 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const editor_html_element_1 = __webpack_require__(19);
-	const inspector_row_1 = __webpack_require__(91);
+	const inspector_row_1 = __webpack_require__(94);
 	const binding_1 = __webpack_require__(13);
-	const app_element_1 = __webpack_require__(29);
-	const number_input_1 = __webpack_require__(100);
-	const inline_field_1 = __webpack_require__(102);
-	const editor_theme_1 = __webpack_require__(60);
-	const dimension_input_1 = __webpack_require__(103);
+	const app_element_1 = __webpack_require__(34);
+	const number_input_1 = __webpack_require__(103);
+	const inline_field_1 = __webpack_require__(105);
+	const editor_theme_1 = __webpack_require__(63);
+	const dimension_input_1 = __webpack_require__(106);
 	class TransformInspector extends editor_html_element_1.EditorHTMLElement {
 	    onCreated() {
 	        this.appElement = this.attrs.appElement;
@@ -8081,14 +10170,14 @@
 
 
 /***/ },
-/* 100 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(90);
-	const e_keycode_1 = __webpack_require__(101);
-	const math_util_1 = __webpack_require__(33);
+	const editor_input_1 = __webpack_require__(93);
+	const e_keycode_1 = __webpack_require__(104);
+	const math_util_1 = __webpack_require__(30);
 	class NumberInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return {
@@ -8161,7 +10250,7 @@
 
 
 /***/ },
-/* 101 */
+/* 104 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -8271,12 +10360,12 @@
 
 
 /***/ },
-/* 102 */
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const horizontal_1 = __webpack_require__(97);
+	const horizontal_1 = __webpack_require__(100);
 	class InlineField extends horizontal_1.HorizontalBase {
 	    createInitialStructure(children) {
 	        return [
@@ -8297,15 +10386,15 @@
 
 
 /***/ },
-/* 103 */
+/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const number_input_1 = __webpack_require__(100);
+	const number_input_1 = __webpack_require__(103);
 	const binding_1 = __webpack_require__(13);
-	const editor_input_1 = __webpack_require__(90);
-	const horizontal_1 = __webpack_require__(97);
+	const editor_input_1 = __webpack_require__(93);
+	const horizontal_1 = __webpack_require__(100);
 	class DimensionInput extends editor_input_1.InputRenderer {
 	    createInitialStructure(children) {
 	        return Hex.createElement(horizontal_1.Horizontal, null,
@@ -8332,26 +10421,26 @@
 
 
 /***/ },
-/* 104 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const editor_window_element_1 = __webpack_require__(70);
+	const editor_window_element_1 = __webpack_require__(73);
 	const vector2_1 = __webpack_require__(17);
-	const asset_item_1 = __webpack_require__(105);
+	const asset_item_1 = __webpack_require__(108);
 	const element_renderer_1 = __webpack_require__(7);
-	const prefab_asset_item_1 = __webpack_require__(108);
-	const editor_element_annotations_1 = __webpack_require__(71);
-	const editor_theme_1 = __webpack_require__(60);
-	const folder_asset_item_1 = __webpack_require__(110);
-	const folder_asset_1 = __webpack_require__(111);
-	const icon_1 = __webpack_require__(65);
-	const drag_action_1 = __webpack_require__(41);
-	const drag_hierarchy_item_1 = __webpack_require__(66);
-	const evt_asset_created_1 = __webpack_require__(44);
-	const image_asset_item_1 = __webpack_require__(112);
+	const prefab_asset_item_1 = __webpack_require__(111);
+	const editor_element_annotations_1 = __webpack_require__(74);
+	const editor_theme_1 = __webpack_require__(63);
+	const folder_asset_item_1 = __webpack_require__(113);
+	const folder_asset_1 = __webpack_require__(114);
+	const icon_1 = __webpack_require__(68);
+	const drag_action_1 = __webpack_require__(44);
+	const drag_hierarchy_item_1 = __webpack_require__(69);
+	const evt_asset_created_1 = __webpack_require__(47);
+	const image_asset_item_1 = __webpack_require__(115);
 	class AssetWindow extends editor_window_element_1.EditorWindowElement {
 	    constructor() {
 	        super(...arguments);
@@ -8551,18 +10640,18 @@
 
 
 /***/ },
-/* 105 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
 	const editor_html_element_1 = __webpack_require__(19);
-	const asset_window_1 = __webpack_require__(104);
-	const icon_1 = __webpack_require__(65);
-	const text_selection_1 = __webpack_require__(106);
-	const drag_action_1 = __webpack_require__(41);
-	const asset_drag_action_1 = __webpack_require__(107);
+	const asset_window_1 = __webpack_require__(107);
+	const icon_1 = __webpack_require__(68);
+	const text_selection_1 = __webpack_require__(109);
+	const drag_action_1 = __webpack_require__(44);
+	const asset_drag_action_1 = __webpack_require__(110);
 	class AssetItemDropTarget extends editor_html_element_1.EditorHTMLElement {
 	    onMounted() {
 	        this.target = this.parent;
@@ -8741,7 +10830,7 @@
 
 
 /***/ },
-/* 106 */
+/* 109 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -8795,12 +10884,12 @@
 
 
 /***/ },
-/* 107 */
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const drag_action_1 = __webpack_require__(41);
+	const drag_action_1 = __webpack_require__(44);
 	class AssetDragAction extends drag_action_1.DragAction {
 	    constructor(asset, item) {
 	        super();
@@ -8812,16 +10901,16 @@
 
 
 /***/ },
-/* 108 */
+/* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const prefab_asset_1 = __webpack_require__(109);
-	const asset_item_1 = __webpack_require__(105);
-	const drag_action_1 = __webpack_require__(41);
-	const prefab_drag_action_1 = __webpack_require__(68);
+	const prefab_asset_1 = __webpack_require__(112);
+	const asset_item_1 = __webpack_require__(108);
+	const drag_action_1 = __webpack_require__(44);
+	const prefab_drag_action_1 = __webpack_require__(71);
 	let PrefabAssetItem = class PrefabAssetItem extends asset_item_1.EditorAssetItem {
 	    getIconName() {
 	        return "object-group";
@@ -8840,13 +10929,13 @@
 
 
 /***/ },
-/* 109 */
+/* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const app_element_1 = __webpack_require__(29);
-	const asset_1 = __webpack_require__(43);
+	const app_element_1 = __webpack_require__(34);
+	const asset_1 = __webpack_require__(46);
 	class PrefabAsset extends asset_1.Asset {
 	    constructor(filePath) {
 	        super(filePath);
@@ -8862,15 +10951,15 @@
 
 
 /***/ },
-/* 110 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const asset_item_1 = __webpack_require__(105);
-	const icon_1 = __webpack_require__(65);
-	const drag_action_1 = __webpack_require__(41);
+	const asset_item_1 = __webpack_require__(108);
+	const icon_1 = __webpack_require__(68);
+	const drag_action_1 = __webpack_require__(44);
 	let FolderAssetItem = class FolderAssetItem extends asset_item_1.EditorAssetItem {
 	    getIconName() {
 	        return "folder-open-o";
@@ -8905,26 +10994,26 @@
 
 
 /***/ },
-/* 111 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const asset_1 = __webpack_require__(43);
+	const asset_1 = __webpack_require__(46);
 	class FolderAsset extends asset_1.Asset {
 	}
 	exports.FolderAsset = FolderAsset;
 
 
 /***/ },
-/* 112 */
+/* 115 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const asset_item_1 = __webpack_require__(105);
-	const drag_action_1 = __webpack_require__(41);
+	const asset_item_1 = __webpack_require__(108);
+	const drag_action_1 = __webpack_require__(44);
 	let ImageAssetItem = class ImageAssetItem extends asset_item_1.EditorAssetItem {
 	    getIconName() {
 	        return "object-group";
@@ -8937,20 +11026,21 @@
 
 
 /***/ },
-/* 113 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_window_element_1 = __webpack_require__(70);
-	const scene_meta_bar_1 = __webpack_require__(114);
-	const stage_background_1 = __webpack_require__(116);
-	const breakpoint_1 = __webpack_require__(115);
-	const app_element_1 = __webpack_require__(29);
+	const editor_window_element_1 = __webpack_require__(73);
+	const scene_meta_bar_1 = __webpack_require__(117);
+	const stage_background_1 = __webpack_require__(119);
+	const breakpoint_1 = __webpack_require__(118);
+	const app_element_1 = __webpack_require__(34);
 	const vector2_1 = __webpack_require__(17);
-	const stage_foreground_1 = __webpack_require__(117);
+	const stage_foreground_1 = __webpack_require__(120);
 	const util_1 = __webpack_require__(16);
-	const rect_tool_1 = __webpack_require__(118);
+	const rect_tool_1 = __webpack_require__(121);
+	const vector3_1 = __webpack_require__(27);
 	class StageWindow extends editor_window_element_1.EditorWindowElement {
 	    onCreated() {
 	        PIXI.utils.skipHello();
@@ -8996,7 +11086,7 @@
 	        if (delta.isZero())
 	            return;
 	        this.panValue.addVector(delta);
-	        app_element_1.AppElement.Root.setPosition(this.panValue);
+	        app_element_1.AppElement.Root.setPosition(new vector3_1.Vector3(this.panValue.x, this.panValue.y, 0));
 	        app_element_1.AppElement.Root.setDimensions(this.frameSize.x, this.frameSize.y);
 	    }
 	    getBreakpoint() {
@@ -9007,7 +11097,7 @@
 	        this.frameSize = breakpoint_1.Breakpoint.getDimensions(breakpointType);
 	        this.panValue.x = ((this.width * 0.5) - (this.frameSize.x * 0.5)) | 0;
 	        this.panValue.y = 1;
-	        app_element_1.AppElement.Root.setPosition(this.panValue);
+	        app_element_1.AppElement.Root.setPosition(new vector3_1.Vector3(this.panValue.x, this.panValue.y, 0));
 	        app_element_1.AppElement.Root.setDimensions(this.frameSize.x, this.frameSize.y);
 	    }
 	    getStageMousePosition() {
@@ -9020,7 +11110,7 @@
 	        this.zoomLevel = util_1.clamp(this.zoomLevel, 0.1, 4);
 	        if (zoomDelta !== 0) {
 	            // AppElement.Root.setPivot(0.5, 0.5);
-	            app_element_1.AppElement.Root.setScale(new vector2_1.Vector2(this.zoomLevel, this.zoomLevel));
+	            app_element_1.AppElement.Root.setScale(new vector3_1.Vector3(this.zoomLevel, this.zoomLevel, this.zoomLevel));
 	        }
 	    }
 	}
@@ -9051,16 +11141,16 @@
 
 
 /***/ },
-/* 114 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const button_1 = __webpack_require__(63);
-	const editor_theme_1 = __webpack_require__(60);
-	const breakpoint_1 = __webpack_require__(115);
+	const button_1 = __webpack_require__(66);
+	const editor_theme_1 = __webpack_require__(63);
+	const breakpoint_1 = __webpack_require__(118);
 	const editor_html_element_1 = __webpack_require__(19);
-	const stage_window_1 = __webpack_require__(113);
+	const stage_window_1 = __webpack_require__(116);
 	function round(places) {
 	    return function (value) {
 	        return value.toFixed(places);
@@ -9133,7 +11223,7 @@
 
 
 /***/ },
-/* 115 */
+/* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9177,13 +11267,13 @@
 
 
 /***/ },
-/* 116 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const editor_html_element_1 = __webpack_require__(19);
-	const editor_theme_1 = __webpack_require__(60);
+	const editor_theme_1 = __webpack_require__(63);
 	class StageBackground extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "canvas", classList: "overlay-canvas" };
@@ -9217,12 +11307,13 @@
 
 
 /***/ },
-/* 117 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const editor_html_element_1 = __webpack_require__(19);
+	const math_util_1 = __webpack_require__(30);
 	class StageForeground extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "canvas", classList: "overlay-canvas" };
@@ -9263,41 +11354,30 @@
 	        this.selectionOutline.beginFill(0xFF0000);
 	        this.selectionOutline.drawCircle(boundingBox.topLeft.x, boundingBox.topLeft.y, circleSize);
 	        this.selectionOutline.endFill();
+	        this.selectionOutline.lineStyle(1, 0xFF00CD);
+	        this.selectionOutline.arc(aabb.centerX, aabb.centerY, aabb.outerRadius, 0, math_util_1.MathUtil.TwoPi);
+	        const input = EditorRuntime.getInput();
+	        const mouse = input.getMouseRelativeToEditorElement(this);
+	        const dist = aabb.center.clone().subVector(mouse).length();
+	        if (dist < aabb.outerRadius + 5 && dist > aabb.outerRadius - 5) {
+	            this.selectionOutline.beginFill(0xFF0000);
+	            this.selectionOutline.drawCircle(aabb.centerX, aabb.centerY, 5);
+	            this.selectionOutline.endFill();
+	        }
 	    }
 	}
 	exports.StageForeground = StageForeground;
-	// function scaleAroundPoint(input : Vector2, scaleFactor : number, pivot : Vector2) {
-	//     const pivotDiff = input.subVectorNew(pivot);
-	//
-	//     const vec = new Vector2(pivotDiff.x, pivotDiff.y).addVector(pivot);
-	//
-	// //     var A : Vector3 = targetGO.transform.position;
-	// //     var B : Vector3 = pivotGO.transform.position;
-	// //
-	// //     var RS : float = 0.2; // relataive scale factor
-	// //     var startScale = targetGO.transform.localScale;
-	// //     var endScale = targetGO.transform.localScale *RS;
-	// //
-	// //     var C : Vector3 = A-B; // diff from object pivot to desired pivot/origin
-	// //
-	// // // calc final position post-scale
-	// //     var FP : Vector3 = (C*RS)+B;
-	// //
-	// // // finally, actually perform the scale/translation
-	// //     targetGO.transform.localScale = endScale;
-	// //     targetGO.transform.position = FP;
-	// } 
 
 
 /***/ },
-/* 118 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const scene_tool_1 = __webpack_require__(119);
+	const scene_tool_1 = __webpack_require__(122);
 	const util_1 = __webpack_require__(16);
-	const app_element_1 = __webpack_require__(29);
+	const app_element_1 = __webpack_require__(34);
 	var DragSide;
 	(function (DragSide) {
 	    DragSide[DragSide["None"] = 0] = "None";
@@ -9459,8 +11539,11 @@
 	                //p.x += delta.x;
 	                //p.y += delta.y;
 	                var p = appElement.getPosition();
+	                // p.addInPlace(delta);
+	                p.x += delta.x;
+	                p.y += delta.y;
 	                // p = appElement.worldToLocal(p.addVectorNew(delta));
-	                appElement.setPosition(p.addVectorNew(delta), app_element_1.Space.World);
+	                appElement.setPosition(p, app_element_1.Space.World);
 	                //appElement.setPosition(p.addVectorNew(delta), Space.World);
 	                break;
 	        }
@@ -9482,7 +11565,7 @@
 
 
 /***/ },
-/* 119 */
+/* 122 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -9500,12 +11583,12 @@
 
 
 /***/ },
-/* 120 */
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const button_1 = __webpack_require__(63);
+	const button_1 = __webpack_require__(66);
 	const editor_html_element_1 = __webpack_require__(19);
 	class Toolbar extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
@@ -9547,29 +11630,29 @@
 
 
 /***/ },
-/* 121 */
+/* 124 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 122 */
+/* 125 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 123 */
+/* 126 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const component_renderer_1 = __webpack_require__(95);
-	const sizing_component_1 = __webpack_require__(74);
-	const default_sizing_component_1 = __webpack_require__(124);
-	const inspector_row_1 = __webpack_require__(91);
-	const number_input_1 = __webpack_require__(100);
+	const component_renderer_1 = __webpack_require__(98);
+	const sizing_component_1 = __webpack_require__(77);
+	const default_sizing_component_1 = __webpack_require__(127);
+	const inspector_row_1 = __webpack_require__(94);
+	const number_input_1 = __webpack_require__(103);
 	let SizingRenderer = class SizingRenderer extends component_renderer_1.ComponentRenderer {
 	    createInitialStructure(children) {
 	        const structure = [
@@ -9659,14 +11742,14 @@
 
 
 /***/ },
-/* 124 */
+/* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const sizing_component_1 = __webpack_require__(74);
-	const component_1 = __webpack_require__(40);
+	const sizing_component_1 = __webpack_require__(77);
+	const component_1 = __webpack_require__(43);
 	let DefaultSizingComponent = class DefaultSizingComponent extends sizing_component_1.SizingComponent {
 	    onMounted() {
 	    }
@@ -9678,18 +11761,18 @@
 
 
 /***/ },
-/* 125 */
+/* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const component_renderer_1 = __webpack_require__(95);
-	const text_component_1 = __webpack_require__(77);
-	const inspector_row_1 = __webpack_require__(91);
-	const text_input_1 = __webpack_require__(89);
+	const component_renderer_1 = __webpack_require__(98);
+	const text_component_1 = __webpack_require__(80);
+	const inspector_row_1 = __webpack_require__(94);
+	const text_input_1 = __webpack_require__(92);
 	const binding_1 = __webpack_require__(13);
-	const number_input_1 = __webpack_require__(100);
+	const number_input_1 = __webpack_require__(103);
 	let TextComponentRenderer = class TextComponentRenderer extends component_renderer_1.ComponentRenderer {
 	    onCreated() {
 	        this.proxy = {
@@ -9737,16 +11820,16 @@
 
 
 /***/ },
-/* 126 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const property_drawer_1 = __webpack_require__(127);
-	const property_renderer_1 = __webpack_require__(96);
-	const inspector_row_1 = __webpack_require__(91);
-	const checkbox_input_1 = __webpack_require__(98);
+	const property_drawer_1 = __webpack_require__(130);
+	const property_renderer_1 = __webpack_require__(99);
+	const inspector_row_1 = __webpack_require__(94);
+	const checkbox_input_1 = __webpack_require__(101);
 	const binding_1 = __webpack_require__(13);
 	let BooleanRenderer = class BooleanRenderer extends property_renderer_1.PropertyRenderer {
 	    createInitialStructure(children) {
@@ -9764,12 +11847,12 @@
 
 
 /***/ },
-/* 127 */
+/* 130 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const property_renderer_1 = __webpack_require__(96);
+	const property_renderer_1 = __webpack_require__(99);
 	function propertyDrawer(typeToDraw) {
 	    return function (target) {
 	        property_renderer_1.PropertyRenderer.set(typeToDraw, target);
@@ -9779,20 +11862,20 @@
 
 
 /***/ },
-/* 128 */
+/* 131 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const property_renderer_1 = __webpack_require__(96);
-	const color_1 = __webpack_require__(50);
-	const inspector_row_1 = __webpack_require__(91);
-	const inline_field_1 = __webpack_require__(102);
-	const number_input_1 = __webpack_require__(100);
-	const property_drawer_1 = __webpack_require__(127);
+	const property_renderer_1 = __webpack_require__(99);
+	const color_1 = __webpack_require__(53);
+	const inspector_row_1 = __webpack_require__(94);
+	const inline_field_1 = __webpack_require__(105);
+	const number_input_1 = __webpack_require__(103);
+	const property_drawer_1 = __webpack_require__(130);
 	const binding_1 = __webpack_require__(13);
-	const button_1 = __webpack_require__(63);
+	const button_1 = __webpack_require__(66);
 	const util_1 = __webpack_require__(16);
 	let ColorRenderer = class ColorRenderer extends property_renderer_1.PropertyRenderer {
 	    updateColor() {
@@ -9832,17 +11915,17 @@
 
 
 /***/ },
-/* 129 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const property_drawer_1 = __webpack_require__(127);
-	const property_renderer_1 = __webpack_require__(96);
+	const property_drawer_1 = __webpack_require__(130);
+	const property_renderer_1 = __webpack_require__(99);
 	const util_1 = __webpack_require__(16);
-	const number_input_1 = __webpack_require__(100);
-	const inspector_row_1 = __webpack_require__(91);
+	const number_input_1 = __webpack_require__(103);
+	const inspector_row_1 = __webpack_require__(94);
 	const binding_1 = __webpack_require__(13);
 	let NumberRenderer = class NumberRenderer extends property_renderer_1.PropertyRenderer {
 	    createInitialStructure() {
@@ -9867,17 +11950,17 @@
 
 
 /***/ },
-/* 130 */
+/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const property_renderer_1 = __webpack_require__(96);
-	const property_drawer_1 = __webpack_require__(127);
+	const property_renderer_1 = __webpack_require__(99);
+	const property_drawer_1 = __webpack_require__(130);
 	const util_1 = __webpack_require__(16);
-	const inspector_row_1 = __webpack_require__(91);
-	const select_input_1 = __webpack_require__(131);
+	const inspector_row_1 = __webpack_require__(94);
+	const select_input_1 = __webpack_require__(134);
 	const binding_1 = __webpack_require__(13);
 	let EnumSelectRenderer = class EnumSelectRenderer extends property_renderer_1.PropertyRenderer {
 	    createOptions(e) {
@@ -9930,12 +12013,12 @@
 
 
 /***/ },
-/* 131 */
+/* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(90);
+	const editor_input_1 = __webpack_require__(93);
 	class SelectInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return { tagName: "select" };
@@ -9966,16 +12049,16 @@
 
 
 /***/ },
-/* 132 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const property_drawer_1 = __webpack_require__(127);
-	const property_renderer_1 = __webpack_require__(96);
-	const inspector_row_1 = __webpack_require__(91);
-	const text_input_1 = __webpack_require__(89);
+	const property_drawer_1 = __webpack_require__(130);
+	const property_renderer_1 = __webpack_require__(99);
+	const inspector_row_1 = __webpack_require__(94);
+	const text_input_1 = __webpack_require__(92);
 	let StringRenderer = class StringRenderer extends property_renderer_1.PropertyRenderer {
 	    onChange() {
 	        // if(this.attrs.editorData.onValueChanged) {
@@ -10000,7 +12083,7 @@
 
 
 /***/ },
-/* 133 */
+/* 136 */
 /***/ function(module, exports) {
 
 	// import {getSetter, getGetter} from "../editor_ui_attrs/binding_compiler";
@@ -10165,7 +12248,7 @@
 
 
 /***/ },
-/* 134 */
+/* 137 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10180,13 +12263,13 @@
 
 
 /***/ },
-/* 135 */
+/* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const icon_1 = __webpack_require__(65);
-	const inspector_body_1 = __webpack_require__(134);
+	const icon_1 = __webpack_require__(68);
+	const inspector_body_1 = __webpack_require__(137);
 	const editor_html_element_1 = __webpack_require__(19);
 	class InspectorHeader extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
@@ -10203,7 +12286,7 @@
 
 
 /***/ },
-/* 136 */
+/* 139 */
 /***/ function(module, exports) {
 
 	// import {EditorHTMLElement} from "../editor_element/editor_html_element";
@@ -10234,7 +12317,7 @@
 
 
 /***/ },
-/* 137 */
+/* 140 */
 /***/ function(module, exports) {
 
 	// import {FontIcon, ToggleIcon} from "./icon";
@@ -10275,15 +12358,15 @@
 
 
 /***/ },
-/* 138 */
+/* 141 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const number_input_1 = __webpack_require__(100);
+	const number_input_1 = __webpack_require__(103);
 	const binding_1 = __webpack_require__(13);
-	const editor_input_1 = __webpack_require__(90);
-	const horizontal_1 = __webpack_require__(97);
+	const editor_input_1 = __webpack_require__(93);
+	const horizontal_1 = __webpack_require__(100);
 	class Vector2Input extends editor_input_1.InputRenderer {
 	    createInitialStructure(children) {
 	        return Hex.createElement(horizontal_1.Horizontal, null,
@@ -10309,15 +12392,15 @@
 
 
 /***/ },
-/* 139 */
+/* 142 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
 	const editor_html_element_1 = __webpack_require__(19);
-	const drag_action_1 = __webpack_require__(41);
-	const drag_asset_item_action_1 = __webpack_require__(140);
+	const drag_action_1 = __webpack_require__(44);
+	const drag_asset_item_action_1 = __webpack_require__(143);
 	class AssetDropTargetInsert extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "asset-drop-target-insert" };
@@ -10352,12 +12435,12 @@
 
 
 /***/ },
-/* 140 */
+/* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const drag_action_1 = __webpack_require__(41);
+	const drag_action_1 = __webpack_require__(44);
 	class DragAssetItemAction extends drag_action_1.DragAction {
 	    constructor(asset) {
 	        super();
@@ -10368,318 +12451,355 @@
 
 
 /***/ },
-/* 141 */
-/***/ function(module, exports, __webpack_require__) {
+/* 144 */
+/***/ function(module, exports) {
 
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(4);
-	const editor_theme_1 = __webpack_require__(60);
-	const editor_window_element_1 = __webpack_require__(70);
-	const app_element_1 = __webpack_require__(29);
-	const scene_meta_bar_1 = __webpack_require__(114);
-	const vector2_1 = __webpack_require__(17);
-	const breakpoint_1 = __webpack_require__(115);
-	const util_1 = __webpack_require__(16);
-	const drag_action_1 = __webpack_require__(41);
-	const prefab_drag_action_1 = __webpack_require__(68);
-	class SceneWindow extends editor_window_element_1.EditorWindowElement {
-	    constructor() {
-	        super(...arguments);
-	        this.zoomLevel = 1;
-	        this.baseYOffset = 12;
-	        this.isPaintQueued = false;
-	        this.currentBreakpoint = breakpoint_1.BreakpointType.Mobile;
-	    }
-	    getBreakpoint() {
-	        return this.currentBreakpoint;
-	    }
-	    setPreviewSize(breakpointType) {
-	        this.currentBreakpoint = breakpointType;
-	        this.frameDimensions = breakpoint_1.Breakpoint.getDimensions(breakpointType);
-	        this.panValue.x = ((this.width * 0.5) - (this.frameDimensions.x * 0.5)) | 0;
-	        this.panValue.y = this.baseYOffset;
-	        app_element_1.AppElement.Root.setPosition(this.panValue);
-	        app_element_1.AppElement.Root.setDimensions(this.frameDimensions.x, this.frameDimensions.y);
-	        this.drawFrameOutline();
-	        this.paintScene();
-	    }
-	    paintScene() {
-	        this.isPaintQueued = true;
-	    }
-	    onUpdated() {
-	        const input = EditorRuntime.getInput();
-	        if (input.isMouseInEditorElement(this.getChildRoot())) {
-	            this.zoom(input.getMouseWheelDelta().y);
-	        }
-	        //todo there is probably a way not to dirty check this
-	        const clientRect = this.getDomNode().getBoundingClientRect();
-	        if (clientRect.width !== this.width || clientRect.height !== this.height) {
-	            this.width = clientRect.width;
-	            this.height = clientRect.height;
-	            const renderRootBounds = this.getChildRoot().getDomNode().getBoundingClientRect();
-	            const renderRootWidth = renderRootBounds.width;
-	            const renderRootHeight = renderRootBounds.height;
-	            this.pixi.resize(renderRootWidth, renderRootHeight);
-	            this.setPreviewSize(this.currentBreakpoint);
-	        }
-	        this.currentTool.update();
-	        // this.stage.position.set(this.panValue.x, this.panValue.y);
-	        this.paintBackground();
-	        this.drawFrameOutline();
-	        this.drawSelection();
-	        this.drawMouseScaled();
-	        this.pixi.render(this.stage);
-	    }
-	    pan(delta) {
-	        if (delta.isZero())
-	            return;
-	        this.panValue.addVector(delta);
-	        app_element_1.AppElement.Root.setPosition(this.panValue);
-	        app_element_1.AppElement.Root.setDimensions(this.frameDimensions.x, this.frameDimensions.y);
-	        this.paintScene();
-	    }
-	    zoom(zoomDelta) {
-	        this.zoomLevel -= 0.05 * zoomDelta;
-	        this.zoomLevel = util_1.clamp(this.zoomLevel, 0.1, 4);
-	        // this.stage.scale.set(this.zoomLevel);
-	        if (zoomDelta !== 0) {
-	            const childRootDom = this.getChildRoot().getDomNode();
-	            const appRootDom = childRootDom.firstElementChild;
-	            appRootDom.style.transformOrigin = "top left";
-	            appRootDom.style.transform = "scale(" + this.zoomLevel + ")";
-	        }
-	        this.paintScene();
-	    }
-	    resetZoom() {
-	        this.zoomLevel = 1;
-	        const width = this.width;
-	        const breakpointWidth = this.frameDimensions.x;
-	        if (breakpointWidth > width) {
-	            this.zoomLevel = width / breakpointWidth;
-	            this.panValue.x = ((this.zoomLevel * breakpointWidth * 0.5) - (width * 0.5)) | 0;
-	            this.panValue.y = this.baseYOffset;
-	        }
-	        this.zoom(0);
-	    }
-	    paintBackground() {
-	        this.canvas.width = this.width;
-	        this.canvas.height = this.height;
-	        this.ctx.clearRect(0, 0, this.width, this.height);
-	        this.ctx.fillStyle = editor_theme_1.WindowColors.sceneBackground;
-	        this.ctx.fillRect(0, 0, this.width, this.height);
-	        this.ctx.strokeStyle = '#FFFFFF';
-	        this.ctx.lineWidth = 0.5;
-	        this.ctx.globalAlpha = 0.2;
-	        this.ctx.beginPath();
-	        const spacing = 25;
-	        for (let i = 0; i < 100; i++) {
-	            const interval = i * spacing + 0.5;
-	            this.ctx.moveTo(0, interval);
-	            this.ctx.lineTo(this.width, interval);
-	            this.ctx.moveTo(interval, 0);
-	            this.ctx.lineTo(interval, this.height);
-	        }
-	        this.ctx.closePath();
-	        this.ctx.stroke();
-	    }
-	    onRendered() {
-	        //todo swap tool based on layout type of parent of selection
-	        // this.currentTool = new SceneRectTool(this);
-	        this.panValue = new vector2_1.Vector2();
-	        this.canvas = this.getChildBySelector('canvas').getDomNode();
-	        this.ctx = this.canvas.getContext("2d");
-	        EditorRuntime.drawScene(".scene-render-root");
-	        EditorRuntime.updateTree.add(this);
-	        PIXI.utils.skipHello();
-	        this.stage = new PIXI.Container();
-	        this.pixi = new PIXI.WebGLRenderer(256, 256, {
-	            autoResize: true,
-	            antialias: true,
-	            transparent: true,
-	            view: this.getChildById('foreground-canvas').getDomNode()
-	        });
-	        this.frameOutline = new PIXI.Graphics();
-	        this.dragThing = new PIXI.Graphics();
-	        this.selectionOutline = new PIXI.Graphics();
-	        this.scaledMousePosition = new PIXI.Graphics();
-	        this.stage.addChild(this.frameOutline);
-	        this.stage.addChild(this.dragThing);
-	        this.stage.addChild(this.selectionOutline);
-	        this.stage.addChild(this.scaledMousePosition);
-	        this.pixi.render(this.stage);
-	        this.setPreviewSize(this.currentBreakpoint);
-	    }
-	    drawMouseScaled() {
-	        this.scaledMousePosition.clear();
-	        const relMP = EditorRuntime.getInput().getMouseRelativeToEditorElement(this.getChildById("foreground-canvas"));
-	        this.scaledMousePosition.lineStyle(1, 0x00FF00);
-	        this.scaledMousePosition.drawCircle(relMP.x * this.zoomLevel, relMP.y * this.zoomLevel, 5);
-	    }
-	    drawDragThing() {
-	        // const input = EditorRuntime.getInput();
-	        // const mouse = input.getMouseRelativeToEditorElement(this.getChildRoot());
-	        // const mouseOver = Runtime.getAppElementAtPoint(mouse);
-	        //
-	        // if (mouseOver) {
-	        //     //see if we are over a layout element
-	        //     //if we are, simulate adding this to the layout at some fixed width (20px or something smallish)
-	        //     //might not need to do an actual layout
-	        //     //might get away with just shifting elements absolutely temporarily
-	        //
-	        //     //if not in a layout element -- fill the current element
-	        //     //if in layout element within some gutter amount, do fancy preview
-	        //
-	        //     this.dragThing.clear();
-	        //     this.dragThing.beginFill(0x00FF00, 0.2);
-	        //     this.dragThing.lineStyle(1, 0x00FF00);
-	        //     const position = mouseOver.getPosition();
-	        //     const layout = mouseOver.getComponent(LayoutComponent);
-	        //     if (layout) {
-	        //
-	        //     }
-	        //     else {
-	        //         //todo lerp this for sexiness
-	        //         this.dragThing.drawRect(
-	        //             position.x,
-	        //             position.y - 1,
-	        //             mouseOver.getWidth(),
-	        //             mouseOver.getHeight()
-	        //         );
-	        //     }
-	        // }
-	        // else {
-	        //     this.dragThing.clear();
-	        //     this.dragThing.beginFill(0x00FF00, 0.2);
-	        //     this.dragThing.lineStyle(1, 0x00FF00);
-	        //     this.dragThing.drawRect(mouse.x - 50, mouse.y - 25, 100, 50);
-	        // }
-	        //
-	        // this.paintScene();
-	    }
-	    drawFrameOutline() {
-	        this.frameOutline.clear();
-	        this.frameOutline.lineStyle(2, 0xFF00CD);
-	        this.frameOutline.drawRect(0, //this.panValue.x,
-	        0, //this.panValue.y - 1,
-	        this.frameDimensions.x, this.frameDimensions.y);
-	    }
-	    drawSelection() {
-	        // this.selectionOutline.clear();
-	        // const selection = EditorRuntime.getSelection();
-	        // if (!selection) return;
-	        //
-	        // const position = selection.getLocalPosition();
-	        // const w = selection.getWidth();
-	        // const h = selection.getHeight();
-	        //
-	        // this.selectionOutline.lineStyle(1, 0xFFFFFFFF);
-	        // this.selectionOutline.rotation = selection.getRotation();
-	        //
-	        // this.selectionOutline.lineStyle(1, 0x000000);
-	        // this.selectionOutline.beginFill(0x87b0f2);
-	        // this.selectionOutline.drawCircle(position.x, position.y, 5);
-	        // this.selectionOutline.drawCircle(position.x + w, position.y, 5);
-	        // this.selectionOutline.drawCircle(position.x + w, position.y + h, 5);
-	        // this.selectionOutline.drawCircle(position.x, position.y + h, 5);
-	        //
-	        // this.selectionOutline.drawCircle(position.x + (w * 0.5), position.y, 5);
-	        // this.selectionOutline.drawCircle(position.x + w, position.y + ( 0.5 * h), 5);
-	        // this.selectionOutline.drawCircle(position.x, position.y + (0.5 * h), 5);
-	        // this.selectionOutline.drawCircle(position.x + (w * 0.5), position.y + h, 5);
-	        //
-	        // this.selectionOutline.endFill();
-	        // const parent = selection.getParent();
-	        // let parentPosition : Vector2 = null;
-	        // if (parent) {
-	        //     parentPosition = selection.getParent().getPosition();
-	        // }
-	        // else {
-	        //     parentPosition = selection.getPosition();
-	        // }
-	        //this.selectionOutline.position.set(parentPosition.x, parentPosition.y);
-	    }
-	    createInitialStructure(children) {
-	        return [
-	            Hex.createElement(scene_meta_bar_1.SceneMetaBar, null),
-	            Hex.createElement("canvas", { "x-id": "background-canvas", class: "overlay-canvas" }),
-	            Hex.createElement("div", { "x-child-root": true, class: "scene-render-root" }),
-	            Hex.createElement("canvas", { "x-id": "foreground-canvas", class: "overlay-canvas" }),
-	        ];
-	    }
-	    handleAssetDragEnter() {
-	        EditorRuntime.setCursor("-webkit-grabbing");
-	    }
-	    handleAssetDragHover() {
-	        this.drawDragThing();
-	    }
-	    handleAssetDragExit() {
-	        EditorRuntime.setCursor("default");
-	        this.dragThing.clear();
-	        this.paintScene();
-	    }
-	    handleAssetDrop(action) {
-	        const input = EditorRuntime.getInput();
-	        const mouse = input.getMouseRelativeToEditorElement(this.getChildRoot());
-	        const mouseOver = Runtime.getAppElementAtPoint(mouse);
-	        const appElement = action.template.create();
-	        if (mouseOver) {
-	            appElement.setParent(mouseOver);
-	            appElement.setPositionValues(0, 0, app_element_1.Space.Local);
-	            appElement.setDimensions(mouseOver.getWidth(), mouseOver.getHeight());
-	        }
-	        else {
-	            appElement.setParent(app_element_1.AppElement.Root);
-	            //todo handle pan value
-	            appElement.setPositionValues(mouse.x - 50, mouse.y - 25);
-	            appElement.setDimensions(100, 50);
-	        }
-	        EditorRuntime.select(appElement);
-	        this.dragThing.clear();
-	        this.paintScene();
-	    }
-	}
-	tslib_1.__decorate([
-	    drag_action_1.DragAction.MouseEnter(prefab_drag_action_1.PrefabDragAction)
-	], SceneWindow.prototype, "handleAssetDragEnter", null);
-	tslib_1.__decorate([
-	    drag_action_1.DragAction.MouseOver(prefab_drag_action_1.PrefabDragAction)
-	], SceneWindow.prototype, "handleAssetDragHover", null);
-	tslib_1.__decorate([
-	    drag_action_1.DragAction.MouseExit(prefab_drag_action_1.PrefabDragAction)
-	], SceneWindow.prototype, "handleAssetDragExit", null);
-	tslib_1.__decorate([
-	    drag_action_1.DragAction.Drop(prefab_drag_action_1.PrefabDragAction)
-	], SceneWindow.prototype, "handleAssetDrop", null);
-	exports.SceneWindow = SceneWindow;
+	// import {WindowColors} from "../editor/editor_theme";
+	// import {EditorWindowElement, IWindowAttrs} from "../chrome/editor_window_element";
+	// import {SceneTool} from "./scene/scene_tool";
+	// import {AppElement, Space} from "../runtime/app_element";
+	// import {SceneMetaBar} from "./scene/scene_meta_bar";
+	// import {Vector2} from "../runtime/vector2";
+	// import {Breakpoint, BreakpointType} from "../runtime/breakpoint";
+	// import {clamp} from "../util";
+	// import {DragAction} from "../editor/drag_actions/drag_action";
+	// import {PrefabDragAction} from "../editor/drag_actions/prefab_drag_action";
+	// import {SceneRectTool} from "./scene/rect_tool";
+	// import {LayoutComponent} from "../runtime/components/layout/layout";
 	//
-	// createStyleSheet(`
-	// <style>
+	// export class SceneWindow extends EditorWindowElement<IWindowAttrs> {
 	//
-	// .scene-window {
-	//     overflow:hidden;
-	//     width: 100%;
-	//     height: 100%;
-	//     display: flex;
-	//     flex-direction: column;
-	//     position: relative;
+	//     private currentTool : SceneTool;
+	//     private ctx : CanvasRenderingContext2D;
+	//     private canvas : HTMLCanvasElement;
+	//     public pixi : PIXI.WebGLRenderer;
+	//     public stage : PIXI.Container;
+	//     private width : number;
+	//     private height : number;
+	//     private dragThing : PIXI.Graphics;
+	//     private frameOutline : PIXI.Graphics;
+	//     private selectionOutline : PIXI.Graphics;
+	//     public zoomLevel : number = 1;
+	//     private panValue : Vector2;
+	//     private baseYOffset : number = 12;
+	//     private frameDimensions : Vector2;
+	//     private isPaintQueued : boolean = false;
+	//     private currentBreakpoint : BreakpointType = BreakpointType.Mobile;
+	//     private scaledMousePosition : PIXI.Graphics;
+	//
+	//     public getBreakpoint() : BreakpointType {
+	//         return this.currentBreakpoint;
+	//     }
+	//
+	//     public setPreviewSize(breakpointType : BreakpointType) : void {
+	//         this.currentBreakpoint = breakpointType;
+	//         this.frameDimensions = Breakpoint.getDimensions(breakpointType);
+	//         this.panValue.x = ((this.width * 0.5) - (this.frameDimensions.x * 0.5)) | 0;
+	//         this.panValue.y = this.baseYOffset;
+	//
+	//         AppElement.Root.setPosition(this.panValue);
+	//         AppElement.Root.setDimensions(this.frameDimensions.x, this.frameDimensions.y);
+	//
+	//         this.drawFrameOutline();
+	//         this.paintScene();
+	//     }
+	//
+	//     private paintScene() : void {
+	//         this.isPaintQueued = true;
+	//     }
+	//
+	//     public onUpdated() : void {
+	//         const input = EditorRuntime.getInput();
+	//         if (input.isMouseInEditorElement(this.getChildRoot())) {
+	//             this.zoom(input.getMouseWheelDelta().y);
+	//         }
+	//
+	//         //todo there is probably a way not to dirty check this
+	//         const clientRect = this.getDomNode().getBoundingClientRect();
+	//         if (clientRect.width !== this.width || clientRect.height !== this.height) {
+	//             this.width = clientRect.width;
+	//             this.height = clientRect.height;
+	//             const renderRootBounds = this.getChildRoot().getDomNode().getBoundingClientRect();
+	//             const renderRootWidth = renderRootBounds.width;
+	//             const renderRootHeight = renderRootBounds.height;
+	//             this.pixi.resize(renderRootWidth, renderRootHeight);
+	//             this.setPreviewSize(this.currentBreakpoint);
+	//         }
+	//         this.currentTool.update();
+	//         // this.stage.position.set(this.panValue.x, this.panValue.y);
+	//         this.paintBackground();
+	//         this.drawFrameOutline();
+	//         this.drawSelection();
+	//         this.drawMouseScaled();
+	//         this.pixi.render(this.stage);
+	//     }
+	//
+	//     public pan(delta : Vector2) : void {
+	//         if (delta.isZero()) return;
+	//         this.panValue.addVector(delta);
+	//         AppElement.Root.setPosition(this.panValue);
+	//         AppElement.Root.setDimensions(this.frameDimensions.x, this.frameDimensions.y);
+	//         this.paintScene();
+	//     }
+	//
+	//     private zoom(zoomDelta : number) : void {
+	//
+	//         this.zoomLevel -= 0.05 * zoomDelta;
+	//         this.zoomLevel = clamp(this.zoomLevel, 0.1, 4);
+	//         // this.stage.scale.set(this.zoomLevel);
+	//
+	//         if (zoomDelta !== 0) {
+	//             const childRootDom = this.getChildRoot().getDomNode();
+	//             const appRootDom = childRootDom.firstElementChild as HTMLElement;
+	//             appRootDom.style.transformOrigin = "top left";
+	//             appRootDom.style.transform = "scale(" + this.zoomLevel + ")";
+	//         }
+	//
+	//         this.paintScene();
+	//     }
+	//
+	//     private resetZoom() : void {
+	//         this.zoomLevel = 1;
+	//         const width = this.width;
+	//         const breakpointWidth = this.frameDimensions.x;
+	//
+	//         if (breakpointWidth > width) {
+	//             this.zoomLevel = width / breakpointWidth;
+	//             this.panValue.x = ((this.zoomLevel * breakpointWidth * 0.5) - (width * 0.5)) | 0;
+	//             this.panValue.y = this.baseYOffset;
+	//         }
+	//
+	//         this.zoom(0);
+	//     }
+	//
+	//     private paintBackground() {
+	//         this.canvas.width = this.width;
+	//         this.canvas.height = this.height;
+	//         this.ctx.clearRect(0, 0, this.width, this.height);
+	//         this.ctx.fillStyle = WindowColors.sceneBackground;
+	//         this.ctx.fillRect(0, 0, this.width, this.height);
+	//         this.ctx.strokeStyle = '#FFFFFF';
+	//         this.ctx.lineWidth = 0.5;
+	//         this.ctx.globalAlpha = 0.2;
+	//         this.ctx.beginPath();
+	//         const spacing = 25;
+	//         for (let i = 0; i < 100; i++) {
+	//             const interval = i * spacing + 0.5;
+	//             this.ctx.moveTo(0, interval);
+	//             this.ctx.lineTo(this.width, interval);
+	//             this.ctx.moveTo(interval, 0);
+	//             this.ctx.lineTo(interval, this.height);
+	//         }
+	//
+	//         this.ctx.closePath();
+	//         this.ctx.stroke();
+	//
+	//     }
+	//
+	//     public onRendered() {
+	//         //todo swap tool based on layout type of parent of selection
+	//         // this.currentTool = new SceneRectTool(this);
+	//         this.panValue = new Vector2();
+	//         this.canvas = this.getChildBySelector('canvas').getDomNode() as HTMLCanvasElement;
+	//         this.ctx = this.canvas.getContext("2d");
+	//         EditorRuntime.drawScene(".scene-render-root");
+	//         EditorRuntime.updateTree.add(this);
+	//         PIXI.utils.skipHello();
+	//         this.stage = new PIXI.Container();
+	//         this.pixi = new PIXI.WebGLRenderer(256, 256, {
+	//             autoResize: true,
+	//             antialias:true,
+	//             transparent: true,
+	//             view: this.getChildById('foreground-canvas').getDomNode() as HTMLCanvasElement
+	//         });
+	//         this.frameOutline = new PIXI.Graphics();
+	//         this.dragThing = new PIXI.Graphics();
+	//         this.selectionOutline = new PIXI.Graphics();
+	//         this.scaledMousePosition = new PIXI.Graphics();
+	//         this.stage.addChild(this.frameOutline);
+	//         this.stage.addChild(this.dragThing);
+	//         this.stage.addChild(this.selectionOutline);
+	//         this.stage.addChild(this.scaledMousePosition);
+	//         this.pixi.render(this.stage);
+	//         this.setPreviewSize(this.currentBreakpoint);
+	//     }
+	//
+	//     public drawMouseScaled() {
+	//         this.scaledMousePosition.clear();
+	//         const relMP = EditorRuntime.getInput().getMouseRelativeToEditorElement(this.getChildById("foreground-canvas"));
+	//         this.scaledMousePosition.lineStyle(1, 0x00FF00);
+	//         this.scaledMousePosition.drawCircle(relMP.x * this.zoomLevel, relMP.y * this.zoomLevel, 5);
+	//     }
+	//
+	//     public drawDragThing() : void {
+	//         // const input = EditorRuntime.getInput();
+	//         // const mouse = input.getMouseRelativeToEditorElement(this.getChildRoot());
+	//         // const mouseOver = Runtime.getAppElementAtPoint(mouse);
+	//         //
+	//         // if (mouseOver) {
+	//         //     //see if we are over a layout element
+	//         //     //if we are, simulate adding this to the layout at some fixed width (20px or something smallish)
+	//         //     //might not need to do an actual layout
+	//         //     //might get away with just shifting elements absolutely temporarily
+	//         //
+	//         //     //if not in a layout element -- fill the current element
+	//         //     //if in layout element within some gutter amount, do fancy preview
+	//         //
+	//         //     this.dragThing.clear();
+	//         //     this.dragThing.beginFill(0x00FF00, 0.2);
+	//         //     this.dragThing.lineStyle(1, 0x00FF00);
+	//         //     const position = mouseOver.getPosition();
+	//         //     const layout = mouseOver.getComponent(LayoutComponent);
+	//         //     if (layout) {
+	//         //
+	//         //     }
+	//         //     else {
+	//         //         //todo lerp this for sexiness
+	//         //         this.dragThing.drawRect(
+	//         //             position.x,
+	//         //             position.y - 1,
+	//         //             mouseOver.getWidth(),
+	//         //             mouseOver.getHeight()
+	//         //         );
+	//         //     }
+	//         // }
+	//         // else {
+	//         //     this.dragThing.clear();
+	//         //     this.dragThing.beginFill(0x00FF00, 0.2);
+	//         //     this.dragThing.lineStyle(1, 0x00FF00);
+	//         //     this.dragThing.drawRect(mouse.x - 50, mouse.y - 25, 100, 50);
+	//         // }
+	//         //
+	//         // this.paintScene();
+	//     }
+	//
+	//     private drawFrameOutline() : void {
+	//         this.frameOutline.clear();
+	//         this.frameOutline.lineStyle(2, 0xFF00CD);
+	//         this.frameOutline.drawRect(
+	//             0, //this.panValue.x,
+	//             0, //this.panValue.y - 1,
+	//             this.frameDimensions.x,
+	//             this.frameDimensions.y
+	//         );
+	//     }
+	//
+	//     public drawSelection() : void {
+	//         // this.selectionOutline.clear();
+	//         // const selection = EditorRuntime.getSelection();
+	//         // if (!selection) return;
+	//         //
+	//         // const position = selection.getLocalPosition();
+	//         // const w = selection.getWidth();
+	//         // const h = selection.getHeight();
+	//         //
+	//         // this.selectionOutline.lineStyle(1, 0xFFFFFFFF);
+	//         // this.selectionOutline.rotation = selection.getRotation();
+	//         //
+	//         // this.selectionOutline.lineStyle(1, 0x000000);
+	//         // this.selectionOutline.beginFill(0x87b0f2);
+	//         // this.selectionOutline.drawCircle(position.x, position.y, 5);
+	//         // this.selectionOutline.drawCircle(position.x + w, position.y, 5);
+	//         // this.selectionOutline.drawCircle(position.x + w, position.y + h, 5);
+	//         // this.selectionOutline.drawCircle(position.x, position.y + h, 5);
+	//         //
+	//         // this.selectionOutline.drawCircle(position.x + (w * 0.5), position.y, 5);
+	//         // this.selectionOutline.drawCircle(position.x + w, position.y + ( 0.5 * h), 5);
+	//         // this.selectionOutline.drawCircle(position.x, position.y + (0.5 * h), 5);
+	//         // this.selectionOutline.drawCircle(position.x + (w * 0.5), position.y + h, 5);
+	//         //
+	//         // this.selectionOutline.endFill();
+	//         // const parent = selection.getParent();
+	//         // let parentPosition : Vector2 = null;
+	//         // if (parent) {
+	//         //     parentPosition = selection.getParent().getPosition();
+	//         // }
+	//         // else {
+	//         //     parentPosition = selection.getPosition();
+	//         // }
+	//         //this.selectionOutline.position.set(parentPosition.x, parentPosition.y);
+	//     }
+	//
+	//     public createInitialStructure(children : any) : JSXElement {
+	//         return [
+	//             <SceneMetaBar/>,
+	//             <canvas x-id="background-canvas" class="overlay-canvas"/>,
+	//             <div x-child-root class="scene-render-root"/>,
+	//             <canvas x-id="foreground-canvas" class="overlay-canvas"/>,
+	//         ]
+	//     }
+	//
+	//     @DragAction.MouseEnter(PrefabDragAction)
+	//     public handleAssetDragEnter() : void {
+	//         EditorRuntime.setCursor("-webkit-grabbing");
+	//     }
+	//
+	//     @DragAction.MouseOver(PrefabDragAction)
+	//     public handleAssetDragHover() : void {
+	//         this.drawDragThing();
+	//     }
+	//
+	//     @DragAction.MouseExit(PrefabDragAction)
+	//     public handleAssetDragExit() : void {
+	//         EditorRuntime.setCursor("default");
+	//         this.dragThing.clear();
+	//         this.paintScene();
+	//     }
+	//
+	//     @DragAction.Drop(PrefabDragAction)
+	//     public handleAssetDrop(action : PrefabDragAction) : void {
+	//         const input = EditorRuntime.getInput();
+	//         const mouse = input.getMouseRelativeToEditorElement(this.getChildRoot());
+	//         const mouseOver = Runtime.getAppElementAtPoint(mouse);
+	//         const appElement = action.template.create();
+	//         if (mouseOver) {
+	//             appElement.setParent(mouseOver);
+	//             appElement.setPositionValues(0, 0, Space.Local);
+	//             appElement.setDimensions(mouseOver.getWidth(), mouseOver.getHeight());
+	//         }
+	//         else {
+	//             appElement.setParent(AppElement.Root);
+	//             //todo handle pan value
+	//             appElement.setPositionValues(
+	//                 mouse.x - 50,
+	//                 mouse.y - 25
+	//             );
+	//             appElement.setDimensions(100, 50);
+	//         }
+	//         EditorRuntime.select(appElement);
+	//         this.dragThing.clear();
+	//         this.paintScene();
+	//     }
+	//
 	// }
-	//
-	// .scene-render-root {
-	//     position: relative;
-	// }
-	//
-	// .overlay-canvas {
-	//     position: absolute;
-	//     top:21px; /*position under meta bar */
-	//     left:0;
-	// }
-	//
-	// </style>`); 
+	// //
+	// // createStyleSheet(`
+	// // <style>
+	// //
+	// // .scene-window {
+	// //     overflow:hidden;
+	// //     width: 100%;
+	// //     height: 100%;
+	// //     display: flex;
+	// //     flex-direction: column;
+	// //     position: relative;
+	// // }
+	// //
+	// // .scene-render-root {
+	// //     position: relative;
+	// // }
+	// //
+	// // .overlay-canvas {
+	// //     position: absolute;
+	// //     top:21px; /*position under meta bar */
+	// //     left:0;
+	// // }
+	// //
+	// // </style>`); 
 
 
 /***/ },
-/* 142 */
+/* 145 */
 /***/ function(module, exports) {
 
 	class Stuff {
@@ -10687,7 +12807,7 @@
 
 
 /***/ },
-/* 143 */
+/* 146 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -10698,7 +12818,7 @@
 
 
 /***/ },
-/* 144 */
+/* 147 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -10709,13 +12829,13 @@
 
 
 /***/ },
-/* 145 */
+/* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const asset_1 = __webpack_require__(43);
+	const asset_1 = __webpack_require__(46);
 	function AssetExtension(str) { }
 	let ImageAsset = class ImageAsset extends asset_1.Asset {
 	};
@@ -10726,7 +12846,7 @@
 
 
 /***/ },
-/* 146 */
+/* 149 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -10780,12 +12900,12 @@
 
 
 /***/ },
-/* 147 */
+/* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const e_command_type_1 = __webpack_require__(31);
+	const e_command_type_1 = __webpack_require__(36);
 	function DeserializeComponent(component, element) {
 	    if (component.handler) {
 	    }
@@ -10938,19 +13058,19 @@
 
 
 /***/ },
-/* 148 */
+/* 151 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const e_command_type_1 = __webpack_require__(31);
+	const e_command_type_1 = __webpack_require__(36);
 	BrowserRuntime.setCommandSerializer(e_command_type_1.CommandType.UpdateInput, function () {
 	    return BrowserRuntime.getInput().serialize();
 	});
 
 
 /***/ },
-/* 149 */
+/* 152 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10963,7 +13083,7 @@
 
 
 /***/ },
-/* 150 */
+/* 153 */
 /***/ function(module, exports) {
 
 	//
@@ -10975,7 +13095,7 @@
 
 
 /***/ },
-/* 151 */
+/* 154 */
 /***/ function(module, exports) {
 
 	// import {createGetter} from "./binding_compiler";
@@ -11010,33 +13130,31 @@
 
 
 /***/ },
-/* 152 */
+/* 155 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 153 */
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const e_command_type_1 = __webpack_require__(31);
+	const e_command_type_1 = __webpack_require__(36);
 	Runtime.setCommandInvoker(e_command_type_1.CommandType.UpdateInput, function (data) {
 	    Runtime.getInput().deserialize(data);
 	});
 
 
 /***/ },
-/* 154 */
+/* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const e_command_type_1 = __webpack_require__(31);
-	const ui_component_1 = __webpack_require__(73);
-	const vector2_1 = __webpack_require__(17);
-	const matrix3x3_1 = __webpack_require__(32);
+	const e_command_type_1 = __webpack_require__(36);
+	const ui_component_1 = __webpack_require__(76);
 	const ComponentCache = new Array();
 	Runtime.setCommandSerializer(e_command_type_1.CommandType.Create, function (id) {
 	    ComponentCache.length = 0;
@@ -11085,14 +13203,14 @@
 	    const appElement = Runtime.getAppElementById(id);
 	    return { id: id, width: appElement.getWidth(), height: appElement.getHeight() };
 	});
-	let scratchVector = new vector2_1.Vector2();
-	let scratchMatrix = new matrix3x3_1.Matrix3x3();
 	Runtime.setCommandSerializer(e_command_type_1.CommandType.SetTransform, function (id) {
 	    const appElement = Runtime.getAppElementById(id);
-	    const pivot = appElement.getPivot(scratchVector);
-	    const m = appElement.getMatrix(scratchMatrix);
-	    const localPosition = appElement.getLocalPosition();
-	    const str = `matrix(${m.a},${m.c},${m.b},${m.d},${localPosition.x},${localPosition.y})`;
+	    const m = appElement.getMatrix();
+	    let str = "matrix3d(";
+	    for (let i = 0; i < m.m.length - 1; i++) {
+	        str += m.m[i] + ",";
+	    }
+	    str += m.m[15] + ")";
 	    return { id: id, matrix: str }; // origin: `${pivot.x}% ${pivot.y}%` };
 	});
 	Runtime.setCommandSerializer(e_command_type_1.CommandType.PaintBackground, function (data) {
@@ -11101,12 +13219,12 @@
 
 
 /***/ },
-/* 155 */
+/* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const sizing_component_1 = __webpack_require__(74);
+	const sizing_component_1 = __webpack_require__(77);
 	class FitContentSizeComponent extends sizing_component_1.SizingComponent {
 	    onCreated() {
 	        this.sizingMode = sizing_component_1.SizingMode.Fixed;
@@ -11124,17 +13242,17 @@
 
 
 /***/ },
-/* 156 */
+/* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const sizing_component_1 = __webpack_require__(74);
-	const layout_1 = __webpack_require__(75);
-	const expose_as_1 = __webpack_require__(51);
-	const component_1 = __webpack_require__(40);
-	const app_element_1 = __webpack_require__(29);
+	const sizing_component_1 = __webpack_require__(77);
+	const layout_1 = __webpack_require__(78);
+	const expose_as_1 = __webpack_require__(54);
+	const component_1 = __webpack_require__(43);
+	const app_element_1 = __webpack_require__(34);
 	let HorizontalStackLayout = class HorizontalStackLayout extends layout_1.LayoutComponent {
 	    constructor() {
 	        super(...arguments);
@@ -11238,16 +13356,16 @@
 
 
 /***/ },
-/* 157 */
+/* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const sizing_component_1 = __webpack_require__(74);
-	const layout_1 = __webpack_require__(75);
-	const component_1 = __webpack_require__(40);
-	const app_element_1 = __webpack_require__(29);
+	const sizing_component_1 = __webpack_require__(77);
+	const layout_1 = __webpack_require__(78);
+	const component_1 = __webpack_require__(43);
+	const app_element_1 = __webpack_require__(34);
 	let VerticalStackLayout = class VerticalStackLayout extends layout_1.LayoutComponent {
 	    doLayout() {
 	        var remainingSpace = this.appElement.getHeight();
@@ -11301,13 +13419,13 @@
 
 
 /***/ },
-/* 158 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(73);
+	const ui_component_1 = __webpack_require__(76);
 	class Font {
 	}
 	exports.Font = Font;
@@ -11333,13 +13451,13 @@
 
 
 /***/ },
-/* 159 */
+/* 162 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 160 */
+/* 163 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -11347,15 +13465,662 @@
 
 
 /***/ },
-/* 161 */
+/* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const math_util_1 = __webpack_require__(33);
-	exports.ToGammaSpace = 1 / 2.2;
-	exports.ToLinearSpace = 2.2;
-	exports.Epsilon = 0.001;
+	const vector2_1 = __webpack_require__(17);
+	const math_util_1 = __webpack_require__(30);
+	/*
+	 * Layout
+	 * [ a  c  tx ]
+	 * [ b  d  ty ]
+	 * [ 0  0  1  ]
+	 *
+	 *
+	 * */
+	class Matrix3x3 {
+	    constructor() {
+	        this.a = this.d = 1;
+	        this.b = this.c = this.tx = this.ty = 0;
+	    }
+	    get m0() {
+	        return this.a;
+	    }
+	    get m1() {
+	        return this.b;
+	    }
+	    get m2() {
+	        return 0;
+	    }
+	    get m3() {
+	        return this.c;
+	    }
+	    get m4() {
+	        return this.d;
+	    }
+	    get m5() {
+	        return 0;
+	    }
+	    get m6() {
+	        return this.tx;
+	    }
+	    get m7() {
+	        return this.ty;
+	    }
+	    get m8() {
+	        return 1;
+	    }
+	    set(a, b, c, d, tx, ty) {
+	        this.a = a;
+	        this.b = b;
+	        this.c = c;
+	        this.d = d;
+	        this.tx = tx;
+	        this.ty = ty;
+	        return this;
+	    }
+	    identity() {
+	        this.a = this.d = 1;
+	        this.b = this.c = this.tx = this.ty = 0;
+	        return this;
+	    }
+	    translate(point) {
+	        const x = point.x;
+	        const y = point.y;
+	        this.tx += x * this.a + y * this.c;
+	        this.ty += x * this.b + y * this.d;
+	        return this;
+	    }
+	    scale(scale, center) {
+	        if (center) {
+	            this.translate(center);
+	        }
+	        this.a *= scale.x;
+	        this.b *= scale.x;
+	        this.c *= scale.y;
+	        this.d *= scale.y;
+	        if (center) {
+	            this.translate(new vector2_1.Vector2(center.x * -1, center.y * -1));
+	        }
+	        return this;
+	    }
+	    //todo should translation be in here?
+	    rotate(angle, center, angleUnit = math_util_1.AngleUnit.Radians) {
+	        if (angleUnit === math_util_1.AngleUnit.Degrees) {
+	            angle *= math_util_1.MathUtil.DegreesToRadians;
+	        }
+	        if (center) {
+	            var x = center.x;
+	            var y = center.y;
+	        }
+	        else {
+	            var x = this.tx;
+	            var y = this.ty;
+	        }
+	        const cos = Math.cos(angle);
+	        const sin = Math.sin(angle);
+	        const tx = x - x * cos + y * sin;
+	        const ty = y - x * sin - y * cos;
+	        const a = this.a;
+	        const b = this.b;
+	        const c = this.c;
+	        const d = this.d;
+	        this.a = cos * a + sin * c;
+	        this.b = cos * b + sin * d;
+	        this.c = -sin * a + cos * c;
+	        this.d = -sin * b + cos * d;
+	        this.tx += tx * a + ty * c;
+	        this.ty += tx * b + ty * d;
+	        return this;
+	    }
+	    multiply(mx) {
+	        const a1 = this.a;
+	        const b1 = this.b;
+	        const c1 = this.c;
+	        const d1 = this.d;
+	        const a2 = mx.a;
+	        const b2 = mx.c;
+	        const c2 = mx.b;
+	        const d2 = mx.d;
+	        const tx2 = mx.tx;
+	        const ty2 = mx.ty;
+	        this.a = a2 * a1 + c2 * c1;
+	        this.c = b2 * a1 + d2 * c1;
+	        this.b = a2 * b1 + c2 * d1;
+	        this.d = b2 * b1 + d2 * d1;
+	        this.tx += tx2 * a1 + ty2 * c1;
+	        this.ty += tx2 * b1 + ty2 * d1;
+	        return this;
+	    }
+	    invert() {
+	        var a = this.a, b = this.b, c = this.c, d = this.d, tx = this.tx, ty = this.ty, det = a * d - b * c, res = null;
+	        if (det && !isNaN(det) && isFinite(tx) && isFinite(ty)) {
+	            this.a = d / det;
+	            this.b = -b / det;
+	            this.c = -c / det;
+	            this.d = a / det;
+	            this.tx = (c * ty - d * tx) / det;
+	            this.ty = (b * tx - a * ty) / det;
+	            res = this;
+	        }
+	        return res;
+	    }
+	    invertNew(out) {
+	        const a = this.a;
+	        const b = this.b;
+	        const c = this.c;
+	        const d = this.d;
+	        const tx = this.tx;
+	        const ty = this.ty;
+	        const det = a * d - b * c;
+	        if (det && !isNaN(det) && isFinite(tx) && isFinite(ty)) {
+	            const retn = out || new Matrix3x3();
+	            retn.a = d / det;
+	            retn.b = -b / det;
+	            retn.c = -c / det;
+	            retn.d = a / det;
+	            retn.tx = (c * ty - d * tx) / det;
+	            retn.ty = (b * tx - a * ty) / det;
+	            return retn;
+	        }
+	        return null;
+	    }
+	    isIdentity() {
+	        return this.a === 1 && this.b === 0 && this.c === 0 && this.d === 1
+	            && this.tx === 0 && this.ty === 0;
+	    }
+	    transformDirection(point) {
+	        const x = point.x;
+	        const y = point.y;
+	        point.x = x * this.a + y * this.c;
+	        point.y = x * this.b + y * this.d;
+	        return point;
+	    }
+	    transformPoint(point) {
+	        const x = point.x;
+	        const y = point.y;
+	        point.x = x * this.a + y * this.c + this.tx;
+	        point.y = x * this.b + y * this.d + this.ty;
+	        return point;
+	    }
+	    transformPointNew(point) {
+	        const x = point.x;
+	        const y = point.y;
+	        return new vector2_1.Vector2(x * this.a + y * this.c + this.tx, x * this.b + y * this.d + this.ty);
+	    }
+	    inverseTransform(point) {
+	        const a = this.a;
+	        const b = this.b;
+	        const c = this.c;
+	        const d = this.d;
+	        const tx = this.tx;
+	        const ty = this.ty;
+	        const det = a * d - b * c;
+	        let res = null;
+	        if (det && !isNaN(det) && isFinite(tx) && isFinite(ty)) {
+	            const x = point.x - this.tx;
+	            const y = point.y - this.ty;
+	            res = new vector2_1.Vector2((x * d - y * c) / det, (y * a - x * b) / det);
+	        }
+	        return res;
+	    }
+	    // public decompose() {
+	    //     var a = this.a;
+	    //     var b = this.b;
+	    //     var c = this.c;
+	    //     var d = this.d;
+	    //     var det = a * d - b * c;
+	    //     var sqrt = Math.sqrt;
+	    //     var degrees = 180 / Math.PI;
+	    //     var rotate;
+	    //     var scale = new Vector2();
+	    //
+	    //     if (a !== 0 || b !== 0) {
+	    //         var r = sqrt(a * a + b * b);
+	    //         rotate = Math.acos(a / r) * (b > 0 ? 1 : -1);
+	    //         scale.x = r;
+	    //         scale.y = det / r;
+	    //     } else if (c !== 0 || d !== 0) {
+	    //         var s = sqrt(c * c + d * d);
+	    //         rotate = Math.asin(c / s) * (d > 0 ? 1 : -1);
+	    //         scale.x = det / s;
+	    //         scale.y = s;
+	    //     } else { // a = b = c = d = 0
+	    //         rotate = 0;
+	    //         scale.x = 0;
+	    //         scale.y = 0;
+	    //     }
+	    //     return {
+	    //         translation: new Vector2(this.tx, this.ty),
+	    //         rotation: rotate * degrees,
+	    //         scale: scale
+	    //     };
+	    // }
+	    getTranslation(out) {
+	        out = out || new vector2_1.Vector2();
+	        out.x = this.tx;
+	        out.y = this.ty;
+	        return out;
+	    }
+	    getScale(out) {
+	        var a = this.a;
+	        var b = this.b;
+	        var c = this.c;
+	        var d = this.d;
+	        var det = a * d - b * c;
+	        out = out || new vector2_1.Vector2();
+	        if (a !== 0 || b !== 0) {
+	            var r = Math.sqrt(a * a + b * b);
+	            out.x = r;
+	            out.y = det / r;
+	        }
+	        else if (c !== 0 || d !== 0) {
+	            var s = Math.sqrt(c * c + d * d);
+	            out.x = det / s;
+	            out.y = s;
+	        }
+	        else {
+	            out.x = 0;
+	            out.y = 0;
+	        }
+	        return out;
+	    }
+	    getRotation(unitType = math_util_1.AngleUnit.Radians) {
+	        var a = this.a;
+	        var b = this.b;
+	        var c = this.c;
+	        var d = this.d;
+	        var rotation = 0;
+	        if (a !== 0 || b !== 0) {
+	            var r = Math.sqrt(a * a + b * b);
+	            rotation = Math.acos(a / r) * (b > 0 ? 1 : -1);
+	        }
+	        else if (c !== 0 || d !== 0) {
+	            var s = Math.sqrt(c * c + d * d);
+	            rotation = Math.asin(c / s) * (d > 0 ? 1 : -1);
+	        }
+	        else {
+	            rotation = 0;
+	        }
+	        return unitType === math_util_1.AngleUnit.Degrees ? rotation * math_util_1.MathUtil.RadiansToDegrees : rotation;
+	    }
+	    copy(other) {
+	        this.a = other.a;
+	        this.b = other.b;
+	        this.c = other.c;
+	        this.d = other.d;
+	        this.tx = other.tx;
+	        this.ty = other.ty;
+	        return this;
+	    }
+	    equals(other) {
+	        return other.a === this.a && other.b === this.b && other.c === this.c &&
+	            other.d === this.d && other.tx === this.tx && other.ty === this.ty;
+	    }
+	    clone(out) {
+	        return (out || new Matrix3x3()).set(this.a, this.b, this.c, this.d, this.tx, this.ty);
+	    }
+	    static createIdentity() {
+	        return new Matrix3x3();
+	    }
+	    static createRotation(radians, out) {
+	        const result = out || new Matrix3x3();
+	        const cos = Math.cos(radians);
+	        const sin = Math.sin(radians);
+	        result.a = cos;
+	        result.b = sin;
+	        result.c = -sin;
+	        result.d = cos;
+	        result.tx = 0;
+	        result.ty = 0;
+	        return result;
+	    }
+	    static createScale(xScale, yScale, out) {
+	        const result = out || new Matrix3x3();
+	        result.a = xScale;
+	        result.b = 0;
+	        result.d = yScale;
+	        result.c = 0;
+	        result.tx = 0;
+	        result.ty = 0;
+	        return result;
+	    }
+	    static createTranslation(x, y, out) {
+	        const result = out || new Matrix3x3();
+	        result.a = 1;
+	        result.b = 0;
+	        result.c = 0;
+	        result.d = 1;
+	        result.tx = x;
+	        result.ty = y;
+	        return result;
+	    }
+	    static multiply(mat1, mat2, out) {
+	        out = out || new Matrix3x3();
+	        out.copy(mat1);
+	        out.multiply(mat2);
+	        return out;
+	    }
+	}
+	Matrix3x3.scratch0 = new Matrix3x3();
+	Matrix3x3.scratch1 = new Matrix3x3();
+	Matrix3x3.scratch2 = new Matrix3x3();
+	Matrix3x3.scratch3 = new Matrix3x3();
+	Matrix3x3.scratch4 = new Matrix3x3();
+	exports.Matrix3x3 = Matrix3x3;
+
+
+/***/ },
+/* 165 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	class ObjectId {
+	    static generate() {
+	        return ++ObjectId.value;
+	    }
+	    static seed(seed) {
+	        ObjectId.value = seed;
+	    }
+	}
+	ObjectId.value = 1;
+	exports.ObjectId = ObjectId;
+
+
+/***/ },
+/* 166 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	function isPrimitive(value) {
+	    const type = typeof value;
+	    return (type !== "object" && type !== "function");
+	}
+	class TypeSerializer {
+	    serialize() {
+	    }
+	    deserialize() {
+	        return null;
+	    }
+	}
+	//todo most of this gets replaced by generated type information
+	//@Serialize(Class)
+	// names can be made unique in a single blob, then name refs are just start / end indices
+	// thisisabiglistofstringsthatcanbehuffmancompressedandindexedinto
+	//
+	// //some flags can be combined, type, base type, interfaces for example
+	// objetRef: {
+	//     typeId: id,
+	//     decorators: [id, id, id]
+	//     fields: {id, accessFlag(public/readonly/etc), serializedFlag, name, type},
+	//     methods: {id, static flag, overrideFlags, decoratorids, name, paramTypes, retnType}
+	//     interfaces: [id, id, id]
+	//     baseType: id
+	// }
+	//
+	// objectRefid : id / fieldCount/ total bytes
+	// fieldId: id / bytelength
+	// bytes: bytes
+	class Serializer {
+	    constructor() {
+	        this.refId = 1;
+	        this.storage = {};
+	        this.objectIdMap = new Map();
+	        this.objectQueue = [];
+	    }
+	    add(obj) {
+	        if (this.objectIdMap.has(obj))
+	            return;
+	        const id = this.getRefId(obj);
+	        this.storage[id] = this.serialize(obj);
+	    }
+	    write() {
+	        while (this.objectQueue.length) {
+	            this.serialize(this.objectQueue.shift());
+	        }
+	        return "";
+	    }
+	    isSerializable(value) {
+	        if (isPrimitive(value))
+	            return true;
+	        if (Array.isArray(value))
+	            return true;
+	    }
+	    toJSON() {
+	    }
+	    toString() {
+	        return JSON.stringify(this.toJSON());
+	    }
+	    serialize(target) {
+	        const id = this.getRefId(target);
+	        const keys = Object.keys(target);
+	        //write type
+	        var types = {};
+	        types[id] = target.constructor.name;
+	        const serializer = this.getSerializer(target.constructor);
+	        /*
+
+	        types: {
+	            id: "some/path"
+	        },
+	        arrays: {
+	        },
+	        objects: {
+	            id: [0] = typeId
+	                [1...end] = fields
+	                [%3] = 1 field
+
+	            {
+	                type: typeId,
+	                fields: [
+	                    {name: name, value: value, type: type} //dont need the object wrapper, can use array offset
+	                ]
+	            }
+	        }
+	        * */
+	    }
+	    getSerializer(target) {
+	        if (Array.isArray(target)) {
+	        }
+	        else if (target instanceof Date) {
+	        }
+	        else if (target instanceof RegExp) {
+	        }
+	        else if (target instanceof Function) {
+	        }
+	        else {
+	            return (target) => {
+	                const keys = Object.keys(target);
+	                const retn = [];
+	                for (let i = 0; i < keys.length; i++) {
+	                    const key = keys[i];
+	                    const value = this.serializeValue(target[key]);
+	                    const type = this.getType(value);
+	                    retn.push(key, value, type);
+	                }
+	                return retn;
+	            };
+	        }
+	    }
+	    getType(target) {
+	    }
+	    serializeValue(target) {
+	        if (isPrimitive(target))
+	            return target;
+	        if (Array.isArray(target)) {
+	            //queue target
+	        }
+	    }
+	    getRefId(target) {
+	        if (target == null)
+	            return -1;
+	        let id = this.objectIdMap.get(target);
+	        if (!id) {
+	            id = this.refId++;
+	            this.objectIdMap.set(target, id);
+	        }
+	        return id;
+	    }
+	}
+	exports.Serializer = Serializer;
+
+
+/***/ },
+/* 167 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const typeMap = new Map();
+	function getTypeFromPath(path) {
+	    return typeMap.get(path);
+	}
+	exports.getTypeFromPath = getTypeFromPath;
+	function setTypePath(path) {
+	    return function (target) {
+	        typeMap.set(path, target);
+	    };
+	}
+	exports.setTypePath = setTypePath;
+
+
+/***/ },
+/* 168 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const vector2_1 = __webpack_require__(17);
+	class Polygon {
+	    constructor() {
+	        this.points = new Array();
+	    }
+	    addPoint(point) {
+	        this.points.push(new vector2_1.Vector2(point.x, point.y));
+	    }
+	    containsPoint(point) {
+	        const points = this.points;
+	        let c = false;
+	        for (let i = 0, j = points.length - 1; i < points.length; j = i++) {
+	            const pointI = points[i];
+	            const pointJ = points[j];
+	            if (((pointI.y >= point.y) !== (pointJ.y >= point.y)) &&
+	                (point.x <= (pointJ.x - pointI.x) * (point.y - pointI.y) / (pointJ.y - pointI.y) + pointI.x)) {
+	                c = !c;
+	            }
+	        }
+	        return c;
+	    }
+	}
+	exports.Polygon = Polygon;
+
+
+/***/ },
+/* 169 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const app_element_1 = __webpack_require__(34);
+	const component_1 = __webpack_require__(43);
+	const util_1 = __webpack_require__(16);
+	const type_1 = __webpack_require__(167);
+	let Scene = class Scene {
+	    constructor() {
+	        this.sceneRoots = [];
+	    }
+	    save() {
+	        var generateId = (function () {
+	            let id = 1;
+	            return function () {
+	                return id++;
+	            };
+	        })();
+	        function addToMap(o) {
+	            if (objectIdMap.has(o))
+	                return;
+	            objectIdMap.set(o, generateId());
+	        }
+	        let json = {};
+	        let objectIdMap = new Map();
+	        //give all objects an id
+	        util_1.traverseChildren(app_element_1.AppElement.Root, (child) => {
+	            addToMap(child);
+	            objectIdMap.set(child, generateId());
+	            child.getAllComponents().forEach((component) => {
+	                addToMap(child);
+	                Object.keys(component).forEach((key) => {
+	                    const value = component[key];
+	                    if (value && typeof value === "object") {
+	                        addToMap(child);
+	                    }
+	                });
+	            });
+	        });
+	        util_1.traverseChildren(app_element_1.AppElement.Root, (child) => {
+	            json[objectIdMap.get(child)] = {
+	                id: child.id,
+	                name: child.name,
+	                parentId: child.getParent().id,
+	                localPosition: child.getLocalPosition(),
+	                localRotation: child.getRotation(),
+	                scale: child.getScale(),
+	                width: child.getWidth(),
+	                height: child.getHeight(),
+	                components: child.getAllComponents().forEach((component) => {
+	                    json[objectIdMap.get(component)] = "";
+	                })
+	            };
+	        });
+	    }
+	    destroy() {
+	        //todo -- tear down existing scene
+	    }
+	    load(sceneDescription) {
+	        // this.destroy();
+	        // const elements = sceneDescription.elements;
+	        // for(let i = 0; i < elements.length; i++) {
+	        //     this.sceneRoots.push(this.hydrateElement(elements[i]));
+	        // }
+	    }
+	    hydrateElement(definition, parent) {
+	        const appElement = new app_element_1.AppElement(definition.name, parent);
+	        for (let j = 0; j < definition.components.length; j++) {
+	            const compDesc = definition.components[j];
+	            const type = component_1.Component.getComponentFromPath(compDesc.type);
+	            const cmp = appElement.addComponent(type);
+	        }
+	        for (let k = 0; k < definition.children.length; k++) {
+	            this.hydrateElement(definition.children[k], appElement);
+	        }
+	        return appElement;
+	    }
+	    unload() {
+	    }
+	    addRootElement(element) {
+	        this.sceneRoots.push(element);
+	    }
+	    getRootElements() {
+	        return this.sceneRoots.slice(0);
+	    }
+	};
+	Scene = tslib_1.__decorate([
+	    type_1.setTypePath("Runtime/Scene")
+	], Scene);
+	exports.Scene = Scene;
+
+
+/***/ },
+/* 170 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
 	class Vector2 {
 	    /**
 	     * Creates a new Vector2 from the passed x and y coordinates.
@@ -11751,2969 +14516,15 @@
 	    }
 	}
 	exports.Vector2 = Vector2;
-	class Vector3 {
-	    /**
-	     * Creates a new Vector3 object from the passed x, y, z (floats) coordinates.
-	     * A Vector3 is the main object used in 3D geometry.
-	     * It can represent etiher the coordinates of a point the space, either a direction.
-	     */
-	    constructor(x, y, z) {
-	        this.x = x;
-	        this.y = y;
-	        this.z = z;
-	    }
-	    /**
-	     * Returns a string with the Vector3 coordinates.
-	     */
-	    toString() {
-	        return "{X: " + this.x + " Y:" + this.y + " Z:" + this.z + "}";
-	    }
-	    /**
-	     * Returns the string "Vector3"
-	     */
-	    getClassName() {
-	        return "Vector3";
-	    }
-	    /**
-	     * Returns the Vector hash code.
-	     */
-	    getHashCode() {
-	        let hash = this.x || 0;
-	        hash = (hash * 397) ^ (this.y || 0);
-	        hash = (hash * 397) ^ (this.z || 0);
-	        return hash;
-	    }
-	    // Operators
-	    /**
-	     * Returns a new array with three elements : the coordinates the Vector3.
-	     */
-	    asArray() {
-	        var result = [];
-	        this.toArray(result, 0);
-	        return result;
-	    }
-	    /**
-	     * Populates the passed array or Float32Array from the passed index with the successive coordinates of the Vector3.
-	     * Returns the Vector3.
-	     */
-	    toArray(array, index = 0) {
-	        array[index] = this.x;
-	        array[index + 1] = this.y;
-	        array[index + 2] = this.z;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Quaternion object, computed from the Vector3 coordinates.
-	     */
-	    toQuaternion() {
-	        var result = new Quaternion(0.0, 0.0, 0.0, 1.0);
-	        var cosxPlusz = Math.cos((this.x + this.z) * 0.5);
-	        var sinxPlusz = Math.sin((this.x + this.z) * 0.5);
-	        var coszMinusx = Math.cos((this.z - this.x) * 0.5);
-	        var sinzMinusx = Math.sin((this.z - this.x) * 0.5);
-	        var cosy = Math.cos(this.y * 0.5);
-	        var siny = Math.sin(this.y * 0.5);
-	        result.x = coszMinusx * siny;
-	        result.y = -sinzMinusx * siny;
-	        result.z = sinxPlusz * cosy;
-	        result.w = cosxPlusz * cosy;
-	        return result;
-	    }
-	    /**
-	     * Adds the passed vector to the current Vector3.
-	     * Returns the updated Vector3.
-	     */
-	    addInPlace(otherVector) {
-	        this.x += otherVector.x;
-	        this.y += otherVector.y;
-	        this.z += otherVector.z;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Vector3, result of the addition the current Vector3 and the passed vector.
-	     */
-	    add(otherVector) {
-	        return new Vector3(this.x + otherVector.x, this.y + otherVector.y, this.z + otherVector.z);
-	    }
-	    /**
-	     * Adds the current Vector3 to the passed one and stores the result in the vector "result".
-	     * Returns the current Vector3.
-	     */
-	    addToRef(otherVector, result) {
-	        result.x = this.x + otherVector.x;
-	        result.y = this.y + otherVector.y;
-	        result.z = this.z + otherVector.z;
-	        return this;
-	    }
-	    /**
-	     * Subtract the passed vector from the current Vector3.
-	     * Returns the updated Vector3.
-	     */
-	    subtractInPlace(otherVector) {
-	        this.x -= otherVector.x;
-	        this.y -= otherVector.y;
-	        this.z -= otherVector.z;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Vector3, result of the subtraction of the passed vector from the current Vector3.
-	     */
-	    subtract(otherVector) {
-	        return new Vector3(this.x - otherVector.x, this.y - otherVector.y, this.z - otherVector.z);
-	    }
-	    /**
-	     * Subtracts the passed vector from the current Vector3 and stores the result in the vector "result".
-	     * Returns the current Vector3.
-	     */
-	    subtractToRef(otherVector, result) {
-	        result.x = this.x - otherVector.x;
-	        result.y = this.y - otherVector.y;
-	        result.z = this.z - otherVector.z;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Vector3 set with the subtraction of the passed floats from the current Vector3 coordinates.
-	     */
-	    subtractFromFloats(x, y, z) {
-	        return new Vector3(this.x - x, this.y - y, this.z - z);
-	    }
-	    /**
-	     * Subtracts the passed floats from the current Vector3 coordinates and set the passed vector "result" with this result.
-	     * Returns the current Vector3.
-	     */
-	    subtractFromFloatsToRef(x, y, z, result) {
-	        result.x = this.x - x;
-	        result.y = this.y - y;
-	        result.z = this.z - z;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Vector3 set with the current Vector3 negated coordinates.
-	     */
-	    negate() {
-	        return new Vector3(-this.x, -this.y, -this.z);
-	    }
-	    /**
-	     * Multiplies the Vector3 coordinates by the float "scale".
-	     * Returns the updated Vector3.
-	     */
-	    scaleInPlace(scale) {
-	        this.x *= scale;
-	        this.y *= scale;
-	        this.z *= scale;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Vector3 set with the current Vector3 coordinates multiplied by the float "scale".
-	     */
-	    scale(scale) {
-	        return new Vector3(this.x * scale, this.y * scale, this.z * scale);
-	    }
-	    /**
-	     * Multiplies the current Vector3 coordinates by the float "scale" and stores the result in the passed vector "result" coordinates.
-	     * Returns the current Vector3.
-	     */
-	    scaleToRef(scale, result) {
-	        result.x = this.x * scale;
-	        result.y = this.y * scale;
-	        result.z = this.z * scale;
-	        return this;
-	    }
-	    /**
-	     * Boolean : True if the current Vector3 and the passed vector coordinates are strictly equal.
-	     */
-	    equals(otherVector) {
-	        return otherVector && this.x === otherVector.x && this.y === otherVector.y && this.z === otherVector.z;
-	    }
-	    /**
-	     * Boolean : True if the current Vector3 coordinate equal the passed floats.
-	     */
-	    equalsToFloats(x, y, z) {
-	        return this.x === x && this.y === y && this.z === z;
-	    }
-	    /**
-	     * Muliplies the current Vector3 coordinates by the passed ones.
-	     * Returns the updated Vector3.
-	     */
-	    multiplyInPlace(otherVector) {
-	        this.x *= otherVector.x;
-	        this.y *= otherVector.y;
-	        this.z *= otherVector.z;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Vector3, result of the multiplication of the current Vector3 by the passed vector.
-	     */
-	    multiply(otherVector) {
-	        return new Vector3(this.x * otherVector.x, this.y * otherVector.y, this.z * otherVector.z);
-	    }
-	    /**
-	     * Multiplies the current Vector3 by the passed one and stores the result in the passed vector "result".
-	     * Returns the current Vector3.
-	     */
-	    multiplyToRef(otherVector, result) {
-	        result.x = this.x * otherVector.x;
-	        result.y = this.y * otherVector.y;
-	        result.z = this.z * otherVector.z;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Vector3 set witth the result of the mulliplication of the current Vector3 coordinates by the passed floats.
-	     */
-	    multiplyByFloats(x, y, z) {
-	        return new Vector3(this.x * x, this.y * y, this.z * z);
-	    }
-	    /**
-	     * Returns a new Vector3 set witth the result of the division of the current Vector3 coordinates by the passed ones.
-	     */
-	    divide(otherVector) {
-	        return new Vector3(this.x / otherVector.x, this.y / otherVector.y, this.z / otherVector.z);
-	    }
-	    /**
-	     * Divides the current Vector3 coordinates by the passed ones and stores the result in the passed vector "result".
-	     * Returns the current Vector3.
-	     */
-	    divideToRef(otherVector, result) {
-	        result.x = this.x / otherVector.x;
-	        result.y = this.y / otherVector.y;
-	        result.z = this.z / otherVector.z;
-	        return this;
-	    }
-	    /**
-	     * Updates the current Vector3 with the minimal coordinate values between its and the passed vector ones.
-	     * Returns the updated Vector3.
-	     */
-	    MinimizeInPlace(other) {
-	        if (other.x < this.x)
-	            this.x = other.x;
-	        if (other.y < this.y)
-	            this.y = other.y;
-	        if (other.z < this.z)
-	            this.z = other.z;
-	        return this;
-	    }
-	    /**
-	     * Updates the current Vector3 with the maximal coordinate values between its and the passed vector ones.
-	     * Returns the updated Vector3.
-	     */
-	    MaximizeInPlace(other) {
-	        if (other.x > this.x)
-	            this.x = other.x;
-	        if (other.y > this.y)
-	            this.y = other.y;
-	        if (other.z > this.z)
-	            this.z = other.z;
-	        return this;
-	    }
-	    // Properties
-	    /**
-	     * Returns the length of the Vector3 (float).
-	     */
-	    length() {
-	        return Math.sqrt(this.x * this.x + this.y * this.y + this.z * this.z);
-	    }
-	    /**
-	     * Returns the squared length of the Vector3 (float).
-	     */
-	    lengthSquared() {
-	        return (this.x * this.x + this.y * this.y + this.z * this.z);
-	    }
-	    // Methods
-	    /**
-	     * Normalize the current Vector3.
-	     * Returns the updated Vector3.
-	     */
-	    normalize() {
-	        var len = this.length();
-	        if (len === 0 || len === 1.0)
-	            return this;
-	        var num = 1.0 / len;
-	        this.x *= num;
-	        this.y *= num;
-	        this.z *= num;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Vector3 copied from the current Vector3.
-	     */
-	    clone() {
-	        return new Vector3(this.x, this.y, this.z);
-	    }
-	    /**
-	     * Copies the passed vector coordinates to the current Vector3 ones.
-	     * Returns the updated Vector3.
-	     */
-	    copyFrom(source) {
-	        this.x = source.x;
-	        this.y = source.y;
-	        this.z = source.z;
-	        return this;
-	    }
-	    /**
-	     * Copies the passed floats to the current Vector3 coordinates.
-	     * Returns the updated Vector3.
-	     */
-	    copyFromFloats(x, y, z) {
-	        this.x = x;
-	        this.y = y;
-	        this.z = z;
-	        return this;
-	    }
-	    /**
-	     * Copies the passed floats to the current Vector3 coordinates.
-	     * Returns the updated Vector3.
-	     */
-	    set(x, y, z) {
-	        return this.copyFromFloats(x, y, z);
-	    }
-	    // Statics
-	    /**
-	     *
-	     */
-	    static GetClipFactor(vector0, vector1, axis, size) {
-	        var d0 = Vector3.Dot(vector0, axis) - size;
-	        var d1 = Vector3.Dot(vector1, axis) - size;
-	        return d0 / (d0 - d1);
-	    }
-	    /**
-	     * Returns a new Vector3 set from the index "offset" of the passed array or Float32Array.
-	     */
-	    static FromArray(array, offset) {
-	        if (!offset) {
-	            offset = 0;
-	        }
-	        return new Vector3(array[offset], array[offset + 1], array[offset + 2]);
-	    }
-	    /**
-	     * Returns a new Vector3 set from the index "offset" of the passed Float32Array.
-	     */
-	    static FromFloatArray(array, offset) {
-	        if (!offset) {
-	            offset = 0;
-	        }
-	        return new Vector3(array[offset], array[offset + 1], array[offset + 2]);
-	    }
-	    /**
-	     * Sets the passed vector "result" with the element values from the index "offset" of the passed array or Float32Array.
-	     */
-	    static FromArrayToRef(array, offset, result) {
-	        result.x = array[offset];
-	        result.y = array[offset + 1];
-	        result.z = array[offset + 2];
-	    }
-	    /**
-	     * Sets the passed vector "result" with the element values from the index "offset" of the passed Float32Array.
-	     */
-	    static FromFloatArrayToRef(array, offset, result) {
-	        result.x = array[offset];
-	        result.y = array[offset + 1];
-	        result.z = array[offset + 2];
-	    }
-	    /**
-	     * Sets the passed vector "result" with the passed floats.
-	     */
-	    static FromFloatsToRef(x, y, z, result) {
-	        result.x = x;
-	        result.y = y;
-	        result.z = z;
-	    }
-	    /**
-	     * Returns a new Vector3 set to (0.0, 0.0, 0.0).
-	     */
-	    static Zero() {
-	        return new Vector3(0.0, 0.0, 0.0);
-	    }
-	    /**
-	     * Returns a new Vector3 set to (0.0, 1.0, 0.0)
-	     */
-	    static Up() {
-	        return new Vector3(0.0, 1.0, 0.0);
-	    }
-	    /**
-	     * Returns a new Vector3 set to (0.0, 0.0, 1.0)
-	     */
-	    static Forward() {
-	        return new Vector3(0.0, 0.0, 1.0);
-	    }
-	    /**
-	     * Returns a new Vector3 set to (1.0, 0.0, 0.0)
-	     */
-	    static Right() {
-	        return new Vector3(1.0, 0.0, 0.0);
-	    }
-	    /**
-	     * Returns a new Vector3 set to (-1.0, 0.0, 0.0)
-	     */
-	    static Left() {
-	        return new Vector3(-1.0, 0.0, 0.0);
-	    }
-	    /**
-	     * Returns a new Vector3 set with the result of the transformation by the passed matrix of the passed vector.
-	     * This method computes tranformed coordinates only, not transformed direction vectors.
-	     */
-	    static TransformCoordinates(vector, transformation) {
-	        var result = Vector3.Zero();
-	        Vector3.TransformCoordinatesToRef(vector, transformation, result);
-	        return result;
-	    }
-	    /**
-	     * Sets the passed vector "result" coordinates with the result of the transformation by the passed matrix of the passed vector.
-	     * This method computes tranformed coordinates only, not transformed direction vectors.
-	     */
-	    static TransformCoordinatesToRef(vector, transformation, result) {
-	        var x = (vector.x * transformation.m[0]) + (vector.y * transformation.m[4]) + (vector.z * transformation.m[8]) + transformation.m[12];
-	        var y = (vector.x * transformation.m[1]) + (vector.y * transformation.m[5]) + (vector.z * transformation.m[9]) + transformation.m[13];
-	        var z = (vector.x * transformation.m[2]) + (vector.y * transformation.m[6]) + (vector.z * transformation.m[10]) + transformation.m[14];
-	        var w = (vector.x * transformation.m[3]) + (vector.y * transformation.m[7]) + (vector.z * transformation.m[11]) + transformation.m[15];
-	        result.x = x / w;
-	        result.y = y / w;
-	        result.z = z / w;
-	    }
-	    /**
-	     * Sets the passed vector "result" coordinates with the result of the transformation by the passed matrix of the passed floats (x, y, z).
-	     * This method computes tranformed coordinates only, not transformed direction vectors.
-	     */
-	    static TransformCoordinatesFromFloatsToRef(x, y, z, transformation, result) {
-	        var rx = (x * transformation.m[0]) + (y * transformation.m[4]) + (z * transformation.m[8]) + transformation.m[12];
-	        var ry = (x * transformation.m[1]) + (y * transformation.m[5]) + (z * transformation.m[9]) + transformation.m[13];
-	        var rz = (x * transformation.m[2]) + (y * transformation.m[6]) + (z * transformation.m[10]) + transformation.m[14];
-	        var rw = (x * transformation.m[3]) + (y * transformation.m[7]) + (z * transformation.m[11]) + transformation.m[15];
-	        result.x = rx / rw;
-	        result.y = ry / rw;
-	        result.z = rz / rw;
-	    }
-	    /**
-	     * Returns a new Vector3 set with the result of the normal transformation by the passed matrix of the passed vector.
-	     * This methods computes transformed normalized direction vectors only.
-	     */
-	    static TransformNormal(vector, transformation) {
-	        var result = Vector3.Zero();
-	        Vector3.TransformNormalToRef(vector, transformation, result);
-	        return result;
-	    }
-	    /**
-	     * Sets the passed vector "result" with the result of the normal transformation by the passed matrix of the passed vector.
-	     * This methods computes transformed normalized direction vectors only.
-	     */
-	    static TransformNormalToRef(vector, transformation, result) {
-	        var x = (vector.x * transformation.m[0]) + (vector.y * transformation.m[4]) + (vector.z * transformation.m[8]);
-	        var y = (vector.x * transformation.m[1]) + (vector.y * transformation.m[5]) + (vector.z * transformation.m[9]);
-	        var z = (vector.x * transformation.m[2]) + (vector.y * transformation.m[6]) + (vector.z * transformation.m[10]);
-	        result.x = x;
-	        result.y = y;
-	        result.z = z;
-	    }
-	    /**
-	     * Sets the passed vector "result" with the result of the normal transformation by the passed matrix of the passed floats (x, y, z).
-	     * This methods computes transformed normalized direction vectors only.
-	     */
-	    static TransformNormalFromFloatsToRef(x, y, z, transformation, result) {
-	        result.x = (x * transformation.m[0]) + (y * transformation.m[4]) + (z * transformation.m[8]);
-	        result.y = (x * transformation.m[1]) + (y * transformation.m[5]) + (z * transformation.m[9]);
-	        result.z = (x * transformation.m[2]) + (y * transformation.m[6]) + (z * transformation.m[10]);
-	    }
-	    /**
-	     * Returns a new Vector3 located for "amount" on the CatmullRom interpolation spline defined by the vectors "value1", "value2", "value3", "value4".
-	     */
-	    static CatmullRom(value1, value2, value3, value4, amount) {
-	        var squared = amount * amount;
-	        var cubed = amount * squared;
-	        var x = 0.5 * ((((2.0 * value2.x) + ((-value1.x + value3.x) * amount)) +
-	            (((((2.0 * value1.x) - (5.0 * value2.x)) + (4.0 * value3.x)) - value4.x) * squared)) +
-	            ((((-value1.x + (3.0 * value2.x)) - (3.0 * value3.x)) + value4.x) * cubed));
-	        var y = 0.5 * ((((2.0 * value2.y) + ((-value1.y + value3.y) * amount)) +
-	            (((((2.0 * value1.y) - (5.0 * value2.y)) + (4.0 * value3.y)) - value4.y) * squared)) +
-	            ((((-value1.y + (3.0 * value2.y)) - (3.0 * value3.y)) + value4.y) * cubed));
-	        var z = 0.5 * ((((2.0 * value2.z) + ((-value1.z + value3.z) * amount)) +
-	            (((((2.0 * value1.z) - (5.0 * value2.z)) + (4.0 * value3.z)) - value4.z) * squared)) +
-	            ((((-value1.z + (3.0 * value2.z)) - (3.0 * value3.z)) + value4.z) * cubed));
-	        return new Vector3(x, y, z);
-	    }
-	    /**
-	     * Returns a new Vector3 set with the coordinates of "value", if the vector "value" is in the cube defined by the vectors "min" and "max".
-	     * If a coordinate value of "value" is lower than one of the "min" coordinate, then this "value" coordinate is set with the "min" one.
-	     * If a coordinate value of "value" is greater than one of the "max" coordinate, then this "value" coordinate is set with the "max" one.
-	     */
-	    static Clamp(value, min, max) {
-	        var x = value.x;
-	        x = (x > max.x) ? max.x : x;
-	        x = (x < min.x) ? min.x : x;
-	        var y = value.y;
-	        y = (y > max.y) ? max.y : y;
-	        y = (y < min.y) ? min.y : y;
-	        var z = value.z;
-	        z = (z > max.z) ? max.z : z;
-	        z = (z < min.z) ? min.z : z;
-	        return new Vector3(x, y, z);
-	    }
-	    /**
-	     * Returns a new Vector3 located for "amount" (float) on the Hermite interpolation spline defined by the vectors "value1", "tangent1", "value2", "tangent2".
-	     */
-	    static Hermite(value1, tangent1, value2, tangent2, amount) {
-	        var squared = amount * amount;
-	        var cubed = amount * squared;
-	        var part1 = ((2.0 * cubed) - (3.0 * squared)) + 1.0;
-	        var part2 = (-2.0 * cubed) + (3.0 * squared);
-	        var part3 = (cubed - (2.0 * squared)) + amount;
-	        var part4 = cubed - squared;
-	        var x = (((value1.x * part1) + (value2.x * part2)) + (tangent1.x * part3)) + (tangent2.x * part4);
-	        var y = (((value1.y * part1) + (value2.y * part2)) + (tangent1.y * part3)) + (tangent2.y * part4);
-	        var z = (((value1.z * part1) + (value2.z * part2)) + (tangent1.z * part3)) + (tangent2.z * part4);
-	        return new Vector3(x, y, z);
-	    }
-	    /**
-	     * Returns a new Vector3 located for "amount" (float) on the linear interpolation between the vectors "start" and "end".
-	     */
-	    static Lerp(start, end, amount) {
-	        var result = new Vector3(0, 0, 0);
-	        Vector3.LerpToRef(start, end, amount, result);
-	        return result;
-	    }
-	    /**
-	     * Sets the passed vector "result" with the result of the linear interpolation from the vector "start" for "amount" to the vector "end".
-	     */
-	    static LerpToRef(start, end, amount, result) {
-	        result.x = start.x + ((end.x - start.x) * amount);
-	        result.y = start.y + ((end.y - start.y) * amount);
-	        result.z = start.z + ((end.z - start.z) * amount);
-	    }
-	    /**
-	     * Returns the dot product (float) between the vectors "left" and "right".
-	     */
-	    static Dot(left, right) {
-	        return (left.x * right.x + left.y * right.y + left.z * right.z);
-	    }
-	    /**
-	     * Returns a new Vector3 as the cross product of the vectors "left" and "right".
-	     * The cross product is then orthogonal to both "left" and "right".
-	     */
-	    static Cross(left, right) {
-	        var result = Vector3.Zero();
-	        Vector3.CrossToRef(left, right, result);
-	        return result;
-	    }
-	    /**
-	     * Sets the passed vector "result" with the cross product of "left" and "right".
-	     * The cross product is then orthogonal to both "left" and "right".
-	     */
-	    static CrossToRef(left, right, result) {
-	        MathTmp.Vector3[0].x = left.y * right.z - left.z * right.y;
-	        MathTmp.Vector3[0].y = left.z * right.x - left.x * right.z;
-	        MathTmp.Vector3[0].z = left.x * right.y - left.y * right.x;
-	        result.copyFrom(MathTmp.Vector3[0]);
-	    }
-	    /**
-	     * Returns a new Vector3 as the normalization of the passed vector.
-	     */
-	    static Normalize(vector) {
-	        var result = Vector3.Zero();
-	        Vector3.NormalizeToRef(vector, result);
-	        return result;
-	    }
-	    /**
-	     * Sets the passed vector "result" with the normalization of the passed first vector.
-	     */
-	    static NormalizeToRef(vector, result) {
-	        result.copyFrom(vector);
-	        result.normalize();
-	    }
-	    static Minimize(left, right) {
-	        var min = left.clone();
-	        min.MinimizeInPlace(right);
-	        return min;
-	    }
-	    static Maximize(left, right) {
-	        var max = left.clone();
-	        max.MaximizeInPlace(right);
-	        return max;
-	    }
-	    /**
-	     * Returns the distance (float) between the vectors "value1" and "value2".
-	     */
-	    static Distance(value1, value2) {
-	        return Math.sqrt(Vector3.DistanceSquared(value1, value2));
-	    }
-	    /**
-	     * Returns the squared distance (float) between the vectors "value1" and "value2".
-	     */
-	    static DistanceSquared(value1, value2) {
-	        var x = value1.x - value2.x;
-	        var y = value1.y - value2.y;
-	        var z = value1.z - value2.z;
-	        return (x * x) + (y * y) + (z * z);
-	    }
-	    /**
-	     * Returns a new Vector3 located at the center between "value1" and "value2".
-	     */
-	    static Center(value1, value2) {
-	        var center = value1.add(value2);
-	        center.scaleInPlace(0.5);
-	        return center;
-	    }
-	    /**
-	     * Given three orthogonal normalized left-handed oriented Vector3 axis in space (target system),
-	     * RotationFromAxis() returns the rotation Euler angles (ex : rotation.x, rotation.y, rotation.z) to apply
-	     * to something in order to rotate it from its local system to the given target system.
-	     * Note : axis1, axis2 and axis3 are normalized during this operation.
-	     * Returns a new Vector3.
-	     */
-	    static RotationFromAxis(axis1, axis2, axis3) {
-	        var rotation = Vector3.Zero();
-	        Vector3.RotationFromAxisToRef(axis1, axis2, axis3, rotation);
-	        return rotation;
-	    }
-	    /**
-	     * The same than RotationFromAxis but updates the passed ref Vector3 parameter instead of returning a new Vector3.
-	     */
-	    static RotationFromAxisToRef(axis1, axis2, axis3, ref) {
-	        var quat = MathTmp.Quaternion[0];
-	        Quaternion.RotationQuaternionFromAxisToRef(axis1, axis2, axis3, quat);
-	        quat.toEulerAnglesToRef(ref);
-	    }
-	}
-	exports.Vector3 = Vector3;
-	//Vector4 class created for EulerAngle class conversion to Quaternion
-	class Vector4 {
-	    /**
-	     * Creates a Vector4 object from the passed floats.
-	     */
-	    constructor(x, y, z, w) {
-	        this.x = x;
-	        this.y = y;
-	        this.z = z;
-	        this.w = w;
-	    }
-	    /**
-	     * Returns the string with the Vector4 coordinates.
-	     */
-	    toString() {
-	        return "{X: " + this.x + " Y:" + this.y + " Z:" + this.z + " W:" + this.w + "}";
-	    }
-	    /**
-	     * Returns the string "Vector4".
-	     */
-	    getClassName() {
-	        return "Vector4";
-	    }
-	    /**
-	     * Returns the Vector4 hash code.
-	     */
-	    getHashCode() {
-	        let hash = this.x || 0;
-	        hash = (hash * 397) ^ (this.y || 0);
-	        hash = (hash * 397) ^ (this.z || 0);
-	        hash = (hash * 397) ^ (this.w || 0);
-	        return hash;
-	    }
-	    // Operators
-	    /**
-	     * Returns a new array populated with 4 elements : the Vector4 coordinates.
-	     */
-	    asArray() {
-	        var result = [];
-	        this.toArray(result, 0);
-	        return result;
-	    }
-	    /**
-	     * Populates the passed array from the passed index with the Vector4 coordinates.
-	     * Returns the Vector4.
-	     */
-	    toArray(array, index) {
-	        if (index === undefined) {
-	            index = 0;
-	        }
-	        array[index] = this.x;
-	        array[index + 1] = this.y;
-	        array[index + 2] = this.z;
-	        array[index + 3] = this.w;
-	        return this;
-	    }
-	    /**
-	     * Adds the passed vector to the current Vector4.
-	     * Returns the updated Vector4.
-	     */
-	    addInPlace(otherVector) {
-	        this.x += otherVector.x;
-	        this.y += otherVector.y;
-	        this.z += otherVector.z;
-	        this.w += otherVector.w;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Vector4 as the result of the addition of the current Vector4 and the passed one.
-	     */
-	    add(otherVector) {
-	        return new Vector4(this.x + otherVector.x, this.y + otherVector.y, this.z + otherVector.z, this.w + otherVector.w);
-	    }
-	    /**
-	     * Updates the passed vector "result" with the result of the addition of the current Vector4 and the passed one.
-	     * Returns the current Vector4.
-	     */
-	    addToRef(otherVector, result) {
-	        result.x = this.x + otherVector.x;
-	        result.y = this.y + otherVector.y;
-	        result.z = this.z + otherVector.z;
-	        result.w = this.w + otherVector.w;
-	        return this;
-	    }
-	    /**
-	     * Subtract in place the passed vector from the current Vector4.
-	     * Returns the updated Vector4.
-	     */
-	    subtractInPlace(otherVector) {
-	        this.x -= otherVector.x;
-	        this.y -= otherVector.y;
-	        this.z -= otherVector.z;
-	        this.w -= otherVector.w;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Vector4 with the result of the subtraction of the passed vector from the current Vector4.
-	     */
-	    subtract(otherVector) {
-	        return new Vector4(this.x - otherVector.x, this.y - otherVector.y, this.z - otherVector.z, this.w - otherVector.w);
-	    }
-	    /**
-	     * Sets the passed vector "result" with the result of the subtraction of the passed vector from the current Vector4.
-	     * Returns the current Vector4.
-	     */
-	    subtractToRef(otherVector, result) {
-	        result.x = this.x - otherVector.x;
-	        result.y = this.y - otherVector.y;
-	        result.z = this.z - otherVector.z;
-	        result.w = this.w - otherVector.w;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Vector4 set with the result of the subtraction of the passed floats from the current Vector4 coordinates.
-	     */
-	    subtractFromFloats(x, y, z, w) {
-	        return new Vector4(this.x - x, this.y - y, this.z - z, this.w - w);
-	    }
-	    /**
-	     * Sets the passed vector "result" set with the result of the subtraction of the passed floats from the current Vector4 coordinates.
-	     * Returns the current Vector4.
-	     */
-	    subtractFromFloatsToRef(x, y, z, w, result) {
-	        result.x = this.x - x;
-	        result.y = this.y - y;
-	        result.z = this.z - z;
-	        result.w = this.w - w;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Vector4 set with the current Vector4 negated coordinates.
-	     */
-	    negate() {
-	        return new Vector4(-this.x, -this.y, -this.z, -this.w);
-	    }
-	    /**
-	     * Multiplies the current Vector4 coordinates by scale (float).
-	     * Returns the updated Vector4.
-	     */
-	    scaleInPlace(scale) {
-	        this.x *= scale;
-	        this.y *= scale;
-	        this.z *= scale;
-	        this.w *= scale;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Vector4 set with the current Vector4 coordinates multiplied by scale (float).
-	     */
-	    scale(scale) {
-	        return new Vector4(this.x * scale, this.y * scale, this.z * scale, this.w * scale);
-	    }
-	    /**
-	     * Sets the passed vector "result" with the current Vector4 coordinates multiplied by scale (float).
-	     * Returns the current Vector4.
-	     */
-	    scaleToRef(scale, result) {
-	        result.x = this.x * scale;
-	        result.y = this.y * scale;
-	        result.z = this.z * scale;
-	        result.w = this.w * scale;
-	        return this;
-	    }
-	    /**
-	     * Boolean : True if the current Vector4 coordinates are stricly equal to the passed ones.
-	     */
-	    equals(otherVector) {
-	        return otherVector && this.x === otherVector.x && this.y === otherVector.y && this.z === otherVector.z && this.w === otherVector.w;
-	    }
-	    /**
-	     * Boolean : True if the passed floats are strictly equal to the current Vector4 coordinates.
-	     */
-	    equalsToFloats(x, y, z, w) {
-	        return this.x === x && this.y === y && this.z === z && this.w === w;
-	    }
-	    /**
-	     * Multiplies in place the current Vector4 by the passed one.
-	     * Returns the updated Vector4.
-	     */
-	    multiplyInPlace(otherVector) {
-	        this.x *= otherVector.x;
-	        this.y *= otherVector.y;
-	        this.z *= otherVector.z;
-	        this.w *= otherVector.w;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Vector4 set with the multiplication result of the current Vector4 and the passed one.
-	     */
-	    multiply(otherVector) {
-	        return new Vector4(this.x * otherVector.x, this.y * otherVector.y, this.z * otherVector.z, this.w * otherVector.w);
-	    }
-	    /**
-	     * Updates the passed vector "result" with the multiplication result of the current Vector4 and the passed one.
-	     * Returns the current Vector4.
-	     */
-	    multiplyToRef(otherVector, result) {
-	        result.x = this.x * otherVector.x;
-	        result.y = this.y * otherVector.y;
-	        result.z = this.z * otherVector.z;
-	        result.w = this.w * otherVector.w;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Vector4 set with the multiplication result of the passed floats and the current Vector4 coordinates.
-	     */
-	    multiplyByFloats(x, y, z, w) {
-	        return new Vector4(this.x * x, this.y * y, this.z * z, this.w * w);
-	    }
-	    /**
-	     * Returns a new Vector4 set with the division result of the current Vector4 by the passed one.
-	     */
-	    divide(otherVector) {
-	        return new Vector4(this.x / otherVector.x, this.y / otherVector.y, this.z / otherVector.z, this.w / otherVector.w);
-	    }
-	    /**
-	     * Updates the passed vector "result" with the division result of the current Vector4 by the passed one.
-	     * Returns the current Vector4.
-	     */
-	    divideToRef(otherVector, result) {
-	        result.x = this.x / otherVector.x;
-	        result.y = this.y / otherVector.y;
-	        result.z = this.z / otherVector.z;
-	        result.w = this.w / otherVector.w;
-	        return this;
-	    }
-	    /**
-	     * Updates the Vector4 coordinates with the minimum values between its own and the passed vector ones.
-	     */
-	    MinimizeInPlace(other) {
-	        if (other.x < this.x)
-	            this.x = other.x;
-	        if (other.y < this.y)
-	            this.y = other.y;
-	        if (other.z < this.z)
-	            this.z = other.z;
-	        if (other.w < this.w)
-	            this.w = other.w;
-	        return this;
-	    }
-	    /**
-	     * Updates the Vector4 coordinates with the maximum values between its own and the passed vector ones.
-	     */
-	    MaximizeInPlace(other) {
-	        if (other.x > this.x)
-	            this.x = other.x;
-	        if (other.y > this.y)
-	            this.y = other.y;
-	        if (other.z > this.z)
-	            this.z = other.z;
-	        if (other.w > this.w)
-	            this.w = other.w;
-	        return this;
-	    }
-	    // Properties
-	    /**
-	     * Returns the Vector4 length (float).
-	     */
-	    length() {
-	        return Math.sqrt(this.x * this.x + this.y * this.y + this.z * this.z + this.w * this.w);
-	    }
-	    /**
-	     * Returns the Vector4 squared length (float).
-	     */
-	    lengthSquared() {
-	        return (this.x * this.x + this.y * this.y + this.z * this.z + this.w * this.w);
-	    }
-	    // Methods
-	    /**
-	     * Normalizes in place the Vector4.
-	     * Returns the updated Vector4.
-	     */
-	    normalize() {
-	        var len = this.length();
-	        if (len === 0)
-	            return this;
-	        var num = 1.0 / len;
-	        this.x *= num;
-	        this.y *= num;
-	        this.z *= num;
-	        this.w *= num;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Vector3 from the Vector4 (x, y, z) coordinates.
-	     */
-	    toVector3() {
-	        return new Vector3(this.x, this.y, this.z);
-	    }
-	    /**
-	     * Returns a new Vector4 copied from the current one.
-	     */
-	    clone() {
-	        return new Vector4(this.x, this.y, this.z, this.w);
-	    }
-	    /**
-	     * Updates the current Vector4 with the passed one coordinates.
-	     * Returns the updated Vector4.
-	     */
-	    copyFrom(source) {
-	        this.x = source.x;
-	        this.y = source.y;
-	        this.z = source.z;
-	        this.w = source.w;
-	        return this;
-	    }
-	    /**
-	     * Updates the current Vector4 coordinates with the passed floats.
-	     * Returns the updated Vector4.
-	     */
-	    copyFromFloats(x, y, z, w) {
-	        this.x = x;
-	        this.y = y;
-	        this.z = z;
-	        this.w = w;
-	        return this;
-	    }
-	    /**
-	     * Updates the current Vector4 coordinates with the passed floats.
-	     * Returns the updated Vector4.
-	     */
-	    set(x, y, z, w) {
-	        return this.copyFromFloats(x, y, z, w);
-	    }
-	    // Statics
-	    /**
-	     * Returns a new Vector4 set from the starting index of the passed array.
-	     */
-	    static FromArray(array, offset) {
-	        if (!offset) {
-	            offset = 0;
-	        }
-	        return new Vector4(array[offset], array[offset + 1], array[offset + 2], array[offset + 3]);
-	    }
-	    /**
-	     * Updates the passed vector "result" from the starting index of the passed array.
-	     */
-	    static FromArrayToRef(array, offset, result) {
-	        result.x = array[offset];
-	        result.y = array[offset + 1];
-	        result.z = array[offset + 2];
-	        result.w = array[offset + 3];
-	    }
-	    /**
-	     * Updates the passed vector "result" from the starting index of the passed Float32Array.
-	     */
-	    static FromFloatArrayToRef(array, offset, result) {
-	        result.x = array[offset];
-	        result.y = array[offset + 1];
-	        result.z = array[offset + 2];
-	        result.w = array[offset + 3];
-	    }
-	    /**
-	     * Updates the passed vector "result" coordinates from the passed floats.
-	     */
-	    static FromFloatsToRef(x, y, z, w, result) {
-	        result.x = x;
-	        result.y = y;
-	        result.z = z;
-	        result.w = w;
-	    }
-	    /**
-	     * Returns a new Vector4 set to (0.0, 0.0, 0.0, 0.0)
-	     */
-	    static Zero() {
-	        return new Vector4(0.0, 0.0, 0.0, 0.0);
-	    }
-	    /**
-	     * Returns a new normalized Vector4 from the passed one.
-	     */
-	    static Normalize(vector) {
-	        var result = Vector4.Zero();
-	        Vector4.NormalizeToRef(vector, result);
-	        return result;
-	    }
-	    /**
-	     * Updates the passed vector "result" from the normalization of the passed one.
-	     */
-	    static NormalizeToRef(vector, result) {
-	        result.copyFrom(vector);
-	        result.normalize();
-	    }
-	    static Minimize(left, right) {
-	        var min = left.clone();
-	        min.MinimizeInPlace(right);
-	        return min;
-	    }
-	    static Maximize(left, right) {
-	        var max = left.clone();
-	        max.MaximizeInPlace(right);
-	        return max;
-	    }
-	    /**
-	     * Returns the distance (float) between the vectors "value1" and "value2".
-	     */
-	    static Distance(value1, value2) {
-	        return Math.sqrt(Vector4.DistanceSquared(value1, value2));
-	    }
-	    /**
-	     * Returns the squared distance (float) between the vectors "value1" and "value2".
-	     */
-	    static DistanceSquared(value1, value2) {
-	        var x = value1.x - value2.x;
-	        var y = value1.y - value2.y;
-	        var z = value1.z - value2.z;
-	        var w = value1.w - value2.w;
-	        return (x * x) + (y * y) + (z * z) + (w * w);
-	    }
-	    /**
-	     * Returns a new Vector4 located at the center between the vectors "value1" and "value2".
-	     */
-	    static Center(value1, value2) {
-	        var center = value1.add(value2);
-	        center.scaleInPlace(0.5);
-	        return center;
-	    }
-	    /**
-	     * Returns a new Vector4 set with the result of the normal transformation by the passed matrix of the passed vector.
-	     * This methods computes transformed normalized direction vectors only.
-	     */
-	    static TransformNormal(vector, transformation) {
-	        var result = Vector4.Zero();
-	        Vector4.TransformNormalToRef(vector, transformation, result);
-	        return result;
-	    }
-	    /**
-	     * Sets the passed vector "result" with the result of the normal transformation by the passed matrix of the passed vector.
-	     * This methods computes transformed normalized direction vectors only.
-	     */
-	    static TransformNormalToRef(vector, transformation, result) {
-	        var x = (vector.x * transformation.m[0]) + (vector.y * transformation.m[4]) + (vector.z * transformation.m[8]);
-	        var y = (vector.x * transformation.m[1]) + (vector.y * transformation.m[5]) + (vector.z * transformation.m[9]);
-	        var z = (vector.x * transformation.m[2]) + (vector.y * transformation.m[6]) + (vector.z * transformation.m[10]);
-	        result.x = x;
-	        result.y = y;
-	        result.z = z;
-	        result.w = vector.w;
-	    }
-	    /**
-	     * Sets the passed vector "result" with the result of the normal transformation by the passed matrix of the passed floats (x, y, z, w).
-	     * This methods computes transformed normalized direction vectors only.
-	     */
-	    static TransformNormalFromFloatsToRef(x, y, z, w, transformation, result) {
-	        result.x = (x * transformation.m[0]) + (y * transformation.m[4]) + (z * transformation.m[8]);
-	        result.y = (x * transformation.m[1]) + (y * transformation.m[5]) + (z * transformation.m[9]);
-	        result.z = (x * transformation.m[2]) + (y * transformation.m[6]) + (z * transformation.m[10]);
-	        result.w = w;
-	    }
-	}
-	exports.Vector4 = Vector4;
-	class Size {
-	    /**
-	     * Creates a Size object from the passed width and height (floats).
-	     */
-	    constructor(width, height) {
-	        this.width = width;
-	        this.height = height;
-	    }
-	    // Returns a string with the Size width and height.
-	    toString() {
-	        return `{W: ${this.width}, H: ${this.height}}`;
-	    }
-	    /**
-	     * Returns the string "Size"
-	     */
-	    getClassName() {
-	        return "Size";
-	    }
-	    /**
-	     * Returns the Size hash code.
-	     */
-	    getHashCode() {
-	        let hash = this.width || 0;
-	        hash = (hash * 397) ^ (this.height || 0);
-	        return hash;
-	    }
-	    /**
-	     * Updates the current size from the passed one.
-	     * Returns the updated Size.
-	     */
-	    copyFrom(src) {
-	        this.width = src.width;
-	        this.height = src.height;
-	    }
-	    /**
-	     * Updates in place the current Size from the passed floats.
-	     * Returns the updated Size.
-	     */
-	    copyFromFloats(width, height) {
-	        this.width = width;
-	        this.height = height;
-	        return this;
-	    }
-	    /**
-	     * Updates in place the current Size from the passed floats.
-	     * Returns the updated Size.
-	     */
-	    set(width, height) {
-	        return this.copyFromFloats(width, height);
-	    }
-	    /**
-	     * Returns a new Size set with the multiplication result of the current Size and the passed floats.
-	     */
-	    multiplyByFloats(w, h) {
-	        return new Size(this.width * w, this.height * h);
-	    }
-	    /**
-	     * Returns a new Size copied from the passed one.
-	     */
-	    clone() {
-	        return new Size(this.width, this.height);
-	    }
-	    /**
-	     * Boolean : True if the current Size and the passed one width and height are strictly equal.
-	     */
-	    equals(other) {
-	        if (!other) {
-	            return false;
-	        }
-	        return (this.width === other.width) && (this.height === other.height);
-	    }
-	    /**
-	     * Returns the surface of the Size : width * height (float).
-	     */
-	    get surface() {
-	        return this.width * this.height;
-	    }
-	    /**
-	     * Returns a new Size set to (0.0, 0.0)
-	     */
-	    static Zero() {
-	        return new Size(0.0, 0.0);
-	    }
-	    /**
-	     * Returns a new Size set as the addition result of the current Size and the passed one.
-	     */
-	    add(otherSize) {
-	        return new Size(this.width + otherSize.width, this.height + otherSize.height);
-	    }
-	    /**
-	     * Returns a new Size set as the subtraction result of  the passed one from the current Size.
-	     */
-	    subtract(otherSize) {
-	        return new Size(this.width - otherSize.width, this.height - otherSize.height);
-	    }
-	    /**
-	     * Returns a new Size set at the linear interpolation "amount" between "start" and "end".
-	     */
-	    static Lerp(start, end, amount) {
-	        var w = start.width + ((end.width - start.width) * amount);
-	        var h = start.height + ((end.height - start.height) * amount);
-	        return new Size(w, h);
-	    }
-	}
-	exports.Size = Size;
-	class Quaternion {
-	    /**
-	     * Creates a new Quaternion from the passed floats.
-	     */
-	    constructor(x = 0.0, y = 0.0, z = 0.0, w = 1.0) {
-	        this.x = x;
-	        this.y = y;
-	        this.z = z;
-	        this.w = w;
-	    }
-	    /**
-	     * Returns a string with the Quaternion coordinates.
-	     */
-	    toString() {
-	        return "{X: " + this.x + " Y:" + this.y + " Z:" + this.z + " W:" + this.w + "}";
-	    }
-	    /**
-	     * Returns the string "Quaternion".
-	     */
-	    getClassName() {
-	        return "Quaternion";
-	    }
-	    /**
-	     * Returns the Quaternion hash code.
-	     */
-	    getHashCode() {
-	        let hash = this.x || 0;
-	        hash = (hash * 397) ^ (this.y || 0);
-	        hash = (hash * 397) ^ (this.z || 0);
-	        hash = (hash * 397) ^ (this.w || 0);
-	        return hash;
-	    }
-	    /**
-	     * Returns a new array populated with 4 elements : the Quaternion coordinates.
-	     */
-	    asArray() {
-	        return [this.x, this.y, this.z, this.w];
-	    }
-	    /**
-	     * Boolean : True if the current Quaterion and the passed one coordinates are strictly equal.
-	     */
-	    equals(otherQuaternion) {
-	        return otherQuaternion && this.x === otherQuaternion.x && this.y === otherQuaternion.y && this.z === otherQuaternion.z && this.w === otherQuaternion.w;
-	    }
-	    /**
-	     * Returns a new Quaternion copied from the current one.
-	     */
-	    clone() {
-	        return new Quaternion(this.x, this.y, this.z, this.w);
-	    }
-	    /**
-	     * Updates the current Quaternion from the passed one coordinates.
-	     * Returns the updated Quaterion.
-	     */
-	    copyFrom(other) {
-	        this.x = other.x;
-	        this.y = other.y;
-	        this.z = other.z;
-	        this.w = other.w;
-	        return this;
-	    }
-	    /**
-	     * Updates the current Quaternion from the passed float coordinates.
-	     * Returns the updated Quaterion.
-	     */
-	    copyFromFloats(x, y, z, w) {
-	        this.x = x;
-	        this.y = y;
-	        this.z = z;
-	        this.w = w;
-	        return this;
-	    }
-	    /**
-	     * Updates the current Quaternion from the passed float coordinates.
-	     * Returns the updated Quaterion.
-	     */
-	    set(x, y, z, w) {
-	        return this.copyFromFloats(x, y, z, w);
-	    }
-	    /**
-	     * Returns a new Quaternion as the addition result of the passed one and the current Quaternion.
-	     */
-	    add(other) {
-	        return new Quaternion(this.x + other.x, this.y + other.y, this.z + other.z, this.w + other.w);
-	    }
-	    /**
-	     * Returns a new Quaternion as the subtraction result of the passed one from the current Quaternion.
-	     */
-	    subtract(other) {
-	        return new Quaternion(this.x - other.x, this.y - other.y, this.z - other.z, this.w - other.w);
-	    }
-	    /**
-	     * Returns a new Quaternion set by multiplying the current Quaterion coordinates by the float "scale".
-	     */
-	    scale(value) {
-	        return new Quaternion(this.x * value, this.y * value, this.z * value, this.w * value);
-	    }
-	    /**
-	     * Returns a new Quaternion set as the quaternion mulplication result of the current one with the passed one "q1".
-	     */
-	    multiply(q1) {
-	        var result = new Quaternion(0, 0, 0, 1.0);
-	        this.multiplyToRef(q1, result);
-	        return result;
-	    }
-	    /**
-	     * Sets the passed "result" as the quaternion mulplication result of the current one with the passed one "q1".
-	     * Returns the current Quaternion.
-	     */
-	    multiplyToRef(q1, result) {
-	        var x = this.x * q1.w + this.y * q1.z - this.z * q1.y + this.w * q1.x;
-	        var y = -this.x * q1.z + this.y * q1.w + this.z * q1.x + this.w * q1.y;
-	        var z = this.x * q1.y - this.y * q1.x + this.z * q1.w + this.w * q1.z;
-	        var w = -this.x * q1.x - this.y * q1.y - this.z * q1.z + this.w * q1.w;
-	        result.copyFromFloats(x, y, z, w);
-	        return this;
-	    }
-	    /**
-	     * Updates the current Quaternion with the quaternion mulplication result of itself with the passed one "q1".
-	     * Returns the updated Quaternion.
-	     */
-	    multiplyInPlace(q1) {
-	        this.multiplyToRef(q1, this);
-	        return this;
-	    }
-	    /**
-	     * Sets the passed "ref" with the conjugation of the current Quaternion.
-	     * Returns the current Quaternion.
-	     */
-	    conjugateToRef(ref) {
-	        ref.copyFromFloats(-this.x, -this.y, -this.z, this.w);
-	        return this;
-	    }
-	    /**
-	     * Conjugates in place the current Quaternion.
-	     * Returns the updated Quaternion.
-	     */
-	    conjugateInPlace() {
-	        this.x *= -1;
-	        this.y *= -1;
-	        this.z *= -1;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Quaternion as the conjugate of the current Quaternion.
-	     */
-	    conjugate() {
-	        var result = new Quaternion(-this.x, -this.y, -this.z, this.w);
-	        return result;
-	    }
-	    /**
-	     * Returns the Quaternion length (float).
-	     */
-	    length() {
-	        return Math.sqrt((this.x * this.x) + (this.y * this.y) + (this.z * this.z) + (this.w * this.w));
-	    }
-	    /**
-	     * Normalize in place the current Quaternion.
-	     * Returns the updated Quaternion.
-	     */
-	    normalize() {
-	        var length = 1.0 / this.length();
-	        this.x *= length;
-	        this.y *= length;
-	        this.z *= length;
-	        this.w *= length;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Vector3 set with the Euler angles translated from the current Quaternion.
-	     */
-	    toEulerAngles(order = "YZX") {
-	        var result = Vector3.Zero();
-	        this.toEulerAnglesToRef(result, order);
-	        return result;
-	    }
-	    /**
-	     * Sets the passed vector3 "result" with the Euler angles translated from the current Quaternion.
-	     * Returns the current Quaternion.
-	     */
-	    toEulerAnglesToRef(result, order = "YZX") {
-	        var qz = this.z;
-	        var qx = this.x;
-	        var qy = this.y;
-	        var qw = this.w;
-	        var sqw = qw * qw;
-	        var sqz = qz * qz;
-	        var sqx = qx * qx;
-	        var sqy = qy * qy;
-	        var zAxisY = qy * qz - qx * qw;
-	        var limit = .4999999;
-	        if (zAxisY < -limit) {
-	            result.y = 2 * Math.atan2(qy, qw);
-	            result.x = Math.PI / 2;
-	            result.z = 0;
-	        }
-	        else if (zAxisY > limit) {
-	            result.y = 2 * Math.atan2(qy, qw);
-	            result.x = -Math.PI / 2;
-	            result.z = 0;
-	        }
-	        else {
-	            result.z = Math.atan2(2.0 * (qx * qy + qz * qw), (-sqz - sqx + sqy + sqw));
-	            result.x = Math.asin(-2.0 * (qz * qy - qx * qw));
-	            result.y = Math.atan2(2.0 * (qz * qx + qy * qw), (sqz - sqx - sqy + sqw));
-	        }
-	        return this;
-	    }
-	    /**
-	     * Updates the passed rotation matrix with the current Quaternion values.
-	     * Returns the current Quaternion.
-	     */
-	    toRotationMatrix(result) {
-	        var xx = this.x * this.x;
-	        var yy = this.y * this.y;
-	        var zz = this.z * this.z;
-	        var xy = this.x * this.y;
-	        var zw = this.z * this.w;
-	        var zx = this.z * this.x;
-	        var yw = this.y * this.w;
-	        var yz = this.y * this.z;
-	        var xw = this.x * this.w;
-	        result.m[0] = 1.0 - (2.0 * (yy + zz));
-	        result.m[1] = 2.0 * (xy + zw);
-	        result.m[2] = 2.0 * (zx - yw);
-	        result.m[3] = 0;
-	        result.m[4] = 2.0 * (xy - zw);
-	        result.m[5] = 1.0 - (2.0 * (zz + xx));
-	        result.m[6] = 2.0 * (yz + xw);
-	        result.m[7] = 0;
-	        result.m[8] = 2.0 * (zx + yw);
-	        result.m[9] = 2.0 * (yz - xw);
-	        result.m[10] = 1.0 - (2.0 * (yy + xx));
-	        result.m[11] = 0;
-	        result.m[12] = 0;
-	        result.m[13] = 0;
-	        result.m[14] = 0;
-	        result.m[15] = 1.0;
-	        return this;
-	    }
-	    /**
-	     * Updates the current Quaternion from the passed rotation matrix values.
-	     * Returns the updated Quaternion.
-	     */
-	    fromRotationMatrix(matrix) {
-	        Quaternion.FromRotationMatrixToRef(matrix, this);
-	        return this;
-	    }
-	    // Statics
-	    /**
-	     * Returns a new Quaternion set from the passed rotation matrix values.
-	     */
-	    static FromRotationMatrix(matrix) {
-	        var result = new Quaternion();
-	        Quaternion.FromRotationMatrixToRef(matrix, result);
-	        return result;
-	    }
-	    /**
-	     * Updates the passed quaternion "result" with the passed rotation matrix values.
-	     */
-	    static FromRotationMatrixToRef(matrix, result) {
-	        var data = matrix.m;
-	        var m11 = data[0], m12 = data[4], m13 = data[8];
-	        var m21 = data[1], m22 = data[5], m23 = data[9];
-	        var m31 = data[2], m32 = data[6], m33 = data[10];
-	        var trace = m11 + m22 + m33;
-	        var s;
-	        if (trace > 0) {
-	            s = 0.5 / Math.sqrt(trace + 1.0);
-	            result.w = 0.25 / s;
-	            result.x = (m32 - m23) * s;
-	            result.y = (m13 - m31) * s;
-	            result.z = (m21 - m12) * s;
-	        }
-	        else if (m11 > m22 && m11 > m33) {
-	            s = 2.0 * Math.sqrt(1.0 + m11 - m22 - m33);
-	            result.w = (m32 - m23) / s;
-	            result.x = 0.25 * s;
-	            result.y = (m12 + m21) / s;
-	            result.z = (m13 + m31) / s;
-	        }
-	        else if (m22 > m33) {
-	            s = 2.0 * Math.sqrt(1.0 + m22 - m11 - m33);
-	            result.w = (m13 - m31) / s;
-	            result.x = (m12 + m21) / s;
-	            result.y = 0.25 * s;
-	            result.z = (m23 + m32) / s;
-	        }
-	        else {
-	            s = 2.0 * Math.sqrt(1.0 + m33 - m11 - m22);
-	            result.w = (m21 - m12) / s;
-	            result.x = (m13 + m31) / s;
-	            result.y = (m23 + m32) / s;
-	            result.z = 0.25 * s;
-	        }
-	    }
-	    /**
-	     * Returns a new Quaternion set to (0.0, 0.0, 0.0).
-	     */
-	    static Zero() {
-	        return new Quaternion(0.0, 0.0, 0.0, 0.0);
-	    }
-	    /**
-	     * Returns a new Quaternion as the inverted current Quaternion.
-	     */
-	    static Inverse(q) {
-	        return new Quaternion(-q.x, -q.y, -q.z, q.w);
-	    }
-	    /**
-	     * Returns the identity Quaternion.
-	     */
-	    static Identity() {
-	        return new Quaternion(0.0, 0.0, 0.0, 1.0);
-	    }
-	    static IsIdentity(quaternion) {
-	        return quaternion && quaternion.x === 0 && quaternion.y === 0 && quaternion.z === 0 && quaternion.w === 1;
-	    }
-	    /**
-	     * Returns a new Quaternion set from the passed axis (Vector3) and angle in radians (float).
-	     */
-	    static RotationAxis(axis, angle) {
-	        return Quaternion.RotationAxisToRef(axis, angle, new Quaternion());
-	    }
-	    /**
-	     * Sets the passed quaternion "result" from the passed axis (Vector3) and angle in radians (float).
-	     */
-	    static RotationAxisToRef(axis, angle, result) {
-	        var sin = Math.sin(angle / 2);
-	        axis.normalize();
-	        result.w = Math.cos(angle / 2);
-	        result.x = axis.x * sin;
-	        result.y = axis.y * sin;
-	        result.z = axis.z * sin;
-	        return result;
-	    }
-	    /**
-	     * Retuns a new Quaternion set from the starting index of the passed array.
-	     */
-	    static FromArray(array, offset) {
-	        if (!offset) {
-	            offset = 0;
-	        }
-	        return new Quaternion(array[offset], array[offset + 1], array[offset + 2], array[offset + 3]);
-	    }
-	    /**
-	     * Returns a new Quaternion set from the passed Euler float angles (y, x, z).
-	     */
-	    static RotationYawPitchRoll(yaw, pitch, roll) {
-	        var q = new Quaternion();
-	        Quaternion.RotationYawPitchRollToRef(yaw, pitch, roll, q);
-	        return q;
-	    }
-	    /**
-	     * Sets the passed quaternion "result" from the passed float Euler angles (y, x, z).
-	     */
-	    static RotationYawPitchRollToRef(yaw, pitch, roll, result) {
-	        // Produces a quaternion from Euler angles in the z-y-x orientation (Tait-Bryan angles)
-	        var halfRoll = roll * 0.5;
-	        var halfPitch = pitch * 0.5;
-	        var halfYaw = yaw * 0.5;
-	        var sinRoll = Math.sin(halfRoll);
-	        var cosRoll = Math.cos(halfRoll);
-	        var sinPitch = Math.sin(halfPitch);
-	        var cosPitch = Math.cos(halfPitch);
-	        var sinYaw = Math.sin(halfYaw);
-	        var cosYaw = Math.cos(halfYaw);
-	        result.x = (cosYaw * sinPitch * cosRoll) + (sinYaw * cosPitch * sinRoll);
-	        result.y = (sinYaw * cosPitch * cosRoll) - (cosYaw * sinPitch * sinRoll);
-	        result.z = (cosYaw * cosPitch * sinRoll) - (sinYaw * sinPitch * cosRoll);
-	        result.w = (cosYaw * cosPitch * cosRoll) + (sinYaw * sinPitch * sinRoll);
-	    }
-	    /**
-	     * Returns a new Quaternion from the passed float Euler angles expressed in z-x-z orientation
-	     */
-	    static RotationAlphaBetaGamma(alpha, beta, gamma) {
-	        var result = new Quaternion();
-	        Quaternion.RotationAlphaBetaGammaToRef(alpha, beta, gamma, result);
-	        return result;
-	    }
-	    /**
-	     * Sets the passed quaternion "result" from the passed float Euler angles expressed in z-x-z orientation
-	     */
-	    static RotationAlphaBetaGammaToRef(alpha, beta, gamma, result) {
-	        // Produces a quaternion from Euler angles in the z-x-z orientation
-	        var halfGammaPlusAlpha = (gamma + alpha) * 0.5;
-	        var halfGammaMinusAlpha = (gamma - alpha) * 0.5;
-	        var halfBeta = beta * 0.5;
-	        result.x = Math.cos(halfGammaMinusAlpha) * Math.sin(halfBeta);
-	        result.y = Math.sin(halfGammaMinusAlpha) * Math.sin(halfBeta);
-	        result.z = Math.sin(halfGammaPlusAlpha) * Math.cos(halfBeta);
-	        result.w = Math.cos(halfGammaPlusAlpha) * Math.cos(halfBeta);
-	    }
-	    /**
-	     * Returns a new Quaternion as the quaternion rotation value to reach the target (axis1, axis2, axis3) orientation as a rotated XYZ system.
-	     * cf to Vector3.RotationFromAxis() documentation.
-	     * Note : axis1, axis2 and axis3 are normalized during this operation.
-	     */
-	    static RotationQuaternionFromAxis(axis1, axis2, axis3, ref) {
-	        var quat = new Quaternion(0.0, 0.0, 0.0, 0.0);
-	        Quaternion.RotationQuaternionFromAxisToRef(axis1, axis2, axis3, quat);
-	        return quat;
-	    }
-	    /**
-	     * Sets the passed quaternion "ref" with the quaternion rotation value to reach the target (axis1, axis2, axis3) orientation as a rotated XYZ system.
-	     * cf to Vector3.RotationFromAxis() documentation.
-	     * Note : axis1, axis2 and axis3 are normalized during this operation.
-	     */
-	    static RotationQuaternionFromAxisToRef(axis1, axis2, axis3, ref) {
-	        var rotMat = MathTmp.Matrix[0];
-	        Matrix.FromXYZAxesToRef(axis1.normalize(), axis2.normalize(), axis3.normalize(), rotMat);
-	        Quaternion.FromRotationMatrixToRef(rotMat, ref);
-	    }
-	    static Slerp(left, right, amount) {
-	        var result = Quaternion.Identity();
-	        Quaternion.SlerpToRef(left, right, amount, result);
-	        return result;
-	    }
-	    static SlerpToRef(left, right, amount, result) {
-	        var num2;
-	        var num3;
-	        var num = amount;
-	        var num4 = (((left.x * right.x) + (left.y * right.y)) + (left.z * right.z)) + (left.w * right.w);
-	        var flag = false;
-	        if (num4 < 0) {
-	            flag = true;
-	            num4 = -num4;
-	        }
-	        if (num4 > 0.999999) {
-	            num3 = 1 - num;
-	            num2 = flag ? -num : num;
-	        }
-	        else {
-	            var num5 = Math.acos(num4);
-	            var num6 = (1.0 / Math.sin(num5));
-	            num3 = (Math.sin((1.0 - num) * num5)) * num6;
-	            num2 = flag ? ((-Math.sin(num * num5)) * num6) : ((Math.sin(num * num5)) * num6);
-	        }
-	        result.x = (num3 * left.x) + (num2 * right.x);
-	        result.y = (num3 * left.y) + (num2 * right.y);
-	        result.z = (num3 * left.z) + (num2 * right.z);
-	        result.w = (num3 * left.w) + (num2 * right.w);
-	    }
-	}
-	exports.Quaternion = Quaternion;
-	class Matrix {
-	    constructor() {
-	        this.m = new Float32Array(16);
-	    }
-	    // Properties
-	    /**
-	     * Boolean : True is the matrix is the identity matrix
-	     */
-	    isIdentity() {
-	        if (this.m[0] !== 1.0 || this.m[5] !== 1.0 || this.m[10] !== 1.0 || this.m[15] !== 1.0)
-	            return false;
-	        if (this.m[1] !== 0.0 || this.m[2] !== 0.0 || this.m[3] !== 0.0 ||
-	            this.m[4] !== 0.0 || this.m[6] !== 0.0 || this.m[7] !== 0.0 ||
-	            this.m[8] !== 0.0 || this.m[9] !== 0.0 || this.m[11] !== 0.0 ||
-	            this.m[12] !== 0.0 || this.m[13] !== 0.0 || this.m[14] !== 0.0)
-	            return false;
-	        return true;
-	    }
-	    /**
-	     * Returns the matrix determinant (float).
-	     */
-	    determinant() {
-	        var temp1 = (this.m[10] * this.m[15]) - (this.m[11] * this.m[14]);
-	        var temp2 = (this.m[9] * this.m[15]) - (this.m[11] * this.m[13]);
-	        var temp3 = (this.m[9] * this.m[14]) - (this.m[10] * this.m[13]);
-	        var temp4 = (this.m[8] * this.m[15]) - (this.m[11] * this.m[12]);
-	        var temp5 = (this.m[8] * this.m[14]) - (this.m[10] * this.m[12]);
-	        var temp6 = (this.m[8] * this.m[13]) - (this.m[9] * this.m[12]);
-	        return ((((this.m[0] * (((this.m[5] * temp1) - (this.m[6] * temp2)) + (this.m[7] * temp3))) - (this.m[1] * (((this.m[4] * temp1) -
-	            (this.m[6] * temp4)) + (this.m[7] * temp5)))) + (this.m[2] * (((this.m[4] * temp2) - (this.m[5] * temp4)) + (this.m[7] * temp6)))) -
-	            (this.m[3] * (((this.m[4] * temp3) - (this.m[5] * temp5)) + (this.m[6] * temp6))));
-	    }
-	    // Methods
-	    /**
-	     * Returns the matrix underlying array.
-	     */
-	    toArray() {
-	        return this.m;
-	    }
-	    /**
-	     * Returns the matrix underlying array.
-	     */
-	    asArray() {
-	        return this.toArray();
-	    }
-	    /**
-	     * Inverts in place the Matrix.
-	     * Returns the Matrix inverted.
-	     */
-	    invert() {
-	        this.invertToRef(this);
-	        return this;
-	    }
-	    /**
-	     * Sets all the matrix elements to zero.
-	     * Returns the Matrix.
-	     */
-	    reset() {
-	        for (var index = 0; index < 16; index++) {
-	            this.m[index] = 0.0;
-	        }
-	        return this;
-	    }
-	    /**
-	     * Returns a new Matrix as the addition result of the current Matrix and the passed one.
-	     */
-	    add(other) {
-	        var result = new Matrix();
-	        this.addToRef(other, result);
-	        return result;
-	    }
-	    /**
-	     * Sets the passed matrix "result" with the ddition result of the current Matrix and the passed one.
-	     * Returns the Matrix.
-	     */
-	    addToRef(other, result) {
-	        for (var index = 0; index < 16; index++) {
-	            result.m[index] = this.m[index] + other.m[index];
-	        }
-	        return this;
-	    }
-	    /**
-	     * Adds in place the passed matrix to the current Matrix.
-	     * Returns the updated Matrix.
-	     */
-	    addToSelf(other) {
-	        for (var index = 0; index < 16; index++) {
-	            this.m[index] += other.m[index];
-	        }
-	        return this;
-	    }
-	    /**
-	     * Sets the passed matrix with the current inverted Matrix.
-	     * Returns the unmodified current Matrix.
-	     */
-	    invertToRef(other) {
-	        var l1 = this.m[0];
-	        var l2 = this.m[1];
-	        var l3 = this.m[2];
-	        var l4 = this.m[3];
-	        var l5 = this.m[4];
-	        var l6 = this.m[5];
-	        var l7 = this.m[6];
-	        var l8 = this.m[7];
-	        var l9 = this.m[8];
-	        var l10 = this.m[9];
-	        var l11 = this.m[10];
-	        var l12 = this.m[11];
-	        var l13 = this.m[12];
-	        var l14 = this.m[13];
-	        var l15 = this.m[14];
-	        var l16 = this.m[15];
-	        var l17 = (l11 * l16) - (l12 * l15);
-	        var l18 = (l10 * l16) - (l12 * l14);
-	        var l19 = (l10 * l15) - (l11 * l14);
-	        var l20 = (l9 * l16) - (l12 * l13);
-	        var l21 = (l9 * l15) - (l11 * l13);
-	        var l22 = (l9 * l14) - (l10 * l13);
-	        var l23 = ((l6 * l17) - (l7 * l18)) + (l8 * l19);
-	        var l24 = -(((l5 * l17) - (l7 * l20)) + (l8 * l21));
-	        var l25 = ((l5 * l18) - (l6 * l20)) + (l8 * l22);
-	        var l26 = -(((l5 * l19) - (l6 * l21)) + (l7 * l22));
-	        var l27 = 1.0 / ((((l1 * l23) + (l2 * l24)) + (l3 * l25)) + (l4 * l26));
-	        var l28 = (l7 * l16) - (l8 * l15);
-	        var l29 = (l6 * l16) - (l8 * l14);
-	        var l30 = (l6 * l15) - (l7 * l14);
-	        var l31 = (l5 * l16) - (l8 * l13);
-	        var l32 = (l5 * l15) - (l7 * l13);
-	        var l33 = (l5 * l14) - (l6 * l13);
-	        var l34 = (l7 * l12) - (l8 * l11);
-	        var l35 = (l6 * l12) - (l8 * l10);
-	        var l36 = (l6 * l11) - (l7 * l10);
-	        var l37 = (l5 * l12) - (l8 * l9);
-	        var l38 = (l5 * l11) - (l7 * l9);
-	        var l39 = (l5 * l10) - (l6 * l9);
-	        other.m[0] = l23 * l27;
-	        other.m[4] = l24 * l27;
-	        other.m[8] = l25 * l27;
-	        other.m[12] = l26 * l27;
-	        other.m[1] = -(((l2 * l17) - (l3 * l18)) + (l4 * l19)) * l27;
-	        other.m[5] = (((l1 * l17) - (l3 * l20)) + (l4 * l21)) * l27;
-	        other.m[9] = -(((l1 * l18) - (l2 * l20)) + (l4 * l22)) * l27;
-	        other.m[13] = (((l1 * l19) - (l2 * l21)) + (l3 * l22)) * l27;
-	        other.m[2] = (((l2 * l28) - (l3 * l29)) + (l4 * l30)) * l27;
-	        other.m[6] = -(((l1 * l28) - (l3 * l31)) + (l4 * l32)) * l27;
-	        other.m[10] = (((l1 * l29) - (l2 * l31)) + (l4 * l33)) * l27;
-	        other.m[14] = -(((l1 * l30) - (l2 * l32)) + (l3 * l33)) * l27;
-	        other.m[3] = -(((l2 * l34) - (l3 * l35)) + (l4 * l36)) * l27;
-	        other.m[7] = (((l1 * l34) - (l3 * l37)) + (l4 * l38)) * l27;
-	        other.m[11] = -(((l1 * l35) - (l2 * l37)) + (l4 * l39)) * l27;
-	        other.m[15] = (((l1 * l36) - (l2 * l38)) + (l3 * l39)) * l27;
-	        return this;
-	    }
-	    /**
-	     * Inserts the translation vector (using 3 x floats) in the current Matrix.
-	     * Returns the updated Matrix.
-	     */
-	    setTranslationFromFloats(x, y, z) {
-	        this.m[12] = x;
-	        this.m[13] = y;
-	        this.m[14] = z;
-	        return this;
-	    }
-	    /**
-	     * Inserts the translation vector in the current Matrix.
-	     * Returns the updated Matrix.
-	     */
-	    setTranslation(vector3) {
-	        this.m[12] = vector3.x;
-	        this.m[13] = vector3.y;
-	        this.m[14] = vector3.z;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Vector3 as the extracted translation from the Matrix.
-	     */
-	    getTranslation() {
-	        return new Vector3(this.m[12], this.m[13], this.m[14]);
-	    }
-	    /**
-	     * Fill a Vector3 with the extracted translation from the Matrix.
-	     */
-	    getTranslationToRef(result) {
-	        result.x = this.m[12];
-	        result.y = this.m[13];
-	        result.z = this.m[14];
-	        return this;
-	    }
-	    /**
-	     * Remove rotation and scaling part from the Matrix.
-	     * Returns the updated Matrix.
-	     */
-	    removeRotationAndScaling() {
-	        this.setRowFromFloats(0, 1, 0, 0, 0);
-	        this.setRowFromFloats(1, 0, 1, 0, 0);
-	        this.setRowFromFloats(2, 0, 0, 1, 0);
-	        return this;
-	    }
-	    /**
-	     * Returns a new Matrix set with the multiplication result of the current Matrix and the passed one.
-	     */
-	    multiply(other) {
-	        var result = new Matrix();
-	        this.multiplyToRef(other, result);
-	        return result;
-	    }
-	    /**
-	     * Updates the current Matrix from the passed one values.
-	     * Returns the updated Matrix.
-	     */
-	    copyFrom(other) {
-	        for (var index = 0; index < 16; index++) {
-	            this.m[index] = other.m[index];
-	        }
-	        return this;
-	    }
-	    /**
-	     * Populates the passed array from the starting index with the Matrix values.
-	     * Returns the Matrix.
-	     */
-	    copyToArray(array, offset = 0) {
-	        for (var index = 0; index < 16; index++) {
-	            array[offset + index] = this.m[index];
-	        }
-	        return this;
-	    }
-	    /**
-	     * Sets the passed matrix "result" with the multiplication result of the current Matrix and the passed one.
-	     */
-	    multiplyToRef(other, result) {
-	        this.multiplyToArray(other, result.m, 0);
-	        return this;
-	    }
-	    /**
-	     * Sets the Float32Array "result" from the passed index "offset" with the multiplication result of the current Matrix and the passed one.
-	     */
-	    multiplyToArray(other, result, offset) {
-	        var tm0 = this.m[0];
-	        var tm1 = this.m[1];
-	        var tm2 = this.m[2];
-	        var tm3 = this.m[3];
-	        var tm4 = this.m[4];
-	        var tm5 = this.m[5];
-	        var tm6 = this.m[6];
-	        var tm7 = this.m[7];
-	        var tm8 = this.m[8];
-	        var tm9 = this.m[9];
-	        var tm10 = this.m[10];
-	        var tm11 = this.m[11];
-	        var tm12 = this.m[12];
-	        var tm13 = this.m[13];
-	        var tm14 = this.m[14];
-	        var tm15 = this.m[15];
-	        var om0 = other.m[0];
-	        var om1 = other.m[1];
-	        var om2 = other.m[2];
-	        var om3 = other.m[3];
-	        var om4 = other.m[4];
-	        var om5 = other.m[5];
-	        var om6 = other.m[6];
-	        var om7 = other.m[7];
-	        var om8 = other.m[8];
-	        var om9 = other.m[9];
-	        var om10 = other.m[10];
-	        var om11 = other.m[11];
-	        var om12 = other.m[12];
-	        var om13 = other.m[13];
-	        var om14 = other.m[14];
-	        var om15 = other.m[15];
-	        result[offset] = tm0 * om0 + tm1 * om4 + tm2 * om8 + tm3 * om12;
-	        result[offset + 1] = tm0 * om1 + tm1 * om5 + tm2 * om9 + tm3 * om13;
-	        result[offset + 2] = tm0 * om2 + tm1 * om6 + tm2 * om10 + tm3 * om14;
-	        result[offset + 3] = tm0 * om3 + tm1 * om7 + tm2 * om11 + tm3 * om15;
-	        result[offset + 4] = tm4 * om0 + tm5 * om4 + tm6 * om8 + tm7 * om12;
-	        result[offset + 5] = tm4 * om1 + tm5 * om5 + tm6 * om9 + tm7 * om13;
-	        result[offset + 6] = tm4 * om2 + tm5 * om6 + tm6 * om10 + tm7 * om14;
-	        result[offset + 7] = tm4 * om3 + tm5 * om7 + tm6 * om11 + tm7 * om15;
-	        result[offset + 8] = tm8 * om0 + tm9 * om4 + tm10 * om8 + tm11 * om12;
-	        result[offset + 9] = tm8 * om1 + tm9 * om5 + tm10 * om9 + tm11 * om13;
-	        result[offset + 10] = tm8 * om2 + tm9 * om6 + tm10 * om10 + tm11 * om14;
-	        result[offset + 11] = tm8 * om3 + tm9 * om7 + tm10 * om11 + tm11 * om15;
-	        result[offset + 12] = tm12 * om0 + tm13 * om4 + tm14 * om8 + tm15 * om12;
-	        result[offset + 13] = tm12 * om1 + tm13 * om5 + tm14 * om9 + tm15 * om13;
-	        result[offset + 14] = tm12 * om2 + tm13 * om6 + tm14 * om10 + tm15 * om14;
-	        result[offset + 15] = tm12 * om3 + tm13 * om7 + tm14 * om11 + tm15 * om15;
-	        return this;
-	    }
-	    /**
-	     * Boolean : True is the current Matrix and the passed one values are strictly equal.
-	     */
-	    equals(value) {
-	        return value &&
-	            (this.m[0] === value.m[0] && this.m[1] === value.m[1] && this.m[2] === value.m[2] && this.m[3] === value.m[3] &&
-	                this.m[4] === value.m[4] && this.m[5] === value.m[5] && this.m[6] === value.m[6] && this.m[7] === value.m[7] &&
-	                this.m[8] === value.m[8] && this.m[9] === value.m[9] && this.m[10] === value.m[10] && this.m[11] === value.m[11] &&
-	                this.m[12] === value.m[12] && this.m[13] === value.m[13] && this.m[14] === value.m[14] && this.m[15] === value.m[15]);
-	    }
-	    /**
-	     * Returns a new Matrix from the current Matrix.
-	     */
-	    clone() {
-	        return Matrix.FromValues(this.m[0], this.m[1], this.m[2], this.m[3], this.m[4], this.m[5], this.m[6], this.m[7], this.m[8], this.m[9], this.m[10], this.m[11], this.m[12], this.m[13], this.m[14], this.m[15]);
-	    }
-	    /**
-	     * Returns the string "Matrix"
-	     */
-	    getClassName() {
-	        return "Matrix";
-	    }
-	    /**
-	     * Returns the Matrix hash code.
-	     */
-	    getHashCode() {
-	        let hash = this.m[0] || 0;
-	        for (let i = 1; i < 16; i++) {
-	            hash = (hash * 397) ^ (this.m[i] || 0);
-	        }
-	        return hash;
-	    }
-	    /**
-	     * Decomposes the current Matrix into :
-	     * - a scale vector3 passed as a reference to update,
-	     * - a rotation quaternion passed as a reference to update,
-	     * - a translation vector3 passed as a reference to update.
-	     * Returns the boolean `true`.
-	     */
-	    decompose(scale, rotation, translation) {
-	        translation.x = this.m[12];
-	        translation.y = this.m[13];
-	        translation.z = this.m[14];
-	        var xs = math_util_1.MathUtil.sign(this.m[0] * this.m[1] * this.m[2] * this.m[3]) < 0 ? -1 : 1;
-	        var ys = math_util_1.MathUtil.sign(this.m[4] * this.m[5] * this.m[6] * this.m[7]) < 0 ? -1 : 1;
-	        var zs = math_util_1.MathUtil.sign(this.m[8] * this.m[9] * this.m[10] * this.m[11]) < 0 ? -1 : 1;
-	        scale.x = xs * Math.sqrt(this.m[0] * this.m[0] + this.m[1] * this.m[1] + this.m[2] * this.m[2]);
-	        scale.y = ys * Math.sqrt(this.m[4] * this.m[4] + this.m[5] * this.m[5] + this.m[6] * this.m[6]);
-	        scale.z = zs * Math.sqrt(this.m[8] * this.m[8] + this.m[9] * this.m[9] + this.m[10] * this.m[10]);
-	        if (scale.x === 0 || scale.y === 0 || scale.z === 0) {
-	            rotation.x = 0;
-	            rotation.y = 0;
-	            rotation.z = 0;
-	            rotation.w = 1;
-	            return false;
-	        }
-	        Matrix.FromValuesToRef(this.m[0] / scale.x, this.m[1] / scale.x, this.m[2] / scale.x, 0, this.m[4] / scale.y, this.m[5] / scale.y, this.m[6] / scale.y, 0, this.m[8] / scale.z, this.m[9] / scale.z, this.m[10] / scale.z, 0, 0, 0, 0, 1, MathTmp.Matrix[0]);
-	        Quaternion.FromRotationMatrixToRef(MathTmp.Matrix[0], rotation);
-	        return true;
-	    }
-	    /**
-	     * Returns a new Matrix as the extracted rotation matrix from the current one.
-	     */
-	    getRotationMatrix() {
-	        var result = Matrix.Identity();
-	        this.getRotationMatrixToRef(result);
-	        return result;
-	    }
-	    /**
-	     * Extracts the rotation matrix from the current one and sets it as the passed "result".
-	     * Returns the current Matrix.
-	     */
-	    getRotationMatrixToRef(result) {
-	        var m = this.m;
-	        var xs = m[0] * m[1] * m[2] * m[3] < 0 ? -1 : 1;
-	        var ys = m[4] * m[5] * m[6] * m[7] < 0 ? -1 : 1;
-	        var zs = m[8] * m[9] * m[10] * m[11] < 0 ? -1 : 1;
-	        var sx = xs * Math.sqrt(m[0] * m[0] + m[1] * m[1] + m[2] * m[2]);
-	        var sy = ys * Math.sqrt(m[4] * m[4] + m[5] * m[5] + m[6] * m[6]);
-	        var sz = zs * Math.sqrt(m[8] * m[8] + m[9] * m[9] + m[10] * m[10]);
-	        Matrix.FromValuesToRef(m[0] / sx, m[1] / sx, m[2] / sx, 0, m[4] / sy, m[5] / sy, m[6] / sy, 0, m[8] / sz, m[9] / sz, m[10] / sz, 0, 0, 0, 0, 1, result);
-	        return this;
-	    }
-	    // Statics
-	    /**
-	     * Returns a new Matrix set from the starting index of the passed array.
-	     */
-	    static FromArray(array, offset) {
-	        var result = new Matrix();
-	        if (!offset) {
-	            offset = 0;
-	        }
-	        Matrix.FromArrayToRef(array, offset, result);
-	        return result;
-	    }
-	    /**
-	     * Sets the passed "result" matrix from the starting index of the passed array.
-	     */
-	    static FromArrayToRef(array, offset, result) {
-	        for (var index = 0; index < 16; index++) {
-	            result.m[index] = array[index + offset];
-	        }
-	    }
-	    /**
-	     * Sets the passed "result" matrix from the starting index of the passed Float32Array by multiplying each element by the float "scale".
-	     */
-	    static FromFloat32ArrayToRefScaled(array, offset, scale, result) {
-	        for (var index = 0; index < 16; index++) {
-	            result.m[index] = array[index + offset] * scale;
-	        }
-	    }
-	    /**
-	     * Sets the passed matrix "result" with the 16 passed floats.
-	     */
-	    static FromValuesToRef(initialM11, initialM12, initialM13, initialM14, initialM21, initialM22, initialM23, initialM24, initialM31, initialM32, initialM33, initialM34, initialM41, initialM42, initialM43, initialM44, result) {
-	        result.m[0] = initialM11;
-	        result.m[1] = initialM12;
-	        result.m[2] = initialM13;
-	        result.m[3] = initialM14;
-	        result.m[4] = initialM21;
-	        result.m[5] = initialM22;
-	        result.m[6] = initialM23;
-	        result.m[7] = initialM24;
-	        result.m[8] = initialM31;
-	        result.m[9] = initialM32;
-	        result.m[10] = initialM33;
-	        result.m[11] = initialM34;
-	        result.m[12] = initialM41;
-	        result.m[13] = initialM42;
-	        result.m[14] = initialM43;
-	        result.m[15] = initialM44;
-	    }
-	    /**
-	     * Returns the index-th row of the current matrix as a new Vector4.
-	     */
-	    getRow(index) {
-	        if (index < 0 || index > 3) {
-	            return null;
-	        }
-	        var i = index * 4;
-	        return new Vector4(this.m[i + 0], this.m[i + 1], this.m[i + 2], this.m[i + 3]);
-	    }
-	    /**
-	     * Sets the index-th row of the current matrix with the passed Vector4 values.
-	     * Returns the updated Matrix.
-	     */
-	    setRow(index, row) {
-	        if (index < 0 || index > 3) {
-	            return this;
-	        }
-	        var i = index * 4;
-	        this.m[i + 0] = row.x;
-	        this.m[i + 1] = row.y;
-	        this.m[i + 2] = row.z;
-	        this.m[i + 3] = row.w;
-	        return this;
-	    }
-	    /**
-	     * Sets the index-th row of the current matrix with the passed 4 x float values.
-	     * Returns the updated Matrix.
-	     */
-	    setRowFromFloats(index, x, y, z, w) {
-	        if (index < 0 || index > 3) {
-	            return this;
-	        }
-	        var i = index * 4;
-	        this.m[i + 0] = x;
-	        this.m[i + 1] = y;
-	        this.m[i + 2] = z;
-	        this.m[i + 3] = w;
-	        return this;
-	    }
-	    /**
-	     * Returns a new Matrix set from the 16 passed floats.
-	     */
-	    static FromValues(initialM11, initialM12, initialM13, initialM14, initialM21, initialM22, initialM23, initialM24, initialM31, initialM32, initialM33, initialM34, initialM41, initialM42, initialM43, initialM44) {
-	        var result = new Matrix();
-	        result.m[0] = initialM11;
-	        result.m[1] = initialM12;
-	        result.m[2] = initialM13;
-	        result.m[3] = initialM14;
-	        result.m[4] = initialM21;
-	        result.m[5] = initialM22;
-	        result.m[6] = initialM23;
-	        result.m[7] = initialM24;
-	        result.m[8] = initialM31;
-	        result.m[9] = initialM32;
-	        result.m[10] = initialM33;
-	        result.m[11] = initialM34;
-	        result.m[12] = initialM41;
-	        result.m[13] = initialM42;
-	        result.m[14] = initialM43;
-	        result.m[15] = initialM44;
-	        return result;
-	    }
-	    /**
-	     * Returns a new Matrix composed by the passed scale (vector3), rotation (quaternion) and translation (vector3).
-	     */
-	    static Compose(scale, rotation, translation) {
-	        var result = Matrix.Identity();
-	        Matrix.ComposeToRef(scale, rotation, translation, result);
-	        return result;
-	    }
-	    /**
-	     * Update a Matrix with values composed by the passed scale (vector3), rotation (quaternion) and translation (vector3).
-	     */
-	    static ComposeToRef(scale, rotation, translation, result) {
-	        Matrix.FromValuesToRef(scale.x, 0, 0, 0, 0, scale.y, 0, 0, 0, 0, scale.z, 0, 0, 0, 0, 1, MathTmp.Matrix[1]);
-	        rotation.toRotationMatrix(MathTmp.Matrix[0]);
-	        MathTmp.Matrix[1].multiplyToRef(MathTmp.Matrix[0], result);
-	        result.setTranslation(translation);
-	    }
-	    /**
-	     * Returns a new indentity Matrix.
-	     */
-	    static Identity() {
-	        return Matrix.FromValues(1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0);
-	    }
-	    /**
-	     * Sets the passed "result" as an identity matrix.
-	     */
-	    static IdentityToRef(result) {
-	        Matrix.FromValuesToRef(1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, result);
-	    }
-	    /**
-	     * Returns a new zero Matrix.
-	     */
-	    static Zero() {
-	        return Matrix.FromValues(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0);
-	    }
-	    /**
-	     * Returns a new rotation matrix for "angle" radians around the X axis.
-	     */
-	    static RotationX(angle) {
-	        var result = new Matrix();
-	        Matrix.RotationXToRef(angle, result);
-	        return result;
-	    }
-	    /**
-	     * Returns a new Matrix as the passed inverted one.
-	     */
-	    static Invert(source) {
-	        var result = new Matrix();
-	        source.invertToRef(result);
-	        return result;
-	    }
-	    /**
-	     * Sets the passed matrix "result" as a rotation matrix for "angle" radians around the X axis.
-	     */
-	    static RotationXToRef(angle, result) {
-	        var s = Math.sin(angle);
-	        var c = Math.cos(angle);
-	        result.m[0] = 1.0;
-	        result.m[15] = 1.0;
-	        result.m[5] = c;
-	        result.m[10] = c;
-	        result.m[9] = -s;
-	        result.m[6] = s;
-	        result.m[1] = 0.0;
-	        result.m[2] = 0.0;
-	        result.m[3] = 0.0;
-	        result.m[4] = 0.0;
-	        result.m[7] = 0.0;
-	        result.m[8] = 0.0;
-	        result.m[11] = 0.0;
-	        result.m[12] = 0.0;
-	        result.m[13] = 0.0;
-	        result.m[14] = 0.0;
-	    }
-	    /**
-	     * Returns a new rotation matrix for "angle" radians around the Y axis.
-	     */
-	    static RotationY(angle) {
-	        var result = new Matrix();
-	        Matrix.RotationYToRef(angle, result);
-	        return result;
-	    }
-	    /**
-	     * Sets the passed matrix "result" as a rotation matrix for "angle" radians around the Y axis.
-	     */
-	    static RotationYToRef(angle, result) {
-	        var s = Math.sin(angle);
-	        var c = Math.cos(angle);
-	        result.m[5] = 1.0;
-	        result.m[15] = 1.0;
-	        result.m[0] = c;
-	        result.m[2] = -s;
-	        result.m[8] = s;
-	        result.m[10] = c;
-	        result.m[1] = 0.0;
-	        result.m[3] = 0.0;
-	        result.m[4] = 0.0;
-	        result.m[6] = 0.0;
-	        result.m[7] = 0.0;
-	        result.m[9] = 0.0;
-	        result.m[11] = 0.0;
-	        result.m[12] = 0.0;
-	        result.m[13] = 0.0;
-	        result.m[14] = 0.0;
-	    }
-	    /**
-	     * Returns a new rotation matrix for "angle" radians around the Z axis.
-	     */
-	    static RotationZ(angle) {
-	        var result = new Matrix();
-	        Matrix.RotationZToRef(angle, result);
-	        return result;
-	    }
-	    /**
-	     * Sets the passed matrix "result" as a rotation matrix for "angle" radians around the Z axis.
-	     */
-	    static RotationZToRef(angle, result) {
-	        var s = Math.sin(angle);
-	        var c = Math.cos(angle);
-	        result.m[10] = 1.0;
-	        result.m[15] = 1.0;
-	        result.m[0] = c;
-	        result.m[1] = s;
-	        result.m[4] = -s;
-	        result.m[5] = c;
-	        result.m[2] = 0.0;
-	        result.m[3] = 0.0;
-	        result.m[6] = 0.0;
-	        result.m[7] = 0.0;
-	        result.m[8] = 0.0;
-	        result.m[9] = 0.0;
-	        result.m[11] = 0.0;
-	        result.m[12] = 0.0;
-	        result.m[13] = 0.0;
-	        result.m[14] = 0.0;
-	    }
-	    /**
-	     * Returns a new rotation matrix for "angle" radians around the passed axis.
-	     */
-	    static RotationAxis(axis, angle) {
-	        var result = Matrix.Zero();
-	        Matrix.RotationAxisToRef(axis, angle, result);
-	        return result;
-	    }
-	    /**
-	     * Sets the passed matrix "result" as a rotation matrix for "angle" radians around the passed axis.
-	     */
-	    static RotationAxisToRef(axis, angle, result) {
-	        var s = Math.sin(-angle);
-	        var c = Math.cos(-angle);
-	        var c1 = 1 - c;
-	        axis.normalize();
-	        result.m[0] = (axis.x * axis.x) * c1 + c;
-	        result.m[1] = (axis.x * axis.y) * c1 - (axis.z * s);
-	        result.m[2] = (axis.x * axis.z) * c1 + (axis.y * s);
-	        result.m[3] = 0.0;
-	        result.m[4] = (axis.y * axis.x) * c1 + (axis.z * s);
-	        result.m[5] = (axis.y * axis.y) * c1 + c;
-	        result.m[6] = (axis.y * axis.z) * c1 - (axis.x * s);
-	        result.m[7] = 0.0;
-	        result.m[8] = (axis.z * axis.x) * c1 - (axis.y * s);
-	        result.m[9] = (axis.z * axis.y) * c1 + (axis.x * s);
-	        result.m[10] = (axis.z * axis.z) * c1 + c;
-	        result.m[11] = 0.0;
-	        result.m[15] = 1.0;
-	    }
-	    /**
-	     * Returns a new Matrix as a rotation matrix from the Euler angles (y, x, z).
-	     */
-	    static RotationYawPitchRoll(yaw, pitch, roll) {
-	        var result = new Matrix();
-	        Matrix.RotationYawPitchRollToRef(yaw, pitch, roll, result);
-	        return result;
-	    }
-	    /**
-	     * Sets the passed matrix "result" as a rotation matrix from the Euler angles (y, x, z).
-	     */
-	    static RotationYawPitchRollToRef(yaw, pitch, roll, result) {
-	        Quaternion.RotationYawPitchRollToRef(yaw, pitch, roll, this._tempQuaternion);
-	        this._tempQuaternion.toRotationMatrix(result);
-	    }
-	    /**
-	     * Returns a new Matrix as a scaling matrix from the passed floats (x, y, z).
-	     */
-	    static Scaling(x, y, z) {
-	        var result = Matrix.Zero();
-	        Matrix.ScalingToRef(x, y, z, result);
-	        return result;
-	    }
-	    /**
-	     * Sets the passed matrix "result" as a scaling matrix from the passed floats (x, y, z).
-	     */
-	    static ScalingToRef(x, y, z, result) {
-	        result.m[0] = x;
-	        result.m[1] = 0.0;
-	        result.m[2] = 0.0;
-	        result.m[3] = 0.0;
-	        result.m[4] = 0.0;
-	        result.m[5] = y;
-	        result.m[6] = 0.0;
-	        result.m[7] = 0.0;
-	        result.m[8] = 0.0;
-	        result.m[9] = 0.0;
-	        result.m[10] = z;
-	        result.m[11] = 0.0;
-	        result.m[12] = 0.0;
-	        result.m[13] = 0.0;
-	        result.m[14] = 0.0;
-	        result.m[15] = 1.0;
-	    }
-	    /**
-	     * Returns a new Matrix as a translation matrix from the passed floats (x, y, z).
-	     */
-	    static Translation(x, y, z) {
-	        var result = Matrix.Identity();
-	        Matrix.TranslationToRef(x, y, z, result);
-	        return result;
-	    }
-	    /**
-	     * Sets the passed matrix "result" as a translation matrix from the passed floats (x, y, z).
-	     */
-	    static TranslationToRef(x, y, z, result) {
-	        Matrix.FromValuesToRef(1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0, x, y, z, 1.0, result);
-	    }
-	    /**
-	     * Returns a new Matrix whose values are the interpolated values for "gradien" (float) between the ones of the matrices "startValue" and "endValue".
-	     */
-	    static Lerp(startValue, endValue, gradient) {
-	        var result = Matrix.Zero();
-	        for (var index = 0; index < 16; index++) {
-	            result.m[index] = startValue.m[index] * (1.0 - gradient) + endValue.m[index] * gradient;
-	        }
-	        return result;
-	    }
-	    /**
-	     * Returns a new Matrix whose values are computed by :
-	     * - decomposing the the "startValue" and "endValue" matrices into their respective scale, rotation and translation matrices,
-	     * - interpolating for "gradient" (float) the values between each of these decomposed matrices between the start and the end,
-	     * - recomposing a new matrix from these 3 interpolated scale, rotation and translation matrices.
-	     */
-	    static DecomposeLerp(startValue, endValue, gradient) {
-	        var startScale = new Vector3(0, 0, 0);
-	        var startRotation = new Quaternion();
-	        var startTranslation = new Vector3(0, 0, 0);
-	        startValue.decompose(startScale, startRotation, startTranslation);
-	        var endScale = new Vector3(0, 0, 0);
-	        var endRotation = new Quaternion();
-	        var endTranslation = new Vector3(0, 0, 0);
-	        endValue.decompose(endScale, endRotation, endTranslation);
-	        var resultScale = Vector3.Lerp(startScale, endScale, gradient);
-	        var resultRotation = Quaternion.Slerp(startRotation, endRotation, gradient);
-	        var resultTranslation = Vector3.Lerp(startTranslation, endTranslation, gradient);
-	        return Matrix.Compose(resultScale, resultRotation, resultTranslation);
-	    }
-	    /**
-	     * Returns a new rotation Matrix used to rotate a mesh so as it looks at the target Vector3, from the eye Vector3, the UP vector3 being orientated like "up".
-	     * This methods works for a Left-Handed system.
-	     */
-	    static LookAtLH(eye, target, up) {
-	        var result = Matrix.Zero();
-	        Matrix.LookAtLHToRef(eye, target, up, result);
-	        return result;
-	    }
-	    /**
-	     * Sets the passed "result" Matrix as a rotation matrix used to rotate a mesh so as it looks at the target Vector3, from the eye Vector3, the UP vector3 being orientated like "up".
-	     * This methods works for a Left-Handed system.
-	     */
-	    static LookAtLHToRef(eye, target, up, result) {
-	        // Z axis
-	        target.subtractToRef(eye, this._zAxis);
-	        this._zAxis.normalize();
-	        // X axis
-	        Vector3.CrossToRef(up, this._zAxis, this._xAxis);
-	        if (this._xAxis.lengthSquared() === 0) {
-	            this._xAxis.x = 1.0;
-	        }
-	        else {
-	            this._xAxis.normalize();
-	        }
-	        // Y axis
-	        Vector3.CrossToRef(this._zAxis, this._xAxis, this._yAxis);
-	        this._yAxis.normalize();
-	        // Eye angles
-	        var ex = -Vector3.Dot(this._xAxis, eye);
-	        var ey = -Vector3.Dot(this._yAxis, eye);
-	        var ez = -Vector3.Dot(this._zAxis, eye);
-	        return Matrix.FromValuesToRef(this._xAxis.x, this._yAxis.x, this._zAxis.x, 0, this._xAxis.y, this._yAxis.y, this._zAxis.y, 0, this._xAxis.z, this._yAxis.z, this._zAxis.z, 0, ex, ey, ez, 1, result);
-	    }
-	    /**
-	     * Returns a new rotation Matrix used to rotate a mesh so as it looks at the target Vector3, from the eye Vector3, the UP vector3 being orientated like "up".
-	     * This methods works for a Right-Handed system.
-	     */
-	    static LookAtRH(eye, target, up) {
-	        var result = Matrix.Zero();
-	        Matrix.LookAtRHToRef(eye, target, up, result);
-	        return result;
-	    }
-	    /**
-	     * Sets the passed "result" Matrix as a rotation matrix used to rotate a mesh so as it looks at the target Vector3, from the eye Vector3, the UP vector3 being orientated like "up".
-	     * This methods works for a Left-Handed system.
-	     */
-	    static LookAtRHToRef(eye, target, up, result) {
-	        // Z axis
-	        eye.subtractToRef(target, this._zAxis);
-	        this._zAxis.normalize();
-	        // X axis
-	        Vector3.CrossToRef(up, this._zAxis, this._xAxis);
-	        if (this._xAxis.lengthSquared() === 0) {
-	            this._xAxis.x = 1.0;
-	        }
-	        else {
-	            this._xAxis.normalize();
-	        }
-	        // Y axis
-	        Vector3.CrossToRef(this._zAxis, this._xAxis, this._yAxis);
-	        this._yAxis.normalize();
-	        // Eye angles
-	        var ex = -Vector3.Dot(this._xAxis, eye);
-	        var ey = -Vector3.Dot(this._yAxis, eye);
-	        var ez = -Vector3.Dot(this._zAxis, eye);
-	        return Matrix.FromValuesToRef(this._xAxis.x, this._yAxis.x, this._zAxis.x, 0, this._xAxis.y, this._yAxis.y, this._zAxis.y, 0, this._xAxis.z, this._yAxis.z, this._zAxis.z, 0, ex, ey, ez, 1, result);
-	    }
-	    /**
-	     * Returns a new Matrix as a left-handed orthographic projection matrix computed from the passed floats : width and height of the projection plane, z near and far limits.
-	     */
-	    static OrthoLH(width, height, znear, zfar) {
-	        var matrix = Matrix.Zero();
-	        Matrix.OrthoLHToRef(width, height, znear, zfar, matrix);
-	        return matrix;
-	    }
-	    /**
-	     * Sets the passed matrix "result" as a left-handed orthographic projection matrix computed from the passed floats : width and height of the projection plane, z near and far limits.
-	     */
-	    static OrthoLHToRef(width, height, znear, zfar, result) {
-	        let n = znear;
-	        let f = zfar;
-	        let a = 2.0 / width;
-	        let b = 2.0 / height;
-	        let c = 2.0 / (f - n);
-	        let d = -(f + n) / (f - n);
-	        Matrix.FromValuesToRef(a, 0.0, 0.0, 0.0, 0.0, b, 0.0, 0.0, 0.0, 0.0, c, 0.0, 0.0, 0.0, d, 1.0, result);
-	    }
-	    /**
-	     * Returns a new Matrix as a left-handed orthographic projection matrix computed from the passed floats : left, right, top and bottom being the coordinates of the projection plane, z near and far limits.
-	     */
-	    static OrthoOffCenterLH(left, right, bottom, top, znear, zfar) {
-	        var matrix = Matrix.Zero();
-	        Matrix.OrthoOffCenterLHToRef(left, right, bottom, top, znear, zfar, matrix);
-	        return matrix;
-	    }
-	    /**
-	     * Sets the passed matrix "result" as a left-handed orthographic projection matrix computed from the passed floats : left, right, top and bottom being the coordinates of the projection plane, z near and far limits.
-	     */
-	    static OrthoOffCenterLHToRef(left, right, bottom, top, znear, zfar, result) {
-	        let n = znear;
-	        let f = zfar;
-	        let a = 2.0 / (right - left);
-	        let b = 2.0 / (top - bottom);
-	        let c = 2.0 / (f - n);
-	        let d = -(f + n) / (f - n);
-	        let i0 = (left + right) / (left - right);
-	        let i1 = (top + bottom) / (bottom - top);
-	        Matrix.FromValuesToRef(a, 0.0, 0.0, 0.0, 0.0, b, 0.0, 0.0, 0.0, 0.0, c, 0.0, i0, i1, d, 1.0, result);
-	    }
-	    /**
-	     * Returns a new Matrix as a right-handed orthographic projection matrix computed from the passed floats : left, right, top and bottom being the coordinates of the projection plane, z near and far limits.
-	     */
-	    static OrthoOffCenterRH(left, right, bottom, top, znear, zfar) {
-	        var matrix = Matrix.Zero();
-	        Matrix.OrthoOffCenterRHToRef(left, right, bottom, top, znear, zfar, matrix);
-	        return matrix;
-	    }
-	    /**
-	     * Sets the passed matrix "result" as a right-handed orthographic projection matrix computed from the passed floats : left, right, top and bottom being the coordinates of the projection plane, z near and far limits.
-	     */
-	    static OrthoOffCenterRHToRef(left, right, bottom, top, znear, zfar, result) {
-	        Matrix.OrthoOffCenterLHToRef(left, right, bottom, top, znear, zfar, result);
-	        result.m[10] *= -1.0;
-	    }
-	    /**
-	     * Returns a new Matrix as a left-handed perspective projection matrix computed from the passed floats : width and height of the projection plane, z near and far limits.
-	     */
-	    static PerspectiveLH(width, height, znear, zfar) {
-	        var matrix = Matrix.Zero();
-	        let n = znear;
-	        let f = zfar;
-	        let a = 2.0 * n / width;
-	        let b = 2.0 * n / height;
-	        let c = (f + n) / (f - n);
-	        let d = -2.0 * f * n / (f - n);
-	        Matrix.FromValuesToRef(a, 0.0, 0.0, 0.0, 0.0, b, 0.0, 0.0, 0.0, 0.0, c, 1.0, 0.0, 0.0, d, 0.0, matrix);
-	        return matrix;
-	    }
-	    /**
-	     * Returns a new Matrix as a left-handed perspective projection matrix computed from the passed floats : vertical angle of view (fov), width/height ratio (aspect), z near and far limits.
-	     */
-	    static PerspectiveFovLH(fov, aspect, znear, zfar) {
-	        var matrix = Matrix.Zero();
-	        Matrix.PerspectiveFovLHToRef(fov, aspect, znear, zfar, matrix);
-	        return matrix;
-	    }
-	    /**
-	     * Sets the passed matrix "result" as a left-handed perspective projection matrix computed from the passed floats : vertical angle of view (fov), width/height ratio (aspect), z near and far limits.
-	     */
-	    static PerspectiveFovLHToRef(fov, aspect, znear, zfar, result, isVerticalFovFixed = true) {
-	        let n = znear;
-	        let f = zfar;
-	        let t = 1.0 / (Math.tan(fov * 0.5));
-	        let a = isVerticalFovFixed ? (t / aspect) : t;
-	        let b = isVerticalFovFixed ? t : (t * aspect);
-	        let c = (f + n) / (f - n);
-	        let d = -2.0 * f * n / (f - n);
-	        Matrix.FromValuesToRef(a, 0.0, 0.0, 0.0, 0.0, b, 0.0, 0.0, 0.0, 0.0, c, 1.0, 0.0, 0.0, d, 0.0, result);
-	    }
-	    /**
-
-	     /**
-	     * Returns a new Float32Array array with 4 elements : the 2x2 matrix extracted from the passed Matrix.
-	     */
-	    static GetAsMatrix2x2(matrix) {
-	        return new Float32Array([
-	            matrix.m[0], matrix.m[1],
-	            matrix.m[4], matrix.m[5]
-	        ]);
-	    }
-	    /**
-	     * Returns a new Float32Array array with 9 elements : the 3x3 matrix extracted from the passed Matrix.
-	     */
-	    static GetAsMatrix3x3(matrix) {
-	        return new Float32Array([
-	            matrix.m[0], matrix.m[1], matrix.m[2],
-	            matrix.m[4], matrix.m[5], matrix.m[6],
-	            matrix.m[8], matrix.m[9], matrix.m[10]
-	        ]);
-	    }
-	    /**
-	     * Compute the transpose of the passed Matrix.
-	     * Returns a new Matrix.
-	     */
-	    static Transpose(matrix) {
-	        var result = new Matrix();
-	        result.m[0] = matrix.m[0];
-	        result.m[1] = matrix.m[4];
-	        result.m[2] = matrix.m[8];
-	        result.m[3] = matrix.m[12];
-	        result.m[4] = matrix.m[1];
-	        result.m[5] = matrix.m[5];
-	        result.m[6] = matrix.m[9];
-	        result.m[7] = matrix.m[13];
-	        result.m[8] = matrix.m[2];
-	        result.m[9] = matrix.m[6];
-	        result.m[10] = matrix.m[10];
-	        result.m[11] = matrix.m[14];
-	        result.m[12] = matrix.m[3];
-	        result.m[13] = matrix.m[7];
-	        result.m[14] = matrix.m[11];
-	        result.m[15] = matrix.m[15];
-	        return result;
-	    }
-	    /**
-	     * Sets the passed matrix "mat" as a rotation matrix composed from the 3 passed  left handed axis.
-	     */
-	    static FromXYZAxesToRef(xaxis, yaxis, zaxis, mat) {
-	        mat.m[0] = xaxis.x;
-	        mat.m[1] = xaxis.y;
-	        mat.m[2] = xaxis.z;
-	        mat.m[3] = 0.0;
-	        mat.m[4] = yaxis.x;
-	        mat.m[5] = yaxis.y;
-	        mat.m[6] = yaxis.z;
-	        mat.m[7] = 0.0;
-	        mat.m[8] = zaxis.x;
-	        mat.m[9] = zaxis.y;
-	        mat.m[10] = zaxis.z;
-	        mat.m[11] = 0.0;
-	        mat.m[12] = 0.0;
-	        mat.m[13] = 0.0;
-	        mat.m[14] = 0.0;
-	        mat.m[15] = 1.0;
-	    }
-	    /**
-	     * Sets the passed matrix "result" as a rotation matrix according to the passed quaternion.
-	     */
-	    static FromQuaternionToRef(quat, result) {
-	        var xx = quat.x * quat.x;
-	        var yy = quat.y * quat.y;
-	        var zz = quat.z * quat.z;
-	        var xy = quat.x * quat.y;
-	        var zw = quat.z * quat.w;
-	        var zx = quat.z * quat.x;
-	        var yw = quat.y * quat.w;
-	        var yz = quat.y * quat.z;
-	        var xw = quat.x * quat.w;
-	        result.m[0] = 1.0 - (2.0 * (yy + zz));
-	        result.m[1] = 2.0 * (xy + zw);
-	        result.m[2] = 2.0 * (zx - yw);
-	        result.m[3] = 0.0;
-	        result.m[4] = 2.0 * (xy - zw);
-	        result.m[5] = 1.0 - (2.0 * (zz + xx));
-	        result.m[6] = 2.0 * (yz + xw);
-	        result.m[7] = 0.0;
-	        result.m[8] = 2.0 * (zx + yw);
-	        result.m[9] = 2.0 * (yz - xw);
-	        result.m[10] = 1.0 - (2.0 * (yy + xx));
-	        result.m[11] = 0.0;
-	        result.m[12] = 0.0;
-	        result.m[13] = 0.0;
-	        result.m[14] = 0.0;
-	        result.m[15] = 1.0;
-	    }
-	}
-	Matrix._tempQuaternion = new Quaternion();
-	Matrix._xAxis = Vector3.Zero();
-	Matrix._yAxis = Vector3.Zero();
-	Matrix._zAxis = Vector3.Zero();
-	exports.Matrix = Matrix;
-	var Space;
-	(function (Space) {
-	    Space[Space["LOCAL"] = 0] = "LOCAL";
-	    Space[Space["WORLD"] = 1] = "WORLD";
-	    Space[Space["BONE"] = 2] = "BONE";
-	})(Space = exports.Space || (exports.Space = {}));
-	var Orientation;
-	(function (Orientation) {
-	    Orientation[Orientation["CW"] = 0] = "CW";
-	    Orientation[Orientation["CCW"] = 1] = "CCW";
-	})(Orientation = exports.Orientation || (exports.Orientation = {}));
-	// Temporary pre-allocated objects for engine internal use
-	// usage in any internal function :
-	// var tmp = Tmp.Vector3[0];   <= gets access to the first pre-created Vector3
-	// There's a Tmp array per object type : int, float, Vector2, Vector3, Vector4, Quaternion, Matrix
-	class Tmp {
-	}
-	Tmp.Vector2 = [Vector2.Zero(), Vector2.Zero(), Vector2.Zero()]; // 3 temp Vector2 at once should be enough
-	Tmp.Vector3 = [Vector3.Zero(), Vector3.Zero(), Vector3.Zero(),
-	    Vector3.Zero(), Vector3.Zero(), Vector3.Zero(), Vector3.Zero(), Vector3.Zero(), Vector3.Zero()]; // 9 temp Vector3 at once should be enough
-	Tmp.Vector4 = [Vector4.Zero(), Vector4.Zero(), Vector4.Zero()]; // 3 temp Vector4 at once should be enough
-	Tmp.Quaternion = [Quaternion.Zero(), Quaternion.Zero()]; // 2 temp Quaternion at once should be enough
-	Tmp.Matrix = [Matrix.Zero(), Matrix.Zero(),
-	    Matrix.Zero(), Matrix.Zero(),
-	    Matrix.Zero(), Matrix.Zero(),
-	    Matrix.Zero(), Matrix.Zero()]; // 6 temp Matrices at once should be enough
-	exports.Tmp = Tmp;
-	// Same as Tmp but not exported to keep it onyl for math functions to avoid conflicts
-	class MathTmp {
-	}
-	MathTmp.Vector3 = [Vector3.Zero()];
-	MathTmp.Matrix = [Matrix.Zero(), Matrix.Zero()];
-	MathTmp.Quaternion = [Quaternion.Zero()];
 
 
 /***/ },
-/* 162 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	class ObjectId {
-	    static generate() {
-	        return ++ObjectId.value;
-	    }
-	    static seed(seed) {
-	        ObjectId.value = seed;
-	    }
-	}
-	ObjectId.value = 1;
-	exports.ObjectId = ObjectId;
-
-
-/***/ },
-/* 163 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	function isPrimitive(value) {
-	    const type = typeof value;
-	    return (type !== "object" && type !== "function");
-	}
-	class TypeSerializer {
-	    serialize() {
-	    }
-	    deserialize() {
-	        return null;
-	    }
-	}
-	//todo most of this gets replaced by generated type information
-	//@Serialize(Class)
-	// names can be made unique in a single blob, then name refs are just start / end indices
-	// thisisabiglistofstringsthatcanbehuffmancompressedandindexedinto
-	//
-	// //some flags can be combined, type, base type, interfaces for example
-	// objetRef: {
-	//     typeId: id,
-	//     decorators: [id, id, id]
-	//     fields: {id, accessFlag(public/readonly/etc), serializedFlag, name, type},
-	//     methods: {id, static flag, overrideFlags, decoratorids, name, paramTypes, retnType}
-	//     interfaces: [id, id, id]
-	//     baseType: id
-	// }
-	//
-	// objectRefid : id / fieldCount/ total bytes
-	// fieldId: id / bytelength
-	// bytes: bytes
-	class Serializer {
-	    constructor() {
-	        this.refId = 1;
-	        this.storage = {};
-	        this.objectIdMap = new Map();
-	        this.objectQueue = [];
-	    }
-	    add(obj) {
-	        if (this.objectIdMap.has(obj))
-	            return;
-	        const id = this.getRefId(obj);
-	        this.storage[id] = this.serialize(obj);
-	    }
-	    write() {
-	        while (this.objectQueue.length) {
-	            this.serialize(this.objectQueue.shift());
-	        }
-	        return "";
-	    }
-	    isSerializable(value) {
-	        if (isPrimitive(value))
-	            return true;
-	        if (Array.isArray(value))
-	            return true;
-	    }
-	    toJSON() {
-	    }
-	    toString() {
-	        return JSON.stringify(this.toJSON());
-	    }
-	    serialize(target) {
-	        const id = this.getRefId(target);
-	        const keys = Object.keys(target);
-	        //write type
-	        var types = {};
-	        types[id] = target.constructor.name;
-	        const serializer = this.getSerializer(target.constructor);
-	        /*
-
-	        types: {
-	            id: "some/path"
-	        },
-	        arrays: {
-	        },
-	        objects: {
-	            id: [0] = typeId
-	                [1...end] = fields
-	                [%3] = 1 field
-
-	            {
-	                type: typeId,
-	                fields: [
-	                    {name: name, value: value, type: type} //dont need the object wrapper, can use array offset
-	                ]
-	            }
-	        }
-	        * */
-	    }
-	    getSerializer(target) {
-	        if (Array.isArray(target)) {
-	        }
-	        else if (target instanceof Date) {
-	        }
-	        else if (target instanceof RegExp) {
-	        }
-	        else if (target instanceof Function) {
-	        }
-	        else {
-	            return (target) => {
-	                const keys = Object.keys(target);
-	                const retn = [];
-	                for (let i = 0; i < keys.length; i++) {
-	                    const key = keys[i];
-	                    const value = this.serializeValue(target[key]);
-	                    const type = this.getType(value);
-	                    retn.push(key, value, type);
-	                }
-	                return retn;
-	            };
-	        }
-	    }
-	    getType(target) {
-	    }
-	    serializeValue(target) {
-	        if (isPrimitive(target))
-	            return target;
-	        if (Array.isArray(target)) {
-	            //queue target
-	        }
-	    }
-	    getRefId(target) {
-	        if (target == null)
-	            return -1;
-	        let id = this.objectIdMap.get(target);
-	        if (!id) {
-	            id = this.refId++;
-	            this.objectIdMap.set(target, id);
-	        }
-	        return id;
-	    }
-	}
-	exports.Serializer = Serializer;
-
-
-/***/ },
-/* 164 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const typeMap = new Map();
-	function getTypeFromPath(path) {
-	    return typeMap.get(path);
-	}
-	exports.getTypeFromPath = getTypeFromPath;
-	function setTypePath(path) {
-	    return function (target) {
-	        typeMap.set(path, target);
-	    };
-	}
-	exports.setTypePath = setTypePath;
-
-
-/***/ },
-/* 165 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const vector2_1 = __webpack_require__(17);
-	class Polygon {
-	    constructor() {
-	        this.points = new Array();
-	    }
-	    addPoint(point) {
-	        this.points.push(new vector2_1.Vector2(point.x, point.y));
-	    }
-	    containsPoint(point) {
-	        const points = this.points;
-	        let c = false;
-	        for (let i = 0, j = points.length - 1; i < points.length; j = i++) {
-	            const pointI = points[i];
-	            const pointJ = points[j];
-	            if (((pointI.y >= point.y) !== (pointJ.y >= point.y)) &&
-	                (point.x <= (pointJ.x - pointI.x) * (point.y - pointI.y) / (pointJ.y - pointI.y) + pointI.x)) {
-	                c = !c;
-	            }
-	        }
-	        return c;
-	    }
-	}
-	exports.Polygon = Polygon;
-
-
-/***/ },
-/* 166 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(4);
-	const app_element_1 = __webpack_require__(29);
-	const component_1 = __webpack_require__(40);
-	const util_1 = __webpack_require__(16);
-	const type_1 = __webpack_require__(164);
-	let Scene = class Scene {
-	    constructor() {
-	        this.sceneRoots = [];
-	    }
-	    save() {
-	        var generateId = (function () {
-	            let id = 1;
-	            return function () {
-	                return id++;
-	            };
-	        })();
-	        function addToMap(o) {
-	            if (objectIdMap.has(o))
-	                return;
-	            objectIdMap.set(o, generateId());
-	        }
-	        let json = {};
-	        let objectIdMap = new Map();
-	        //give all objects an id
-	        util_1.traverseChildren(app_element_1.AppElement.Root, (child) => {
-	            addToMap(child);
-	            objectIdMap.set(child, generateId());
-	            child.getAllComponents().forEach((component) => {
-	                addToMap(child);
-	                Object.keys(component).forEach((key) => {
-	                    const value = component[key];
-	                    if (value && typeof value === "object") {
-	                        addToMap(child);
-	                    }
-	                });
-	            });
-	        });
-	        util_1.traverseChildren(app_element_1.AppElement.Root, (child) => {
-	            json[objectIdMap.get(child)] = {
-	                id: child.id,
-	                name: child.name,
-	                parentId: child.getParent().id,
-	                localPosition: child.getLocalPosition(),
-	                localRotation: child.getRotation(),
-	                scale: child.getScale(),
-	                width: child.getWidth(),
-	                height: child.getHeight(),
-	                components: child.getAllComponents().forEach((component) => {
-	                    json[objectIdMap.get(component)] = "";
-	                })
-	            };
-	        });
-	    }
-	    destroy() {
-	        //todo -- tear down existing scene
-	    }
-	    load(sceneDescription) {
-	        // this.destroy();
-	        // const elements = sceneDescription.elements;
-	        // for(let i = 0; i < elements.length; i++) {
-	        //     this.sceneRoots.push(this.hydrateElement(elements[i]));
-	        // }
-	    }
-	    hydrateElement(definition, parent) {
-	        const appElement = new app_element_1.AppElement(definition.name, parent);
-	        for (let j = 0; j < definition.components.length; j++) {
-	            const compDesc = definition.components[j];
-	            const type = component_1.Component.getComponentFromPath(compDesc.type);
-	            const cmp = appElement.addComponent(type);
-	        }
-	        for (let k = 0; k < definition.children.length; k++) {
-	            this.hydrateElement(definition.children[k], appElement);
-	        }
-	        return appElement;
-	    }
-	    unload() {
-	    }
-	    addRootElement(element) {
-	        this.sceneRoots.push(element);
-	    }
-	    getRootElements() {
-	        return this.sceneRoots.slice(0);
-	    }
-	};
-	Scene = tslib_1.__decorate([
-	    type_1.setTypePath("Runtime/Scene")
-	], Scene);
-	exports.Scene = Scene;
-
-
-/***/ },
-/* 167 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const scene_tool_1 = __webpack_require__(119);
+	const scene_tool_1 = __webpack_require__(122);
 	class ScenePanTool extends scene_tool_1.SceneTool {
 	    constructor() {
 	        super(...arguments);

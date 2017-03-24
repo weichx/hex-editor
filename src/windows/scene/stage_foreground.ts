@@ -57,28 +57,16 @@ export class StageForeground extends EditorHTMLElement<any> {
         this.selectionOutline.beginFill(0xFF0000);
         this.selectionOutline.drawCircle(boundingBox.topLeft.x, boundingBox.topLeft.y, circleSize);
         this.selectionOutline.endFill();
+        this.selectionOutline.lineStyle(1, 0xFF00CD);
+        this.selectionOutline.arc(aabb.centerX, aabb.centerY, aabb.outerRadius, 0, MathUtil.TwoPi);
+        const input = EditorRuntime.getInput();
+        const mouse = input.getMouseRelativeToEditorElement(this);
+        const dist = aabb.center.clone().subVector(mouse).length();
+        if(dist < aabb.outerRadius + 5 && dist > aabb.outerRadius - 5) {
+            this.selectionOutline.beginFill(0xFF0000);
+            this.selectionOutline.drawCircle(aabb.centerX, aabb.centerY, 5);
+            this.selectionOutline.endFill();
+        }
     }
 
 }
-
-// function scaleAroundPoint(input : Vector2, scaleFactor : number, pivot : Vector2) {
-//     const pivotDiff = input.subVectorNew(pivot);
-//
-//     const vec = new Vector2(pivotDiff.x, pivotDiff.y).addVector(pivot);
-//
-// //     var A : Vector3 = targetGO.transform.position;
-// //     var B : Vector3 = pivotGO.transform.position;
-// //
-// //     var RS : float = 0.2; // relataive scale factor
-// //     var startScale = targetGO.transform.localScale;
-// //     var endScale = targetGO.transform.localScale *RS;
-// //
-// //     var C : Vector3 = A-B; // diff from object pivot to desired pivot/origin
-// //
-// // // calc final position post-scale
-// //     var FP : Vector3 = (C*RS)+B;
-// //
-// // // finally, actually perform the scale/translation
-// //     targetGO.transform.localScale = endScale;
-// //     targetGO.transform.position = FP;
-// }

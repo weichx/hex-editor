@@ -1,19 +1,58 @@
-import {Vector2} from "./vector2";
-import {serializeClass} from "./persistance/TEMP_ANNOTATION";
+import {ImmutableVector2, Vector2} from "./vector2";
 
-@serializeClass
 export class Rectangle {
 
     public x : number;
     public y : number;
     public width : number;
     public height : number;
+    private _center : Vector2;
+    private _min : Vector2;
+    private _max: Vector2;
 
     constructor(x = 0, y = 0, width = 0, height = 0) {
         this.x = x;
         this.y = y;
         this.width = width;
         this.height = height;
+        this._center = null;
+        this._min = null;
+        this._max = null;
+    }
+
+    public get centerX() : number {
+        return this.x + (this.width * 0.5);
+    }
+
+    public get centerY() : number {
+        return this.y + (this.height * 0.5);
+    }
+
+    public get min() : ImmutableVector2 {
+        if(!this._min) this._min = new Vector2();
+        this._min.x = this.x;
+        this._min.y = this.y;
+        return this._min;
+    }
+
+    public get max() : ImmutableVector2 {
+        if(!this._max) this._max = new Vector2();
+        this._max.x = this.x + this.width;
+        this._max.y = this.y + this.height;
+        return this._max;
+    }
+
+    public get center() : ImmutableVector2 {
+        if(!this._center) this._center = new Vector2();
+        this._center.x = this.x + (this.width * 0.5);
+        this._center.y = this.y + (this.height * 0.5);
+        return this._center as ImmutableVector2;
+    }
+
+    public get outerRadius() : number {
+        var min = Vector2.scratch0.set(this.x, this.y);
+        var max = Vector2.scratch1.set(this.x + this.width, this.y + this.height);
+        return max.subVector(min).length() * 0.5;
     }
 
     public setFromPoints(minX : number, minY : number, maxX : number, maxY : number) {

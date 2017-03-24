@@ -167,8 +167,11 @@ export class SceneRectTool extends SceneTool {
                 //p.x += delta.x;
                 //p.y += delta.y;
                 var p = appElement.getPosition();
+                // p.addInPlace(delta);
+                p.x += delta.x;
+                p.y += delta.y;
                 // p = appElement.worldToLocal(p.addVectorNew(delta));
-                appElement.setPosition(p.addVectorNew(delta), Space.World);
+                appElement.setPosition(p, Space.World);
                  //appElement.setPosition(p.addVectorNew(delta), Space.World);
                 break;
         }

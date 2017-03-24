@@ -61,7 +61,7 @@ export class RuntimeImpl extends RuntimeBase {
                 return hit;
             }
         }
-        if (AppElement.Root.containsPoint(point)) return AppElement.Root;
+        //if (AppElement.Root.containsPoint(point)) return AppElement.Root;
         return null;
     }
 
