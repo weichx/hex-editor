@@ -187,9 +187,16 @@ namespace StateChart {
             if (this.behavior) this.behavior.exit();
         }
 
+        protected getActiveStateCount() : number {
+            return this.states.length;
+        }
+
+        protected getActiveStates() : Array<StateBase> {
+            return this.states;
+        }
     }
 
-    class State {
+    class State extends StateBase {
 
         public readonly id : string;
         public readonly chart : Chart;
@@ -197,6 +204,7 @@ namespace StateChart {
         protected states : Array<State>;
 
         constructor(id : string, definition : () => void, parent : State) {
+            super();
             this.id = id;
             this.chart = StateChartStack.getLast();
             this.parent = parent;
@@ -266,7 +274,7 @@ namespace StateChart {
     }
 
     function state(id : string, definition : () => any) {
-        //currentState.addState(new State(id, definition));
+        StateChartStack.getLast().addState(new State(id, definition));
     }
 
     function event(eventName : string, guard? : (data? : any) => boolean) {

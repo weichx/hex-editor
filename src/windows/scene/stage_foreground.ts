@@ -57,30 +57,26 @@ export class StageForeground extends EditorHTMLElement<any> {
         const circleSize = 4;
         const boundingBox = selection.getBoundingBox();
         const aabb = selection.getAxisAlignedBoundingBox();
-        this.powerFlower.setPosition(selection.getPosition(Vector2.scratch0));
-        this.powerFlower.render(this.selectionOutline);
+        // this.powerFlower.setPosition(selection.getPosition(Vector2.scratch0));
+        // this.powerFlower.render(this.selectionOutline);
 
-        // this.selectionOutline.lineStyle(1, 0xFF00CD);
-        // this.selectionOutline.drawRect(aabb.x, aabb.y, aabb.width, aabb.height);
-        //
-        // this.selectionOutline.beginFill(0x87b0f2);
-        // const circle = new Circle(boundingBox.topRight, circleSize * 2);
-        // const container = new Transformable();
-        // circle.setParent(container);
-        // circle.render(this.selectionOutline);
-        //
-        // // this.selectionOutline.drawCircle(boundingBox.topRight.x, boundingBox.topRight.y, circleSize);
-        // this.selectionOutline.drawCircle(boundingBox.bottomRight.x, boundingBox.bottomRight.y, circleSize);
-        // this.selectionOutline.drawCircle(boundingBox.bottomLeft.x, boundingBox.bottomLeft.y, circleSize);
-        //
-        // this.selectionOutline.endFill();
-        //
-        // this.selectionOutline.beginFill(0xFF0000);
-        // this.selectionOutline.drawCircle(boundingBox.topLeft.x, boundingBox.topLeft.y, circleSize);
-        // this.selectionOutline.endFill();
-        //
-        // this.selectionOutline.lineStyle(1, 0xFF00CD);
-        // this.selectionOutline.arc(aabb.centerX, aabb.centerY, aabb.outerRadius, 0, MathUtil.TwoPi);
+        this.selectionOutline.lineStyle(1, 0xFF00CD);
+        this.selectionOutline.drawRect(aabb.x, aabb.y, aabb.width, aabb.height);
+
+        this.selectionOutline.beginFill(0x87b0f2);
+
+        this.selectionOutline.drawCircle(boundingBox.topRight.x, boundingBox.topRight.y, circleSize);
+        this.selectionOutline.drawCircle(boundingBox.bottomRight.x, boundingBox.bottomRight.y, circleSize);
+        this.selectionOutline.drawCircle(boundingBox.bottomLeft.x, boundingBox.bottomLeft.y, circleSize);
+
+        this.selectionOutline.endFill();
+
+        this.selectionOutline.beginFill(0xFF0000);
+        this.selectionOutline.drawCircle(boundingBox.topLeft.x, boundingBox.topLeft.y, circleSize);
+        this.selectionOutline.endFill();
+
+        this.selectionOutline.lineStyle(1, 0xFF00CD);
+        this.selectionOutline.arc(aabb.centerX, aabb.centerY, aabb.outerRadius, 0, MathUtil.TwoPi);
         // const input = EditorRuntime.getInput();
         // const mouse = input.getMouseRelativeToEditorElement(this);
         // const dist = aabb.center.clone().subVector(mouse).length();
