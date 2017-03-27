@@ -1,4 +1,4 @@
-
+export type VoidFn = () => void;
 
 export function setDefault<T>(value : any, defaultValue : T) : T {
    if(value === void 0 || typeof defaultValue !== typeof value) {

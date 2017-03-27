@@ -126,6 +126,64 @@ export class StageWindow extends EditorWindowElement<IWindowAttrs> {
     }
 }
 
+/*
+
+
+    this.stateChart = new StateChart(function(state: StateFn, event : StateChartEvent<T>) {
+        const chart = this;
+        const state = this.state;
+        const event = this.event;
+        //this.getConfiguration();
+        //this.isIn();
+        //this.getActiveStateId();
+        //this.trigger();
+        //this.goTo();
+        //this.state();
+        //this.event();
+        //this.destructure();
+        EditorRuntime.on(Event, () => trigger(eventType));
+        EditorRuntime.on(OtherEvent, () => this.trigger(chartEvent, data));
+
+        event(SelectAppElement, () => { goTo("Selected"); });
+
+        event(StageChartEvent.ToolChanged, () => {
+            goTo();
+        });
+
+        state("Unselected", function() {
+
+        });
+
+        state.parallel();
+
+        state.history();
+
+        state("Selected", function() {
+
+            state("SingleSelection, SingleSelectionBehavior, function() {
+
+                state("RectTool", RectToolBehavior);
+
+                state("RotationTool", RotationToolBehavior);
+
+                event(AppEventType, "TransitionState", guardFunction);
+
+            });
+
+            state("MultipleSelection", MultipleSelectionBehavior);
+
+
+            event(DeselectAppElement, () => {  });
+
+            this.chart.trigger(StageEvent.RectToolSelected);
+
+        });
+
+
+    });
+
+ */
+
 createStyleSheet(`<style>
         
 .stage-window {

@@ -52,36 +52,36 @@
 	__webpack_require__(73);
 	__webpack_require__(62);
 	__webpack_require__(64);
-	__webpack_require__(123);
-	__webpack_require__(102);
-	__webpack_require__(124);
-	__webpack_require__(98);
-	__webpack_require__(125);
-	__webpack_require__(126);
-	__webpack_require__(128);
 	__webpack_require__(129);
+	__webpack_require__(102);
+	__webpack_require__(130);
+	__webpack_require__(98);
 	__webpack_require__(131);
 	__webpack_require__(132);
-	__webpack_require__(133);
+	__webpack_require__(134);
 	__webpack_require__(135);
-	__webpack_require__(136);
+	__webpack_require__(137);
+	__webpack_require__(138);
+	__webpack_require__(139);
+	__webpack_require__(141);
+	__webpack_require__(142);
 	__webpack_require__(101);
 	__webpack_require__(106);
 	__webpack_require__(68);
 	__webpack_require__(105);
-	__webpack_require__(137);
-	__webpack_require__(138);
+	__webpack_require__(143);
+	__webpack_require__(144);
 	__webpack_require__(94);
 	__webpack_require__(103);
-	__webpack_require__(139);
-	__webpack_require__(134);
+	__webpack_require__(145);
+	__webpack_require__(140);
 	__webpack_require__(61);
 	__webpack_require__(96);
 	__webpack_require__(92);
-	__webpack_require__(140);
-	__webpack_require__(141);
+	__webpack_require__(146);
+	__webpack_require__(147);
 	__webpack_require__(91);
-	__webpack_require__(142);
+	__webpack_require__(148);
 	__webpack_require__(108);
 	__webpack_require__(107);
 	__webpack_require__(70);
@@ -90,20 +90,20 @@
 	__webpack_require__(90);
 	__webpack_require__(95);
 	__webpack_require__(97);
-	__webpack_require__(144);
+	__webpack_require__(150);
 	__webpack_require__(117);
 	__webpack_require__(116);
-	__webpack_require__(145);
-	__webpack_require__(146);
-	__webpack_require__(147);
+	__webpack_require__(151);
+	__webpack_require__(152);
+	__webpack_require__(153);
 	__webpack_require__(114);
-	__webpack_require__(148);
+	__webpack_require__(154);
 	__webpack_require__(112);
-	__webpack_require__(149);
+	__webpack_require__(155);
 	__webpack_require__(23);
 	__webpack_require__(58);
-	__webpack_require__(150);
-	__webpack_require__(151);
+	__webpack_require__(156);
+	__webpack_require__(157);
 	__webpack_require__(57);
 	__webpack_require__(74);
 	__webpack_require__(15);
@@ -116,57 +116,59 @@
 	__webpack_require__(41);
 	__webpack_require__(40);
 	__webpack_require__(47);
-	__webpack_require__(152);
-	__webpack_require__(153);
+	__webpack_require__(158);
+	__webpack_require__(159);
 	__webpack_require__(72);
 	__webpack_require__(5);
 	__webpack_require__(20);
 	__webpack_require__(6);
-	__webpack_require__(154);
+	__webpack_require__(160);
 	__webpack_require__(12);
 	__webpack_require__(9);
 	__webpack_require__(10);
 	__webpack_require__(13);
 	__webpack_require__(110);
 	__webpack_require__(44);
-	__webpack_require__(155);
-	__webpack_require__(143);
+	__webpack_require__(161);
+	__webpack_require__(149);
 	__webpack_require__(69);
 	__webpack_require__(71);
 	__webpack_require__(22);
 	__webpack_require__(3);
 	__webpack_require__(63);
 	__webpack_require__(59);
-	__webpack_require__(29);
+	__webpack_require__(36);
 	__webpack_require__(79);
 	__webpack_require__(11);
-	__webpack_require__(156);
-	__webpack_require__(159);
-	__webpack_require__(160);
-	__webpack_require__(161);
-	__webpack_require__(157);
-	__webpack_require__(45);
-	__webpack_require__(54);
-	__webpack_require__(130);
-	__webpack_require__(99);
-	__webpack_require__(33);
-	__webpack_require__(2);
-	__webpack_require__(46);
-	__webpack_require__(36);
-	__webpack_require__(118);
 	__webpack_require__(162);
 	__webpack_require__(163);
+	__webpack_require__(124);
+	__webpack_require__(125);
+	__webpack_require__(126);
+	__webpack_require__(122);
+	__webpack_require__(121);
+	__webpack_require__(45);
+	__webpack_require__(54);
+	__webpack_require__(136);
+	__webpack_require__(99);
+	__webpack_require__(28);
+	__webpack_require__(2);
+	__webpack_require__(46);
+	__webpack_require__(31);
+	__webpack_require__(118);
+	__webpack_require__(164);
+	__webpack_require__(165);
 	__webpack_require__(53);
 	__webpack_require__(42);
 	__webpack_require__(52);
-	__webpack_require__(164);
-	__webpack_require__(127);
-	__webpack_require__(165);
+	__webpack_require__(166);
+	__webpack_require__(133);
+	__webpack_require__(167);
 	__webpack_require__(78);
 	__webpack_require__(77);
-	__webpack_require__(166);
+	__webpack_require__(168);
 	__webpack_require__(75);
-	__webpack_require__(167);
+	__webpack_require__(169);
 	__webpack_require__(76);
 	__webpack_require__(83);
 	__webpack_require__(84);
@@ -178,40 +180,42 @@
 	__webpack_require__(89);
 	__webpack_require__(80);
 	__webpack_require__(87);
-	__webpack_require__(35);
+	__webpack_require__(30);
 	__webpack_require__(104);
-	__webpack_require__(34);
+	__webpack_require__(29);
 	__webpack_require__(25);
 	__webpack_require__(39);
 	__webpack_require__(24);
-	__webpack_require__(168);
-	__webpack_require__(169);
-	__webpack_require__(28);
 	__webpack_require__(170);
 	__webpack_require__(171);
+	__webpack_require__(35);
 	__webpack_require__(172);
-	__webpack_require__(43);
 	__webpack_require__(173);
-	__webpack_require__(27);
-	__webpack_require__(37);
-	__webpack_require__(32);
 	__webpack_require__(174);
-	__webpack_require__(158);
-	__webpack_require__(31);
-	__webpack_require__(17);
+	__webpack_require__(43);
+	__webpack_require__(175);
+	__webpack_require__(34);
+	__webpack_require__(32);
+	__webpack_require__(27);
+	__webpack_require__(176);
+	__webpack_require__(123);
 	__webpack_require__(26);
-	__webpack_require__(30);
+	__webpack_require__(17);
+	__webpack_require__(33);
+	__webpack_require__(37);
 	__webpack_require__(38);
+	__webpack_require__(177);
 	__webpack_require__(109);
 	__webpack_require__(66);
 	__webpack_require__(93);
 	__webpack_require__(100);
 	__webpack_require__(16);
-	__webpack_require__(175);
-	__webpack_require__(121);
-	__webpack_require__(122);
+	__webpack_require__(178);
+	__webpack_require__(127);
+	__webpack_require__(128);
 	__webpack_require__(119);
-	module.exports = __webpack_require__(120);
+	__webpack_require__(120);
+	module.exports = __webpack_require__(179);
 
 
 /***/ },
@@ -359,10 +363,10 @@
 	const evt_app_element_created_1 = __webpack_require__(21);
 	const editor_element_1 = __webpack_require__(15);
 	const editor_input_1 = __webpack_require__(22);
-	const tree_1 = __webpack_require__(31);
-	const runtime_1 = __webpack_require__(32);
-	const app_element_1 = __webpack_require__(33);
-	const e_command_type_1 = __webpack_require__(35);
+	const tree_1 = __webpack_require__(26);
+	const runtime_1 = __webpack_require__(27);
+	const app_element_1 = __webpack_require__(28);
+	const e_command_type_1 = __webpack_require__(30);
 	const component_1 = __webpack_require__(42);
 	const vector2_1 = __webpack_require__(17);
 	const drag_action_1 = __webpack_require__(44);
@@ -2591,11 +2595,895 @@
 
 /***/ },
 /* 26 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	class ShadowTree {
+	    constructor(nodeConstructor) {
+	        this.nodeConstructor = nodeConstructor;
+	        this.nodeMap = new Map();
+	        this.rootNodes = [];
+	    }
+	    traverse() {
+	        for (let i = 0; i < this.rootNodes.length; i++) {
+	            if (this.rootNodes[i].traverse()) {
+	                this.rootNodes.removeAt(i);
+	            }
+	        }
+	    }
+	    add(item) {
+	        let currentNode = this.nodeMap.get(item.element);
+	        if (currentNode) {
+	            currentNode.items.push(item);
+	            return;
+	        }
+	        currentNode = new this.nodeConstructor(item);
+	        this.insert(currentNode);
+	    }
+	    remove(item) {
+	        let node = this.nodeMap.get(item.element);
+	        if (!node)
+	            return;
+	        this.nodeMap.delete(item.element);
+	        const rootIdx = this.rootNodes.indexOf(node);
+	        if (rootIdx !== -1) {
+	            this.rootNodes.removeAt(rootIdx);
+	            for (let i = 0; i < node.children.length; i++) {
+	                this.rootNodes.push(node.children[i]);
+	            }
+	            return;
+	        }
+	        const parentNode = this.nodeMap.get(item.element.parent);
+	        if (!parentNode)
+	            return;
+	        const nodeIdx = parentNode.children.indexOf(node);
+	        if (nodeIdx !== -1) {
+	            parentNode.children.removeAt(nodeIdx);
+	        }
+	        for (let i = 0; i < node.children.length; i++) {
+	            parentNode.children.push(node.children[i]);
+	        }
+	    }
+	    insert(treeNode) {
+	        this.nodeMap.set(treeNode.element, treeNode);
+	        const parentTreeNode = this.findParent(treeNode);
+	        if (!parentTreeNode)
+	            return this.insertAtRoot(treeNode);
+	        for (let i = 0; i < parentTreeNode.children.length; i++) {
+	            const childNode = parentTreeNode.children[i];
+	            if (ShadowTree.isDescendant(childNode.element, treeNode.element)) {
+	                treeNode.children.push(childNode);
+	                parentTreeNode.children.splice(i--, 1);
+	            }
+	        }
+	        parentTreeNode.children.push(treeNode);
+	    }
+	    insertAtRoot(treeNode) {
+	        //if any root nodes should be children of this node, remove from root and push to new node
+	        for (let i = 0; i < this.rootNodes.length; i++) {
+	            const node = this.rootNodes[i];
+	            if (ShadowTree.isDescendant(node.element, treeNode.element)) {
+	                treeNode.children.push(node);
+	                this.rootNodes.removeAt(i);
+	            }
+	        }
+	        this.rootNodes.push(treeNode);
+	    }
+	    static isDescendant(possibleChild, parent) {
+	        if (possibleChild.parent === parent)
+	            return true;
+	        let ptr = possibleChild.parent;
+	        while (ptr) {
+	            if (ptr.parent === parent)
+	                return true;
+	            ptr = ptr.parent;
+	        }
+	        return false;
+	    }
+	    findParent(treeNode) {
+	        let ptr = treeNode.element.parent;
+	        while (ptr) {
+	            const node = this.nodeMap.get(ptr);
+	            if (node)
+	                return node;
+	            ptr = ptr.parent;
+	        }
+	        return null;
+	    }
+	}
+	exports.ShadowTree = ShadowTree;
+	class ShadowTreeNode {
+	    constructor(updater) {
+	        this.element = updater.element;
+	        this.children = [];
+	        this.items = [updater];
+	    }
+	}
+	exports.ShadowTreeNode = ShadowTreeNode;
+
+
+/***/ },
+/* 27 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const quaternion_1 = __webpack_require__(27);
+	const input_1 = __webpack_require__(24);
+	const app_element_1 = __webpack_require__(28);
+	const runtime_base_1 = __webpack_require__(38);
+	const evt_app_element_parent_changed_1 = __webpack_require__(40);
+	const e_command_type_1 = __webpack_require__(30);
+	const evt_app_element_index_changed_1 = __webpack_require__(41);
+	class RuntimeImpl extends runtime_base_1.RuntimeBase {
+	    constructor() {
+	        super();
+	        this.input = new input_1.Input();
+	        this.rootElementCandidates = [];
+	        this.pendingComponents = [];
+	        this.appElementRegistry = {};
+	        this.commandQueue = [];
+	        this.layoutQueue = [];
+	        self.onmessage = (message) => {
+	            this.onMessage(message);
+	        };
+	    }
+	    getAppElementById(id) {
+	        return this.appElementRegistry[id];
+	    }
+	    postMessage(data) {
+	        self.postMessage(data, void 0);
+	    }
+	    queueLayout(layoutComponent) {
+	        const idx = this.layoutQueue.indexOf(layoutComponent);
+	        //todo this should be sorted top to bottom, use a shadow/skip tree
+	        if (!this.layoutQueue.contains(layoutComponent)) {
+	            this.layoutQueue.push(layoutComponent);
+	        }
+	    }
+	    getScene() {
+	        return this.scene;
+	    }
+	    getAppElementAtPoint(point) {
+	        const childCount = app_element_1.AppElement.Root.getChildCount();
+	        for (let i = 0; i < childCount; i++) {
+	            const hit = this.appElementAtPointStep(app_element_1.AppElement.Root.getChildAt(i), point);
+	            if (hit) {
+	                return hit;
+	            }
+	        }
+	        //if (AppElement.Root.containsPoint(point)) return AppElement.Root;
+	        return null;
+	    }
+	    //todo this could be more optimized
+	    //todo this doesn't handle z-ordering at all
+	    //todo replace with range tree of 4d points http://stackoverflow.com/questions/17651215/storing-rectangles-circles-triangles-in-a-kd-tree
+	    appElementAtPointStep(test, point) {
+	        const childCount = test.getChildCount();
+	        for (let i = 0; i < childCount; i++) {
+	            const hit = this.appElementAtPointStep(test.getChildAt(i), point);
+	            if (hit) {
+	                return hit;
+	            }
+	        }
+	        return test;
+	    }
+	    addElement(appElement) {
+	        this.rootElementCandidates.push(appElement);
+	        //todo remove this when destroying app element
+	        this.appElementRegistry[appElement.id] = appElement;
+	    }
+	    addComponent(component) {
+	        this.pendingComponents.push(component);
+	    }
+	    //todo -- internalize
+	    setParent(appElement, newParent, oldParent) {
+	        const storage = new Array();
+	        if (oldParent) {
+	            oldParent.getAllComponents(storage);
+	            for (let i = 0; i < storage.length; i++) {
+	                storage[i].onChildRemoved(appElement);
+	            }
+	            storage.length = 0;
+	        }
+	        if (newParent) {
+	            newParent.getAllComponents(storage);
+	            for (let i = 0; i < storage.length; i++) {
+	                storage[i].onChildAdded(appElement);
+	            }
+	        }
+	        this.emit(evt_app_element_parent_changed_1.AppElementParentChanged, appElement, newParent, oldParent);
+	        this.sendCommand(e_command_type_1.CommandType.SetParent, { id: appElement.id, parentId: newParent.id });
+	    }
+	    //todo -- internalize
+	    setSiblingIndex(appElement, index, oldIndex) {
+	        this.emit(evt_app_element_index_changed_1.AppElementIndexChanged, appElement, index, oldIndex);
+	        this.sendCommand(e_command_type_1.CommandType.SetSiblingIndex, { id: appElement.id, index });
+	    }
+	    destroyElement(appElement) {
+	        if (appElement.isDestroyed())
+	            return;
+	        appElement.destroy();
+	        // this.emit(AppElementDestroyed, appElement);
+	    }
+	    update(delta) {
+	        // for(let i = 0; i < this.layoutQueue.length; i++) {
+	        //     this.layoutQueue[i].doLayout();
+	        // }
+	    }
+	    getInput() {
+	        return this.input;
+	    }
+	}
+	exports.RuntimeImpl = RuntimeImpl;
+
+
+/***/ },
+/* 28 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const e_lifecycle_flags_1 = __webpack_require__(29);
+	const e_command_type_1 = __webpack_require__(30);
+	const util_1 = __webpack_require__(16);
+	const bounding_box_1 = __webpack_require__(31);
+	const math_util_1 = __webpack_require__(36);
+	const matrix_1 = __webpack_require__(35);
+	const quaternion_1 = __webpack_require__(34);
+	const vector2_1 = __webpack_require__(17);
+	const vector3_1 = __webpack_require__(33);
+	let idGenerator = 0;
+	const scratchVector = new vector2_1.Vector2();
+	var Space;
+	(function (Space) {
+	    Space[Space["Local"] = 0] = "Local";
+	    Space[Space["World"] = 1] = "World";
+	})(Space = exports.Space || (exports.Space = {}));
+	var ElementDirtyFlag;
+	(function (ElementDirtyFlag) {
+	    ElementDirtyFlag[ElementDirtyFlag["Position"] = 1] = "Position";
+	    ElementDirtyFlag[ElementDirtyFlag["Scale"] = 2] = "Scale";
+	    ElementDirtyFlag[ElementDirtyFlag["Rotation"] = 4] = "Rotation";
+	    ElementDirtyFlag[ElementDirtyFlag["Width"] = 8] = "Width";
+	    ElementDirtyFlag[ElementDirtyFlag["Height"] = 16] = "Height";
+	    ElementDirtyFlag[ElementDirtyFlag["WidthOrHeight"] = 24] = "WidthOrHeight";
+	    ElementDirtyFlag[ElementDirtyFlag["Transform"] = 7] = "Transform";
+	})(ElementDirtyFlag || (ElementDirtyFlag = {}));
+	class AppElement {
+	    constructor(name, parent = null) {
+	        this.id = idGenerator++;
+	        this.name = name || "App Element";
+	        this.lifeCycleFlags = 0;
+	        this.parent = parent || AppElement.Root;
+	        this.children = [];
+	        this.components = [];
+	        if (this.parent) {
+	            this.parent.children.push(this);
+	        }
+	        this.width = 0;
+	        this.height = 0;
+	        this.rotation = 0;
+	        this.dirtyFlags = 0;
+	        this.scale = new vector2_1.Vector2(1, 1);
+	        this.pivot = new vector2_1.Vector2();
+	        this.position = new vector2_1.Vector2();
+	        this.localMatrix = new matrix_1.Matrix();
+	        this.worldMatrix = new matrix_1.Matrix();
+	        this.boundingBox = new bounding_box_1.BoundingBox(this);
+	        //todo don't allow components to be constructed outside of addComponent or this constructor
+	        Runtime.addElement(this);
+	    }
+	    //
+	    // public setPivot(x : number, y : number) : void {
+	    //     this.pivot.x = clamp01(x);
+	    //     this.pivot.y = clamp01(y);
+	    // }
+	    //
+	    getPivot() {
+	        const out = new vector2_1.Vector2();
+	        out.x = this.pivot.x;
+	        out.y = this.pivot.y;
+	        return out;
+	    }
+	    worldToLocal(vector, out) {
+	        this.updateWorldMatrix();
+	        //return Vector2.transformCoordinates(vector, this.worldMatrix.invertNew(Matrix3x3.scratch0), out);
+	        return null;
+	    }
+	    localToWorld(vector, out) {
+	        this.updateWorldMatrix();
+	        // return Vector2.transformCoordinates(vector, this.worldMatrix, out);
+	        return null;
+	    }
+	    getWorldMatrix() {
+	        this.updateWorldMatrix();
+	        // return this.worldMatrix.clone(out || new Matrix3x3());
+	        return this.worldMatrix.clone();
+	    }
+	    updateWorldMatrix() {
+	        //mat 0 = rotation matrix
+	        //mat 1 = scale matrix
+	        //mat 2 = translation matrix
+	        //mat 4 = pivot * scale
+	        //mat 5 = mat4 * rotation
+	        //local world = mat5 * translation
+	        //worldMatrix = parent.getWorldMatrix() * localWorld
+	        const scaling = matrix_1.Matrix.scratch0;
+	        const rotation = matrix_1.Matrix.scratch1;
+	        const translate = matrix_1.Matrix.scratch2;
+	        const rotationAndScale = matrix_1.Matrix.scratch3;
+	        const radians = this.rotation * math_util_1.MathUtil.DegreesToRadians;
+	        quaternion_1.Quaternion.RotationAxis(vector3_1.Vector3.Forward, radians).toRotationMatrix(rotation);
+	        matrix_1.Matrix.CreateScale(this.scale.x, this.scale.y, 1, scaling);
+	        matrix_1.Matrix.CreateTranslation(this.position.x, this.position.y, 0, translate);
+	        matrix_1.Matrix.Multiply(scaling, rotation, rotationAndScale);
+	        matrix_1.Matrix.Multiply(rotationAndScale, translate, this.localMatrix);
+	        if (this.parent) {
+	            matrix_1.Matrix.Multiply(this.localMatrix, this.parent.getWorldMatrix(), this.worldMatrix);
+	        }
+	        else {
+	            this.worldMatrix.copy(this.localMatrix);
+	        }
+	        return this.worldMatrix;
+	    }
+	    getMatrix(out) {
+	        this.updateWorldMatrix();
+	        return this.localMatrix.clone();
+	    }
+	    setScale(scale) {
+	        if (this.scale.equals(scale))
+	            return;
+	        this.scale.x = scale.x;
+	        this.scale.y = scale.y;
+	        this.dirtyFlags |= ElementDirtyFlag.Scale;
+	        Runtime.sendCommand(e_command_type_1.CommandType.SetTransform, this.id);
+	    }
+	    getScale(out) {
+	        return this.scale.clone(out);
+	    }
+	    getWidth() {
+	        return this.width;
+	    }
+	    setWidth(width) {
+	        if (width === this.width)
+	            return;
+	        this.width = width;
+	        //todo get parent layout component and invoke layout
+	        //todo get layout component and invoke layout
+	        //todo use anchor settings
+	        this.dirtyFlags |= ElementDirtyFlag.Width;
+	        Runtime.sendCommand(e_command_type_1.CommandType.SetDimensions, this.id);
+	    }
+	    getHeight() {
+	        return this.height;
+	    }
+	    setHeight(height) {
+	        if (this.height === height)
+	            return;
+	        this.height = height;
+	        this.dirtyFlags |= ElementDirtyFlag.Height;
+	        Runtime.sendCommand(e_command_type_1.CommandType.SetDimensions, this.id);
+	    }
+	    setDimensions(widthOrDimension, height = 0) {
+	        const dimension = widthOrDimension;
+	        if (typeof widthOrDimension === "object") {
+	            if (dimension.width !== void 0) {
+	                this.width = dimension.width;
+	                this.height = dimension.height;
+	            }
+	        }
+	        else {
+	            this.width = widthOrDimension;
+	            this.height = height;
+	        }
+	        this.dirtyFlags |= ElementDirtyFlag.WidthOrHeight;
+	        Runtime.sendCommand(e_command_type_1.CommandType.SetDimensions, this.id);
+	    }
+	    getRotation() {
+	        return this.rotation;
+	    }
+	    setRotation(value) {
+	        if (this.rotation === value)
+	            return;
+	        this.rotation = value;
+	        this.dirtyFlags |= ElementDirtyFlag.Rotation;
+	        Runtime.sendCommand(e_command_type_1.CommandType.SetTransform, this.id);
+	    }
+	    setPosition(position, relativeTo = Space.World) {
+	        this.setPositionValues(position.x, position.y, relativeTo);
+	    }
+	    setPositionValues(x, y, relativeTo = Space.World) {
+	        if (this.parent && relativeTo === Space.World) {
+	            var invertParentWorldMatrix = this.parent.getWorldMatrix().clone();
+	            invertParentWorldMatrix.invert();
+	            var worldPosition = new vector2_1.Vector2(x, y);
+	            const scratch = vector3_1.Vector3.scratch0.set(x, y, 0);
+	            vector3_1.Vector3.TransformCoordinates(scratch, invertParentWorldMatrix, scratch);
+	            this.position.x = scratch.x;
+	            this.position.y = scratch.y;
+	        }
+	        else {
+	            this.position.x = x;
+	            this.position.y = y;
+	        }
+	        this.dirtyFlags |= ElementDirtyFlag.Position;
+	        Runtime.sendCommand(e_command_type_1.CommandType.SetTransform, this.id);
+	    }
+	    getLocalPosition() {
+	        return this.position.clone();
+	    }
+	    getPosition(out) {
+	        this.updateWorldMatrix();
+	        return (out || new vector2_1.Vector2()).set(this.worldMatrix.m[12], this.worldMatrix.m[13]);
+	    }
+	    getBoundingBox() {
+	        this.boundingBox.update();
+	        return this.boundingBox;
+	    }
+	    getAxisAlignedBoundingBox() {
+	        this.boundingBox.update();
+	        return this.boundingBox.getAxisAlignedBoundingBox();
+	    }
+	    setActive(isActive) {
+	        if (this.isEnabled() === isActive)
+	            return;
+	        this.lifeCycleFlags ^= e_lifecycle_flags_1.LifeCycleFlag.Enabled;
+	        if (isActive) {
+	            //on enable
+	        }
+	        else {
+	            //on disable
+	        }
+	    }
+	    enable() {
+	        //Runtime.enable(this);
+	    }
+	    setParent(parent, keepPosition = true) {
+	        if (parent && parent === this.parent)
+	            return;
+	        parent = parent || AppElement.Root;
+	        const oldParent = this.parent;
+	        let currentPosition = this.getPosition();
+	        this.parent = parent;
+	        //todo ancestor check
+	        if (oldParent) {
+	            oldParent.children.remove(this);
+	        }
+	        if (parent) {
+	            this.parent.children.push(this);
+	            //todo position
+	        }
+	        else {
+	            //todo position
+	        }
+	        if (keepPosition) {
+	            this.setPosition(currentPosition);
+	        }
+	        Runtime.setParent(this, parent, oldParent);
+	    }
+	    setSiblingIndex(index) {
+	        const parent = this.parent;
+	        if (!parent)
+	            return false;
+	        const children = this.parent.children;
+	        const currentIndex = children.indexOf(this);
+	        if (index === currentIndex || currentIndex === -1) {
+	            return false;
+	        }
+	        index = util_1.clamp(index, 0, children.length - 1);
+	        children.remove(this);
+	        children.insert(this, index);
+	        Runtime.setSiblingIndex(this, index, currentIndex);
+	        return true;
+	    }
+	    getParent() {
+	        return this.parent;
+	    }
+	    getChildAt(index) {
+	        return this.children[index];
+	    }
+	    getChildCount() {
+	        return this.children.length;
+	    }
+	    removeChild(child) {
+	        if (this.children.remove(child)) {
+	            child.setParent(null);
+	        }
+	    }
+	    getDepth() {
+	        if (this === AppElement.Root)
+	            return 0;
+	        let ptr = this.parent;
+	        let depth = 1;
+	        while (ptr !== AppElement.Root) {
+	            depth++;
+	            ptr = ptr.parent;
+	        }
+	        return depth;
+	    }
+	    //todo component lifecycle
+	    addComponent(componentType) {
+	        const component = new componentType(); //cast to avoid read-only access
+	        component.appElement = this;
+	        this.components.push(component);
+	        Runtime.addComponent(component);
+	        return component;
+	    }
+	    getAllComponents(storage) {
+	        const retn = storage || new Array();
+	        for (let i = 0; i < this.components.length; i++) {
+	            retn.push(this.components[i]);
+	        }
+	        return retn;
+	    }
+	    getComponent(type) {
+	        for (let i = 0; i < this.components.length; i++) {
+	            if (this.components[i] instanceof type) {
+	                return this.components[i]; //why do I need the cast?
+	            }
+	        }
+	        return null;
+	    }
+	    //Returns all components of Type type in the GameObject
+	    getComponents(type, storage) {
+	        const retn = storage || new Array();
+	        for (let i = 0; i < this.components.length; i++) {
+	            if (this.components[i] instanceof type) {
+	                retn.push(this.components[i]);
+	            }
+	        }
+	        return retn;
+	    }
+	    getComponentInChildren(type) {
+	        const cmp = this.getComponent(type);
+	        if (cmp)
+	            return cmp;
+	        const childCount = this.children.length;
+	        for (let i = 0; i < childCount; i++) {
+	            const child = this.children[i];
+	            const cmp = child.getComponent(type);
+	            if (cmp)
+	                return cmp;
+	        }
+	        return null;
+	    }
+	    //Returns all components of Type in the AppElement in it's direct children
+	    getComponentsInChildren(type, storage) {
+	        const retn = this.getComponents(type, storage);
+	        const childCount = this.children.length;
+	        for (let i = 0; i < childCount; i++) {
+	            const child = this.children[i];
+	            child.getComponents(type, retn);
+	        }
+	        return retn;
+	    }
+	    getComponentsInDescendants(type, storage) {
+	        const retn = this.getComponents(type, storage);
+	        const childCount = this.children.length;
+	        for (let i = 0; i < childCount; i++) {
+	            const child = this.children[i];
+	            child.getComponentsInDescendants(type, retn);
+	        }
+	        return retn;
+	    }
+	    getComponentInParent(type) {
+	        if (!this.parent)
+	            return null;
+	        return this.parent.getComponent(type);
+	    }
+	    getComponentsInParent(type, storage) {
+	        if (!this.parent)
+	            return [];
+	        return this.parent.getComponents(type, storage);
+	    }
+	    destroy() {
+	        if (!this.parent)
+	            return; //can't destroy root
+	        this.lifeCycleFlags |= e_lifecycle_flags_1.LifeCycleFlag.Destroyed;
+	        for (let i = 0; i < this.children.length; i++) {
+	            this.children[i].destroy();
+	        }
+	        for (let i = 0; i < this.components.length; i++) {
+	            this.components[i].destroy();
+	        }
+	        if (!this.parent.isDestroyed()) {
+	            this.parent.children.remove(this);
+	            const components = this.parent.components;
+	            for (let i = 0; i < components.length; i++) {
+	                components[i].onChildRemoved(this);
+	            }
+	            const childIds = new Array();
+	            util_1.traverseChildren(this, (child) => {
+	                childIds.push(child.id);
+	            });
+	            Runtime.sendCommand(e_command_type_1.CommandType.Destroy, { id: this.id, childIds });
+	        }
+	        this.components = null;
+	        this.boundingBox = null;
+	        this.children = null;
+	        this.parent = null;
+	    }
+	    destroyFromParent() {
+	        //don't fire handlers n stuff
+	    }
+	    /*** Accessors ***/
+	    isRoot() {
+	        return this === AppElement.Root;
+	    }
+	    isCreated() {
+	        return (this.lifeCycleFlags & e_lifecycle_flags_1.LifeCycleFlag.Created) !== 0;
+	    }
+	    isEnabled() {
+	        return (this.lifeCycleFlags & e_lifecycle_flags_1.LifeCycleFlag.Enabled) !== 0;
+	    }
+	    isDisabled() {
+	        return (this.lifeCycleFlags & e_lifecycle_flags_1.LifeCycleFlag.Enabled) === 0;
+	    }
+	    isMounted() {
+	        return (this.lifeCycleFlags & e_lifecycle_flags_1.LifeCycleFlag.Mounted) !== 0;
+	    }
+	    isDestroyed() {
+	        return (this.lifeCycleFlags & e_lifecycle_flags_1.LifeCycleFlag.Destroyed) !== 0;
+	    }
+	    /*** Helpers ***/
+	    containsPoint(point) {
+	        return false;
+	        // const p = this.getPosition();
+	        // const x = p.x;
+	        // const y = p.y;
+	        // const w = this.width;
+	        // const h = this.height;
+	        // const px = point.x;
+	        // const py = point.y;
+	        // return px >= x && x + w >= px && py >= y && y + h >= py;
+	    }
+	}
+	//this might be backwards
+	//todo account for rotation
+	// public containsRect(rect : Rectangle) : boolean {
+	//     const p = this.getPosition();
+	//     return rect.x + rect.width < (p.x + this.width)
+	//         && (rect.x) > (p.x)
+	//         && (rect.y) > (p.y)
+	//         && (rect.y + rect.height) < (p.y + this.height);
+	// }
+	//
+	// //todo account for rotation -- probably want to use algorithm of overlapping polygons instead
+	// public overlapsRectangle(rect : Rectangle) : boolean {
+	//     const p = this.getPosition();
+	//     const minAx = p.x;
+	//     const minAy = p.y;
+	//     const maxAx = p.x + this.width;
+	//     const maxAy = p.y + this.height;
+	//     const minBx = rect.x;
+	//     const minBy = rect.y;
+	//     const maxBx = rect.x + rect.width;
+	//     const maxBy = rect.y + rect.height;
+	//     const aLeftOfB = maxAx < minBx;
+	//     const aRightOfB = minAx > maxBx;
+	//     const aAboveB = minAy > maxBy;
+	//     const aBelowB = maxAy < minBy;
+	//     return !( aLeftOfB || aRightOfB || aAboveB || aBelowB );
+	// }
+	/*** Static ***/
+	AppElement.Root = null;
+	exports.AppElement = AppElement;
+
+
+/***/ },
+/* 29 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	var LifeCycleFlag;
+	(function (LifeCycleFlag) {
+	    LifeCycleFlag[LifeCycleFlag["Invalid"] = 1] = "Invalid";
+	    LifeCycleFlag[LifeCycleFlag["Created"] = 2] = "Created";
+	    LifeCycleFlag[LifeCycleFlag["Enabled"] = 4] = "Enabled";
+	    LifeCycleFlag[LifeCycleFlag["Disabled"] = 8] = "Disabled";
+	    LifeCycleFlag[LifeCycleFlag["Rendered"] = 16] = "Rendered";
+	    LifeCycleFlag[LifeCycleFlag["Mounted"] = 32] = "Mounted";
+	    LifeCycleFlag[LifeCycleFlag["Destroyed"] = 64] = "Destroyed";
+	    LifeCycleFlag[LifeCycleFlag["Structured"] = 128] = "Structured";
+	})(LifeCycleFlag = exports.LifeCycleFlag || (exports.LifeCycleFlag = {}));
+
+
+/***/ },
+/* 30 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	var CommandType;
+	(function (CommandType) {
+	    CommandType[CommandType["Create"] = 0] = "Create";
+	    CommandType[CommandType["Destroy"] = 1] = "Destroy";
+	    CommandType[CommandType["SetRect"] = 2] = "SetRect";
+	    CommandType[CommandType["SetImage"] = 3] = "SetImage";
+	    CommandType[CommandType["SetDimensions"] = 4] = "SetDimensions";
+	    CommandType[CommandType["SetTransform"] = 5] = "SetTransform";
+	    CommandType[CommandType["SetParent"] = 6] = "SetParent";
+	    CommandType[CommandType["SetSiblingIndex"] = 7] = "SetSiblingIndex";
+	    CommandType[CommandType["PaintBackground"] = 8] = "PaintBackground";
+	    CommandType[CommandType["SetText"] = 9] = "SetText";
+	    CommandType[CommandType["UpdateInput"] = 10] = "UpdateInput";
+	})(CommandType = exports.CommandType || (exports.CommandType = {}));
+
+
+/***/ },
+/* 31 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const vector2_1 = __webpack_require__(17);
+	const rectangle_1 = __webpack_require__(32);
+	const vector3_1 = __webpack_require__(33);
+	const quaternion_1 = __webpack_require__(34);
+	class BoundingBox {
+	    constructor(appElement) {
+	        this.appElement = appElement;
+	        this.topLeft = new vector2_1.Vector2();
+	        this.topRight = new vector2_1.Vector2();
+	        this.bottomLeft = new vector2_1.Vector2();
+	        this.bottomRight = new vector2_1.Vector2();
+	        this.points = [this.topLeft, this.topRight, this.bottomRight, this.bottomLeft];
+	        this.update();
+	    }
+	    update() {
+	        const element = this.appElement;
+	        const wm = element.getWorldMatrix();
+	        const scale = new vector3_1.Vector3();
+	        const rotation = new quaternion_1.Quaternion();
+	        const position = new vector3_1.Vector3();
+	        wm.decompose(scale, rotation, position);
+	        const theta = rotation.toEulerAngles().z;
+	        const pivot = element.getPivot();
+	        const w = element.getWidth() * scale.x;
+	        const h = element.getHeight() * scale.y;
+	        const pivotPoint = new vector2_1.Vector2(pivot.x * w, pivot.y * h);
+	        this.topLeft.set(0, 0).rotateAround(theta, pivotPoint).addVector(position);
+	        this.topRight.set(w, 0).rotateAround(theta, pivotPoint).addVector(position);
+	        this.bottomRight.set(w, h).rotateAround(theta, pivotPoint).addVector(position);
+	        this.bottomLeft.set(0, h).rotateAround(theta, pivotPoint).addVector(position);
+	    }
+	    containsPoint(point) {
+	        const points = this.points;
+	        let c = false;
+	        for (let i = 0, j = points.length - 1; i < points.length; j = i++) {
+	            const pointI = points[i];
+	            const pointJ = points[j];
+	            if (((pointI.y >= point.y) !== (pointJ.y >= point.y)) &&
+	                (point.x <= (pointJ.x - pointI.x) * (point.y - pointI.y) / (pointJ.y - pointI.y) + pointI.x)) {
+	                c = !c;
+	            }
+	        }
+	        return c;
+	    }
+	    getAxisAlignedBoundingBox() {
+	        let minX = this.topLeft.x;
+	        let minY = this.topLeft.y;
+	        let maxX = this.topLeft.x;
+	        let maxY = this.topLeft.y;
+	        for (let i = 0; i < this.points.length; i++) {
+	            const v = this.points[i];
+	            if (v.x > maxX) {
+	                maxX = v.x;
+	            }
+	            if (v.x < minX) {
+	                minX = v.x;
+	            }
+	            if (v.y > maxY) {
+	                maxY = v.y;
+	            }
+	            if (v.y < minY) {
+	                minY = v.y;
+	            }
+	        }
+	        return new rectangle_1.Rectangle().setFromPoints(minX, minY, maxX, maxY);
+	    }
+	}
+	exports.BoundingBox = BoundingBox;
+
+
+/***/ },
+/* 32 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const vector2_1 = __webpack_require__(17);
+	class Rectangle {
+	    constructor(x = 0, y = 0, width = 0, height = 0) {
+	        this.x = x;
+	        this.y = y;
+	        this.width = width;
+	        this.height = height;
+	        this._center = null;
+	        this._min = null;
+	        this._max = null;
+	    }
+	    get centerX() {
+	        return this.x + (this.width * 0.5);
+	    }
+	    get centerY() {
+	        return this.y + (this.height * 0.5);
+	    }
+	    get min() {
+	        if (!this._min)
+	            this._min = new vector2_1.Vector2();
+	        this._min.x = this.x;
+	        this._min.y = this.y;
+	        return this._min;
+	    }
+	    get max() {
+	        if (!this._max)
+	            this._max = new vector2_1.Vector2();
+	        this._max.x = this.x + this.width;
+	        this._max.y = this.y + this.height;
+	        return this._max;
+	    }
+	    get center() {
+	        if (!this._center)
+	            this._center = new vector2_1.Vector2();
+	        this._center.x = this.x + (this.width * 0.5);
+	        this._center.y = this.y + (this.height * 0.5);
+	        return this._center;
+	    }
+	    get outerRadius() {
+	        var min = vector2_1.Vector2.scratch0.set(this.x, this.y);
+	        var max = vector2_1.Vector2.scratch1.set(this.x + this.width, this.y + this.height);
+	        return max.subVector(min).length() * 0.5;
+	    }
+	    setFromPoints(minX, minY, maxX, maxY) {
+	        this.x = minX;
+	        this.y = minY;
+	        this.width = maxX - minX;
+	        this.height = maxY - minY;
+	        return this;
+	    }
+	    containsRectangle(rect) {
+	        return false;
+	    }
+	    overlapsRectangle(rect) {
+	        return false;
+	    }
+	    containsPoint(point) {
+	        return Rectangle.pointInsideRect(point, this);
+	    }
+	    static pointInsideRect(point, rect) {
+	        const x = rect.x;
+	        const y = rect.y;
+	        const w = rect.width;
+	        const h = rect.height;
+	        const px = point.x;
+	        const py = point.y;
+	        return px >= x && x + w >= px && py >= y && y + h >= py;
+	    }
+	    clone() {
+	        return new Rectangle(this.x, this.y, this.width, this.height);
+	    }
+	    copyTo(input) {
+	        input.x = this.x;
+	        input.y = this.y;
+	        input.width = this.width;
+	        input.height = this.height;
+	        return input;
+	    }
+	}
+	Rectangle.Zero = new Rectangle();
+	exports.Rectangle = Rectangle;
+
+
+/***/ },
+/* 33 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const quaternion_1 = __webpack_require__(34);
 	class Vector3 {
 	    constructor(x = 0, y = 0, z = 0) {
 	        this.x = x;
@@ -2940,13 +3828,13 @@
 
 
 /***/ },
-/* 27 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const matrix_1 = __webpack_require__(28);
-	const vector3_1 = __webpack_require__(26);
+	const matrix_1 = __webpack_require__(35);
+	const vector3_1 = __webpack_require__(33);
 	class Quaternion {
 	    constructor(x = 0.0, y = 0.0, z = 0.0, w = 1.0) {
 	        this.x = x;
@@ -3286,15 +4174,15 @@
 
 
 /***/ },
-/* 28 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const math_util_1 = __webpack_require__(29);
-	const quaternion_1 = __webpack_require__(27);
-	const vector3_1 = __webpack_require__(26);
-	const vector4_1 = __webpack_require__(30);
+	const math_util_1 = __webpack_require__(36);
+	const quaternion_1 = __webpack_require__(34);
+	const vector3_1 = __webpack_require__(33);
+	const vector4_1 = __webpack_require__(37);
 	exports.Epsilon = 0.001;
 	class Matrix {
 	    constructor() {
@@ -4123,7 +5011,7 @@
 
 
 /***/ },
-/* 29 */
+/* 36 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -4236,12 +5124,12 @@
 
 
 /***/ },
-/* 30 */
+/* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const vector3_1 = __webpack_require__(26);
+	const vector3_1 = __webpack_require__(33);
 	class Vector4 {
 	    /**
 	     * Creates a Vector4 object from the passed floats.
@@ -4694,897 +5582,13 @@
 
 
 /***/ },
-/* 31 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	class ShadowTree {
-	    constructor(nodeConstructor) {
-	        this.nodeConstructor = nodeConstructor;
-	        this.nodeMap = new Map();
-	        this.rootNodes = [];
-	    }
-	    traverse() {
-	        for (let i = 0; i < this.rootNodes.length; i++) {
-	            if (this.rootNodes[i].traverse()) {
-	                this.rootNodes.removeAt(i);
-	            }
-	        }
-	    }
-	    add(item) {
-	        let currentNode = this.nodeMap.get(item.element);
-	        if (currentNode) {
-	            currentNode.items.push(item);
-	            return;
-	        }
-	        currentNode = new this.nodeConstructor(item);
-	        this.insert(currentNode);
-	    }
-	    remove(item) {
-	        let node = this.nodeMap.get(item.element);
-	        if (!node)
-	            return;
-	        this.nodeMap.delete(item.element);
-	        const rootIdx = this.rootNodes.indexOf(node);
-	        if (rootIdx !== -1) {
-	            this.rootNodes.removeAt(rootIdx);
-	            for (let i = 0; i < node.children.length; i++) {
-	                this.rootNodes.push(node.children[i]);
-	            }
-	            return;
-	        }
-	        const parentNode = this.nodeMap.get(item.element.parent);
-	        if (!parentNode)
-	            return;
-	        const nodeIdx = parentNode.children.indexOf(node);
-	        if (nodeIdx !== -1) {
-	            parentNode.children.removeAt(nodeIdx);
-	        }
-	        for (let i = 0; i < node.children.length; i++) {
-	            parentNode.children.push(node.children[i]);
-	        }
-	    }
-	    insert(treeNode) {
-	        this.nodeMap.set(treeNode.element, treeNode);
-	        const parentTreeNode = this.findParent(treeNode);
-	        if (!parentTreeNode)
-	            return this.insertAtRoot(treeNode);
-	        for (let i = 0; i < parentTreeNode.children.length; i++) {
-	            const childNode = parentTreeNode.children[i];
-	            if (ShadowTree.isDescendant(childNode.element, treeNode.element)) {
-	                treeNode.children.push(childNode);
-	                parentTreeNode.children.splice(i--, 1);
-	            }
-	        }
-	        parentTreeNode.children.push(treeNode);
-	    }
-	    insertAtRoot(treeNode) {
-	        //if any root nodes should be children of this node, remove from root and push to new node
-	        for (let i = 0; i < this.rootNodes.length; i++) {
-	            const node = this.rootNodes[i];
-	            if (ShadowTree.isDescendant(node.element, treeNode.element)) {
-	                treeNode.children.push(node);
-	                this.rootNodes.removeAt(i);
-	            }
-	        }
-	        this.rootNodes.push(treeNode);
-	    }
-	    static isDescendant(possibleChild, parent) {
-	        if (possibleChild.parent === parent)
-	            return true;
-	        let ptr = possibleChild.parent;
-	        while (ptr) {
-	            if (ptr.parent === parent)
-	                return true;
-	            ptr = ptr.parent;
-	        }
-	        return false;
-	    }
-	    findParent(treeNode) {
-	        let ptr = treeNode.element.parent;
-	        while (ptr) {
-	            const node = this.nodeMap.get(ptr);
-	            if (node)
-	                return node;
-	            ptr = ptr.parent;
-	        }
-	        return null;
-	    }
-	}
-	exports.ShadowTree = ShadowTree;
-	class ShadowTreeNode {
-	    constructor(updater) {
-	        this.element = updater.element;
-	        this.children = [];
-	        this.items = [updater];
-	    }
-	}
-	exports.ShadowTreeNode = ShadowTreeNode;
-
-
-/***/ },
-/* 32 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const input_1 = __webpack_require__(24);
-	const app_element_1 = __webpack_require__(33);
-	const runtime_base_1 = __webpack_require__(38);
-	const evt_app_element_parent_changed_1 = __webpack_require__(40);
-	const e_command_type_1 = __webpack_require__(35);
-	const evt_app_element_index_changed_1 = __webpack_require__(41);
-	class RuntimeImpl extends runtime_base_1.RuntimeBase {
-	    constructor() {
-	        super();
-	        this.input = new input_1.Input();
-	        this.rootElementCandidates = [];
-	        this.pendingComponents = [];
-	        this.appElementRegistry = {};
-	        this.commandQueue = [];
-	        this.layoutQueue = [];
-	        self.onmessage = (message) => {
-	            this.onMessage(message);
-	        };
-	    }
-	    getAppElementById(id) {
-	        return this.appElementRegistry[id];
-	    }
-	    postMessage(data) {
-	        self.postMessage(data, void 0);
-	    }
-	    queueLayout(layoutComponent) {
-	        const idx = this.layoutQueue.indexOf(layoutComponent);
-	        //todo this should be sorted top to bottom, use a shadow/skip tree
-	        if (!this.layoutQueue.contains(layoutComponent)) {
-	            this.layoutQueue.push(layoutComponent);
-	        }
-	    }
-	    getScene() {
-	        return this.scene;
-	    }
-	    getAppElementAtPoint(point) {
-	        const childCount = app_element_1.AppElement.Root.getChildCount();
-	        for (let i = 0; i < childCount; i++) {
-	            const hit = this.appElementAtPointStep(app_element_1.AppElement.Root.getChildAt(i), point);
-	            if (hit) {
-	                return hit;
-	            }
-	        }
-	        //if (AppElement.Root.containsPoint(point)) return AppElement.Root;
-	        return null;
-	    }
-	    //todo this could be more optimized
-	    //todo this doesn't handle z-ordering at all
-	    //todo replace with range tree of 4d points http://stackoverflow.com/questions/17651215/storing-rectangles-circles-triangles-in-a-kd-tree
-	    appElementAtPointStep(test, point) {
-	        const childCount = test.getChildCount();
-	        for (let i = 0; i < childCount; i++) {
-	            const hit = this.appElementAtPointStep(test.getChildAt(i), point);
-	            if (hit) {
-	                return hit;
-	            }
-	        }
-	        return test;
-	    }
-	    addElement(appElement) {
-	        this.rootElementCandidates.push(appElement);
-	        //todo remove this when destroying app element
-	        this.appElementRegistry[appElement.id] = appElement;
-	    }
-	    addComponent(component) {
-	        this.pendingComponents.push(component);
-	    }
-	    //todo -- internalize
-	    setParent(appElement, newParent, oldParent) {
-	        const storage = new Array();
-	        if (oldParent) {
-	            oldParent.getAllComponents(storage);
-	            for (let i = 0; i < storage.length; i++) {
-	                storage[i].onChildRemoved(appElement);
-	            }
-	            storage.length = 0;
-	        }
-	        if (newParent) {
-	            newParent.getAllComponents(storage);
-	            for (let i = 0; i < storage.length; i++) {
-	                storage[i].onChildAdded(appElement);
-	            }
-	        }
-	        this.emit(evt_app_element_parent_changed_1.AppElementParentChanged, appElement, newParent, oldParent);
-	        this.sendCommand(e_command_type_1.CommandType.SetParent, { id: appElement.id, parentId: newParent.id });
-	    }
-	    //todo -- internalize
-	    setSiblingIndex(appElement, index, oldIndex) {
-	        this.emit(evt_app_element_index_changed_1.AppElementIndexChanged, appElement, index, oldIndex);
-	        this.sendCommand(e_command_type_1.CommandType.SetSiblingIndex, { id: appElement.id, index });
-	    }
-	    destroyElement(appElement) {
-	        if (appElement.isDestroyed())
-	            return;
-	        appElement.destroy();
-	        // this.emit(AppElementDestroyed, appElement);
-	    }
-	    update(delta) {
-	        // for(let i = 0; i < this.layoutQueue.length; i++) {
-	        //     this.layoutQueue[i].doLayout();
-	        // }
-	    }
-	    getInput() {
-	        return this.input;
-	    }
-	}
-	exports.RuntimeImpl = RuntimeImpl;
-
-
-/***/ },
-/* 33 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const e_lifecycle_flags_1 = __webpack_require__(34);
-	const e_command_type_1 = __webpack_require__(35);
-	const util_1 = __webpack_require__(16);
-	const bounding_box_1 = __webpack_require__(36);
-	const math_util_1 = __webpack_require__(29);
-	const matrix_1 = __webpack_require__(28);
-	const quaternion_1 = __webpack_require__(27);
-	const vector2_1 = __webpack_require__(17);
-	const vector3_1 = __webpack_require__(26);
-	let idGenerator = 0;
-	const scratchVector = new vector2_1.Vector2();
-	var Space;
-	(function (Space) {
-	    Space[Space["Local"] = 0] = "Local";
-	    Space[Space["World"] = 1] = "World";
-	})(Space = exports.Space || (exports.Space = {}));
-	var ElementDirtyFlag;
-	(function (ElementDirtyFlag) {
-	    ElementDirtyFlag[ElementDirtyFlag["Position"] = 1] = "Position";
-	    ElementDirtyFlag[ElementDirtyFlag["Scale"] = 2] = "Scale";
-	    ElementDirtyFlag[ElementDirtyFlag["Rotation"] = 4] = "Rotation";
-	    ElementDirtyFlag[ElementDirtyFlag["Width"] = 8] = "Width";
-	    ElementDirtyFlag[ElementDirtyFlag["Height"] = 16] = "Height";
-	    ElementDirtyFlag[ElementDirtyFlag["WidthOrHeight"] = 24] = "WidthOrHeight";
-	    ElementDirtyFlag[ElementDirtyFlag["Transform"] = 7] = "Transform";
-	})(ElementDirtyFlag || (ElementDirtyFlag = {}));
-	class AppElement {
-	    constructor(name, parent = null) {
-	        this.id = idGenerator++;
-	        this.name = name || "App Element";
-	        this.lifeCycleFlags = 0;
-	        this.parent = parent || AppElement.Root;
-	        this.children = [];
-	        this.components = [];
-	        if (this.parent) {
-	            this.parent.children.push(this);
-	        }
-	        this.width = 0;
-	        this.height = 0;
-	        this.rotation = 0;
-	        this.dirtyFlags = 0;
-	        this.scale = new vector2_1.Vector2(1, 1);
-	        this.pivot = new vector2_1.Vector2();
-	        this.position = new vector2_1.Vector2();
-	        this.localMatrix = new matrix_1.Matrix();
-	        this.worldMatrix = new matrix_1.Matrix();
-	        this.boundingBox = new bounding_box_1.BoundingBox(this);
-	        //todo don't allow components to be constructed outside of addComponent or this constructor
-	        Runtime.addElement(this);
-	    }
-	    //
-	    // public setPivot(x : number, y : number) : void {
-	    //     this.pivot.x = clamp01(x);
-	    //     this.pivot.y = clamp01(y);
-	    // }
-	    //
-	    getPivot() {
-	        const out = new vector2_1.Vector2();
-	        out.x = this.pivot.x;
-	        out.y = this.pivot.y;
-	        return out;
-	    }
-	    worldToLocal(vector, out) {
-	        this.updateWorldMatrix();
-	        //return Vector2.transformCoordinates(vector, this.worldMatrix.invertNew(Matrix3x3.scratch0), out);
-	        return null;
-	    }
-	    localToWorld(vector, out) {
-	        this.updateWorldMatrix();
-	        // return Vector2.transformCoordinates(vector, this.worldMatrix, out);
-	        return null;
-	    }
-	    getWorldMatrix() {
-	        this.updateWorldMatrix();
-	        // return this.worldMatrix.clone(out || new Matrix3x3());
-	        return this.worldMatrix.clone();
-	    }
-	    updateWorldMatrix() {
-	        //mat 0 = rotation matrix
-	        //mat 1 = scale matrix
-	        //mat 2 = translation matrix
-	        //mat 4 = pivot * scale
-	        //mat 5 = mat4 * rotation
-	        //local world = mat5 * translation
-	        //worldMatrix = parent.getWorldMatrix() * localWorld
-	        const scaling = matrix_1.Matrix.scratch0;
-	        const rotation = matrix_1.Matrix.scratch1;
-	        const translate = matrix_1.Matrix.scratch2;
-	        const rotationAndScale = matrix_1.Matrix.scratch3;
-	        const radians = this.rotation * math_util_1.MathUtil.DegreesToRadians;
-	        quaternion_1.Quaternion.RotationAxis(vector3_1.Vector3.Forward, radians).toRotationMatrix(rotation);
-	        matrix_1.Matrix.CreateScale(this.scale.x, this.scale.y, 1, scaling);
-	        matrix_1.Matrix.CreateTranslation(this.position.x, this.position.y, 0, translate);
-	        matrix_1.Matrix.Multiply(scaling, rotation, rotationAndScale);
-	        matrix_1.Matrix.Multiply(rotationAndScale, translate, this.localMatrix);
-	        if (this.parent) {
-	            matrix_1.Matrix.Multiply(this.localMatrix, this.parent.getWorldMatrix(), this.worldMatrix);
-	        }
-	        else {
-	            this.worldMatrix.copy(this.localMatrix);
-	        }
-	        return this.worldMatrix;
-	    }
-	    getMatrix(out) {
-	        this.updateWorldMatrix();
-	        return this.localMatrix.clone();
-	    }
-	    setScale(scale) {
-	        if (this.scale.equals(scale))
-	            return;
-	        this.scale.x = scale.x;
-	        this.scale.y = scale.y;
-	        this.dirtyFlags |= ElementDirtyFlag.Scale;
-	        Runtime.sendCommand(e_command_type_1.CommandType.SetTransform, this.id);
-	    }
-	    getScale(out) {
-	        return this.scale.clone(out);
-	    }
-	    getWidth() {
-	        return this.width;
-	    }
-	    setWidth(width) {
-	        if (width === this.width)
-	            return;
-	        this.width = width;
-	        //todo get parent layout component and invoke layout
-	        //todo get layout component and invoke layout
-	        //todo use anchor settings
-	        this.dirtyFlags |= ElementDirtyFlag.Width;
-	        Runtime.sendCommand(e_command_type_1.CommandType.SetDimensions, this.id);
-	    }
-	    getHeight() {
-	        return this.height;
-	    }
-	    setHeight(height) {
-	        if (this.height === height)
-	            return;
-	        this.height = height;
-	        this.dirtyFlags |= ElementDirtyFlag.Height;
-	        Runtime.sendCommand(e_command_type_1.CommandType.SetDimensions, this.id);
-	    }
-	    setDimensions(widthOrDimension, height = 0) {
-	        const dimension = widthOrDimension;
-	        if (typeof widthOrDimension === "object") {
-	            if (dimension.width !== void 0) {
-	                this.width = dimension.width;
-	                this.height = dimension.height;
-	            }
-	        }
-	        else {
-	            this.width = widthOrDimension;
-	            this.height = height;
-	        }
-	        this.dirtyFlags |= ElementDirtyFlag.WidthOrHeight;
-	        Runtime.sendCommand(e_command_type_1.CommandType.SetDimensions, this.id);
-	    }
-	    getRotation() {
-	        return this.rotation;
-	    }
-	    setRotation(value) {
-	        if (this.rotation === value)
-	            return;
-	        this.rotation = value;
-	        this.dirtyFlags |= ElementDirtyFlag.Rotation;
-	        Runtime.sendCommand(e_command_type_1.CommandType.SetTransform, this.id);
-	    }
-	    setPosition(position, relativeTo = Space.World) {
-	        this.setPositionValues(position.x, position.y, relativeTo);
-	    }
-	    setPositionValues(x, y, relativeTo = Space.World) {
-	        if (this.parent && relativeTo === Space.World) {
-	            var invertParentWorldMatrix = this.parent.getWorldMatrix().clone();
-	            invertParentWorldMatrix.invert();
-	            var worldPosition = new vector2_1.Vector2(x, y);
-	            const scratch = vector3_1.Vector3.scratch0.set(x, y, 0);
-	            vector3_1.Vector3.TransformCoordinates(scratch, invertParentWorldMatrix, scratch);
-	            this.position.x = scratch.x;
-	            this.position.y = scratch.y;
-	        }
-	        else {
-	            this.position.x = x;
-	            this.position.y = y;
-	        }
-	        this.dirtyFlags |= ElementDirtyFlag.Position;
-	        Runtime.sendCommand(e_command_type_1.CommandType.SetTransform, this.id);
-	    }
-	    getLocalPosition() {
-	        return this.position.clone();
-	    }
-	    getPosition(out) {
-	        this.updateWorldMatrix();
-	        return (out || new vector2_1.Vector2()).set(this.worldMatrix.m[12], this.worldMatrix.m[13]);
-	    }
-	    getBoundingBox() {
-	        this.boundingBox.update();
-	        return this.boundingBox;
-	    }
-	    getAxisAlignedBoundingBox() {
-	        this.boundingBox.update();
-	        return this.boundingBox.getAxisAlignedBoundingBox();
-	    }
-	    setActive(isActive) {
-	        if (this.isEnabled() === isActive)
-	            return;
-	        this.lifeCycleFlags ^= e_lifecycle_flags_1.LifeCycleFlag.Enabled;
-	        if (isActive) {
-	            //on enable
-	        }
-	        else {
-	            //on disable
-	        }
-	    }
-	    enable() {
-	        //Runtime.enable(this);
-	    }
-	    setParent(parent, keepPosition = true) {
-	        if (parent && parent === this.parent)
-	            return;
-	        parent = parent || AppElement.Root;
-	        const oldParent = this.parent;
-	        let currentPosition = this.getPosition();
-	        this.parent = parent;
-	        //todo ancestor check
-	        if (oldParent) {
-	            oldParent.children.remove(this);
-	        }
-	        if (parent) {
-	            this.parent.children.push(this);
-	            //todo position
-	        }
-	        else {
-	            //todo position
-	        }
-	        if (keepPosition) {
-	            this.setPosition(currentPosition);
-	        }
-	        Runtime.setParent(this, parent, oldParent);
-	    }
-	    setSiblingIndex(index) {
-	        const parent = this.parent;
-	        if (!parent)
-	            return false;
-	        const children = this.parent.children;
-	        const currentIndex = children.indexOf(this);
-	        if (index === currentIndex || currentIndex === -1) {
-	            return false;
-	        }
-	        index = util_1.clamp(index, 0, children.length - 1);
-	        children.remove(this);
-	        children.insert(this, index);
-	        Runtime.setSiblingIndex(this, index, currentIndex);
-	        return true;
-	    }
-	    getParent() {
-	        return this.parent;
-	    }
-	    getChildAt(index) {
-	        return this.children[index];
-	    }
-	    getChildCount() {
-	        return this.children.length;
-	    }
-	    removeChild(child) {
-	        if (this.children.remove(child)) {
-	            child.setParent(null);
-	        }
-	    }
-	    getDepth() {
-	        if (this === AppElement.Root)
-	            return 0;
-	        let ptr = this.parent;
-	        let depth = 1;
-	        while (ptr !== AppElement.Root) {
-	            depth++;
-	            ptr = ptr.parent;
-	        }
-	        return depth;
-	    }
-	    //todo component lifecycle
-	    addComponent(componentType) {
-	        const component = new componentType(); //cast to avoid read-only access
-	        component.appElement = this;
-	        this.components.push(component);
-	        Runtime.addComponent(component);
-	        return component;
-	    }
-	    getAllComponents(storage) {
-	        const retn = storage || new Array();
-	        for (let i = 0; i < this.components.length; i++) {
-	            retn.push(this.components[i]);
-	        }
-	        return retn;
-	    }
-	    getComponent(type) {
-	        for (let i = 0; i < this.components.length; i++) {
-	            if (this.components[i] instanceof type) {
-	                return this.components[i]; //why do I need the cast?
-	            }
-	        }
-	        return null;
-	    }
-	    //Returns all components of Type type in the GameObject
-	    getComponents(type, storage) {
-	        const retn = storage || new Array();
-	        for (let i = 0; i < this.components.length; i++) {
-	            if (this.components[i] instanceof type) {
-	                retn.push(this.components[i]);
-	            }
-	        }
-	        return retn;
-	    }
-	    getComponentInChildren(type) {
-	        const cmp = this.getComponent(type);
-	        if (cmp)
-	            return cmp;
-	        const childCount = this.children.length;
-	        for (let i = 0; i < childCount; i++) {
-	            const child = this.children[i];
-	            const cmp = child.getComponent(type);
-	            if (cmp)
-	                return cmp;
-	        }
-	        return null;
-	    }
-	    //Returns all components of Type in the AppElement in it's direct children
-	    getComponentsInChildren(type, storage) {
-	        const retn = this.getComponents(type, storage);
-	        const childCount = this.children.length;
-	        for (let i = 0; i < childCount; i++) {
-	            const child = this.children[i];
-	            child.getComponents(type, retn);
-	        }
-	        return retn;
-	    }
-	    getComponentsInDescendants(type, storage) {
-	        const retn = this.getComponents(type, storage);
-	        const childCount = this.children.length;
-	        for (let i = 0; i < childCount; i++) {
-	            const child = this.children[i];
-	            child.getComponentsInDescendants(type, retn);
-	        }
-	        return retn;
-	    }
-	    getComponentInParent(type) {
-	        if (!this.parent)
-	            return null;
-	        return this.parent.getComponent(type);
-	    }
-	    getComponentsInParent(type, storage) {
-	        if (!this.parent)
-	            return [];
-	        return this.parent.getComponents(type, storage);
-	    }
-	    destroy() {
-	        if (!this.parent)
-	            return; //can't destroy root
-	        this.lifeCycleFlags |= e_lifecycle_flags_1.LifeCycleFlag.Destroyed;
-	        for (let i = 0; i < this.children.length; i++) {
-	            this.children[i].destroy();
-	        }
-	        for (let i = 0; i < this.components.length; i++) {
-	            this.components[i].destroy();
-	        }
-	        if (!this.parent.isDestroyed()) {
-	            this.parent.children.remove(this);
-	            const components = this.parent.components;
-	            for (let i = 0; i < components.length; i++) {
-	                components[i].onChildRemoved(this);
-	            }
-	            const childIds = new Array();
-	            util_1.traverseChildren(this, (child) => {
-	                childIds.push(child.id);
-	            });
-	            Runtime.sendCommand(e_command_type_1.CommandType.Destroy, { id: this.id, childIds });
-	        }
-	        this.components = null;
-	        this.boundingBox = null;
-	        this.children = null;
-	        this.parent = null;
-	    }
-	    destroyFromParent() {
-	        //don't fire handlers n stuff
-	    }
-	    /*** Accessors ***/
-	    isRoot() {
-	        return this === AppElement.Root;
-	    }
-	    isCreated() {
-	        return (this.lifeCycleFlags & e_lifecycle_flags_1.LifeCycleFlag.Created) !== 0;
-	    }
-	    isEnabled() {
-	        return (this.lifeCycleFlags & e_lifecycle_flags_1.LifeCycleFlag.Enabled) !== 0;
-	    }
-	    isDisabled() {
-	        return (this.lifeCycleFlags & e_lifecycle_flags_1.LifeCycleFlag.Enabled) === 0;
-	    }
-	    isMounted() {
-	        return (this.lifeCycleFlags & e_lifecycle_flags_1.LifeCycleFlag.Mounted) !== 0;
-	    }
-	    isDestroyed() {
-	        return (this.lifeCycleFlags & e_lifecycle_flags_1.LifeCycleFlag.Destroyed) !== 0;
-	    }
-	    /*** Helpers ***/
-	    containsPoint(point) {
-	        return false;
-	        // const p = this.getPosition();
-	        // const x = p.x;
-	        // const y = p.y;
-	        // const w = this.width;
-	        // const h = this.height;
-	        // const px = point.x;
-	        // const py = point.y;
-	        // return px >= x && x + w >= px && py >= y && y + h >= py;
-	    }
-	}
-	//this might be backwards
-	//todo account for rotation
-	// public containsRect(rect : Rectangle) : boolean {
-	//     const p = this.getPosition();
-	//     return rect.x + rect.width < (p.x + this.width)
-	//         && (rect.x) > (p.x)
-	//         && (rect.y) > (p.y)
-	//         && (rect.y + rect.height) < (p.y + this.height);
-	// }
-	//
-	// //todo account for rotation -- probably want to use algorithm of overlapping polygons instead
-	// public overlapsRectangle(rect : Rectangle) : boolean {
-	//     const p = this.getPosition();
-	//     const minAx = p.x;
-	//     const minAy = p.y;
-	//     const maxAx = p.x + this.width;
-	//     const maxAy = p.y + this.height;
-	//     const minBx = rect.x;
-	//     const minBy = rect.y;
-	//     const maxBx = rect.x + rect.width;
-	//     const maxBy = rect.y + rect.height;
-	//     const aLeftOfB = maxAx < minBx;
-	//     const aRightOfB = minAx > maxBx;
-	//     const aAboveB = minAy > maxBy;
-	//     const aBelowB = maxAy < minBy;
-	//     return !( aLeftOfB || aRightOfB || aAboveB || aBelowB );
-	// }
-	/*** Static ***/
-	AppElement.Root = null;
-	exports.AppElement = AppElement;
-
-
-/***/ },
-/* 34 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	var LifeCycleFlag;
-	(function (LifeCycleFlag) {
-	    LifeCycleFlag[LifeCycleFlag["Invalid"] = 1] = "Invalid";
-	    LifeCycleFlag[LifeCycleFlag["Created"] = 2] = "Created";
-	    LifeCycleFlag[LifeCycleFlag["Enabled"] = 4] = "Enabled";
-	    LifeCycleFlag[LifeCycleFlag["Disabled"] = 8] = "Disabled";
-	    LifeCycleFlag[LifeCycleFlag["Rendered"] = 16] = "Rendered";
-	    LifeCycleFlag[LifeCycleFlag["Mounted"] = 32] = "Mounted";
-	    LifeCycleFlag[LifeCycleFlag["Destroyed"] = 64] = "Destroyed";
-	    LifeCycleFlag[LifeCycleFlag["Structured"] = 128] = "Structured";
-	})(LifeCycleFlag = exports.LifeCycleFlag || (exports.LifeCycleFlag = {}));
-
-
-/***/ },
-/* 35 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	var CommandType;
-	(function (CommandType) {
-	    CommandType[CommandType["Create"] = 0] = "Create";
-	    CommandType[CommandType["Destroy"] = 1] = "Destroy";
-	    CommandType[CommandType["SetRect"] = 2] = "SetRect";
-	    CommandType[CommandType["SetImage"] = 3] = "SetImage";
-	    CommandType[CommandType["SetDimensions"] = 4] = "SetDimensions";
-	    CommandType[CommandType["SetTransform"] = 5] = "SetTransform";
-	    CommandType[CommandType["SetParent"] = 6] = "SetParent";
-	    CommandType[CommandType["SetSiblingIndex"] = 7] = "SetSiblingIndex";
-	    CommandType[CommandType["PaintBackground"] = 8] = "PaintBackground";
-	    CommandType[CommandType["SetText"] = 9] = "SetText";
-	    CommandType[CommandType["UpdateInput"] = 10] = "UpdateInput";
-	})(CommandType = exports.CommandType || (exports.CommandType = {}));
-
-
-/***/ },
-/* 36 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const vector2_1 = __webpack_require__(17);
-	const rectangle_1 = __webpack_require__(37);
-	const vector3_1 = __webpack_require__(26);
-	const quaternion_1 = __webpack_require__(27);
-	class BoundingBox {
-	    constructor(appElement) {
-	        this.appElement = appElement;
-	        this.topLeft = new vector2_1.Vector2();
-	        this.topRight = new vector2_1.Vector2();
-	        this.bottomLeft = new vector2_1.Vector2();
-	        this.bottomRight = new vector2_1.Vector2();
-	        this.points = [this.topLeft, this.topRight, this.bottomRight, this.bottomLeft];
-	        this.update();
-	    }
-	    update() {
-	        const element = this.appElement;
-	        const wm = element.getWorldMatrix();
-	        const scale = new vector3_1.Vector3();
-	        const rotation = new quaternion_1.Quaternion();
-	        const position = new vector3_1.Vector3();
-	        wm.decompose(scale, rotation, position);
-	        const theta = rotation.toEulerAngles().z;
-	        const pivot = element.getPivot();
-	        const w = element.getWidth() * scale.x;
-	        const h = element.getHeight() * scale.y;
-	        const pivotPoint = new vector2_1.Vector2(pivot.x * w, pivot.y * h);
-	        this.topLeft.set(0, 0).rotateAround(theta, pivotPoint).addVector(position);
-	        this.topRight.set(w, 0).rotateAround(theta, pivotPoint).addVector(position);
-	        this.bottomRight.set(w, h).rotateAround(theta, pivotPoint).addVector(position);
-	        this.bottomLeft.set(0, h).rotateAround(theta, pivotPoint).addVector(position);
-	    }
-	    containsPoint(point) {
-	        const points = this.points;
-	        let c = false;
-	        for (let i = 0, j = points.length - 1; i < points.length; j = i++) {
-	            const pointI = points[i];
-	            const pointJ = points[j];
-	            if (((pointI.y >= point.y) !== (pointJ.y >= point.y)) &&
-	                (point.x <= (pointJ.x - pointI.x) * (point.y - pointI.y) / (pointJ.y - pointI.y) + pointI.x)) {
-	                c = !c;
-	            }
-	        }
-	        return c;
-	    }
-	    getAxisAlignedBoundingBox() {
-	        let minX = this.topLeft.x;
-	        let minY = this.topLeft.y;
-	        let maxX = this.topLeft.x;
-	        let maxY = this.topLeft.y;
-	        for (let i = 0; i < this.points.length; i++) {
-	            const v = this.points[i];
-	            if (v.x > maxX) {
-	                maxX = v.x;
-	            }
-	            if (v.x < minX) {
-	                minX = v.x;
-	            }
-	            if (v.y > maxY) {
-	                maxY = v.y;
-	            }
-	            if (v.y < minY) {
-	                minY = v.y;
-	            }
-	        }
-	        return new rectangle_1.Rectangle().setFromPoints(minX, minY, maxX, maxY);
-	    }
-	}
-	exports.BoundingBox = BoundingBox;
-
-
-/***/ },
-/* 37 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const vector2_1 = __webpack_require__(17);
-	class Rectangle {
-	    constructor(x = 0, y = 0, width = 0, height = 0) {
-	        this.x = x;
-	        this.y = y;
-	        this.width = width;
-	        this.height = height;
-	        this._center = null;
-	        this._min = null;
-	        this._max = null;
-	    }
-	    get centerX() {
-	        return this.x + (this.width * 0.5);
-	    }
-	    get centerY() {
-	        return this.y + (this.height * 0.5);
-	    }
-	    get min() {
-	        if (!this._min)
-	            this._min = new vector2_1.Vector2();
-	        this._min.x = this.x;
-	        this._min.y = this.y;
-	        return this._min;
-	    }
-	    get max() {
-	        if (!this._max)
-	            this._max = new vector2_1.Vector2();
-	        this._max.x = this.x + this.width;
-	        this._max.y = this.y + this.height;
-	        return this._max;
-	    }
-	    get center() {
-	        if (!this._center)
-	            this._center = new vector2_1.Vector2();
-	        this._center.x = this.x + (this.width * 0.5);
-	        this._center.y = this.y + (this.height * 0.5);
-	        return this._center;
-	    }
-	    get outerRadius() {
-	        var min = vector2_1.Vector2.scratch0.set(this.x, this.y);
-	        var max = vector2_1.Vector2.scratch1.set(this.x + this.width, this.y + this.height);
-	        return max.subVector(min).length() * 0.5;
-	    }
-	    setFromPoints(minX, minY, maxX, maxY) {
-	        this.x = minX;
-	        this.y = minY;
-	        this.width = maxX - minX;
-	        this.height = maxY - minY;
-	        return this;
-	    }
-	    containsRectangle(rect) {
-	        return false;
-	    }
-	    overlapsRectangle(rect) {
-	        return false;
-	    }
-	    containsPoint(point) {
-	        return Rectangle.pointInsideRect(point, this);
-	    }
-	    static pointInsideRect(point, rect) {
-	        const x = rect.x;
-	        const y = rect.y;
-	        const w = rect.width;
-	        const h = rect.height;
-	        const px = point.x;
-	        const py = point.y;
-	        return px >= x && x + w >= px && py >= y && y + h >= py;
-	    }
-	    clone() {
-	        return new Rectangle(this.x, this.y, this.width, this.height);
-	    }
-	    copyTo(input) {
-	        input.x = this.x;
-	        input.y = this.y;
-	        input.width = this.width;
-	        input.height = this.height;
-	        return input;
-	    }
-	}
-	Rectangle.Zero = new Rectangle();
-	exports.Rectangle = Rectangle;
-
-
-/***/ },
 /* 38 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const e_command_type_1 = __webpack_require__(35);
+	const e_command_type_1 = __webpack_require__(30);
 	const event_emitter_1 = __webpack_require__(39);
 	const object_pool_1 = __webpack_require__(11);
 	class RuntimeCommand {
@@ -5798,7 +5802,7 @@
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
 	const TEMP_ANNOTATION_1 = __webpack_require__(43);
-	const e_lifecycle_flags_1 = __webpack_require__(34);
+	const e_lifecycle_flags_1 = __webpack_require__(29);
 	let Component = Component_1 = class Component {
 	    constructor() {
 	        this.lifeCycleFlags = e_lifecycle_flags_1.LifeCycleFlag.Enabled;
@@ -6363,7 +6367,7 @@
 	const tslib_1 = __webpack_require__(4);
 	const component_1 = __webpack_require__(42);
 	const color_1 = __webpack_require__(53);
-	const e_command_type_1 = __webpack_require__(35);
+	const e_command_type_1 = __webpack_require__(30);
 	const expose_as_1 = __webpack_require__(54);
 	const cerialize_1 = __webpack_require__(55);
 	let BackgroundComponent = class BackgroundComponent extends component_1.Component {
@@ -7250,7 +7254,7 @@
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const runtime_base_1 = __webpack_require__(38);
 	const browser_input_1 = __webpack_require__(23);
-	const e_command_type_1 = __webpack_require__(35);
+	const e_command_type_1 = __webpack_require__(30);
 	class BrowserRuntimeImpl extends runtime_base_1.RuntimeBase {
 	    constructor(codeurl, mountTarget = null) {
 	        super();
@@ -7979,7 +7983,7 @@
 	const evt_app_element_created_1 = __webpack_require__(21);
 	const element_renderer_1 = __webpack_require__(7);
 	const editor_window_element_1 = __webpack_require__(73);
-	const app_element_1 = __webpack_require__(33);
+	const app_element_1 = __webpack_require__(28);
 	const evt_app_element_parent_changed_1 = __webpack_require__(40);
 	const drag_hierarchy_item_1 = __webpack_require__(69);
 	const vector2_1 = __webpack_require__(17);
@@ -8873,7 +8877,7 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const app_element_1 = __webpack_require__(33);
+	const app_element_1 = __webpack_require__(28);
 	const text_component_1 = __webpack_require__(80);
 	const panel_component_1 = __webpack_require__(81);
 	const image_component_1 = __webpack_require__(82);
@@ -8974,7 +8978,7 @@
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
 	const component_1 = __webpack_require__(42);
-	const e_command_type_1 = __webpack_require__(35);
+	const e_command_type_1 = __webpack_require__(30);
 	const ui_component_1 = __webpack_require__(76);
 	let TextComponent = class TextComponent extends ui_component_1.UIComponent {
 	    constructor() {
@@ -9082,7 +9086,7 @@
 	const ui_component_1 = __webpack_require__(76);
 	const expose_as_1 = __webpack_require__(54);
 	const component_1 = __webpack_require__(42);
-	const e_command_type_1 = __webpack_require__(35);
+	const e_command_type_1 = __webpack_require__(30);
 	let ImageComponent = class ImageComponent extends ui_component_1.UIComponent {
 	    setImageAsync(image) {
 	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
@@ -9809,7 +9813,7 @@
 	const editor_html_element_1 = __webpack_require__(18);
 	const inspector_row_1 = __webpack_require__(94);
 	const binding_1 = __webpack_require__(13);
-	const app_element_1 = __webpack_require__(33);
+	const app_element_1 = __webpack_require__(28);
 	const number_input_1 = __webpack_require__(103);
 	const inline_field_1 = __webpack_require__(105);
 	const editor_theme_1 = __webpack_require__(63);
@@ -9878,7 +9882,7 @@
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const editor_input_1 = __webpack_require__(93);
 	const e_keycode_1 = __webpack_require__(104);
-	const math_util_1 = __webpack_require__(29);
+	const math_util_1 = __webpack_require__(36);
 	class NumberInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return {
@@ -10635,7 +10639,7 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const app_element_1 = __webpack_require__(33);
+	const app_element_1 = __webpack_require__(28);
 	const asset_1 = __webpack_require__(46);
 	class PrefabAsset extends asset_1.Asset {
 	    constructor(filePath) {
@@ -10737,11 +10741,11 @@
 	const scene_meta_bar_1 = __webpack_require__(117);
 	const stage_background_1 = __webpack_require__(119);
 	const breakpoint_1 = __webpack_require__(118);
-	const app_element_1 = __webpack_require__(33);
+	const app_element_1 = __webpack_require__(28);
 	const vector2_1 = __webpack_require__(17);
 	const stage_foreground_1 = __webpack_require__(120);
 	const util_1 = __webpack_require__(16);
-	const rect_tool_1 = __webpack_require__(121);
+	const rect_tool_1 = __webpack_require__(127);
 	const editor_element_annotations_1 = __webpack_require__(74);
 	const menu_setup_1 = __webpack_require__(79);
 	class StageWindow extends editor_window_element_1.EditorWindowElement {
@@ -10831,6 +10835,63 @@
 	    editor_element_annotations_1.onRightClick
 	], StageWindow.prototype, "onContextClick", null);
 	exports.StageWindow = StageWindow;
+	/*
+
+
+	    this.stateChart = new StateChart(function(state: StateFn, event : StateChartEvent<T>) {
+	        const chart = this;
+	        const state = this.state;
+	        const event = this.event;
+	        //this.getConfiguration();
+	        //this.isIn();
+	        //this.getActiveStateId();
+	        //this.trigger();
+	        //this.goTo();
+	        //this.state();
+	        //this.event();
+	        //this.destructure();
+	        EditorRuntime.on(Event, () => trigger(eventType));
+	        EditorRuntime.on(OtherEvent, () => this.trigger(chartEvent, data));
+
+	        event(SelectAppElement, () => { goTo("Selected"); });
+
+	        event(StageChartEvent.ToolChanged, () => {
+	            goTo();
+	        });
+
+	        state("Unselected", function() {
+
+	        });
+
+	        state.parallel();
+
+	        state.history();
+
+	        state("Selected", function() {
+
+	            state("SingleSelection, SingleSelectionBehavior, function() {
+
+	                state("RectTool", RectToolBehavior);
+
+	                state("RotationTool", RotationToolBehavior);
+
+	                event(AppEventType, "TransitionState", guardFunction);
+
+	            });
+
+	            state("MultipleSelection", MultipleSelectionBehavior);
+
+
+	            event(DeselectAppElement, () => {  });
+
+	            this.chart.trigger(StageEvent.RectToolSelected);
+
+	        });
+
+
+	    });
+
+	 */
 	createStyleSheet(`<style>
 	        
 	.stage-window {
@@ -11029,10 +11090,10 @@
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const editor_html_element_1 = __webpack_require__(18);
-	const math_util_1 = __webpack_require__(29);
+	const math_util_1 = __webpack_require__(36);
 	const vector2_1 = __webpack_require__(17);
-	const triangle_1 = __webpack_require__(176);
-	const shape_container_1 = __webpack_require__(177);
+	const triangle_1 = __webpack_require__(121);
+	const shape_container_1 = __webpack_require__(126);
 	class StageForeground extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "canvas", classList: "overlay-canvas" };
@@ -11108,9 +11169,337 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const scene_tool_1 = __webpack_require__(122);
+	const shape_1 = __webpack_require__(122);
+	const vector2_1 = __webpack_require__(17);
+	const polygon_1 = __webpack_require__(125);
+	class Triangle extends shape_1.Shape {
+	    constructor(p1, p2, p3, style) {
+	        super(style);
+	        this.points.push(p1, p2, p3);
+	    }
+	    render(gfx) {
+	        gfx.beginFill(this.style.getFillColor());
+	        const position = this.getPosition(vector2_1.Vector2.scratch0);
+	        const rotation = this.rotation.getRotationZ();
+	        const p1 = this.points[0].clone(vector2_1.Vector2.scratch1).addValues(0, 10).rotateAround(rotation, vector2_1.Vector2.Zero).addVector(position);
+	        const p2 = this.points[1].clone(vector2_1.Vector2.scratch2).addValues(0, 10).rotateAround(rotation, vector2_1.Vector2.Zero).addVector(position);
+	        const p3 = this.points[2].clone(vector2_1.Vector2.scratch3).addValues(0, 10).rotateAround(rotation, vector2_1.Vector2.Zero).addVector(position);
+	        gfx.lineStyle(1, this.style.getLineColor());
+	        gfx.moveTo(p1.x, p1.y);
+	        gfx.lineTo(p2.x, p2.y);
+	        gfx.lineTo(p3.x, p3.y);
+	        gfx.lineTo(p1.x, p1.y);
+	        gfx.endFill();
+	    }
+	    containsPoint(point) {
+	        return polygon_1.Polygon.contains(this.points, point);
+	    }
+	}
+	exports.Triangle = Triangle;
+
+
+/***/ },
+/* 122 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const transformable_1 = __webpack_require__(123);
+	const pixi_style_1 = __webpack_require__(124);
+	class Shape extends transformable_1.Transformable {
+	    constructor(style) {
+	        super();
+	        this.style = style || pixi_style_1.PixiStyle.Inherit;
+	        this.points = [];
+	    }
+	    beginRender(gfx) { }
+	    finishRender(gfx) { }
+	}
+	exports.Shape = Shape;
+
+
+/***/ },
+/* 123 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const matrix_1 = __webpack_require__(35);
+	const vector3_1 = __webpack_require__(33);
+	const quaternion_1 = __webpack_require__(34);
+	const app_element_1 = __webpack_require__(28);
+	const vector2_1 = __webpack_require__(17);
+	const math_util_1 = __webpack_require__(36);
+	class Transformable {
+	    constructor() {
+	        this.dirty = true;
+	        this.parent = null;
+	        this.children = [];
+	        this.position = new vector2_1.Vector2();
+	        this.rotation = new quaternion_1.Quaternion();
+	        this.scale = new vector2_1.Vector2();
+	        this.localMatrix = new matrix_1.Matrix();
+	        this.worldMatrix = new matrix_1.Matrix();
+	    }
+	    getWorldMatrix(out) {
+	        this.updateWorldMatrix();
+	        return this.worldMatrix.clone(out);
+	    }
+	    updateWorldMatrix() {
+	        if (!this.isDirty())
+	            return;
+	        const scaling = matrix_1.Matrix.scratch0;
+	        const rotation = matrix_1.Matrix.scratch1;
+	        const translate = matrix_1.Matrix.scratch2;
+	        const rotationAndScale = matrix_1.Matrix.scratch3;
+	        this.rotation.toRotationMatrix(rotation);
+	        matrix_1.Matrix.CreateScale(this.scale.x, this.scale.y, 1, scaling);
+	        matrix_1.Matrix.CreateTranslation(this.position.x, this.position.y, 0, translate);
+	        matrix_1.Matrix.Multiply(scaling, rotation, rotationAndScale);
+	        matrix_1.Matrix.Multiply(rotationAndScale, translate, this.localMatrix);
+	        if (this.parent) {
+	            this.localMatrix.multiplyToRef(this.parent.getWorldMatrix(), this.worldMatrix);
+	        }
+	        else {
+	            this.worldMatrix.copy(this.localMatrix);
+	        }
+	    }
+	    isDirty() {
+	        if (this.dirty)
+	            return true;
+	        let ptr = this.parent;
+	        while (ptr) {
+	            if (ptr.dirty)
+	                return true;
+	            ptr = ptr.parent;
+	        }
+	        return false;
+	    }
+	    translate(translation, relativeTo = app_element_1.Space.World) {
+	        if (this.parent && relativeTo === app_element_1.Space.World) {
+	            this.parent.getWorldMatrix(matrix_1.Matrix.scratch0).invert();
+	            const scratch = vector3_1.Vector3.scratch0;
+	            scratch.x = translation.x;
+	            scratch.y = translation.y;
+	            scratch.z = 0;
+	            vector3_1.Vector3.TransformCoordinates(scratch, matrix_1.Matrix.scratch0, scratch);
+	            this.position.addVector(translation);
+	        }
+	        else {
+	            this.position.addVector(translation);
+	        }
+	    }
+	    setPosition(position, relativeTo = app_element_1.Space.World) {
+	        if (this.parent && relativeTo === app_element_1.Space.World) {
+	            this.parent.getWorldMatrix(matrix_1.Matrix.scratch0).invert();
+	            const scratch = vector3_1.Vector3.scratch0;
+	            scratch.x = position.x;
+	            scratch.y = position.y;
+	            scratch.z = 0;
+	            vector3_1.Vector3.TransformCoordinates(scratch, matrix_1.Matrix.scratch0, scratch);
+	            this.position.x = scratch.x;
+	            this.position.y = scratch.y;
+	        }
+	        else {
+	            this.position.copy(position);
+	        }
+	    }
+	    lookAt(target) {
+	    }
+	    getRotation() {
+	        return this.rotation.getRotationZ();
+	    }
+	    rotate(radians) {
+	        quaternion_1.Quaternion.RotationAxis(vector3_1.Vector3.Forward, radians, quaternion_1.Quaternion.scratch0);
+	        this.rotation.multiply(quaternion_1.Quaternion.scratch0);
+	    }
+	    setScale(scale) {
+	        this.scale.x = scale.x;
+	        this.scale.y = scale.y;
+	    }
+	    getScale(out) {
+	        return (out || new vector2_1.Vector2).copy(this.scale);
+	    }
+	    getPosition(out) {
+	        this.updateWorldMatrix();
+	        return (out || new vector2_1.Vector2()).set(this.worldMatrix.m[12], this.worldMatrix.m[13]);
+	    }
+	    getLocalPosition(out) {
+	        return (out || new vector2_1.Vector2()).copy(this.position);
+	    }
+	    setParent(parent) {
+	        if (this.isDescendantOf(parent)) {
+	            return false;
+	        }
+	        if (this.parent) {
+	            this.parent.children.remove(this);
+	        }
+	        this.parent = parent;
+	        this.parent.children.push(this);
+	    }
+	    getParent() {
+	        return this.parent;
+	    }
+	    isDescendantOf(transformable) {
+	        if (!transformable || transformable === this) {
+	            return false;
+	        }
+	        var ptr = this.parent;
+	        while (ptr) {
+	            if (ptr === transformable) {
+	                return true;
+	            }
+	        }
+	        return false;
+	    }
+	    setSiblingIndex(index) {
+	        const parent = this.parent;
+	        if (!parent)
+	            return false;
+	        const children = this.parent.children;
+	        const currentIndex = children.indexOf(this);
+	        if (index === currentIndex || currentIndex === -1) {
+	            return false;
+	        }
+	        index = math_util_1.MathUtil.clamp(index, 0, children.length - 1);
+	        children.remove(this);
+	        children.insert(this, index);
+	        return true;
+	    }
+	    isRoot() {
+	        return !this.parent;
+	    }
+	    getChildAt(index) {
+	        return this.children[index];
+	    }
+	    getChildCount() {
+	        return this.children.length;
+	    }
+	    getDepth() {
+	        if (!this.parent)
+	            return 0;
+	        let ptr = this.parent;
+	        let depth = 1;
+	        while (ptr) {
+	            depth++;
+	            ptr = ptr.parent;
+	        }
+	        return depth;
+	    }
+	}
+	exports.Transformable = Transformable;
+
+
+/***/ },
+/* 124 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const color_1 = __webpack_require__(53);
+	const math_util_1 = __webpack_require__(36);
+	class PixiStyle {
+	    constructor(lineColor = null, lineWidth = 1, fillColor = null) {
+	        this.lineColor = lineColor || color_1.Color.Cyan;
+	        this.fillColor = fillColor || color_1.Color.Cyan;
+	        this.lineWidth = math_util_1.MathUtil.clamp(lineWidth, 1, 10);
+	    }
+	    getFillColor() {
+	        return this.fillColor.toHex();
+	    }
+	    getLineColor() {
+	        return this.lineColor.toHex();
+	    }
+	    getLineAlpha() {
+	        return 1;
+	    }
+	}
+	PixiStyle.Inherit = new PixiStyle();
+	exports.PixiStyle = PixiStyle;
+
+
+/***/ },
+/* 125 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const vector2_1 = __webpack_require__(17);
+	const transformable_1 = __webpack_require__(123);
+	class Polygon extends transformable_1.Transformable {
+	    constructor() {
+	        super();
+	        this.points = new Array();
+	        this.coordinates = [];
+	    }
+	    addPoint(point) {
+	        this.points.push(new vector2_1.Vector2(point.x, point.y));
+	        this.coordinates.push(point.x, point.y);
+	    }
+	    containsPoint(point) {
+	        const points = this.points;
+	        let c = false;
+	        for (let i = 0, j = points.length - 1; i < points.length; j = i++) {
+	            const pointI = points[i];
+	            const pointJ = points[j];
+	            if (((pointI.y >= point.y) !== (pointJ.y >= point.y)) &&
+	                (point.x <= (pointJ.x - pointI.x) * (point.y - pointI.y) / (pointJ.y - pointI.y) + pointI.x)) {
+	                c = !c;
+	            }
+	        }
+	        return c;
+	    }
+	    static contains(points, target) {
+	        let contains = false;
+	        const px = target.x;
+	        const py = target.y;
+	        for (let i = 0, j = points.length - 1; i < points.length; j = i++) {
+	            const pointI = points[i];
+	            const pointJ = points[j];
+	            const pIx = pointI.x;
+	            const pIy = pointI.y;
+	            const pJx = pointJ.x;
+	            const pJy = pointJ.y;
+	            const test = (pIy >= py) !== (pJy >= py);
+	            if (test && (px <= (pJx - pIx) * (py - pIy) / (pJy - pIy) + pIx)) {
+	                contains = !contains;
+	            }
+	        }
+	        return contains;
+	    }
+	}
+	exports.Polygon = Polygon;
+
+
+/***/ },
+/* 126 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const shape_1 = __webpack_require__(122);
+	class ShapeContainer extends shape_1.Shape {
+	    constructor(style) {
+	        super(style);
+	    }
+	    render(gfx) {
+	        for (let i = 0; i < this.children.length; i++) {
+	            this.children[i].render(gfx);
+	        }
+	    }
+	}
+	exports.ShapeContainer = ShapeContainer;
+
+
+/***/ },
+/* 127 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const scene_tool_1 = __webpack_require__(128);
 	const util_1 = __webpack_require__(16);
-	const app_element_1 = __webpack_require__(33);
+	const app_element_1 = __webpack_require__(28);
 	var DragSide;
 	(function (DragSide) {
 	    DragSide[DragSide["None"] = 0] = "None";
@@ -11298,7 +11687,7 @@
 
 
 /***/ },
-/* 122 */
+/* 128 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -11316,7 +11705,7 @@
 
 
 /***/ },
-/* 123 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11363,19 +11752,19 @@
 
 
 /***/ },
-/* 124 */
+/* 130 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 125 */
+/* 131 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 126 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11383,7 +11772,7 @@
 	const tslib_1 = __webpack_require__(4);
 	const component_renderer_1 = __webpack_require__(98);
 	const sizing_component_1 = __webpack_require__(77);
-	const default_sizing_component_1 = __webpack_require__(127);
+	const default_sizing_component_1 = __webpack_require__(133);
 	const inspector_row_1 = __webpack_require__(94);
 	const number_input_1 = __webpack_require__(103);
 	let SizingRenderer = class SizingRenderer extends component_renderer_1.ComponentRenderer {
@@ -11475,7 +11864,7 @@
 
 
 /***/ },
-/* 127 */
+/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11494,7 +11883,7 @@
 
 
 /***/ },
-/* 128 */
+/* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11553,13 +11942,13 @@
 
 
 /***/ },
-/* 129 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const property_drawer_1 = __webpack_require__(130);
+	const property_drawer_1 = __webpack_require__(136);
 	const property_renderer_1 = __webpack_require__(99);
 	const inspector_row_1 = __webpack_require__(94);
 	const checkbox_input_1 = __webpack_require__(101);
@@ -11580,7 +11969,7 @@
 
 
 /***/ },
-/* 130 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11595,7 +11984,7 @@
 
 
 /***/ },
-/* 131 */
+/* 137 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11606,7 +11995,7 @@
 	const inspector_row_1 = __webpack_require__(94);
 	const inline_field_1 = __webpack_require__(105);
 	const number_input_1 = __webpack_require__(103);
-	const property_drawer_1 = __webpack_require__(130);
+	const property_drawer_1 = __webpack_require__(136);
 	const binding_1 = __webpack_require__(13);
 	const button_1 = __webpack_require__(66);
 	const util_1 = __webpack_require__(16);
@@ -11648,13 +12037,13 @@
 
 
 /***/ },
-/* 132 */
+/* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const property_drawer_1 = __webpack_require__(130);
+	const property_drawer_1 = __webpack_require__(136);
 	const property_renderer_1 = __webpack_require__(99);
 	const util_1 = __webpack_require__(16);
 	const number_input_1 = __webpack_require__(103);
@@ -11683,17 +12072,17 @@
 
 
 /***/ },
-/* 133 */
+/* 139 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
 	const property_renderer_1 = __webpack_require__(99);
-	const property_drawer_1 = __webpack_require__(130);
+	const property_drawer_1 = __webpack_require__(136);
 	const util_1 = __webpack_require__(16);
 	const inspector_row_1 = __webpack_require__(94);
-	const select_input_1 = __webpack_require__(134);
+	const select_input_1 = __webpack_require__(140);
 	const binding_1 = __webpack_require__(13);
 	let EnumSelectRenderer = class EnumSelectRenderer extends property_renderer_1.PropertyRenderer {
 	    createOptions(e) {
@@ -11746,7 +12135,7 @@
 
 
 /***/ },
-/* 134 */
+/* 140 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11782,13 +12171,13 @@
 
 
 /***/ },
-/* 135 */
+/* 141 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const property_drawer_1 = __webpack_require__(130);
+	const property_drawer_1 = __webpack_require__(136);
 	const property_renderer_1 = __webpack_require__(99);
 	const inspector_row_1 = __webpack_require__(94);
 	const text_input_1 = __webpack_require__(92);
@@ -11816,7 +12205,7 @@
 
 
 /***/ },
-/* 136 */
+/* 142 */
 /***/ function(module, exports) {
 
 	// import {getSetter, getGetter} from "../editor_ui_attrs/binding_compiler";
@@ -11981,7 +12370,7 @@
 
 
 /***/ },
-/* 137 */
+/* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11996,13 +12385,13 @@
 
 
 /***/ },
-/* 138 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const icon_1 = __webpack_require__(68);
-	const inspector_body_1 = __webpack_require__(137);
+	const inspector_body_1 = __webpack_require__(143);
 	const editor_html_element_1 = __webpack_require__(18);
 	class InspectorHeader extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
@@ -12019,7 +12408,7 @@
 
 
 /***/ },
-/* 139 */
+/* 145 */
 /***/ function(module, exports) {
 
 	// import {EditorHTMLElement} from "../editor_element/editor_html_element";
@@ -12050,7 +12439,7 @@
 
 
 /***/ },
-/* 140 */
+/* 146 */
 /***/ function(module, exports) {
 
 	// import {FontIcon, ToggleIcon} from "./icon";
@@ -12091,7 +12480,7 @@
 
 
 /***/ },
-/* 141 */
+/* 147 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12125,7 +12514,7 @@
 
 
 /***/ },
-/* 142 */
+/* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12133,7 +12522,7 @@
 	const tslib_1 = __webpack_require__(4);
 	const editor_html_element_1 = __webpack_require__(18);
 	const drag_action_1 = __webpack_require__(44);
-	const drag_asset_item_action_1 = __webpack_require__(143);
+	const drag_asset_item_action_1 = __webpack_require__(149);
 	class AssetDropTargetInsert extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "asset-drop-target-insert" };
@@ -12168,7 +12557,7 @@
 
 
 /***/ },
-/* 143 */
+/* 149 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12184,7 +12573,7 @@
 
 
 /***/ },
-/* 144 */
+/* 150 */
 /***/ function(module, exports) {
 
 	// import {WindowColors} from "../editor/editor_theme";
@@ -12532,7 +12921,7 @@
 
 
 /***/ },
-/* 145 */
+/* 151 */
 /***/ function(module, exports) {
 
 	class Stuff {
@@ -12540,7 +12929,7 @@
 
 
 /***/ },
-/* 146 */
+/* 152 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -12551,7 +12940,7 @@
 
 
 /***/ },
-/* 147 */
+/* 153 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -12562,7 +12951,7 @@
 
 
 /***/ },
-/* 148 */
+/* 154 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12579,7 +12968,7 @@
 
 
 /***/ },
-/* 149 */
+/* 155 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -12633,12 +13022,12 @@
 
 
 /***/ },
-/* 150 */
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const e_command_type_1 = __webpack_require__(35);
+	const e_command_type_1 = __webpack_require__(30);
 	function DeserializeComponent(component, element) {
 	    if (component.handler) {
 	    }
@@ -12791,19 +13180,19 @@
 
 
 /***/ },
-/* 151 */
+/* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const e_command_type_1 = __webpack_require__(35);
+	const e_command_type_1 = __webpack_require__(30);
 	BrowserRuntime.setCommandSerializer(e_command_type_1.CommandType.UpdateInput, function () {
 	    return BrowserRuntime.getInput().serialize();
 	});
 
 
 /***/ },
-/* 152 */
+/* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12816,7 +13205,7 @@
 
 
 /***/ },
-/* 153 */
+/* 159 */
 /***/ function(module, exports) {
 
 	//
@@ -12828,7 +13217,7 @@
 
 
 /***/ },
-/* 154 */
+/* 160 */
 /***/ function(module, exports) {
 
 	// import {createGetter} from "./binding_compiler";
@@ -12863,18 +13252,18 @@
 
 
 /***/ },
-/* 155 */
+/* 161 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 156 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const shape_1 = __webpack_require__(157);
+	const shape_1 = __webpack_require__(122);
 	class Circle extends shape_1.Shape {
 	    constructor(center, radius, style = null) {
 	        super(style);
@@ -12903,199 +13292,7 @@
 
 
 /***/ },
-/* 157 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const transformable_1 = __webpack_require__(158);
-	const pixi_style_1 = __webpack_require__(160);
-	class Shape extends transformable_1.Transformable {
-	    constructor(style) {
-	        super();
-	        this.style = style || pixi_style_1.PixiStyle.Inherit;
-	        this.points = [];
-	    }
-	    beginRender(gfx) { }
-	    finishRender(gfx) { }
-	}
-	exports.Shape = Shape;
-
-
-/***/ },
-/* 158 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const matrix_1 = __webpack_require__(28);
-	const vector3_1 = __webpack_require__(26);
-	const quaternion_1 = __webpack_require__(27);
-	const app_element_1 = __webpack_require__(33);
-	const vector2_1 = __webpack_require__(17);
-	const math_util_1 = __webpack_require__(29);
-	class Transformable {
-	    constructor() {
-	        this.dirty = true;
-	        this.parent = null;
-	        this.children = [];
-	        this.position = new vector2_1.Vector2();
-	        this.rotation = new quaternion_1.Quaternion();
-	        this.scale = new vector2_1.Vector2();
-	        this.localMatrix = new matrix_1.Matrix();
-	        this.worldMatrix = new matrix_1.Matrix();
-	    }
-	    getWorldMatrix(out) {
-	        this.updateWorldMatrix();
-	        return this.worldMatrix.clone(out);
-	    }
-	    updateWorldMatrix() {
-	        if (!this.isDirty())
-	            return;
-	        const scaling = matrix_1.Matrix.scratch0;
-	        const rotation = matrix_1.Matrix.scratch1;
-	        const translate = matrix_1.Matrix.scratch2;
-	        const rotationAndScale = matrix_1.Matrix.scratch3;
-	        this.rotation.toRotationMatrix(rotation);
-	        matrix_1.Matrix.CreateScale(this.scale.x, this.scale.y, 1, scaling);
-	        matrix_1.Matrix.CreateTranslation(this.position.x, this.position.y, 0, translate);
-	        matrix_1.Matrix.Multiply(scaling, rotation, rotationAndScale);
-	        matrix_1.Matrix.Multiply(rotationAndScale, translate, this.localMatrix);
-	        if (this.parent) {
-	            this.localMatrix.multiplyToRef(this.parent.getWorldMatrix(), this.worldMatrix);
-	        }
-	        else {
-	            this.worldMatrix.copy(this.localMatrix);
-	        }
-	    }
-	    isDirty() {
-	        if (this.dirty)
-	            return true;
-	        let ptr = this.parent;
-	        while (ptr) {
-	            if (ptr.dirty)
-	                return true;
-	            ptr = ptr.parent;
-	        }
-	        return false;
-	    }
-	    translate(translation, relativeTo = app_element_1.Space.World) {
-	        if (this.parent && relativeTo === app_element_1.Space.World) {
-	            this.parent.getWorldMatrix(matrix_1.Matrix.scratch0).invert();
-	            const scratch = vector3_1.Vector3.scratch0;
-	            scratch.x = translation.x;
-	            scratch.y = translation.y;
-	            scratch.z = 0;
-	            vector3_1.Vector3.TransformCoordinates(scratch, matrix_1.Matrix.scratch0, scratch);
-	            this.position.addVector(translation);
-	        }
-	        else {
-	            this.position.addVector(translation);
-	        }
-	    }
-	    setPosition(position, relativeTo = app_element_1.Space.World) {
-	        if (this.parent && relativeTo === app_element_1.Space.World) {
-	            this.parent.getWorldMatrix(matrix_1.Matrix.scratch0).invert();
-	            const scratch = vector3_1.Vector3.scratch0;
-	            scratch.x = position.x;
-	            scratch.y = position.y;
-	            scratch.z = 0;
-	            vector3_1.Vector3.TransformCoordinates(scratch, matrix_1.Matrix.scratch0, scratch);
-	            this.position.x = scratch.x;
-	            this.position.y = scratch.y;
-	        }
-	        else {
-	            this.position.copy(position);
-	        }
-	    }
-	    lookAt(target) {
-	    }
-	    getRotation() {
-	        return this.rotation.getRotationZ();
-	    }
-	    rotate(radians) {
-	        quaternion_1.Quaternion.RotationAxis(vector3_1.Vector3.Forward, radians, quaternion_1.Quaternion.scratch0);
-	        this.rotation.multiply(quaternion_1.Quaternion.scratch0);
-	    }
-	    setScale(scale) {
-	        this.scale.x = scale.x;
-	        this.scale.y = scale.y;
-	    }
-	    getScale(out) {
-	        return (out || new vector2_1.Vector2).copy(this.scale);
-	    }
-	    getPosition(out) {
-	        this.updateWorldMatrix();
-	        return (out || new vector2_1.Vector2()).set(this.worldMatrix.m[12], this.worldMatrix.m[13]);
-	    }
-	    getLocalPosition(out) {
-	        return (out || new vector2_1.Vector2()).copy(this.position);
-	    }
-	    setParent(parent) {
-	        if (this.isDescendantOf(parent)) {
-	            return false;
-	        }
-	        if (this.parent) {
-	            this.parent.children.remove(this);
-	        }
-	        this.parent = parent;
-	        this.parent.children.push(this);
-	    }
-	    getParent() {
-	        return this.parent;
-	    }
-	    isDescendantOf(transformable) {
-	        if (!transformable || transformable === this) {
-	            return false;
-	        }
-	        var ptr = this.parent;
-	        while (ptr) {
-	            if (ptr === transformable) {
-	                return true;
-	            }
-	        }
-	        return false;
-	    }
-	    setSiblingIndex(index) {
-	        const parent = this.parent;
-	        if (!parent)
-	            return false;
-	        const children = this.parent.children;
-	        const currentIndex = children.indexOf(this);
-	        if (index === currentIndex || currentIndex === -1) {
-	            return false;
-	        }
-	        index = math_util_1.MathUtil.clamp(index, 0, children.length - 1);
-	        children.remove(this);
-	        children.insert(this, index);
-	        return true;
-	    }
-	    isRoot() {
-	        return !this.parent;
-	    }
-	    getChildAt(index) {
-	        return this.children[index];
-	    }
-	    getChildCount() {
-	        return this.children.length;
-	    }
-	    getDepth() {
-	        if (!this.parent)
-	            return 0;
-	        let ptr = this.parent;
-	        let depth = 1;
-	        while (ptr) {
-	            depth++;
-	            ptr = ptr.parent;
-	        }
-	        return depth;
-	    }
-	}
-	exports.Transformable = Transformable;
-
-
-/***/ },
-/* 159 */
+/* 163 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13103,105 +13300,24 @@
 
 
 /***/ },
-/* 160 */
+/* 164 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const color_1 = __webpack_require__(53);
-	const math_util_1 = __webpack_require__(29);
-	class PixiStyle {
-	    constructor(lineColor = null, lineWidth = 1, fillColor = null) {
-	        this.lineColor = lineColor || color_1.Color.Cyan;
-	        this.fillColor = fillColor || color_1.Color.Cyan;
-	        this.lineWidth = math_util_1.MathUtil.clamp(lineWidth, 1, 10);
-	    }
-	    getFillColor() {
-	        return this.fillColor.toHex();
-	    }
-	    getLineColor() {
-	        return this.lineColor.toHex();
-	    }
-	    getLineAlpha() {
-	        return 1;
-	    }
-	}
-	PixiStyle.Inherit = new PixiStyle();
-	exports.PixiStyle = PixiStyle;
-
-
-/***/ },
-/* 161 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const vector2_1 = __webpack_require__(17);
-	const transformable_1 = __webpack_require__(158);
-	class Polygon extends transformable_1.Transformable {
-	    constructor() {
-	        super();
-	        this.points = new Array();
-	        this.coordinates = [];
-	    }
-	    addPoint(point) {
-	        this.points.push(new vector2_1.Vector2(point.x, point.y));
-	        this.coordinates.push(point.x, point.y);
-	    }
-	    containsPoint(point) {
-	        const points = this.points;
-	        let c = false;
-	        for (let i = 0, j = points.length - 1; i < points.length; j = i++) {
-	            const pointI = points[i];
-	            const pointJ = points[j];
-	            if (((pointI.y >= point.y) !== (pointJ.y >= point.y)) &&
-	                (point.x <= (pointJ.x - pointI.x) * (point.y - pointI.y) / (pointJ.y - pointI.y) + pointI.x)) {
-	                c = !c;
-	            }
-	        }
-	        return c;
-	    }
-	    static contains(points, target) {
-	        let contains = false;
-	        const px = target.x;
-	        const py = target.y;
-	        for (let i = 0, j = points.length - 1; i < points.length; j = i++) {
-	            const pointI = points[i];
-	            const pointJ = points[j];
-	            const pIx = pointI.x;
-	            const pIy = pointI.y;
-	            const pJx = pointJ.x;
-	            const pJy = pointJ.y;
-	            const test = (pIy >= py) !== (pJy >= py);
-	            if (test && (px <= (pJx - pIx) * (py - pIy) / (pJy - pIy) + pIx)) {
-	                contains = !contains;
-	            }
-	        }
-	        return contains;
-	    }
-	}
-	exports.Polygon = Polygon;
-
-
-/***/ },
-/* 162 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const e_command_type_1 = __webpack_require__(35);
+	const e_command_type_1 = __webpack_require__(30);
 	Runtime.setCommandInvoker(e_command_type_1.CommandType.UpdateInput, function (data) {
 	    Runtime.getInput().deserialize(data);
 	});
 
 
 /***/ },
-/* 163 */
+/* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const e_command_type_1 = __webpack_require__(35);
+	const e_command_type_1 = __webpack_require__(30);
 	const ui_component_1 = __webpack_require__(76);
 	const ComponentCache = new Array();
 	Runtime.setCommandSerializer(e_command_type_1.CommandType.Create, function (id) {
@@ -13267,7 +13383,7 @@
 
 
 /***/ },
-/* 164 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13290,7 +13406,7 @@
 
 
 /***/ },
-/* 165 */
+/* 167 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13300,7 +13416,7 @@
 	const layout_1 = __webpack_require__(78);
 	const expose_as_1 = __webpack_require__(54);
 	const component_1 = __webpack_require__(42);
-	const app_element_1 = __webpack_require__(33);
+	const app_element_1 = __webpack_require__(28);
 	let HorizontalStackLayout = class HorizontalStackLayout extends layout_1.LayoutComponent {
 	    constructor() {
 	        super(...arguments);
@@ -13404,7 +13520,7 @@
 
 
 /***/ },
-/* 166 */
+/* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13413,7 +13529,7 @@
 	const sizing_component_1 = __webpack_require__(77);
 	const layout_1 = __webpack_require__(78);
 	const component_1 = __webpack_require__(42);
-	const app_element_1 = __webpack_require__(33);
+	const app_element_1 = __webpack_require__(28);
 	let VerticalStackLayout = class VerticalStackLayout extends layout_1.LayoutComponent {
 	    doLayout() {
 	        var remainingSpace = this.appElement.getHeight();
@@ -13467,7 +13583,7 @@
 
 
 /***/ },
-/* 167 */
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13499,13 +13615,13 @@
 
 
 /***/ },
-/* 168 */
+/* 170 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 169 */
+/* 171 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13513,13 +13629,13 @@
 
 
 /***/ },
-/* 170 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const vector2_1 = __webpack_require__(17);
-	const math_util_1 = __webpack_require__(29);
+	const math_util_1 = __webpack_require__(36);
 	/*
 	 * Layout
 	 * [ a  c  tx ]
@@ -13861,7 +13977,7 @@
 
 
 /***/ },
-/* 171 */
+/* 173 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13879,7 +13995,7 @@
 
 
 /***/ },
-/* 172 */
+/* 174 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14018,7 +14134,7 @@
 
 
 /***/ },
-/* 173 */
+/* 175 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14037,16 +14153,16 @@
 
 
 /***/ },
-/* 174 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const app_element_1 = __webpack_require__(33);
+	const app_element_1 = __webpack_require__(28);
 	const component_1 = __webpack_require__(42);
 	const util_1 = __webpack_require__(16);
-	const type_1 = __webpack_require__(173);
+	const type_1 = __webpack_require__(175);
 	let Scene = class Scene {
 	    constructor() {
 	        this.sceneRoots = [];
@@ -14133,12 +14249,296 @@
 
 
 /***/ },
-/* 175 */
+/* 177 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	class StateChartEventHandler {
+	    constructor(type, target, guardFn) {
+	        this.type = type;
+	        this.target = target;
+	        this.guardFn = guardFn || StateChartEventHandler.NoOpGuard;
+	    }
+	    static NoOpGuard() { return true; }
+	}
+	class StateChartState {
+	    constructor(id, parent, behavior) {
+	        this.id = id;
+	        this.parent = parent;
+	        this.behavior = behavior;
+	        this.isActive = false;
+	        this.states = [];
+	        this.events = [];
+	    }
+	    handleEvent(evt) {
+	        const handledEvent = this.events.find((handler) => {
+	            return handler.type === evt.constructor;
+	        });
+	        if (handledEvent && handledEvent.guardFn(evt)) {
+	            return { targetId: handledEvent.target, from: this };
+	        }
+	        for (let i = 0; i < this.states.length; i++) {
+	            if (this.states[i].isActive) {
+	                const retn = this.states[i].handleEvent(evt);
+	                if (retn)
+	                    return retn;
+	            }
+	        }
+	        return null;
+	    }
+	    enter(enterPath) {
+	        if (this.isActive)
+	            return;
+	        this.isActive = true;
+	        if (this.behavior) {
+	            this.behavior.enter();
+	        }
+	        if (enterPath && enterPath.length > 0) {
+	            const child = enterPath.pop();
+	            if (child.parent !== this) {
+	                throw new Error("Invalid StateChart enter path");
+	            }
+	            else {
+	                child.enter(enterPath);
+	            }
+	        }
+	        else if (this.states.length > 0) {
+	            this.states[0].enter();
+	        }
+	    }
+	    update() {
+	        this.behavior && this.behavior.update();
+	        for (let i = 0; i < this.states.length; i++) {
+	            if (this.states[i].isActive) {
+	                this.states[i].update();
+	            }
+	        }
+	    }
+	    exit() {
+	        if (!this.isActive)
+	            return;
+	        this.isActive = false;
+	        if (this.behavior) {
+	            this.behavior.exit();
+	        }
+	        this.exitChildren();
+	    }
+	    exitChildren() {
+	        for (let i = 0; i < this.states.length; i++) {
+	            if (this.states[i].isActive) {
+	                this.states[i].exit();
+	            }
+	        }
+	    }
+	}
+	class StateChartParallelState extends StateChartState {
+	    enter(enterPath) {
+	        if (this.isActive)
+	            return;
+	        this.isActive = true;
+	        if (this.behavior) {
+	            this.behavior.enter();
+	        }
+	        enterPath && enterPath.pop();
+	        for (let i = 0; i < this.states.length; i++) {
+	            this.states[i].enter(enterPath);
+	        }
+	    }
+	    update() {
+	        this.behavior && this.behavior.update();
+	        for (let i = 0; i < this.states.length; i++) {
+	            this.states[i].update();
+	        }
+	    }
+	    exit() {
+	        if (!this.isActive)
+	            return;
+	        this.isActive = false;
+	        if (this.behavior)
+	            this.behavior.exit();
+	        for (let i = 0; i < this.states.length; i++) {
+	            this.states[i].exit();
+	        }
+	    }
+	}
+	class StateChartEvent {
+	}
+	exports.StateChartEvent = StateChartEvent;
+	class StateChartBehavior {
+	    enter() { }
+	    update() { }
+	    exit() { }
+	}
+	exports.StateChartBehavior = StateChartBehavior;
+	//compiler seems to be broken w/ how 'protected' works, so to hide internal properties
+	//i've duplicated some functionality :(
+	class StateChart {
+	    constructor(definition) {
+	        this.isActive = true;
+	        this.stateDef = this.getStateFn();
+	        this.eventDef = this.event.bind(this);
+	        this.stateMap = new Map();
+	        this.states = [];
+	        this.events = [];
+	        this.stateStack = [];
+	        this.eventQueue0 = [];
+	        this.eventQueue1 = [];
+	        this.eventQueue = this.eventQueue0;
+	        this.stateStack.push(this);
+	        definition.call(this, this.stateDef, this.eventDef);
+	        this.stateStack.pop();
+	        this.stateStack = null;
+	        if (this.states[0]) {
+	            this.states[0].enter();
+	        }
+	    }
+	    update() {
+	        //process an event queue tick
+	        const currentQueue = this.eventQueue;
+	        //swap event queues
+	        this.eventQueue = this.eventQueue === this.eventQueue0 ? this.eventQueue1 : this.eventQueue0;
+	        //do all transitions but queue all events till next frame
+	        while (currentQueue.length) {
+	            this.handleEvent(currentQueue.shift());
+	        }
+	        this.getActiveState().update();
+	    }
+	    isInState(id) {
+	        const state = this.stateMap.get(id);
+	        return state && state.isActive;
+	    }
+	    trigger(event) {
+	        if (this.stateStack)
+	            throw new Error("StateChart hasn't entered yet, invalid call to trigger()");
+	        this.eventQueue.push(event);
+	    }
+	    getConfiguration() {
+	        const config = new Array();
+	        const leaves = new Array();
+	        this.stateMap.forEach((state) => {
+	            if (state.isActive && state.states.length === 0) {
+	                leaves.push(state);
+	            }
+	        });
+	        for (let i = 0; i < leaves.length; i++) {
+	            const leaf = leaves[i];
+	            const branchConfig = new Array();
+	            let ptr = leaf;
+	            while (ptr !== this) {
+	                branchConfig.push(ptr.id);
+	                ptr = ptr.parent;
+	            }
+	            config.push(branchConfig.reverse());
+	        }
+	        return config;
+	    }
+	    handleEvent(evt) {
+	        const handledEvent = this.events.find((handler) => {
+	            return handler.type === evt.constructor;
+	        });
+	        if (handledEvent && handledEvent.guardFn(evt)) {
+	            this.goTo(handledEvent.target, this);
+	            return;
+	        }
+	        for (let i = 0; i < this.states.length; i++) {
+	            if (this.states[i].isActive) {
+	                const retn = this.states[i].handleEvent(evt);
+	                if (retn) {
+	                    this.goTo(retn.targetId, retn.from);
+	                    return;
+	                }
+	            }
+	        }
+	    }
+	    exitChildren() {
+	        for (let i = 0; i < this.states.length; i++) {
+	            if (this.states[i].isActive) {
+	                this.states[i].exit();
+	            }
+	        }
+	    }
+	    getStateFn() {
+	        const fn = this.state.bind(this);
+	        fn.parallel = this.parallel.bind(this);
+	        return fn;
+	    }
+	    goTo(targetId, from) {
+	        let ptr = this.stateMap.get(targetId);
+	        if (!ptr) {
+	            throw new Error("Invalid state: " + targetId);
+	        }
+	        if (ptr === from)
+	            return;
+	        let enterPath = [];
+	        //find highest parent of target that is active
+	        while (!ptr.isActive) {
+	            enterPath.unshift(ptr);
+	            ptr = ptr.parent;
+	        }
+	        ptr.exitChildren();
+	        enterPath.shift().enter(enterPath);
+	    }
+	    event(eventType, targetStateId, guardFunction) {
+	        if (!this.stateStack)
+	            throw new Error("StateChart has already entered, cannot call 'event()'");
+	        this.stateStack.getLast().events.push(new StateChartEventHandler(eventType, targetStateId, guardFunction));
+	    }
+	    state(id, behaviorOrDefinition, definition) {
+	        if (arguments.length === 1) {
+	            this.createState(id, null, null, false);
+	        }
+	        else if (arguments.length === 2) {
+	            this.createState(id, behaviorOrDefinition, null, false);
+	        }
+	        else if (arguments.length === 3) {
+	            this.createState(id, definition, behaviorOrDefinition, false);
+	        }
+	    }
+	    parallel(id, behaviorOrDefinition, definition) {
+	        if (arguments.length === 2) {
+	            this.createState(id, behaviorOrDefinition, null, true);
+	        }
+	        else if (arguments.length === 3) {
+	            this.createState(id, definition, behaviorOrDefinition, true);
+	        }
+	    }
+	    createState(id, definition, behavior, isParallel = false) {
+	        if (!this.stateStack)
+	            throw new Error("StateChart has already entered, cannot call 'parallel()'");
+	        if (this.stateMap.get(id)) {
+	            throw new Error("States within a StateChart cannot have duplicate ids, '" + id + "' was already registered");
+	        }
+	        const parentState = this.stateStack.getLast();
+	        const Type = (isParallel) ? StateChartParallelState : StateChartState;
+	        const state = new Type(id, parentState, behavior);
+	        parentState.states.push(state);
+	        this.stateMap.set(id, state);
+	        if (typeof definition === "function") {
+	            this.stateStack.push(state);
+	            definition.call(this, this.stateDef, this.eventDef);
+	            this.stateStack.pop();
+	        }
+	        if (state.behavior) {
+	            state.behavior.chart = this;
+	        }
+	    }
+	    getActiveState() {
+	        return this.states.find(function (state) {
+	            return state.isActive;
+	        });
+	    }
+	}
+	exports.StateChart = StateChart;
+
+
+/***/ },
+/* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const scene_tool_1 = __webpack_require__(122);
+	const scene_tool_1 = __webpack_require__(128);
 	class ScenePanTool extends scene_tool_1.SceneTool {
 	    constructor() {
 	        super(...arguments);
@@ -14166,58 +14566,56 @@
 
 
 /***/ },
-/* 176 */
-/***/ function(module, exports, __webpack_require__) {
+/* 179 */
+/***/ function(module, exports) {
 
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const shape_1 = __webpack_require__(157);
-	const vector2_1 = __webpack_require__(17);
-	const polygon_1 = __webpack_require__(161);
-	class Triangle extends shape_1.Shape {
-	    constructor(p1, p2, p3, style) {
-	        super(style);
-	        this.points.push(p1, p2, p3);
-	    }
-	    render(gfx) {
-	        gfx.beginFill(this.style.getFillColor());
-	        const position = this.getPosition(vector2_1.Vector2.scratch0);
-	        const rotation = this.rotation.getRotationZ();
-	        const p1 = this.points[0].clone(vector2_1.Vector2.scratch1).addValues(0, 10).rotateAround(rotation, vector2_1.Vector2.Zero).addVector(position);
-	        const p2 = this.points[1].clone(vector2_1.Vector2.scratch2).addValues(0, 10).rotateAround(rotation, vector2_1.Vector2.Zero).addVector(position);
-	        const p3 = this.points[2].clone(vector2_1.Vector2.scratch3).addValues(0, 10).rotateAround(rotation, vector2_1.Vector2.Zero).addVector(position);
-	        gfx.lineStyle(1, this.style.getLineColor());
-	        gfx.moveTo(p1.x, p1.y);
-	        gfx.lineTo(p2.x, p2.y);
-	        gfx.lineTo(p3.x, p3.y);
-	        gfx.lineTo(p1.x, p1.y);
-	        gfx.endFill();
-	    }
-	    containsPoint(point) {
-	        return polygon_1.Polygon.contains(this.points, point);
-	    }
-	}
-	exports.Triangle = Triangle;
-
-
-/***/ },
-/* 177 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const shape_1 = __webpack_require__(157);
-	class ShapeContainer extends shape_1.Shape {
-	    constructor(style) {
-	        super(style);
-	    }
-	    render(gfx) {
-	        for (let i = 0; i < this.children.length; i++) {
-	            this.children[i].render(gfx);
-	        }
-	    }
-	}
-	exports.ShapeContainer = ShapeContainer;
+	//
+	// class EditorObject {
+	//
+	//     removeListeners()  {
+	//
+	//     }
+	//
+	// }
+	//
+	// class State {
+	//
+	//     public enter() : void {}
+	//
+	//     public exit() : void {}
+	//
+	//     public update() : void {}
+	//
+	//     public initialize() : void {}
+	//
+	//     public destroy() : void {}
+	//
+	//     public transition() : boolean {
+	//         return true;
+	//     }
+	//
+	// }
+	//
+	//
+	// class DefaultStageState extends State {
+	//
+	//     public enter() {
+	//         EditorRuntime.on(Evt_BeginDrawBox, this);
+	//     }
+	//
+	//     @EditorEvent(Evt_BeginDrawBox)
+	//
+	//
+	//     public update() {
+	//         this.transition("elsewhere");
+	//         //onEditorEvent(EventType, new Transition(StateName));
+	//     }
+	//
+	//     public exit() {
+	//
+	//     }
+	//
+	// } 
 
 
 /***/ }
