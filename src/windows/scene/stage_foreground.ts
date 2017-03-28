@@ -41,6 +41,10 @@ export class StageForeground extends EditorHTMLElement<any> {
         });
     }
 
+    public getGfxRoot() : PIXI.Container {
+        return this.stage;
+    }
+
     public paint(width : number, height : number) : void {
         if (this.renderer.width !== width || this.renderer.height !== height) {
             this.renderer.resize(width, height);
@@ -57,8 +61,6 @@ export class StageForeground extends EditorHTMLElement<any> {
         const circleSize = 4;
         const boundingBox = selection.getBoundingBox();
         const aabb = selection.getAxisAlignedBoundingBox();
-        // this.powerFlower.setPosition(selection.getPosition(Vector2.scratch0));
-        // this.powerFlower.render(this.selectionOutline);
 
         this.selectionOutline.lineStyle(1, 0xFF00CD);
         this.selectionOutline.drawRect(aabb.x, aabb.y, aabb.width, aabb.height);
@@ -75,8 +77,8 @@ export class StageForeground extends EditorHTMLElement<any> {
         this.selectionOutline.drawCircle(boundingBox.topLeft.x, boundingBox.topLeft.y, circleSize);
         this.selectionOutline.endFill();
 
-        this.selectionOutline.lineStyle(1, 0xFF00CD);
-        this.selectionOutline.arc(aabb.centerX, aabb.centerY, aabb.outerRadius, 0, MathUtil.TwoPi);
+        // this.selectionOutline.lineStyle(1, 0xFF00CD);
+        // this.selectionOutline.arc(aabb.centerX, aabb.centerY, aabb.outerRadius, 0, MathUtil.TwoPi);
         // const input = EditorRuntime.getInput();
         // const mouse = input.getMouseRelativeToEditorElement(this);
         // const dist = aabb.center.clone().subVector(mouse).length();

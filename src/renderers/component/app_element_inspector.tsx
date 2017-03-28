@@ -2,11 +2,12 @@ import {EditorHTMLElement} from "../../editor_element/editor_html_element";
 import {InspectorRow} from "../../ui_elements/inspector/inspector_row";
 import {CreateBinding, IEditorBinding} from "../../editor/binding";
 import {AppElement, Space} from "../../runtime/app_element";
-import {AngleInput, NumberInput} from "../../ui_elements/number_input";
+import {AngleInput} from "../../ui_elements/number_input";
 import {InlineField} from "../../ui_elements/inline_field";
 import {WindowColors} from "../../editor/editor_theme";
 import {DimensionInput} from "../../ui_elements/dimension_input";
 import {Vector2} from "../../runtime/Vector2";
+import {Vector2Input} from "../../ui_elements/vector2_input";
 
 export class TransformInspector extends EditorHTMLElement<{ appElement : AppElement }> {
 
@@ -59,10 +60,10 @@ export class TransformInspector extends EditorHTMLElement<{ appElement : AppElem
     public createInitialStructure() : JSXElement {
         return [
             <InspectorRow label="Position">
-                {/*<Vector2Input value={ this.localPositionBinding }/>*/}
+                <Vector2Input value={ this.localPositionBinding }/>
             </InspectorRow>,
             <InspectorRow label="Scale">
-                {/*<Vector2Input value={ this.localScaleBinding }/>*/}
+                <Vector2Input value={ this.localScaleBinding }/>
             </InspectorRow>,
             <InspectorRow label="Rotation">
                 <InlineField label="">

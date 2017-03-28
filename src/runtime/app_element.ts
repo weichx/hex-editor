@@ -2,7 +2,7 @@ import {Component} from "./component";
 import {LifeCycleFlag} from "./enums/e_lifecycle_flags";
 import {CommandType} from "./enums/e_command_type";
 import {TypeOf} from "./interfaces/i_typeof";
-import {traverseChildren, clamp, clamp01} from "../util";
+import {clamp, traverseChildren} from "../util";
 import {BoundingBox} from "./bounding_box";
 import {MathUtil} from "../math_util";
 import {Matrix} from "./matrix";
@@ -199,9 +199,20 @@ export class AppElement {
         return this.rotation;
     }
 
-    public setRotation(value : number) : void {
-        if (this.rotation === value) return;
-        this.rotation = value;
+    public setRotation(value : number, space = Space.Local) : void {
+        if (this.rotation === value && space === Space.Local) return;
+        if (space === Space.World) {
+            let ptr = this.parent;
+            let worldRot = 0;
+            while (ptr) {
+                worldRot += ptr.rotation;
+                ptr = ptr.parent;
+            }
+            this.rotation = -worldRot + value;
+        }
+        else {
+            this.rotation = value;
+        }
         this.dirtyFlags |= ElementDirtyFlag.Rotation;
         Runtime.sendCommand(CommandType.SetTransform, this.id);
     }

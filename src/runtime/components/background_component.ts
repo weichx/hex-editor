@@ -2,13 +2,11 @@ import {component, Component} from "../component";
 import {Color} from "../color";
 import {CommandType} from "../enums/e_command_type";
 import {inspector} from "../../renderers/component/expose_as";
-import {serializeAs} from "cerialize";
 
 @component("Paint/Background")
 export class BackgroundComponent extends Component {
 
     @inspector(Color)
-    @serializeAs(Color)
     private _color : Color = Color.White;
 
     public get color() : Color {
@@ -37,7 +35,15 @@ export class BackgroundComponent extends Component {
 
     public serialize() : any {
         return {
-            color: this.color.copyTo({})
+            commands: [
+                {
+                    type: CommandType.PaintBackground,
+                    data: {
+                        id: this.appElement.id,
+                        color: this._color
+                    }
+                }
+            ]
         }
     }
 

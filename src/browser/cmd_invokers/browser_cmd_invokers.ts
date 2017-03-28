@@ -1,9 +1,7 @@
 import {CommandType} from "../../runtime/enums/e_command_type";
 
 function DeserializeComponent(component : any, element : HTMLElement) : any {
-    if (component.handler) {
 
-    }
     if (component.commands) {
         const commands = component.commands;
         for (let i = 0; i < commands.length; i++) {

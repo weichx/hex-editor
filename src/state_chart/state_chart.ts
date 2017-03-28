@@ -146,7 +146,7 @@ export class StateChartBehavior {
 
 }
 
-export type EventDef = (eventType : { new () : StateChartEvent },
+export type EventDef = (eventType : { new (...args : any[]) : StateChartEvent },
                         targetStateId : string,
                         guardFunction? : (data? : any) => boolean) => void;
 

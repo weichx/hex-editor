@@ -1,7 +1,7 @@
 import {EditorHTMLElement} from "../editor_element/editor_html_element";
 
 export interface IWindowAttrs {
-    title : string;
+    titleString : string;
     icon? : string;
 }
 

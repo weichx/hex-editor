@@ -10,7 +10,7 @@ import {Scene} from "../../runtime/scene";
 import {AppElementParentChanged} from "../../editor_events/evt_app_element_parent_changed";
 import {HierarchyItemDragAction} from "../../editor/drag_actions/drag_hierarchy_item";
 import {Vector2} from "../../runtime/vector2";
-import {onRightClick, onClick} from "../../editor_element/editor_element_annotations";
+import {onClick, onRightClick} from "../../editor_element/editor_element_annotations";
 import {ToggleIcon} from "../../ui_elements/icon";
 import {AppElementIndexChanged} from "../../editor_events/evt_app_element_index_changed";
 import {RuntimeEvent} from "../../editor_events/runtime_event";
@@ -115,7 +115,6 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
             let size = element.addComponent(SizingComponent);
             size.width = 100;
             size.height = 100;
-            element.setRotation(60);
             element.setPositionValues(10, 10, Space.Local);
             EditorRuntime.select(element);
             let element2 = new AppElement("Panel Child");
@@ -126,9 +125,7 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
             size.width = 100;
             size.height = 100;
             element2.setParent(element);
-            //element.setRotation(0);
             element2.setPositionValues(100, 100, Space.Local);
-            //alert(element.getPosition() + " " + element.get);
         }, 500);
         EditorRuntime.on(SelectionChanged, this);
         EditorRuntime.on(SceneLoaded, this);

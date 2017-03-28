@@ -4,7 +4,7 @@ import {EditorAssetItem} from "./asset_item";
 import {EditorElement} from "../../editor_element/editor_element";
 import {createElement} from "../../editor_element/element_renderer";
 import {PrefabAssetItem} from "../../asset_items/prefab_asset_item";
-import {onRightClick, onMouseDown, onFileDrop} from "../../editor_element/editor_element_annotations";
+import {onFileDrop, onMouseDown, onRightClick} from "../../editor_element/editor_element_annotations";
 import {WindowColors} from "../../editor/editor_theme";
 import {FolderAssetItem} from "../../asset_items/folder_asset_item";
 import {FolderAsset} from "../../asset_types/folder_asset";
@@ -16,7 +16,7 @@ import {AssetCreated} from "../../editor_events/evt_asset_created";
 import {ImageAssetItem} from "../../asset_items/image_asset_item";
 
 interface IAssetWindowAttrs {
-    title : string;
+    titleString : string;
 }
 
 export interface IAssetManifest {

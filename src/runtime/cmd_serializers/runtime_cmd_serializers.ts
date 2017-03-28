@@ -1,11 +1,8 @@
 import {CommandType} from "../enums/e_command_type";
-import {BackgroundComponent} from "../components/background_component";
 import {Component} from "../component";
 import {UIComponent} from "../components/ui_component";
 import {IFont} from "../components/ui/text_component";
 import {Color} from "../color";
-import {Vector2} from "../vector2";
-import {Matrix3x3} from "../matrix3x3";
 
 const ComponentCache = new Array<Component>();
 

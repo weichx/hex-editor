@@ -13,7 +13,7 @@ interface IWindowData {
 }
 
 interface IWindowAttributes {
-    title : string;
+    titleString : string;
     icon? : string;
 }
 
@@ -208,7 +208,7 @@ export class WindowFrame extends EditorHTMLElement<{}> {
             parentWindow: this,
             content: content,
             tab: createElement(WindowFrameTab, {
-                title: content.attrs.title, onMouseDown: () => {
+                title: content.attrs.titleString, onMouseDown: () => {
                     this.setVisibleWindow(windowData);
                     this.startTabDrag(windowData);
                 }

@@ -20,22 +20,22 @@ export class EditorApplication extends EditorHTMLElement<{}> {
                 <SplitPane axis={SplitDirection.Horizontal}>
 
                     <WindowFrame>
-                        <HierarchyWindow title="Hierarchy" icon=""/>
+                        <HierarchyWindow titleString="Hierarchy" icon=""/>
                     </WindowFrame>
 
                     <WindowFrame>
-                        <AssetWindow title="Assets" icon=""/>
+                        <AssetWindow titleString="Assets" icon=""/>
                     </WindowFrame>
 
                 </SplitPane>
                 <SplitPane distribution={0.7} axis={SplitDirection.Vertical}>
 
                     <WindowFrame>
-                        <StageWindow title="Stage" icon=""/>
+                        <StageWindow titleString="Stage" icon=""/>
                     </WindowFrame>
 
                     <WindowFrame>
-                        <InspectorWindow title="Inspector" icon=""/>
+                        <InspectorWindow titleString="Inspector" icon=""/>
                     </WindowFrame>
 
                 </SplitPane>
