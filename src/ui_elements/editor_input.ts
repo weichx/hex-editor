@@ -1,4 +1,4 @@
-import {IEditorBinding, CreateBinding, EditorBinding} from "../editor/binding";
+import {CreateBinding, EditorBinding, IEditorBinding} from "../editor/binding";
 import {EditorHTMLElement} from "../editor_element/editor_html_element";
 
 export interface IInputRendererAttrs<T> extends IHTMLAttribute {
@@ -20,6 +20,10 @@ export class InputRenderer<T extends IInputRendererAttrs<U>, U> extends EditorHT
         else {
             //todo -- this should maybe just be fake / static
             this.binding = CreateBinding(this.attrs, "value") as EditorBinding<any>;
+            this.binding.setHost(this);
+            this.binding.onChange((a : U, b : U) => {
+                this.onValueChanged(a, b)
+            });
         }
     }
 

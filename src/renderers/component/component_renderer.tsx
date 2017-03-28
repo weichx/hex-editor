@@ -7,9 +7,10 @@ import {titlize} from "../../util";
 import {WindowColors} from "../../editor/editor_theme";
 import {getExposedFieldMap} from "./expose_as";
 import {Component} from "../../runtime/component";
-import {TypeOf} from "../../runtime/interfaces/i_typeof";
 import {EditorHTMLElement} from "../../editor_element/editor_html_element";
 import {CreateBinding} from "../../editor/binding";
+import {AppElement} from "../../runtime/app_element";
+import {DesignerRendered} from "../../editor_events/evt_designer_rendererd";
 
 interface IAttrs<T extends Component> {
     component : T;
@@ -19,9 +20,20 @@ export class ComponentRenderer<T extends Component> extends EditorHTMLElement<IA
 
     protected editorDataMap = getExposedFieldMap(this.attrs.component);
     protected component = this.attrs.component as T;
+    protected gfx : PIXI.Graphics;
 
-    protected getDomData() : IDomData {
-        return { tagName: "div", classList: "component-renderer" }
+    public onCreated() {
+        if (this.onDesignerRendered !== ComponentRenderer.prototype.onDesignerRendered) {
+            EditorRuntime.on(DesignerRendered, this);
+            this.gfx = new PIXI.Graphics();
+        }
+    }
+
+    public onDestroyed() {
+        if (this.onDesignerRendered !== ComponentRenderer.prototype.onDesignerRendered) {
+            EditorRuntime.off(DesignerRendered, this);
+            this.gfx.parent.removeChild(this.gfx);
+        }
     }
 
     public getRenderer<T>(propertyName : string, attrs : any) : PropertyRenderer<T> {
@@ -60,9 +72,23 @@ export class ComponentRenderer<T extends Component> extends EditorHTMLElement<IA
         return split.join(" ");
     }
 
+    public onDesignerRendered(gfx : PIXI.Container) {}
+
     private static rendererMap = new Map<typeof Component, typeof ComponentRenderer>();
 
-    public static get<T extends Component>(component : TypeOf<T>) : ComponentRenderer<T> {
+    public static getAllRenderers(element : AppElement) {
+        if (!element) return [];
+        const retn = new Array<ComponentRenderer<any>>();
+        const components = element.getAllComponents();
+        for (let i = 0; i < components.length; i++) {
+            const renderer = ComponentRenderer.get(components[i]);
+            retn.push(renderer);
+
+        }
+        return retn;
+    }
+
+    public static get<T extends Component>(component : T) : ComponentRenderer<T> {
         const type = component.constructor as typeof Component;
         const rendererType = ComponentRenderer.rendererMap.get(type);
         return createElement(rendererType || DefaultComponentRenderer, {

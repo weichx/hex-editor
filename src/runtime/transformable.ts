@@ -22,7 +22,7 @@ export class Transformable {
         this.children = [];
         this.position = new Vector2();
         this.rotation = new Quaternion();
-        this.scale = new Vector2();
+        this.scale = new Vector2(1, 1);
         this.localMatrix = new Matrix();
         this.worldMatrix = new Matrix();
     }
@@ -43,7 +43,6 @@ export class Transformable {
         Matrix.CreateTranslation(this.position.x, this.position.y, 0, translate);
         Matrix.Multiply(scaling, rotation, rotationAndScale);
         Matrix.Multiply(rotationAndScale, translate, this.localMatrix);
-
         if (this.parent) {
             this.localMatrix.multiplyToRef(this.parent.getWorldMatrix(), this.worldMatrix);
         } else {
@@ -52,8 +51,7 @@ export class Transformable {
     }
 
     protected isDirty() : boolean {
-        if(this.dirty) return true;
-        let ptr = this.parent;
+        let ptr = this as Transformable;
         while(ptr) {
             if(ptr.dirty) return true;
             ptr = ptr.parent;
@@ -92,8 +90,19 @@ export class Transformable {
         }
     }
 
-    public lookAt(target : Vector3) : void {
-
+    public pointToLocalSpace(point : Vector2, out? : Vector2) {
+        if (this.parent) {
+            this.parent.getWorldMatrix(Matrix.scratch0).invert();
+            const scratch = Vector3.scratch0;
+            scratch.x = point.x;
+            scratch.y = point.y;
+            scratch.z = 0;
+            Vector3.TransformCoordinates(scratch, Matrix.scratch0, scratch);
+            return point.clone(out).set(scratch.x, scratch.y);
+        }
+        else {
+            return point.clone(out);
+        }
     }
 
     public getRotation() : number {

@@ -15,7 +15,6 @@ export class UIComponent extends Component {
     public foregroundColor : Color;
     public backgroundColor : Color;
 
-
     public getTypeName() : string {
         return this.constructor.name.replace("Component", "");
     }

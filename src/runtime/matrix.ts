@@ -151,7 +151,7 @@ export class Matrix {
         other.m[11] = -(((l1 * l35) - (l2 * l37)) + (l4 * l39)) * l27;
         other.m[15] = (((l1 * l36) - (l2 * l38)) + (l3 * l39)) * l27;
 
-        return this;
+        return other;
     }
 
     /**

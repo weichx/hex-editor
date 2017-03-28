@@ -45,67 +45,67 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
+	__webpack_require__(58);
+	__webpack_require__(119);
+	__webpack_require__(121);
+	__webpack_require__(117);
+	__webpack_require__(71);
 	__webpack_require__(60);
-	__webpack_require__(113);
-	__webpack_require__(115);
-	__webpack_require__(111);
-	__webpack_require__(73);
 	__webpack_require__(62);
-	__webpack_require__(64);
-	__webpack_require__(129);
-	__webpack_require__(102);
 	__webpack_require__(130);
-	__webpack_require__(98);
+	__webpack_require__(101);
 	__webpack_require__(131);
+	__webpack_require__(96);
 	__webpack_require__(132);
+	__webpack_require__(133);
 	__webpack_require__(134);
 	__webpack_require__(135);
 	__webpack_require__(137);
-	__webpack_require__(138);
 	__webpack_require__(139);
-	__webpack_require__(141);
-	__webpack_require__(142);
-	__webpack_require__(101);
-	__webpack_require__(106);
-	__webpack_require__(68);
-	__webpack_require__(105);
-	__webpack_require__(143);
-	__webpack_require__(144);
-	__webpack_require__(94);
-	__webpack_require__(103);
-	__webpack_require__(145);
 	__webpack_require__(140);
-	__webpack_require__(61);
-	__webpack_require__(96);
+	__webpack_require__(142);
+	__webpack_require__(143);
+	__webpack_require__(99);
+	__webpack_require__(104);
+	__webpack_require__(66);
+	__webpack_require__(138);
+	__webpack_require__(144);
+	__webpack_require__(145);
 	__webpack_require__(92);
+	__webpack_require__(102);
 	__webpack_require__(146);
-	__webpack_require__(147);
-	__webpack_require__(91);
-	__webpack_require__(148);
-	__webpack_require__(108);
-	__webpack_require__(107);
-	__webpack_require__(70);
-	__webpack_require__(67);
-	__webpack_require__(65);
+	__webpack_require__(141);
+	__webpack_require__(59);
+	__webpack_require__(94);
 	__webpack_require__(90);
+	__webpack_require__(147);
+	__webpack_require__(106);
+	__webpack_require__(89);
+	__webpack_require__(148);
+	__webpack_require__(114);
+	__webpack_require__(113);
+	__webpack_require__(68);
+	__webpack_require__(65);
+	__webpack_require__(63);
+	__webpack_require__(88);
+	__webpack_require__(93);
 	__webpack_require__(95);
-	__webpack_require__(97);
 	__webpack_require__(150);
-	__webpack_require__(117);
-	__webpack_require__(116);
+	__webpack_require__(123);
+	__webpack_require__(122);
 	__webpack_require__(151);
 	__webpack_require__(152);
 	__webpack_require__(153);
-	__webpack_require__(114);
+	__webpack_require__(120);
 	__webpack_require__(154);
-	__webpack_require__(112);
+	__webpack_require__(118);
 	__webpack_require__(155);
 	__webpack_require__(23);
-	__webpack_require__(58);
+	__webpack_require__(56);
 	__webpack_require__(156);
 	__webpack_require__(157);
-	__webpack_require__(57);
-	__webpack_require__(74);
+	__webpack_require__(55);
+	__webpack_require__(72);
 	__webpack_require__(15);
 	__webpack_require__(18);
 	__webpack_require__(14);
@@ -118,7 +118,8 @@
 	__webpack_require__(47);
 	__webpack_require__(158);
 	__webpack_require__(159);
-	__webpack_require__(72);
+	__webpack_require__(100);
+	__webpack_require__(70);
 	__webpack_require__(5);
 	__webpack_require__(20);
 	__webpack_require__(6);
@@ -127,95 +128,93 @@
 	__webpack_require__(9);
 	__webpack_require__(10);
 	__webpack_require__(13);
-	__webpack_require__(110);
+	__webpack_require__(116);
 	__webpack_require__(44);
 	__webpack_require__(161);
 	__webpack_require__(149);
+	__webpack_require__(67);
 	__webpack_require__(69);
-	__webpack_require__(71);
 	__webpack_require__(22);
 	__webpack_require__(3);
-	__webpack_require__(63);
-	__webpack_require__(59);
+	__webpack_require__(61);
+	__webpack_require__(57);
 	__webpack_require__(36);
-	__webpack_require__(79);
+	__webpack_require__(77);
 	__webpack_require__(11);
 	__webpack_require__(162);
 	__webpack_require__(163);
-	__webpack_require__(124);
-	__webpack_require__(125);
-	__webpack_require__(126);
-	__webpack_require__(122);
-	__webpack_require__(121);
+	__webpack_require__(110);
+	__webpack_require__(112);
+	__webpack_require__(107);
+	__webpack_require__(108);
+	__webpack_require__(111);
 	__webpack_require__(45);
 	__webpack_require__(54);
 	__webpack_require__(136);
-	__webpack_require__(99);
+	__webpack_require__(97);
 	__webpack_require__(28);
 	__webpack_require__(2);
 	__webpack_require__(46);
 	__webpack_require__(31);
-	__webpack_require__(118);
+	__webpack_require__(124);
 	__webpack_require__(164);
 	__webpack_require__(165);
 	__webpack_require__(53);
 	__webpack_require__(42);
 	__webpack_require__(52);
 	__webpack_require__(166);
-	__webpack_require__(133);
 	__webpack_require__(167);
-	__webpack_require__(78);
-	__webpack_require__(77);
-	__webpack_require__(168);
-	__webpack_require__(75);
-	__webpack_require__(169);
 	__webpack_require__(76);
-	__webpack_require__(83);
-	__webpack_require__(84);
-	__webpack_require__(86);
-	__webpack_require__(82);
-	__webpack_require__(88);
+	__webpack_require__(75);
+	__webpack_require__(168);
+	__webpack_require__(73);
+	__webpack_require__(74);
 	__webpack_require__(81);
-	__webpack_require__(85);
-	__webpack_require__(89);
+	__webpack_require__(82);
+	__webpack_require__(84);
 	__webpack_require__(80);
+	__webpack_require__(86);
+	__webpack_require__(79);
+	__webpack_require__(83);
 	__webpack_require__(87);
+	__webpack_require__(78);
+	__webpack_require__(85);
 	__webpack_require__(30);
-	__webpack_require__(104);
+	__webpack_require__(103);
 	__webpack_require__(29);
 	__webpack_require__(25);
 	__webpack_require__(39);
 	__webpack_require__(24);
+	__webpack_require__(169);
 	__webpack_require__(170);
-	__webpack_require__(171);
 	__webpack_require__(35);
+	__webpack_require__(171);
 	__webpack_require__(172);
 	__webpack_require__(173);
-	__webpack_require__(174);
 	__webpack_require__(43);
-	__webpack_require__(175);
+	__webpack_require__(174);
 	__webpack_require__(34);
 	__webpack_require__(32);
 	__webpack_require__(27);
-	__webpack_require__(176);
-	__webpack_require__(123);
+	__webpack_require__(175);
+	__webpack_require__(109);
 	__webpack_require__(26);
 	__webpack_require__(17);
 	__webpack_require__(33);
 	__webpack_require__(37);
 	__webpack_require__(38);
-	__webpack_require__(177);
-	__webpack_require__(109);
-	__webpack_require__(66);
-	__webpack_require__(93);
-	__webpack_require__(100);
+	__webpack_require__(129);
+	__webpack_require__(115);
+	__webpack_require__(64);
+	__webpack_require__(91);
+	__webpack_require__(98);
 	__webpack_require__(16);
-	__webpack_require__(178);
+	__webpack_require__(176);
 	__webpack_require__(127);
 	__webpack_require__(128);
-	__webpack_require__(119);
-	__webpack_require__(120);
-	module.exports = __webpack_require__(179);
+	__webpack_require__(125);
+	__webpack_require__(126);
+	module.exports = __webpack_require__(177);
 
 
 /***/ },
@@ -227,9 +226,9 @@
 	__webpack_require__(2);
 	const editor_runtime_1 = __webpack_require__(3);
 	const element_renderer_1 = __webpack_require__(7);
-	const editor_binding_element_1 = __webpack_require__(57);
-	const browser_runtime_1 = __webpack_require__(58);
-	const editor_worker_1 = __webpack_require__(59);
+	const editor_binding_element_1 = __webpack_require__(55);
+	const browser_runtime_1 = __webpack_require__(56);
+	const editor_worker_1 = __webpack_require__(57);
 	window.AppRootElementId = 0;
 	window.Runtime = null;
 	window.HexEnvironmentFlag = 0;
@@ -1199,7 +1198,7 @@
 	        this.context = context;
 	        this.getterFn = binding_compiler_1.getGetter(path);
 	        this.setterFn = binding_compiler_1.getSetter(path);
-	        this.value = void 0; //this.getterFn(this.context);
+	        this.value = this.getterFn(this.context);
 	        this.changeHandlers = [];
 	    }
 	    onUpdated() {
@@ -1989,7 +1988,7 @@
 	        return this;
 	    }
 	    clone(out) {
-	        return (out || new Vector2(this.x, this.y)).set(this.x, this.y);
+	        return (out || new Vector2()).set(this.x, this.y);
 	    }
 	    isZero() {
 	        return this.x === 0 && this.y === 0;
@@ -2834,7 +2833,6 @@
 	const vector2_1 = __webpack_require__(17);
 	const vector3_1 = __webpack_require__(33);
 	let idGenerator = 0;
-	const scratchVector = new vector2_1.Vector2();
 	var Space;
 	(function (Space) {
 	    Space[Space["Local"] = 0] = "Local";
@@ -2871,35 +2869,22 @@
 	        this.localMatrix = new matrix_1.Matrix();
 	        this.worldMatrix = new matrix_1.Matrix();
 	        this.boundingBox = new bounding_box_1.BoundingBox(this);
+	        this.anchor = new vector2_1.Vector2();
 	        //todo don't allow components to be constructed outside of addComponent or this constructor
 	        Runtime.addElement(this);
 	    }
-	    //
 	    // public setPivot(x : number, y : number) : void {
 	    //     this.pivot.x = clamp01(x);
 	    //     this.pivot.y = clamp01(y);
 	    // }
-	    //
 	    getPivot() {
 	        const out = new vector2_1.Vector2();
 	        out.x = this.pivot.x;
 	        out.y = this.pivot.y;
 	        return out;
 	    }
-	    worldToLocal(vector, out) {
-	        this.updateWorldMatrix();
-	        //return Vector2.transformCoordinates(vector, this.worldMatrix.invertNew(Matrix3x3.scratch0), out);
-	        return null;
-	    }
-	    localToWorld(vector, out) {
-	        this.updateWorldMatrix();
-	        // return Vector2.transformCoordinates(vector, this.worldMatrix, out);
-	        return null;
-	    }
-	    getWorldMatrix() {
-	        this.updateWorldMatrix();
-	        // return this.worldMatrix.clone(out || new Matrix3x3());
-	        return this.worldMatrix.clone();
+	    getWorldMatrix(out) {
+	        return this.updateWorldMatrix().clone(out);
 	    }
 	    updateWorldMatrix() {
 	        //mat 0 = rotation matrix
@@ -3006,9 +2991,8 @@
 	    }
 	    setPositionValues(x, y, relativeTo = Space.World) {
 	        if (this.parent && relativeTo === Space.World) {
-	            var invertParentWorldMatrix = this.parent.getWorldMatrix().clone();
+	            var invertParentWorldMatrix = this.parent.getWorldMatrix(matrix_1.Matrix.scratch0);
 	            invertParentWorldMatrix.invert();
-	            var worldPosition = new vector2_1.Vector2(x, y);
 	            const scratch = vector3_1.Vector3.scratch0.set(x, y, 0);
 	            vector3_1.Vector3.TransformCoordinates(scratch, invertParentWorldMatrix, scratch);
 	            this.position.x = scratch.x;
@@ -3021,8 +3005,8 @@
 	        this.dirtyFlags |= ElementDirtyFlag.Position;
 	        Runtime.sendCommand(e_command_type_1.CommandType.SetTransform, this.id);
 	    }
-	    getLocalPosition() {
-	        return this.position.clone();
+	    getLocalPosition(out) {
+	        return this.position.clone(out);
 	    }
 	    getPosition(out) {
 	        this.updateWorldMatrix();
@@ -3237,46 +3221,10 @@
 	    isDestroyed() {
 	        return (this.lifeCycleFlags & e_lifecycle_flags_1.LifeCycleFlag.Destroyed) !== 0;
 	    }
-	    /*** Helpers ***/
 	    containsPoint(point) {
 	        return false;
-	        // const p = this.getPosition();
-	        // const x = p.x;
-	        // const y = p.y;
-	        // const w = this.width;
-	        // const h = this.height;
-	        // const px = point.x;
-	        // const py = point.y;
-	        // return px >= x && x + w >= px && py >= y && y + h >= py;
 	    }
 	}
-	//this might be backwards
-	//todo account for rotation
-	// public containsRect(rect : Rectangle) : boolean {
-	//     const p = this.getPosition();
-	//     return rect.x + rect.width < (p.x + this.width)
-	//         && (rect.x) > (p.x)
-	//         && (rect.y) > (p.y)
-	//         && (rect.y + rect.height) < (p.y + this.height);
-	// }
-	//
-	// //todo account for rotation -- probably want to use algorithm of overlapping polygons instead
-	// public overlapsRectangle(rect : Rectangle) : boolean {
-	//     const p = this.getPosition();
-	//     const minAx = p.x;
-	//     const minAy = p.y;
-	//     const maxAx = p.x + this.width;
-	//     const maxAy = p.y + this.height;
-	//     const minBx = rect.x;
-	//     const minBy = rect.y;
-	//     const maxBx = rect.x + rect.width;
-	//     const maxBy = rect.y + rect.height;
-	//     const aLeftOfB = maxAx < minBx;
-	//     const aRightOfB = minAx > maxBx;
-	//     const aAboveB = minAy > maxBy;
-	//     const aBelowB = maxAy < minBy;
-	//     return !( aLeftOfB || aRightOfB || aAboveB || aBelowB );
-	// }
 	/*** Static ***/
 	AppElement.Root = null;
 	exports.AppElement = AppElement;
@@ -4323,7 +4271,7 @@
 	        other.m[7] = (((l1 * l34) - (l3 * l37)) + (l4 * l38)) * l27;
 	        other.m[11] = -(((l1 * l35) - (l2 * l37)) + (l4 * l39)) * l27;
 	        other.m[15] = (((l1 * l36) - (l2 * l38)) + (l3 * l39)) * l27;
-	        return this;
+	        return other;
 	    }
 	    /**
 	     * Inserts the translation vector (using 3 x floats) in the current Matrix.
@@ -6548,9 +6496,7 @@
 
 
 /***/ },
-/* 55 */,
-/* 56 */,
-/* 57 */
+/* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6604,7 +6550,7 @@
 
 
 /***/ },
-/* 58 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -6651,7 +6597,7 @@
 
 
 /***/ },
-/* 59 */
+/* 57 */
 /***/ function(module, exports) {
 
 	//polyfill for webworker while in editor mode
@@ -6688,19 +6634,19 @@
 
 
 /***/ },
-/* 60 */
+/* 58 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const split_pane_1 = __webpack_require__(61);
-	const editor_window_frame_1 = __webpack_require__(62);
-	const hierarchy_window_1 = __webpack_require__(65);
-	const inspector_window_1 = __webpack_require__(90);
-	const editor_theme_1 = __webpack_require__(63);
-	const asset_window_1 = __webpack_require__(107);
+	const split_pane_1 = __webpack_require__(59);
+	const editor_window_frame_1 = __webpack_require__(60);
+	const hierarchy_window_1 = __webpack_require__(63);
+	const inspector_window_1 = __webpack_require__(88);
+	const editor_theme_1 = __webpack_require__(61);
+	const asset_window_1 = __webpack_require__(113);
 	const editor_html_element_1 = __webpack_require__(18);
-	const stage_window_1 = __webpack_require__(116);
+	const stage_window_1 = __webpack_require__(122);
 	class EditorApplication extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "editor-application" };
@@ -6737,7 +6683,7 @@
 
 
 /***/ },
-/* 61 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7022,15 +6968,15 @@
 
 
 /***/ },
-/* 62 */
+/* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const split_pane_1 = __webpack_require__(61);
-	const editor_theme_1 = __webpack_require__(63);
+	const split_pane_1 = __webpack_require__(59);
+	const editor_theme_1 = __webpack_require__(61);
 	const element_renderer_1 = __webpack_require__(7);
-	const editor_window_tab_1 = __webpack_require__(64);
+	const editor_window_tab_1 = __webpack_require__(62);
 	const editor_html_element_1 = __webpack_require__(18);
 	//todo this is causing a problem with mouse selection -- quad tree fixes this
 	//this issue has to do with document.elementFromPoint not ignoring this element
@@ -7262,7 +7208,7 @@
 
 
 /***/ },
-/* 63 */
+/* 61 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -7278,12 +7224,12 @@
 
 
 /***/ },
-/* 64 */
+/* 62 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_theme_1 = __webpack_require__(63);
+	const editor_theme_1 = __webpack_require__(61);
 	const editor_html_element_1 = __webpack_require__(18);
 	class WindowFrameTab extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
@@ -7327,33 +7273,33 @@
 
 
 /***/ },
-/* 65 */
+/* 63 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const button_1 = __webpack_require__(66);
-	const hierarchy_item_1 = __webpack_require__(67);
+	const button_1 = __webpack_require__(64);
+	const hierarchy_item_1 = __webpack_require__(65);
 	const evt_selection_changed_1 = __webpack_require__(5);
-	const evt_scene_loaded_event_1 = __webpack_require__(72);
+	const evt_scene_loaded_event_1 = __webpack_require__(70);
 	const evt_app_element_created_1 = __webpack_require__(21);
 	const element_renderer_1 = __webpack_require__(7);
-	const editor_window_element_1 = __webpack_require__(73);
+	const editor_window_element_1 = __webpack_require__(71);
 	const app_element_1 = __webpack_require__(28);
 	const evt_app_element_parent_changed_1 = __webpack_require__(40);
-	const drag_hierarchy_item_1 = __webpack_require__(69);
+	const drag_hierarchy_item_1 = __webpack_require__(67);
 	const vector2_1 = __webpack_require__(17);
-	const editor_element_annotations_1 = __webpack_require__(74);
-	const icon_1 = __webpack_require__(68);
+	const editor_element_annotations_1 = __webpack_require__(72);
+	const icon_1 = __webpack_require__(66);
 	const evt_app_element_index_changed_1 = __webpack_require__(41);
 	const runtime_event_1 = __webpack_require__(6);
-	const scroll_component_1 = __webpack_require__(75);
-	const sizing_component_1 = __webpack_require__(77);
-	const menu_setup_1 = __webpack_require__(79);
+	const scroll_component_1 = __webpack_require__(73);
+	const sizing_component_1 = __webpack_require__(75);
+	const menu_setup_1 = __webpack_require__(77);
 	const color_1 = __webpack_require__(53);
 	const background_component_1 = __webpack_require__(52);
-	const panel_component_1 = __webpack_require__(81);
+	const panel_component_1 = __webpack_require__(79);
 	class HierarchyWindow extends editor_window_element_1.EditorWindowElement {
 	    constructor() {
 	        super(...arguments);
@@ -7535,7 +7481,7 @@
 
 
 /***/ },
-/* 66 */
+/* 64 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7553,17 +7499,17 @@
 
 
 /***/ },
-/* 67 */
+/* 65 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const icon_1 = __webpack_require__(68);
+	const icon_1 = __webpack_require__(66);
 	const drag_action_1 = __webpack_require__(44);
-	const drag_hierarchy_item_1 = __webpack_require__(69);
+	const drag_hierarchy_item_1 = __webpack_require__(67);
 	const editor_html_element_1 = __webpack_require__(18);
-	const hierarchy_insert_target_1 = __webpack_require__(70);
+	const hierarchy_insert_target_1 = __webpack_require__(68);
 	const binding_1 = __webpack_require__(13);
 	const evt_app_element_parent_changed_1 = __webpack_require__(40);
 	class HierarchyItem extends editor_html_element_1.EditorHTMLElement {
@@ -7662,7 +7608,7 @@
 
 
 /***/ },
-/* 68 */
+/* 66 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7736,7 +7682,7 @@
 
 
 /***/ },
-/* 69 */
+/* 67 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7753,17 +7699,17 @@
 
 
 /***/ },
-/* 70 */
+/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
 	const editor_html_element_1 = __webpack_require__(18);
-	const hierarchy_item_1 = __webpack_require__(67);
+	const hierarchy_item_1 = __webpack_require__(65);
 	const drag_action_1 = __webpack_require__(44);
-	const drag_hierarchy_item_1 = __webpack_require__(69);
-	const prefab_drag_action_1 = __webpack_require__(71);
+	const drag_hierarchy_item_1 = __webpack_require__(67);
+	const prefab_drag_action_1 = __webpack_require__(69);
 	class HierarchyItemDropTarget extends editor_html_element_1.EditorHTMLElement {
 	    onMounted() {
 	        this.target = this.parent;
@@ -7832,7 +7778,7 @@
 
 
 /***/ },
-/* 71 */
+/* 69 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7848,7 +7794,7 @@
 
 
 /***/ },
-/* 72 */
+/* 70 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7860,7 +7806,7 @@
 
 
 /***/ },
-/* 73 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7872,7 +7818,7 @@
 
 
 /***/ },
-/* 74 */
+/* 72 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8001,13 +7947,13 @@
 
 
 /***/ },
-/* 75 */
+/* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(76);
+	const ui_component_1 = __webpack_require__(74);
 	const component_1 = __webpack_require__(42);
 	var ScrollBarVisibility;
 	(function (ScrollBarVisibility) {
@@ -8024,7 +7970,7 @@
 
 
 /***/ },
-/* 76 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8048,13 +7994,13 @@
 
 
 /***/ },
-/* 77 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const layout_1 = __webpack_require__(78);
+	const layout_1 = __webpack_require__(76);
 	const expose_as_1 = __webpack_require__(54);
 	const util_1 = __webpack_require__(16);
 	const component_1 = __webpack_require__(42);
@@ -8106,12 +8052,12 @@
 
 
 /***/ },
-/* 78 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const sizing_component_1 = __webpack_require__(77);
+	const sizing_component_1 = __webpack_require__(75);
 	const component_1 = __webpack_require__(42);
 	class DefaultSizer {
 	    constructor(appElement) {
@@ -8226,25 +8172,25 @@
 
 
 /***/ },
-/* 79 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const app_element_1 = __webpack_require__(28);
-	const text_component_1 = __webpack_require__(80);
-	const panel_component_1 = __webpack_require__(81);
-	const image_component_1 = __webpack_require__(82);
-	const button_component_1 = __webpack_require__(83);
-	const checkbox_component_1 = __webpack_require__(84);
-	const slider_component_1 = __webpack_require__(85);
-	const dropdown_component_1 = __webpack_require__(86);
-	const text_input_component_1 = __webpack_require__(87);
-	const number_input_component_1 = __webpack_require__(88);
-	const text_area_component_1 = __webpack_require__(89);
+	const text_component_1 = __webpack_require__(78);
+	const panel_component_1 = __webpack_require__(79);
+	const image_component_1 = __webpack_require__(80);
+	const button_component_1 = __webpack_require__(81);
+	const checkbox_component_1 = __webpack_require__(82);
+	const slider_component_1 = __webpack_require__(83);
+	const dropdown_component_1 = __webpack_require__(84);
+	const text_input_component_1 = __webpack_require__(85);
+	const number_input_component_1 = __webpack_require__(86);
+	const text_area_component_1 = __webpack_require__(87);
 	const background_component_1 = __webpack_require__(52);
 	const color_1 = __webpack_require__(53);
-	const sizing_component_1 = __webpack_require__(77);
+	const sizing_component_1 = __webpack_require__(75);
 	function createTextElement(parent = null) {
 	    const element = new app_element_1.AppElement("Text", parent);
 	    const text = element.addComponent(text_component_1.TextComponent);
@@ -8325,7 +8271,7 @@
 
 
 /***/ },
-/* 80 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8333,7 +8279,7 @@
 	const tslib_1 = __webpack_require__(4);
 	const component_1 = __webpack_require__(42);
 	const e_command_type_1 = __webpack_require__(30);
-	const ui_component_1 = __webpack_require__(76);
+	const ui_component_1 = __webpack_require__(74);
 	let TextComponent = class TextComponent extends ui_component_1.UIComponent {
 	    constructor() {
 	        super(...arguments);
@@ -8409,13 +8355,13 @@
 
 
 /***/ },
-/* 81 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(76);
+	const ui_component_1 = __webpack_require__(74);
 	const component_1 = __webpack_require__(42);
 	let PanelComponent = class PanelComponent extends ui_component_1.UIComponent {
 	    serialize() {
@@ -8431,13 +8377,13 @@
 
 
 /***/ },
-/* 82 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(76);
+	const ui_component_1 = __webpack_require__(74);
 	const expose_as_1 = __webpack_require__(54);
 	const component_1 = __webpack_require__(42);
 	const e_command_type_1 = __webpack_require__(30);
@@ -8472,13 +8418,13 @@
 
 
 /***/ },
-/* 83 */
+/* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(76);
+	const ui_component_1 = __webpack_require__(74);
 	const component_1 = __webpack_require__(42);
 	let ButtonComponent = class ButtonComponent extends ui_component_1.UIComponent {
 	};
@@ -8489,13 +8435,13 @@
 
 
 /***/ },
-/* 84 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(76);
+	const ui_component_1 = __webpack_require__(74);
 	const component_1 = __webpack_require__(42);
 	let CheckboxComponent = class CheckboxComponent extends ui_component_1.UIComponent {
 	};
@@ -8506,13 +8452,13 @@
 
 
 /***/ },
-/* 85 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(76);
+	const ui_component_1 = __webpack_require__(74);
 	const component_1 = __webpack_require__(42);
 	let SliderComponent = class SliderComponent extends ui_component_1.UIComponent {
 	};
@@ -8523,13 +8469,13 @@
 
 
 /***/ },
-/* 86 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(76);
+	const ui_component_1 = __webpack_require__(74);
 	const component_1 = __webpack_require__(42);
 	let DropdownComponent = class DropdownComponent extends ui_component_1.UIComponent {
 	};
@@ -8540,13 +8486,13 @@
 
 
 /***/ },
-/* 87 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(76);
+	const ui_component_1 = __webpack_require__(74);
 	const component_1 = __webpack_require__(42);
 	let TextInputComponent = class TextInputComponent extends ui_component_1.UIComponent {
 	};
@@ -8557,13 +8503,13 @@
 
 
 /***/ },
-/* 88 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(76);
+	const ui_component_1 = __webpack_require__(74);
 	const component_1 = __webpack_require__(42);
 	let NumberInputComponent = class NumberInputComponent extends ui_component_1.UIComponent {
 	};
@@ -8574,13 +8520,13 @@
 
 
 /***/ },
-/* 89 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(76);
+	const ui_component_1 = __webpack_require__(74);
 	const component_1 = __webpack_require__(42);
 	let TextAreaComponent = class TextAreaComponent extends ui_component_1.UIComponent {
 	};
@@ -8591,23 +8537,23 @@
 
 
 /***/ },
-/* 90 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const vertical_stack_1 = __webpack_require__(91);
-	const text_input_1 = __webpack_require__(92);
+	const vertical_stack_1 = __webpack_require__(89);
+	const text_input_1 = __webpack_require__(90);
 	const evt_selection_changed_1 = __webpack_require__(5);
-	const editor_window_element_1 = __webpack_require__(73);
-	const inspector_row_1 = __webpack_require__(94);
-	const component_menu_1 = __webpack_require__(95);
-	const editor_theme_1 = __webpack_require__(63);
-	const component_renderer_1 = __webpack_require__(98);
+	const editor_window_element_1 = __webpack_require__(71);
+	const inspector_row_1 = __webpack_require__(92);
+	const component_menu_1 = __webpack_require__(93);
+	const editor_theme_1 = __webpack_require__(61);
+	const component_renderer_1 = __webpack_require__(96);
 	const element_renderer_1 = __webpack_require__(7);
-	const app_element_inspector_1 = __webpack_require__(102);
 	const binding_1 = __webpack_require__(13);
-	const checkbox_input_1 = __webpack_require__(101);
+	const checkbox_input_1 = __webpack_require__(99);
+	const app_element_inspector_1 = __webpack_require__(101);
 	class InspectorWindow extends editor_window_element_1.EditorWindowElement {
 	    onSelectionChanged(newSelection, oldSelection) {
 	        this.selection = newSelection;
@@ -8617,9 +8563,9 @@
 	        this.getChildRoot().addChild(element_renderer_1.createElement(app_element_inspector_1.TransformInspector, {
 	            appElement: this.selection
 	        }));
-	        const components = newSelection.getAllComponents();
-	        for (let i = 0; i < components.length; i++) {
-	            this.createComponentDrawer(components[i]);
+	        const renderers = component_renderer_1.ComponentRenderer.getAllRenderers(this.selection);
+	        for (let i = 0; i < renderers.length; i++) {
+	            this.getChildRoot().addChild(renderers[i]);
 	        }
 	        this.getChildRoot().addChild(element_renderer_1.createElement(component_menu_1.ComponentMenu));
 	    }
@@ -8656,12 +8602,6 @@
 	                        Hex.createElement(checkbox_input_1.CheckboxInput, { value: this.isEnabledBinding })))),
 	            Hex.createElement(vertical_stack_1.Vertical, { "x-child-root": true }));
 	    }
-	    createComponentDrawer(component) {
-	        const renderer = component_renderer_1.ComponentRenderer.get(component);
-	        if (renderer) {
-	            this.getChildRoot().addChild(renderer);
-	        }
-	    }
 	}
 	exports.InspectorWindow = InspectorWindow;
 	createStyleSheet(`
@@ -8683,7 +8623,7 @@
 
 
 /***/ },
-/* 91 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8710,12 +8650,12 @@
 
 
 /***/ },
-/* 92 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(93);
+	const editor_input_1 = __webpack_require__(91);
 	class TextInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return {
@@ -8744,7 +8684,7 @@
 
 
 /***/ },
-/* 93 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8763,6 +8703,10 @@
 	        else {
 	            //todo -- this should maybe just be fake / static
 	            this.binding = binding_1.CreateBinding(this.attrs, "value");
+	            this.binding.setHost(this);
+	            this.binding.onChange((a, b) => {
+	                this.onValueChanged(a, b);
+	            });
 	        }
 	    }
 	    onValueChanged(newValue, oldValue) { }
@@ -8771,7 +8715,7 @@
 
 
 /***/ },
-/* 94 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8809,15 +8753,15 @@
 
 
 /***/ },
-/* 95 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const vertical_stack_1 = __webpack_require__(91);
-	const text_box_icon_1 = __webpack_require__(96);
-	const button_1 = __webpack_require__(66);
-	const component_option_1 = __webpack_require__(97);
+	const vertical_stack_1 = __webpack_require__(89);
+	const text_box_icon_1 = __webpack_require__(94);
+	const button_1 = __webpack_require__(64);
+	const component_option_1 = __webpack_require__(95);
 	const component_1 = __webpack_require__(42);
 	const element_renderer_1 = __webpack_require__(7);
 	const editor_html_element_1 = __webpack_require__(18);
@@ -8891,7 +8835,7 @@
 
 
 /***/ },
-/* 96 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8951,7 +8895,7 @@
 
 
 /***/ },
-/* 97 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8969,29 +8913,39 @@
 
 
 /***/ },
-/* 98 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const property_renderer_1 = __webpack_require__(99);
-	const horizontal_1 = __webpack_require__(100);
-	const icon_1 = __webpack_require__(68);
+	const property_renderer_1 = __webpack_require__(97);
+	const horizontal_1 = __webpack_require__(98);
+	const icon_1 = __webpack_require__(66);
 	const element_renderer_1 = __webpack_require__(7);
-	const checkbox_input_1 = __webpack_require__(101);
+	const checkbox_input_1 = __webpack_require__(99);
 	const util_1 = __webpack_require__(16);
-	const editor_theme_1 = __webpack_require__(63);
+	const editor_theme_1 = __webpack_require__(61);
 	const expose_as_1 = __webpack_require__(54);
 	const editor_html_element_1 = __webpack_require__(18);
 	const binding_1 = __webpack_require__(13);
+	const evt_designer_rendererd_1 = __webpack_require__(100);
 	class ComponentRenderer extends editor_html_element_1.EditorHTMLElement {
 	    constructor() {
 	        super(...arguments);
 	        this.editorDataMap = expose_as_1.getExposedFieldMap(this.attrs.component);
 	        this.component = this.attrs.component;
 	    }
-	    getDomData() {
-	        return { tagName: "div", classList: "component-renderer" };
+	    onCreated() {
+	        if (this.onDesignerRendered !== ComponentRenderer.prototype.onDesignerRendered) {
+	            EditorRuntime.on(evt_designer_rendererd_1.DesignerRendered, this);
+	            this.gfx = new PIXI.Graphics();
+	        }
+	    }
+	    onDestroyed() {
+	        if (this.onDesignerRendered !== ComponentRenderer.prototype.onDesignerRendered) {
+	            EditorRuntime.off(evt_designer_rendererd_1.DesignerRendered, this);
+	            this.gfx.parent.removeChild(this.gfx);
+	        }
 	    }
 	    getRenderer(propertyName, attrs) {
 	        const editorData = this.editorDataMap.get(propertyName);
@@ -9018,6 +8972,18 @@
 	            split.pop();
 	        }
 	        return split.join(" ");
+	    }
+	    onDesignerRendered(gfx) { }
+	    static getAllRenderers(element) {
+	        if (!element)
+	            return [];
+	        const retn = new Array();
+	        const components = element.getAllComponents();
+	        for (let i = 0; i < components.length; i++) {
+	            const renderer = ComponentRenderer.get(components[i]);
+	            retn.push(renderer);
+	        }
+	        return retn;
 	    }
 	    static get(component) {
 	        const type = component.constructor;
@@ -9077,7 +9043,7 @@
 
 
 /***/ },
-/* 99 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9105,7 +9071,7 @@
 
 
 /***/ },
-/* 100 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9130,12 +9096,12 @@
 
 
 /***/ },
-/* 101 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(93);
+	const editor_input_1 = __webpack_require__(91);
 	class CheckboxInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return {
@@ -9144,8 +9110,9 @@
 	        };
 	    }
 	    onMounted() {
+	        this.onValueChanged(this.binding.get());
 	        this.binding.onChange(() => {
-	            this.htmlNode.checked = Boolean(this.binding.get());
+	            this.htmlNode.checked = this.binding.get();
 	        });
 	        this.htmlNode.addEventListener("change", () => {
 	            this.binding.set(this.htmlNode.checked);
@@ -9159,22 +9126,61 @@
 
 
 /***/ },
-/* 102 */
+/* 100 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const runtime_event_1 = __webpack_require__(6);
+	class DesignerRendered extends runtime_event_1.RuntimeEvent {
+	}
+	exports.DesignerRendered = DesignerRendered;
+
+
+/***/ },
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const editor_html_element_1 = __webpack_require__(18);
-	const inspector_row_1 = __webpack_require__(94);
+	const inspector_row_1 = __webpack_require__(92);
 	const binding_1 = __webpack_require__(13);
 	const app_element_1 = __webpack_require__(28);
-	const number_input_1 = __webpack_require__(103);
-	const inline_field_1 = __webpack_require__(105);
-	const editor_theme_1 = __webpack_require__(63);
-	const dimension_input_1 = __webpack_require__(106);
-	const vector2_input_1 = __webpack_require__(147);
+	const number_input_1 = __webpack_require__(102);
+	const dimension_input_1 = __webpack_require__(104);
+	const Vector2_1 = __webpack_require__(105);
+	const vector2_input_1 = __webpack_require__(106);
+	const horizontal_1 = __webpack_require__(98);
+	const icon_1 = __webpack_require__(66);
+	const layout_1 = __webpack_require__(76);
+	const button_1 = __webpack_require__(64);
+	const evt_designer_rendererd_1 = __webpack_require__(100);
+	const shape_container_1 = __webpack_require__(107);
+	const triangle_1 = __webpack_require__(111);
+	const color_1 = __webpack_require__(53);
+	class AnchorFlower extends shape_container_1.ShapeContainer {
+	    constructor() {
+	        super();
+	        const p0 = new Vector2_1.Vector2();
+	        const p1 = new Vector2_1.Vector2(-5, 15);
+	        const p2 = new Vector2_1.Vector2(5, 15);
+	        this.bottom = new triangle_1.Triangle(p0, p1, p2);
+	        this.bottom.setParent(this);
+	    }
+	    update(mouse) {
+	        if (this.bottom.containsPoint(mouse)) {
+	            this.bottom.setColor(color_1.Color.Green);
+	        }
+	        else {
+	            this.bottom.setColor(color_1.Color.Red);
+	        }
+	    }
+	}
 	class TransformInspector extends editor_html_element_1.EditorHTMLElement {
 	    onCreated() {
+	        this.isEditingAnchors = false;
+	        this.anchorFlower = new AnchorFlower();
 	        this.appElement = this.attrs.appElement;
 	        this.proxy = {
 	            localPosition: this.appElement.getLocalPosition(),
@@ -9189,7 +9195,7 @@
 	            this.appElement.setPosition(newValue, app_element_1.Space.Local);
 	        });
 	        this.localRotationBinding = binding_1.CreateBinding(this.proxy, "localRotation").onChange((newValue) => {
-	            this.appElement.setRotation(newValue);
+	            this.appElement.setRotation(newValue, app_element_1.Space.Local);
 	        });
 	        this.localScaleBinding = binding_1.CreateBinding(this.proxy, "localScale").onChange((newValue) => {
 	            this.appElement.setScale(newValue);
@@ -9198,7 +9204,32 @@
 	            this.appElement.setWidth(newValue.width);
 	            this.appElement.setHeight(newValue.height);
 	        });
+	        EditorRuntime.on(evt_designer_rendererd_1.DesignerRendered, this);
 	        EditorRuntime.updateTree.add(this);
+	    }
+	    onDesignerRendered(gfxContainer, mouse) {
+	        if (!this.gfx) {
+	            this.gfx = new PIXI.Graphics();
+	            gfxContainer.addChild(this.gfx);
+	        }
+	        this.gfx.clear();
+	        this.anchorFlower.setPosition(this.appElement.getPosition());
+	        this.anchorFlower.update(mouse);
+	        this.anchorFlower.render(this.gfx);
+	        if (this.isEditingAnchors) {
+	            // this.anchorFlower.setPosition(this.appElement.getPosition());
+	            // this.anchorFlower.update(mouse);
+	            // this.anchorFlower.render(this.gfx);
+	        }
+	    }
+	    onDestroyed() {
+	        if (this.gfx) {
+	            this.gfx.clear();
+	            this.gfx.parent.removeChild(this.gfx);
+	            this.gfx.destroy();
+	            this.gfx = null;
+	        }
+	        EditorRuntime.off(evt_designer_rendererd_1.DesignerRendered, this);
 	    }
 	    onUpdated() {
 	        this.proxy.localPosition = this.appElement.getLocalPosition();
@@ -9209,36 +9240,35 @@
 	    }
 	    createInitialStructure() {
 	        return [
-	            Hex.createElement(inspector_row_1.InspectorRow, { label: "Position" },
-	                Hex.createElement(vector2_input_1.Vector2Input, { value: this.localPositionBinding })),
-	            Hex.createElement(inspector_row_1.InspectorRow, { label: "Scale" },
-	                Hex.createElement(vector2_input_1.Vector2Input, { value: this.localScaleBinding })),
-	            Hex.createElement(inspector_row_1.InspectorRow, { label: "Rotation" },
-	                Hex.createElement(inline_field_1.InlineField, { label: "" },
-	                    Hex.createElement(number_input_1.AngleInput, { value: this.localRotationBinding }))),
-	            Hex.createElement(inspector_row_1.InspectorRow, { label: "Dimensions" },
-	                Hex.createElement(dimension_input_1.DimensionInput, { value: this.dimensionBinding }))
+	            Hex.createElement(horizontal_1.Horizontal, { style: "position:relative" },
+	                Hex.createElement(icon_1.ToggleIcon, { class: "inspector-toggle", visibilityTarget: () => this.getChildRoot() }),
+	                Hex.createElement("span", { "x-if-eval": () => !this.appElement.getParent().getComponent(layout_1.LayoutComponent), class: "component-name" }, "Transform"),
+	                Hex.createElement("span", { "x-if-eval": () => this.appElement.getParent().getComponent(layout_1.LayoutComponent), class: "component-name" }, "Transform (Controlled by Layout Component)")),
+	            Hex.createElement("div", { "x-if-eval": () => !this.appElement.getParent().getComponent(layout_1.LayoutComponent), "x-child-root": true, class: "component-renderer-child-root" },
+	                Hex.createElement(inspector_row_1.InspectorRow, { label: "Anchors" },
+	                    Hex.createElement(button_1.Button, { onClick: () => this.isEditingAnchors = !this.isEditingAnchors }, "Edit")),
+	                Hex.createElement(inspector_row_1.InspectorRow, { label: "Position" },
+	                    Hex.createElement(vector2_input_1.Vector2Input, { value: this.localPositionBinding })),
+	                Hex.createElement(inspector_row_1.InspectorRow, { label: "Scale" },
+	                    Hex.createElement(vector2_input_1.Vector2Input, { value: this.localScaleBinding })),
+	                Hex.createElement(inspector_row_1.InspectorRow, { label: "Rotation" },
+	                    Hex.createElement(number_input_1.AngleInput, { value: this.localRotationBinding })),
+	                Hex.createElement(inspector_row_1.InspectorRow, { label: "Dimensions" },
+	                    Hex.createElement(dimension_input_1.DimensionInput, { value: this.dimensionBinding })))
 	        ];
 	    }
 	}
 	exports.TransformInspector = TransformInspector;
-	createStyleSheet(`<style>
-
-	.transform-inspector {
-	    border-bottom: 1px solid ${editor_theme_1.WindowColors.borderGrey};
-	}
-
-	`);
 
 
 /***/ },
-/* 103 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(93);
-	const e_keycode_1 = __webpack_require__(104);
+	const editor_input_1 = __webpack_require__(91);
+	const e_keycode_1 = __webpack_require__(103);
 	const math_util_1 = __webpack_require__(36);
 	class NumberInput extends editor_input_1.InputRenderer {
 	    getDomData() {
@@ -9312,7 +9342,7 @@
 
 
 /***/ },
-/* 104 */
+/* 103 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -9422,41 +9452,15 @@
 
 
 /***/ },
-/* 105 */
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const horizontal_1 = __webpack_require__(100);
-	class InlineField extends horizontal_1.HorizontalBase {
-	    createInitialStructure(children) {
-	        return [
-	            Hex.createElement("span", { class: "inline-label" }, this.attrs.label),
-	            children
-	        ];
-	    }
-	}
-	exports.InlineField = InlineField;
-	createStyleSheet(`<style>
-
-	    .inline-label {
-	        /*padding-left: 1.8em;*/
-	        width: 125px;
-	    }
-	    
-	`);
-
-
-/***/ },
-/* 106 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const number_input_1 = __webpack_require__(103);
+	const number_input_1 = __webpack_require__(102);
 	const binding_1 = __webpack_require__(13);
-	const editor_input_1 = __webpack_require__(93);
-	const horizontal_1 = __webpack_require__(100);
+	const editor_input_1 = __webpack_require__(91);
+	const horizontal_1 = __webpack_require__(98);
 	class DimensionInput extends editor_input_1.InputRenderer {
 	    createInitialStructure(children) {
 	        return Hex.createElement(horizontal_1.Horizontal, null,
@@ -9483,26 +9487,718 @@
 
 
 /***/ },
+/* 105 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	class Vector2 {
+	    constructor(x = 0, y = 0) {
+	        this.x = x;
+	        this.y = y;
+	    }
+	    set(x, y) {
+	        this.x = x;
+	        this.y = y;
+	        return this;
+	    }
+	    scale(factor) {
+	        this.x *= factor;
+	        this.y *= factor;
+	        return this;
+	    }
+	    scaleNew(factor) {
+	        return new Vector2(this.x * factor, this.y * factor);
+	    }
+	    addScalar(scalar) {
+	        this.x += scalar;
+	        this.y += scalar;
+	        return this;
+	    }
+	    addScalarNew(scalar) {
+	        return new Vector2(this.x + scalar, this.y + scalar);
+	    }
+	    subScalar(scalar) {
+	        this.x -= scalar;
+	        this.y -= scalar;
+	        return this;
+	    }
+	    divideScalar(scalar) {
+	        if (scalar !== 0) {
+	            this.x /= scalar;
+	            this.y /= scalar;
+	        }
+	        else {
+	            this.x = 0;
+	            this.y = 0;
+	        }
+	        return this;
+	    }
+	    divideScalarNew(scalar) {
+	        if (scalar !== 0) {
+	            return new Vector2(this.x / scalar, this.y / scalar);
+	        }
+	        else {
+	            return new Vector2();
+	        }
+	    }
+	    subScalarNew(scalar) {
+	        return new Vector2(this.x - scalar, this.y - scalar);
+	    }
+	    invert() {
+	        this.x *= -1;
+	        this.y *= -1;
+	        return this;
+	    }
+	    invertNew() {
+	        return new Vector2(this.x * -1, this.y * -1);
+	    }
+	    lookAt(other) {
+	        return this;
+	    }
+	    clamp(length) {
+	        const lengthSq = this.lengthSquared();
+	        if (length * length > lengthSq) {
+	            this.normalize();
+	            this.scale(length);
+	        }
+	        return this;
+	    }
+	    dot(other) {
+	        return this.x * other.x + this.y * other.y;
+	    }
+	    cross(other) {
+	        return (this.x * other.y) - (this.y * other.x);
+	    }
+	    normalize() {
+	        var length = this.length();
+	        if (length === 0) {
+	            this.x = 1;
+	            this.y = 0;
+	        }
+	        else {
+	            this.x /= length;
+	            this.y /= length;
+	        }
+	        return this;
+	    }
+	    normalizeNew() {
+	        const length = this.length();
+	        const retn = new Vector2();
+	        if (length === 0) {
+	            retn.x = 1;
+	            retn.y = 0;
+	        }
+	        else {
+	            retn.x = this.x / length;
+	            retn.y = this.y / length;
+	        }
+	        return this;
+	    }
+	    length() {
+	        return Math.sqrt(this.lengthSquared());
+	    }
+	    lengthSquared() {
+	        return this.x * this.x + this.y * this.y;
+	    }
+	    addVector(other) {
+	        this.x += other.x;
+	        this.y += other.y;
+	        return this;
+	    }
+	    addValues(x, y) {
+	        this.x += x;
+	        this.y += y;
+	        return this;
+	    }
+	    subVector(other) {
+	        this.x -= other.x;
+	        this.y -= other.y;
+	        return this;
+	    }
+	    subValues(x, y) {
+	        this.x -= x;
+	        this.y -= y;
+	        return this;
+	    }
+	    addVectorNew(other, out) {
+	        return (out || new Vector2()).set(this.x + other.x, this.y + other.y);
+	    }
+	    subVectorNew(other, out) {
+	        return (out || new Vector2()).set(this.x - other.x, this.y - other.y);
+	    }
+	    horizontalAngle() {
+	        return Math.atan2(this.y, this.x);
+	    }
+	    verticalAngle() {
+	        //noinspection JSSuspiciousNameCombination
+	        return Math.atan2(this.x, this.y);
+	    }
+	    rotate(radians) {
+	        const sin = Math.sin(radians);
+	        const cos = Math.cos(radians);
+	        const nx = (this.x * cos) - (this.y * sin);
+	        const ny = (this.x * sin) + (this.y * cos);
+	        this.x = nx;
+	        this.y = ny;
+	        return this;
+	    }
+	    rotateNew(radians) {
+	        const sin = Math.sin(radians);
+	        const cos = Math.cos(radians);
+	        return new Vector2((this.x * cos) - (this.y * sin), (this.x * sin) + (this.y * cos));
+	    }
+	    rotateAround(radians, pivot) {
+	        let x = this.x - pivot.x;
+	        let y = this.y - pivot.y;
+	        const sin = Math.sin(radians);
+	        const cos = Math.cos(radians);
+	        this.x = ((x * cos) - (y * sin)) + pivot.x;
+	        this.y = ((x * sin) + (y * cos)) + pivot.y;
+	        return this;
+	    }
+	    project(other) {
+	        const e = ((this.x * other.x) + (this.y * other.y)) / ((other.x * other.x) + (other.y * other.y));
+	        this.x = e * other.x;
+	        this.y = e * other.y;
+	        return this;
+	    }
+	    projectNew(other) {
+	        const e = ((this.x * other.x) + (this.y * other.y)) / ((other.x * other.x) + (other.y * other.y));
+	        return new Vector2(e * other.x, e * other.y);
+	    }
+	    distanceTo(other) {
+	        const dx = this.x - other.x;
+	        const dy = this.y - other.y;
+	        return Math.sqrt(dx * dx + dy * dy);
+	    }
+	    distanceToSquared(other) {
+	        const dx = this.x - other.x;
+	        const dy = this.y - other.y;
+	        return dx * dx + dy * dy;
+	    }
+	    copy(other) {
+	        this.x = other.x;
+	        this.y = other.y;
+	        return this;
+	    }
+	    clone(out) {
+	        return (out || new Vector2()).set(this.x, this.y);
+	    }
+	    isZero() {
+	        return this.x === 0 && this.y === 0;
+	    }
+	    equals(other) {
+	        return this.x === other.x && this.y === other.y;
+	    }
+	    toString() {
+	        return `{x: ${this.x}, y: ${this.y}}`;
+	    }
+	    static lerp(start, end, amount, out) {
+	        out = out || new Vector2();
+	        var x = start.x + ((end.x - start.x) * amount);
+	        var y = start.y + ((end.y - start.y) * amount);
+	        return out.set(x, y);
+	    }
+	    static catmullRom(value1, value2, value3, value4, amount, out) {
+	        out = out || new Vector2();
+	        var squared = amount * amount;
+	        var cubed = amount * squared;
+	        var x = 0.5 * ((((2.0 * value2.x) + ((-value1.x + value3.x) * amount)) +
+	            (((((2.0 * value1.x) - (5.0 * value2.x)) + (4.0 * value3.x)) - value4.x) * squared)) +
+	            ((((-value1.x + (3.0 * value2.x)) - (3.0 * value3.x)) + value4.x) * cubed));
+	        var y = 0.5 * ((((2.0 * value2.y) + ((-value1.y + value3.y) * amount)) +
+	            (((((2.0 * value1.y) - (5.0 * value2.y)) + (4.0 * value3.y)) - value4.y) * squared)) +
+	            ((((-value1.y + (3.0 * value2.y)) - (3.0 * value3.y)) + value4.y) * cubed));
+	        out.x = x;
+	        out.y = y;
+	        return out;
+	    }
+	    /**
+	     * Returns a new Vector2 set with same the coordinates than "value" ones if the vector "value" is in the square defined by "min" and "max".
+	     * If a coordinate of "value" is lower than "min" coordinates, the returned Vector2 is given this "min" coordinate.
+	     * If a coordinate of "value" is greater than "max" coordinates, the returned Vector2 is given this "max" coordinate.
+	     */
+	    static clamp(value, min, max, out) {
+	        out = out || new Vector2();
+	        var x = value.x;
+	        x = (x > max.x) ? max.x : x;
+	        x = (x < min.x) ? min.x : x;
+	        var y = value.y;
+	        y = (y > max.y) ? max.y : y;
+	        y = (y < min.y) ? min.y : y;
+	        out.x = x;
+	        out.y = y;
+	        return out;
+	    }
+	    /**
+	     * Returns a new Vecto2 located for "amount" (float) on the Hermite spline defined by the vectors "value1", "value3", "tangent1", "tangent2".
+	     */
+	    static hermite(value1, tangent1, value2, tangent2, amount, out) {
+	        out = out || new Vector2();
+	        var squared = amount * amount;
+	        var cubed = amount * squared;
+	        var part1 = ((2.0 * cubed) - (3.0 * squared)) + 1.0;
+	        var part2 = (-2.0 * cubed) + (3.0 * squared);
+	        var part3 = (cubed - (2.0 * squared)) + amount;
+	        var part4 = cubed - squared;
+	        var x = (((value1.x * part1) + (value2.x * part2)) + (tangent1.x * part3)) + (tangent2.x * part4);
+	        var y = (((value1.y * part1) + (value2.y * part2)) + (tangent1.y * part3)) + (tangent2.y * part4);
+	        out.x = x;
+	        out.y = y;
+	        return out;
+	    }
+	    static dot(left, right) {
+	        return left.x * right.x + left.y * right.y;
+	    }
+	    static transformCoordinates(vector, matrix, out) {
+	        out = out || new Vector2();
+	        const x = vector.x;
+	        const y = vector.y;
+	        out.x = (x * matrix.a) + (y * matrix.c) + matrix.tx;
+	        out.y = (x * matrix.b) + (y * matrix.d) + matrix.ty;
+	        return out;
+	    }
+	    static transformFloatCoordinates(x, y, matrix, out) {
+	        out = out || new Vector2();
+	        out.x = (x * matrix.a) + (y * matrix.c) + matrix.tx;
+	        out.y = (x * matrix.b) + (y * matrix.d) + matrix.ty;
+	        return out;
+	    }
+	    static transformDirection(vector, matrix, out) {
+	        out = out || new Vector2();
+	        const x = vector.x;
+	        const y = vector.y;
+	        out.x = (x * matrix.a) + (y * matrix.c);
+	        out.y = (x * matrix.b) + (y * matrix.d);
+	        return out;
+	    }
+	}
+	Vector2.up = new Vector2(0, 1);
+	Vector2.right = new Vector2(1, 0);
+	Vector2.down = new Vector2(0, -1);
+	Vector2.left = new Vector2(-1, 0);
+	Vector2.Zero = new Vector2();
+	Vector2.scratch0 = new Vector2();
+	Vector2.scratch1 = new Vector2();
+	Vector2.scratch2 = new Vector2();
+	Vector2.scratch3 = new Vector2();
+	Vector2.scratch4 = new Vector2();
+	exports.Vector2 = Vector2;
+
+
+/***/ },
+/* 106 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const number_input_1 = __webpack_require__(102);
+	const binding_1 = __webpack_require__(13);
+	const editor_input_1 = __webpack_require__(91);
+	const horizontal_1 = __webpack_require__(98);
+	class Vector2Input extends editor_input_1.InputRenderer {
+	    createInitialStructure(children) {
+	        return Hex.createElement(horizontal_1.Horizontal, null,
+	            Hex.createElement("div", { class: "field-row" },
+	                Hex.createElement("span", { class: "field-label" }, "x = \u00A0"),
+	                Hex.createElement(number_input_1.NumberInput, { style: `padding-left: ${24}px`, value: binding_1.CreateBinding(this.binding, "x") })),
+	            Hex.createElement("div", { class: "field-row" },
+	                Hex.createElement("span", { class: "field-label" }, "y = \u00A0"),
+	                Hex.createElement(number_input_1.NumberInput, { style: `padding-left: ${24}px`, value: binding_1.CreateBinding(this.binding, "y") })));
+	    }
+	}
+	exports.Vector2Input = Vector2Input;
+	createStyleSheet(`<style>
+	    .field-row {
+	        position: relative;
+	    }
+	    
+	    .field-label {
+	        position: absolute;
+	        left: 2px;
+	    }
+	`);
+
+
+/***/ },
 /* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(4);
-	const editor_window_element_1 = __webpack_require__(73);
+	const shape_1 = __webpack_require__(108);
+	class ShapeContainer extends shape_1.Shape {
+	    constructor(style) {
+	        super(style);
+	    }
+	    render(gfx) {
+	        for (let i = 0; i < this.children.length; i++) {
+	            this.children[i].render(gfx);
+	        }
+	    }
+	}
+	exports.ShapeContainer = ShapeContainer;
+
+
+/***/ },
+/* 108 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const transformable_1 = __webpack_require__(109);
+	const pixi_style_1 = __webpack_require__(110);
+	const math_util_1 = __webpack_require__(36);
+	class Shape extends transformable_1.Transformable {
+	    constructor(style) {
+	        super();
+	        this.style = (style || pixi_style_1.PixiStyle.Inherit).clone();
+	        this.points = [];
+	    }
+	    beginRender(gfx) { }
+	    finishRender(gfx) { }
+	    setLineWidth(width) {
+	        width = math_util_1.MathUtil.clamp(width, 0.1, 100);
+	        this.style.lineWidth = width;
+	    }
+	    setLineColor(color) {
+	        this.style.lineColor = color;
+	    }
+	    setFillColor(color) {
+	        this.style.fillColor = color;
+	    }
+	    setColor(color) {
+	        this.setFillColor(color);
+	        this.setLineColor(color);
+	    }
+	}
+	exports.Shape = Shape;
+
+
+/***/ },
+/* 109 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const matrix_1 = __webpack_require__(35);
+	const vector3_1 = __webpack_require__(33);
+	const quaternion_1 = __webpack_require__(34);
+	const app_element_1 = __webpack_require__(28);
 	const vector2_1 = __webpack_require__(17);
-	const asset_item_1 = __webpack_require__(108);
+	const math_util_1 = __webpack_require__(36);
+	class Transformable {
+	    constructor() {
+	        this.dirty = true;
+	        this.parent = null;
+	        this.children = [];
+	        this.position = new vector2_1.Vector2();
+	        this.rotation = new quaternion_1.Quaternion();
+	        this.scale = new vector2_1.Vector2(1, 1);
+	        this.localMatrix = new matrix_1.Matrix();
+	        this.worldMatrix = new matrix_1.Matrix();
+	    }
+	    getWorldMatrix(out) {
+	        this.updateWorldMatrix();
+	        return this.worldMatrix.clone(out);
+	    }
+	    updateWorldMatrix() {
+	        if (!this.isDirty())
+	            return;
+	        const scaling = matrix_1.Matrix.scratch0;
+	        const rotation = matrix_1.Matrix.scratch1;
+	        const translate = matrix_1.Matrix.scratch2;
+	        const rotationAndScale = matrix_1.Matrix.scratch3;
+	        this.rotation.toRotationMatrix(rotation);
+	        matrix_1.Matrix.CreateScale(this.scale.x, this.scale.y, 1, scaling);
+	        matrix_1.Matrix.CreateTranslation(this.position.x, this.position.y, 0, translate);
+	        matrix_1.Matrix.Multiply(scaling, rotation, rotationAndScale);
+	        matrix_1.Matrix.Multiply(rotationAndScale, translate, this.localMatrix);
+	        if (this.parent) {
+	            this.localMatrix.multiplyToRef(this.parent.getWorldMatrix(), this.worldMatrix);
+	        }
+	        else {
+	            this.worldMatrix.copy(this.localMatrix);
+	        }
+	    }
+	    isDirty() {
+	        let ptr = this;
+	        while (ptr) {
+	            if (ptr.dirty)
+	                return true;
+	            ptr = ptr.parent;
+	        }
+	        return false;
+	    }
+	    translate(translation, relativeTo = app_element_1.Space.World) {
+	        if (this.parent && relativeTo === app_element_1.Space.World) {
+	            this.parent.getWorldMatrix(matrix_1.Matrix.scratch0).invert();
+	            const scratch = vector3_1.Vector3.scratch0;
+	            scratch.x = translation.x;
+	            scratch.y = translation.y;
+	            scratch.z = 0;
+	            vector3_1.Vector3.TransformCoordinates(scratch, matrix_1.Matrix.scratch0, scratch);
+	            this.position.addVector(translation);
+	        }
+	        else {
+	            this.position.addVector(translation);
+	        }
+	    }
+	    setPosition(position, relativeTo = app_element_1.Space.World) {
+	        if (this.parent && relativeTo === app_element_1.Space.World) {
+	            this.parent.getWorldMatrix(matrix_1.Matrix.scratch0).invert();
+	            const scratch = vector3_1.Vector3.scratch0;
+	            scratch.x = position.x;
+	            scratch.y = position.y;
+	            scratch.z = 0;
+	            vector3_1.Vector3.TransformCoordinates(scratch, matrix_1.Matrix.scratch0, scratch);
+	            this.position.x = scratch.x;
+	            this.position.y = scratch.y;
+	        }
+	        else {
+	            this.position.copy(position);
+	        }
+	    }
+	    pointToLocalSpace(point, out) {
+	        if (this.parent) {
+	            this.parent.getWorldMatrix(matrix_1.Matrix.scratch0).invert();
+	            const scratch = vector3_1.Vector3.scratch0;
+	            scratch.x = point.x;
+	            scratch.y = point.y;
+	            scratch.z = 0;
+	            vector3_1.Vector3.TransformCoordinates(scratch, matrix_1.Matrix.scratch0, scratch);
+	            return point.clone(out).set(scratch.x, scratch.y);
+	        }
+	        else {
+	            return point.clone(out);
+	        }
+	    }
+	    getRotation() {
+	        return this.rotation.getRotationZ();
+	    }
+	    rotate(radians) {
+	        quaternion_1.Quaternion.RotationAxis(vector3_1.Vector3.Forward, radians, quaternion_1.Quaternion.scratch0);
+	        this.rotation.multiply(quaternion_1.Quaternion.scratch0);
+	    }
+	    setScale(scale) {
+	        this.scale.x = scale.x;
+	        this.scale.y = scale.y;
+	    }
+	    getScale(out) {
+	        return (out || new vector2_1.Vector2).copy(this.scale);
+	    }
+	    getPosition(out) {
+	        this.updateWorldMatrix();
+	        return (out || new vector2_1.Vector2()).set(this.worldMatrix.m[12], this.worldMatrix.m[13]);
+	    }
+	    getLocalPosition(out) {
+	        return (out || new vector2_1.Vector2()).copy(this.position);
+	    }
+	    setParent(parent) {
+	        if (this.isDescendantOf(parent)) {
+	            return false;
+	        }
+	        if (this.parent) {
+	            this.parent.children.remove(this);
+	        }
+	        this.parent = parent;
+	        this.parent.children.push(this);
+	    }
+	    getParent() {
+	        return this.parent;
+	    }
+	    isDescendantOf(transformable) {
+	        if (!transformable || transformable === this) {
+	            return false;
+	        }
+	        var ptr = this.parent;
+	        while (ptr) {
+	            if (ptr === transformable) {
+	                return true;
+	            }
+	        }
+	        return false;
+	    }
+	    setSiblingIndex(index) {
+	        const parent = this.parent;
+	        if (!parent)
+	            return false;
+	        const children = this.parent.children;
+	        const currentIndex = children.indexOf(this);
+	        if (index === currentIndex || currentIndex === -1) {
+	            return false;
+	        }
+	        index = math_util_1.MathUtil.clamp(index, 0, children.length - 1);
+	        children.remove(this);
+	        children.insert(this, index);
+	        return true;
+	    }
+	    isRoot() {
+	        return !this.parent;
+	    }
+	    getChildAt(index) {
+	        return this.children[index];
+	    }
+	    getChildCount() {
+	        return this.children.length;
+	    }
+	    getDepth() {
+	        if (!this.parent)
+	            return 0;
+	        let ptr = this.parent;
+	        let depth = 1;
+	        while (ptr) {
+	            depth++;
+	            ptr = ptr.parent;
+	        }
+	        return depth;
+	    }
+	}
+	exports.Transformable = Transformable;
+
+
+/***/ },
+/* 110 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const color_1 = __webpack_require__(53);
+	const math_util_1 = __webpack_require__(36);
+	class PixiStyle {
+	    constructor(lineColor = null, lineWidth = 1, fillColor = null) {
+	        this.lineColor = lineColor || color_1.Color.Cyan;
+	        this.fillColor = fillColor || color_1.Color.Cyan;
+	        this.lineWidth = math_util_1.MathUtil.clamp(lineWidth, 1, 10);
+	    }
+	    getFillColor() {
+	        return this.fillColor.toHex();
+	    }
+	    getLineColor() {
+	        return this.lineColor.toHex();
+	    }
+	    getLineAlpha() {
+	        return 1;
+	    }
+	    clone() {
+	        return new PixiStyle(this.lineColor, this.lineWidth, this.fillColor);
+	    }
+	}
+	PixiStyle.Inherit = new PixiStyle();
+	exports.PixiStyle = PixiStyle;
+
+
+/***/ },
+/* 111 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const shape_1 = __webpack_require__(108);
+	const vector2_1 = __webpack_require__(17);
+	const polygon_1 = __webpack_require__(112);
+	class Triangle extends shape_1.Shape {
+	    constructor(p1, p2, p3, style) {
+	        super(style);
+	        this.points.push(p1, p2, p3);
+	    }
+	    render(gfx) {
+	        gfx.beginFill(this.style.getFillColor());
+	        const position = this.getPosition(vector2_1.Vector2.scratch0);
+	        const rotation = this.rotation.getRotationZ();
+	        const p1 = this.points[0].clone(vector2_1.Vector2.scratch1).rotate(rotation).addVector(position);
+	        const p2 = this.points[1].clone(vector2_1.Vector2.scratch2).rotate(rotation).addVector(position);
+	        const p3 = this.points[2].clone(vector2_1.Vector2.scratch3).rotate(rotation).addVector(position);
+	        gfx.lineStyle(1, this.style.getLineColor());
+	        gfx.moveTo(p1.x, p1.y);
+	        gfx.lineTo(p2.x, p2.y);
+	        gfx.lineTo(p3.x, p3.y);
+	        gfx.lineTo(p1.x, p1.y);
+	        gfx.endFill();
+	    }
+	    containsPoint(point) {
+	        point = this.pointToLocalSpace(point);
+	        return polygon_1.Polygon.contains(this.points, point);
+	    }
+	}
+	exports.Triangle = Triangle;
+
+
+/***/ },
+/* 112 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const vector2_1 = __webpack_require__(17);
+	const transformable_1 = __webpack_require__(109);
+	class Polygon extends transformable_1.Transformable {
+	    constructor() {
+	        super();
+	        this.points = new Array();
+	        this.coordinates = [];
+	    }
+	    addPoint(point) {
+	        this.points.push(new vector2_1.Vector2(point.x, point.y));
+	        this.coordinates.push(point.x, point.y);
+	    }
+	    containsPoint(point) {
+	        const points = this.points;
+	        let c = false;
+	        for (let i = 0, j = points.length - 1; i < points.length; j = i++) {
+	            const pointI = points[i];
+	            const pointJ = points[j];
+	            if (((pointI.y >= point.y) !== (pointJ.y >= point.y)) &&
+	                (point.x <= (pointJ.x - pointI.x) * (point.y - pointI.y) / (pointJ.y - pointI.y) + pointI.x)) {
+	                c = !c;
+	            }
+	        }
+	        return c;
+	    }
+	    static contains(points, target) {
+	        let contains = false;
+	        const px = target.x;
+	        const py = target.y;
+	        for (let i = 0, j = points.length - 1; i < points.length; j = i++) {
+	            const pointI = points[i];
+	            const pointJ = points[j];
+	            const pIx = pointI.x;
+	            const pIy = pointI.y;
+	            const pJx = pointJ.x;
+	            const pJy = pointJ.y;
+	            const test = (pIy >= py) !== (pJy >= py);
+	            if (test && (px <= (pJx - pIx) * (py - pIy) / (pJy - pIy) + pIx)) {
+	                contains = !contains;
+	            }
+	        }
+	        return contains;
+	    }
+	}
+	exports.Polygon = Polygon;
+
+
+/***/ },
+/* 113 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const tslib_1 = __webpack_require__(4);
+	const editor_window_element_1 = __webpack_require__(71);
+	const vector2_1 = __webpack_require__(17);
+	const asset_item_1 = __webpack_require__(114);
 	const element_renderer_1 = __webpack_require__(7);
-	const prefab_asset_item_1 = __webpack_require__(111);
-	const editor_element_annotations_1 = __webpack_require__(74);
-	const editor_theme_1 = __webpack_require__(63);
-	const folder_asset_item_1 = __webpack_require__(113);
-	const folder_asset_1 = __webpack_require__(114);
-	const icon_1 = __webpack_require__(68);
+	const prefab_asset_item_1 = __webpack_require__(117);
+	const editor_element_annotations_1 = __webpack_require__(72);
+	const editor_theme_1 = __webpack_require__(61);
+	const folder_asset_item_1 = __webpack_require__(119);
+	const folder_asset_1 = __webpack_require__(120);
+	const icon_1 = __webpack_require__(66);
 	const drag_action_1 = __webpack_require__(44);
-	const drag_hierarchy_item_1 = __webpack_require__(69);
+	const drag_hierarchy_item_1 = __webpack_require__(67);
 	const evt_asset_created_1 = __webpack_require__(47);
-	const image_asset_item_1 = __webpack_require__(115);
+	const image_asset_item_1 = __webpack_require__(121);
 	class AssetWindow extends editor_window_element_1.EditorWindowElement {
 	    constructor() {
 	        super(...arguments);
@@ -9702,18 +10398,18 @@
 
 
 /***/ },
-/* 108 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
 	const editor_html_element_1 = __webpack_require__(18);
-	const asset_window_1 = __webpack_require__(107);
-	const icon_1 = __webpack_require__(68);
-	const text_selection_1 = __webpack_require__(109);
+	const asset_window_1 = __webpack_require__(113);
+	const icon_1 = __webpack_require__(66);
+	const text_selection_1 = __webpack_require__(115);
 	const drag_action_1 = __webpack_require__(44);
-	const asset_drag_action_1 = __webpack_require__(110);
+	const asset_drag_action_1 = __webpack_require__(116);
 	class AssetItemDropTarget extends editor_html_element_1.EditorHTMLElement {
 	    onMounted() {
 	        this.target = this.parent;
@@ -9892,7 +10588,7 @@
 
 
 /***/ },
-/* 109 */
+/* 115 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -9946,7 +10642,7 @@
 
 
 /***/ },
-/* 110 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9963,16 +10659,16 @@
 
 
 /***/ },
-/* 111 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const prefab_asset_1 = __webpack_require__(112);
-	const asset_item_1 = __webpack_require__(108);
+	const prefab_asset_1 = __webpack_require__(118);
+	const asset_item_1 = __webpack_require__(114);
 	const drag_action_1 = __webpack_require__(44);
-	const prefab_drag_action_1 = __webpack_require__(71);
+	const prefab_drag_action_1 = __webpack_require__(69);
 	let PrefabAssetItem = class PrefabAssetItem extends asset_item_1.EditorAssetItem {
 	    getIconName() {
 	        return "object-group";
@@ -9991,7 +10687,7 @@
 
 
 /***/ },
-/* 112 */
+/* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10013,14 +10709,14 @@
 
 
 /***/ },
-/* 113 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const asset_item_1 = __webpack_require__(108);
-	const icon_1 = __webpack_require__(68);
+	const asset_item_1 = __webpack_require__(114);
+	const icon_1 = __webpack_require__(66);
 	const drag_action_1 = __webpack_require__(44);
 	let FolderAssetItem = class FolderAssetItem extends asset_item_1.EditorAssetItem {
 	    getIconName() {
@@ -10056,7 +10752,7 @@
 
 
 /***/ },
-/* 114 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10068,13 +10764,13 @@
 
 
 /***/ },
-/* 115 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const asset_item_1 = __webpack_require__(108);
+	const asset_item_1 = __webpack_require__(114);
 	const drag_action_1 = __webpack_require__(44);
 	let ImageAssetItem = class ImageAssetItem extends asset_item_1.EditorAssetItem {
 	    getIconName() {
@@ -10088,27 +10784,28 @@
 
 
 /***/ },
-/* 116 */
+/* 122 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const editor_window_element_1 = __webpack_require__(73);
-	const scene_meta_bar_1 = __webpack_require__(117);
-	const stage_background_1 = __webpack_require__(119);
-	const breakpoint_1 = __webpack_require__(118);
+	const editor_window_element_1 = __webpack_require__(71);
+	const scene_meta_bar_1 = __webpack_require__(123);
+	const stage_background_1 = __webpack_require__(125);
+	const breakpoint_1 = __webpack_require__(124);
 	const app_element_1 = __webpack_require__(28);
 	const vector2_1 = __webpack_require__(17);
-	const stage_foreground_1 = __webpack_require__(120);
+	const stage_foreground_1 = __webpack_require__(126);
 	const util_1 = __webpack_require__(16);
 	const rect_tool_1 = __webpack_require__(127);
-	const editor_element_annotations_1 = __webpack_require__(74);
-	const menu_setup_1 = __webpack_require__(79);
-	const state_chart_1 = __webpack_require__(177);
-	const panel_component_1 = __webpack_require__(81);
+	const editor_element_annotations_1 = __webpack_require__(72);
+	const menu_setup_1 = __webpack_require__(77);
+	const state_chart_1 = __webpack_require__(129);
+	const panel_component_1 = __webpack_require__(79);
 	const background_component_1 = __webpack_require__(52);
-	const e_keycode_1 = __webpack_require__(104);
+	const e_keycode_1 = __webpack_require__(103);
+	const evt_designer_rendererd_1 = __webpack_require__(100);
 	class StageWindow extends editor_window_element_1.EditorWindowElement {
 	    onCreated() {
 	        PIXI.utils.skipHello();
@@ -10132,7 +10829,8 @@
 	            this.stageBackground.paint(this.width, this.height);
 	        }
 	        this.stateChart.update();
-	        this.currentTool.update();
+	        // this.currentTool.update();
+	        EditorRuntime.emit(evt_designer_rendererd_1.DesignerRendered, this.stageForeground.getGfxRoot(), this.getStageMousePosition());
 	        this.stageForeground.paint(this.width, this.height);
 	    }
 	    onRendered() {
@@ -10260,10 +10958,6 @@
 	        EditorRuntime.setCursor("default");
 	    }
 	}
-	class MouseInStageBehavior extends state_chart_1.StateChartBehavior {
-	    update() {
-	    }
-	}
 	function createStateChart(stage) {
 	    return new state_chart_1.StateChart(function (state, event) {
 	        state("default", function () {
@@ -10315,16 +11009,16 @@
 
 
 /***/ },
-/* 117 */
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const button_1 = __webpack_require__(66);
-	const editor_theme_1 = __webpack_require__(63);
-	const breakpoint_1 = __webpack_require__(118);
+	const button_1 = __webpack_require__(64);
+	const editor_theme_1 = __webpack_require__(61);
+	const breakpoint_1 = __webpack_require__(124);
 	const editor_html_element_1 = __webpack_require__(18);
-	const stage_window_1 = __webpack_require__(116);
+	const stage_window_1 = __webpack_require__(122);
 	function round(places) {
 	    return function (value) {
 	        return value.toFixed(places);
@@ -10397,7 +11091,7 @@
 
 
 /***/ },
-/* 118 */
+/* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10441,13 +11135,13 @@
 
 
 /***/ },
-/* 119 */
+/* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const editor_html_element_1 = __webpack_require__(18);
-	const editor_theme_1 = __webpack_require__(63);
+	const editor_theme_1 = __webpack_require__(61);
 	class StageBackground extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "canvas", classList: "overlay-canvas" };
@@ -10481,32 +11175,17 @@
 
 
 /***/ },
-/* 120 */
+/* 126 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const editor_html_element_1 = __webpack_require__(18);
-	const math_util_1 = __webpack_require__(36);
-	const vector2_1 = __webpack_require__(17);
-	const triangle_1 = __webpack_require__(121);
-	const shape_container_1 = __webpack_require__(126);
 	class StageForeground extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "canvas", classList: "overlay-canvas" };
 	    }
 	    onRendered() {
-	        this.powerFlower = new shape_container_1.ShapeContainer();
-	        var rotation = 0;
-	        for (let i = 0; i < 8; i++) {
-	            const p0 = new vector2_1.Vector2();
-	            const p1 = new vector2_1.Vector2(-5, 15);
-	            const p2 = new vector2_1.Vector2(5, 15);
-	            const tri = new triangle_1.Triangle(p0, p1, p2);
-	            tri.rotate(rotation);
-	            rotation += math_util_1.MathUtil.PiOver4;
-	            tri.setParent(this.powerFlower);
-	        }
 	        this.stage = new PIXI.Container();
 	        this.selectionContainer = this.stage.addChild(new PIXI.Container());
 	        this.selectionOutline = this.selectionContainer.addChild(new PIXI.Graphics());
@@ -10559,334 +11238,6 @@
 	    }
 	}
 	exports.StageForeground = StageForeground;
-
-
-/***/ },
-/* 121 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const shape_1 = __webpack_require__(122);
-	const vector2_1 = __webpack_require__(17);
-	const polygon_1 = __webpack_require__(125);
-	class Triangle extends shape_1.Shape {
-	    constructor(p1, p2, p3, style) {
-	        super(style);
-	        this.points.push(p1, p2, p3);
-	    }
-	    render(gfx) {
-	        gfx.beginFill(this.style.getFillColor());
-	        const position = this.getPosition(vector2_1.Vector2.scratch0);
-	        const rotation = this.rotation.getRotationZ();
-	        const p1 = this.points[0].clone(vector2_1.Vector2.scratch1).addValues(0, 10).rotateAround(rotation, vector2_1.Vector2.Zero).addVector(position);
-	        const p2 = this.points[1].clone(vector2_1.Vector2.scratch2).addValues(0, 10).rotateAround(rotation, vector2_1.Vector2.Zero).addVector(position);
-	        const p3 = this.points[2].clone(vector2_1.Vector2.scratch3).addValues(0, 10).rotateAround(rotation, vector2_1.Vector2.Zero).addVector(position);
-	        gfx.lineStyle(1, this.style.getLineColor());
-	        gfx.moveTo(p1.x, p1.y);
-	        gfx.lineTo(p2.x, p2.y);
-	        gfx.lineTo(p3.x, p3.y);
-	        gfx.lineTo(p1.x, p1.y);
-	        gfx.endFill();
-	    }
-	    containsPoint(point) {
-	        return polygon_1.Polygon.contains(this.points, point);
-	    }
-	}
-	exports.Triangle = Triangle;
-
-
-/***/ },
-/* 122 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const transformable_1 = __webpack_require__(123);
-	const pixi_style_1 = __webpack_require__(124);
-	class Shape extends transformable_1.Transformable {
-	    constructor(style) {
-	        super();
-	        this.style = style || pixi_style_1.PixiStyle.Inherit;
-	        this.points = [];
-	    }
-	    beginRender(gfx) { }
-	    finishRender(gfx) { }
-	}
-	exports.Shape = Shape;
-
-
-/***/ },
-/* 123 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const matrix_1 = __webpack_require__(35);
-	const vector3_1 = __webpack_require__(33);
-	const quaternion_1 = __webpack_require__(34);
-	const app_element_1 = __webpack_require__(28);
-	const vector2_1 = __webpack_require__(17);
-	const math_util_1 = __webpack_require__(36);
-	class Transformable {
-	    constructor() {
-	        this.dirty = true;
-	        this.parent = null;
-	        this.children = [];
-	        this.position = new vector2_1.Vector2();
-	        this.rotation = new quaternion_1.Quaternion();
-	        this.scale = new vector2_1.Vector2();
-	        this.localMatrix = new matrix_1.Matrix();
-	        this.worldMatrix = new matrix_1.Matrix();
-	    }
-	    getWorldMatrix(out) {
-	        this.updateWorldMatrix();
-	        return this.worldMatrix.clone(out);
-	    }
-	    updateWorldMatrix() {
-	        if (!this.isDirty())
-	            return;
-	        const scaling = matrix_1.Matrix.scratch0;
-	        const rotation = matrix_1.Matrix.scratch1;
-	        const translate = matrix_1.Matrix.scratch2;
-	        const rotationAndScale = matrix_1.Matrix.scratch3;
-	        this.rotation.toRotationMatrix(rotation);
-	        matrix_1.Matrix.CreateScale(this.scale.x, this.scale.y, 1, scaling);
-	        matrix_1.Matrix.CreateTranslation(this.position.x, this.position.y, 0, translate);
-	        matrix_1.Matrix.Multiply(scaling, rotation, rotationAndScale);
-	        matrix_1.Matrix.Multiply(rotationAndScale, translate, this.localMatrix);
-	        if (this.parent) {
-	            this.localMatrix.multiplyToRef(this.parent.getWorldMatrix(), this.worldMatrix);
-	        }
-	        else {
-	            this.worldMatrix.copy(this.localMatrix);
-	        }
-	    }
-	    isDirty() {
-	        if (this.dirty)
-	            return true;
-	        let ptr = this.parent;
-	        while (ptr) {
-	            if (ptr.dirty)
-	                return true;
-	            ptr = ptr.parent;
-	        }
-	        return false;
-	    }
-	    translate(translation, relativeTo = app_element_1.Space.World) {
-	        if (this.parent && relativeTo === app_element_1.Space.World) {
-	            this.parent.getWorldMatrix(matrix_1.Matrix.scratch0).invert();
-	            const scratch = vector3_1.Vector3.scratch0;
-	            scratch.x = translation.x;
-	            scratch.y = translation.y;
-	            scratch.z = 0;
-	            vector3_1.Vector3.TransformCoordinates(scratch, matrix_1.Matrix.scratch0, scratch);
-	            this.position.addVector(translation);
-	        }
-	        else {
-	            this.position.addVector(translation);
-	        }
-	    }
-	    setPosition(position, relativeTo = app_element_1.Space.World) {
-	        if (this.parent && relativeTo === app_element_1.Space.World) {
-	            this.parent.getWorldMatrix(matrix_1.Matrix.scratch0).invert();
-	            const scratch = vector3_1.Vector3.scratch0;
-	            scratch.x = position.x;
-	            scratch.y = position.y;
-	            scratch.z = 0;
-	            vector3_1.Vector3.TransformCoordinates(scratch, matrix_1.Matrix.scratch0, scratch);
-	            this.position.x = scratch.x;
-	            this.position.y = scratch.y;
-	        }
-	        else {
-	            this.position.copy(position);
-	        }
-	    }
-	    lookAt(target) {
-	    }
-	    getRotation() {
-	        return this.rotation.getRotationZ();
-	    }
-	    rotate(radians) {
-	        quaternion_1.Quaternion.RotationAxis(vector3_1.Vector3.Forward, radians, quaternion_1.Quaternion.scratch0);
-	        this.rotation.multiply(quaternion_1.Quaternion.scratch0);
-	    }
-	    setScale(scale) {
-	        this.scale.x = scale.x;
-	        this.scale.y = scale.y;
-	    }
-	    getScale(out) {
-	        return (out || new vector2_1.Vector2).copy(this.scale);
-	    }
-	    getPosition(out) {
-	        this.updateWorldMatrix();
-	        return (out || new vector2_1.Vector2()).set(this.worldMatrix.m[12], this.worldMatrix.m[13]);
-	    }
-	    getLocalPosition(out) {
-	        return (out || new vector2_1.Vector2()).copy(this.position);
-	    }
-	    setParent(parent) {
-	        if (this.isDescendantOf(parent)) {
-	            return false;
-	        }
-	        if (this.parent) {
-	            this.parent.children.remove(this);
-	        }
-	        this.parent = parent;
-	        this.parent.children.push(this);
-	    }
-	    getParent() {
-	        return this.parent;
-	    }
-	    isDescendantOf(transformable) {
-	        if (!transformable || transformable === this) {
-	            return false;
-	        }
-	        var ptr = this.parent;
-	        while (ptr) {
-	            if (ptr === transformable) {
-	                return true;
-	            }
-	        }
-	        return false;
-	    }
-	    setSiblingIndex(index) {
-	        const parent = this.parent;
-	        if (!parent)
-	            return false;
-	        const children = this.parent.children;
-	        const currentIndex = children.indexOf(this);
-	        if (index === currentIndex || currentIndex === -1) {
-	            return false;
-	        }
-	        index = math_util_1.MathUtil.clamp(index, 0, children.length - 1);
-	        children.remove(this);
-	        children.insert(this, index);
-	        return true;
-	    }
-	    isRoot() {
-	        return !this.parent;
-	    }
-	    getChildAt(index) {
-	        return this.children[index];
-	    }
-	    getChildCount() {
-	        return this.children.length;
-	    }
-	    getDepth() {
-	        if (!this.parent)
-	            return 0;
-	        let ptr = this.parent;
-	        let depth = 1;
-	        while (ptr) {
-	            depth++;
-	            ptr = ptr.parent;
-	        }
-	        return depth;
-	    }
-	}
-	exports.Transformable = Transformable;
-
-
-/***/ },
-/* 124 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const color_1 = __webpack_require__(53);
-	const math_util_1 = __webpack_require__(36);
-	class PixiStyle {
-	    constructor(lineColor = null, lineWidth = 1, fillColor = null) {
-	        this.lineColor = lineColor || color_1.Color.Cyan;
-	        this.fillColor = fillColor || color_1.Color.Cyan;
-	        this.lineWidth = math_util_1.MathUtil.clamp(lineWidth, 1, 10);
-	    }
-	    getFillColor() {
-	        return this.fillColor.toHex();
-	    }
-	    getLineColor() {
-	        return this.lineColor.toHex();
-	    }
-	    getLineAlpha() {
-	        return 1;
-	    }
-	}
-	PixiStyle.Inherit = new PixiStyle();
-	exports.PixiStyle = PixiStyle;
-
-
-/***/ },
-/* 125 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const vector2_1 = __webpack_require__(17);
-	const transformable_1 = __webpack_require__(123);
-	class Polygon extends transformable_1.Transformable {
-	    constructor() {
-	        super();
-	        this.points = new Array();
-	        this.coordinates = [];
-	    }
-	    addPoint(point) {
-	        this.points.push(new vector2_1.Vector2(point.x, point.y));
-	        this.coordinates.push(point.x, point.y);
-	    }
-	    containsPoint(point) {
-	        const points = this.points;
-	        let c = false;
-	        for (let i = 0, j = points.length - 1; i < points.length; j = i++) {
-	            const pointI = points[i];
-	            const pointJ = points[j];
-	            if (((pointI.y >= point.y) !== (pointJ.y >= point.y)) &&
-	                (point.x <= (pointJ.x - pointI.x) * (point.y - pointI.y) / (pointJ.y - pointI.y) + pointI.x)) {
-	                c = !c;
-	            }
-	        }
-	        return c;
-	    }
-	    static contains(points, target) {
-	        let contains = false;
-	        const px = target.x;
-	        const py = target.y;
-	        for (let i = 0, j = points.length - 1; i < points.length; j = i++) {
-	            const pointI = points[i];
-	            const pointJ = points[j];
-	            const pIx = pointI.x;
-	            const pIy = pointI.y;
-	            const pJx = pointJ.x;
-	            const pJy = pointJ.y;
-	            const test = (pIy >= py) !== (pJy >= py);
-	            if (test && (px <= (pJx - pIx) * (py - pIy) / (pJy - pIy) + pIx)) {
-	                contains = !contains;
-	            }
-	        }
-	        return contains;
-	    }
-	}
-	exports.Polygon = Polygon;
-
-
-/***/ },
-/* 126 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const shape_1 = __webpack_require__(122);
-	class ShapeContainer extends shape_1.Shape {
-	    constructor(style) {
-	        super(style);
-	    }
-	    render(gfx) {
-	        for (let i = 0; i < this.children.length; i++) {
-	            this.children[i].render(gfx);
-	        }
-	    }
-	}
-	exports.ShapeContainer = ShapeContainer;
 
 
 /***/ },
@@ -11104,11 +11455,356 @@
 
 /***/ },
 /* 129 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	class StateChartEventHandler {
+	    constructor(type, target, guardFn) {
+	        this.type = type;
+	        this.target = target;
+	        this.guardFn = guardFn || StateChartEventHandler.NoOpGuard;
+	    }
+	    static NoOpGuard() { return true; }
+	}
+	class StateChartState {
+	    constructor(id, parent, behavior) {
+	        this.id = id;
+	        this.parent = parent;
+	        this.behavior = behavior;
+	        this.isActive = false;
+	        this.states = [];
+	        this.events = [];
+	    }
+	    handleEvent(evt) {
+	        const handledEvent = this.events.find((handler) => {
+	            return handler.type === evt.constructor;
+	        });
+	        if (handledEvent && handledEvent.guardFn(evt)) {
+	            return { targetId: handledEvent.target, from: this };
+	        }
+	        for (let i = 0; i < this.states.length; i++) {
+	            if (this.states[i].isActive) {
+	                const retn = this.states[i].handleEvent(evt);
+	                if (retn)
+	                    return retn;
+	            }
+	        }
+	        return null;
+	    }
+	    enter(enterPath) {
+	        if (this.isActive)
+	            return;
+	        this.isActive = true;
+	        if (this.behavior) {
+	            this.behavior.enter();
+	        }
+	        if (enterPath && enterPath.length > 0) {
+	            const child = enterPath.pop();
+	            if (child.parent !== this) {
+	                throw new Error("Invalid StateChart enter path");
+	            }
+	            else {
+	                child.enter(enterPath);
+	            }
+	        }
+	        else if (this.states.length > 0) {
+	            this.states[0].enter();
+	        }
+	    }
+	    update() {
+	        this.behavior && this.behavior.update();
+	        for (let i = 0; i < this.states.length; i++) {
+	            if (this.states[i].isActive) {
+	                this.states[i].update();
+	            }
+	        }
+	    }
+	    exit() {
+	        if (!this.isActive)
+	            return;
+	        this.isActive = false;
+	        if (this.behavior) {
+	            this.behavior.exit();
+	        }
+	        this.exitChildren();
+	    }
+	    exitChildren() {
+	        for (let i = 0; i < this.states.length; i++) {
+	            if (this.states[i].isActive) {
+	                this.states[i].exit();
+	            }
+	        }
+	    }
+	}
+	class StateChartParallelState extends StateChartState {
+	    enter(enterPath) {
+	        if (this.isActive)
+	            return;
+	        this.isActive = true;
+	        if (this.behavior) {
+	            this.behavior.enter();
+	        }
+	        enterPath && enterPath.pop();
+	        for (let i = 0; i < this.states.length; i++) {
+	            this.states[i].enter(enterPath);
+	        }
+	    }
+	    update() {
+	        this.behavior && this.behavior.update();
+	        for (let i = 0; i < this.states.length; i++) {
+	            this.states[i].update();
+	        }
+	    }
+	    exit() {
+	        if (!this.isActive)
+	            return;
+	        this.isActive = false;
+	        if (this.behavior)
+	            this.behavior.exit();
+	        for (let i = 0; i < this.states.length; i++) {
+	            this.states[i].exit();
+	        }
+	    }
+	}
+	class StateChartEvent {
+	    static create() {
+	        return null;
+	    }
+	}
+	exports.StateChartEvent = StateChartEvent;
+	class GenericStateChartEvent extends StateChartEvent {
+	}
+	exports.GenericStateChartEvent = GenericStateChartEvent;
+	class StateChartBehavior {
+	    enter() { }
+	    update() { }
+	    exit() { }
+	}
+	exports.StateChartBehavior = StateChartBehavior;
+	//compiler seems to be broken w/ how 'protected' works, so to hide internal properties
+	//i've duplicated some functionality :(
+	class StateChart {
+	    constructor(definition) {
+	        this.isActive = true;
+	        this.stateDef = this.getStateFn();
+	        this.eventDef = this.event.bind(this);
+	        this.stateMap = new Map();
+	        this.states = [];
+	        this.events = [];
+	        this.stateStack = [];
+	        this.eventQueue0 = [];
+	        this.eventQueue1 = [];
+	        this.eventQueue = this.eventQueue0;
+	        this.stateStack.push(this);
+	        definition.call(this, this.stateDef, this.eventDef);
+	        this.stateStack.pop();
+	        this.stateStack = null;
+	        if (this.states[0]) {
+	            this.states[0].enter();
+	        }
+	    }
+	    update() {
+	        //process an event queue tick
+	        const currentQueue = this.eventQueue;
+	        //swap event queues
+	        this.eventQueue = this.eventQueue === this.eventQueue0 ? this.eventQueue1 : this.eventQueue0;
+	        //do all transitions but queue all events till next frame
+	        while (currentQueue.length) {
+	            this.handleEvent(currentQueue.shift());
+	        }
+	        this.getActiveState().update();
+	    }
+	    isInState(id) {
+	        const state = this.stateMap.get(id);
+	        return state && state.isActive;
+	    }
+	    trigger(event) {
+	        if (this.stateStack)
+	            throw new Error("StateChart hasn't entered yet, invalid call to trigger()");
+	        this.eventQueue.push(event);
+	    }
+	    getConfiguration() {
+	        const config = new Array();
+	        const leaves = new Array();
+	        this.stateMap.forEach((state) => {
+	            if (state.isActive && state.states.length === 0) {
+	                leaves.push(state);
+	            }
+	        });
+	        for (let i = 0; i < leaves.length; i++) {
+	            const leaf = leaves[i];
+	            const branchConfig = new Array();
+	            let ptr = leaf;
+	            while (ptr !== this) {
+	                branchConfig.push(ptr.id);
+	                ptr = ptr.parent;
+	            }
+	            config.push(branchConfig.reverse());
+	        }
+	        return config;
+	    }
+	    handleEvent(evt) {
+	        const handledEvent = this.events.find((handler) => {
+	            return handler.type === evt.constructor;
+	        });
+	        if (handledEvent && handledEvent.guardFn(evt)) {
+	            this.goTo(handledEvent.target, this);
+	            return;
+	        }
+	        for (let i = 0; i < this.states.length; i++) {
+	            if (this.states[i].isActive) {
+	                const retn = this.states[i].handleEvent(evt);
+	                if (retn) {
+	                    this.goTo(retn.targetId, retn.from);
+	                    return;
+	                }
+	            }
+	        }
+	    }
+	    exitChildren() {
+	        for (let i = 0; i < this.states.length; i++) {
+	            if (this.states[i].isActive) {
+	                this.states[i].exit();
+	            }
+	        }
+	    }
+	    getStateFn() {
+	        const fn = this.state.bind(this);
+	        fn.parallel = this.parallel.bind(this);
+	        return fn;
+	    }
+	    goTo(targetId, from) {
+	        let ptr = this.stateMap.get(targetId);
+	        if (!ptr) {
+	            throw new Error("Invalid state: " + targetId);
+	        }
+	        if (ptr === from)
+	            return;
+	        let enterPath = [];
+	        //find highest parent of target that is active
+	        while (!ptr.isActive) {
+	            enterPath.unshift(ptr);
+	            ptr = ptr.parent;
+	        }
+	        ptr.exitChildren();
+	        enterPath.shift().enter(enterPath);
+	    }
+	    event(eventType, targetStateId, guardFunction) {
+	        if (!this.stateStack)
+	            throw new Error("StateChart has already entered, cannot call 'event()'");
+	        this.stateStack.getLast().events.push(new StateChartEventHandler(eventType, targetStateId, guardFunction));
+	    }
+	    state(id, behaviorOrDefinition, definition) {
+	        if (arguments.length === 1) {
+	            this.createState(id, null, null, false);
+	        }
+	        else if (arguments.length === 2) {
+	            this.createState(id, behaviorOrDefinition, null, false);
+	        }
+	        else if (arguments.length === 3) {
+	            this.createState(id, definition, behaviorOrDefinition, false);
+	        }
+	    }
+	    parallel(id, behaviorOrDefinition, definition) {
+	        if (arguments.length === 2) {
+	            this.createState(id, behaviorOrDefinition, null, true);
+	        }
+	        else if (arguments.length === 3) {
+	            this.createState(id, definition, behaviorOrDefinition, true);
+	        }
+	    }
+	    createState(id, definition, behavior, isParallel = false) {
+	        if (!this.stateStack)
+	            throw new Error("StateChart has already entered, cannot call 'parallel()'");
+	        if (this.stateMap.get(id)) {
+	            throw new Error("States within a StateChart cannot have duplicate ids, '" + id + "' was already registered");
+	        }
+	        const parentState = this.stateStack.getLast();
+	        const Type = (isParallel) ? StateChartParallelState : StateChartState;
+	        const state = new Type(id, parentState, behavior);
+	        parentState.states.push(state);
+	        this.stateMap.set(id, state);
+	        if (typeof definition === "function") {
+	            this.stateStack.push(state);
+	            definition.call(this, this.stateDef, this.eventDef);
+	            this.stateStack.pop();
+	        }
+	        if (state.behavior) {
+	            state.behavior.chart = this;
+	        }
+	    }
+	    getActiveState() {
+	        return this.states.find(function (state) {
+	            return state.isActive;
+	        });
+	    }
+	}
+	exports.StateChart = StateChart;
+	// class TypedEvent<T> {
+	//     data : T;
+	// }
+	//
+	// class StateChartBuilder {
+	//
+	//     public init() {
+	//
+	//     }
+	//
+	//     public enter(fn : () => void) {
+	//
+	//     }
+	//
+	//     public exit() {
+	//
+	//     }
+	//
+	//     public update() {
+	//
+	//     }
+	//
+	//     public state()  {}
+	//
+	//     public event<T>(evtType : TypedEvent<T>, target : string, guard? : (data? : T) => boolean) {
+	//
+	//     }
+	//
+	//     public trigger<T>(evt : TypedEvent<T>, data? : T) {
+	//
+	//     }
+	//
+	//     public toDSL() {
+	//
+	//     }
+	//
+	//     public createEvent<T>() : TypedEvent<T> {
+	//         return new TypedEvent<T>();
+	//     }
+	//
+	//     //x = event.create<T, u, v>();
+	//     //x = event.create<string, number, string>
+	//     //x = event.create<DataType>();
+	//     //trigger(x, T;
+	//     //new Event(data);
+	//
+	// }
+	//
+	// var b = new StateChartBuilder();
+	// var z = b.createEvent<{s : string, y: number}>();
+	// b.trigger(z, {s: "", y: 1});
+	//
+	// const Evt_MouseUp = b.createEvent<Vector2>();
+	//
+	// b.event(Evt_MouseUp, "stateName");
+
+
+/***/ },
+/* 130 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const button_1 = __webpack_require__(66);
+	const button_1 = __webpack_require__(64);
 	const editor_html_element_1 = __webpack_require__(18);
 	class Toolbar extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
@@ -11150,12 +11846,6 @@
 
 
 /***/ },
-/* 130 */
-/***/ function(module, exports) {
-
-	
-
-/***/ },
 /* 131 */
 /***/ function(module, exports) {
 
@@ -11163,16 +11853,21 @@
 
 /***/ },
 /* 132 */
+/***/ function(module, exports) {
+
+	
+
+/***/ },
+/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const component_renderer_1 = __webpack_require__(98);
-	const sizing_component_1 = __webpack_require__(77);
-	const default_sizing_component_1 = __webpack_require__(133);
-	const inspector_row_1 = __webpack_require__(94);
-	const number_input_1 = __webpack_require__(103);
+	const component_renderer_1 = __webpack_require__(96);
+	const sizing_component_1 = __webpack_require__(75);
+	const inspector_row_1 = __webpack_require__(92);
+	const number_input_1 = __webpack_require__(102);
 	let SizingRenderer = class SizingRenderer extends component_renderer_1.ComponentRenderer {
 	    createInitialStructure(children) {
 	        const structure = [
@@ -11256,28 +11951,8 @@
 	    }
 	};
 	SizingRenderer = tslib_1.__decorate([
-	    component_renderer_1.renderer(sizing_component_1.SizingComponent),
-	    component_renderer_1.renderer(default_sizing_component_1.DefaultSizingComponent)
+	    component_renderer_1.renderer(sizing_component_1.SizingComponent)
 	], SizingRenderer);
-
-
-/***/ },
-/* 133 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(4);
-	const sizing_component_1 = __webpack_require__(77);
-	const component_1 = __webpack_require__(42);
-	let DefaultSizingComponent = class DefaultSizingComponent extends sizing_component_1.SizingComponent {
-	    onMounted() {
-	    }
-	};
-	DefaultSizingComponent = tslib_1.__decorate([
-	    component_1.component("Layout/Sizing/Default")
-	], DefaultSizingComponent);
-	exports.DefaultSizingComponent = DefaultSizingComponent;
 
 
 /***/ },
@@ -11287,12 +11962,12 @@
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const component_renderer_1 = __webpack_require__(98);
-	const text_component_1 = __webpack_require__(80);
-	const inspector_row_1 = __webpack_require__(94);
-	const text_input_1 = __webpack_require__(92);
+	const component_renderer_1 = __webpack_require__(96);
+	const text_component_1 = __webpack_require__(78);
+	const inspector_row_1 = __webpack_require__(92);
+	const text_input_1 = __webpack_require__(90);
 	const binding_1 = __webpack_require__(13);
-	const number_input_1 = __webpack_require__(103);
+	const number_input_1 = __webpack_require__(102);
 	let TextComponentRenderer = class TextComponentRenderer extends component_renderer_1.ComponentRenderer {
 	    onCreated() {
 	        this.proxy = {
@@ -11347,9 +12022,9 @@
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
 	const property_drawer_1 = __webpack_require__(136);
-	const property_renderer_1 = __webpack_require__(99);
-	const inspector_row_1 = __webpack_require__(94);
-	const checkbox_input_1 = __webpack_require__(101);
+	const property_renderer_1 = __webpack_require__(97);
+	const inspector_row_1 = __webpack_require__(92);
+	const checkbox_input_1 = __webpack_require__(99);
 	const binding_1 = __webpack_require__(13);
 	let BooleanRenderer = class BooleanRenderer extends property_renderer_1.PropertyRenderer {
 	    createInitialStructure(children) {
@@ -11372,7 +12047,7 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const property_renderer_1 = __webpack_require__(99);
+	const property_renderer_1 = __webpack_require__(97);
 	function propertyDrawer(typeToDraw) {
 	    return function (target) {
 	        property_renderer_1.PropertyRenderer.set(typeToDraw, target);
@@ -11388,14 +12063,14 @@
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const property_renderer_1 = __webpack_require__(99);
+	const property_renderer_1 = __webpack_require__(97);
 	const color_1 = __webpack_require__(53);
-	const inspector_row_1 = __webpack_require__(94);
-	const inline_field_1 = __webpack_require__(105);
-	const number_input_1 = __webpack_require__(103);
+	const inspector_row_1 = __webpack_require__(92);
+	const inline_field_1 = __webpack_require__(138);
+	const number_input_1 = __webpack_require__(102);
 	const property_drawer_1 = __webpack_require__(136);
 	const binding_1 = __webpack_require__(13);
-	const button_1 = __webpack_require__(66);
+	const button_1 = __webpack_require__(64);
 	const util_1 = __webpack_require__(16);
 	let ColorRenderer = class ColorRenderer extends property_renderer_1.PropertyRenderer {
 	    updateColor() {
@@ -11440,12 +12115,38 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
+	const horizontal_1 = __webpack_require__(98);
+	class InlineField extends horizontal_1.HorizontalBase {
+	    createInitialStructure(children) {
+	        return [
+	            Hex.createElement("span", { class: "inline-label" }, this.attrs.label),
+	            children
+	        ];
+	    }
+	}
+	exports.InlineField = InlineField;
+	createStyleSheet(`<style>
+
+	    .inline-label {
+	        /*padding-left: 1.8em;*/
+	        width: 125px;
+	    }
+	    
+	`);
+
+
+/***/ },
+/* 139 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
 	const property_drawer_1 = __webpack_require__(136);
-	const property_renderer_1 = __webpack_require__(99);
+	const property_renderer_1 = __webpack_require__(97);
 	const util_1 = __webpack_require__(16);
-	const number_input_1 = __webpack_require__(103);
-	const inspector_row_1 = __webpack_require__(94);
+	const number_input_1 = __webpack_require__(102);
+	const inspector_row_1 = __webpack_require__(92);
 	const binding_1 = __webpack_require__(13);
 	let NumberRenderer = class NumberRenderer extends property_renderer_1.PropertyRenderer {
 	    createInitialStructure() {
@@ -11470,17 +12171,17 @@
 
 
 /***/ },
-/* 139 */
+/* 140 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const property_renderer_1 = __webpack_require__(99);
+	const property_renderer_1 = __webpack_require__(97);
 	const property_drawer_1 = __webpack_require__(136);
 	const util_1 = __webpack_require__(16);
-	const inspector_row_1 = __webpack_require__(94);
-	const select_input_1 = __webpack_require__(140);
+	const inspector_row_1 = __webpack_require__(92);
+	const select_input_1 = __webpack_require__(141);
 	const binding_1 = __webpack_require__(13);
 	let EnumSelectRenderer = class EnumSelectRenderer extends property_renderer_1.PropertyRenderer {
 	    createOptions(e) {
@@ -11533,12 +12234,12 @@
 
 
 /***/ },
-/* 140 */
+/* 141 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(93);
+	const editor_input_1 = __webpack_require__(91);
 	class SelectInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return { tagName: "select" };
@@ -11569,16 +12270,16 @@
 
 
 /***/ },
-/* 141 */
+/* 142 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
 	const property_drawer_1 = __webpack_require__(136);
-	const property_renderer_1 = __webpack_require__(99);
-	const inspector_row_1 = __webpack_require__(94);
-	const text_input_1 = __webpack_require__(92);
+	const property_renderer_1 = __webpack_require__(97);
+	const inspector_row_1 = __webpack_require__(92);
+	const text_input_1 = __webpack_require__(90);
 	let StringRenderer = class StringRenderer extends property_renderer_1.PropertyRenderer {
 	    onChange() {
 	        // if(this.attrs.editorData.onValueChanged) {
@@ -11603,7 +12304,7 @@
 
 
 /***/ },
-/* 142 */
+/* 143 */
 /***/ function(module, exports) {
 
 	// import {getSetter, getGetter} from "../editor_ui_attrs/binding_compiler";
@@ -11768,7 +12469,7 @@
 
 
 /***/ },
-/* 143 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11783,13 +12484,13 @@
 
 
 /***/ },
-/* 144 */
+/* 145 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const icon_1 = __webpack_require__(68);
-	const inspector_body_1 = __webpack_require__(143);
+	const icon_1 = __webpack_require__(66);
+	const inspector_body_1 = __webpack_require__(144);
 	const editor_html_element_1 = __webpack_require__(18);
 	class InspectorHeader extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
@@ -11806,7 +12507,7 @@
 
 
 /***/ },
-/* 145 */
+/* 146 */
 /***/ function(module, exports) {
 
 	// import {EditorHTMLElement} from "../editor_element/editor_html_element";
@@ -11837,7 +12538,7 @@
 
 
 /***/ },
-/* 146 */
+/* 147 */
 /***/ function(module, exports) {
 
 	// import {FontIcon, ToggleIcon} from "./icon";
@@ -11875,40 +12576,6 @@
 	//     }
 	//
 	// } 
-
-
-/***/ },
-/* 147 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const number_input_1 = __webpack_require__(103);
-	const binding_1 = __webpack_require__(13);
-	const editor_input_1 = __webpack_require__(93);
-	const horizontal_1 = __webpack_require__(100);
-	class Vector2Input extends editor_input_1.InputRenderer {
-	    createInitialStructure(children) {
-	        return Hex.createElement(horizontal_1.Horizontal, null,
-	            Hex.createElement("div", { class: "field-row" },
-	                Hex.createElement("span", { class: "field-label" }, "x = \u00A0"),
-	                Hex.createElement(number_input_1.NumberInput, { style: `padding-left: ${24}px`, value: binding_1.CreateBinding(this.binding, "x") })),
-	            Hex.createElement("div", { class: "field-row" },
-	                Hex.createElement("span", { class: "field-label" }, "y = \u00A0"),
-	                Hex.createElement(number_input_1.NumberInput, { style: `padding-left: ${24}px`, value: binding_1.CreateBinding(this.binding, "y") })));
-	    }
-	}
-	exports.Vector2Input = Vector2Input;
-	createStyleSheet(`<style>
-	    .field-row {
-	        position: relative;
-	    }
-	    
-	    .field-label {
-	        position: absolute;
-	        left: 2px;
-	    }
-	`);
 
 
 /***/ },
@@ -12659,7 +13326,7 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const shape_1 = __webpack_require__(122);
+	const shape_1 = __webpack_require__(108);
 	class Circle extends shape_1.Shape {
 	    constructor(center, radius, style = null) {
 	        super(style);
@@ -12714,7 +13381,7 @@
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const e_command_type_1 = __webpack_require__(30);
-	const ui_component_1 = __webpack_require__(76);
+	const ui_component_1 = __webpack_require__(74);
 	const ComponentCache = new Array();
 	Runtime.setCommandSerializer(e_command_type_1.CommandType.Create, function (id) {
 	    ComponentCache.length = 0;
@@ -12784,7 +13451,7 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const sizing_component_1 = __webpack_require__(77);
+	const sizing_component_1 = __webpack_require__(75);
 	class FitContentSizeComponent extends sizing_component_1.SizingComponent {
 	    onCreated() {
 	        this.sizingMode = sizing_component_1.SizingMode.Fixed;
@@ -12808,8 +13475,8 @@
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const sizing_component_1 = __webpack_require__(77);
-	const layout_1 = __webpack_require__(78);
+	const sizing_component_1 = __webpack_require__(75);
+	const layout_1 = __webpack_require__(76);
 	const expose_as_1 = __webpack_require__(54);
 	const component_1 = __webpack_require__(42);
 	const app_element_1 = __webpack_require__(28);
@@ -12922,8 +13589,8 @@
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const sizing_component_1 = __webpack_require__(77);
-	const layout_1 = __webpack_require__(78);
+	const sizing_component_1 = __webpack_require__(75);
+	const layout_1 = __webpack_require__(76);
 	const component_1 = __webpack_require__(42);
 	const app_element_1 = __webpack_require__(28);
 	let VerticalStackLayout = class VerticalStackLayout extends layout_1.LayoutComponent {
@@ -12980,44 +13647,12 @@
 
 /***/ },
 /* 169 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(4);
-	const ui_component_1 = __webpack_require__(76);
-	class Font {
-	}
-	exports.Font = Font;
-	class TypographyComponent extends ui_component_1.UIComponent {
-	    setTextAsync(text) {
-	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
-	            this.setTextPromise = new Promise((resolve) => {
-	                // Runtime.sendCommand(CommandType.SetText, this.appElement.id, (rect : Rectangle) => {
-	                //     this.appElement.setRect(rect);
-	                //     resolve(text);
-	                // });
-	            });
-	            return this.setTextPromise;
-	        });
-	    }
-	    setFontAsync(font) {
-	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
-	            return null;
-	        });
-	    }
-	}
-	exports.TypographyComponent = TypographyComponent;
-
-
-/***/ },
-/* 170 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 171 */
+/* 170 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13025,7 +13660,7 @@
 
 
 /***/ },
-/* 172 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13373,7 +14008,7 @@
 
 
 /***/ },
-/* 173 */
+/* 172 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13391,7 +14026,7 @@
 
 
 /***/ },
-/* 174 */
+/* 173 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13530,7 +14165,7 @@
 
 
 /***/ },
-/* 175 */
+/* 174 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13549,7 +14184,7 @@
 
 
 /***/ },
-/* 176 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13558,7 +14193,7 @@
 	const app_element_1 = __webpack_require__(28);
 	const component_1 = __webpack_require__(42);
 	const util_1 = __webpack_require__(16);
-	const type_1 = __webpack_require__(175);
+	const type_1 = __webpack_require__(174);
 	let Scene = class Scene {
 	    constructor() {
 	        this.sceneRoots = [];
@@ -13645,291 +14280,7 @@
 
 
 /***/ },
-/* 177 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	class StateChartEventHandler {
-	    constructor(type, target, guardFn) {
-	        this.type = type;
-	        this.target = target;
-	        this.guardFn = guardFn || StateChartEventHandler.NoOpGuard;
-	    }
-	    static NoOpGuard() { return true; }
-	}
-	class StateChartState {
-	    constructor(id, parent, behavior) {
-	        this.id = id;
-	        this.parent = parent;
-	        this.behavior = behavior;
-	        this.isActive = false;
-	        this.states = [];
-	        this.events = [];
-	    }
-	    handleEvent(evt) {
-	        const handledEvent = this.events.find((handler) => {
-	            return handler.type === evt.constructor;
-	        });
-	        if (handledEvent && handledEvent.guardFn(evt)) {
-	            return { targetId: handledEvent.target, from: this };
-	        }
-	        for (let i = 0; i < this.states.length; i++) {
-	            if (this.states[i].isActive) {
-	                const retn = this.states[i].handleEvent(evt);
-	                if (retn)
-	                    return retn;
-	            }
-	        }
-	        return null;
-	    }
-	    enter(enterPath) {
-	        if (this.isActive)
-	            return;
-	        this.isActive = true;
-	        if (this.behavior) {
-	            this.behavior.enter();
-	        }
-	        if (enterPath && enterPath.length > 0) {
-	            const child = enterPath.pop();
-	            if (child.parent !== this) {
-	                throw new Error("Invalid StateChart enter path");
-	            }
-	            else {
-	                child.enter(enterPath);
-	            }
-	        }
-	        else if (this.states.length > 0) {
-	            this.states[0].enter();
-	        }
-	    }
-	    update() {
-	        this.behavior && this.behavior.update();
-	        for (let i = 0; i < this.states.length; i++) {
-	            if (this.states[i].isActive) {
-	                this.states[i].update();
-	            }
-	        }
-	    }
-	    exit() {
-	        if (!this.isActive)
-	            return;
-	        this.isActive = false;
-	        if (this.behavior) {
-	            this.behavior.exit();
-	        }
-	        this.exitChildren();
-	    }
-	    exitChildren() {
-	        for (let i = 0; i < this.states.length; i++) {
-	            if (this.states[i].isActive) {
-	                this.states[i].exit();
-	            }
-	        }
-	    }
-	}
-	class StateChartParallelState extends StateChartState {
-	    enter(enterPath) {
-	        if (this.isActive)
-	            return;
-	        this.isActive = true;
-	        if (this.behavior) {
-	            this.behavior.enter();
-	        }
-	        enterPath && enterPath.pop();
-	        for (let i = 0; i < this.states.length; i++) {
-	            this.states[i].enter(enterPath);
-	        }
-	    }
-	    update() {
-	        this.behavior && this.behavior.update();
-	        for (let i = 0; i < this.states.length; i++) {
-	            this.states[i].update();
-	        }
-	    }
-	    exit() {
-	        if (!this.isActive)
-	            return;
-	        this.isActive = false;
-	        if (this.behavior)
-	            this.behavior.exit();
-	        for (let i = 0; i < this.states.length; i++) {
-	            this.states[i].exit();
-	        }
-	    }
-	}
-	class StateChartEvent {
-	}
-	exports.StateChartEvent = StateChartEvent;
-	class StateChartBehavior {
-	    enter() { }
-	    update() { }
-	    exit() { }
-	}
-	exports.StateChartBehavior = StateChartBehavior;
-	//compiler seems to be broken w/ how 'protected' works, so to hide internal properties
-	//i've duplicated some functionality :(
-	class StateChart {
-	    constructor(definition) {
-	        this.isActive = true;
-	        this.stateDef = this.getStateFn();
-	        this.eventDef = this.event.bind(this);
-	        this.stateMap = new Map();
-	        this.states = [];
-	        this.events = [];
-	        this.stateStack = [];
-	        this.eventQueue0 = [];
-	        this.eventQueue1 = [];
-	        this.eventQueue = this.eventQueue0;
-	        this.stateStack.push(this);
-	        definition.call(this, this.stateDef, this.eventDef);
-	        this.stateStack.pop();
-	        this.stateStack = null;
-	        if (this.states[0]) {
-	            this.states[0].enter();
-	        }
-	    }
-	    update() {
-	        //process an event queue tick
-	        const currentQueue = this.eventQueue;
-	        //swap event queues
-	        this.eventQueue = this.eventQueue === this.eventQueue0 ? this.eventQueue1 : this.eventQueue0;
-	        //do all transitions but queue all events till next frame
-	        while (currentQueue.length) {
-	            this.handleEvent(currentQueue.shift());
-	        }
-	        this.getActiveState().update();
-	    }
-	    isInState(id) {
-	        const state = this.stateMap.get(id);
-	        return state && state.isActive;
-	    }
-	    trigger(event) {
-	        if (this.stateStack)
-	            throw new Error("StateChart hasn't entered yet, invalid call to trigger()");
-	        this.eventQueue.push(event);
-	    }
-	    getConfiguration() {
-	        const config = new Array();
-	        const leaves = new Array();
-	        this.stateMap.forEach((state) => {
-	            if (state.isActive && state.states.length === 0) {
-	                leaves.push(state);
-	            }
-	        });
-	        for (let i = 0; i < leaves.length; i++) {
-	            const leaf = leaves[i];
-	            const branchConfig = new Array();
-	            let ptr = leaf;
-	            while (ptr !== this) {
-	                branchConfig.push(ptr.id);
-	                ptr = ptr.parent;
-	            }
-	            config.push(branchConfig.reverse());
-	        }
-	        return config;
-	    }
-	    handleEvent(evt) {
-	        const handledEvent = this.events.find((handler) => {
-	            return handler.type === evt.constructor;
-	        });
-	        if (handledEvent && handledEvent.guardFn(evt)) {
-	            this.goTo(handledEvent.target, this);
-	            return;
-	        }
-	        for (let i = 0; i < this.states.length; i++) {
-	            if (this.states[i].isActive) {
-	                const retn = this.states[i].handleEvent(evt);
-	                if (retn) {
-	                    this.goTo(retn.targetId, retn.from);
-	                    return;
-	                }
-	            }
-	        }
-	    }
-	    exitChildren() {
-	        for (let i = 0; i < this.states.length; i++) {
-	            if (this.states[i].isActive) {
-	                this.states[i].exit();
-	            }
-	        }
-	    }
-	    getStateFn() {
-	        const fn = this.state.bind(this);
-	        fn.parallel = this.parallel.bind(this);
-	        return fn;
-	    }
-	    goTo(targetId, from) {
-	        let ptr = this.stateMap.get(targetId);
-	        if (!ptr) {
-	            throw new Error("Invalid state: " + targetId);
-	        }
-	        if (ptr === from)
-	            return;
-	        let enterPath = [];
-	        //find highest parent of target that is active
-	        while (!ptr.isActive) {
-	            enterPath.unshift(ptr);
-	            ptr = ptr.parent;
-	        }
-	        ptr.exitChildren();
-	        enterPath.shift().enter(enterPath);
-	    }
-	    event(eventType, targetStateId, guardFunction) {
-	        if (!this.stateStack)
-	            throw new Error("StateChart has already entered, cannot call 'event()'");
-	        this.stateStack.getLast().events.push(new StateChartEventHandler(eventType, targetStateId, guardFunction));
-	    }
-	    state(id, behaviorOrDefinition, definition) {
-	        if (arguments.length === 1) {
-	            this.createState(id, null, null, false);
-	        }
-	        else if (arguments.length === 2) {
-	            this.createState(id, behaviorOrDefinition, null, false);
-	        }
-	        else if (arguments.length === 3) {
-	            this.createState(id, definition, behaviorOrDefinition, false);
-	        }
-	    }
-	    parallel(id, behaviorOrDefinition, definition) {
-	        if (arguments.length === 2) {
-	            this.createState(id, behaviorOrDefinition, null, true);
-	        }
-	        else if (arguments.length === 3) {
-	            this.createState(id, definition, behaviorOrDefinition, true);
-	        }
-	    }
-	    createState(id, definition, behavior, isParallel = false) {
-	        if (!this.stateStack)
-	            throw new Error("StateChart has already entered, cannot call 'parallel()'");
-	        if (this.stateMap.get(id)) {
-	            throw new Error("States within a StateChart cannot have duplicate ids, '" + id + "' was already registered");
-	        }
-	        const parentState = this.stateStack.getLast();
-	        const Type = (isParallel) ? StateChartParallelState : StateChartState;
-	        const state = new Type(id, parentState, behavior);
-	        parentState.states.push(state);
-	        this.stateMap.set(id, state);
-	        if (typeof definition === "function") {
-	            this.stateStack.push(state);
-	            definition.call(this, this.stateDef, this.eventDef);
-	            this.stateStack.pop();
-	        }
-	        if (state.behavior) {
-	            state.behavior.chart = this;
-	        }
-	    }
-	    getActiveState() {
-	        return this.states.find(function (state) {
-	            return state.isActive;
-	        });
-	    }
-	}
-	exports.StateChart = StateChart;
-
-
-/***/ },
-/* 178 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13962,7 +14313,7 @@
 
 
 /***/ },
-/* 179 */
+/* 177 */
 /***/ function(module, exports) {
 
 	//

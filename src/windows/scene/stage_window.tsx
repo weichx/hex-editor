@@ -14,6 +14,7 @@ import {EventDef, StateChart, StateChartBehavior, StateChartEvent, StateDef} fro
 import {PanelComponent} from "../../runtime/components/ui/panel_component";
 import {BackgroundComponent} from "../../runtime/components/background_component";
 import {KeyCode} from "../../runtime/enums/e_keycode";
+import {DesignerRendered} from "../../editor_events/evt_designer_rendererd";
 
 export class StageWindow extends EditorWindowElement<IWindowAttrs> {
 
@@ -51,8 +52,10 @@ export class StageWindow extends EditorWindowElement<IWindowAttrs> {
             this.setPreviewSize(this.currentBreakpoint);
             this.stageBackground.paint(this.width, this.height);
         }
+
         this.stateChart.update();
-        this.currentTool.update();
+        // this.currentTool.update();
+        EditorRuntime.emit(DesignerRendered, this.stageForeground.getGfxRoot(), this.getStageMousePosition());
         this.stageForeground.paint(this.width, this.height);
     }
 
@@ -204,14 +207,6 @@ class PaintBoxBehavior extends StateChartBehavior {
     public exit() {
         this.stage.stageForeground.getGfxRoot().removeChild(this.graphic);
         EditorRuntime.setCursor("default");
-    }
-
-}
-
-class MouseInStageBehavior extends StateChartBehavior {
-
-    public update() {
-
     }
 
 }

@@ -233,7 +233,7 @@ export class Vector2 {
     }
 
     public clone(out? : Vector2) : Vector2 {
-        return (out || new Vector2(this.x, this.y)).set(this.x, this.y);
+        return (out || new Vector2()).set(this.x, this.y);
     }
 
     public isZero() : boolean {

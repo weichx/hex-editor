@@ -11,7 +11,6 @@ import {Vector2} from "./vector2";
 import {Vector3} from "./vector3";
 
 let idGenerator = 0;
-const scratchVector = new Vector2();
 
 export enum Space {
     Local, World
@@ -37,8 +36,6 @@ export class AppElement {
     private children : Array<AppElement>;
     private boundingBox : BoundingBox;
     private lifeCycleFlags : LifeCycleFlag;
-    //private localPosition : Vector2;
-    //private parentPosition : Vector2;
     private position : Vector2;
     private scale : Vector2;
     private rotation : number;
@@ -48,6 +45,7 @@ export class AppElement {
     private dirtyFlags : ElementDirtyFlag;
     private localMatrix : Matrix;
     private worldMatrix : Matrix;
+    public anchor : Vector2;
 
     constructor(name? : string, parent : AppElement = null) {
         this.id = idGenerator++;
@@ -69,16 +67,15 @@ export class AppElement {
         this.localMatrix = new Matrix();
         this.worldMatrix = new Matrix();
         this.boundingBox = new BoundingBox(this);
+        this.anchor = new Vector2();
         //todo don't allow components to be constructed outside of addComponent or this constructor
         Runtime.addElement(this);
     }
 
-    //
     // public setPivot(x : number, y : number) : void {
     //     this.pivot.x = clamp01(x);
     //     this.pivot.y = clamp01(y);
     // }
-    //
 
     public getPivot() : Vector2 {
         const out = new Vector2();
@@ -87,22 +84,8 @@ export class AppElement {
         return out;
     }
 
-    public worldToLocal(vector : Vector2, out? : Vector2) : Vector2 {
-        this.updateWorldMatrix();
-        //return Vector2.transformCoordinates(vector, this.worldMatrix.invertNew(Matrix3x3.scratch0), out);
-        return null;
-    }
-
-    public localToWorld(vector : Vector2, out? : Vector2) : Vector2 {
-        this.updateWorldMatrix();
-        // return Vector2.transformCoordinates(vector, this.worldMatrix, out);
-        return null;
-    }
-
-    public getWorldMatrix() : Matrix {
-        this.updateWorldMatrix();
-        // return this.worldMatrix.clone(out || new Matrix3x3());
-        return this.worldMatrix.clone();
+    public getWorldMatrix(out? : Matrix) : Matrix {
+        return this.updateWorldMatrix().clone(out);
     }
 
     public updateWorldMatrix() {
@@ -223,9 +206,8 @@ export class AppElement {
 
     public setPositionValues(x : number, y : number, relativeTo : Space = Space.World) : void {
         if (this.parent && relativeTo === Space.World) {
-            var invertParentWorldMatrix = this.parent.getWorldMatrix().clone();
+            var invertParentWorldMatrix = this.parent.getWorldMatrix(Matrix.scratch0);
             invertParentWorldMatrix.invert();
-            var worldPosition = new Vector2(x, y);
             const scratch = Vector3.scratch0.set(x, y, 0);
             Vector3.TransformCoordinates(scratch, invertParentWorldMatrix, scratch);
             this.position.x = scratch.x;
@@ -239,8 +221,8 @@ export class AppElement {
         Runtime.sendCommand(CommandType.SetTransform, this.id);
     }
 
-    public getLocalPosition() : Vector2 {
-        return this.position.clone();
+    public getLocalPosition(out? : Vector2) : Vector2 {
+        return this.position.clone(out);
     }
 
     public getPosition(out? : Vector2) : Vector2 {
@@ -484,47 +466,9 @@ export class AppElement {
         return (this.lifeCycleFlags & LifeCycleFlag.Destroyed) !== 0;
     }
 
-    /*** Helpers ***/
-
     public containsPoint(point : Vector2) : boolean {
         return false;
-        // const p = this.getPosition();
-        // const x = p.x;
-        // const y = p.y;
-        // const w = this.width;
-        // const h = this.height;
-        // const px = point.x;
-        // const py = point.y;
-        // return px >= x && x + w >= px && py >= y && y + h >= py;
     }
-
-    //this might be backwards
-    //todo account for rotation
-    // public containsRect(rect : Rectangle) : boolean {
-    //     const p = this.getPosition();
-    //     return rect.x + rect.width < (p.x + this.width)
-    //         && (rect.x) > (p.x)
-    //         && (rect.y) > (p.y)
-    //         && (rect.y + rect.height) < (p.y + this.height);
-    // }
-    //
-    // //todo account for rotation -- probably want to use algorithm of overlapping polygons instead
-    // public overlapsRectangle(rect : Rectangle) : boolean {
-    //     const p = this.getPosition();
-    //     const minAx = p.x;
-    //     const minAy = p.y;
-    //     const maxAx = p.x + this.width;
-    //     const maxAy = p.y + this.height;
-    //     const minBx = rect.x;
-    //     const minBy = rect.y;
-    //     const maxBx = rect.x + rect.width;
-    //     const maxBy = rect.y + rect.height;
-    //     const aLeftOfB = maxAx < minBx;
-    //     const aRightOfB = minAx > maxBx;
-    //     const aAboveB = minAy > maxBy;
-    //     const aBelowB = maxAy < minBy;
-    //     return !( aLeftOfB || aRightOfB || aAboveB || aBelowB );
-    // }
 
     /*** Static ***/
 

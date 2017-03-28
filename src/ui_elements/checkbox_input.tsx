@@ -1,5 +1,4 @@
-import {InputRenderer, IInputRendererAttrs} from "./editor_input";
-
+import {IInputRendererAttrs, InputRenderer} from "./editor_input";
 
 export class CheckboxInput extends InputRenderer<IInputRendererAttrs<boolean>, boolean> {
 
@@ -13,10 +12,9 @@ export class CheckboxInput extends InputRenderer<IInputRendererAttrs<boolean>, b
     }
 
     public onMounted() {
-
-
+        this.onValueChanged(this.binding.get());
         this.binding.onChange(() => {
-            this.htmlNode.checked = Boolean(this.binding.get());
+            this.htmlNode.checked = this.binding.get();
         });
 
         this.htmlNode.addEventListener("change", () => {

@@ -49,7 +49,7 @@ export class EditorBinding<T> implements IEditorBinding<T> {
         this.context = context;
         this.getterFn = getGetter(path);
         this.setterFn = getSetter(path);
-        this.value = void 0;//this.getterFn(this.context);
+        this.value = this.getterFn(this.context);
         this.changeHandlers = [];
     }
 

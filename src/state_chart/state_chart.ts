@@ -39,12 +39,12 @@ class StateChartState {
             return handler.type === evt.constructor;
         });
         if (handledEvent && handledEvent.guardFn(evt)) {
-            return { targetId : handledEvent.target, from: this };
+            return { targetId: handledEvent.target, from: this };
         }
         for (let i = 0; i < this.states.length; i++) {
             if (this.states[i].isActive) {
                 const retn = this.states[i].handleEvent(evt);
-                if(retn) return retn;
+                if (retn) return retn;
             }
         }
         return null;
@@ -130,8 +130,20 @@ class StateChartParallelState extends StateChartState {
 
 }
 
+type thing<T> = {
+    [P in keyof T]: T[P];
+    }
+
 export class StateChartEvent {
     public _brand : object;
+
+    public static create<T extends object>() : thing<T> {
+        return null;
+    }
+}
+
+export class GenericStateChartEvent<T> extends StateChartEvent {
+
 }
 
 export class StateChartBehavior {
@@ -192,7 +204,7 @@ export class StateChart {
         definition.call(this, this.stateDef, this.eventDef);
         this.stateStack.pop();
         this.stateStack = null;
-        if(this.states[0]) {
+        if (this.states[0]) {
             this.states[0].enter();
         }
     }
@@ -218,7 +230,6 @@ export class StateChart {
         if (this.stateStack) throw new Error("StateChart hasn't entered yet, invalid call to trigger()");
         this.eventQueue.push(event);
     }
-
 
     public getConfiguration() {
         const config = new Array<string[]>();
@@ -252,7 +263,7 @@ export class StateChart {
         for (let i = 0; i < this.states.length; i++) {
             if (this.states[i].isActive) {
                 const retn = this.states[i].handleEvent(evt);
-                if(retn) {
+                if (retn) {
                     this.goTo(retn.targetId, retn.from);
                     return;
                 }
@@ -358,3 +369,65 @@ export class StateChart {
     }
 
 }
+
+// class TypedEvent<T> {
+//     data : T;
+// }
+//
+// class StateChartBuilder {
+//
+//     public init() {
+//
+//     }
+//
+//     public enter(fn : () => void) {
+//
+//     }
+//
+//     public exit() {
+//
+//     }
+//
+//     public update() {
+//
+//     }
+//
+//     public state()  {}
+//
+//     public event<T>(evtType : TypedEvent<T>, target : string, guard? : (data? : T) => boolean) {
+//
+//     }
+//
+//     public trigger<T>(evt : TypedEvent<T>, data? : T) {
+//
+//     }
+//
+//     public toDSL() {
+//
+//     }
+//
+//     public createEvent<T>() : TypedEvent<T> {
+//         return new TypedEvent<T>();
+//     }
+//
+//     //x = event.create<T, u, v>();
+//     //x = event.create<string, number, string>
+//     //x = event.create<DataType>();
+//     //trigger(x, T;
+//     //new Event(data);
+//
+// }
+//
+// var b = new StateChartBuilder();
+// var z = b.createEvent<{s : string, y: number}>();
+// b.trigger(z, {s: "", y: 1});
+//
+// const Evt_MouseUp = b.createEvent<Vector2>();
+//
+// b.event(Evt_MouseUp, "stateName");
+
+
+
+
+
+

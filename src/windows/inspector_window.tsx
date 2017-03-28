@@ -7,11 +7,10 @@ import {ComponentMenu} from "./inspector/component_menu";
 import {WindowColors} from "../editor/editor_theme";
 import {ComponentRenderer} from "../renderers/component/component_renderer";
 import {AppElement} from "../runtime/app_element";
-import {Component} from "../runtime/component";
 import {createElement} from "../editor_element/element_renderer";
-import {TransformInspector} from "../renderers/component/app_element_inspector";
 import {CreateBinding, IEditorBinding} from "../editor/binding";
 import {CheckboxInput} from "../ui_elements/checkbox_input";
+import {TransformInspector} from "../renderers/component/app_element_inspector";
 
 export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
 
@@ -29,9 +28,9 @@ export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
         this.getChildRoot().addChild(createElement(TransformInspector, {
             appElement: this.selection
         }));
-        const components = newSelection.getAllComponents();
-        for (let i = 0; i < components.length; i++) {
-            this.createComponentDrawer(components[i]);
+        const renderers = ComponentRenderer.getAllRenderers(this.selection);
+        for (let i = 0; i < renderers.length; i++) {
+            this.getChildRoot().addChild(renderers[i]);
         }
         this.getChildRoot().addChild(createElement(ComponentMenu));
     }
@@ -76,13 +75,6 @@ export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
             <Vertical x-child-root/>
 
         </div>;
-    }
-
-    private createComponentDrawer(component : Component) {
-        const renderer = ComponentRenderer.get(component as any);
-        if (renderer) {
-            this.getChildRoot().addChild(renderer);
-        }
     }
 
 }

@@ -27,4 +27,8 @@ export class PixiStyle {
         return 1;
     }
 
+    public clone() : PixiStyle {
+        return new PixiStyle(this.lineColor, this.lineWidth, this.fillColor);
+    }
+
 }
