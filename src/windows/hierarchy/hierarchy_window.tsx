@@ -15,11 +15,11 @@ import {ToggleIcon} from "../../ui_elements/icon";
 import {AppElementIndexChanged} from "../../editor_events/evt_app_element_index_changed";
 import {RuntimeEvent} from "../../editor_events/runtime_event";
 import {ScrollComponent} from "../../runtime/components/scroll_component";
-import {SizingComponent} from "../../runtime/components/layout/sizing_component";
 import {getCreationMenu} from "../../menu_setup";
 import {Color} from "../../runtime/color";
 import {BackgroundComponent} from "../../runtime/components/background_component";
 import {PanelComponent} from "../../runtime/components/ui/panel_component";
+import {LengthUnit} from "../../runtime/components/layout/layout";
 
 export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
 
@@ -108,24 +108,21 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
 
     public onRendered() {
         setTimeout(function() {
-            let element = new AppElement("Panel");
+            let element = new AppElement("Panel", AppElement.Root);
             element.addComponent(PanelComponent);
             let bg = element.addComponent(BackgroundComponent);
             bg.color = Color.White;
-            let size = element.addComponent(SizingComponent);
-            size.width = 100;
-            size.height = 100;
-            element.setPositionValues(10, 10, Space.Local);
+            element.setPositionValues(100, 100, Space.Local);
+            element.setDimensions(100, 40, LengthUnit.Pixel);
             EditorRuntime.select(element);
-            let element2 = new AppElement("Panel Child");
+
+            let element2 = new AppElement("Panel Child", element);
             element2.addComponent(PanelComponent);
             bg = element2.addComponent(BackgroundComponent);
             bg.color = Color.Blue;
-            size = element2.addComponent(SizingComponent);
-            size.width = 100;
-            size.height = 100;
-            element2.setParent(element);
             element2.setPositionValues(100, 100, Space.Local);
+            element2.setDimensions(100, 40, LengthUnit.Pixel);
+
         }, 500);
         EditorRuntime.on(SelectionChanged, this);
         EditorRuntime.on(SceneLoaded, this);
@@ -175,7 +172,7 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
     private createScrollElement() : void {
         const element = new AppElement("Scroll Container");
         element.addComponent(ScrollComponent);
-        const sizing = element.addComponent(SizingComponent);
+        // const sizing = element.addComponent(SizingComponent);
         // sizing.stretchBehavior = StretchBehavior.FillParent;
     }
 

@@ -10,11 +10,12 @@ import {SceneTool} from "./scene_tool";
 import {SceneRectTool} from "./rect_tool";
 import {onRightClick} from "../../editor_element/editor_element_annotations";
 import {getCreationMenu} from "../../menu_setup";
-import {EventDef, StateChart, StateChartBehavior, StateChartEvent, StateDef} from "../../state_chart/state_chart";
+import {StateChart, StateChartBehavior} from "../../state_chart/state_chart";
 import {PanelComponent} from "../../runtime/components/ui/panel_component";
 import {BackgroundComponent} from "../../runtime/components/background_component";
 import {KeyCode} from "../../runtime/enums/e_keycode";
 import {DesignerRendered} from "../../editor_events/evt_designer_rendererd";
+import {LengthUnit} from "../../runtime/components/layout/layout";
 
 export class StageWindow extends EditorWindowElement<IWindowAttrs> {
 
@@ -53,7 +54,7 @@ export class StageWindow extends EditorWindowElement<IWindowAttrs> {
             this.stageBackground.paint(this.width, this.height);
         }
 
-        this.stateChart.update();
+        //this.stateChart.update();
         // this.currentTool.update();
         EditorRuntime.emit(DesignerRendered, this.stageForeground.getGfxRoot(), this.getStageMousePosition());
         this.stageForeground.paint(this.width, this.height);
@@ -83,7 +84,7 @@ export class StageWindow extends EditorWindowElement<IWindowAttrs> {
         if (delta.isZero()) return;
         this.panValue.addVector(delta);
         AppElement.Root.setPosition(new Vector2(this.panValue.x, this.panValue.y));
-        AppElement.Root.setDimensions(this.frameSize.x, this.frameSize.y);
+        AppElement.Root.setDimensions(this.frameSize.x, this.frameSize.y, LengthUnit.Pixel);
     }
 
     public getBreakpoint() : BreakpointType {
@@ -97,8 +98,7 @@ export class StageWindow extends EditorWindowElement<IWindowAttrs> {
         this.panValue.y = 1;
 
         AppElement.Root.setPosition(new Vector2(this.panValue.x, this.panValue.y));
-        AppElement.Root.setDimensions(this.frameSize.x, this.frameSize.y);
-
+        AppElement.Root.setDimensions(this.frameSize.x, this.frameSize.y, LengthUnit.Pixel);
     }
 
     public getStageMousePosition() {
@@ -119,37 +119,37 @@ export class StageWindow extends EditorWindowElement<IWindowAttrs> {
     }
 
     public drawPrimitive(selection : AppElement) {
-        this.stateChart.trigger(new Evt_PaintBox(selection));
+        // this.stateChart.trigger(new Evt_PaintBox(selection));
     }
 
-    @onRightClick
+     @onRightClick
     public onContextClick() {
-        const selection = EditorRuntime.getSelection();
-        EditorRuntime.getInput().getMousePosition(Vector2.scratch0);
-        const menu = new nw.Menu();
-
-        menu.append(new nw.MenuItem({ label: "Create", submenu: getCreationMenu(selection) }));
-        menu.append(new nw.MenuItem({ label: "Box", click: () => { this.drawPrimitive(selection) } }));
-        // menu.append(new nw.MenuItem({ label: "Destroy", click: () => this.destroyContextSelection() }));
-
-        menu.popup(Vector2.scratch0.x, Vector2.scratch0.y);
+        // const selection = EditorRuntime.getSelection();
+        // EditorRuntime.getInput().getMousePosition(Vector2.scratch0);
+        // const menu = new nw.Menu();
+        //
+        // menu.append(new nw.MenuItem({ label: "Create", submenu: getCreationMenu(selection) }));
+        // menu.append(new nw.MenuItem({ label: "Box", click: () => { this.drawPrimitive(selection) } }));
+        // // menu.append(new nw.MenuItem({ label: "Destroy", click: () => this.destroyContextSelection() }));
+        //
+        // menu.popup(Vector2.scratch0.x, Vector2.scratch0.y);
     }
 }
 
-class Evt_PaintBox extends StateChartEvent {
-
-    public selection : AppElement;
-
-    constructor(selection : AppElement) {
-        super();
-        this.selection = selection;
-    }
-
-}
-
-class Evt_PaintBox_Start extends StateChartEvent {}
-class Evt_PaintBox_Finish extends StateChartEvent {}
-class Evt_PaintBox_Cancel extends StateChartEvent {}
+// class Evt_PaintBox extends StateChartEvent {
+//
+//     public selection : AppElement;
+//
+//     constructor(selection : AppElement) {
+//         super();
+//         this.selection = selection;
+//     }
+//
+// }
+//
+// class Evt_PaintBox_Start extends StateChartEvent {}
+// class Evt_PaintBox_Finish extends StateChartEvent {}
+// class Evt_PaintBox_Cancel extends StateChartEvent {}
 
 class PaintBoxBehavior extends StateChartBehavior {
 
@@ -167,41 +167,41 @@ class PaintBoxBehavior extends StateChartBehavior {
     }
 
     public update() {
-        const input = EditorRuntime.getInput();
-        const inStage = input.isMouseInEditorElement(this.stage.stageForeground);
-        this.graphic.clear();
-
-        if (this.chart.isInState("paint-pending")) {
-            if (inStage) {
-                EditorRuntime.setCursor("crosshair");
-                if (input.isMouseDownThisFrame()) {
-                    this.chart.trigger(new Evt_PaintBox_Start());
-                }
-            }
-
-        }
-        else if (this.chart.isInState("paint-started")) {
-            const md = input.getMouseDownRelativeToEditorElement(this.stage.stageForeground);
-            const mouse = input.getMouseRelativeToEditorElement(this.stage.stageForeground);
-            this.graphic.lineStyle(2, 0x0000FF);
-            this.graphic.drawRect(md.x, md.y, mouse.x - md.x, mouse.y - md.y);
-            if (input.isMouseUpThisFrame()) {
-                const element = new AppElement("Box", EditorRuntime.getSelection());
-                element.addComponent(PanelComponent);
-                element.addComponent(BackgroundComponent);
-                const minX = Math.min(mouse.x, md.x);
-                const minY = Math.min(mouse.y, md.y);
-                const maxX = Math.max(mouse.x, md.x);
-                const maxY = Math.max(mouse.y, md.y);
-                element.setPositionValues(minX, minY);
-                element.setRotation(0, Space.World);
-                element.setDimensions(maxX - minX, maxY - minY);
-                this.chart.trigger(new Evt_PaintBox_Finish());
-            }
-            else if (input.isKeyDown(KeyCode.Escape)) {
-                this.chart.trigger(new Evt_PaintBox_Cancel());
-            }
-        }
+        // const input = EditorRuntime.getInput();
+        // const inStage = input.isMouseInEditorElement(this.stage.stageForeground);
+        // this.graphic.clear();
+        //
+        // if (this.chart.isInState("paint-pending")) {
+        //     if (inStage) {
+        //         EditorRuntime.setCursor("crosshair");
+        //         if (input.isMouseDownThisFrame()) {
+        //             this.chart.trigger(new Evt_PaintBox_Start());
+        //         }
+        //     }
+        //
+        // }
+        // else if (this.chart.isInState("paint-started")) {
+        //     const md = input.getMouseDownRelativeToEditorElement(this.stage.stageForeground);
+        //     const mouse = input.getMouseRelativeToEditorElement(this.stage.stageForeground);
+        //     this.graphic.lineStyle(2, 0x0000FF);
+        //     this.graphic.drawRect(md.x, md.y, mouse.x - md.x, mouse.y - md.y);
+        //     if (input.isMouseUpThisFrame()) {
+        //         const element = new AppElement("Box", EditorRuntime.getSelection());
+        //         element.addComponent(PanelComponent);
+        //         element.addComponent(BackgroundComponent);
+        //         const minX = Math.min(mouse.x, md.x);
+        //         const minY = Math.min(mouse.y, md.y);
+        //         const maxX = Math.max(mouse.x, md.x);
+        //         const maxY = Math.max(mouse.y, md.y);
+        //         element.setPositionValues(minX, minY);
+        //         element.setRotation(0, Space.World);
+        //         element.setDimensions(maxX - minX, maxY - minY);
+        //         this.chart.trigger(new Evt_PaintBox_Finish());
+        //     }
+        //     else if (input.isKeyDown(KeyCode.Escape)) {
+        //         this.chart.trigger(new Evt_PaintBox_Cancel());
+        //     }
+        // }
     }
 
     public exit() {
@@ -213,41 +213,41 @@ class PaintBoxBehavior extends StateChartBehavior {
 
 function createStateChart(stage : StageWindow) {
 
-    return new StateChart(function (state : StateDef, event : EventDef) {
+    return new StateChart(function () {
 
-        state("default", function () {
-
-        });
-
-        state.parallel("base", function () {
-
-            state("selection", function () {
-                state("selection-none");
-                state("selection-single");
-                state("selection-multiple");
-            });
-
-            state("tool", function () {
-
-            });
-
-        });
-
-        state("paint-box", new PaintBoxBehavior(stage), function () {
-
-            state("paint-pending");
-            state("paint-started");
-
-            event(Evt_PaintBox_Start, "paint-started");
-            event(Evt_PaintBox_Finish, "default");
-            event(Evt_PaintBox_Cancel, "default");
-
-        });
-
-        state("single-select");
-        state("multi-select");
-
-        event(Evt_PaintBox, "paint-box");
+        // state("default", function () {
+        //
+        // });
+        //
+        // state.parallel("base", function () {
+        //
+        //     state("selection", function () {
+        //         state("selection-none");
+        //         state("selection-single");
+        //         state("selection-multiple");
+        //     });
+        //
+        //     state("tool", function () {
+        //
+        //     });
+        //
+        // });
+        //
+        // state("paint-box", new PaintBoxBehavior(stage), function () {
+        //
+        //     state("paint-pending");
+        //     state("paint-started");
+        //
+        //     event(Evt_PaintBox_Start, "paint-started");
+        //     event(Evt_PaintBox_Finish, "default");
+        //     event(Evt_PaintBox_Cancel, "default");
+        //
+        // });
+        //
+        // state("single-select");
+        // state("multi-select");
+        //
+        // event(Evt_PaintBox, "paint-box");
 
     });
 

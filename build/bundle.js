@@ -46,175 +46,170 @@
 
 	__webpack_require__(1);
 	__webpack_require__(58);
-	__webpack_require__(119);
 	__webpack_require__(121);
-	__webpack_require__(117);
+	__webpack_require__(123);
+	__webpack_require__(119);
 	__webpack_require__(71);
 	__webpack_require__(60);
 	__webpack_require__(62);
-	__webpack_require__(130);
-	__webpack_require__(101);
 	__webpack_require__(131);
-	__webpack_require__(96);
+	__webpack_require__(94);
 	__webpack_require__(132);
 	__webpack_require__(133);
-	__webpack_require__(134);
-	__webpack_require__(135);
-	__webpack_require__(137);
-	__webpack_require__(139);
-	__webpack_require__(140);
-	__webpack_require__(142);
-	__webpack_require__(143);
 	__webpack_require__(99);
-	__webpack_require__(104);
-	__webpack_require__(66);
+	__webpack_require__(134);
+	__webpack_require__(136);
 	__webpack_require__(138);
-	__webpack_require__(144);
-	__webpack_require__(145);
-	__webpack_require__(92);
-	__webpack_require__(102);
-	__webpack_require__(146);
+	__webpack_require__(139);
 	__webpack_require__(141);
-	__webpack_require__(59);
-	__webpack_require__(94);
+	__webpack_require__(142);
+	__webpack_require__(97);
+	__webpack_require__(102);
+	__webpack_require__(66);
+	__webpack_require__(137);
+	__webpack_require__(143);
+	__webpack_require__(144);
 	__webpack_require__(90);
+	__webpack_require__(100);
+	__webpack_require__(145);
+	__webpack_require__(140);
+	__webpack_require__(59);
+	__webpack_require__(92);
+	__webpack_require__(88);
+	__webpack_require__(146);
+	__webpack_require__(103);
+	__webpack_require__(87);
 	__webpack_require__(147);
-	__webpack_require__(106);
-	__webpack_require__(89);
-	__webpack_require__(148);
-	__webpack_require__(114);
-	__webpack_require__(113);
+	__webpack_require__(116);
+	__webpack_require__(115);
 	__webpack_require__(68);
 	__webpack_require__(65);
 	__webpack_require__(63);
-	__webpack_require__(88);
+	__webpack_require__(86);
+	__webpack_require__(91);
 	__webpack_require__(93);
-	__webpack_require__(95);
+	__webpack_require__(149);
+	__webpack_require__(125);
+	__webpack_require__(124);
 	__webpack_require__(150);
-	__webpack_require__(123);
-	__webpack_require__(122);
 	__webpack_require__(151);
 	__webpack_require__(152);
+	__webpack_require__(122);
 	__webpack_require__(153);
 	__webpack_require__(120);
-	__webpack_require__(154);
-	__webpack_require__(118);
-	__webpack_require__(155);
-	__webpack_require__(23);
+	__webpack_require__(110);
+	__webpack_require__(24);
 	__webpack_require__(56);
-	__webpack_require__(156);
-	__webpack_require__(157);
+	__webpack_require__(154);
+	__webpack_require__(155);
 	__webpack_require__(55);
 	__webpack_require__(72);
 	__webpack_require__(15);
-	__webpack_require__(18);
+	__webpack_require__(19);
 	__webpack_require__(14);
 	__webpack_require__(8);
 	__webpack_require__(7);
-	__webpack_require__(19);
-	__webpack_require__(21);
+	__webpack_require__(20);
+	__webpack_require__(22);
 	__webpack_require__(41);
 	__webpack_require__(40);
 	__webpack_require__(47);
-	__webpack_require__(158);
-	__webpack_require__(159);
-	__webpack_require__(100);
+	__webpack_require__(156);
+	__webpack_require__(157);
+	__webpack_require__(98);
 	__webpack_require__(70);
 	__webpack_require__(5);
-	__webpack_require__(20);
+	__webpack_require__(21);
 	__webpack_require__(6);
-	__webpack_require__(160);
+	__webpack_require__(158);
 	__webpack_require__(12);
 	__webpack_require__(9);
 	__webpack_require__(10);
 	__webpack_require__(13);
-	__webpack_require__(116);
+	__webpack_require__(118);
 	__webpack_require__(44);
-	__webpack_require__(161);
-	__webpack_require__(149);
+	__webpack_require__(159);
+	__webpack_require__(148);
 	__webpack_require__(67);
 	__webpack_require__(69);
-	__webpack_require__(22);
+	__webpack_require__(23);
 	__webpack_require__(3);
 	__webpack_require__(61);
 	__webpack_require__(57);
-	__webpack_require__(36);
-	__webpack_require__(77);
+	__webpack_require__(18);
+	__webpack_require__(75);
 	__webpack_require__(11);
-	__webpack_require__(162);
-	__webpack_require__(163);
-	__webpack_require__(110);
+	__webpack_require__(113);
+	__webpack_require__(160);
+	__webpack_require__(109);
 	__webpack_require__(112);
+	__webpack_require__(106);
 	__webpack_require__(107);
-	__webpack_require__(108);
 	__webpack_require__(111);
 	__webpack_require__(45);
+	__webpack_require__(105);
 	__webpack_require__(54);
-	__webpack_require__(136);
-	__webpack_require__(97);
-	__webpack_require__(28);
+	__webpack_require__(135);
+	__webpack_require__(95);
+	__webpack_require__(29);
 	__webpack_require__(2);
 	__webpack_require__(46);
-	__webpack_require__(31);
-	__webpack_require__(124);
-	__webpack_require__(164);
-	__webpack_require__(165);
+	__webpack_require__(32);
+	__webpack_require__(126);
+	__webpack_require__(161);
+	__webpack_require__(162);
 	__webpack_require__(53);
 	__webpack_require__(42);
 	__webpack_require__(52);
-	__webpack_require__(166);
-	__webpack_require__(167);
-	__webpack_require__(76);
-	__webpack_require__(75);
-	__webpack_require__(168);
+	__webpack_require__(104);
 	__webpack_require__(73);
 	__webpack_require__(74);
-	__webpack_require__(81);
-	__webpack_require__(82);
-	__webpack_require__(84);
-	__webpack_require__(80);
-	__webpack_require__(86);
 	__webpack_require__(79);
-	__webpack_require__(83);
-	__webpack_require__(87);
+	__webpack_require__(80);
+	__webpack_require__(82);
 	__webpack_require__(78);
+	__webpack_require__(84);
+	__webpack_require__(77);
+	__webpack_require__(81);
 	__webpack_require__(85);
+	__webpack_require__(76);
+	__webpack_require__(83);
+	__webpack_require__(31);
+	__webpack_require__(101);
 	__webpack_require__(30);
-	__webpack_require__(103);
-	__webpack_require__(29);
-	__webpack_require__(25);
-	__webpack_require__(39);
-	__webpack_require__(24);
-	__webpack_require__(169);
-	__webpack_require__(170);
-	__webpack_require__(35);
-	__webpack_require__(171);
-	__webpack_require__(172);
-	__webpack_require__(173);
-	__webpack_require__(43);
-	__webpack_require__(174);
-	__webpack_require__(34);
-	__webpack_require__(32);
-	__webpack_require__(27);
-	__webpack_require__(175);
-	__webpack_require__(109);
 	__webpack_require__(26);
-	__webpack_require__(17);
+	__webpack_require__(39);
+	__webpack_require__(25);
+	__webpack_require__(163);
+	__webpack_require__(164);
+	__webpack_require__(36);
+	__webpack_require__(165);
+	__webpack_require__(166);
+	__webpack_require__(167);
+	__webpack_require__(43);
+	__webpack_require__(168);
+	__webpack_require__(35);
 	__webpack_require__(33);
+	__webpack_require__(28);
+	__webpack_require__(169);
+	__webpack_require__(108);
+	__webpack_require__(27);
+	__webpack_require__(17);
+	__webpack_require__(34);
 	__webpack_require__(37);
 	__webpack_require__(38);
-	__webpack_require__(129);
-	__webpack_require__(115);
+	__webpack_require__(114);
+	__webpack_require__(117);
 	__webpack_require__(64);
-	__webpack_require__(91);
-	__webpack_require__(98);
+	__webpack_require__(89);
+	__webpack_require__(96);
 	__webpack_require__(16);
-	__webpack_require__(176);
+	__webpack_require__(170);
+	__webpack_require__(129);
+	__webpack_require__(130);
 	__webpack_require__(127);
 	__webpack_require__(128);
-	__webpack_require__(125);
-	__webpack_require__(126);
-	module.exports = __webpack_require__(177);
+	module.exports = __webpack_require__(171);
 
 
 /***/ },
@@ -358,14 +353,14 @@
 	const tslib_1 = __webpack_require__(4);
 	const evt_selection_changed_1 = __webpack_require__(5);
 	const element_renderer_1 = __webpack_require__(7);
-	const evt_window_resized_1 = __webpack_require__(20);
-	const evt_app_element_created_1 = __webpack_require__(21);
+	const evt_window_resized_1 = __webpack_require__(21);
+	const evt_app_element_created_1 = __webpack_require__(22);
 	const editor_element_1 = __webpack_require__(15);
-	const editor_input_1 = __webpack_require__(22);
-	const tree_1 = __webpack_require__(26);
-	const runtime_1 = __webpack_require__(27);
-	const app_element_1 = __webpack_require__(28);
-	const e_command_type_1 = __webpack_require__(30);
+	const editor_input_1 = __webpack_require__(23);
+	const tree_1 = __webpack_require__(27);
+	const runtime_1 = __webpack_require__(28);
+	const app_element_1 = __webpack_require__(29);
+	const e_command_type_1 = __webpack_require__(31);
 	const component_1 = __webpack_require__(42);
 	const vector2_1 = __webpack_require__(17);
 	const drag_action_1 = __webpack_require__(44);
@@ -695,8 +690,8 @@
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const element_attribute_1 = __webpack_require__(8);
 	const editor_text_element_1 = __webpack_require__(14);
-	const editor_html_element_1 = __webpack_require__(18);
-	const render_context_stack_1 = __webpack_require__(19);
+	const editor_html_element_1 = __webpack_require__(19);
+	const render_context_stack_1 = __webpack_require__(20);
 	const editor_element_1 = __webpack_require__(15);
 	const smartAttributes = [
 	    element_attribute_1.IdAndEventsAttributes
@@ -1328,6 +1323,7 @@
 	    EditorElementFlags[EditorElementFlags["Enabled"] = 4] = "Enabled";
 	    EditorElementFlags[EditorElementFlags["Destroyed"] = 8] = "Destroyed";
 	    EditorElementFlags[EditorElementFlags["Visible"] = 16] = "Visible";
+	    EditorElementFlags[EditorElementFlags["ClearingChildren"] = 32] = "ClearingChildren";
 	})(EditorElementFlags = exports.EditorElementFlags || (exports.EditorElementFlags = {}));
 	const pendingEventMap = new WeakMap();
 	const activeEventMap = new WeakMap();
@@ -1466,13 +1462,11 @@
 	        this.children.length = 0;
 	    }
 	    clearChildren() {
+	        this.flags ^= EditorElementFlags.ClearingChildren;
 	        for (let i = 0; i < this.children.length; i++) {
 	            this.children[i].destroy();
 	        }
-	        const node = this.getDomNode();
-	        while (node.firstElementChild) {
-	            node.firstElementChild.remove();
-	        }
+	        this.flags ^= EditorElementFlags.ClearingChildren;
 	    }
 	    getChildrenByType(type) {
 	        const retn = new Array();
@@ -1558,23 +1552,32 @@
 	    getChildIndex(child) {
 	        return this.children.indexOf(child);
 	    }
-	    //todo need to remove all event handlers
 	    destroy() {
 	        if (this.isDestroyed())
 	            return;
 	        this.flags |= EditorElementFlags.Destroyed;
-	        //maybe have 'isDestroyPending' flag
-	        //be careful with destroying the dom node since it is shared in a virtual tree
 	        this.onDestroyed();
 	        for (let i = 0; i < this.children.length; i++) {
 	            this.children[i].destroy();
 	        }
-	        if (this.parent) {
-	            if (!this.parent.isDestroyed()) {
-	                this.getDomNode().remove();
+	        //todo this can be done async somehow
+	        const evtList = pendingEventMap.get(this);
+	        if (evtList) {
+	            for (let i = 0; i < evtList.length; i++) {
+	                const evt = evtList[i];
+	                if (this.htmlNode) {
+	                    this.htmlNode.removeEventListener(evt.type, evt.fn, evt.bubble);
+	                }
+	            }
+	            pendingEventMap.delete(this);
+	        }
+	        if (this.parent && !this.parent.isDestroyed()) {
+	            this.getDomNode().remove();
+	            if ((this.parent.flags & EditorElementFlags.ClearingChildren) === 0) {
 	                this.parent.children.remove(this);
 	            }
 	        }
+	        this.htmlNode = null;
 	        this.renderContext = null;
 	        this.parent = null;
 	        this.childRoot = null;
@@ -1793,10 +1796,11 @@
 
 /***/ },
 /* 17 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
+	const math_util_1 = __webpack_require__(18);
 	class Vector2 {
 	    constructor(x = 0, y = 0) {
 	        this.x = x;
@@ -1867,6 +1871,11 @@
 	            this.normalize();
 	            this.scale(length);
 	        }
+	        return this;
+	    }
+	    clampToVector0(vector) {
+	        this.x = math_util_1.MathUtil.clamp(this.x, 0, vector.x);
+	        this.y = math_util_1.MathUtil.clamp(this.y, 0, vector.y);
 	        return this;
 	    }
 	    dot(other) {
@@ -2089,11 +2098,126 @@
 	Vector2.scratch2 = new Vector2();
 	Vector2.scratch3 = new Vector2();
 	Vector2.scratch4 = new Vector2();
+	Vector2.scratchArray0 = new Array();
+	Vector2.scratchArray1 = new Array();
 	exports.Vector2 = Vector2;
 
 
 /***/ },
 /* 18 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	var AngleUnit;
+	(function (AngleUnit) {
+	    AngleUnit[AngleUnit["Radians"] = 0] = "Radians";
+	    AngleUnit[AngleUnit["Degrees"] = 1] = "Degrees";
+	})(AngleUnit = exports.AngleUnit || (exports.AngleUnit = {}));
+	exports.MathUtil = {
+	    RadiansToDegrees: 57.2957795130823,
+	    DegreesToRadians: 0.01745329251994,
+	    E: Math.E,
+	    Log2E: Math.LOG2E,
+	    Log10E: Math.LOG10E,
+	    Pi: Math.PI,
+	    PiOver2: Math.PI / 2.0,
+	    PiOver4: Math.PI / 4.0,
+	    TwoPi: Math.PI * 2.0,
+	    sign(value) {
+	        if (value === 0 || isNaN(value))
+	            return value;
+	        return value > 0 ? 1 : -1;
+	    },
+	    clamp(value, min, max) {
+	        value = (value > max) ? max : value;
+	        value = (value < min) ? min : value;
+	        return value;
+	    },
+	    clamp01(value) {
+	        value = (value > 1) ? 1 : value;
+	        value = (value < 0) ? 0 : value;
+	        return value;
+	    },
+	    distance(value1, value2) {
+	        return Math.abs(value1 - value2);
+	    },
+	    barycentric(value1, value2, value3, amount1, amount2) {
+	        return value1 + (value2 - value1) * amount1 + (value3 - value1) * amount2;
+	    },
+	    catmullRom(value1, value2, value3, value4, amount) {
+	        // Using formula from http://www.mvps.org/directx/articles/catmull/
+	        const amountSquared = amount * amount;
+	        const amountCubed = amountSquared * amount;
+	        return (0.5 * (2.0 * value2 +
+	            (value3 - value1) * amount +
+	            (2.0 * value1 - 5.0 * value2 + 4.0 * value3 - value4) * amountSquared +
+	            (3.0 * value2 - value1 - 3.0 * value3 + value4) * amountCubed));
+	    },
+	    hermite(value1, tangent1, value2, tangent2, amount) {
+	        let v1 = value1;
+	        let v2 = value2;
+	        let t1 = tangent1;
+	        let t2 = tangent2;
+	        let s = amount;
+	        let result = 0;
+	        let sCubed = s * s * s;
+	        let sSquared = s * s;
+	        if (amount == 0)
+	            result = value1;
+	        else if (amount == 1)
+	            result = value2;
+	        else
+	            result = (2 * v1 - 2 * v2 + t2 + t1) * sCubed +
+	                (3 * v2 - 3 * v1 - 2 * t1 - t2) * sSquared +
+	                t1 * s +
+	                v1;
+	        return result;
+	    },
+	    lerp(value1, value2, amount) {
+	        return ((1 - amount) * value1) + (value2 * amount);
+	    },
+	    smoothStep(value1, value2, amount) {
+	        return this.hermite(value1, 0, value2, 0, this.clamp01(amount));
+	    },
+	    wrapAngleDegrees(angle) {
+	        let x = angle % 360;
+	        if (x < 0)
+	            x += 360;
+	        return x;
+	    },
+	    wrapAngle(angle) {
+	        const PI = Math.PI;
+	        const TwoPI = PI * 2;
+	        if ((angle > -PI) && (angle <= PI)) {
+	            return angle;
+	        }
+	        angle %= TwoPI;
+	        if (angle <= -PI) {
+	            return angle + TwoPI;
+	        }
+	        if (angle > PI) {
+	            return angle - TwoPI;
+	        }
+	        return angle;
+	    },
+	    normalizeAngle180(angle) {
+	        let x = (angle + 180) % 360;
+	        if (x < 0)
+	            x += 360;
+	        return x - 180;
+	    },
+	    isPowerOf2(value) {
+	        var int = value | 0;
+	        if (value !== int)
+	            return false;
+	        return (int > 0) && ((int & (int - 1)) == 0);
+	    }
+	};
+
+
+/***/ },
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2266,7 +2390,7 @@
 
 
 /***/ },
-/* 19 */
+/* 20 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -2286,7 +2410,7 @@
 
 
 /***/ },
-/* 20 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2298,7 +2422,7 @@
 
 
 /***/ },
-/* 21 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -2311,14 +2435,14 @@
 
 
 /***/ },
-/* 22 */
+/* 23 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const editor_element_1 = __webpack_require__(15);
 	const vector2_1 = __webpack_require__(17);
-	const browser_input_1 = __webpack_require__(23);
+	const browser_input_1 = __webpack_require__(24);
 	//in the editor we use real dom input events, unlike in the runtime
 	//the problem is that when we do a sync from dom -> runtime,
 	//local (real dom) event handlers fire but the input update hasn't been
@@ -2354,12 +2478,12 @@
 
 
 /***/ },
-/* 23 */
+/* 24 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const input_1 = __webpack_require__(24);
+	const input_1 = __webpack_require__(25);
 	class BrowserInput extends input_1.Input {
 	    constructor(target = document.body) {
 	        super();
@@ -2396,13 +2520,13 @@
 
 
 /***/ },
-/* 24 */
+/* 25 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const vector2_1 = __webpack_require__(17);
-	const e_mouse_state_1 = __webpack_require__(25);
+	const e_mouse_state_1 = __webpack_require__(26);
 	class Input {
 	    constructor() {
 	        this.x = 0;
@@ -2576,7 +2700,7 @@
 
 
 /***/ },
-/* 25 */
+/* 26 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -2593,7 +2717,7 @@
 
 
 /***/ },
-/* 26 */
+/* 27 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -2703,16 +2827,15 @@
 
 
 /***/ },
-/* 27 */
+/* 28 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const input_1 = __webpack_require__(24);
-	const app_element_1 = __webpack_require__(28);
+	const input_1 = __webpack_require__(25);
 	const runtime_base_1 = __webpack_require__(38);
 	const evt_app_element_parent_changed_1 = __webpack_require__(40);
-	const e_command_type_1 = __webpack_require__(30);
+	const e_command_type_1 = __webpack_require__(31);
 	const evt_app_element_index_changed_1 = __webpack_require__(41);
 	class RuntimeImpl extends runtime_base_1.RuntimeBase {
 	    constructor() {
@@ -2744,14 +2867,6 @@
 	        return this.scene;
 	    }
 	    getAppElementAtPoint(point) {
-	        const childCount = app_element_1.AppElement.Root.getChildCount();
-	        for (let i = 0; i < childCount; i++) {
-	            const hit = this.appElementAtPointStep(app_element_1.AppElement.Root.getChildAt(i), point);
-	            if (hit) {
-	                return hit;
-	            }
-	        }
-	        //if (AppElement.Root.containsPoint(point)) return AppElement.Root;
 	        return null;
 	    }
 	    //todo this could be more optimized
@@ -2818,20 +2933,21 @@
 
 
 /***/ },
-/* 28 */
+/* 29 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const e_lifecycle_flags_1 = __webpack_require__(29);
-	const e_command_type_1 = __webpack_require__(30);
+	const e_lifecycle_flags_1 = __webpack_require__(30);
+	const e_command_type_1 = __webpack_require__(31);
 	const util_1 = __webpack_require__(16);
-	const bounding_box_1 = __webpack_require__(31);
-	const math_util_1 = __webpack_require__(36);
-	const matrix_1 = __webpack_require__(35);
-	const quaternion_1 = __webpack_require__(34);
+	const bounding_box_1 = __webpack_require__(32);
+	const math_util_1 = __webpack_require__(18);
+	const matrix_1 = __webpack_require__(36);
+	const quaternion_1 = __webpack_require__(35);
 	const vector2_1 = __webpack_require__(17);
-	const vector3_1 = __webpack_require__(33);
+	const vector3_1 = __webpack_require__(34);
+	const layout_1 = __webpack_require__(104);
 	let idGenerator = 0;
 	var Space;
 	(function (Space) {
@@ -2869,7 +2985,12 @@
 	        this.localMatrix = new matrix_1.Matrix();
 	        this.worldMatrix = new matrix_1.Matrix();
 	        this.boundingBox = new bounding_box_1.BoundingBox(this);
-	        this.anchor = new vector2_1.Vector2();
+	        this.anchorMin = new vector2_1.Vector2();
+	        this.anchorMax = new vector2_1.Vector2();
+	        this.width = 1;
+	        this.height = 1;
+	        this.widthUnit = layout_1.LengthUnit.Percent;
+	        this.heightUnit = layout_1.LengthUnit.Percent;
 	        //todo don't allow components to be constructed outside of addComponent or this constructor
 	        Runtime.addElement(this);
 	    }
@@ -2928,40 +3049,60 @@
 	        return this.scale.clone(out);
 	    }
 	    getWidth() {
+	        switch (this.widthUnit) {
+	            case layout_1.LengthUnit.Pixel:
+	                return this.width;
+	            case layout_1.LengthUnit.Percent:
+	                if (!this.parent) {
+	                    return 0;
+	                }
+	                return this.width * this.parent.getWidth();
+	            case layout_1.LengthUnit.Flex:
+	                return 0;
+	        }
 	        return this.width;
 	    }
-	    setWidth(width) {
-	        if (width === this.width)
+	    getScaledWidth() {
+	        return this.width * this.getWorldMatrix(matrix_1.Matrix.scratch4).getScaleX();
+	    }
+	    setWidth(width, unit) {
+	        if (width === this.width && this.widthUnit === unit)
 	            return;
-	        this.width = width;
-	        //todo get parent layout component and invoke layout
-	        //todo get layout component and invoke layout
-	        //todo use anchor settings
+	        this.width = math_util_1.MathUtil.clamp(width, 0, Number.MAX_VALUE);
+	        this.widthUnit = unit;
 	        this.dirtyFlags |= ElementDirtyFlag.Width;
 	        Runtime.sendCommand(e_command_type_1.CommandType.SetDimensions, this.id);
 	    }
 	    getHeight() {
+	        switch (this.heightUnit) {
+	            case layout_1.LengthUnit.Pixel:
+	                return this.height;
+	            case layout_1.LengthUnit.Percent:
+	                if (!this.parent) {
+	                    return 0;
+	                }
+	                return this.height * this.parent.getHeight();
+	            case layout_1.LengthUnit.Flex:
+	                return 0;
+	        }
 	        return this.height;
 	    }
-	    setHeight(height) {
-	        if (this.height === height)
+	    getScaledHeight() {
+	        return this.height * this.getWorldMatrix(matrix_1.Matrix.scratch4).getScaleY();
+	    }
+	    setHeight(height, unit) {
+	        if (this.height === height && this.heightUnit === unit)
 	            return;
-	        this.height = height;
+	        this.height = math_util_1.MathUtil.clamp(height, 0, Number.MAX_VALUE);
+	        this.heightUnit = unit;
 	        this.dirtyFlags |= ElementDirtyFlag.Height;
 	        Runtime.sendCommand(e_command_type_1.CommandType.SetDimensions, this.id);
 	    }
-	    setDimensions(widthOrDimension, height = 0) {
-	        const dimension = widthOrDimension;
-	        if (typeof widthOrDimension === "object") {
-	            if (dimension.width !== void 0) {
-	                this.width = dimension.width;
-	                this.height = dimension.height;
-	            }
-	        }
-	        else {
-	            this.width = widthOrDimension;
-	            this.height = height;
-	        }
+	    setDimensions(width, height, unit) {
+	        this.widthUnit = unit;
+	        this.heightUnit = unit;
+	        this.width = math_util_1.MathUtil.clamp(width, 0, Number.MAX_VALUE);
+	        this.height = math_util_1.MathUtil.clamp(height, 0, Number.MAX_VALUE);
 	        this.dirtyFlags |= ElementDirtyFlag.WidthOrHeight;
 	        Runtime.sendCommand(e_command_type_1.CommandType.SetDimensions, this.id);
 	    }
@@ -2986,10 +3127,17 @@
 	        this.dirtyFlags |= ElementDirtyFlag.Rotation;
 	        Runtime.sendCommand(e_command_type_1.CommandType.SetTransform, this.id);
 	    }
-	    setPosition(position, relativeTo = Space.World) {
-	        this.setPositionValues(position.x, position.y, relativeTo);
+	    setPosition(position, relativeTo = Space.World, keepChildPositions = false) {
+	        this.setPositionValues(position.x, position.y, relativeTo, keepChildPositions);
 	    }
-	    setPositionValues(x, y, relativeTo = Space.World) {
+	    setPositionValues(x, y, relativeTo = Space.World, keepChildPositions = false) {
+	        if (keepChildPositions) {
+	            vector2_1.Vector2.scratchArray0.length = this.children.length;
+	            for (let i = 0; i < this.children.length; i++) {
+	                vector2_1.Vector2.scratchArray0[i] = this.children[i].getPosition();
+	            }
+	            this.setPositionValues(x, y, relativeTo);
+	        }
 	        if (this.parent && relativeTo === Space.World) {
 	            var invertParentWorldMatrix = this.parent.getWorldMatrix(matrix_1.Matrix.scratch0);
 	            invertParentWorldMatrix.invert();
@@ -3001,6 +3149,11 @@
 	        else {
 	            this.position.x = x;
 	            this.position.y = y;
+	        }
+	        if (keepChildPositions) {
+	            for (let i = 0; i < this.children.length; i++) {
+	                this.children[i].setPosition(vector2_1.Vector2.scratchArray0[i]);
+	            }
 	        }
 	        this.dirtyFlags |= ElementDirtyFlag.Position;
 	        Runtime.sendCommand(e_command_type_1.CommandType.SetTransform, this.id);
@@ -3031,15 +3184,12 @@
 	            //on disable
 	        }
 	    }
-	    enable() {
-	        //Runtime.enable(this);
-	    }
 	    setParent(parent, keepPosition = true) {
 	        if (parent && parent === this.parent)
 	            return;
 	        parent = parent || AppElement.Root;
 	        const oldParent = this.parent;
-	        let currentPosition = this.getPosition();
+	        let currentPosition = this.getPosition(vector2_1.Vector2.scratch0);
 	        this.parent = parent;
 	        //todo ancestor check
 	        if (oldParent) {
@@ -3047,13 +3197,9 @@
 	        }
 	        if (parent) {
 	            this.parent.children.push(this);
-	            //todo position
-	        }
-	        else {
-	            //todo position
 	        }
 	        if (keepPosition) {
-	            this.setPosition(currentPosition);
+	            this.setPositionValues(currentPosition.x, currentPosition.y, Space.World);
 	        }
 	        Runtime.setParent(this, parent, oldParent);
 	    }
@@ -3080,6 +3226,14 @@
 	    }
 	    getChildCount() {
 	        return this.children.length;
+	    }
+	    getChildren(storage) {
+	        storage = storage || [];
+	        storage.length = this.children.length;
+	        for (let i = 0; i < this.children.length; i++) {
+	            storage[i] = this.children[i];
+	        }
+	        return storage;
 	    }
 	    removeChild(child) {
 	        if (this.children.remove(child)) {
@@ -3199,9 +3353,6 @@
 	        this.children = null;
 	        this.parent = null;
 	    }
-	    destroyFromParent() {
-	        //don't fire handlers n stuff
-	    }
 	    /*** Accessors ***/
 	    isRoot() {
 	        return this === AppElement.Root;
@@ -3231,7 +3382,7 @@
 
 
 /***/ },
-/* 29 */
+/* 30 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3250,7 +3401,7 @@
 
 
 /***/ },
-/* 30 */
+/* 31 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -3272,15 +3423,15 @@
 
 
 /***/ },
-/* 31 */
+/* 32 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const vector2_1 = __webpack_require__(17);
-	const rectangle_1 = __webpack_require__(32);
-	const vector3_1 = __webpack_require__(33);
-	const quaternion_1 = __webpack_require__(34);
+	const rectangle_1 = __webpack_require__(33);
+	const vector3_1 = __webpack_require__(34);
+	const quaternion_1 = __webpack_require__(35);
 	class BoundingBox {
 	    constructor(appElement) {
 	        this.appElement = appElement;
@@ -3348,7 +3499,7 @@
 
 
 /***/ },
-/* 32 */
+/* 33 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -3437,12 +3588,12 @@
 
 
 /***/ },
-/* 33 */
+/* 34 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const quaternion_1 = __webpack_require__(34);
+	const quaternion_1 = __webpack_require__(35);
 	class Vector3 {
 	    constructor(x = 0, y = 0, z = 0) {
 	        this.x = x;
@@ -3787,13 +3938,13 @@
 
 
 /***/ },
-/* 34 */
+/* 35 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const matrix_1 = __webpack_require__(35);
-	const vector3_1 = __webpack_require__(33);
+	const matrix_1 = __webpack_require__(36);
+	const vector3_1 = __webpack_require__(34);
 	class Quaternion {
 	    constructor(x = 0.0, y = 0.0, z = 0.0, w = 1.0) {
 	        this.x = x;
@@ -4133,14 +4284,14 @@
 
 
 /***/ },
-/* 35 */
+/* 36 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const math_util_1 = __webpack_require__(36);
-	const quaternion_1 = __webpack_require__(34);
-	const vector3_1 = __webpack_require__(33);
+	const math_util_1 = __webpack_require__(18);
+	const quaternion_1 = __webpack_require__(35);
+	const vector3_1 = __webpack_require__(34);
 	const vector4_1 = __webpack_require__(37);
 	exports.Epsilon = 0.001;
 	class Matrix {
@@ -4446,6 +4597,28 @@
 	        Matrix.FromValuesToRef(this.m[0] / scale.x, this.m[1] / scale.x, this.m[2] / scale.x, 0, this.m[4] / scale.y, this.m[5] / scale.y, this.m[6] / scale.y, 0, this.m[8] / scale.z, this.m[9] / scale.z, this.m[10] / scale.z, 0, 0, 0, 0, 1, internalScratch0);
 	        quaternion_1.Quaternion.FromRotationMatrix(internalScratch0, rotation);
 	        return true;
+	    }
+	    getScaleVector(out) {
+	        out = out || new vector3_1.Vector3();
+	        var xs = math_util_1.MathUtil.sign(this.m[0] * this.m[1] * this.m[2] * this.m[3]) < 0 ? -1 : 1;
+	        var ys = math_util_1.MathUtil.sign(this.m[4] * this.m[5] * this.m[6] * this.m[7]) < 0 ? -1 : 1;
+	        var zs = math_util_1.MathUtil.sign(this.m[8] * this.m[9] * this.m[10] * this.m[11]) < 0 ? -1 : 1;
+	        out.x = xs * Math.sqrt(this.m[0] * this.m[0] + this.m[1] * this.m[1] + this.m[2] * this.m[2]);
+	        out.y = ys * Math.sqrt(this.m[4] * this.m[4] + this.m[5] * this.m[5] + this.m[6] * this.m[6]);
+	        out.z = zs * Math.sqrt(this.m[8] * this.m[8] + this.m[9] * this.m[9] + this.m[10] * this.m[10]);
+	        return out;
+	    }
+	    getScaleX() {
+	        var xs = math_util_1.MathUtil.sign(this.m[0] * this.m[1] * this.m[2] * this.m[3]) < 0 ? -1 : 1;
+	        return xs * Math.sqrt(this.m[0] * this.m[0] + this.m[1] * this.m[1] + this.m[2] * this.m[2]);
+	    }
+	    getScaleY() {
+	        var ys = math_util_1.MathUtil.sign(this.m[4] * this.m[5] * this.m[6] * this.m[7]) < 0 ? -1 : 1;
+	        return ys * Math.sqrt(this.m[4] * this.m[4] + this.m[5] * this.m[5] + this.m[6] * this.m[6]);
+	    }
+	    getScaleZ() {
+	        var zs = math_util_1.MathUtil.sign(this.m[8] * this.m[9] * this.m[10] * this.m[11]) < 0 ? -1 : 1;
+	        return zs * Math.sqrt(this.m[8] * this.m[8] + this.m[9] * this.m[9] + this.m[10] * this.m[10]);
 	    }
 	    /**
 	     * Returns a new Matrix as the extracted rotation matrix from the current one.
@@ -4970,125 +5143,12 @@
 
 
 /***/ },
-/* 36 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	var AngleUnit;
-	(function (AngleUnit) {
-	    AngleUnit[AngleUnit["Radians"] = 0] = "Radians";
-	    AngleUnit[AngleUnit["Degrees"] = 1] = "Degrees";
-	})(AngleUnit = exports.AngleUnit || (exports.AngleUnit = {}));
-	exports.MathUtil = {
-	    RadiansToDegrees: 57.2957795130823,
-	    DegreesToRadians: 0.01745329251994,
-	    E: Math.E,
-	    Log2E: Math.LOG2E,
-	    Log10E: Math.LOG10E,
-	    Pi: Math.PI,
-	    PiOver2: Math.PI / 2.0,
-	    PiOver4: Math.PI / 4.0,
-	    TwoPi: Math.PI * 2.0,
-	    sign(value) {
-	        if (value === 0 || isNaN(value))
-	            return value;
-	        return value > 0 ? 1 : -1;
-	    },
-	    clamp(value, min, max) {
-	        value = (value > max) ? max : value;
-	        value = (value < min) ? min : value;
-	        return value;
-	    },
-	    clamp01(value) {
-	        value = (value > 1) ? 1 : value;
-	        value = (value < 0) ? 0 : value;
-	        return value;
-	    },
-	    distance(value1, value2) {
-	        return Math.abs(value1 - value2);
-	    },
-	    barycentric(value1, value2, value3, amount1, amount2) {
-	        return value1 + (value2 - value1) * amount1 + (value3 - value1) * amount2;
-	    },
-	    catmullRom(value1, value2, value3, value4, amount) {
-	        // Using formula from http://www.mvps.org/directx/articles/catmull/
-	        const amountSquared = amount * amount;
-	        const amountCubed = amountSquared * amount;
-	        return (0.5 * (2.0 * value2 +
-	            (value3 - value1) * amount +
-	            (2.0 * value1 - 5.0 * value2 + 4.0 * value3 - value4) * amountSquared +
-	            (3.0 * value2 - value1 - 3.0 * value3 + value4) * amountCubed));
-	    },
-	    hermite(value1, tangent1, value2, tangent2, amount) {
-	        let v1 = value1;
-	        let v2 = value2;
-	        let t1 = tangent1;
-	        let t2 = tangent2;
-	        let s = amount;
-	        let result = 0;
-	        let sCubed = s * s * s;
-	        let sSquared = s * s;
-	        if (amount == 0)
-	            result = value1;
-	        else if (amount == 1)
-	            result = value2;
-	        else
-	            result = (2 * v1 - 2 * v2 + t2 + t1) * sCubed +
-	                (3 * v2 - 3 * v1 - 2 * t1 - t2) * sSquared +
-	                t1 * s +
-	                v1;
-	        return result;
-	    },
-	    lerp(value1, value2, amount) {
-	        return ((1 - amount) * value1) + (value2 * amount);
-	    },
-	    smoothStep(value1, value2, amount) {
-	        return this.hermite(value1, 0, value2, 0, this.clamp01(amount));
-	    },
-	    wrapAngleDegrees(angle) {
-	        let x = angle % 360;
-	        if (x < 0)
-	            x += 360;
-	        return x;
-	    },
-	    wrapAngle(angle) {
-	        const PI = Math.PI;
-	        const TwoPI = PI * 2;
-	        if ((angle > -PI) && (angle <= PI)) {
-	            return angle;
-	        }
-	        angle %= TwoPI;
-	        if (angle <= -PI) {
-	            return angle + TwoPI;
-	        }
-	        if (angle > PI) {
-	            return angle - TwoPI;
-	        }
-	        return angle;
-	    },
-	    normalizeAngle180(angle) {
-	        let x = (angle + 180) % 360;
-	        if (x < 0)
-	            x += 360;
-	        return x - 180;
-	    },
-	    isPowerOf2(value) {
-	        var int = value | 0;
-	        if (value !== int)
-	            return false;
-	        return (int > 0) && ((int & (int - 1)) == 0);
-	    }
-	};
-
-
-/***/ },
 /* 37 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const vector3_1 = __webpack_require__(33);
+	const vector3_1 = __webpack_require__(34);
 	class Vector4 {
 	    /**
 	     * Creates a Vector4 object from the passed floats.
@@ -5547,7 +5607,7 @@
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const e_command_type_1 = __webpack_require__(30);
+	const e_command_type_1 = __webpack_require__(31);
 	const event_emitter_1 = __webpack_require__(39);
 	const object_pool_1 = __webpack_require__(11);
 	class RuntimeCommand {
@@ -5761,7 +5821,7 @@
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
 	const TEMP_ANNOTATION_1 = __webpack_require__(43);
-	const e_lifecycle_flags_1 = __webpack_require__(29);
+	const e_lifecycle_flags_1 = __webpack_require__(30);
 	let Component = Component_1 = class Component {
 	    constructor() {
 	        this.lifeCycleFlags = e_lifecycle_flags_1.LifeCycleFlag.Enabled;
@@ -6326,7 +6386,7 @@
 	const tslib_1 = __webpack_require__(4);
 	const component_1 = __webpack_require__(42);
 	const color_1 = __webpack_require__(53);
-	const e_command_type_1 = __webpack_require__(30);
+	const e_command_type_1 = __webpack_require__(31);
 	const expose_as_1 = __webpack_require__(54);
 	let BackgroundComponent = class BackgroundComponent extends component_1.Component {
 	    constructor() {
@@ -6377,11 +6437,12 @@
 
 /***/ },
 /* 53 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	//color values expected to be 0 - 255
+	const util_1 = __webpack_require__(16);
 	class Color {
 	    constructor(r = 0, g = 0, b = 0, a = 255) {
 	        this.r = r;
@@ -6417,6 +6478,9 @@
 	    }
 	    toHexAString() {
 	        return "#" + this.toHexAlpha().toString(16);
+	    }
+	    static random() {
+	        return new Color(util_1.getRandomInt(0, 255), util_1.getRandomInt(0, 255), util_1.getRandomInt(0, 255));
 	    }
 	    static get Black() { return new Color(0, 0, 0, 255); }
 	    static get Blue() { return new Color(0, 0, 255, 255); }
@@ -6556,8 +6620,8 @@
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const runtime_base_1 = __webpack_require__(38);
-	const browser_input_1 = __webpack_require__(23);
-	const e_command_type_1 = __webpack_require__(30);
+	const browser_input_1 = __webpack_require__(24);
+	const e_command_type_1 = __webpack_require__(31);
 	class BrowserRuntimeImpl extends runtime_base_1.RuntimeBase {
 	    constructor(codeurl, mountTarget = null) {
 	        super();
@@ -6642,11 +6706,11 @@
 	const split_pane_1 = __webpack_require__(59);
 	const editor_window_frame_1 = __webpack_require__(60);
 	const hierarchy_window_1 = __webpack_require__(63);
-	const inspector_window_1 = __webpack_require__(88);
+	const inspector_window_1 = __webpack_require__(86);
 	const editor_theme_1 = __webpack_require__(61);
-	const asset_window_1 = __webpack_require__(113);
-	const editor_html_element_1 = __webpack_require__(18);
-	const stage_window_1 = __webpack_require__(122);
+	const asset_window_1 = __webpack_require__(115);
+	const editor_html_element_1 = __webpack_require__(19);
+	const stage_window_1 = __webpack_require__(124);
 	class EditorApplication extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "editor-application" };
@@ -6688,10 +6752,10 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const evt_window_resized_1 = __webpack_require__(20);
+	const evt_window_resized_1 = __webpack_require__(21);
 	const element_renderer_1 = __webpack_require__(7);
 	const util_1 = __webpack_require__(16);
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	class SplitPaneGutter extends editor_html_element_1.EditorHTMLElement {
 	}
 	class SplitPane extends editor_html_element_1.EditorHTMLElement {
@@ -6977,7 +7041,7 @@
 	const editor_theme_1 = __webpack_require__(61);
 	const element_renderer_1 = __webpack_require__(7);
 	const editor_window_tab_1 = __webpack_require__(62);
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	//todo this is causing a problem with mouse selection -- quad tree fixes this
 	//this issue has to do with document.elementFromPoint not ignoring this element
 	const coverDiv = document.createElement('div');
@@ -7230,7 +7294,7 @@
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const editor_theme_1 = __webpack_require__(61);
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	class WindowFrameTab extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return {
@@ -7283,10 +7347,10 @@
 	const hierarchy_item_1 = __webpack_require__(65);
 	const evt_selection_changed_1 = __webpack_require__(5);
 	const evt_scene_loaded_event_1 = __webpack_require__(70);
-	const evt_app_element_created_1 = __webpack_require__(21);
+	const evt_app_element_created_1 = __webpack_require__(22);
 	const element_renderer_1 = __webpack_require__(7);
 	const editor_window_element_1 = __webpack_require__(71);
-	const app_element_1 = __webpack_require__(28);
+	const app_element_1 = __webpack_require__(29);
 	const evt_app_element_parent_changed_1 = __webpack_require__(40);
 	const drag_hierarchy_item_1 = __webpack_require__(67);
 	const vector2_1 = __webpack_require__(17);
@@ -7295,11 +7359,11 @@
 	const evt_app_element_index_changed_1 = __webpack_require__(41);
 	const runtime_event_1 = __webpack_require__(6);
 	const scroll_component_1 = __webpack_require__(73);
-	const sizing_component_1 = __webpack_require__(75);
-	const menu_setup_1 = __webpack_require__(77);
+	const menu_setup_1 = __webpack_require__(75);
 	const color_1 = __webpack_require__(53);
 	const background_component_1 = __webpack_require__(52);
-	const panel_component_1 = __webpack_require__(79);
+	const panel_component_1 = __webpack_require__(77);
+	const layout_1 = __webpack_require__(104);
 	class HierarchyWindow extends editor_window_element_1.EditorWindowElement {
 	    constructor() {
 	        super(...arguments);
@@ -7376,24 +7440,19 @@
 	    }
 	    onRendered() {
 	        setTimeout(function () {
-	            let element = new app_element_1.AppElement("Panel");
+	            let element = new app_element_1.AppElement("Panel", app_element_1.AppElement.Root);
 	            element.addComponent(panel_component_1.PanelComponent);
 	            let bg = element.addComponent(background_component_1.BackgroundComponent);
 	            bg.color = color_1.Color.White;
-	            let size = element.addComponent(sizing_component_1.SizingComponent);
-	            size.width = 100;
-	            size.height = 100;
-	            element.setPositionValues(10, 10, app_element_1.Space.Local);
+	            element.setPositionValues(100, 100, app_element_1.Space.Local);
+	            element.setDimensions(100, 40, layout_1.LengthUnit.Pixel);
 	            EditorRuntime.select(element);
-	            let element2 = new app_element_1.AppElement("Panel Child");
+	            let element2 = new app_element_1.AppElement("Panel Child", element);
 	            element2.addComponent(panel_component_1.PanelComponent);
 	            bg = element2.addComponent(background_component_1.BackgroundComponent);
 	            bg.color = color_1.Color.Blue;
-	            size = element2.addComponent(sizing_component_1.SizingComponent);
-	            size.width = 100;
-	            size.height = 100;
-	            element2.setParent(element);
 	            element2.setPositionValues(100, 100, app_element_1.Space.Local);
+	            element2.setDimensions(100, 40, layout_1.LengthUnit.Pixel);
 	        }, 500);
 	        EditorRuntime.on(evt_selection_changed_1.SelectionChanged, this);
 	        EditorRuntime.on(evt_scene_loaded_event_1.SceneLoaded, this);
@@ -7435,7 +7494,7 @@
 	    createScrollElement() {
 	        const element = new app_element_1.AppElement("Scroll Container");
 	        element.addComponent(scroll_component_1.ScrollComponent);
-	        const sizing = element.addComponent(sizing_component_1.SizingComponent);
+	        // const sizing = element.addComponent(SizingComponent);
 	        // sizing.stretchBehavior = StretchBehavior.FillParent;
 	    }
 	    createInitialStructure(children) {
@@ -7486,7 +7545,7 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	class Button extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return {
@@ -7508,7 +7567,7 @@
 	const icon_1 = __webpack_require__(66);
 	const drag_action_1 = __webpack_require__(44);
 	const drag_hierarchy_item_1 = __webpack_require__(67);
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	const hierarchy_insert_target_1 = __webpack_require__(68);
 	const binding_1 = __webpack_require__(13);
 	const evt_app_element_parent_changed_1 = __webpack_require__(40);
@@ -7613,7 +7672,7 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	class FontIcon extends editor_html_element_1.EditorHTMLElement {
 	    constructor() {
 	        super(...arguments);
@@ -7705,7 +7764,7 @@
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	const hierarchy_item_1 = __webpack_require__(65);
 	const drag_action_1 = __webpack_require__(44);
 	const drag_hierarchy_item_1 = __webpack_require__(67);
@@ -7811,7 +7870,7 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	class EditorWindowElement extends editor_html_element_1.EditorHTMLElement {
 	}
 	exports.EditorWindowElement = EditorWindowElement;
@@ -7823,7 +7882,7 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	function onClick(target, propertyKey, descriptor) {
 	    const array = editor_html_element_1.InputEventAnnotationMap.get(target) || new Array();
 	    array.push({ type: "click", methodName: propertyKey });
@@ -7999,215 +8058,32 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(4);
-	const layout_1 = __webpack_require__(76);
-	const expose_as_1 = __webpack_require__(54);
-	const util_1 = __webpack_require__(16);
-	const component_1 = __webpack_require__(42);
-	var SizingMode;
-	(function (SizingMode) {
-	    SizingMode[SizingMode["Fixed"] = 0] = "Fixed";
-	    SizingMode[SizingMode["Percent"] = 1] = "Percent";
-	    SizingMode[SizingMode["Fraction"] = 2] = "Fraction";
-	    SizingMode[SizingMode["Anchor"] = 3] = "Anchor";
-	})(SizingMode = exports.SizingMode || (exports.SizingMode = {}));
-	let SizingComponent = class SizingComponent extends component_1.Component {
-	    constructor() {
-	        super(...arguments);
-	        this.sizingMode = SizingMode.Fraction;
-	        this.width = 1;
-	        this.height = 1;
-	    }
-	    onMounted() {
-	        const layout = this.getComponentInParent(layout_1.LayoutComponent);
-	        if (layout) {
-	            layout.addSizingComponent(this);
-	        }
-	        else {
-	            this.appElement.setDimensions(this.width, this.height);
-	        }
-	    }
-	    onDestroyed() {
-	        if (!this.appElement.isDestroyed()) {
-	            const layout = this.getComponentInParent(layout_1.LayoutComponent);
-	            if (layout) {
-	                layout.removeSizingComponent(this);
-	            }
-	        }
-	    }
-	};
-	tslib_1.__decorate([
-	    expose_as_1.exposeAs(util_1.EnumSelect, SizingMode)
-	], SizingComponent.prototype, "sizingMode", void 0);
-	tslib_1.__decorate([
-	    expose_as_1.exposeAs(Number)
-	], SizingComponent.prototype, "width", void 0);
-	tslib_1.__decorate([
-	    expose_as_1.exposeAs(Number)
-	], SizingComponent.prototype, "height", void 0);
-	SizingComponent = tslib_1.__decorate([
-	    component_1.component("Layout/Sizing")
-	], SizingComponent);
-	exports.SizingComponent = SizingComponent;
-
-
-/***/ },
-/* 76 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const sizing_component_1 = __webpack_require__(75);
-	const component_1 = __webpack_require__(42);
-	class DefaultSizer {
-	    constructor(appElement) {
-	        this.appElement = appElement;
-	        this.width = 1;
-	        this.height = 1;
-	        this.sizingMode = sizing_component_1.SizingMode.Fraction;
-	    }
-	}
-	exports.DefaultSizer = DefaultSizer;
-	class LayoutComponent extends component_1.Component {
-	    constructor() {
-	        super(...arguments);
-	        this.sizingComponents = [];
-	    }
-	    doLayout() { }
-	    onMounted() {
-	        const childCount = this.appElement.getChildCount();
-	        for (let i = 0; i < childCount; i++) {
-	            const child = this.appElement.getChildAt(i);
-	            let sizing = child.getComponent(sizing_component_1.SizingComponent) || new DefaultSizer(child);
-	            this.sizingComponents.push(sizing);
-	        }
-	        Runtime.queueLayout(this);
-	    }
-	    getSlotAtPosition(position) {
-	        if (this.sizingComponents.length === 0)
-	            return;
-	    }
-	    onChildAdded(child) {
-	        const sizer = child.getComponent(sizing_component_1.SizingComponent) || new DefaultSizer(child);
-	        this.sizingComponents.push(sizer);
-	        Runtime.queueLayout(this);
-	    }
-	    onChildRemoved(child) {
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            if (this.sizingComponents[i].appElement === child) {
-	                this.sizingComponents.removeAt(i);
-	                break;
-	            }
-	        }
-	        Runtime.queueLayout(this);
-	    }
-	    onChildMoved(child) {
-	        //maybe just rebuild sizing component list
-	    }
-	    addSizingComponent(sizingComponent) {
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            const cmp = this.sizingComponents[i];
-	            if (cmp.appElement === sizingComponent.appElement) {
-	                this.sizingComponents[i] = sizingComponent;
-	                return;
-	            }
-	        }
-	        Runtime.queueLayout(this);
-	    }
-	    removeSizingComponent(sizingComponent) {
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            const cmp = this.sizingComponents[i];
-	            if (cmp.appElement === sizingComponent.appElement) {
-	                this.sizingComponents[i] = new DefaultSizer(sizingComponent.appElement);
-	                return;
-	            }
-	        }
-	        Runtime.queueLayout(this);
-	    }
-	}
-	exports.LayoutComponent = LayoutComponent;
-	//Margin -> Space Outside border
-	//Padding -> Space Inside border
-	//SetRect -> ComputeContentRect(Margin/Padding/Offset/Stretch/Anchor) -> DoLayout
-	//SetRect -> Stretch/Anchor -> Margin -> Border -> Padding -> Content -> Layout
-	//items that are laid out are allocated a given rect
-	//they can choose to ignore this rect, default behavior is to fill it
-	//could also fill in one direction, or apply margin / padding to it
-	//before filling it. Could also use this for centering / alignment / offsetting
-	//how are animation triggers handled? possibly using this layout rect
-	//tethers -> Sticky positioning based on screen size and tether point within some element (not only parent)
-	//anchors -> Stretch width/height based on anchor points on parent
-	//tether and anchor are mutually exclusive
-	//anchor drives size
-	//it is a subclass of SizingComponent
-	//Tether is a subclass of Layout?
-	//adjusting sizes
-	//layout items are locked
-	//sizing
-	//anchor
-	//percent of parent remaining
-	//percent of parent total space
-	//fraction of parent remaining space
-	//fraction of parent total space based on # of siblings
-	//min / max / preferred
-	//fit child content width
-	//fit child content height
-	//fill parent
-	//stretch left
-	//stretch right
-	//stretch up
-	//stretch down
-	//stretch to sibling
-	//margin / padding / border -> Ignored for layout, layout only deals with total width / height
-	//margin / padding / border -> Optionally collapsible
-	//onLayoutSet()
-	//onLayoutChanged()
-	//anything with an anchor is NOT part of layout children
-	//anything with a tether is NOT part of layout children
-	//absolute width / height
-	//position
-	//possible to use layout meta-elements that can declare sizing for their child
-	//these elements can have only 1 child but many components
-	//auto generated when attaching to child of layout
-
-
-/***/ },
-/* 77 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const app_element_1 = __webpack_require__(28);
-	const text_component_1 = __webpack_require__(78);
-	const panel_component_1 = __webpack_require__(79);
-	const image_component_1 = __webpack_require__(80);
-	const button_component_1 = __webpack_require__(81);
-	const checkbox_component_1 = __webpack_require__(82);
-	const slider_component_1 = __webpack_require__(83);
-	const dropdown_component_1 = __webpack_require__(84);
-	const text_input_component_1 = __webpack_require__(85);
-	const number_input_component_1 = __webpack_require__(86);
-	const text_area_component_1 = __webpack_require__(87);
+	const app_element_1 = __webpack_require__(29);
+	const text_component_1 = __webpack_require__(76);
+	const panel_component_1 = __webpack_require__(77);
+	const image_component_1 = __webpack_require__(78);
+	const button_component_1 = __webpack_require__(79);
+	const checkbox_component_1 = __webpack_require__(80);
+	const slider_component_1 = __webpack_require__(81);
+	const dropdown_component_1 = __webpack_require__(82);
+	const text_input_component_1 = __webpack_require__(83);
+	const number_input_component_1 = __webpack_require__(84);
+	const text_area_component_1 = __webpack_require__(85);
 	const background_component_1 = __webpack_require__(52);
 	const color_1 = __webpack_require__(53);
-	const sizing_component_1 = __webpack_require__(75);
+	const layout_1 = __webpack_require__(104);
 	function createTextElement(parent = null) {
 	    const element = new app_element_1.AppElement("Text", parent);
 	    const text = element.addComponent(text_component_1.TextComponent);
 	    text.setTextAsync("Enter Text Here");
-	    const sizing = element.addComponent(sizing_component_1.SizingComponent);
-	    sizing.width = 100;
-	    sizing.height = 20;
 	    return element;
 	}
 	function createPanelElement(parent = null) {
 	    const element = new app_element_1.AppElement("Panel", parent);
 	    element.addComponent(panel_component_1.PanelComponent);
 	    const bg = element.addComponent(background_component_1.BackgroundComponent);
-	    bg.color = color_1.Color.White;
-	    const size = element.addComponent(sizing_component_1.SizingComponent);
-	    size.width = 100;
-	    size.height = 100;
+	    bg.color = color_1.Color.random();
+	    element.setDimensions(100, 40, layout_1.LengthUnit.Pixel);
 	    return element;
 	}
 	function createImageElement(parent = null) {
@@ -8218,9 +8094,9 @@
 	function createButtonElement(parent = null) {
 	    const element = new app_element_1.AppElement("Button", parent);
 	    element.addComponent(button_component_1.ButtonComponent);
-	    const size = element.addComponent(sizing_component_1.SizingComponent);
-	    size.width = 100;
-	    size.height = 20;
+	    // const size = element.addComponent(SizingComponent);
+	    // size.width = 100;
+	    // size.height = 20;
 	    return element;
 	}
 	function createCheckboxElement(parent = null) {
@@ -8271,15 +8147,16 @@
 
 
 /***/ },
-/* 78 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
 	const component_1 = __webpack_require__(42);
-	const e_command_type_1 = __webpack_require__(30);
+	const e_command_type_1 = __webpack_require__(31);
 	const ui_component_1 = __webpack_require__(74);
+	const layout_1 = __webpack_require__(104);
 	let TextComponent = class TextComponent extends ui_component_1.UIComponent {
 	    constructor() {
 	        super(...arguments);
@@ -8311,7 +8188,7 @@
 	                setFont: false
 	            }).then((width) => {
 	                this.textContent = text;
-	                this.appElement.setWidth(width);
+	                this.appElement.setWidth(width, layout_1.LengthUnit.Pixel);
 	                return this.textContent;
 	            });
 	        });
@@ -8325,7 +8202,7 @@
 	                setFont: true
 	            }).then((width) => {
 	                this.font = font;
-	                this.appElement.setWidth(width);
+	                this.appElement.setWidth(width, layout_1.LengthUnit.Pixel);
 	                return this.font;
 	            });
 	        });
@@ -8355,7 +8232,7 @@
 
 
 /***/ },
-/* 79 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8377,7 +8254,7 @@
 
 
 /***/ },
-/* 80 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8386,7 +8263,7 @@
 	const ui_component_1 = __webpack_require__(74);
 	const expose_as_1 = __webpack_require__(54);
 	const component_1 = __webpack_require__(42);
-	const e_command_type_1 = __webpack_require__(30);
+	const e_command_type_1 = __webpack_require__(31);
 	let ImageComponent = class ImageComponent extends ui_component_1.UIComponent {
 	    setImageAsync(image) {
 	        return tslib_1.__awaiter(this, void 0, void 0, function* () {
@@ -8418,7 +8295,7 @@
 
 
 /***/ },
-/* 81 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8435,7 +8312,7 @@
 
 
 /***/ },
-/* 82 */
+/* 80 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8452,7 +8329,7 @@
 
 
 /***/ },
-/* 83 */
+/* 81 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8469,7 +8346,7 @@
 
 
 /***/ },
-/* 84 */
+/* 82 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8486,7 +8363,7 @@
 
 
 /***/ },
-/* 85 */
+/* 83 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8503,7 +8380,7 @@
 
 
 /***/ },
-/* 86 */
+/* 84 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8520,7 +8397,7 @@
 
 
 /***/ },
-/* 87 */
+/* 85 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -8537,32 +8414,34 @@
 
 
 /***/ },
-/* 88 */
+/* 86 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const vertical_stack_1 = __webpack_require__(89);
-	const text_input_1 = __webpack_require__(90);
+	const vertical_stack_1 = __webpack_require__(87);
+	const text_input_1 = __webpack_require__(88);
 	const evt_selection_changed_1 = __webpack_require__(5);
 	const editor_window_element_1 = __webpack_require__(71);
-	const inspector_row_1 = __webpack_require__(92);
-	const component_menu_1 = __webpack_require__(93);
+	const inspector_row_1 = __webpack_require__(90);
+	const component_menu_1 = __webpack_require__(91);
 	const editor_theme_1 = __webpack_require__(61);
-	const component_renderer_1 = __webpack_require__(96);
+	const component_renderer_1 = __webpack_require__(94);
 	const element_renderer_1 = __webpack_require__(7);
 	const binding_1 = __webpack_require__(13);
-	const checkbox_input_1 = __webpack_require__(99);
-	const app_element_inspector_1 = __webpack_require__(101);
+	const checkbox_input_1 = __webpack_require__(97);
+	const transform_inspector_1 = __webpack_require__(99);
+	let inspector = null;
 	class InspectorWindow extends editor_window_element_1.EditorWindowElement {
 	    onSelectionChanged(newSelection, oldSelection) {
 	        this.selection = newSelection;
 	        this.getChildRoot().clearChildren();
 	        if (!this.selection)
 	            return;
-	        this.getChildRoot().addChild(element_renderer_1.createElement(app_element_inspector_1.TransformInspector, {
+	        inspector = element_renderer_1.createElement(transform_inspector_1.TransformInspector, {
 	            appElement: this.selection
-	        }));
+	        });
+	        this.getChildRoot().addChild(inspector);
 	        const renderers = component_renderer_1.ComponentRenderer.getAllRenderers(this.selection);
 	        for (let i = 0; i < renderers.length; i++) {
 	            this.getChildRoot().addChild(renderers[i]);
@@ -8623,12 +8502,12 @@
 
 
 /***/ },
-/* 89 */
+/* 87 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	class VerticalBase extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return VerticalBase.DomData;
@@ -8650,12 +8529,12 @@
 
 
 /***/ },
-/* 90 */
+/* 88 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(91);
+	const editor_input_1 = __webpack_require__(89);
 	class TextInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return {
@@ -8684,13 +8563,13 @@
 
 
 /***/ },
-/* 91 */
+/* 89 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const binding_1 = __webpack_require__(13);
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	class InputRenderer extends editor_html_element_1.EditorHTMLElement {
 	    onCreated() {
 	        if (this.attrs.value instanceof binding_1.EditorBinding) {
@@ -8715,13 +8594,13 @@
 
 
 /***/ },
-/* 92 */
+/* 90 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const util_1 = __webpack_require__(16);
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	class InspectorRow extends editor_html_element_1.EditorHTMLElement {
 	    onCreated() {
 	        this.attrs.label = util_1.titlize(this.attrs.label);
@@ -8753,18 +8632,18 @@
 
 
 /***/ },
-/* 93 */
+/* 91 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const vertical_stack_1 = __webpack_require__(89);
-	const text_box_icon_1 = __webpack_require__(94);
+	const vertical_stack_1 = __webpack_require__(87);
+	const text_box_icon_1 = __webpack_require__(92);
 	const button_1 = __webpack_require__(64);
-	const component_option_1 = __webpack_require__(95);
+	const component_option_1 = __webpack_require__(93);
 	const component_1 = __webpack_require__(42);
 	const element_renderer_1 = __webpack_require__(7);
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	class ComponentMenu extends editor_html_element_1.EditorHTMLElement {
 	    constructor() {
 	        super(...arguments);
@@ -8835,12 +8714,12 @@
 
 
 /***/ },
-/* 94 */
+/* 92 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	class TextBoxWithIcon extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return {
@@ -8895,12 +8774,12 @@
 
 
 /***/ },
-/* 95 */
+/* 93 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	class ComponentOption extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "component-item" };
@@ -8913,27 +8792,30 @@
 
 
 /***/ },
-/* 96 */
+/* 94 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const property_renderer_1 = __webpack_require__(97);
-	const horizontal_1 = __webpack_require__(98);
+	const property_renderer_1 = __webpack_require__(95);
+	const horizontal_1 = __webpack_require__(96);
 	const icon_1 = __webpack_require__(66);
 	const element_renderer_1 = __webpack_require__(7);
-	const checkbox_input_1 = __webpack_require__(99);
+	const checkbox_input_1 = __webpack_require__(97);
 	const util_1 = __webpack_require__(16);
 	const editor_theme_1 = __webpack_require__(61);
 	const expose_as_1 = __webpack_require__(54);
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	const binding_1 = __webpack_require__(13);
-	const evt_designer_rendererd_1 = __webpack_require__(100);
+	const evt_designer_rendererd_1 = __webpack_require__(98);
 	class ComponentRenderer extends editor_html_element_1.EditorHTMLElement {
 	    constructor() {
 	        super(...arguments);
 	        this.editorDataMap = expose_as_1.getExposedFieldMap(this.attrs.component);
 	        this.component = this.attrs.component;
+	    }
+	    getDomData() {
+	        return { "tagName": "div", classList: "component-renderer" };
 	    }
 	    onCreated() {
 	        if (this.onDesignerRendered !== ComponentRenderer.prototype.onDesignerRendered) {
@@ -9043,13 +8925,13 @@
 
 
 /***/ },
-/* 97 */
+/* 95 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const element_renderer_1 = __webpack_require__(7);
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	class PropertyRenderer extends editor_html_element_1.EditorHTMLElement {
 	    createInitialStructure(children) {
 	        return children;
@@ -9071,12 +8953,12 @@
 
 
 /***/ },
-/* 98 */
+/* 96 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	class HorizontalBase extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return HorizontalBase.DomData;
@@ -9096,12 +8978,12 @@
 
 
 /***/ },
-/* 99 */
+/* 97 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(91);
+	const editor_input_1 = __webpack_require__(89);
 	class CheckboxInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return {
@@ -9126,7 +9008,7 @@
 
 
 /***/ },
-/* 100 */
+/* 98 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -9138,49 +9020,30 @@
 
 
 /***/ },
-/* 101 */
+/* 99 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(18);
-	const inspector_row_1 = __webpack_require__(92);
+	const editor_html_element_1 = __webpack_require__(19);
+	const inspector_row_1 = __webpack_require__(90);
 	const binding_1 = __webpack_require__(13);
-	const app_element_1 = __webpack_require__(28);
-	const number_input_1 = __webpack_require__(102);
-	const dimension_input_1 = __webpack_require__(104);
-	const Vector2_1 = __webpack_require__(105);
-	const vector2_input_1 = __webpack_require__(106);
-	const horizontal_1 = __webpack_require__(98);
+	const app_element_1 = __webpack_require__(29);
+	const number_input_1 = __webpack_require__(100);
+	const dimension_input_1 = __webpack_require__(102);
+	const vector2_input_1 = __webpack_require__(103);
+	const horizontal_1 = __webpack_require__(96);
 	const icon_1 = __webpack_require__(66);
-	const layout_1 = __webpack_require__(76);
+	const layout_1 = __webpack_require__(104);
 	const button_1 = __webpack_require__(64);
-	const evt_designer_rendererd_1 = __webpack_require__(100);
-	const shape_container_1 = __webpack_require__(107);
-	const triangle_1 = __webpack_require__(111);
-	const color_1 = __webpack_require__(53);
-	class AnchorFlower extends shape_container_1.ShapeContainer {
-	    constructor() {
-	        super();
-	        const p0 = new Vector2_1.Vector2();
-	        const p1 = new Vector2_1.Vector2(-5, 15);
-	        const p2 = new Vector2_1.Vector2(5, 15);
-	        this.bottom = new triangle_1.Triangle(p0, p1, p2);
-	        this.bottom.setParent(this);
-	    }
-	    update(mouse) {
-	        if (this.bottom.containsPoint(mouse)) {
-	            this.bottom.setColor(color_1.Color.Green);
-	        }
-	        else {
-	            this.bottom.setColor(color_1.Color.Red);
-	        }
-	    }
-	}
+	const evt_designer_rendererd_1 = __webpack_require__(98);
 	class TransformInspector extends editor_html_element_1.EditorHTMLElement {
+	    constructor() {
+	        super(...arguments);
+	        this.id = Math.random();
+	    }
 	    onCreated() {
 	        this.isEditingAnchors = false;
-	        this.anchorFlower = new AnchorFlower();
 	        this.appElement = this.attrs.appElement;
 	        this.proxy = {
 	            localPosition: this.appElement.getLocalPosition(),
@@ -9201,8 +9064,8 @@
 	            this.appElement.setScale(newValue);
 	        });
 	        this.dimensionBinding = binding_1.CreateBinding(this.proxy, "dimension").onChange((newValue) => {
-	            this.appElement.setWidth(newValue.width);
-	            this.appElement.setHeight(newValue.height);
+	            this.appElement.setWidth(newValue.width, layout_1.LengthUnit.Pixel);
+	            this.appElement.setHeight(newValue.height, layout_1.LengthUnit.Pixel);
 	        });
 	        EditorRuntime.on(evt_designer_rendererd_1.DesignerRendered, this);
 	        EditorRuntime.updateTree.add(this);
@@ -9213,14 +9076,9 @@
 	            gfxContainer.addChild(this.gfx);
 	        }
 	        this.gfx.clear();
-	        this.anchorFlower.setPosition(this.appElement.getPosition());
-	        this.anchorFlower.update(mouse);
-	        this.anchorFlower.render(this.gfx);
-	        if (this.isEditingAnchors) {
-	            // this.anchorFlower.setPosition(this.appElement.getPosition());
-	            // this.anchorFlower.update(mouse);
-	            // this.anchorFlower.render(this.gfx);
-	        }
+	        // this.anchorFlower.setPosition(this.appElement.getParent().getPosition());
+	        // this.anchorFlower.update(EditorRuntime.getSelection(), mouse);
+	        // this.anchorFlower.render(this.gfx);
 	    }
 	    onDestroyed() {
 	        if (this.gfx) {
@@ -9262,14 +9120,14 @@
 
 
 /***/ },
-/* 102 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(91);
-	const e_keycode_1 = __webpack_require__(103);
-	const math_util_1 = __webpack_require__(36);
+	const editor_input_1 = __webpack_require__(89);
+	const e_keycode_1 = __webpack_require__(101);
+	const math_util_1 = __webpack_require__(18);
 	class NumberInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return {
@@ -9342,7 +9200,7 @@
 
 
 /***/ },
-/* 103 */
+/* 101 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -9452,15 +9310,15 @@
 
 
 /***/ },
-/* 104 */
+/* 102 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const number_input_1 = __webpack_require__(102);
+	const number_input_1 = __webpack_require__(100);
 	const binding_1 = __webpack_require__(13);
-	const editor_input_1 = __webpack_require__(91);
-	const horizontal_1 = __webpack_require__(98);
+	const editor_input_1 = __webpack_require__(89);
+	const horizontal_1 = __webpack_require__(96);
 	class DimensionInput extends editor_input_1.InputRenderer {
 	    createInitialStructure(children) {
 	        return Hex.createElement(horizontal_1.Horizontal, null,
@@ -9487,316 +9345,15 @@
 
 
 /***/ },
-/* 105 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	class Vector2 {
-	    constructor(x = 0, y = 0) {
-	        this.x = x;
-	        this.y = y;
-	    }
-	    set(x, y) {
-	        this.x = x;
-	        this.y = y;
-	        return this;
-	    }
-	    scale(factor) {
-	        this.x *= factor;
-	        this.y *= factor;
-	        return this;
-	    }
-	    scaleNew(factor) {
-	        return new Vector2(this.x * factor, this.y * factor);
-	    }
-	    addScalar(scalar) {
-	        this.x += scalar;
-	        this.y += scalar;
-	        return this;
-	    }
-	    addScalarNew(scalar) {
-	        return new Vector2(this.x + scalar, this.y + scalar);
-	    }
-	    subScalar(scalar) {
-	        this.x -= scalar;
-	        this.y -= scalar;
-	        return this;
-	    }
-	    divideScalar(scalar) {
-	        if (scalar !== 0) {
-	            this.x /= scalar;
-	            this.y /= scalar;
-	        }
-	        else {
-	            this.x = 0;
-	            this.y = 0;
-	        }
-	        return this;
-	    }
-	    divideScalarNew(scalar) {
-	        if (scalar !== 0) {
-	            return new Vector2(this.x / scalar, this.y / scalar);
-	        }
-	        else {
-	            return new Vector2();
-	        }
-	    }
-	    subScalarNew(scalar) {
-	        return new Vector2(this.x - scalar, this.y - scalar);
-	    }
-	    invert() {
-	        this.x *= -1;
-	        this.y *= -1;
-	        return this;
-	    }
-	    invertNew() {
-	        return new Vector2(this.x * -1, this.y * -1);
-	    }
-	    lookAt(other) {
-	        return this;
-	    }
-	    clamp(length) {
-	        const lengthSq = this.lengthSquared();
-	        if (length * length > lengthSq) {
-	            this.normalize();
-	            this.scale(length);
-	        }
-	        return this;
-	    }
-	    dot(other) {
-	        return this.x * other.x + this.y * other.y;
-	    }
-	    cross(other) {
-	        return (this.x * other.y) - (this.y * other.x);
-	    }
-	    normalize() {
-	        var length = this.length();
-	        if (length === 0) {
-	            this.x = 1;
-	            this.y = 0;
-	        }
-	        else {
-	            this.x /= length;
-	            this.y /= length;
-	        }
-	        return this;
-	    }
-	    normalizeNew() {
-	        const length = this.length();
-	        const retn = new Vector2();
-	        if (length === 0) {
-	            retn.x = 1;
-	            retn.y = 0;
-	        }
-	        else {
-	            retn.x = this.x / length;
-	            retn.y = this.y / length;
-	        }
-	        return this;
-	    }
-	    length() {
-	        return Math.sqrt(this.lengthSquared());
-	    }
-	    lengthSquared() {
-	        return this.x * this.x + this.y * this.y;
-	    }
-	    addVector(other) {
-	        this.x += other.x;
-	        this.y += other.y;
-	        return this;
-	    }
-	    addValues(x, y) {
-	        this.x += x;
-	        this.y += y;
-	        return this;
-	    }
-	    subVector(other) {
-	        this.x -= other.x;
-	        this.y -= other.y;
-	        return this;
-	    }
-	    subValues(x, y) {
-	        this.x -= x;
-	        this.y -= y;
-	        return this;
-	    }
-	    addVectorNew(other, out) {
-	        return (out || new Vector2()).set(this.x + other.x, this.y + other.y);
-	    }
-	    subVectorNew(other, out) {
-	        return (out || new Vector2()).set(this.x - other.x, this.y - other.y);
-	    }
-	    horizontalAngle() {
-	        return Math.atan2(this.y, this.x);
-	    }
-	    verticalAngle() {
-	        //noinspection JSSuspiciousNameCombination
-	        return Math.atan2(this.x, this.y);
-	    }
-	    rotate(radians) {
-	        const sin = Math.sin(radians);
-	        const cos = Math.cos(radians);
-	        const nx = (this.x * cos) - (this.y * sin);
-	        const ny = (this.x * sin) + (this.y * cos);
-	        this.x = nx;
-	        this.y = ny;
-	        return this;
-	    }
-	    rotateNew(radians) {
-	        const sin = Math.sin(radians);
-	        const cos = Math.cos(radians);
-	        return new Vector2((this.x * cos) - (this.y * sin), (this.x * sin) + (this.y * cos));
-	    }
-	    rotateAround(radians, pivot) {
-	        let x = this.x - pivot.x;
-	        let y = this.y - pivot.y;
-	        const sin = Math.sin(radians);
-	        const cos = Math.cos(radians);
-	        this.x = ((x * cos) - (y * sin)) + pivot.x;
-	        this.y = ((x * sin) + (y * cos)) + pivot.y;
-	        return this;
-	    }
-	    project(other) {
-	        const e = ((this.x * other.x) + (this.y * other.y)) / ((other.x * other.x) + (other.y * other.y));
-	        this.x = e * other.x;
-	        this.y = e * other.y;
-	        return this;
-	    }
-	    projectNew(other) {
-	        const e = ((this.x * other.x) + (this.y * other.y)) / ((other.x * other.x) + (other.y * other.y));
-	        return new Vector2(e * other.x, e * other.y);
-	    }
-	    distanceTo(other) {
-	        const dx = this.x - other.x;
-	        const dy = this.y - other.y;
-	        return Math.sqrt(dx * dx + dy * dy);
-	    }
-	    distanceToSquared(other) {
-	        const dx = this.x - other.x;
-	        const dy = this.y - other.y;
-	        return dx * dx + dy * dy;
-	    }
-	    copy(other) {
-	        this.x = other.x;
-	        this.y = other.y;
-	        return this;
-	    }
-	    clone(out) {
-	        return (out || new Vector2()).set(this.x, this.y);
-	    }
-	    isZero() {
-	        return this.x === 0 && this.y === 0;
-	    }
-	    equals(other) {
-	        return this.x === other.x && this.y === other.y;
-	    }
-	    toString() {
-	        return `{x: ${this.x}, y: ${this.y}}`;
-	    }
-	    static lerp(start, end, amount, out) {
-	        out = out || new Vector2();
-	        var x = start.x + ((end.x - start.x) * amount);
-	        var y = start.y + ((end.y - start.y) * amount);
-	        return out.set(x, y);
-	    }
-	    static catmullRom(value1, value2, value3, value4, amount, out) {
-	        out = out || new Vector2();
-	        var squared = amount * amount;
-	        var cubed = amount * squared;
-	        var x = 0.5 * ((((2.0 * value2.x) + ((-value1.x + value3.x) * amount)) +
-	            (((((2.0 * value1.x) - (5.0 * value2.x)) + (4.0 * value3.x)) - value4.x) * squared)) +
-	            ((((-value1.x + (3.0 * value2.x)) - (3.0 * value3.x)) + value4.x) * cubed));
-	        var y = 0.5 * ((((2.0 * value2.y) + ((-value1.y + value3.y) * amount)) +
-	            (((((2.0 * value1.y) - (5.0 * value2.y)) + (4.0 * value3.y)) - value4.y) * squared)) +
-	            ((((-value1.y + (3.0 * value2.y)) - (3.0 * value3.y)) + value4.y) * cubed));
-	        out.x = x;
-	        out.y = y;
-	        return out;
-	    }
-	    /**
-	     * Returns a new Vector2 set with same the coordinates than "value" ones if the vector "value" is in the square defined by "min" and "max".
-	     * If a coordinate of "value" is lower than "min" coordinates, the returned Vector2 is given this "min" coordinate.
-	     * If a coordinate of "value" is greater than "max" coordinates, the returned Vector2 is given this "max" coordinate.
-	     */
-	    static clamp(value, min, max, out) {
-	        out = out || new Vector2();
-	        var x = value.x;
-	        x = (x > max.x) ? max.x : x;
-	        x = (x < min.x) ? min.x : x;
-	        var y = value.y;
-	        y = (y > max.y) ? max.y : y;
-	        y = (y < min.y) ? min.y : y;
-	        out.x = x;
-	        out.y = y;
-	        return out;
-	    }
-	    /**
-	     * Returns a new Vecto2 located for "amount" (float) on the Hermite spline defined by the vectors "value1", "value3", "tangent1", "tangent2".
-	     */
-	    static hermite(value1, tangent1, value2, tangent2, amount, out) {
-	        out = out || new Vector2();
-	        var squared = amount * amount;
-	        var cubed = amount * squared;
-	        var part1 = ((2.0 * cubed) - (3.0 * squared)) + 1.0;
-	        var part2 = (-2.0 * cubed) + (3.0 * squared);
-	        var part3 = (cubed - (2.0 * squared)) + amount;
-	        var part4 = cubed - squared;
-	        var x = (((value1.x * part1) + (value2.x * part2)) + (tangent1.x * part3)) + (tangent2.x * part4);
-	        var y = (((value1.y * part1) + (value2.y * part2)) + (tangent1.y * part3)) + (tangent2.y * part4);
-	        out.x = x;
-	        out.y = y;
-	        return out;
-	    }
-	    static dot(left, right) {
-	        return left.x * right.x + left.y * right.y;
-	    }
-	    static transformCoordinates(vector, matrix, out) {
-	        out = out || new Vector2();
-	        const x = vector.x;
-	        const y = vector.y;
-	        out.x = (x * matrix.a) + (y * matrix.c) + matrix.tx;
-	        out.y = (x * matrix.b) + (y * matrix.d) + matrix.ty;
-	        return out;
-	    }
-	    static transformFloatCoordinates(x, y, matrix, out) {
-	        out = out || new Vector2();
-	        out.x = (x * matrix.a) + (y * matrix.c) + matrix.tx;
-	        out.y = (x * matrix.b) + (y * matrix.d) + matrix.ty;
-	        return out;
-	    }
-	    static transformDirection(vector, matrix, out) {
-	        out = out || new Vector2();
-	        const x = vector.x;
-	        const y = vector.y;
-	        out.x = (x * matrix.a) + (y * matrix.c);
-	        out.y = (x * matrix.b) + (y * matrix.d);
-	        return out;
-	    }
-	}
-	Vector2.up = new Vector2(0, 1);
-	Vector2.right = new Vector2(1, 0);
-	Vector2.down = new Vector2(0, -1);
-	Vector2.left = new Vector2(-1, 0);
-	Vector2.Zero = new Vector2();
-	Vector2.scratch0 = new Vector2();
-	Vector2.scratch1 = new Vector2();
-	Vector2.scratch2 = new Vector2();
-	Vector2.scratch3 = new Vector2();
-	Vector2.scratch4 = new Vector2();
-	exports.Vector2 = Vector2;
-
-
-/***/ },
-/* 106 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const number_input_1 = __webpack_require__(102);
+	const number_input_1 = __webpack_require__(100);
 	const binding_1 = __webpack_require__(13);
-	const editor_input_1 = __webpack_require__(91);
-	const horizontal_1 = __webpack_require__(98);
+	const editor_input_1 = __webpack_require__(89);
+	const horizontal_1 = __webpack_require__(96);
 	class Vector2Input extends editor_input_1.InputRenderer {
 	    createInitialStructure(children) {
 	        return Hex.createElement(horizontal_1.Horizontal, null,
@@ -9822,37 +9379,406 @@
 
 
 /***/ },
-/* 107 */
+/* 104 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const shape_1 = __webpack_require__(108);
+	const tslib_1 = __webpack_require__(4);
+	const component_1 = __webpack_require__(42);
+	const app_element_1 = __webpack_require__(29);
+	const math_util_1 = __webpack_require__(18);
+	const expose_as_1 = __webpack_require__(54);
+	const util_1 = __webpack_require__(16);
+	var LengthUnit;
+	(function (LengthUnit) {
+	    LengthUnit[LengthUnit["Percent"] = 0] = "Percent";
+	    LengthUnit[LengthUnit["Pixel"] = 1] = "Pixel";
+	    LengthUnit[LengthUnit["Flex"] = 2] = "Flex";
+	})(LengthUnit = exports.LengthUnit || (exports.LengthUnit = {}));
+	function layoutController(...args) {
+	}
+	function editorEnabled(...args) { }
+	class Width {
+	    getPixels() {
+	        return this._pixels;
+	    }
+	    setPixels(pixelWidth) {
+	    }
+	    setPercent(percent) {
+	        this._percent = math_util_1.MathUtil.clamp01(percent);
+	    }
+	    getPixelWidth(reference) {
+	    }
+	}
+	var Alignment;
+	(function (Alignment) {
+	    Alignment[Alignment["Left"] = 0] = "Left";
+	    Alignment[Alignment["Right"] = 1] = "Right";
+	    Alignment[Alignment["Center"] = 2] = "Center";
+	    Alignment[Alignment["Fill"] = 3] = "Fill";
+	})(Alignment || (Alignment = {}));
+	let LayoutComponent = class LayoutComponent extends component_1.Component {
+	    doLayout() { }
+	};
+	LayoutComponent = tslib_1.__decorate([
+	    layoutController
+	], LayoutComponent);
+	exports.LayoutComponent = LayoutComponent;
+	class HorizontalLayoutSlot extends component_1.Component {
+	    constructor() {
+	        super(...arguments);
+	        this.paddingLeft = 0;
+	        this.paddingRight = 0;
+	        this.paddingTop = 0;
+	        this.paddingBottom = 0;
+	        this.flexFactor = 0;
+	        this.useFlex = false;
+	        this.index = -1;
+	        this.totalWidth = 0;
+	    }
+	}
+	tslib_1.__decorate([
+	    expose_as_1.inspector(Number)
+	], HorizontalLayoutSlot.prototype, "paddingLeft", void 0);
+	tslib_1.__decorate([
+	    expose_as_1.inspector(Number)
+	], HorizontalLayoutSlot.prototype, "paddingRight", void 0);
+	tslib_1.__decorate([
+	    expose_as_1.inspector(Number)
+	], HorizontalLayoutSlot.prototype, "paddingTop", void 0);
+	tslib_1.__decorate([
+	    expose_as_1.inspector(Number)
+	], HorizontalLayoutSlot.prototype, "paddingBottom", void 0);
+	tslib_1.__decorate([
+	    expose_as_1.inspector(Number)
+	], HorizontalLayoutSlot.prototype, "flexFactor", void 0);
+	tslib_1.__decorate([
+	    expose_as_1.inspector(Boolean)
+	], HorizontalLayoutSlot.prototype, "useFlex", void 0);
+	tslib_1.__decorate([
+	    expose_as_1.inspector(Number)
+	], HorizontalLayoutSlot.prototype, "width", void 0);
+	tslib_1.__decorate([
+	    expose_as_1.inspector(Number)
+	], HorizontalLayoutSlot.prototype, "height", void 0);
+	tslib_1.__decorate([
+	    expose_as_1.inspector(util_1.EnumSelect, Alignment)
+	], HorizontalLayoutSlot.prototype, "alignment", void 0);
+	let HorizontalLayout = class HorizontalLayout extends LayoutComponent {
+	    constructor() {
+	        super(...arguments);
+	        this.flexElements = new Array();
+	        this.nonFlexElements = new Array();
+	        this.slotComponents = new Array();
+	        this.sizeToContentWidth = false;
+	        this.sizeToContentHeight = false;
+	    }
+	    onMounted() {
+	        const children = this.appElement.getChildren();
+	        for (let i = 0; i < children.length; i++) {
+	            var slot = children[i].getComponent(HorizontalLayoutSlot);
+	            slot = slot || children[i].addComponent(HorizontalLayoutSlot);
+	            this.slotComponents.push(slot);
+	            //slot.onChange();
+	        }
+	        EditorRuntime.queueLayout(this);
+	    }
+	    onChildAdded(child) {
+	        this.slotComponents.push(child.addComponent(HorizontalLayoutSlot));
+	        EditorRuntime.queueLayout(this);
+	    }
+	    doLayout() {
+	        //ignore size to content for now
+	        let totalWidth = 0;
+	        let fractions = 0;
+	        for (let i = 0; i < this.slotComponents.length; i++) {
+	            const slot = this.slotComponents[i];
+	            slot.index = i;
+	            if (slot.useFlex) {
+	                this.flexElements.push(slot);
+	                fractions += math_util_1.MathUtil.clamp(slot.flexFactor, 0, Number.MAX_SAFE_INTEGER) | 0;
+	            }
+	            else {
+	                this.nonFlexElements.push(slot);
+	            }
+	        }
+	        let spaceToAllocate = this.appElement.getWidth();
+	        let allocatedSpace = 0;
+	        for (let i = 0; i < this.nonFlexElements.length; i++) {
+	            const slot = this.nonFlexElements[i];
+	            const width = slot.appElement.getWidth();
+	            let total = slot.paddingLeft + width + slot.paddingRight;
+	            allocatedSpace += total;
+	            slot.totalWidth = total;
+	        }
+	        let remaining = this.appElement.getWidth() - allocatedSpace;
+	        if (fractions > 0) {
+	            const pieceSize = remaining / fractions;
+	            for (let i = 0; i < this.flexElements.length; i++) {
+	                const slot = this.flexElements[i];
+	                slot.totalWidth = pieceSize * slot.flexFactor;
+	            }
+	        }
+	        else {
+	            for (let i = 0; i < this.flexElements.length; i++) {
+	                const slot = this.flexElements[i];
+	                slot.totalWidth = 0;
+	            }
+	        }
+	        var currentX = 0;
+	        var height = this.appElement.getHeight();
+	        for (let i = 0; i < this.slotComponents.length; i++) {
+	            const slot = this.slotComponents[i];
+	            const appElement = slot.appElement;
+	            appElement.setWidth(slot.totalWidth, LengthUnit.Pixel);
+	            appElement.setHeight(height, LengthUnit.Pixel);
+	            appElement.setPositionValues(currentX, 0, app_element_1.Space.Local);
+	            currentX += slot.totalWidth;
+	        }
+	        this.flexElements.length = 0;
+	        this.nonFlexElements.length = 0;
+	        totalWidth = Math.max(totalWidth, this.appElement.getWidth());
+	    }
+	    getWidth() {
+	    }
+	    getOverflowWidth() {
+	    }
+	};
+	tslib_1.__decorate([
+	    expose_as_1.inspector(Boolean)
+	], HorizontalLayout.prototype, "sizeToContentWidth", void 0);
+	tslib_1.__decorate([
+	    expose_as_1.inspector(Boolean)
+	], HorizontalLayout.prototype, "sizeToContentHeight", void 0);
+	tslib_1.__decorate([
+	    editorEnabled
+	], HorizontalLayout.prototype, "onChildAdded", null);
+	HorizontalLayout = tslib_1.__decorate([
+	    layoutController,
+	    component_1.component("Layout/Horizontal")
+	], HorizontalLayout);
+	exports.HorizontalLayout = HorizontalLayout;
+	//Margin -> Space Outside border
+	//Padding -> Space Inside border
+	//SetRect -> ComputeContentRect(Margin/Padding/Offset/Stretch/Anchor) -> DoLayout
+	//SetRect -> Stretch/Anchor -> Margin -> Border -> Padding -> Content -> Layout
+	//items that are laid out are allocated a given rect
+	//they can choose to ignore this rect, default behavior is to fill it
+	//could also fill in one direction, or apply margin / padding to it
+	//before filling it. Could also use this for centering / alignment / offsetting
+	//how are animation triggers handled? possibly using this layout rect
+	//tethers -> Sticky positioning based on screen size and tether point within some element (not only parent)
+	//anchors -> Stretch width/height based on anchor points on parent
+	//tether and anchor are mutually exclusive
+	//anchor drives size
+	//it is a subclass of SizingComponent
+	//Tether is a subclass of Layout?
+	//adjusting sizes
+	//layout items are locked
+	//sizing
+	//anchor
+	//percent of parent remaining
+	//percent of parent total space
+	//fraction of parent remaining space
+	//fraction of parent total space based on # of siblings
+	//min / max / preferred
+	//fit child content width
+	//fit child content height
+	//fill parent
+	//stretch left
+	//stretch right
+	//stretch up
+	//stretch down
+	//stretch to sibling
+	//margin / padding / border -> Ignored for layout, layout only deals with total width / height
+	//margin / padding / border -> Optionally collapsible
+	//onLayoutSet()
+	//onLayoutChanged()
+	//anything with an anchor is NOT part of layout children
+	//anything with a tether is NOT part of layout children
+	//absolute width / height
+	//position
+	//possible to use layout meta-elements that can declare sizing for their child
+	//these elements can have only 1 child but many components
+	//auto generated when attaching to child of layout
+
+
+/***/ },
+/* 105 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const shape_container_1 = __webpack_require__(106);
+	const triangle_1 = __webpack_require__(111);
+	const circle_1 = __webpack_require__(113);
+	const vector2_1 = __webpack_require__(17);
+	const app_element_1 = __webpack_require__(29);
+	const math_util_1 = __webpack_require__(18);
+	const color_1 = __webpack_require__(53);
+	class AnchorFlower extends shape_container_1.ShapeContainer {
+	    constructor() {
+	        super();
+	        const p0 = new vector2_1.Vector2();
+	        const p1 = new vector2_1.Vector2(-5, 15);
+	        const p2 = new vector2_1.Vector2(5, 15);
+	        this.bottomRight = new triangle_1.Triangle(p0, p1, p2, this);
+	        this.bottomLeft = new triangle_1.Triangle(p0, p1, p2, this);
+	        this.topLeft = new triangle_1.Triangle(p0, p1, p2, this);
+	        this.topRight = new triangle_1.Triangle(p0, p1, p2, this);
+	        this.center = new circle_1.Circle(p0, 5, this);
+	        this.bottomLeft.rotate(math_util_1.MathUtil.PiOver4);
+	        this.bottomRight.rotate(-math_util_1.MathUtil.PiOver4);
+	        this.topLeft.rotate(math_util_1.MathUtil.PiOver2 + math_util_1.MathUtil.PiOver4);
+	        this.topRight.rotate(-math_util_1.MathUtil.PiOver2 - math_util_1.MathUtil.PiOver4);
+	        this.appElement = null;
+	        this.activeChild = null;
+	        this.gfx = new PIXI.Graphics();
+	    }
+	    startDrag() {
+	        this.dragging = true;
+	    }
+	    update() {
+	        this.appElement = EditorRuntime.getSelection();
+	        if (!this.appElement)
+	            return;
+	        this.setPosition(this.appElement.getParent().getPosition(vector2_1.Vector2.scratch0));
+	        if (this.dragging) {
+	            const delta = EditorRuntime.getInput().getMouseDelta(vector2_1.Vector2.scratch0);
+	            if (this.activeChild === this.topLeft) {
+	                this.setFromRawAnchors(delta.x, delta.y, 0, 0);
+	            }
+	            else if (this.activeChild === this.topRight) {
+	                this.setFromRawAnchors(0, delta.y, delta.x, 0);
+	            }
+	            else if (this.activeChild === this.bottomLeft) {
+	                this.setFromRawAnchors(delta.x, 0, 0, delta.y);
+	            }
+	            else if (this.activeChild === this.bottomRight) {
+	                this.setFromRawAnchors(0, 0, delta.x, delta.y);
+	            }
+	            else if (this.activeChild === this.center) {
+	                this.setFromRawAnchors(delta.x, delta.y, 0, 0, true);
+	            }
+	        }
+	        else {
+	            this.setFromRawAnchors(0, 0, 0, 0);
+	        }
+	    }
+	    endDrag() {
+	        this.dragging = false;
+	    }
+	    getGfx() {
+	        return this.gfx;
+	    }
+	    render() {
+	        if (!this.appElement)
+	            return;
+	        this.center.setLineColor(this.activeChild === this.center ? color_1.Color.Green : color_1.Color.Red);
+	        this.topLeft.setLineColor(this.activeChild === this.topLeft ? color_1.Color.Green : color_1.Color.Red);
+	        this.topRight.setLineColor(this.activeChild === this.topRight ? color_1.Color.Green : color_1.Color.Red);
+	        this.bottomLeft.setLineColor(this.activeChild === this.bottomLeft ? color_1.Color.Green : color_1.Color.Red);
+	        this.bottomRight.setLineColor(this.activeChild === this.bottomRight ? color_1.Color.Green : color_1.Color.Red);
+	        this.gfx.clear();
+	        super.render(this.gfx);
+	    }
+	    setAppElement(appElement) {
+	        this.appElement = appElement;
+	    }
+	    hitTest(point) {
+	        this.activeChild = this.internalHitTest(point);
+	        return Boolean(this.activeChild);
+	    }
+	    internalHitTest(point) {
+	        if (this.center.containsPoint(point))
+	            return this.center;
+	        if (this.topLeft.containsPoint(point))
+	            return this.topLeft;
+	        if (this.topRight.containsPoint(point))
+	            return this.topRight;
+	        if (this.bottomLeft.containsPoint(point))
+	            return this.bottomLeft;
+	        if (this.bottomRight.containsPoint(point))
+	            return this.bottomRight;
+	        return null;
+	    }
+	    setFromRawAnchors(deltaMinX, deltaMinY, deltaMaxX, deltaMaxY, center = false) {
+	        let width = Math.max(1, this.appElement.getParent().getScaledWidth());
+	        let height = Math.max(1, this.appElement.getParent().getScaledHeight());
+	        let anchorMin = this.appElement.anchorMin;
+	        let anchorMax = this.appElement.anchorMax;
+	        const rawAnchorMin = vector2_1.Vector2.scratch0.set(anchorMin.x * width, anchorMin.y * height);
+	        const rawAnchorMax = vector2_1.Vector2.scratch1.set(anchorMax.x * width, anchorMax.y * height);
+	        if (center) {
+	            rawAnchorMin.x = math_util_1.MathUtil.clamp(rawAnchorMin.x + deltaMinX, 0, width);
+	            rawAnchorMin.y = math_util_1.MathUtil.clamp(rawAnchorMin.y + deltaMinY, 0, height);
+	            rawAnchorMax.x = rawAnchorMin.x;
+	            rawAnchorMax.y = rawAnchorMin.y;
+	        }
+	        else {
+	            rawAnchorMin.x = math_util_1.MathUtil.clamp(rawAnchorMin.x + deltaMinX, 0, rawAnchorMax.x);
+	            rawAnchorMin.y = math_util_1.MathUtil.clamp(rawAnchorMin.y + deltaMinY, 0, rawAnchorMax.y);
+	            rawAnchorMax.x = math_util_1.MathUtil.clamp(rawAnchorMax.x + deltaMaxX, rawAnchorMin.x, width);
+	            rawAnchorMax.y = math_util_1.MathUtil.clamp(rawAnchorMax.y + deltaMaxY, rawAnchorMin.y, height);
+	        }
+	        this.topLeft.setPositionValues(rawAnchorMin.x, rawAnchorMin.y, app_element_1.Space.Local);
+	        this.topRight.setPositionValues(rawAnchorMax.x, rawAnchorMin.y, app_element_1.Space.Local);
+	        this.bottomLeft.setPositionValues(rawAnchorMin.x, rawAnchorMax.y, app_element_1.Space.Local);
+	        this.bottomRight.setPositionValues(rawAnchorMax.x, rawAnchorMax.y, app_element_1.Space.Local);
+	        this.center.setPositionValues(rawAnchorMin.x, rawAnchorMin.y, app_element_1.Space.Local);
+	        anchorMax.x = rawAnchorMax.x / width;
+	        anchorMax.y = rawAnchorMax.y / height;
+	        anchorMin.x = rawAnchorMin.x / width;
+	        anchorMin.y = rawAnchorMin.y / height;
+	        this.center.isEnabled = anchorMin.equals(anchorMax);
+	        //update anchor
+	    }
+	}
+	exports.AnchorFlower = AnchorFlower;
+
+
+/***/ },
+/* 106 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const shape_1 = __webpack_require__(107);
 	class ShapeContainer extends shape_1.Shape {
-	    constructor(style) {
-	        super(style);
+	    constructor(parent = null, style) {
+	        super(parent, style);
 	    }
 	    render(gfx) {
 	        for (let i = 0; i < this.children.length; i++) {
 	            this.children[i].render(gfx);
 	        }
 	    }
+	    containsPoint(point) {
+	        for (let i = 0; i < this.children.length; i++) {
+	            if (this.children[i].containsPoint(point)) {
+	                return true;
+	            }
+	        }
+	        return false;
+	    }
 	}
 	exports.ShapeContainer = ShapeContainer;
 
 
 /***/ },
-/* 108 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const transformable_1 = __webpack_require__(109);
-	const pixi_style_1 = __webpack_require__(110);
-	const math_util_1 = __webpack_require__(36);
+	const transformable_1 = __webpack_require__(108);
+	const pixi_style_1 = __webpack_require__(109);
+	const math_util_1 = __webpack_require__(18);
 	class Shape extends transformable_1.Transformable {
-	    constructor(style) {
-	        super();
+	    constructor(parent, style) {
+	        super(parent);
+	        this.isEnabled = true;
 	        this.style = (style || pixi_style_1.PixiStyle.Inherit).clone();
 	        this.points = [];
 	    }
@@ -9877,35 +9803,36 @@
 
 
 /***/ },
-/* 109 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const matrix_1 = __webpack_require__(35);
-	const vector3_1 = __webpack_require__(33);
-	const quaternion_1 = __webpack_require__(34);
-	const app_element_1 = __webpack_require__(28);
+	const matrix_1 = __webpack_require__(36);
+	const vector3_1 = __webpack_require__(34);
+	const quaternion_1 = __webpack_require__(35);
+	const app_element_1 = __webpack_require__(29);
 	const vector2_1 = __webpack_require__(17);
-	const math_util_1 = __webpack_require__(36);
+	const math_util_1 = __webpack_require__(18);
 	class Transformable {
-	    constructor() {
+	    constructor(parent) {
 	        this.dirty = true;
-	        this.parent = null;
+	        this.parent = parent;
 	        this.children = [];
 	        this.position = new vector2_1.Vector2();
 	        this.rotation = new quaternion_1.Quaternion();
 	        this.scale = new vector2_1.Vector2(1, 1);
 	        this.localMatrix = new matrix_1.Matrix();
 	        this.worldMatrix = new matrix_1.Matrix();
+	        if (this.parent) {
+	            this.parent.children.push(this);
+	        }
 	    }
 	    getWorldMatrix(out) {
 	        this.updateWorldMatrix();
 	        return this.worldMatrix.clone(out);
 	    }
 	    updateWorldMatrix() {
-	        if (!this.isDirty())
-	            return;
 	        const scaling = matrix_1.Matrix.scratch0;
 	        const rotation = matrix_1.Matrix.scratch1;
 	        const translate = matrix_1.Matrix.scratch2;
@@ -9932,32 +9859,39 @@
 	        return false;
 	    }
 	    translate(translation, relativeTo = app_element_1.Space.World) {
+	        return this.translateValues(translation.x, translation.y, relativeTo);
+	    }
+	    translateValues(x, y, relativeTo = app_element_1.Space.World) {
 	        if (this.parent && relativeTo === app_element_1.Space.World) {
 	            this.parent.getWorldMatrix(matrix_1.Matrix.scratch0).invert();
 	            const scratch = vector3_1.Vector3.scratch0;
-	            scratch.x = translation.x;
-	            scratch.y = translation.y;
+	            scratch.x = x;
+	            scratch.y = y;
 	            scratch.z = 0;
 	            vector3_1.Vector3.TransformCoordinates(scratch, matrix_1.Matrix.scratch0, scratch);
-	            this.position.addVector(translation);
+	            this.position.addValues(scratch.x, scratch.y);
 	        }
 	        else {
-	            this.position.addVector(translation);
+	            this.position.addValues(x, y);
 	        }
+	        return this;
 	    }
 	    setPosition(position, relativeTo = app_element_1.Space.World) {
+	        return this.setPositionValues(position.x, position.y, relativeTo);
+	    }
+	    setPositionValues(x, y, relativeTo = app_element_1.Space.World) {
 	        if (this.parent && relativeTo === app_element_1.Space.World) {
 	            this.parent.getWorldMatrix(matrix_1.Matrix.scratch0).invert();
 	            const scratch = vector3_1.Vector3.scratch0;
-	            scratch.x = position.x;
-	            scratch.y = position.y;
+	            scratch.x = x;
+	            scratch.y = y;
 	            scratch.z = 0;
 	            vector3_1.Vector3.TransformCoordinates(scratch, matrix_1.Matrix.scratch0, scratch);
 	            this.position.x = scratch.x;
 	            this.position.y = scratch.y;
 	        }
 	        else {
-	            this.position.copy(position);
+	            this.position.set(x, y);
 	        }
 	    }
 	    pointToLocalSpace(point, out) {
@@ -9980,10 +9914,12 @@
 	    rotate(radians) {
 	        quaternion_1.Quaternion.RotationAxis(vector3_1.Vector3.Forward, radians, quaternion_1.Quaternion.scratch0);
 	        this.rotation.multiply(quaternion_1.Quaternion.scratch0);
+	        return this;
 	    }
 	    setScale(scale) {
 	        this.scale.x = scale.x;
 	        this.scale.y = scale.y;
+	        return this;
 	    }
 	    getScale(out) {
 	        return (out || new vector2_1.Vector2).copy(this.scale);
@@ -10059,27 +9995,35 @@
 
 
 /***/ },
-/* 110 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const color_1 = __webpack_require__(53);
-	const math_util_1 = __webpack_require__(36);
+	const math_util_1 = __webpack_require__(18);
+	const bit_util_1 = __webpack_require__(110);
 	class PixiStyle {
 	    constructor(lineColor = null, lineWidth = 1, fillColor = null) {
 	        this.lineColor = lineColor || color_1.Color.Cyan;
-	        this.fillColor = fillColor || color_1.Color.Cyan;
+	        this.fillColor = fillColor || color_1.Color.Clear;
 	        this.lineWidth = math_util_1.MathUtil.clamp(lineWidth, 1, 10);
 	    }
 	    getFillColor() {
-	        return this.fillColor.toHex();
+	        return this.fillColor && this.fillColor.toHex() || -1;
+	    }
+	    getFillAlpha() {
+	        if (this.fillColor)
+	            return 255;
+	        return bit_util_1.getNthByte(this.fillColor.toHexAlpha(), 0);
 	    }
 	    getLineColor() {
-	        return this.lineColor.toHex();
+	        return this.lineColor && this.lineColor.toHex() || -1;
 	    }
 	    getLineAlpha() {
-	        return 1;
+	        if (!this.lineColor)
+	            return 255;
+	        return bit_util_1.getNthByte(this.lineColor.toHexAlpha(), 0);
 	    }
 	    clone() {
 	        return new PixiStyle(this.lineColor, this.lineWidth, this.fillColor);
@@ -10090,27 +10034,85 @@
 
 
 /***/ },
+/* 110 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	function setUpperBits(field, value) {
+	    value = value | 0;
+	    if (value > 0xFFFF)
+	        value = 0xFFFF;
+	    return field;
+	}
+	exports.setUpperBits = setUpperBits;
+	function getBits(value, offset, bitCount) {
+	    return (value >> offset) & (1 << bitCount) - 1;
+	}
+	exports.getBits = getBits;
+	//todo -- untested
+	function getMask(start, end) {
+	    return (~0 >> (32 - start - 1)) & (~0 << (32 - end));
+	}
+	function set1stByte(target, value) {
+	    return (target & 0xffffff00) | (value & 0x000000ff);
+	}
+	exports.set1stByte = set1stByte;
+	function setBytes(target, value, byteCount, offset) {
+	    // int x = (number >> (8*n)) & 0xff;
+	    return (target & 0xff000000) | (value & 0x00ffffff);
+	}
+	exports.setBytes = setBytes;
+	function getNthByte(value, byteNumber) {
+	    return (value >> (8 * byteNumber)) & 0xff;
+	}
+	exports.getNthByte = getNthByte;
+	//todo -- untested
+	function setBits(target, value, offset, bitCount) {
+	    var mask = getMask(0, bitCount);
+	    return (target & ~mask) | (value & mask);
+	}
+	exports.setBits = setBits;
+	function setHighLowBits(high, low) {
+	    return (high << 16) | (low & 0xffff);
+	}
+	exports.setHighLowBits = setHighLowBits;
+	function getLow16Bits(value) {
+	    return value & 0xFFFF;
+	}
+	exports.getLow16Bits = getLow16Bits;
+	function getHigh16Bits(value) {
+	    return (value >> 16) & (1 << 16) - 1;
+	}
+	exports.getHigh16Bits = getHigh16Bits;
+
+
+/***/ },
 /* 111 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const shape_1 = __webpack_require__(108);
+	const shape_1 = __webpack_require__(107);
 	const vector2_1 = __webpack_require__(17);
 	const polygon_1 = __webpack_require__(112);
+	const pointTransformArray = new Array(3);
 	class Triangle extends shape_1.Shape {
-	    constructor(p1, p2, p3, style) {
-	        super(style);
+	    constructor(p1, p2, p3, parent, style) {
+	        super(parent, style);
 	        this.points.push(p1, p2, p3);
 	    }
 	    render(gfx) {
+	        if (!this.isEnabled)
+	            return;
+	        const fillColor = this.style.getFillColor();
 	        gfx.beginFill(this.style.getFillColor());
 	        const position = this.getPosition(vector2_1.Vector2.scratch0);
 	        const rotation = this.rotation.getRotationZ();
 	        const p1 = this.points[0].clone(vector2_1.Vector2.scratch1).rotate(rotation).addVector(position);
 	        const p2 = this.points[1].clone(vector2_1.Vector2.scratch2).rotate(rotation).addVector(position);
 	        const p3 = this.points[2].clone(vector2_1.Vector2.scratch3).rotate(rotation).addVector(position);
-	        gfx.lineStyle(1, this.style.getLineColor());
+	        gfx.lineStyle(this.style.lineWidth, this.style.getLineColor(), this.style.getLineAlpha());
 	        gfx.moveTo(p1.x, p1.y);
 	        gfx.lineTo(p2.x, p2.y);
 	        gfx.lineTo(p3.x, p3.y);
@@ -10118,8 +10120,16 @@
 	        gfx.endFill();
 	    }
 	    containsPoint(point) {
-	        point = this.pointToLocalSpace(point);
-	        return polygon_1.Polygon.contains(this.points, point);
+	        if (!this.isEnabled)
+	            return false;
+	        const rotation = this.rotation.getRotationZ();
+	        const position = this.getPosition(vector2_1.Vector2.scratch0);
+	        for (let i = 0; i < this.points.length; i++) {
+	            pointTransformArray[0] = this.points[0].clone(vector2_1.Vector2.scratch1).rotate(rotation).addVector(position);
+	            pointTransformArray[1] = this.points[1].clone(vector2_1.Vector2.scratch2).rotate(rotation).addVector(position);
+	            pointTransformArray[2] = this.points[2].clone(vector2_1.Vector2.scratch3).rotate(rotation).addVector(position);
+	        }
+	        return polygon_1.Polygon.contains(pointTransformArray, point);
 	    }
 	}
 	exports.Triangle = Triangle;
@@ -10132,7 +10142,7 @@
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const vector2_1 = __webpack_require__(17);
-	const transformable_1 = __webpack_require__(109);
+	const transformable_1 = __webpack_require__(108);
 	class Polygon extends transformable_1.Transformable {
 	    constructor() {
 	        super();
@@ -10184,21 +10194,418 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
+	const shape_1 = __webpack_require__(107);
+	const vector2_1 = __webpack_require__(17);
+	class Circle extends shape_1.Shape {
+	    constructor(center, radius, parent = null, style = null) {
+	        super(parent, style);
+	        this.position.set(center.x, center.y);
+	        this.radius = radius;
+	        this.points.push(this.position);
+	    }
+	    render(gfx) {
+	        if (!this.isEnabled)
+	            return;
+	        gfx.lineStyle(this.style.lineWidth, this.style.getLineColor(), this.style.getLineAlpha());
+	        gfx.beginFill(this.style.getFillColor());
+	        const position = this.getPosition(vector2_1.Vector2.scratch0);
+	        gfx.drawCircle(position.x, position.y, this.radius);
+	        gfx.endFill();
+	    }
+	    containsPoint(point) {
+	        if (!this.isEnabled)
+	            return false;
+	        return this.getPosition(vector2_1.Vector2.scratch0).distanceToSquared(point) <= this.radius * this.radius;
+	    }
+	}
+	exports.Circle = Circle;
+
+
+/***/ },
+/* 114 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	class StateChartTransition {
+	    constructor(evt, target, guardFn) {
+	        this.evt = evt;
+	        this.target = target;
+	        this.guardFn = guardFn || StateChartTransition.NoOpGuard;
+	    }
+	    static NoOpGuard() { return true; }
+	}
+	class StateChartEvent {
+	}
+	exports.StateChartEvent = StateChartEvent;
+	class StateChartBehavior {
+	    enter() { }
+	    update() { }
+	    exit() { }
+	}
+	exports.StateChartBehavior = StateChartBehavior;
+	class StateChartState {
+	    constructor(id, parent, behavior) {
+	        this.id = id;
+	        this.parent = parent;
+	        this.behavior = behavior;
+	        this.isActive = false;
+	        this.states = [];
+	        this.events = [];
+	        this.transitions = [];
+	        this.initFns = null;
+	        this.enterFns = null;
+	        this.exitFns = null;
+	        this.updateFns = null;
+	    }
+	    onInit(fn) {
+	        this.initFns = this.initFns || [];
+	        this.initFns.push(fn);
+	    }
+	    onUpdated(fn) {
+	        this.updateFns = this.updateFns || [];
+	        this.updateFns.push(fn);
+	    }
+	    onEntered(fn) {
+	        this.enterFns = this.enterFns || [];
+	        this.enterFns.push(fn);
+	    }
+	    onExited(fn) {
+	        this.exitFns = this.exitFns || [];
+	        this.exitFns.push(fn);
+	    }
+	    addEventHandler(evt, callback) {
+	        this.events.push({ event: evt, handler: callback });
+	    }
+	    handleEvent(evtPackage) {
+	        const evt = evtPackage.event;
+	        const data = evtPackage.data;
+	        for (let i = 0; i < this.events.length; i++) {
+	            if (this.events[i].event === evt && this.events[i].handler) {
+	                this.events[i].handler(data);
+	            }
+	        }
+	        for (let i = 0; i < this.transitions.length; i++) {
+	            const transition = this.transitions[i];
+	            if (transition.evt === evt && transition.guardFn(data)) {
+	                return { targetId: transition.target, from: this };
+	            }
+	        }
+	        for (let i = 0; i < this.states.length; i++) {
+	            if (this.states[i].isActive) {
+	                const retn = this.states[i].handleEvent(evtPackage);
+	                if (retn)
+	                    return retn;
+	            }
+	        }
+	        return null;
+	    }
+	    enter(enterPath) {
+	        if (this.isActive)
+	            return;
+	        this.isActive = true;
+	        this.behavior && this.behavior.enter();
+	        this.initFns && this.initFns.forEach(fn => fn());
+	        this.enterFns && this.enterFns.forEach(fn => fn());
+	        this.initFns = null;
+	        if (enterPath && enterPath.length > 0) {
+	            const child = enterPath.pop();
+	            if (child.parent !== this) {
+	                throw new Error("Invalid StateChart enter path");
+	            }
+	            else {
+	                child.enter(enterPath);
+	            }
+	        }
+	        else if (this.states.length > 0) {
+	            this.states[0].enter();
+	        }
+	    }
+	    update() {
+	        this.behavior && this.behavior.update();
+	        this.updateFns && this.updateFns.forEach(fn => fn());
+	        for (let i = 0; i < this.states.length; i++) {
+	            if (this.states[i].isActive) {
+	                this.states[i].update();
+	            }
+	        }
+	    }
+	    exit() {
+	        if (!this.isActive)
+	            return;
+	        this.isActive = false;
+	        this.behavior && this.behavior.exit();
+	        this.exitFns && this.exitFns.forEach(fn => fn());
+	        this.exitChildren();
+	    }
+	    exitChildren(enterPath = null) {
+	        for (let i = 0; i < this.states.length; i++) {
+	            if (this.states[i].isActive) {
+	                if (enterPath) {
+	                    if (enterPath.indexOf(this.states[i]) === -1) {
+	                        this.states[i].exit();
+	                    }
+	                }
+	                this.states[i].exit();
+	            }
+	        }
+	    }
+	    isParentOf(other) {
+	        let ptr = other.parent;
+	        while (ptr) {
+	            if (ptr === this) {
+	                return true;
+	            }
+	            ptr = ptr.parent;
+	        }
+	        return false;
+	    }
+	}
+	class StateChartParallelState extends StateChartState {
+	    enter(enterPath) {
+	        if (this.isActive)
+	            return;
+	        this.isActive = true;
+	        this.behavior && this.behavior.enter();
+	        this.initFns && this.initFns.forEach(fn => fn());
+	        this.initFns = null;
+	        enterPath && enterPath.pop();
+	        for (let i = 0; i < this.states.length; i++) {
+	            this.states[i].enter(enterPath);
+	        }
+	    }
+	}
+	class StateChart_Internal extends StateChartState {
+	    constructor(definition) {
+	        super("$root", null, null);
+	        this.isActive = true;
+	        this.stateDef = this.getStateFn();
+	        this.stateMap = new Map();
+	        this.stateStack = [];
+	        this.eventQueue0 = [];
+	        this.eventQueue1 = [];
+	        this.eventQueue = this.eventQueue0;
+	        this.stateStack.push(this);
+	        this.builder = new StateChartBuilder(this);
+	        this.builder.currentState = this;
+	        definition(this.builder);
+	        this.stateStack.pop();
+	        this.stateStack = null;
+	        this.initFns && this.initFns.forEach(fn => fn());
+	        this.enterFns && this.enterFns.forEach(fn => fn());
+	        if (this.states[0]) {
+	            this.states[0].enter();
+	        }
+	    }
+	    update() {
+	        //process an event queue tick
+	        const currentQueue = this.eventQueue;
+	        //swap event queues
+	        this.eventQueue = this.eventQueue === this.eventQueue0 ? this.eventQueue1 : this.eventQueue0;
+	        //do all transitions but queue all events till next frame
+	        while (currentQueue.length) {
+	            const transition = this.handleEvent(currentQueue.shift());
+	            if (transition) {
+	                this.goTo(transition.targetId, transition.from);
+	            }
+	        }
+	        this.updateFns && this.updateFns.forEach(fn => fn());
+	        const active = this.getActiveState();
+	        if (active)
+	            active.update();
+	    }
+	    isInState(id) {
+	        const state = this.stateMap.get(id);
+	        return state && state.isActive;
+	    }
+	    trigger(event, data) {
+	        if (this.stateStack)
+	            throw new Error("StateChart hasn't entered yet, invalid call to trigger()");
+	        this.eventQueue.push({ event: event, data: data });
+	    }
+	    getConfiguration() {
+	        const config = new Array();
+	        const leaves = new Array();
+	        this.stateMap.forEach((state) => {
+	            if (state.isActive && state.states.length === 0) {
+	                leaves.push(state);
+	            }
+	        });
+	        for (let i = 0; i < leaves.length; i++) {
+	            const leaf = leaves[i];
+	            const branchConfig = new Array();
+	            let ptr = leaf;
+	            while (ptr !== this) {
+	                branchConfig.push(ptr.id);
+	                ptr = ptr.parent;
+	            }
+	            config.push(branchConfig.reverse());
+	        }
+	        return config;
+	    }
+	    getStateFn() {
+	        const fn = this.state.bind(this);
+	        fn.parallel = this.parallel.bind(this);
+	        return fn;
+	    }
+	    goTo(targetId, from) {
+	        let ptr = this.stateMap.get(targetId);
+	        if (!ptr) {
+	            throw new Error("Invalid state: " + targetId);
+	        }
+	        if (ptr === from)
+	            return;
+	        let enterPath = [];
+	        //find highest parent of target that is active
+	        //if from is a parent of ptr
+	        if (from.isParentOf(ptr)) {
+	            //work up from ptr until we hit from, enter as we go
+	            while (ptr !== from) {
+	                enterPath.push(ptr);
+	                ptr = ptr.parent;
+	            }
+	            from.exitChildren(enterPath);
+	            enterPath.shift().enter(enterPath);
+	        }
+	        else {
+	            while (!ptr.isActive) {
+	                enterPath.unshift(ptr);
+	                ptr = ptr.parent;
+	            }
+	            ptr.exitChildren();
+	            enterPath.shift().enter(enterPath);
+	        }
+	    }
+	    transition(evt, targetStateId, guardFunction) {
+	        if (!this.stateStack)
+	            throw new Error("StateChart has already entered, cannot call 'transition()'");
+	        this.stateStack.getLast().transitions.push(new StateChartTransition(evt, targetStateId, guardFunction));
+	    }
+	    state(id, behaviorOrDefinition, definition) {
+	        if (arguments.length === 1) {
+	            this.createState(id, null, null, false);
+	        }
+	        else if (arguments.length === 2) {
+	            this.createState(id, behaviorOrDefinition, null, false);
+	        }
+	        else if (arguments.length === 3) {
+	            this.createState(id, definition, behaviorOrDefinition, false);
+	        }
+	    }
+	    parallel(id, behaviorOrDefinition, definition) {
+	        if (arguments.length === 2) {
+	            this.createState(id, behaviorOrDefinition, null, true);
+	        }
+	        else if (arguments.length === 3) {
+	            this.createState(id, definition, behaviorOrDefinition, true);
+	        }
+	    }
+	    createState(id, definition, behavior, isParallel = false) {
+	        if (!this.stateStack)
+	            throw new Error("StateChart has already entered, cannot call 'parallel()'");
+	        if (this.stateMap.get(id)) {
+	            throw new Error("States within a StateChart cannot have duplicate ids, '" + id + "' was already registered");
+	        }
+	        const parentState = this.stateStack.getLast();
+	        const Type = (isParallel) ? StateChartParallelState : StateChartState;
+	        const state = new Type(id, parentState, behavior);
+	        parentState.states.push(state);
+	        this.stateMap.set(id, state);
+	        if (typeof definition === "function") {
+	            this.stateStack.push(state);
+	            this.builder.currentState = state;
+	            definition();
+	            this.stateStack.pop();
+	        }
+	        if (state.behavior) {
+	            state.behavior.chart = this;
+	        }
+	    }
+	    getActiveState() {
+	        return this.states.find(function (state) {
+	            return state.isActive;
+	        });
+	    }
+	}
+	exports.StateChart_Internal = StateChart_Internal;
+	//[Hack!] weirdness w/ typescript compiler makes it hard to hide methods from subclass...no idea why.
+	//export a shadow class instead with only the properly exposed signature
+	class StateChart {
+	    constructor(fn) {
+	        return new StateChart_Internal(fn);
+	    }
+	    static createEvent() {
+	        return new StateChartEvent();
+	    }
+	}
+	exports.StateChart = StateChart;
+	class StateChartBuilder {
+	    constructor(chart) {
+	        this.chart = chart;
+	    }
+	    init(fn) {
+	        this.chart.stateStack.getLast().onInit(fn);
+	    }
+	    enter(fn) {
+	        this.chart.stateStack.getLast().onEntered(fn);
+	    }
+	    exit(fn) {
+	        this.chart.stateStack.getLast().onExited(fn);
+	    }
+	    update(fn) {
+	        this.chart.stateStack.getLast().onUpdated(fn);
+	    }
+	    event(evtType, callback) {
+	        this.chart.stateStack.getLast().addEventHandler(evtType, callback);
+	    }
+	    trigger(evt, data) {
+	        this.chart.trigger(evt, data);
+	    }
+	    toDSL() {
+	        return {
+	            enter: this.enter.bind(this),
+	            exit: this.exit.bind(this),
+	            update: this.update.bind(this),
+	            init: this.init.bind(this),
+	            trigger: this.chart.trigger.bind(this.chart),
+	            state: this.chart.getStateFn(),
+	            event: this.event.bind(this),
+	            isInState: this.chart.isInState.bind(this.chart),
+	            transition: this.chart.transition.bind(this.chart)
+	        };
+	    }
+	}
+	exports.StateChartBuilder = StateChartBuilder;
+	// var b = new StateChartBuilder();
+	// var z = b.createEvent<{s : string, y: number}>();
+	// b.trigger(z, {s: "", y: 1});
+	//
+	// const Evt_MouseUp = b.createEvent<Vector2>();
+	//
+	// b.event(Evt_MouseUp, "stateName");
+
+
+/***/ },
+/* 115 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
 	const editor_window_element_1 = __webpack_require__(71);
 	const vector2_1 = __webpack_require__(17);
-	const asset_item_1 = __webpack_require__(114);
+	const asset_item_1 = __webpack_require__(116);
 	const element_renderer_1 = __webpack_require__(7);
-	const prefab_asset_item_1 = __webpack_require__(117);
+	const prefab_asset_item_1 = __webpack_require__(119);
 	const editor_element_annotations_1 = __webpack_require__(72);
 	const editor_theme_1 = __webpack_require__(61);
-	const folder_asset_item_1 = __webpack_require__(119);
-	const folder_asset_1 = __webpack_require__(120);
+	const folder_asset_item_1 = __webpack_require__(121);
+	const folder_asset_1 = __webpack_require__(122);
 	const icon_1 = __webpack_require__(66);
 	const drag_action_1 = __webpack_require__(44);
 	const drag_hierarchy_item_1 = __webpack_require__(67);
 	const evt_asset_created_1 = __webpack_require__(47);
-	const image_asset_item_1 = __webpack_require__(121);
+	const image_asset_item_1 = __webpack_require__(123);
 	class AssetWindow extends editor_window_element_1.EditorWindowElement {
 	    constructor() {
 	        super(...arguments);
@@ -10398,18 +10805,18 @@
 
 
 /***/ },
-/* 114 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const editor_html_element_1 = __webpack_require__(18);
-	const asset_window_1 = __webpack_require__(113);
+	const editor_html_element_1 = __webpack_require__(19);
+	const asset_window_1 = __webpack_require__(115);
 	const icon_1 = __webpack_require__(66);
-	const text_selection_1 = __webpack_require__(115);
+	const text_selection_1 = __webpack_require__(117);
 	const drag_action_1 = __webpack_require__(44);
-	const asset_drag_action_1 = __webpack_require__(116);
+	const asset_drag_action_1 = __webpack_require__(118);
 	class AssetItemDropTarget extends editor_html_element_1.EditorHTMLElement {
 	    onMounted() {
 	        this.target = this.parent;
@@ -10588,7 +10995,7 @@
 
 
 /***/ },
-/* 115 */
+/* 117 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -10642,7 +11049,7 @@
 
 
 /***/ },
-/* 116 */
+/* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10659,14 +11066,14 @@
 
 
 /***/ },
-/* 117 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const prefab_asset_1 = __webpack_require__(118);
-	const asset_item_1 = __webpack_require__(114);
+	const prefab_asset_1 = __webpack_require__(120);
+	const asset_item_1 = __webpack_require__(116);
 	const drag_action_1 = __webpack_require__(44);
 	const prefab_drag_action_1 = __webpack_require__(69);
 	let PrefabAssetItem = class PrefabAssetItem extends asset_item_1.EditorAssetItem {
@@ -10687,12 +11094,12 @@
 
 
 /***/ },
-/* 118 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const app_element_1 = __webpack_require__(28);
+	const app_element_1 = __webpack_require__(29);
 	const asset_1 = __webpack_require__(46);
 	class PrefabAsset extends asset_1.Asset {
 	    constructor(filePath) {
@@ -10709,13 +11116,13 @@
 
 
 /***/ },
-/* 119 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const asset_item_1 = __webpack_require__(114);
+	const asset_item_1 = __webpack_require__(116);
 	const icon_1 = __webpack_require__(66);
 	const drag_action_1 = __webpack_require__(44);
 	let FolderAssetItem = class FolderAssetItem extends asset_item_1.EditorAssetItem {
@@ -10752,7 +11159,7 @@
 
 
 /***/ },
-/* 120 */
+/* 122 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -10764,13 +11171,13 @@
 
 
 /***/ },
-/* 121 */
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const asset_item_1 = __webpack_require__(114);
+	const asset_item_1 = __webpack_require__(116);
 	const drag_action_1 = __webpack_require__(44);
 	let ImageAssetItem = class ImageAssetItem extends asset_item_1.EditorAssetItem {
 	    getIconName() {
@@ -10784,28 +11191,25 @@
 
 
 /***/ },
-/* 122 */
+/* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
 	const editor_window_element_1 = __webpack_require__(71);
-	const scene_meta_bar_1 = __webpack_require__(123);
-	const stage_background_1 = __webpack_require__(125);
-	const breakpoint_1 = __webpack_require__(124);
-	const app_element_1 = __webpack_require__(28);
+	const scene_meta_bar_1 = __webpack_require__(125);
+	const stage_background_1 = __webpack_require__(127);
+	const breakpoint_1 = __webpack_require__(126);
+	const app_element_1 = __webpack_require__(29);
 	const vector2_1 = __webpack_require__(17);
-	const stage_foreground_1 = __webpack_require__(126);
+	const stage_foreground_1 = __webpack_require__(128);
 	const util_1 = __webpack_require__(16);
-	const rect_tool_1 = __webpack_require__(127);
+	const rect_tool_1 = __webpack_require__(129);
 	const editor_element_annotations_1 = __webpack_require__(72);
-	const menu_setup_1 = __webpack_require__(77);
-	const state_chart_1 = __webpack_require__(129);
-	const panel_component_1 = __webpack_require__(79);
-	const background_component_1 = __webpack_require__(52);
-	const e_keycode_1 = __webpack_require__(103);
-	const evt_designer_rendererd_1 = __webpack_require__(100);
+	const state_chart_1 = __webpack_require__(114);
+	const evt_designer_rendererd_1 = __webpack_require__(98);
+	const layout_1 = __webpack_require__(104);
 	class StageWindow extends editor_window_element_1.EditorWindowElement {
 	    onCreated() {
 	        PIXI.utils.skipHello();
@@ -10828,7 +11232,7 @@
 	            this.setPreviewSize(this.currentBreakpoint);
 	            this.stageBackground.paint(this.width, this.height);
 	        }
-	        this.stateChart.update();
+	        //this.stateChart.update();
 	        // this.currentTool.update();
 	        EditorRuntime.emit(evt_designer_rendererd_1.DesignerRendered, this.stageForeground.getGfxRoot(), this.getStageMousePosition());
 	        this.stageForeground.paint(this.width, this.height);
@@ -10855,7 +11259,7 @@
 	            return;
 	        this.panValue.addVector(delta);
 	        app_element_1.AppElement.Root.setPosition(new vector2_1.Vector2(this.panValue.x, this.panValue.y));
-	        app_element_1.AppElement.Root.setDimensions(this.frameSize.x, this.frameSize.y);
+	        app_element_1.AppElement.Root.setDimensions(this.frameSize.x, this.frameSize.y, layout_1.LengthUnit.Pixel);
 	    }
 	    getBreakpoint() {
 	        return this.currentBreakpoint;
@@ -10866,7 +11270,7 @@
 	        this.panValue.x = ((this.width * 0.5) - (this.frameSize.x * 0.5)) | 0;
 	        this.panValue.y = 1;
 	        app_element_1.AppElement.Root.setPosition(new vector2_1.Vector2(this.panValue.x, this.panValue.y));
-	        app_element_1.AppElement.Root.setDimensions(this.frameSize.x, this.frameSize.y);
+	        app_element_1.AppElement.Root.setDimensions(this.frameSize.x, this.frameSize.y, layout_1.LengthUnit.Pixel);
 	    }
 	    getStageMousePosition() {
 	        const mouse = EditorRuntime.getInput().getMouseRelativeToEditorElement(this);
@@ -10881,34 +11285,38 @@
 	        }
 	    }
 	    drawPrimitive(selection) {
-	        this.stateChart.trigger(new Evt_PaintBox(selection));
+	        // this.stateChart.trigger(new Evt_PaintBox(selection));
 	    }
 	    onContextClick() {
-	        const selection = EditorRuntime.getSelection();
-	        EditorRuntime.getInput().getMousePosition(vector2_1.Vector2.scratch0);
-	        const menu = new nw.Menu();
-	        menu.append(new nw.MenuItem({ label: "Create", submenu: menu_setup_1.getCreationMenu(selection) }));
-	        menu.append(new nw.MenuItem({ label: "Box", click: () => { this.drawPrimitive(selection); } }));
-	        // menu.append(new nw.MenuItem({ label: "Destroy", click: () => this.destroyContextSelection() }));
-	        menu.popup(vector2_1.Vector2.scratch0.x, vector2_1.Vector2.scratch0.y);
+	        // const selection = EditorRuntime.getSelection();
+	        // EditorRuntime.getInput().getMousePosition(Vector2.scratch0);
+	        // const menu = new nw.Menu();
+	        //
+	        // menu.append(new nw.MenuItem({ label: "Create", submenu: getCreationMenu(selection) }));
+	        // menu.append(new nw.MenuItem({ label: "Box", click: () => { this.drawPrimitive(selection) } }));
+	        // // menu.append(new nw.MenuItem({ label: "Destroy", click: () => this.destroyContextSelection() }));
+	        //
+	        // menu.popup(Vector2.scratch0.x, Vector2.scratch0.y);
 	    }
 	}
 	tslib_1.__decorate([
 	    editor_element_annotations_1.onRightClick
 	], StageWindow.prototype, "onContextClick", null);
 	exports.StageWindow = StageWindow;
-	class Evt_PaintBox extends state_chart_1.StateChartEvent {
-	    constructor(selection) {
-	        super();
-	        this.selection = selection;
-	    }
-	}
-	class Evt_PaintBox_Start extends state_chart_1.StateChartEvent {
-	}
-	class Evt_PaintBox_Finish extends state_chart_1.StateChartEvent {
-	}
-	class Evt_PaintBox_Cancel extends state_chart_1.StateChartEvent {
-	}
+	// class Evt_PaintBox extends StateChartEvent {
+	//
+	//     public selection : AppElement;
+	//
+	//     constructor(selection : AppElement) {
+	//         super();
+	//         this.selection = selection;
+	//     }
+	//
+	// }
+	//
+	// class Evt_PaintBox_Start extends StateChartEvent {}
+	// class Evt_PaintBox_Finish extends StateChartEvent {}
+	// class Evt_PaintBox_Cancel extends StateChartEvent {}
 	class PaintBoxBehavior extends state_chart_1.StateChartBehavior {
 	    constructor(stage) {
 	        super();
@@ -10919,39 +11327,41 @@
 	        this.stage.stageForeground.getGfxRoot().addChild(this.graphic);
 	    }
 	    update() {
-	        const input = EditorRuntime.getInput();
-	        const inStage = input.isMouseInEditorElement(this.stage.stageForeground);
-	        this.graphic.clear();
-	        if (this.chart.isInState("paint-pending")) {
-	            if (inStage) {
-	                EditorRuntime.setCursor("crosshair");
-	                if (input.isMouseDownThisFrame()) {
-	                    this.chart.trigger(new Evt_PaintBox_Start());
-	                }
-	            }
-	        }
-	        else if (this.chart.isInState("paint-started")) {
-	            const md = input.getMouseDownRelativeToEditorElement(this.stage.stageForeground);
-	            const mouse = input.getMouseRelativeToEditorElement(this.stage.stageForeground);
-	            this.graphic.lineStyle(2, 0x0000FF);
-	            this.graphic.drawRect(md.x, md.y, mouse.x - md.x, mouse.y - md.y);
-	            if (input.isMouseUpThisFrame()) {
-	                const element = new app_element_1.AppElement("Box", EditorRuntime.getSelection());
-	                element.addComponent(panel_component_1.PanelComponent);
-	                element.addComponent(background_component_1.BackgroundComponent);
-	                const minX = Math.min(mouse.x, md.x);
-	                const minY = Math.min(mouse.y, md.y);
-	                const maxX = Math.max(mouse.x, md.x);
-	                const maxY = Math.max(mouse.y, md.y);
-	                element.setPositionValues(minX, minY);
-	                element.setRotation(0, app_element_1.Space.World);
-	                element.setDimensions(maxX - minX, maxY - minY);
-	                this.chart.trigger(new Evt_PaintBox_Finish());
-	            }
-	            else if (input.isKeyDown(e_keycode_1.KeyCode.Escape)) {
-	                this.chart.trigger(new Evt_PaintBox_Cancel());
-	            }
-	        }
+	        // const input = EditorRuntime.getInput();
+	        // const inStage = input.isMouseInEditorElement(this.stage.stageForeground);
+	        // this.graphic.clear();
+	        //
+	        // if (this.chart.isInState("paint-pending")) {
+	        //     if (inStage) {
+	        //         EditorRuntime.setCursor("crosshair");
+	        //         if (input.isMouseDownThisFrame()) {
+	        //             this.chart.trigger(new Evt_PaintBox_Start());
+	        //         }
+	        //     }
+	        //
+	        // }
+	        // else if (this.chart.isInState("paint-started")) {
+	        //     const md = input.getMouseDownRelativeToEditorElement(this.stage.stageForeground);
+	        //     const mouse = input.getMouseRelativeToEditorElement(this.stage.stageForeground);
+	        //     this.graphic.lineStyle(2, 0x0000FF);
+	        //     this.graphic.drawRect(md.x, md.y, mouse.x - md.x, mouse.y - md.y);
+	        //     if (input.isMouseUpThisFrame()) {
+	        //         const element = new AppElement("Box", EditorRuntime.getSelection());
+	        //         element.addComponent(PanelComponent);
+	        //         element.addComponent(BackgroundComponent);
+	        //         const minX = Math.min(mouse.x, md.x);
+	        //         const minY = Math.min(mouse.y, md.y);
+	        //         const maxX = Math.max(mouse.x, md.x);
+	        //         const maxY = Math.max(mouse.y, md.y);
+	        //         element.setPositionValues(minX, minY);
+	        //         element.setRotation(0, Space.World);
+	        //         element.setDimensions(maxX - minX, maxY - minY);
+	        //         this.chart.trigger(new Evt_PaintBox_Finish());
+	        //     }
+	        //     else if (input.isKeyDown(KeyCode.Escape)) {
+	        //         this.chart.trigger(new Evt_PaintBox_Cancel());
+	        //     }
+	        // }
 	    }
 	    exit() {
 	        this.stage.stageForeground.getGfxRoot().removeChild(this.graphic);
@@ -10959,28 +11369,40 @@
 	    }
 	}
 	function createStateChart(stage) {
-	    return new state_chart_1.StateChart(function (state, event) {
-	        state("default", function () {
-	        });
-	        state.parallel("base", function () {
-	            state("selection", function () {
-	                state("selection-none");
-	                state("selection-single");
-	                state("selection-multiple");
-	            });
-	            state("tool", function () {
-	            });
-	        });
-	        state("paint-box", new PaintBoxBehavior(stage), function () {
-	            state("paint-pending");
-	            state("paint-started");
-	            event(Evt_PaintBox_Start, "paint-started");
-	            event(Evt_PaintBox_Finish, "default");
-	            event(Evt_PaintBox_Cancel, "default");
-	        });
-	        state("single-select");
-	        state("multi-select");
-	        event(Evt_PaintBox, "paint-box");
+	    return new state_chart_1.StateChart(function () {
+	        // state("default", function () {
+	        //
+	        // });
+	        //
+	        // state.parallel("base", function () {
+	        //
+	        //     state("selection", function () {
+	        //         state("selection-none");
+	        //         state("selection-single");
+	        //         state("selection-multiple");
+	        //     });
+	        //
+	        //     state("tool", function () {
+	        //
+	        //     });
+	        //
+	        // });
+	        //
+	        // state("paint-box", new PaintBoxBehavior(stage), function () {
+	        //
+	        //     state("paint-pending");
+	        //     state("paint-started");
+	        //
+	        //     event(Evt_PaintBox_Start, "paint-started");
+	        //     event(Evt_PaintBox_Finish, "default");
+	        //     event(Evt_PaintBox_Cancel, "default");
+	        //
+	        // });
+	        //
+	        // state("single-select");
+	        // state("multi-select");
+	        //
+	        // event(Evt_PaintBox, "paint-box");
 	    });
 	}
 	createStyleSheet(`<style>
@@ -11009,16 +11431,16 @@
 
 
 /***/ },
-/* 123 */
+/* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const button_1 = __webpack_require__(64);
 	const editor_theme_1 = __webpack_require__(61);
-	const breakpoint_1 = __webpack_require__(124);
-	const editor_html_element_1 = __webpack_require__(18);
-	const stage_window_1 = __webpack_require__(122);
+	const breakpoint_1 = __webpack_require__(126);
+	const editor_html_element_1 = __webpack_require__(19);
+	const stage_window_1 = __webpack_require__(124);
 	function round(places) {
 	    return function (value) {
 	        return value.toFixed(places);
@@ -11091,7 +11513,7 @@
 
 
 /***/ },
-/* 124 */
+/* 126 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -11135,12 +11557,12 @@
 
 
 /***/ },
-/* 125 */
+/* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	const editor_theme_1 = __webpack_require__(61);
 	class StageBackground extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
@@ -11175,20 +11597,35 @@
 
 
 /***/ },
-/* 126 */
+/* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
+	const state_chart_1 = __webpack_require__(114);
+	const vector2_1 = __webpack_require__(17);
+	const app_element_1 = __webpack_require__(29);
+	const util_1 = __webpack_require__(16);
+	const layout_1 = __webpack_require__(104);
+	const e_mouse_state_1 = __webpack_require__(26);
+	const anchor_flower_1 = __webpack_require__(105);
 	class StageForeground extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "canvas", classList: "overlay-canvas" };
 	    }
+	    onUpdated() {
+	        this.anchorFlower.update();
+	        this.stateChart.update();
+	    }
 	    onRendered() {
 	        this.stage = new PIXI.Container();
+	        this.anchorFlower = new anchor_flower_1.AnchorFlower();
 	        this.selectionContainer = this.stage.addChild(new PIXI.Container());
 	        this.selectionOutline = this.selectionContainer.addChild(new PIXI.Graphics());
+	        this.selectionContainer.addChild(this.anchorFlower.getGfx());
+	        this.stateChart = this.getStateChart();
+	        EditorRuntime.updateTree.add(this);
 	        this.renderer = new PIXI.WebGLRenderer(256, 256, {
 	            autoResize: true,
 	            antialias: true,
@@ -11203,10 +11640,64 @@
 	        if (this.renderer.width !== width || this.renderer.height !== height) {
 	            this.renderer.resize(width, height);
 	        }
-	        this.drawSelection();
+	        this.anchorFlower.render();
 	        this.renderer.render(this.stage);
 	    }
-	    drawSelection() {
+	    hitTestEdge(point, bounds) {
+	        const topLeft = bounds.topLeft;
+	        const topRight = bounds.topRight;
+	        const bottomRight = bounds.bottomRight;
+	        const bottomLeft = bounds.bottomLeft;
+	        if (util_1.distanceTestPoint(topLeft, point, 5))
+	            return SelectionEdge.TopLeft;
+	        if (util_1.distanceTestPoint(topRight, point, 5))
+	            return SelectionEdge.TopRight;
+	        if (util_1.distanceTestPoint(bottomLeft, point, 5))
+	            return SelectionEdge.BottomLeft;
+	        if (util_1.distanceTestPoint(bottomRight, point, 5))
+	            return SelectionEdge.BottomRight;
+	        if (util_1.hitTestLine2(topLeft, topRight, point, 3))
+	            return SelectionEdge.Top;
+	        if (util_1.hitTestLine2(topLeft, bottomLeft, point, 3))
+	            return SelectionEdge.Left;
+	        if (util_1.hitTestLine2(bottomLeft, bottomRight, point, 3))
+	            return SelectionEdge.Bottom;
+	        if (util_1.hitTestLine2(topRight, bottomRight, point, 3))
+	            return SelectionEdge.Right;
+	        if (bounds.containsPoint(point))
+	            return SelectionEdge.Center;
+	        return SelectionEdge.None;
+	    }
+	    updateDragSide(dragSide, delta, appElement) {
+	        const p = appElement.getPosition();
+	        let width = appElement.getWidth();
+	        let height = appElement.getHeight();
+	        if ((dragSide & SelectionEdge.Top) !== 0) {
+	            p.y += delta.y;
+	            height -= delta.y;
+	        }
+	        else if ((dragSide & SelectionEdge.Bottom) !== 0) {
+	            height += delta.y;
+	        }
+	        if ((dragSide & SelectionEdge.Left) !== 0) {
+	            p.x += delta.x;
+	            width -= delta.x;
+	        }
+	        else if ((dragSide & SelectionEdge.Right) !== 0) {
+	            width += delta.x;
+	        }
+	        if (width < 1)
+	            width = 1;
+	        if (height < 1)
+	            height = 1;
+	        if (height === 1 && delta.y > 0)
+	            p.y -= delta.y;
+	        if (width === 1 && delta.x > 0)
+	            p.x -= delta.x;
+	        appElement.setPositionValues(p.x, p.y, app_element_1.Space.World, true);
+	        appElement.setDimensions(width, height, layout_1.LengthUnit.Pixel);
+	    }
+	    paintSelectionEdges() {
 	        this.selectionOutline.clear();
 	        const selection = EditorRuntime.getSelection();
 	        if (!selection)
@@ -11224,31 +11715,179 @@
 	        this.selectionOutline.beginFill(0xFF0000);
 	        this.selectionOutline.drawCircle(boundingBox.topLeft.x, boundingBox.topLeft.y, circleSize);
 	        this.selectionOutline.endFill();
-	        // this.selectionOutline.lineStyle(1, 0xFF00CD);
-	        // this.selectionOutline.arc(aabb.centerX, aabb.centerY, aabb.outerRadius, 0, MathUtil.TwoPi);
-	        // const input = EditorRuntime.getInput();
-	        // const mouse = input.getMouseRelativeToEditorElement(this);
-	        // const dist = aabb.center.clone().subVector(mouse).length();
-	        // if (dist < aabb.outerRadius + 5 && dist > aabb.outerRadius - 5) {
-	        //     this.selectionOutline.beginFill(0xFF0000);
-	        //     this.selectionOutline.drawCircle(aabb.centerX, aabb.centerY, 5);
-	        //     this.selectionOutline.endFill();
-	        // }
-	        // this.selectionOutline.beginFill(0xFF0000);
+	    }
+	    setHoverCursor(dragSide) {
+	        switch (dragSide) {
+	            case SelectionEdge.Top:
+	            case SelectionEdge.Bottom:
+	                EditorRuntime.setCursor('ns-resize');
+	                break;
+	            case SelectionEdge.Left:
+	            case SelectionEdge.Right:
+	                EditorRuntime.setCursor('ew-resize');
+	                break;
+	            case SelectionEdge.TopRight:
+	            case SelectionEdge.BottomLeft:
+	                EditorRuntime.setCursor('nesw-resize');
+	                break;
+	            case SelectionEdge.TopLeft:
+	            case SelectionEdge.BottomRight:
+	                EditorRuntime.setCursor('nwse-resize');
+	                break;
+	            default:
+	                EditorRuntime.setCursor('default');
+	                break;
+	        }
+	    }
+	    getStateChart() {
+	        if (this.stateChart)
+	            return this.stateChart;
+	        const Evt_DragEdge = state_chart_1.StateChart.createEvent();
+	        const Evt_DragAnchor = state_chart_1.StateChart.createEvent();
+	        const Evt_StartPanning = state_chart_1.StateChart.createEvent();
+	        const Evt_MouseUp = state_chart_1.StateChart.createEvent();
+	        const Evt_MouseDown = state_chart_1.StateChart.createEvent();
+	        const Evt_MouseDownOverSelection = state_chart_1.StateChart.createEvent();
+	        const Evt_MouseDownOutsideSelection = state_chart_1.StateChart.createEvent();
+	        const Evt_MouseDownOverSelectionEdge = state_chart_1.StateChart.createEvent();
+	        const Evt_Selection = state_chart_1.StateChart.createEvent();
+	        const Evt_SelectionCleared = state_chart_1.StateChart.createEvent();
+	        return new state_chart_1.StateChart((builder) => {
+	            const input = EditorRuntime.getInput();
+	            const { state, event, transition, enter, exit, update, init, trigger, isInState } = builder.toDSL();
+	            let selection = null;
+	            let anchorHit = false;
+	            let edgeHit = SelectionEdge.None;
+	            let mouse;
+	            update(() => {
+	                const activeSelection = EditorRuntime.getSelection();
+	                mouse = input.getMouseRelativeToEditorElement(this);
+	                if (activeSelection !== selection) {
+	                    if (activeSelection) {
+	                        selection = activeSelection;
+	                        trigger(Evt_Selection, selection);
+	                    }
+	                    else {
+	                        trigger(Evt_SelectionCleared, selection);
+	                    }
+	                }
+	                if (input.isMouseUpThisFrame())
+	                    trigger(Evt_MouseUp, mouse);
+	                if (input.isMouseDownThisFrame())
+	                    trigger(Evt_MouseDown, mouse);
+	            });
+	            state("selection.none", () => {
+	                transition(Evt_Selection, "selection");
+	            });
+	            state("selection", () => {
+	                state.parallel("selection-single", () => {
+	                    state("manipulating", () => {
+	                        state("manipulating.none", () => {
+	                            update(() => {
+	                                if (!selection)
+	                                    return;
+	                                edgeHit = this.hitTestEdge(mouse, selection.getBoundingBox());
+	                                anchorHit = this.anchorFlower.hitTest(mouse);
+	                                this.paintSelectionEdges();
+	                                if (!anchorHit)
+	                                    this.setHoverCursor(edgeHit);
+	                            });
+	                            event(Evt_MouseDown, (mouse) => {
+	                                if (input.isMouseButtonDown(e_mouse_state_1.MouseButtonState.Right)) {
+	                                    return trigger(Evt_StartPanning, null);
+	                                }
+	                                if (anchorHit) {
+	                                    return trigger(Evt_DragAnchor, anchorHit);
+	                                }
+	                                if (edgeHit === SelectionEdge.Center) {
+	                                    return trigger(Evt_MouseDownOverSelection, edgeHit);
+	                                }
+	                                if (edgeHit !== SelectionEdge.None) {
+	                                    return trigger(Evt_MouseDownOverSelectionEdge, edgeHit);
+	                                }
+	                                trigger(Evt_MouseDownOutsideSelection, null);
+	                            });
+	                            transition(Evt_StartPanning, "panning");
+	                            transition(Evt_MouseDownOverSelection, "translating");
+	                            transition(Evt_MouseDownOverSelectionEdge, "resizing");
+	                            transition(Evt_DragAnchor, "drag-anchors");
+	                        });
+	                        state("panning", () => {
+	                            update(() => {
+	                                const position = app_element_1.AppElement.Root.getPosition(vector2_1.Vector2.scratch0);
+	                                app_element_1.AppElement.Root.setPosition(position.addVector(input.getMouseDelta(vector2_1.Vector2.scratch1)));
+	                            });
+	                            transition(Evt_MouseUp, "manipulating.none");
+	                        });
+	                        state("translating", () => {
+	                            update(() => {
+	                                const selection = EditorRuntime.getSelection();
+	                                const delta = input.getMouseDelta(vector2_1.Vector2.scratch2);
+	                                const position = selection.getPosition(vector2_1.Vector2.scratch0);
+	                                position.addVector(delta);
+	                                selection.setPositionValues(position.x, position.y, app_element_1.Space.World);
+	                                this.paintSelectionEdges();
+	                            });
+	                            transition(Evt_MouseUp, "manipulating.none");
+	                        });
+	                        state("manipulating-rotating", () => { });
+	                        state("resizing", () => {
+	                            enter(() => {
+	                                this.setHoverCursor(edgeHit);
+	                            });
+	                            update(() => {
+	                                const delta = input.getMouseDelta(vector2_1.Vector2.scratch2);
+	                                this.updateDragSide(edgeHit, delta, selection);
+	                                this.paintSelectionEdges();
+	                            });
+	                            exit(() => {
+	                                this.setHoverCursor(SelectionEdge.None);
+	                            });
+	                            transition(Evt_MouseUp, "manipulating.none");
+	                        });
+	                        state("drag-anchors", () => {
+	                            enter(() => {
+	                                this.anchorFlower.startDrag();
+	                            });
+	                            exit(() => {
+	                                this.anchorFlower.endDrag();
+	                            });
+	                            transition(Evt_MouseUp, "manipulating.none");
+	                        });
+	                        state("manipulating-tethers", () => { });
+	                    });
+	                });
+	                transition(Evt_SelectionCleared, "selection.none");
+	            });
+	        });
 	    }
 	}
 	exports.StageForeground = StageForeground;
+	var SelectionEdge;
+	(function (SelectionEdge) {
+	    SelectionEdge[SelectionEdge["None"] = 1] = "None";
+	    SelectionEdge[SelectionEdge["Center"] = 2] = "Center";
+	    SelectionEdge[SelectionEdge["Top"] = 4] = "Top";
+	    SelectionEdge[SelectionEdge["Left"] = 8] = "Left";
+	    SelectionEdge[SelectionEdge["Right"] = 16] = "Right";
+	    SelectionEdge[SelectionEdge["Bottom"] = 32] = "Bottom";
+	    SelectionEdge[SelectionEdge["TopRight"] = 20] = "TopRight";
+	    SelectionEdge[SelectionEdge["TopLeft"] = 12] = "TopLeft";
+	    SelectionEdge[SelectionEdge["BottomRight"] = 48] = "BottomRight";
+	    SelectionEdge[SelectionEdge["BottomLeft"] = 40] = "BottomLeft";
+	})(SelectionEdge || (SelectionEdge = {}));
 
 
 /***/ },
-/* 127 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const scene_tool_1 = __webpack_require__(128);
+	const scene_tool_1 = __webpack_require__(130);
 	const util_1 = __webpack_require__(16);
-	const app_element_1 = __webpack_require__(28);
+	const app_element_1 = __webpack_require__(29);
+	const layout_1 = __webpack_require__(104);
 	var DragSide;
 	(function (DragSide) {
 	    DragSide[DragSide["None"] = 0] = "None";
@@ -11289,7 +11928,7 @@
 	                return;
 	            }
 	            else if (input.isMouseDown()) {
-	                if (this.draggedSide !== DragSide.None) {
+	                if (this.draggedSide !== DragSide.None && selection.getComponent(layout_1.LayoutComponent)) {
 	                    this.updateDragSide(input.getMouseDelta(), selection);
 	                }
 	                else if (this.panning) {
@@ -11300,7 +11939,7 @@
 	                this.draggedSide = DragSide.None;
 	                this.panning = false;
 	            }
-	            if (this.draggedSide === DragSide.None) {
+	            if (this.draggedSide === DragSide.None && selection.getComponent(layout_1.LayoutComponent)) {
 	                this.setHoverCursor(SceneRectTool.hitTestDragSide(mouse, rect));
 	            }
 	        }
@@ -11368,23 +12007,23 @@
 	        return DragSide.None;
 	    }
 	    updateDragSide(delta, appElement) {
-	        //const p = appElement.getPosition();
+	        const p = appElement.getPosition();
 	        let width = appElement.getWidth();
 	        let height = appElement.getHeight();
 	        switch (this.draggedSide) {
 	            case DragSide.TopRight:
-	                //   p.y += delta.y;
+	                p.y += delta.y;
 	                width += delta.x;
 	                height -= delta.y;
 	                break;
 	            case DragSide.TopLeft:
-	                // p.x += delta.x;
-	                // p.y += delta.y;
+	                p.x += delta.x;
+	                p.y += delta.y;
 	                width -= delta.x;
 	                height -= delta.y;
 	                break;
 	            case DragSide.BottomLeft:
-	                //    p.x += delta.x;
+	                p.x += delta.x;
 	                width -= delta.x;
 	                height += delta.y;
 	                break;
@@ -11393,11 +12032,11 @@
 	                height += delta.y;
 	                break;
 	            case DragSide.Top:
-	                //  p.y += delta.y;
+	                p.y += delta.y;
 	                height -= delta.y;
 	                break;
 	            case DragSide.Left:
-	                //  p.x += delta.x;
+	                p.x += delta.x;
 	                width -= delta.x;
 	                break;
 	            case DragSide.Right:
@@ -11407,15 +12046,8 @@
 	                height += delta.y;
 	                break;
 	            case DragSide.Center:
-	                //p.x += delta.x;
-	                //p.y += delta.y;
-	                var p = appElement.getPosition();
-	                // p.addInPlace(delta);
 	                p.x += delta.x;
 	                p.y += delta.y;
-	                // p = appElement.worldToLocal(p.addVectorNew(delta));
-	                appElement.setPosition(p, app_element_1.Space.World);
-	                //appElement.setPosition(p.addVectorNew(delta), Space.World);
 	                break;
 	        }
 	        if (width < 1)
@@ -11423,20 +12055,20 @@
 	        if (height < 1)
 	            height = 1;
 	        if (height === 1 && delta.y > 0) {
-	            //   p.y -= delta.y;
+	            p.y -= delta.y;
 	        }
 	        if (width === 1 && delta.x > 0) {
-	            //   p.x -= delta.x;
+	            p.x -= delta.x;
 	        }
-	        //appElement.setPositionValues(p.x, p.y);
-	        appElement.setDimensions(width, height);
+	        appElement.setPositionValues(p.x, p.y, app_element_1.Space.World, true);
+	        appElement.setDimensions(width, height, layout_1.LengthUnit.Pixel);
 	    }
 	}
 	exports.SceneRectTool = SceneRectTool;
 
 
 /***/ },
-/* 128 */
+/* 130 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -11454,358 +12086,13 @@
 
 
 /***/ },
-/* 129 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	class StateChartEventHandler {
-	    constructor(type, target, guardFn) {
-	        this.type = type;
-	        this.target = target;
-	        this.guardFn = guardFn || StateChartEventHandler.NoOpGuard;
-	    }
-	    static NoOpGuard() { return true; }
-	}
-	class StateChartState {
-	    constructor(id, parent, behavior) {
-	        this.id = id;
-	        this.parent = parent;
-	        this.behavior = behavior;
-	        this.isActive = false;
-	        this.states = [];
-	        this.events = [];
-	    }
-	    handleEvent(evt) {
-	        const handledEvent = this.events.find((handler) => {
-	            return handler.type === evt.constructor;
-	        });
-	        if (handledEvent && handledEvent.guardFn(evt)) {
-	            return { targetId: handledEvent.target, from: this };
-	        }
-	        for (let i = 0; i < this.states.length; i++) {
-	            if (this.states[i].isActive) {
-	                const retn = this.states[i].handleEvent(evt);
-	                if (retn)
-	                    return retn;
-	            }
-	        }
-	        return null;
-	    }
-	    enter(enterPath) {
-	        if (this.isActive)
-	            return;
-	        this.isActive = true;
-	        if (this.behavior) {
-	            this.behavior.enter();
-	        }
-	        if (enterPath && enterPath.length > 0) {
-	            const child = enterPath.pop();
-	            if (child.parent !== this) {
-	                throw new Error("Invalid StateChart enter path");
-	            }
-	            else {
-	                child.enter(enterPath);
-	            }
-	        }
-	        else if (this.states.length > 0) {
-	            this.states[0].enter();
-	        }
-	    }
-	    update() {
-	        this.behavior && this.behavior.update();
-	        for (let i = 0; i < this.states.length; i++) {
-	            if (this.states[i].isActive) {
-	                this.states[i].update();
-	            }
-	        }
-	    }
-	    exit() {
-	        if (!this.isActive)
-	            return;
-	        this.isActive = false;
-	        if (this.behavior) {
-	            this.behavior.exit();
-	        }
-	        this.exitChildren();
-	    }
-	    exitChildren() {
-	        for (let i = 0; i < this.states.length; i++) {
-	            if (this.states[i].isActive) {
-	                this.states[i].exit();
-	            }
-	        }
-	    }
-	}
-	class StateChartParallelState extends StateChartState {
-	    enter(enterPath) {
-	        if (this.isActive)
-	            return;
-	        this.isActive = true;
-	        if (this.behavior) {
-	            this.behavior.enter();
-	        }
-	        enterPath && enterPath.pop();
-	        for (let i = 0; i < this.states.length; i++) {
-	            this.states[i].enter(enterPath);
-	        }
-	    }
-	    update() {
-	        this.behavior && this.behavior.update();
-	        for (let i = 0; i < this.states.length; i++) {
-	            this.states[i].update();
-	        }
-	    }
-	    exit() {
-	        if (!this.isActive)
-	            return;
-	        this.isActive = false;
-	        if (this.behavior)
-	            this.behavior.exit();
-	        for (let i = 0; i < this.states.length; i++) {
-	            this.states[i].exit();
-	        }
-	    }
-	}
-	class StateChartEvent {
-	    static create() {
-	        return null;
-	    }
-	}
-	exports.StateChartEvent = StateChartEvent;
-	class GenericStateChartEvent extends StateChartEvent {
-	}
-	exports.GenericStateChartEvent = GenericStateChartEvent;
-	class StateChartBehavior {
-	    enter() { }
-	    update() { }
-	    exit() { }
-	}
-	exports.StateChartBehavior = StateChartBehavior;
-	//compiler seems to be broken w/ how 'protected' works, so to hide internal properties
-	//i've duplicated some functionality :(
-	class StateChart {
-	    constructor(definition) {
-	        this.isActive = true;
-	        this.stateDef = this.getStateFn();
-	        this.eventDef = this.event.bind(this);
-	        this.stateMap = new Map();
-	        this.states = [];
-	        this.events = [];
-	        this.stateStack = [];
-	        this.eventQueue0 = [];
-	        this.eventQueue1 = [];
-	        this.eventQueue = this.eventQueue0;
-	        this.stateStack.push(this);
-	        definition.call(this, this.stateDef, this.eventDef);
-	        this.stateStack.pop();
-	        this.stateStack = null;
-	        if (this.states[0]) {
-	            this.states[0].enter();
-	        }
-	    }
-	    update() {
-	        //process an event queue tick
-	        const currentQueue = this.eventQueue;
-	        //swap event queues
-	        this.eventQueue = this.eventQueue === this.eventQueue0 ? this.eventQueue1 : this.eventQueue0;
-	        //do all transitions but queue all events till next frame
-	        while (currentQueue.length) {
-	            this.handleEvent(currentQueue.shift());
-	        }
-	        this.getActiveState().update();
-	    }
-	    isInState(id) {
-	        const state = this.stateMap.get(id);
-	        return state && state.isActive;
-	    }
-	    trigger(event) {
-	        if (this.stateStack)
-	            throw new Error("StateChart hasn't entered yet, invalid call to trigger()");
-	        this.eventQueue.push(event);
-	    }
-	    getConfiguration() {
-	        const config = new Array();
-	        const leaves = new Array();
-	        this.stateMap.forEach((state) => {
-	            if (state.isActive && state.states.length === 0) {
-	                leaves.push(state);
-	            }
-	        });
-	        for (let i = 0; i < leaves.length; i++) {
-	            const leaf = leaves[i];
-	            const branchConfig = new Array();
-	            let ptr = leaf;
-	            while (ptr !== this) {
-	                branchConfig.push(ptr.id);
-	                ptr = ptr.parent;
-	            }
-	            config.push(branchConfig.reverse());
-	        }
-	        return config;
-	    }
-	    handleEvent(evt) {
-	        const handledEvent = this.events.find((handler) => {
-	            return handler.type === evt.constructor;
-	        });
-	        if (handledEvent && handledEvent.guardFn(evt)) {
-	            this.goTo(handledEvent.target, this);
-	            return;
-	        }
-	        for (let i = 0; i < this.states.length; i++) {
-	            if (this.states[i].isActive) {
-	                const retn = this.states[i].handleEvent(evt);
-	                if (retn) {
-	                    this.goTo(retn.targetId, retn.from);
-	                    return;
-	                }
-	            }
-	        }
-	    }
-	    exitChildren() {
-	        for (let i = 0; i < this.states.length; i++) {
-	            if (this.states[i].isActive) {
-	                this.states[i].exit();
-	            }
-	        }
-	    }
-	    getStateFn() {
-	        const fn = this.state.bind(this);
-	        fn.parallel = this.parallel.bind(this);
-	        return fn;
-	    }
-	    goTo(targetId, from) {
-	        let ptr = this.stateMap.get(targetId);
-	        if (!ptr) {
-	            throw new Error("Invalid state: " + targetId);
-	        }
-	        if (ptr === from)
-	            return;
-	        let enterPath = [];
-	        //find highest parent of target that is active
-	        while (!ptr.isActive) {
-	            enterPath.unshift(ptr);
-	            ptr = ptr.parent;
-	        }
-	        ptr.exitChildren();
-	        enterPath.shift().enter(enterPath);
-	    }
-	    event(eventType, targetStateId, guardFunction) {
-	        if (!this.stateStack)
-	            throw new Error("StateChart has already entered, cannot call 'event()'");
-	        this.stateStack.getLast().events.push(new StateChartEventHandler(eventType, targetStateId, guardFunction));
-	    }
-	    state(id, behaviorOrDefinition, definition) {
-	        if (arguments.length === 1) {
-	            this.createState(id, null, null, false);
-	        }
-	        else if (arguments.length === 2) {
-	            this.createState(id, behaviorOrDefinition, null, false);
-	        }
-	        else if (arguments.length === 3) {
-	            this.createState(id, definition, behaviorOrDefinition, false);
-	        }
-	    }
-	    parallel(id, behaviorOrDefinition, definition) {
-	        if (arguments.length === 2) {
-	            this.createState(id, behaviorOrDefinition, null, true);
-	        }
-	        else if (arguments.length === 3) {
-	            this.createState(id, definition, behaviorOrDefinition, true);
-	        }
-	    }
-	    createState(id, definition, behavior, isParallel = false) {
-	        if (!this.stateStack)
-	            throw new Error("StateChart has already entered, cannot call 'parallel()'");
-	        if (this.stateMap.get(id)) {
-	            throw new Error("States within a StateChart cannot have duplicate ids, '" + id + "' was already registered");
-	        }
-	        const parentState = this.stateStack.getLast();
-	        const Type = (isParallel) ? StateChartParallelState : StateChartState;
-	        const state = new Type(id, parentState, behavior);
-	        parentState.states.push(state);
-	        this.stateMap.set(id, state);
-	        if (typeof definition === "function") {
-	            this.stateStack.push(state);
-	            definition.call(this, this.stateDef, this.eventDef);
-	            this.stateStack.pop();
-	        }
-	        if (state.behavior) {
-	            state.behavior.chart = this;
-	        }
-	    }
-	    getActiveState() {
-	        return this.states.find(function (state) {
-	            return state.isActive;
-	        });
-	    }
-	}
-	exports.StateChart = StateChart;
-	// class TypedEvent<T> {
-	//     data : T;
-	// }
-	//
-	// class StateChartBuilder {
-	//
-	//     public init() {
-	//
-	//     }
-	//
-	//     public enter(fn : () => void) {
-	//
-	//     }
-	//
-	//     public exit() {
-	//
-	//     }
-	//
-	//     public update() {
-	//
-	//     }
-	//
-	//     public state()  {}
-	//
-	//     public event<T>(evtType : TypedEvent<T>, target : string, guard? : (data? : T) => boolean) {
-	//
-	//     }
-	//
-	//     public trigger<T>(evt : TypedEvent<T>, data? : T) {
-	//
-	//     }
-	//
-	//     public toDSL() {
-	//
-	//     }
-	//
-	//     public createEvent<T>() : TypedEvent<T> {
-	//         return new TypedEvent<T>();
-	//     }
-	//
-	//     //x = event.create<T, u, v>();
-	//     //x = event.create<string, number, string>
-	//     //x = event.create<DataType>();
-	//     //trigger(x, T;
-	//     //new Event(data);
-	//
-	// }
-	//
-	// var b = new StateChartBuilder();
-	// var z = b.createEvent<{s : string, y: number}>();
-	// b.trigger(z, {s: "", y: 1});
-	//
-	// const Evt_MouseUp = b.createEvent<Vector2>();
-	//
-	// b.event(Evt_MouseUp, "stateName");
-
-
-/***/ },
-/* 130 */
+/* 131 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const button_1 = __webpack_require__(64);
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	class Toolbar extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return {
@@ -11846,16 +12133,114 @@
 
 
 /***/ },
-/* 131 */
-/***/ function(module, exports) {
-
-	
-
-/***/ },
 /* 132 */
 /***/ function(module, exports) {
 
-	
+	// import {ComponentRenderer, renderer} from "./component_renderer";
+	// import {SizingComponent, SizingMode} from "../../runtime/components/layout/sizing_component";
+	// import {InspectorRow} from "../../ui_elements/inspector/inspector_row";
+	// import {NumberInput} from "../../ui_elements/number_input";
+	// import {EditorElement} from "../../editor_element/editor_element";
+	//
+	// @renderer(SizingComponent)
+	// class SizingRenderer extends ComponentRenderer<SizingComponent> {
+	//
+	//     public createInitialStructure(children : any) : JSXElement {
+	//
+	//         const structure = [
+	//             this.getRenderer("sizingMode", {
+	//                 onValueChanged: () => {
+	//                     this.onModeChanged();
+	//                 }
+	//             }),
+	//             this.getBody()
+	//         ];
+	//         return [
+	//             this.createStandardHeaderStructure(),
+	//             this.createStandardBodyStructure(structure)
+	//         ]
+	//     }
+	//
+	//     private onModeChanged() : void {
+	//         const childRoot = this.getChildRoot();
+	//         const length = childRoot.children.length;
+	//         //destroy all but first child
+	//         for(let i = 1; i < length; i++) {
+	//             childRoot.children[1].destroy();
+	//         }
+	//         const elements = this.getBody();
+	//         for(let i = 0; i < elements.length; i++) {
+	//             childRoot.addChild(elements[i] as EditorElement);
+	//         }
+	//     }
+	//
+	//     public onWidthChanged(newValue : number, oldValue : number) : void {
+	//         console.log("Changed width");
+	//     }
+	//
+	//     public onHeightChanged(newValue : number, oldValue : number) : void {
+	//         console.log("Changed height");
+	//     }
+	//
+	//     private getAnchorBody() : JSXElement[] {
+	//         return [];
+	//     }
+	//
+	//     private getPercentBody() : JSXElement[] {
+	//         return [];
+	//     }
+	//
+	//     private getFixedBody() : JSXElement[] {
+	//         const widthChanged = (newValue : number, oldValue : number) => {
+	//             this.onWidthChanged(newValue, oldValue);
+	//         };
+	//         const heightChanged = (newValue : number, oldValue : number) => {
+	//             this.onHeightChanged(newValue, oldValue);
+	//         };
+	//         return [
+	//             <InspectorRow label="Width">
+	//                 <NumberInput value={this.component.width}/>
+	//             </InspectorRow>,
+	//             <InspectorRow label="Height">
+	//                 <NumberInput value={this.component.height}/>
+	//             </InspectorRow>
+	//         ]
+	//     }
+	//
+	//     private getFractionBody() : JSXElement[] {
+	//         const widthChanged = (newValue : number, oldValue : number) => {
+	//             this.onWidthChanged(newValue, oldValue);
+	//         };
+	//         const heightChanged = (newValue : number, oldValue : number) => {
+	//             this.onHeightChanged(newValue, oldValue);
+	//         };
+	//         return [
+	//             <InspectorRow label="Width">
+	//                 <NumberInput  value={this.component.width}/>
+	//             </InspectorRow>,
+	//             <InspectorRow label="Height">
+	//                 <NumberInput  value={this.component.height}/>
+	//             </InspectorRow>
+	//         ]
+	//     }
+	//
+	//
+	//     private getBody() : JSXElement[] {
+	//         switch (this.component.sizingMode) {
+	//             case SizingMode.Anchor:
+	//                 return this.getAnchorBody();
+	//             case SizingMode.Fixed:
+	//                 return this.getFixedBody();
+	//             case SizingMode.Fraction:
+	//                 return this.getFractionBody();
+	//             case SizingMode.Percent:
+	//                 return this.getPercentBody();
+	//             default:
+	//                 break;
+	//         }
+	//     }
+	// } 
+
 
 /***/ },
 /* 133 */
@@ -11864,110 +12249,12 @@
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const component_renderer_1 = __webpack_require__(96);
-	const sizing_component_1 = __webpack_require__(75);
-	const inspector_row_1 = __webpack_require__(92);
-	const number_input_1 = __webpack_require__(102);
-	let SizingRenderer = class SizingRenderer extends component_renderer_1.ComponentRenderer {
-	    createInitialStructure(children) {
-	        const structure = [
-	            this.getRenderer("sizingMode", {
-	                onValueChanged: () => {
-	                    this.onModeChanged();
-	                }
-	            }),
-	            this.getBody()
-	        ];
-	        return [
-	            this.createStandardHeaderStructure(),
-	            this.createStandardBodyStructure(structure)
-	        ];
-	    }
-	    onModeChanged() {
-	        const childRoot = this.getChildRoot();
-	        const length = childRoot.children.length;
-	        //destroy all but first child
-	        for (let i = 1; i < length; i++) {
-	            childRoot.children[1].destroy();
-	        }
-	        const elements = this.getBody();
-	        for (let i = 0; i < elements.length; i++) {
-	            childRoot.addChild(elements[i]);
-	        }
-	    }
-	    onWidthChanged(newValue, oldValue) {
-	        console.log("Changed width");
-	    }
-	    onHeightChanged(newValue, oldValue) {
-	        console.log("Changed height");
-	    }
-	    getAnchorBody() {
-	        return [];
-	    }
-	    getPercentBody() {
-	        return [];
-	    }
-	    getFixedBody() {
-	        const widthChanged = (newValue, oldValue) => {
-	            this.onWidthChanged(newValue, oldValue);
-	        };
-	        const heightChanged = (newValue, oldValue) => {
-	            this.onHeightChanged(newValue, oldValue);
-	        };
-	        return [
-	            Hex.createElement(inspector_row_1.InspectorRow, { label: "Width" },
-	                Hex.createElement(number_input_1.NumberInput, { value: this.component.width })),
-	            Hex.createElement(inspector_row_1.InspectorRow, { label: "Height" },
-	                Hex.createElement(number_input_1.NumberInput, { value: this.component.height }))
-	        ];
-	    }
-	    getFractionBody() {
-	        const widthChanged = (newValue, oldValue) => {
-	            this.onWidthChanged(newValue, oldValue);
-	        };
-	        const heightChanged = (newValue, oldValue) => {
-	            this.onHeightChanged(newValue, oldValue);
-	        };
-	        return [
-	            Hex.createElement(inspector_row_1.InspectorRow, { label: "Width" },
-	                Hex.createElement(number_input_1.NumberInput, { value: this.component.width })),
-	            Hex.createElement(inspector_row_1.InspectorRow, { label: "Height" },
-	                Hex.createElement(number_input_1.NumberInput, { value: this.component.height }))
-	        ];
-	    }
-	    getBody() {
-	        switch (this.component.sizingMode) {
-	            case sizing_component_1.SizingMode.Anchor:
-	                return this.getAnchorBody();
-	            case sizing_component_1.SizingMode.Fixed:
-	                return this.getFixedBody();
-	            case sizing_component_1.SizingMode.Fraction:
-	                return this.getFractionBody();
-	            case sizing_component_1.SizingMode.Percent:
-	                return this.getPercentBody();
-	            default:
-	                break;
-	        }
-	    }
-	};
-	SizingRenderer = tslib_1.__decorate([
-	    component_renderer_1.renderer(sizing_component_1.SizingComponent)
-	], SizingRenderer);
-
-
-/***/ },
-/* 134 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(4);
-	const component_renderer_1 = __webpack_require__(96);
-	const text_component_1 = __webpack_require__(78);
-	const inspector_row_1 = __webpack_require__(92);
-	const text_input_1 = __webpack_require__(90);
+	const component_renderer_1 = __webpack_require__(94);
+	const text_component_1 = __webpack_require__(76);
+	const inspector_row_1 = __webpack_require__(90);
+	const text_input_1 = __webpack_require__(88);
 	const binding_1 = __webpack_require__(13);
-	const number_input_1 = __webpack_require__(102);
+	const number_input_1 = __webpack_require__(100);
 	let TextComponentRenderer = class TextComponentRenderer extends component_renderer_1.ComponentRenderer {
 	    onCreated() {
 	        this.proxy = {
@@ -12015,16 +12302,16 @@
 
 
 /***/ },
-/* 135 */
+/* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const property_drawer_1 = __webpack_require__(136);
-	const property_renderer_1 = __webpack_require__(97);
-	const inspector_row_1 = __webpack_require__(92);
-	const checkbox_input_1 = __webpack_require__(99);
+	const property_drawer_1 = __webpack_require__(135);
+	const property_renderer_1 = __webpack_require__(95);
+	const inspector_row_1 = __webpack_require__(90);
+	const checkbox_input_1 = __webpack_require__(97);
 	const binding_1 = __webpack_require__(13);
 	let BooleanRenderer = class BooleanRenderer extends property_renderer_1.PropertyRenderer {
 	    createInitialStructure(children) {
@@ -12042,12 +12329,12 @@
 
 
 /***/ },
-/* 136 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const property_renderer_1 = __webpack_require__(97);
+	const property_renderer_1 = __webpack_require__(95);
 	function propertyDrawer(typeToDraw) {
 	    return function (target) {
 	        property_renderer_1.PropertyRenderer.set(typeToDraw, target);
@@ -12057,18 +12344,18 @@
 
 
 /***/ },
-/* 137 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const property_renderer_1 = __webpack_require__(97);
+	const property_renderer_1 = __webpack_require__(95);
 	const color_1 = __webpack_require__(53);
-	const inspector_row_1 = __webpack_require__(92);
-	const inline_field_1 = __webpack_require__(138);
-	const number_input_1 = __webpack_require__(102);
-	const property_drawer_1 = __webpack_require__(136);
+	const inspector_row_1 = __webpack_require__(90);
+	const inline_field_1 = __webpack_require__(137);
+	const number_input_1 = __webpack_require__(100);
+	const property_drawer_1 = __webpack_require__(135);
 	const binding_1 = __webpack_require__(13);
 	const button_1 = __webpack_require__(64);
 	const util_1 = __webpack_require__(16);
@@ -12110,12 +12397,12 @@
 
 
 /***/ },
-/* 138 */
+/* 137 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const horizontal_1 = __webpack_require__(98);
+	const horizontal_1 = __webpack_require__(96);
 	class InlineField extends horizontal_1.HorizontalBase {
 	    createInitialStructure(children) {
 	        return [
@@ -12136,17 +12423,17 @@
 
 
 /***/ },
-/* 139 */
+/* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const property_drawer_1 = __webpack_require__(136);
-	const property_renderer_1 = __webpack_require__(97);
+	const property_drawer_1 = __webpack_require__(135);
+	const property_renderer_1 = __webpack_require__(95);
 	const util_1 = __webpack_require__(16);
-	const number_input_1 = __webpack_require__(102);
-	const inspector_row_1 = __webpack_require__(92);
+	const number_input_1 = __webpack_require__(100);
+	const inspector_row_1 = __webpack_require__(90);
 	const binding_1 = __webpack_require__(13);
 	let NumberRenderer = class NumberRenderer extends property_renderer_1.PropertyRenderer {
 	    createInitialStructure() {
@@ -12171,17 +12458,17 @@
 
 
 /***/ },
-/* 140 */
+/* 139 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const property_renderer_1 = __webpack_require__(97);
-	const property_drawer_1 = __webpack_require__(136);
+	const property_renderer_1 = __webpack_require__(95);
+	const property_drawer_1 = __webpack_require__(135);
 	const util_1 = __webpack_require__(16);
-	const inspector_row_1 = __webpack_require__(92);
-	const select_input_1 = __webpack_require__(141);
+	const inspector_row_1 = __webpack_require__(90);
+	const select_input_1 = __webpack_require__(140);
 	const binding_1 = __webpack_require__(13);
 	let EnumSelectRenderer = class EnumSelectRenderer extends property_renderer_1.PropertyRenderer {
 	    createOptions(e) {
@@ -12234,12 +12521,12 @@
 
 
 /***/ },
-/* 141 */
+/* 140 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_input_1 = __webpack_require__(91);
+	const editor_input_1 = __webpack_require__(89);
 	class SelectInput extends editor_input_1.InputRenderer {
 	    getDomData() {
 	        return { tagName: "select" };
@@ -12270,16 +12557,16 @@
 
 
 /***/ },
-/* 142 */
+/* 141 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const property_drawer_1 = __webpack_require__(136);
-	const property_renderer_1 = __webpack_require__(97);
-	const inspector_row_1 = __webpack_require__(92);
-	const text_input_1 = __webpack_require__(90);
+	const property_drawer_1 = __webpack_require__(135);
+	const property_renderer_1 = __webpack_require__(95);
+	const inspector_row_1 = __webpack_require__(90);
+	const text_input_1 = __webpack_require__(88);
 	let StringRenderer = class StringRenderer extends property_renderer_1.PropertyRenderer {
 	    onChange() {
 	        // if(this.attrs.editorData.onValueChanged) {
@@ -12304,7 +12591,7 @@
 
 
 /***/ },
-/* 143 */
+/* 142 */
 /***/ function(module, exports) {
 
 	// import {getSetter, getGetter} from "../editor_ui_attrs/binding_compiler";
@@ -12469,12 +12756,12 @@
 
 
 /***/ },
-/* 144 */
+/* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	class InspectorBody extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "vertical" };
@@ -12484,14 +12771,14 @@
 
 
 /***/ },
-/* 145 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const icon_1 = __webpack_require__(66);
-	const inspector_body_1 = __webpack_require__(144);
-	const editor_html_element_1 = __webpack_require__(18);
+	const inspector_body_1 = __webpack_require__(143);
+	const editor_html_element_1 = __webpack_require__(19);
 	class InspectorHeader extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "horizontal" };
@@ -12507,7 +12794,7 @@
 
 
 /***/ },
-/* 146 */
+/* 145 */
 /***/ function(module, exports) {
 
 	// import {EditorHTMLElement} from "../editor_element/editor_html_element";
@@ -12538,7 +12825,7 @@
 
 
 /***/ },
-/* 147 */
+/* 146 */
 /***/ function(module, exports) {
 
 	// import {FontIcon, ToggleIcon} from "./icon";
@@ -12579,15 +12866,15 @@
 
 
 /***/ },
-/* 148 */
+/* 147 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const editor_html_element_1 = __webpack_require__(18);
+	const editor_html_element_1 = __webpack_require__(19);
 	const drag_action_1 = __webpack_require__(44);
-	const drag_asset_item_action_1 = __webpack_require__(149);
+	const drag_asset_item_action_1 = __webpack_require__(148);
 	class AssetDropTargetInsert extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "div", classList: "asset-drop-target-insert" };
@@ -12622,7 +12909,7 @@
 
 
 /***/ },
-/* 149 */
+/* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -12638,7 +12925,7 @@
 
 
 /***/ },
-/* 150 */
+/* 149 */
 /***/ function(module, exports) {
 
 	// import {WindowColors} from "../editor/editor_theme";
@@ -12986,7 +13273,7 @@
 
 
 /***/ },
-/* 151 */
+/* 150 */
 /***/ function(module, exports) {
 
 	class Stuff {
@@ -12994,7 +13281,7 @@
 
 
 /***/ },
-/* 152 */
+/* 151 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13005,7 +13292,7 @@
 
 
 /***/ },
-/* 153 */
+/* 152 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13016,7 +13303,7 @@
 
 
 /***/ },
-/* 154 */
+/* 153 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13033,66 +13320,12 @@
 
 
 /***/ },
-/* 155 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	function setUpperBits(field, value) {
-	    value = value | 0;
-	    if (value > 0xFFFF)
-	        value = 0xFFFF;
-	    return field;
-	}
-	exports.setUpperBits = setUpperBits;
-	function getBits(value, offset, bitCount) {
-	    return (value >> offset) & (1 << bitCount) - 1;
-	}
-	exports.getBits = getBits;
-	//todo -- untested
-	function getMask(start, end) {
-	    return (~0 >> (32 - start - 1)) & (~0 << (32 - end));
-	}
-	function set1stByte(target, value) {
-	    return (target & 0xffffff00) | (value & 0x000000ff);
-	}
-	exports.set1stByte = set1stByte;
-	function setBytes(target, value, byteCount, offset) {
-	    // int x = (number >> (8*n)) & 0xff;
-	    return (target & 0xff000000) | (value & 0x00ffffff);
-	}
-	exports.setBytes = setBytes;
-	function getNthByte(value, byteNumber) {
-	    return (value >> (8 * byteNumber)) & 0xff;
-	}
-	exports.getNthByte = getNthByte;
-	//todo -- untested
-	function setBits(target, value, offset, bitCount) {
-	    var mask = getMask(0, bitCount);
-	    return (target & ~mask) | (value & mask);
-	}
-	exports.setBits = setBits;
-	function setHighLowBits(high, low) {
-	    return (high << 16) | (low & 0xffff);
-	}
-	exports.setHighLowBits = setHighLowBits;
-	function getLow16Bits(value) {
-	    return value & 0xFFFF;
-	}
-	exports.getLow16Bits = getLow16Bits;
-	function getHigh16Bits(value) {
-	    return (value >> 16) & (1 << 16) - 1;
-	}
-	exports.getHigh16Bits = getHigh16Bits;
-
-
-/***/ },
-/* 156 */
+/* 154 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const e_command_type_1 = __webpack_require__(30);
+	const e_command_type_1 = __webpack_require__(31);
 	function DeserializeComponent(component, element) {
 	    if (component.commands) {
 	        const commands = component.commands;
@@ -13158,6 +13391,8 @@
 	        for (let i = 0; i < components.length; i++) {
 	            DeserializeComponent(components[i], element);
 	        }
+	        element.style.width = (payload.width | 0) + "px";
+	        element.style.height = (payload.height | 0) + "px";
 	        BrowserRuntime.elementIdToDomNode(parentId).appendChild(element);
 	    };
 	})());
@@ -13243,19 +13478,19 @@
 
 
 /***/ },
-/* 157 */
+/* 155 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const e_command_type_1 = __webpack_require__(30);
+	const e_command_type_1 = __webpack_require__(31);
 	BrowserRuntime.setCommandSerializer(e_command_type_1.CommandType.UpdateInput, function () {
 	    return BrowserRuntime.getInput().serialize();
 	});
 
 
 /***/ },
-/* 158 */
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -13268,7 +13503,7 @@
 
 
 /***/ },
-/* 159 */
+/* 157 */
 /***/ function(module, exports) {
 
 	//
@@ -13280,7 +13515,7 @@
 
 
 /***/ },
-/* 160 */
+/* 158 */
 /***/ function(module, exports) {
 
 	// import {createGetter} from "./binding_compiler";
@@ -13315,10 +13550,30 @@
 
 
 /***/ },
-/* 161 */
+/* 159 */
 /***/ function(module, exports) {
 
 	
+
+/***/ },
+/* 160 */
+/***/ function(module, exports) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+
+
+/***/ },
+/* 161 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	Object.defineProperty(exports, "__esModule", { value: true });
+	const e_command_type_1 = __webpack_require__(31);
+	Runtime.setCommandInvoker(e_command_type_1.CommandType.UpdateInput, function (data) {
+	    Runtime.getInput().deserialize(data);
+	});
+
 
 /***/ },
 /* 162 */
@@ -13326,61 +13581,7 @@
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const shape_1 = __webpack_require__(108);
-	class Circle extends shape_1.Shape {
-	    constructor(center, radius, style = null) {
-	        super(style);
-	        this.position.set(center.x, center.y);
-	        this.radius = radius;
-	        this.points.push(this.position);
-	    }
-	    render(gfx) {
-	        if (this.style) {
-	            gfx.lineStyle(this.style.lineWidth, this.style.getLineColor(), this.style.getLineAlpha());
-	            if (this.style.fillColor) {
-	                gfx.beginFill(this.style.getFillColor());
-	                gfx.drawCircle(this.position.x, this.position.y, this.radius);
-	                gfx.endFill();
-	            }
-	        }
-	        else {
-	            gfx.drawCircle(this.position.x, this.position.y, this.radius);
-	        }
-	    }
-	    containsPoint(point) {
-	        return this.position.distanceToSquared(point) < this.radius * this.radius;
-	    }
-	}
-	exports.Circle = Circle;
-
-
-/***/ },
-/* 163 */
-/***/ function(module, exports) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-
-
-/***/ },
-/* 164 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const e_command_type_1 = __webpack_require__(30);
-	Runtime.setCommandInvoker(e_command_type_1.CommandType.UpdateInput, function (data) {
-	    Runtime.getInput().deserialize(data);
-	});
-
-
-/***/ },
-/* 165 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const e_command_type_1 = __webpack_require__(30);
+	const e_command_type_1 = __webpack_require__(31);
 	const ui_component_1 = __webpack_require__(74);
 	const ComponentCache = new Array();
 	Runtime.setCommandSerializer(e_command_type_1.CommandType.Create, function (id) {
@@ -13408,7 +13609,9 @@
 	        id: id,
 	        elementType: elementType,
 	        components: serializedComponents,
-	        parentId: appElement.getParent().id
+	        parentId: appElement.getParent().id,
+	        width: appElement.getWidth(),
+	        height: appElement.getHeight()
 	    };
 	});
 	Runtime.setCommandSerializer(e_command_type_1.CommandType.Destroy, function (data) {
@@ -13446,213 +13649,13 @@
 
 
 /***/ },
-/* 166 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const sizing_component_1 = __webpack_require__(75);
-	class FitContentSizeComponent extends sizing_component_1.SizingComponent {
-	    onCreated() {
-	        this.sizingMode = sizing_component_1.SizingMode.Fixed;
-	        this.width = this.appElement.getWidth();
-	        this.height = this.appElement.getHeight();
-	    }
-	    getPixelWidth(totalWidth, totalHeight) {
-	        return this.appElement.getWidth();
-	    }
-	    getPixelHeight(totalWidth, totalHeight) {
-	        return this.appElement.getHeight();
-	    }
-	}
-	exports.FitContentSizeComponent = FitContentSizeComponent;
-
-
-/***/ },
-/* 167 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(4);
-	const sizing_component_1 = __webpack_require__(75);
-	const layout_1 = __webpack_require__(76);
-	const expose_as_1 = __webpack_require__(54);
-	const component_1 = __webpack_require__(42);
-	const app_element_1 = __webpack_require__(28);
-	let HorizontalStackLayout = class HorizontalStackLayout extends layout_1.LayoutComponent {
-	    constructor() {
-	        super(...arguments);
-	        this.wrap = false;
-	        //I set text
-	        //I ask for height
-	        //block? that sucks
-	        //await this.element.getHeight()
-	        //this.setRect(rect)
-	        // -> do layout async?
-	        //what needs its layout computed?
-	        //only when width / height changes does anything change, position does not, unless set to stretch and child leaves bounds
-	        //const width = sizer.getWidthInPixels();
-	        //static sizing can be in percentages / fractions / or pixels (ignore ems for now)
-	        //defaults to 1 fr
-	        //fr will need a min size of some sort for overflow right?
-	        //static or tethered elements are not part of layout logic, the effectively 'float'
-	        //can have min/max/preferred sizes
-	        //get only non tethered children?
-	        //get only non static children?
-	        //each box has stretch behavior in each direction
-	        //all overflows are hidden outside of scroll elements
-	        // 'fit content' is tricky
-	        //in each dimension
-	        //each element gets the sum of all of it's (non static/non tethered) immediate children
-	        //default behavior is clamp width, stretch height
-	        //lets see how this works --
-	        //for fr sizes when the container scrolls
-	        //option 1: size them as though they get a proportional fraction of space left after percent + fixed
-	        //option 2: size them as though the total fractional space is equal to percent + fixed
-	        //option 3: require explicit min sizing with fr (bad)
-	        //option 4: add setting on container around how to handle fr, using option 1 or 2, or by including a fixed fr value
-	        //onLayoutRectChanged
-	        //parent -> Stretch Fit Children
-	        //parent -> Fixed
-	        //child -> Fill Parent
-	        //setTextAsync("Text")
-	        //-> Queues a text update
-	        //-> Does NOT update the rect value
-	        //-> Next Frame Rect is updated
-	        //-> getRect() still refers to original
-	        //await setTextAsync("text")
-	        //do stuff here, by now layout has occurred
-	        //two kinds of layout
-	        //-> top down = parent resize triggers child layout
-	        //-> bottom up = child resize triggers parent layout
-	    }
-	    doLayout() {
-	        //todo -- assuming height stretches to highest child for now, allow other clamp modes later
-	        var remainingSpace = this.appElement.getWidth();
-	        const sizings = new Array(this.sizingComponents.length);
-	        let totalFractions = 0;
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            const sizer = this.sizingComponents[i];
-	            if (sizer) {
-	                switch (sizer.sizingMode) {
-	                    case sizing_component_1.SizingMode.Percent:
-	                        const percentageValue = sizer.width * 0.01;
-	                        sizings[i] = (percentageValue * this.appElement.getWidth()) | 0;
-	                        remainingSpace -= sizings[i];
-	                        break;
-	                    case sizing_component_1.SizingMode.Fraction:
-	                        totalFractions++;
-	                        sizings[i] = sizer.width;
-	                        break;
-	                    case sizing_component_1.SizingMode.Fixed:
-	                        //todo handle fixed-em
-	                        sizings[i] = sizer.width;
-	                        remainingSpace -= sizings[i];
-	                        break;
-	                }
-	            }
-	            else {
-	                sizings[i] = -1;
-	            }
-	        }
-	        if (totalFractions > 0) {
-	            const pieceSize = remainingSpace / totalFractions;
-	            for (let i = 0; i < sizings.length; i++) {
-	                if (this.sizingComponents[i].sizingMode === sizing_component_1.SizingMode.Fraction) {
-	                    sizings[i] = pieceSize * (this.sizingComponents[i].width);
-	                }
-	            }
-	        }
-	        let allocatedSpace = 0;
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            const element = this.sizingComponents[i].appElement;
-	            element.setPositionValues(allocatedSpace, 0, app_element_1.Space.Local);
-	            element.setDimensions(sizings[i], this.appElement.getHeight());
-	            allocatedSpace += sizings[i];
-	        }
-	    }
-	};
-	tslib_1.__decorate([
-	    expose_as_1.exposeAs(Boolean)
-	], HorizontalStackLayout.prototype, "wrap", void 0);
-	HorizontalStackLayout = tslib_1.__decorate([
-	    component_1.component("Layout/HorizontalStack")
-	], HorizontalStackLayout);
-	exports.HorizontalStackLayout = HorizontalStackLayout;
-
-
-/***/ },
-/* 168 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const tslib_1 = __webpack_require__(4);
-	const sizing_component_1 = __webpack_require__(75);
-	const layout_1 = __webpack_require__(76);
-	const component_1 = __webpack_require__(42);
-	const app_element_1 = __webpack_require__(28);
-	let VerticalStackLayout = class VerticalStackLayout extends layout_1.LayoutComponent {
-	    doLayout() {
-	        var remainingSpace = this.appElement.getHeight();
-	        const sizings = new Array(this.sizingComponents.length);
-	        let totalFractions = 0;
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            const sizer = this.sizingComponents[i];
-	            if (sizer) {
-	                switch (sizer.sizingMode) {
-	                    case sizing_component_1.SizingMode.Percent:
-	                        const percentageValue = sizer.height * 0.01;
-	                        sizings[i] = (percentageValue * this.appElement.getHeight()) | 0;
-	                        remainingSpace -= sizings[i];
-	                        break;
-	                    case sizing_component_1.SizingMode.Fraction:
-	                        totalFractions++;
-	                        sizings[i] = sizer.height;
-	                        break;
-	                    case sizing_component_1.SizingMode.Fixed:
-	                        //todo handle fixed-em
-	                        sizings[i] = sizer.height;
-	                        remainingSpace -= sizings[i];
-	                        break;
-	                }
-	            }
-	            else {
-	                sizings[i] = -1;
-	            }
-	        }
-	        if (totalFractions > 0) {
-	            const pieceSize = remainingSpace / totalFractions;
-	            for (let i = 0; i < sizings.length; i++) {
-	                if (this.sizingComponents[i].sizingMode === sizing_component_1.SizingMode.Fraction) {
-	                    sizings[i] = pieceSize * (this.sizingComponents[i].height);
-	                }
-	            }
-	        }
-	        let allocatedSpace = 0;
-	        for (let i = 0; i < this.sizingComponents.length; i++) {
-	            const element = this.sizingComponents[i].appElement;
-	            element.setPositionValues(0, allocatedSpace, app_element_1.Space.Local);
-	            element.setDimensions(this.appElement.getWidth(), sizings[i]);
-	            allocatedSpace += sizings[i];
-	        }
-	    }
-	};
-	VerticalStackLayout = tslib_1.__decorate([
-	    component_1.component("Layout/VerticalStack")
-	], VerticalStackLayout);
-	exports.VerticalStackLayout = VerticalStackLayout;
-
-
-/***/ },
-/* 169 */
+/* 163 */
 /***/ function(module, exports) {
 
 	
 
 /***/ },
-/* 170 */
+/* 164 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -13660,13 +13663,13 @@
 
 
 /***/ },
-/* 171 */
+/* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const vector2_1 = __webpack_require__(17);
-	const math_util_1 = __webpack_require__(36);
+	const math_util_1 = __webpack_require__(18);
 	/*
 	 * Layout
 	 * [ a  c  tx ]
@@ -14008,7 +14011,7 @@
 
 
 /***/ },
-/* 172 */
+/* 166 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14026,7 +14029,7 @@
 
 
 /***/ },
-/* 173 */
+/* 167 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14165,7 +14168,7 @@
 
 
 /***/ },
-/* 174 */
+/* 168 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -14184,16 +14187,16 @@
 
 
 /***/ },
-/* 175 */
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const tslib_1 = __webpack_require__(4);
-	const app_element_1 = __webpack_require__(28);
+	const app_element_1 = __webpack_require__(29);
 	const component_1 = __webpack_require__(42);
 	const util_1 = __webpack_require__(16);
-	const type_1 = __webpack_require__(174);
+	const type_1 = __webpack_require__(168);
 	let Scene = class Scene {
 	    constructor() {
 	        this.sceneRoots = [];
@@ -14280,12 +14283,12 @@
 
 
 /***/ },
-/* 176 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const scene_tool_1 = __webpack_require__(128);
+	const scene_tool_1 = __webpack_require__(130);
 	class ScenePanTool extends scene_tool_1.SceneTool {
 	    constructor() {
 	        super(...arguments);
@@ -14313,7 +14316,7 @@
 
 
 /***/ },
-/* 177 */
+/* 171 */
 /***/ function(module, exports) {
 
 	//

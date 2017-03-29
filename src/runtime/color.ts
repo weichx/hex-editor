@@ -1,5 +1,5 @@
-
 //color values expected to be 0 - 255
+import {getRandomInt} from "../util";
 export class Color {
 
     public r : number;
@@ -46,6 +46,14 @@ export class Color {
 
     public toHexAString() : string {
         return "#" + this.toHexAlpha().toString(16);
+    }
+
+    public static random() : Color {
+        return new Color(
+            getRandomInt(0, 255),
+            getRandomInt(0, 255),
+            getRandomInt(0, 255)
+        );
     }
 
     public static get Black() : Color { return new Color(0, 0, 0, 255); }

@@ -45,9 +45,8 @@
 /***/ function(module, exports, __webpack_require__) {
 
 	__webpack_require__(1);
-	__webpack_require__(60);
-	__webpack_require__(62);
-	module.exports = __webpack_require__(64);
+	__webpack_require__(58);
+	module.exports = __webpack_require__(59);
 
 
 /***/ },
@@ -59,9 +58,9 @@
 	__webpack_require__(2);
 	const editor_runtime_1 = __webpack_require__(3);
 	const element_renderer_1 = __webpack_require__(7);
-	const editor_binding_element_1 = __webpack_require__(57);
-	const browser_runtime_1 = __webpack_require__(58);
-	const editor_worker_1 = __webpack_require__(59);
+	const editor_binding_element_1 = __webpack_require__(55);
+	const browser_runtime_1 = __webpack_require__(56);
+	const editor_worker_1 = __webpack_require__(57);
 	window.AppRootElementId = 0;
 	window.Runtime = null;
 	window.HexEnvironmentFlag = 0;
@@ -1031,7 +1030,7 @@
 	        this.context = context;
 	        this.getterFn = binding_compiler_1.getGetter(path);
 	        this.setterFn = binding_compiler_1.getSetter(path);
-	        this.value = void 0; //this.getterFn(this.context);
+	        this.value = this.getterFn(this.context);
 	        this.changeHandlers = [];
 	    }
 	    onUpdated() {
@@ -1821,7 +1820,7 @@
 	        return this;
 	    }
 	    clone(out) {
-	        return (out || new Vector2(this.x, this.y)).set(this.x, this.y);
+	        return (out || new Vector2()).set(this.x, this.y);
 	    }
 	    isZero() {
 	        return this.x === 0 && this.y === 0;
@@ -2666,7 +2665,6 @@
 	const vector2_1 = __webpack_require__(17);
 	const vector3_1 = __webpack_require__(33);
 	let idGenerator = 0;
-	const scratchVector = new vector2_1.Vector2();
 	var Space;
 	(function (Space) {
 	    Space[Space["Local"] = 0] = "Local";
@@ -2703,35 +2701,22 @@
 	        this.localMatrix = new matrix_1.Matrix();
 	        this.worldMatrix = new matrix_1.Matrix();
 	        this.boundingBox = new bounding_box_1.BoundingBox(this);
+	        this.anchor = new vector2_1.Vector2();
 	        //todo don't allow components to be constructed outside of addComponent or this constructor
 	        Runtime.addElement(this);
 	    }
-	    //
 	    // public setPivot(x : number, y : number) : void {
 	    //     this.pivot.x = clamp01(x);
 	    //     this.pivot.y = clamp01(y);
 	    // }
-	    //
 	    getPivot() {
 	        const out = new vector2_1.Vector2();
 	        out.x = this.pivot.x;
 	        out.y = this.pivot.y;
 	        return out;
 	    }
-	    worldToLocal(vector, out) {
-	        this.updateWorldMatrix();
-	        //return Vector2.transformCoordinates(vector, this.worldMatrix.invertNew(Matrix3x3.scratch0), out);
-	        return null;
-	    }
-	    localToWorld(vector, out) {
-	        this.updateWorldMatrix();
-	        // return Vector2.transformCoordinates(vector, this.worldMatrix, out);
-	        return null;
-	    }
-	    getWorldMatrix() {
-	        this.updateWorldMatrix();
-	        // return this.worldMatrix.clone(out || new Matrix3x3());
-	        return this.worldMatrix.clone();
+	    getWorldMatrix(out) {
+	        return this.updateWorldMatrix().clone(out);
 	    }
 	    updateWorldMatrix() {
 	        //mat 0 = rotation matrix
@@ -2815,10 +2800,21 @@
 	    getRotation() {
 	        return this.rotation;
 	    }
-	    setRotation(value) {
-	        if (this.rotation === value)
+	    setRotation(value, space = Space.Local) {
+	        if (this.rotation === value && space === Space.Local)
 	            return;
-	        this.rotation = value;
+	        if (space === Space.World) {
+	            let ptr = this.parent;
+	            let worldRot = 0;
+	            while (ptr) {
+	                worldRot += ptr.rotation;
+	                ptr = ptr.parent;
+	            }
+	            this.rotation = -worldRot + value;
+	        }
+	        else {
+	            this.rotation = value;
+	        }
 	        this.dirtyFlags |= ElementDirtyFlag.Rotation;
 	        Runtime.sendCommand(e_command_type_1.CommandType.SetTransform, this.id);
 	    }
@@ -2827,9 +2823,8 @@
 	    }
 	    setPositionValues(x, y, relativeTo = Space.World) {
 	        if (this.parent && relativeTo === Space.World) {
-	            var invertParentWorldMatrix = this.parent.getWorldMatrix().clone();
+	            var invertParentWorldMatrix = this.parent.getWorldMatrix(matrix_1.Matrix.scratch0);
 	            invertParentWorldMatrix.invert();
-	            var worldPosition = new vector2_1.Vector2(x, y);
 	            const scratch = vector3_1.Vector3.scratch0.set(x, y, 0);
 	            vector3_1.Vector3.TransformCoordinates(scratch, invertParentWorldMatrix, scratch);
 	            this.position.x = scratch.x;
@@ -2842,8 +2837,8 @@
 	        this.dirtyFlags |= ElementDirtyFlag.Position;
 	        Runtime.sendCommand(e_command_type_1.CommandType.SetTransform, this.id);
 	    }
-	    getLocalPosition() {
-	        return this.position.clone();
+	    getLocalPosition(out) {
+	        return this.position.clone(out);
 	    }
 	    getPosition(out) {
 	        this.updateWorldMatrix();
@@ -3058,46 +3053,10 @@
 	    isDestroyed() {
 	        return (this.lifeCycleFlags & e_lifecycle_flags_1.LifeCycleFlag.Destroyed) !== 0;
 	    }
-	    /*** Helpers ***/
 	    containsPoint(point) {
 	        return false;
-	        // const p = this.getPosition();
-	        // const x = p.x;
-	        // const y = p.y;
-	        // const w = this.width;
-	        // const h = this.height;
-	        // const px = point.x;
-	        // const py = point.y;
-	        // return px >= x && x + w >= px && py >= y && y + h >= py;
 	    }
 	}
-	//this might be backwards
-	//todo account for rotation
-	// public containsRect(rect : Rectangle) : boolean {
-	//     const p = this.getPosition();
-	//     return rect.x + rect.width < (p.x + this.width)
-	//         && (rect.x) > (p.x)
-	//         && (rect.y) > (p.y)
-	//         && (rect.y + rect.height) < (p.y + this.height);
-	// }
-	//
-	// //todo account for rotation -- probably want to use algorithm of overlapping polygons instead
-	// public overlapsRectangle(rect : Rectangle) : boolean {
-	//     const p = this.getPosition();
-	//     const minAx = p.x;
-	//     const minAy = p.y;
-	//     const maxAx = p.x + this.width;
-	//     const maxAy = p.y + this.height;
-	//     const minBx = rect.x;
-	//     const minBy = rect.y;
-	//     const maxBx = rect.x + rect.width;
-	//     const maxBy = rect.y + rect.height;
-	//     const aLeftOfB = maxAx < minBx;
-	//     const aRightOfB = minAx > maxBx;
-	//     const aAboveB = minAy > maxBy;
-	//     const aBelowB = maxAy < minBy;
-	//     return !( aLeftOfB || aRightOfB || aAboveB || aBelowB );
-	// }
 	/*** Static ***/
 	AppElement.Root = null;
 	exports.AppElement = AppElement;
@@ -4144,7 +4103,7 @@
 	        other.m[7] = (((l1 * l34) - (l3 * l37)) + (l4 * l38)) * l27;
 	        other.m[11] = -(((l1 * l35) - (l2 * l37)) + (l4 * l39)) * l27;
 	        other.m[15] = (((l1 * l36) - (l2 * l38)) + (l3 * l39)) * l27;
-	        return this;
+	        return other;
 	    }
 	    /**
 	     * Inserts the translation vector (using 3 x floats) in the current Matrix.
@@ -6201,7 +6160,6 @@
 	const color_1 = __webpack_require__(53);
 	const e_command_type_1 = __webpack_require__(30);
 	const expose_as_1 = __webpack_require__(54);
-	const cerialize_1 = __webpack_require__(55);
 	let BackgroundComponent = class BackgroundComponent extends component_1.Component {
 	    constructor() {
 	        super(...arguments);
@@ -6228,13 +6186,20 @@
 	    }
 	    serialize() {
 	        return {
-	            color: this.color.copyTo({})
+	            commands: [
+	                {
+	                    type: e_command_type_1.CommandType.PaintBackground,
+	                    data: {
+	                        id: this.appElement.id,
+	                        color: this._color
+	                    }
+	                }
+	            ]
 	        };
 	    }
 	};
 	tslib_1.__decorate([
-	    expose_as_1.inspector(color_1.Color),
-	    cerialize_1.serializeAs(color_1.Color)
+	    expose_as_1.inspector(color_1.Color)
 	], BackgroundComponent.prototype, "_color", void 0);
 	BackgroundComponent = tslib_1.__decorate([
 	    component_1.component("Paint/Background")
@@ -6366,668 +6331,6 @@
 /* 55 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(56);
-
-/***/ },
-/* 56 */
-/***/ function(module, exports) {
-
-	"use strict";
-	var win = null;
-	try {
-	    win = window;
-	}
-	catch (e) {
-	    win = global;
-	}
-	//some other modules might want access to the serialization meta data, expose it here
-	var TypeMap = win.__CerializeTypeMap = new Map();
-	exports.__TypeMap = TypeMap;
-	//convert strings like my_camel_string to myCamelString
-	function CamelCase(str) {
-	    var STRING_CAMELIZE_REGEXP = (/(\-|_|\.|\s)+(.)?/g);
-	    return str.replace(STRING_CAMELIZE_REGEXP, function (match, separator, chr) {
-	        return chr ? chr.toUpperCase() : '';
-	    }).replace(/^([A-Z])/, function (match, separator, chr) {
-	        return match.toLowerCase();
-	    });
-	}
-	exports.CamelCase = CamelCase;
-	//convert strings like MyCamelString to my_camel_string
-	function SnakeCase(str) {
-	    var STRING_DECAMELIZE_REGEXP = (/([a-z\d])([A-Z])/g);
-	    return str.replace(STRING_DECAMELIZE_REGEXP, '$1_$2').toLowerCase();
-	}
-	exports.SnakeCase = SnakeCase;
-	//convert strings like myCamelCase to my_camel_case
-	function UnderscoreCase(str) {
-	    var STRING_UNDERSCORE_REGEXP_1 = (/([a-z\d])([A-Z]+)/g);
-	    var STRING_UNDERSCORE_REGEXP_2 = (/\-|\s+/g);
-	    return str.replace(STRING_UNDERSCORE_REGEXP_1, '$1_$2').replace(STRING_UNDERSCORE_REGEXP_2, '_').toLowerCase();
-	}
-	exports.UnderscoreCase = UnderscoreCase;
-	//convert strings like my_camelCase to my-camel-case
-	function DashCase(str) {
-	    var STRING_DASHERIZE_REGEXP = (/([a-z\d])([A-Z])/g);
-	    str = str.replace(/_/g, '-');
-	    return str.replace(STRING_DASHERIZE_REGEXP, '$1-$2').toLowerCase();
-	}
-	exports.DashCase = DashCase;
-	//gets meta data for a key name, creating a new meta data instance
-	//if the input array doesn't already define one for the given keyName
-	function getMetaData(array, keyName) {
-	    for (var i = 0; i < array.length; i++) {
-	        if (array[i].keyName === keyName) {
-	            return array[i];
-	        }
-	    }
-	    array.push(new MetaData(keyName));
-	    return array[array.length - 1];
-	}
-	//helper for grabbing the type and keyname from a multi-type input variable
-	function getTypeAndKeyName(keyNameOrType, keyName) {
-	    var type = null;
-	    var key = null;
-	    if (typeof keyNameOrType === "string") {
-	        key = keyNameOrType;
-	    }
-	    else if (keyNameOrType && typeof keyNameOrType === "function" || typeof keyNameOrType === "object") {
-	        type = keyNameOrType;
-	        key = keyName;
-	    }
-	    return { key: key, type: type };
-	}
-	//todo instance.constructor.prototype.__proto__ === parent class, maybe use this?
-	//because types are stored in a JS Map keyed by constructor, serialization is not inherited by default
-	//keeping this seperate by default also allows sub classes to serialize differently than their parent
-	function inheritSerialization(parentType) {
-	    return function (childType) {
-	        var parentMetaData = TypeMap.get(parentType) || [];
-	        var childMetaData = TypeMap.get(childType) || [];
-	        for (var i = 0; i < parentMetaData.length; i++) {
-	            var keyName = parentMetaData[i].keyName;
-	            if (!MetaData.hasKeyName(childMetaData, keyName)) {
-	                childMetaData.push(MetaData.clone(parentMetaData[i]));
-	            }
-	        }
-	        TypeMap.set(childType, childMetaData);
-	    };
-	}
-	exports.inheritSerialization = inheritSerialization;
-	//an untyped serialization property annotation, gets existing meta data for the target or creates
-	//a new one and assigns the serialization key for that type in the meta data
-	function serialize(target, keyName) {
-	    if (!target || !keyName)
-	        return;
-	    var metaDataList = TypeMap.get(target.constructor) || [];
-	    var metadata = getMetaData(metaDataList, keyName);
-	    metadata.serializedKey = keyName;
-	    TypeMap.set(target.constructor, metaDataList);
-	}
-	exports.serialize = serialize;
-	//an untyped deserialization property annotation, gets existing meta data for the target or creates
-	//a new one and assigns the deserialization key for that type in the meta data
-	function deserialize(target, keyName) {
-	    if (!target || !keyName)
-	        return;
-	    var metaDataList = TypeMap.get(target.constructor) || [];
-	    var metadata = getMetaData(metaDataList, keyName);
-	    metadata.deserializedKey = keyName;
-	    TypeMap.set(target.constructor, metaDataList);
-	}
-	exports.deserialize = deserialize;
-	//this combines @serialize and @deserialize as defined above
-	function autoserialize(target, keyName) {
-	    if (!target || !keyName)
-	        return;
-	    var metaDataList = TypeMap.get(target.constructor) || [];
-	    var metadata = getMetaData(metaDataList, keyName);
-	    metadata.serializedKey = keyName;
-	    metadata.deserializedKey = keyName;
-	    TypeMap.set(target.constructor, metaDataList);
-	}
-	exports.autoserialize = autoserialize;
-	//We dont actually need the type to serialize but I like the consistency with deserializeAs which definitely does
-	//serializes a type using 1.) a custom key name, 2.) a custom type, or 3.) both custom key and type
-	function serializeAs(keyNameOrType, keyName) {
-	    if (!keyNameOrType)
-	        return;
-	    var _a = getTypeAndKeyName(keyNameOrType, keyName), key = _a.key, type = _a.type;
-	    return function (target, actualKeyName) {
-	        if (!target || !actualKeyName)
-	            return;
-	        var metaDataList = TypeMap.get(target.constructor) || [];
-	        var metadata = getMetaData(metaDataList, actualKeyName);
-	        metadata.serializedKey = (key) ? key : actualKeyName;
-	        metadata.serializedType = type;
-	        //this allows the type to be a stand alone function instead of a class
-	        if (type !== Date && type !== RegExp && !TypeMap.get(type) && typeof type === "function") {
-	            metadata.serializedType = {
-	                Serialize: type
-	            };
-	        }
-	        TypeMap.set(target.constructor, metaDataList);
-	    };
-	}
-	exports.serializeAs = serializeAs;
-	//Supports serializing of dictionary-like map objects, ie: { x: {}, y: {} }
-	function serializeIndexable(type, keyName) {
-	    if (!type)
-	        return;
-	    return function (target, actualKeyName) {
-	        if (!target || !actualKeyName)
-	            return;
-	        var metaDataList = TypeMap.get(target.constructor) || [];
-	        var metadata = getMetaData(metaDataList, actualKeyName);
-	        metadata.serializedKey = (keyName) ? keyName : actualKeyName;
-	        metadata.serializedType = type;
-	        metadata.indexable = true;
-	        //this allows the type to be a stand alone function instead of a class
-	        if (type !== Date && type !== RegExp && !TypeMap.get(type) && typeof type === "function") {
-	            metadata.serializedType = {
-	                Serialize: type
-	            };
-	        }
-	        TypeMap.set(target.constructor, metaDataList);
-	    };
-	}
-	exports.serializeIndexable = serializeIndexable;
-	//deserializes a type using 1.) a custom key name, 2.) a custom type, or 3.) both custom key and type
-	function deserializeAs(keyNameOrType, keyName) {
-	    if (!keyNameOrType)
-	        return;
-	    var _a = getTypeAndKeyName(keyNameOrType, keyName), key = _a.key, type = _a.type;
-	    return function (target, actualKeyName) {
-	        if (!target || !actualKeyName)
-	            return;
-	        var metaDataList = TypeMap.get(target.constructor) || [];
-	        var metadata = getMetaData(metaDataList, actualKeyName);
-	        metadata.deserializedKey = (key) ? key : actualKeyName;
-	        metadata.deserializedType = type;
-	        //this allows the type to be a stand alone function instead of a class
-	        if (!TypeMap.get(type) && type !== Date && type !== RegExp && typeof type === "function") {
-	            metadata.deserializedType = {
-	                Deserialize: type
-	            };
-	        }
-	        TypeMap.set(target.constructor, metaDataList);
-	    };
-	}
-	exports.deserializeAs = deserializeAs;
-	//Supports deserializing of dictionary-like map objects, ie: { x: {}, y: {} }
-	function deserializeIndexable(type, keyName) {
-	    if (!type)
-	        return;
-	    var key = keyName;
-	    return function (target, actualKeyName) {
-	        if (!target || !actualKeyName)
-	            return;
-	        var metaDataList = TypeMap.get(target.constructor) || [];
-	        var metadata = getMetaData(metaDataList, actualKeyName);
-	        metadata.deserializedKey = (key) ? key : actualKeyName;
-	        metadata.deserializedType = type;
-	        metadata.indexable = true;
-	        if (!TypeMap.get(type) && type !== Date && type !== RegExp && typeof type === "function") {
-	            metadata.deserializedType = {
-	                Deserialize: type
-	            };
-	        }
-	        TypeMap.set(target.constructor, metaDataList);
-	    };
-	}
-	exports.deserializeIndexable = deserializeIndexable;
-	//serializes and deserializes a type using 1.) a custom key name, 2.) a custom type, or 3.) both custom key and type
-	function autoserializeAs(keyNameOrType, keyName) {
-	    if (!keyNameOrType)
-	        return;
-	    var _a = getTypeAndKeyName(keyNameOrType, keyName), key = _a.key, type = _a.type;
-	    return function (target, actualKeyName) {
-	        if (!target || !actualKeyName)
-	            return;
-	        var metaDataList = TypeMap.get(target.constructor) || [];
-	        var metadata = getMetaData(metaDataList, actualKeyName);
-	        var serialKey = (key) ? key : actualKeyName;
-	        metadata.deserializedKey = serialKey;
-	        metadata.deserializedType = type;
-	        metadata.serializedKey = serialKey;
-	        metadata.serializedType = type;
-	        if (!TypeMap.get(type) && type !== Date && type !== RegExp && typeof type === "function") {
-	            metadata.deserializedType = {
-	                Deserialize: type
-	            };
-	        }
-	        TypeMap.set(target.constructor, metaDataList);
-	    };
-	}
-	exports.autoserializeAs = autoserializeAs;
-	//Supports serializing/deserializing of dictionary-like map objects, ie: { x: {}, y: {} }
-	function autoserializeIndexable(type, keyName) {
-	    if (!type)
-	        return;
-	    var key = keyName;
-	    return function (target, actualKeyName) {
-	        if (!target || !actualKeyName)
-	            return;
-	        var metaDataList = TypeMap.get(target.constructor) || [];
-	        var metadata = getMetaData(metaDataList, actualKeyName);
-	        var serialKey = (key) ? key : actualKeyName;
-	        metadata.deserializedKey = serialKey;
-	        metadata.deserializedType = type;
-	        metadata.serializedKey = serialKey;
-	        metadata.serializedType = type;
-	        metadata.indexable = true;
-	        if (!TypeMap.get(type) && type !== Date && type !== RegExp && typeof type === "function") {
-	            metadata.deserializedType = {
-	                Deserialize: type
-	            };
-	        }
-	        TypeMap.set(target.constructor, metaDataList);
-	    };
-	}
-	exports.autoserializeIndexable = autoserializeIndexable;
-	//helper class to contain serialization meta data for a property, each property
-	//in a type tagged with a serialization annotation will contain an array of these
-	//objects each describing one property
-	var MetaData = (function () {
-	    function MetaData(keyName) {
-	        this.keyName = keyName;
-	        this.serializedKey = null;
-	        this.deserializedKey = null;
-	        this.deserializedType = null;
-	        this.serializedType = null;
-	        this.indexable = false;
-	    }
-	    //checks for a key name in a meta data array
-	    MetaData.hasKeyName = function (metadataArray, key) {
-	        for (var i = 0; i < metadataArray.length; i++) {
-	            if (metadataArray[i].keyName === key)
-	                return true;
-	        }
-	        return false;
-	    };
-	    //clone a meta data instance, used for inheriting serialization properties
-	    MetaData.clone = function (data) {
-	        var metadata = new MetaData(data.keyName);
-	        metadata.deserializedKey = data.deserializedKey;
-	        metadata.serializedKey = data.serializedKey;
-	        metadata.serializedType = data.serializedType;
-	        metadata.deserializedType = data.deserializedType;
-	        metadata.indexable = data.indexable;
-	        return metadata;
-	    };
-	    return MetaData;
-	}());
-	//merges two primitive objects recursively, overwriting or defining properties on
-	//`instance` as they defined in `json`. Works on objects, arrays and primitives
-	function mergePrimitiveObjects(instance, json) {
-	    if (!json)
-	        return instance; //if we dont have a json value, just use what the instance defines already
-	    if (!instance)
-	        return json; //if we dont have an instance value, just use the json
-	    //for each key in the input json we need to do a merge into the instance object
-	    Object.keys(json).forEach(function (key) {
-	        var transformedKey = key;
-	        if (typeof deserializeKeyTransform === "function") {
-	            transformedKey = deserializeKeyTransform(key);
-	        }
-	        var jsonValue = json[key];
-	        var instanceValue = instance[key];
-	        if (Array.isArray(jsonValue)) {
-	            //in the array case we reuse the items that exist already where possible
-	            //so reset the instance array length (or make it an array if it isnt)
-	            //then call mergePrimitiveObjects recursively
-	            instanceValue = Array.isArray(instanceValue) ? instanceValue : [];
-	            instanceValue.length = jsonValue.length;
-	            for (var i = 0; i < instanceValue.length; i++) {
-	                instanceValue[i] = mergePrimitiveObjects(instanceValue[i], jsonValue[i]);
-	            }
-	        }
-	        else if (jsonValue && typeof jsonValue === "object") {
-	            if (!instanceValue || typeof instanceValue !== "object") {
-	                instanceValue = {};
-	            }
-	            instanceValue = mergePrimitiveObjects(instanceValue, jsonValue);
-	        }
-	        else {
-	            //primitive case, just use straight assignment
-	            instanceValue = jsonValue;
-	        }
-	        instance[transformedKey] = instanceValue;
-	    });
-	    return instance;
-	}
-	//takes an array defined in json and deserializes it into an array that ist stuffed with instances of `type`.
-	//any instances already defined in `arrayInstance` will be re-used where possible to maintain referential integrity.
-	function deserializeArrayInto(source, type, arrayInstance) {
-	    if (!Array.isArray(arrayInstance)) {
-	        arrayInstance = new Array(source.length);
-	    }
-	    //extend or truncate the target array to match the source array
-	    arrayInstance.length = source.length;
-	    for (var i = 0; i < source.length; i++) {
-	        arrayInstance[i] = DeserializeInto(source[i], type, arrayInstance[i] || new type());
-	    }
-	    return arrayInstance;
-	}
-	//takes an object defined in json and deserializes it into a `type` instance or populates / overwrites
-	//properties on `instance` if it is provided.
-	function deserializeObjectInto(json, type, instance) {
-	    var metadataArray = TypeMap.get(type);
-	    //if we dont have an instance we need to create a new `type`
-	    if (instance === null || instance === void 0) {
-	        if (type) {
-	            instance = new type();
-	        }
-	    }
-	    //if we dont have any meta data and we dont have a type to inflate, just merge the objects
-	    if (instance && !type && !metadataArray) {
-	        return mergePrimitiveObjects(instance, json);
-	    }
-	    //if we dont have meta data just bail out and keep what we have
-	    if (!metadataArray) {
-	        invokeDeserializeHook(instance, json, type);
-	        return instance;
-	    }
-	    //for each property in meta data, try to hydrate that property with its corresponding json value
-	    for (var i = 0; i < metadataArray.length; i++) {
-	        var metadata = metadataArray[i];
-	        //these are not the droids we're looking for (to deserialize), moving along
-	        if (!metadata.deserializedKey)
-	            continue;
-	        var serializedKey = metadata.deserializedKey;
-	        if (metadata.deserializedKey === metadata.keyName) {
-	            if (typeof deserializeKeyTransform === "function") {
-	                serializedKey = deserializeKeyTransform(metadata.keyName);
-	            }
-	        }
-	        var source = json[serializedKey];
-	        if (source === void 0)
-	            continue;
-	        var keyName = metadata.keyName;
-	        //if there is a custom deserialize function, use that
-	        if (metadata.deserializedType && typeof metadata.deserializedType.Deserialize === "function") {
-	            instance[keyName] = metadata.deserializedType.Deserialize(source);
-	        }
-	        else if (Array.isArray(source)) {
-	            if (metadata.deserializedType) {
-	                instance[keyName] = deserializeArrayInto(source, metadata.deserializedType, instance[keyName]);
-	            }
-	            else {
-	                instance[keyName] = deserializeArray(source, null);
-	            }
-	        }
-	        else if ((typeof source === "string" || source instanceof Date) && metadata.deserializedType === Date) {
-	            var deserializedDate = new Date(source);
-	            if (instance[keyName] instanceof Date) {
-	                instance[keyName].setTime(deserializedDate.getTime());
-	            }
-	            else {
-	                instance[keyName] = deserializedDate;
-	            }
-	        }
-	        else if (typeof source === "string" && type === RegExp) {
-	            instance[keyName] = new RegExp(source);
-	        }
-	        else if (source && typeof source === "object") {
-	            if (metadata.indexable) {
-	                instance[keyName] = deserializeIndexableObjectInto(source, metadata.deserializedType, instance[keyName]);
-	            }
-	            else {
-	                instance[keyName] = deserializeObjectInto(source, metadata.deserializedType, instance[keyName]);
-	            }
-	        }
-	        else {
-	            instance[keyName] = source;
-	        }
-	    }
-	    //invoke our after deserialized callback if provided
-	    invokeDeserializeHook(instance, json, type);
-	    return instance;
-	}
-	//deserializes a bit of json into a `type`
-	function Deserialize(json, type) {
-	    if (Array.isArray(json)) {
-	        return deserializeArray(json, type);
-	    }
-	    else if (json && typeof json === "object") {
-	        return deserializeObject(json, type);
-	    }
-	    else if ((typeof json === "string" || json instanceof Date) && type === Date) {
-	        return new Date(json);
-	    }
-	    else if (typeof json === "string" && type === RegExp) {
-	        return new RegExp(json);
-	    }
-	    else {
-	        return json;
-	    }
-	}
-	exports.Deserialize = Deserialize;
-	//takes some json, a type, and a target object and deserializes the json into that object
-	function DeserializeInto(source, type, target) {
-	    if (Array.isArray(source)) {
-	        return deserializeArrayInto(source, type, target || []);
-	    }
-	    else if (source && typeof source === "object") {
-	        return deserializeObjectInto(source, type, target || new type());
-	    }
-	    else {
-	        return target || (type && new type()) || null;
-	    }
-	}
-	exports.DeserializeInto = DeserializeInto;
-	//deserializes an array of json into an array of `type`
-	function deserializeArray(source, type) {
-	    var retn = new Array(source.length);
-	    for (var i = 0; i < source.length; i++) {
-	        retn[i] = Deserialize(source[i], type);
-	    }
-	    return retn;
-	}
-	function invokeDeserializeHook(instance, json, type) {
-	    if (type && typeof (type).OnDeserialized === "function") {
-	        type.OnDeserialized(instance, json);
-	    }
-	}
-	function invokeSerializeHook(instance, json) {
-	    if (typeof (instance.constructor).OnSerialized === "function") {
-	        (instance.constructor).OnSerialized(instance, json);
-	    }
-	}
-	//deserialize a bit of json into an instance of `type`
-	function deserializeObject(json, type) {
-	    var metadataArray = TypeMap.get(type);
-	    //if we dont have meta data, just decode the json and use that
-	    if (!metadataArray) {
-	        var inst = null;
-	        if (!type) {
-	            inst = JSON.parse(JSON.stringify(json));
-	        }
-	        else {
-	            inst = new type(); //todo this probably wrong
-	            invokeDeserializeHook(inst, json, type);
-	        }
-	        return inst;
-	    }
-	    var instance = new type();
-	    //for each tagged property on the source type, try to deserialize it
-	    for (var i = 0; i < metadataArray.length; i++) {
-	        var metadata = metadataArray[i];
-	        if (!metadata.deserializedKey)
-	            continue;
-	        var serializedKey = metadata.deserializedKey;
-	        if (metadata.deserializedKey === metadata.keyName) {
-	            if (typeof deserializeKeyTransform === "function") {
-	                serializedKey = deserializeKeyTransform(metadata.keyName);
-	            }
-	        }
-	        var source = json[serializedKey];
-	        var keyName = metadata.keyName;
-	        if (source === void 0)
-	            continue;
-	        //if there is a custom deserialize function, use that
-	        if (metadata.deserializedType && typeof metadata.deserializedType.Deserialize === "function") {
-	            instance[keyName] = metadata.deserializedType.Deserialize(source);
-	        }
-	        else if (Array.isArray(source)) {
-	            instance[keyName] = deserializeArray(source, metadata.deserializedType || null);
-	        }
-	        else if ((typeof source === "string" || source instanceof Date) && metadata.deserializedType === Date) {
-	            instance[keyName] = new Date(source);
-	        }
-	        else if (typeof source === "string" && metadata.deserializedType === RegExp) {
-	            instance[keyName] = new RegExp(json);
-	        }
-	        else if (source && typeof source === "object") {
-	            if (metadata.indexable) {
-	                instance[keyName] = deserializeIndexableObject(source, metadata.deserializedType);
-	            }
-	            else {
-	                instance[keyName] = deserializeObject(source, metadata.deserializedType);
-	            }
-	        }
-	        else {
-	            instance[keyName] = source;
-	        }
-	    }
-	    invokeDeserializeHook(instance, json, type);
-	    return instance;
-	}
-	function deserializeIndexableObject(source, type) {
-	    var retn = {};
-	    //todo apply key transformation here?
-	    Object.keys(source).forEach(function (key) {
-	        retn[key] = deserializeObject(source[key], type);
-	    });
-	    return retn;
-	}
-	function deserializeIndexableObjectInto(source, type, instance) {
-	    //todo apply key transformation here?
-	    Object.keys(source).forEach(function (key) {
-	        instance[key] = deserializeObjectInto(source[key], type, instance[key]);
-	    });
-	    return instance;
-	}
-	//take an array and spit out json
-	function serializeArray(source, type) {
-	    var serializedArray = new Array(source.length);
-	    for (var j = 0; j < source.length; j++) {
-	        serializedArray[j] = Serialize(source[j], type);
-	    }
-	    return serializedArray;
-	}
-	//take an instance of something and try to spit out json for it based on property annotaitons
-	function serializeTypedObject(instance, type) {
-	    var json = {};
-	    var metadataArray;
-	    if (type) {
-	        metadataArray = TypeMap.get(type);
-	    }
-	    else {
-	        metadataArray = TypeMap.get(instance.constructor);
-	    }
-	    for (var i = 0; i < metadataArray.length; i++) {
-	        var metadata = metadataArray[i];
-	        if (!metadata.serializedKey)
-	            continue;
-	        var serializedKey = metadata.serializedKey;
-	        if (metadata.serializedKey === metadata.keyName) {
-	            if (typeof serializeKeyTransform === "function") {
-	                serializedKey = serializeKeyTransform(metadata.keyName);
-	            }
-	        }
-	        var source = instance[metadata.keyName];
-	        if (source === void 0)
-	            continue;
-	        if (Array.isArray(source)) {
-	            json[serializedKey] = serializeArray(source);
-	        }
-	        else if (metadata.serializedType && typeof metadata.serializedType.Serialize === "function") {
-	            //todo -- serializeIndexableObject probably isn't needed because of how serialize works
-	            json[serializedKey] = metadata.serializedType.Serialize(source);
-	        }
-	        else {
-	            var value = Serialize(source);
-	            if (value !== void 0) {
-	                json[serializedKey] = value;
-	            }
-	        }
-	    }
-	    invokeSerializeHook(instance, json);
-	    return json;
-	}
-	//take an instance of something and spit out some json
-	function Serialize(instance, type) {
-	    if (instance === null || instance === void 0)
-	        return null;
-	    if (Array.isArray(instance)) {
-	        return serializeArray(instance, type);
-	    }
-	    if (type && TypeMap.has(type)) {
-	        return serializeTypedObject(instance, type);
-	    }
-	    if (instance.constructor && TypeMap.has(instance.constructor)) {
-	        return serializeTypedObject(instance);
-	    }
-	    if (instance instanceof Date) {
-	        return instance.toISOString();
-	    }
-	    if (instance instanceof RegExp) {
-	        return instance.toString();
-	    }
-	    if (instance && typeof instance === 'object' || typeof instance === 'function') {
-	        var keys = Object.keys(instance);
-	        var json = {};
-	        for (var i = 0; i < keys.length; i++) {
-	            //todo this probably needs a key transform
-	            json[keys[i]] = Serialize(instance[keys[i]]);
-	        }
-	        invokeSerializeHook(instance, json);
-	        return json;
-	    }
-	    return instance;
-	}
-	exports.Serialize = Serialize;
-	function GenericDeserialize(json, type) {
-	    return Deserialize(json, type);
-	}
-	exports.GenericDeserialize = GenericDeserialize;
-	function GenericDeserializeInto(json, type, instance) {
-	    return DeserializeInto(json, type, instance);
-	}
-	exports.GenericDeserializeInto = GenericDeserializeInto;
-	//these are used for transforming keys from one format to another
-	var serializeKeyTransform = null;
-	var deserializeKeyTransform = null;
-	//setter for deserializing key transform
-	function DeserializeKeysFrom(transform) {
-	    deserializeKeyTransform = transform;
-	}
-	exports.DeserializeKeysFrom = DeserializeKeysFrom;
-	//setter for serializing key transform
-	function SerializeKeysTo(transform) {
-	    serializeKeyTransform = transform;
-	}
-	exports.SerializeKeysTo = SerializeKeysTo;
-	//this is kinda dumb but typescript doesnt treat enums as a type, but sometimes you still
-	//want them to be serialized / deserialized, this does the trick but must be called after
-	//the enum is defined.
-	function SerializableEnumeration(e) {
-	    e.Serialize = function (x) {
-	        return e[x];
-	    };
-	    e.Deserialize = function (x) {
-	        return e[x];
-	    };
-	}
-	exports.SerializableEnumeration = SerializableEnumeration;
-	//expose the type map
-
-
-/***/ },
-/* 57 */
-/***/ function(module, exports, __webpack_require__) {
-
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
 	const binding_compiler_1 = __webpack_require__(10);
@@ -7079,7 +6382,7 @@
 
 
 /***/ },
-/* 58 */
+/* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -7126,7 +6429,7 @@
 
 
 /***/ },
-/* 59 */
+/* 57 */
 /***/ function(module, exports) {
 
 	//polyfill for webworker while in editor mode
@@ -7163,110 +6466,111 @@
 
 
 /***/ },
-/* 60 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const project_1 = __webpack_require__(45);
-	const fsp = __webpack_require__(61);
-	const path = __webpack_require__(50);
-	describe("Project Tests", function () {
-	    it("should create a project with a proper hex reference", function () {
-	        expect(new project_1.Project("Spec Project", path.join("test_project1", "project.hex"))).toBeTruthy();
-	    });
-	    it("should not create a project with a bad hex file", function () {
-	        expect(function () {
-	            new project_1.Project("Spec Project", "pzae.hex");
-	        }).toThrow();
-	    });
-	    it("should not create a project without an existing project.hex file", function () {
-	        expect(function () {
-	            new project_1.Project("Spec Project", path.join("test_project_not_here", "project.hex"));
-	        }).toThrow();
-	    });
-	    it("should load existing files in the project", function (done) {
-	        const project = new project_1.Project("Spec Project", path.join("test_project1", "project.hex"));
-	        const filePath = path.join("assets", "test_file1.png");
-	        project.load().then(function () {
-	            expect(project.getAssetCount()).toBe(1);
-	            expect(project.assetDatabase["SOME_GUID"]).toEqual({
-	                guid: "SOME_GUID",
-	                filePath: filePath,
-	                inode: fsp.lstatSync(path.resolve(path.join("test_project1", filePath))).ino,
-	                data: {}
-	            });
-	            done();
-	        });
-	    });
-	    it("should realize a file was renamed", function (done) {
-	        const basePath = path.resolve(path.join("test_project1", "assets"));
-	        const originalName = path.join(basePath, "test_file1.png");
-	        const changedName = path.join(basePath, "test_file_changed.png");
-	        fsp.renameSync(originalName, changedName);
-	        const project = new project_1.Project("Spec Project", path.join("test_project1", "project.hex"));
-	        project.load().then(() => {
-	            expect(project.getAssetCount()).toBe(1);
-	            expect(project.assetDatabase["SOME_GUID"]).toBeTruthy();
-	            fsp.renameSync(changedName, originalName);
-	            done();
-	        }).catch(() => {
-	            fsp.renameSync(changedName, originalName);
-	        });
-	    });
-	    it("should handle new files", function (done) {
-	        let project = null;
-	        const filePath = path.resolve(path.join("test_project1", "assets", "somefile.txt"));
-	        fsp.writeFile(filePath, "some text").then(() => {
-	            project = new project_1.Project("Spec Project", path.join("test_project1", "project.hex"));
-	            return project.load();
-	        }).then(() => {
-	            expect(project.getAssetCount()).toBe(2);
-	            fsp.remove(filePath);
-	            done();
-	        }).catch((e) => {
-	            fsp.remove(filePath);
-	        });
-	    });
-	});
-
-
-/***/ },
-/* 61 */
+/* 58 */
 /***/ function(module, exports) {
 
-	module.exports = require("fs-promise");
+	// import {Project} from "../../src/project";
+	// import * as fsp from "fs-promise";
+	// import * as path from "path";
+	//
+	// describe("Project Tests", function() {
+	//
+	//     it("should create a project with a proper hex reference", function() {
+	//         expect(new Project("Spec Project", path.join("test_project1", "project.hex"))).toBeTruthy();
+	//     });
+	//
+	//     it("should not create a project with a bad hex file", function() {
+	//
+	//         expect(function() {
+	//             new Project("Spec Project", "pzae.hex");
+	//         }).toThrow();
+	//
+	//     });
+	//
+	//     it("should not create a project without an existing project.hex file", function() {
+	//         expect(function() {
+	//             new Project("Spec Project", path.join("test_project_not_here", "project.hex"));
+	//         }).toThrow();
+	//     });
+	//
+	//     it("should load existing files in the project", function(done : any) {
+	//         const project = new Project("Spec Project", path.join("test_project1", "project.hex")) as any;
+	//         const filePath = path.join("assets", "test_file1.png");
+	//         project.load().then(function() {
+	//             expect(project.getAssetCount()).toBe(1);
+	//             expect(project.assetDatabase["SOME_GUID"]).toEqual({
+	//                 guid: "SOME_GUID",
+	//                 filePath: filePath,
+	//                 inode: fsp.lstatSync(path.resolve(path.join("test_project1", filePath))).ino,
+	//                 data: {}
+	//             });
+	//             done();
+	//         });
+	//     });
+	//
+	//     it("should realize a file was renamed", function (done : any) {
+	//         const basePath = path.resolve(path.join("test_project1", "assets"));
+	//         const originalName = path.join(basePath, "test_file1.png");
+	//         const changedName = path.join(basePath, "test_file_changed.png");
+	//         fsp.renameSync(originalName, changedName);
+	//         const project = new Project("Spec Project", path.join("test_project1", "project.hex")) as any;
+	//         project.load().then(() => {
+	//             expect(project.getAssetCount()).toBe(1);
+	//             expect(project.assetDatabase["SOME_GUID"]).toBeTruthy();
+	//             fsp.renameSync(changedName, originalName);
+	//             done();
+	//         }).catch(() => {
+	//             fsp.renameSync(changedName, originalName);
+	//         });
+	//
+	//     });
+	//
+	//     it("should handle new files", function(done : any) : any {
+	//         let project : Project = null;
+	//         const filePath = path.resolve(path.join("test_project1", "assets", "somefile.txt"));
+	//         fsp.writeFile(filePath, "some text").then(() => {
+	//             project = new Project("Spec Project", path.join("test_project1", "project.hex")) as any;
+	//             return project.load();
+	//         }).then(() => {
+	//             expect(project.getAssetCount()).toBe(2);
+	//             fsp.remove(filePath);
+	//             done();
+	//         }).catch((e : any) => {
+	//             fsp.remove(filePath);
+	//         });
+	//
+	//     });
+	//
+	// }); 
+
 
 /***/ },
-/* 62 */
+/* 59 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	const state_chart_1 = __webpack_require__(63);
+	const state_chart_1 = __webpack_require__(60);
 	describe("Statechart - singular", function () {
-	    class Evt_DoorUnlock extends state_chart_1.StateChartEvent {
-	    }
-	    class Evt_DoorLock extends state_chart_1.StateChartEvent {
-	    }
-	    class Evt_DoorOpen extends state_chart_1.StateChartEvent {
-	    }
-	    class Evt_DoorClose extends state_chart_1.StateChartEvent {
-	    }
+	    const Evt_DoorUnlock = state_chart_1.StateChart.createEvent();
+	    const Evt_DoorLock = state_chart_1.StateChart.createEvent();
+	    const Evt_DoorOpen = state_chart_1.StateChart.createEvent();
+	    const Evt_DoorClose = state_chart_1.StateChart.createEvent();
 	    function getChart(behaviors = {}) {
-	        return new state_chart_1.StateChart(function (state, event) {
+	        return new state_chart_1.StateChart(function (builder) {
+	            var { state, transition } = builder.toDSL();
 	            state("closed", behaviors["closed"], function () {
-	                event(Evt_DoorUnlock, "unlocked");
+	                transition(Evt_DoorUnlock, "unlocked");
 	                state("locked", behaviors["locked"], function () {
-	                    event(Evt_DoorUnlock, "unlocked");
+	                    transition(Evt_DoorUnlock, "unlocked");
 	                });
 	                state("unlocked", behaviors["unlocked"], function () {
-	                    event(Evt_DoorLock, "locked");
-	                    event(Evt_DoorOpen, "opened");
+	                    transition(Evt_DoorLock, "locked");
+	                    transition(Evt_DoorOpen, "opened");
 	                });
 	            });
 	            state("opened", behaviors["opened"], function () {
-	                event(Evt_DoorClose, "unlocked");
+	                transition(Evt_DoorClose, "unlocked");
 	            });
 	        });
 	    }
@@ -7283,7 +6587,7 @@
 	        expect(chart.isInState("unlocked")).toBeFalsy();
 	        expect(chart.isInState("locked")).toBeTruthy();
 	        expect(chart.isInState("closed")).toBeTruthy();
-	        chart.trigger(new Evt_DoorUnlock());
+	        chart.trigger(Evt_DoorUnlock);
 	        chart.update();
 	        expect(chart.isInState("unlocked")).toBeTruthy();
 	        expect(chart.isInState("locked")).toBeFalsy();
@@ -7291,14 +6595,14 @@
 	    });
 	    it("should move from closed/unlocked  to opened and back to closed/locked", function () {
 	        const chart = getChart();
-	        chart.trigger(new Evt_DoorUnlock());
-	        chart.trigger(new Evt_DoorOpen());
+	        chart.trigger(Evt_DoorUnlock);
+	        chart.trigger(Evt_DoorOpen);
 	        chart.update();
 	        expect(chart.isInState("opened")).toBeTruthy();
 	        expect(chart.isInState("closed")).toBeFalsy();
 	        expect(chart.isInState("locked")).toBeFalsy();
 	        expect(chart.isInState("unlocked")).toBeFalsy();
-	        chart.trigger(new Evt_DoorClose());
+	        chart.trigger(Evt_DoorClose);
 	        chart.update();
 	        expect(chart.isInState("opened")).toBeFalsy();
 	        expect(chart.isInState("closed")).toBeTruthy();
@@ -7307,7 +6611,7 @@
 	    });
 	    it("should not transition on invalid event", function () {
 	        const chart = getChart();
-	        chart.trigger(new Evt_DoorClose());
+	        chart.trigger(Evt_DoorClose);
 	        chart.update();
 	        expect(chart.isInState("opened")).toBeFalsy();
 	        expect(chart.isInState("closed")).toBeTruthy();
@@ -7333,89 +6637,177 @@
 	            closed: new ClosedBehavior()
 	        };
 	        var chart = getChart(behaviors); //enter = 1
-	        chart.trigger(new Evt_DoorUnlock());
+	        chart.trigger(Evt_DoorUnlock);
 	        chart.update(); //update = 1
 	        chart.update(); //update = 2
-	        chart.trigger(new Evt_DoorOpen()); //exit = 1
+	        chart.trigger(Evt_DoorOpen); //exit = 1
 	        chart.update(); //update = 2, not in closed state
-	        chart.trigger(new Evt_DoorClose()); //enter = 2
+	        chart.trigger(Evt_DoorClose); //enter = 2
 	        chart.update(); //update = 3, in closed state again
 	        expect(enterCount).toBe(2);
 	        expect(updateCount).toBe(3);
 	        expect(exitCount).toBe(1);
 	    });
+	    it("should handle state behavior functions", function () {
+	        let enterCount = 0;
+	        let exitCount = 0;
+	        let updateCount = 0;
+	        let initCount = 0;
+	        const Evt_Swap = state_chart_1.StateChart.createEvent();
+	        const chart = new state_chart_1.StateChart(function (builder) {
+	            const { state, transition, enter, exit, update, init } = builder.toDSL();
+	            state("state1", function () {
+	                enter(function () {
+	                    enterCount++;
+	                });
+	                exit(function () {
+	                    exitCount++;
+	                });
+	                update(function () {
+	                    updateCount++;
+	                });
+	                init(function () {
+	                    initCount++;
+	                });
+	                transition(Evt_Swap, "state2");
+	            });
+	            state("state2", function () {
+	                transition(Evt_Swap, "state1");
+	            });
+	        });
+	        expect(initCount).toBe(1);
+	        expect(enterCount).toBe(1);
+	        expect(exitCount).toBe(0);
+	        expect(updateCount).toBe(0); //exit - no update tick
+	        chart.trigger(Evt_Swap);
+	        chart.update();
+	        expect(initCount).toBe(1);
+	        expect(enterCount).toBe(1);
+	        expect(exitCount).toBe(1);
+	        expect(updateCount).toBe(0);
+	        chart.trigger(Evt_Swap);
+	        chart.update();
+	        expect(initCount).toBe(1);
+	        expect(enterCount).toBe(2);
+	        expect(exitCount).toBe(1);
+	        expect(updateCount).toBe(1); //re-enter so it gets an update tick
+	        chart.update();
+	        expect(initCount).toBe(1);
+	        expect(enterCount).toBe(2);
+	        expect(exitCount).toBe(1);
+	        expect(updateCount).toBe(2); //stay - get an update tick
+	    });
+	    it("should handle events", function () {
+	        const Evt_Swap = state_chart_1.StateChart.createEvent();
+	        let count = 0;
+	        const chart = new state_chart_1.StateChart(function (builder) {
+	            const { state, transition, event } = builder.toDSL();
+	            state("state1", function () {
+	                event(Evt_Swap, () => count++);
+	                transition(Evt_Swap, "state2");
+	            });
+	            state("state2", function () {
+	                transition(Evt_Swap, "state1");
+	            });
+	        });
+	        expect(count).toBe(0);
+	        chart.trigger(Evt_Swap);
+	        chart.update();
+	        expect(count).toBe(1); // events are handled before exits
+	        chart.trigger(Evt_Swap);
+	        chart.update();
+	        expect(count).toBe(1); // events not fired when not active
+	        chart.trigger(Evt_Swap);
+	        chart.update();
+	        expect(count).toBe(2); // event fires when moving into state
+	    });
+	    it("should handle events with data", function () {
+	        const Evt_Swap = state_chart_1.StateChart.createEvent();
+	        let count = 0;
+	        const chart = new state_chart_1.StateChart(function (builder) {
+	            const { state, transition, event } = builder.toDSL();
+	            state("state1", function () {
+	                event(Evt_Swap, (data) => {
+	                    expect(data.count).toBe(100);
+	                    count++;
+	                });
+	                transition(Evt_Swap, "state2");
+	            });
+	            state("state2", function () {
+	                transition(Evt_Swap, "state1");
+	            });
+	        });
+	        chart.trigger(Evt_Swap, { count: 100 });
+	        chart.update();
+	        expect(count).toBe(1);
+	    });
 	});
 	describe("StateChart - parallel", function () {
 	    it("should be in a parallel state", function () {
-	        class Evt_Parallel extends state_chart_1.StateChartEvent {
-	        }
-	        class Evt_Singular extends state_chart_1.StateChartEvent {
-	        }
-	        const chart = new state_chart_1.StateChart(function (state, event) {
+	        const Evt_Parallel = state_chart_1.StateChart.createEvent();
+	        const Evt_Singular = state_chart_1.StateChart.createEvent();
+	        const chart = new state_chart_1.StateChart(function (builder) {
+	            const { state, transition } = builder.toDSL();
 	            state("state0");
 	            state.parallel("parallel", function () {
 	                state("state1");
 	                state("state2");
 	            });
-	            event(Evt_Parallel, "parallel");
-	            event(Evt_Singular, "state0");
+	            transition(Evt_Parallel, "parallel");
+	            transition(Evt_Singular, "state0");
 	        });
 	        expect(chart.isInState("state0")).toBeTruthy();
 	        expect(chart.isInState("state1")).toBeFalsy();
 	        expect(chart.isInState("state2")).toBeFalsy();
 	        expect(chart.isInState("parallel")).toBeFalsy();
-	        chart.trigger(new Evt_Parallel());
+	        chart.trigger(Evt_Parallel);
 	        chart.update();
 	        expect(chart.isInState("parallel")).toBeTruthy();
 	        expect(chart.isInState("state1")).toBeTruthy();
 	        expect(chart.isInState("state2")).toBeTruthy();
 	        expect(chart.isInState("state0")).toBeFalsy();
-	        chart.trigger(new Evt_Singular());
+	        chart.trigger(Evt_Singular);
 	        chart.update();
 	        expect(chart.isInState("state0")).toBeTruthy();
 	        expect(chart.isInState("state1")).toBeFalsy();
 	        expect(chart.isInState("state2")).toBeFalsy();
 	        expect(chart.isInState("parallel")).toBeFalsy();
 	    });
-	    class Evt_TextBold extends state_chart_1.StateChartEvent {
-	    }
-	    class Evt_TextUnderline extends state_chart_1.StateChartEvent {
-	    }
-	    class Evt_TextItalic extends state_chart_1.StateChartEvent {
-	    }
-	    class Evt_TextReset extends state_chart_1.StateChartEvent {
-	    }
-	    class Evt_TextDecorate extends state_chart_1.StateChartEvent {
-	    }
+	    const Evt_TextBold = state_chart_1.StateChart.createEvent();
+	    const Evt_TextUnderline = state_chart_1.StateChart.createEvent();
+	    const Evt_TextItalic = state_chart_1.StateChart.createEvent();
+	    const Evt_TextReset = state_chart_1.StateChart.createEvent();
+	    const Evt_TextDecorate = state_chart_1.StateChart.createEvent();
 	    function getChart(behaviors = {}) {
-	        return new state_chart_1.StateChart(function (state, event) {
+	        return new state_chart_1.StateChart(function (builder) {
+	            const { state, transition } = builder.toDSL();
 	            state("text-undecorated");
 	            state.parallel("text-decorated", behaviors["text-decorated"], function () {
 	                state('bold', behaviors["bold"], function () {
 	                    state('bold.off', behaviors["bold.off"], function () {
-	                        event(Evt_TextBold, "bold.on");
+	                        transition(Evt_TextBold, "bold.on");
 	                    });
 	                    state('bold.on', behaviors["bold.on"], function () {
-	                        event(Evt_TextBold, "bold.off");
+	                        transition(Evt_TextBold, "bold.off");
 	                    });
 	                });
 	                state('underline', behaviors["underline"], function () {
 	                    state('underline.off', behaviors["underline.on"], function () {
-	                        event(Evt_TextUnderline, "underline.on");
+	                        transition(Evt_TextUnderline, "underline.on");
 	                    });
 	                    state('underline.on', behaviors["underline.off"], function () {
-	                        event(Evt_TextUnderline, "underline.off");
+	                        transition(Evt_TextUnderline, "underline.off");
 	                    });
 	                });
 	            });
-	            event(Evt_TextReset, "text-undecorated");
-	            event(Evt_TextDecorate, "text-decorated");
+	            transition(Evt_TextReset, "text-undecorated");
+	            transition(Evt_TextDecorate, "text-decorated");
 	        });
 	    }
 	    it("should enter parallel child states", function () {
 	        const chart = getChart();
 	        expect(chart.isInState("text-decorated")).toBeFalsy();
-	        chart.trigger(new Evt_TextDecorate());
+	        chart.trigger(Evt_TextDecorate);
 	        chart.update();
 	        expect(chart.isInState("text-decorated")).toBeTruthy();
 	        expect(chart.isInState("bold.off")).toBeTruthy();
@@ -7426,8 +6818,8 @@
 	    it("should enter parallel child child state", function () {
 	        const chart = getChart();
 	        expect(chart.isInState("text-decorated")).toBeFalsy();
-	        chart.trigger(new Evt_TextDecorate());
-	        chart.trigger(new Evt_TextBold());
+	        chart.trigger(Evt_TextDecorate);
+	        chart.trigger(Evt_TextBold);
 	        chart.update();
 	        expect(chart.isInState("text-decorated")).toBeTruthy();
 	        expect(chart.isInState("bold.off")).toBeFalsy();
@@ -7443,8 +6835,8 @@
 	            }
 	        }
 	        const chart = getChart({ "bold.off": new BoldOffBehavior() });
-	        chart.trigger(new Evt_TextDecorate());
-	        chart.trigger(new Evt_TextBold());
+	        chart.trigger(Evt_TextDecorate);
+	        chart.trigger(Evt_TextBold);
 	        chart.update();
 	        expect(count).toBe(1);
 	    });
@@ -7452,19 +6844,28 @@
 
 
 /***/ },
-/* 63 */
+/* 60 */
 /***/ function(module, exports) {
 
 	"use strict";
 	Object.defineProperty(exports, "__esModule", { value: true });
-	class StateChartEventHandler {
-	    constructor(type, target, guardFn) {
-	        this.type = type;
+	class StateChartTransition {
+	    constructor(evt, target, guardFn) {
+	        this.evt = evt;
 	        this.target = target;
-	        this.guardFn = guardFn || StateChartEventHandler.NoOpGuard;
+	        this.guardFn = guardFn || StateChartTransition.NoOpGuard;
 	    }
 	    static NoOpGuard() { return true; }
 	}
+	class StateChartEvent {
+	}
+	exports.StateChartEvent = StateChartEvent;
+	class StateChartBehavior {
+	    enter() { }
+	    update() { }
+	    exit() { }
+	}
+	exports.StateChartBehavior = StateChartBehavior;
 	class StateChartState {
 	    constructor(id, parent, behavior) {
 	        this.id = id;
@@ -7473,17 +6874,50 @@
 	        this.isActive = false;
 	        this.states = [];
 	        this.events = [];
+	        this.transitions = [];
+	        this.initFns = null;
+	        this.enterFns = null;
+	        this.exitFns = null;
+	        this.updateFns = null;
 	    }
-	    handleEvent(evt) {
-	        const handledEvent = this.events.find((handler) => {
-	            return handler.type === evt.constructor;
+	    onInit(fn) {
+	        this.initFns = this.initFns || [];
+	        this.initFns.push(fn);
+	    }
+	    onUpdated(fn) {
+	        this.updateFns = this.updateFns || [];
+	        this.updateFns.push(fn);
+	    }
+	    onEntered(fn) {
+	        this.enterFns = this.enterFns || [];
+	        this.enterFns.push(fn);
+	    }
+	    onExited(fn) {
+	        this.exitFns = this.exitFns || [];
+	        this.exitFns.push(fn);
+	    }
+	    addEventHandler(evt, callback) {
+	        this.events.push({ event: evt, handler: callback });
+	    }
+	    handleEvent(evtPackage) {
+	        const evt = evtPackage.event;
+	        const data = evtPackage.data;
+	        for (let i = 0; i < this.events.length; i++) {
+	            if (this.events[i].event === evt) {
+	                if (this.events[i].handler) {
+	                    this.events[i].handler(data);
+	                }
+	            }
+	        }
+	        const handledEvent = this.transitions.find((handler) => {
+	            return handler.evt === evt;
 	        });
 	        if (handledEvent && handledEvent.guardFn(evt)) {
 	            return { targetId: handledEvent.target, from: this };
 	        }
 	        for (let i = 0; i < this.states.length; i++) {
 	            if (this.states[i].isActive) {
-	                const retn = this.states[i].handleEvent(evt);
+	                const retn = this.states[i].handleEvent(evtPackage);
 	                if (retn)
 	                    return retn;
 	            }
@@ -7494,9 +6928,10 @@
 	        if (this.isActive)
 	            return;
 	        this.isActive = true;
-	        if (this.behavior) {
-	            this.behavior.enter();
-	        }
+	        this.behavior && this.behavior.enter();
+	        this.initFns && this.initFns.forEach(fn => fn());
+	        this.enterFns && this.enterFns.forEach(fn => fn());
+	        this.initFns = null;
 	        if (enterPath && enterPath.length > 0) {
 	            const child = enterPath.pop();
 	            if (child.parent !== this) {
@@ -7512,6 +6947,7 @@
 	    }
 	    update() {
 	        this.behavior && this.behavior.update();
+	        this.updateFns && this.updateFns.forEach(fn => fn());
 	        for (let i = 0; i < this.states.length; i++) {
 	            if (this.states[i].isActive) {
 	                this.states[i].update();
@@ -7522,9 +6958,8 @@
 	        if (!this.isActive)
 	            return;
 	        this.isActive = false;
-	        if (this.behavior) {
-	            this.behavior.exit();
-	        }
+	        this.behavior && this.behavior.exit();
+	        this.exitFns && this.exitFns.forEach(fn => fn());
 	        this.exitChildren();
 	    }
 	    exitChildren() {
@@ -7540,56 +6975,29 @@
 	        if (this.isActive)
 	            return;
 	        this.isActive = true;
-	        if (this.behavior) {
-	            this.behavior.enter();
-	        }
+	        this.behavior && this.behavior.enter();
+	        this.initFns && this.initFns.forEach(fn => fn());
+	        this.initFns = null;
 	        enterPath && enterPath.pop();
 	        for (let i = 0; i < this.states.length; i++) {
 	            this.states[i].enter(enterPath);
 	        }
 	    }
-	    update() {
-	        this.behavior && this.behavior.update();
-	        for (let i = 0; i < this.states.length; i++) {
-	            this.states[i].update();
-	        }
-	    }
-	    exit() {
-	        if (!this.isActive)
-	            return;
-	        this.isActive = false;
-	        if (this.behavior)
-	            this.behavior.exit();
-	        for (let i = 0; i < this.states.length; i++) {
-	            this.states[i].exit();
-	        }
-	    }
 	}
-	class StateChartEvent {
-	}
-	exports.StateChartEvent = StateChartEvent;
-	class StateChartBehavior {
-	    enter() { }
-	    update() { }
-	    exit() { }
-	}
-	exports.StateChartBehavior = StateChartBehavior;
-	//compiler seems to be broken w/ how 'protected' works, so to hide internal properties
-	//i've duplicated some functionality :(
-	class StateChart {
+	class StateChart_Internal extends StateChartState {
 	    constructor(definition) {
+	        super("$root", null, null);
 	        this.isActive = true;
 	        this.stateDef = this.getStateFn();
-	        this.eventDef = this.event.bind(this);
 	        this.stateMap = new Map();
-	        this.states = [];
-	        this.events = [];
 	        this.stateStack = [];
 	        this.eventQueue0 = [];
 	        this.eventQueue1 = [];
 	        this.eventQueue = this.eventQueue0;
 	        this.stateStack.push(this);
-	        definition.call(this, this.stateDef, this.eventDef);
+	        this.builder = new StateChartBuilder(this);
+	        this.builder.currentState = this;
+	        definition(this.builder);
 	        this.stateStack.pop();
 	        this.stateStack = null;
 	        if (this.states[0]) {
@@ -7603,7 +7011,10 @@
 	        this.eventQueue = this.eventQueue === this.eventQueue0 ? this.eventQueue1 : this.eventQueue0;
 	        //do all transitions but queue all events till next frame
 	        while (currentQueue.length) {
-	            this.handleEvent(currentQueue.shift());
+	            const transition = this.handleEvent(currentQueue.shift());
+	            if (transition) {
+	                this.goTo(transition.targetId, transition.from);
+	            }
 	        }
 	        this.getActiveState().update();
 	    }
@@ -7611,10 +7022,10 @@
 	        const state = this.stateMap.get(id);
 	        return state && state.isActive;
 	    }
-	    trigger(event) {
+	    trigger(event, data) {
 	        if (this.stateStack)
 	            throw new Error("StateChart hasn't entered yet, invalid call to trigger()");
-	        this.eventQueue.push(event);
+	        this.eventQueue.push({ event: event, data: data });
 	    }
 	    getConfiguration() {
 	        const config = new Array();
@@ -7635,31 +7046,6 @@
 	            config.push(branchConfig.reverse());
 	        }
 	        return config;
-	    }
-	    handleEvent(evt) {
-	        const handledEvent = this.events.find((handler) => {
-	            return handler.type === evt.constructor;
-	        });
-	        if (handledEvent && handledEvent.guardFn(evt)) {
-	            this.goTo(handledEvent.target, this);
-	            return;
-	        }
-	        for (let i = 0; i < this.states.length; i++) {
-	            if (this.states[i].isActive) {
-	                const retn = this.states[i].handleEvent(evt);
-	                if (retn) {
-	                    this.goTo(retn.targetId, retn.from);
-	                    return;
-	                }
-	            }
-	        }
-	    }
-	    exitChildren() {
-	        for (let i = 0; i < this.states.length; i++) {
-	            if (this.states[i].isActive) {
-	                this.states[i].exit();
-	            }
-	        }
 	    }
 	    getStateFn() {
 	        const fn = this.state.bind(this);
@@ -7682,10 +7068,10 @@
 	        ptr.exitChildren();
 	        enterPath.shift().enter(enterPath);
 	    }
-	    event(eventType, targetStateId, guardFunction) {
+	    transition(evt, targetStateId, guardFunction) {
 	        if (!this.stateStack)
-	            throw new Error("StateChart has already entered, cannot call 'event()'");
-	        this.stateStack.getLast().events.push(new StateChartEventHandler(eventType, targetStateId, guardFunction));
+	            throw new Error("StateChart has already entered, cannot call 'transition()'");
+	        this.stateStack.getLast().transitions.push(new StateChartTransition(evt, targetStateId, guardFunction));
 	    }
 	    state(id, behaviorOrDefinition, definition) {
 	        if (arguments.length === 1) {
@@ -7719,7 +7105,8 @@
 	        this.stateMap.set(id, state);
 	        if (typeof definition === "function") {
 	            this.stateStack.push(state);
-	            definition.call(this, this.stateDef, this.eventDef);
+	            this.builder.currentState = state;
+	            definition();
 	            this.stateStack.pop();
 	        }
 	        if (state.behavior) {
@@ -7732,391 +7119,61 @@
 	        });
 	    }
 	}
-	exports.StateChart = StateChart;
-
-
-/***/ },
-/* 64 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const vector2_1 = __webpack_require__(17);
-	const math_util_1 = __webpack_require__(36);
-	const matrix3x3_1 = __webpack_require__(65);
-	describe("Vectors", function () {
-	    it("should rotate correctly", function () {
-	        const v = new vector2_1.Vector2(1, 1);
-	        v.rotate(math_util_1.MathUtil.DegreesToRadians * 45);
-	        expect(v.x).toBeCloseTo(0, 5);
-	        expect(v.y).toBeCloseTo(1.414214, 5);
-	        v.x = 5;
-	        v.y = 11;
-	        v.rotate(math_util_1.MathUtil.DegreesToRadians * 33);
-	        expect(v.x).toBeCloseTo(-1.797677, 5);
-	        expect(v.y).toBeCloseTo(11.948571, 5);
-	    });
-	});
-	describe("Matrix 3x3", function () {
-	    it("should transform a direction", function () {
-	        const m = new matrix3x3_1.Matrix3x3();
-	        const rad = 33 * math_util_1.MathUtil.DegreesToRadians;
-	        m.rotate(45, null, math_util_1.AngleUnit.Degrees);
-	        expect(m.getRotation(math_util_1.AngleUnit.Degrees)).toBeCloseTo(45, 1);
-	        const v = new vector2_1.Vector2(1, 1);
-	        m.transformDirection(v);
-	        expect(v.x).toBeCloseTo(0, 5);
-	        expect(v.y).toBeCloseTo(1.414214, 5);
-	    });
-	});
-
-
-/***/ },
-/* 65 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	Object.defineProperty(exports, "__esModule", { value: true });
-	const vector2_1 = __webpack_require__(17);
-	const math_util_1 = __webpack_require__(36);
-	/*
-	 * Layout
-	 * [ a  c  tx ]
-	 * [ b  d  ty ]
-	 * [ 0  0  1  ]
-	 *
-	 *
-	 * */
-	class Matrix3x3 {
-	    constructor() {
-	        this.a = this.d = 1;
-	        this.b = this.c = this.tx = this.ty = 0;
+	exports.StateChart_Internal = StateChart_Internal;
+	//[Hack!] weirdness w/ typescript compiler makes it hard to hide methods from subclass...no idea why.
+	//export a shadow class instead with only the properly exposed signature
+	class StateChart {
+	    constructor(fn) {
+	        return new StateChart_Internal(fn);
 	    }
-	    get m0() {
-	        return this.a;
-	    }
-	    get m1() {
-	        return this.b;
-	    }
-	    get m2() {
-	        return 0;
-	    }
-	    get m3() {
-	        return this.c;
-	    }
-	    get m4() {
-	        return this.d;
-	    }
-	    get m5() {
-	        return 0;
-	    }
-	    get m6() {
-	        return this.tx;
-	    }
-	    get m7() {
-	        return this.ty;
-	    }
-	    get m8() {
-	        return 1;
-	    }
-	    set(a, b, c, d, tx, ty) {
-	        this.a = a;
-	        this.b = b;
-	        this.c = c;
-	        this.d = d;
-	        this.tx = tx;
-	        this.ty = ty;
-	        return this;
-	    }
-	    identity() {
-	        this.a = this.d = 1;
-	        this.b = this.c = this.tx = this.ty = 0;
-	        return this;
-	    }
-	    translate(point) {
-	        const x = point.x;
-	        const y = point.y;
-	        this.tx += x * this.a + y * this.c;
-	        this.ty += x * this.b + y * this.d;
-	        return this;
-	    }
-	    scale(scale, center) {
-	        if (center) {
-	            this.translate(center);
-	        }
-	        this.a *= scale.x;
-	        this.b *= scale.x;
-	        this.c *= scale.y;
-	        this.d *= scale.y;
-	        if (center) {
-	            this.translate(new vector2_1.Vector2(center.x * -1, center.y * -1));
-	        }
-	        return this;
-	    }
-	    //todo should translation be in here?
-	    rotate(angle, center, angleUnit = math_util_1.AngleUnit.Radians) {
-	        if (angleUnit === math_util_1.AngleUnit.Degrees) {
-	            angle *= math_util_1.MathUtil.DegreesToRadians;
-	        }
-	        if (center) {
-	            var x = center.x;
-	            var y = center.y;
-	        }
-	        else {
-	            var x = this.tx;
-	            var y = this.ty;
-	        }
-	        const cos = Math.cos(angle);
-	        const sin = Math.sin(angle);
-	        const tx = x - x * cos + y * sin;
-	        const ty = y - x * sin - y * cos;
-	        const a = this.a;
-	        const b = this.b;
-	        const c = this.c;
-	        const d = this.d;
-	        this.a = cos * a + sin * c;
-	        this.b = cos * b + sin * d;
-	        this.c = -sin * a + cos * c;
-	        this.d = -sin * b + cos * d;
-	        this.tx += tx * a + ty * c;
-	        this.ty += tx * b + ty * d;
-	        return this;
-	    }
-	    multiply(mx) {
-	        const a1 = this.a;
-	        const b1 = this.b;
-	        const c1 = this.c;
-	        const d1 = this.d;
-	        const a2 = mx.a;
-	        const b2 = mx.c;
-	        const c2 = mx.b;
-	        const d2 = mx.d;
-	        const tx2 = mx.tx;
-	        const ty2 = mx.ty;
-	        this.a = a2 * a1 + c2 * c1;
-	        this.c = b2 * a1 + d2 * c1;
-	        this.b = a2 * b1 + c2 * d1;
-	        this.d = b2 * b1 + d2 * d1;
-	        this.tx += tx2 * a1 + ty2 * c1;
-	        this.ty += tx2 * b1 + ty2 * d1;
-	        return this;
-	    }
-	    invert() {
-	        var a = this.a, b = this.b, c = this.c, d = this.d, tx = this.tx, ty = this.ty, det = a * d - b * c, res = null;
-	        if (det && !isNaN(det) && isFinite(tx) && isFinite(ty)) {
-	            this.a = d / det;
-	            this.b = -b / det;
-	            this.c = -c / det;
-	            this.d = a / det;
-	            this.tx = (c * ty - d * tx) / det;
-	            this.ty = (b * tx - a * ty) / det;
-	            res = this;
-	        }
-	        return res;
-	    }
-	    invertNew(out) {
-	        const a = this.a;
-	        const b = this.b;
-	        const c = this.c;
-	        const d = this.d;
-	        const tx = this.tx;
-	        const ty = this.ty;
-	        const det = a * d - b * c;
-	        if (det && !isNaN(det) && isFinite(tx) && isFinite(ty)) {
-	            const retn = out || new Matrix3x3();
-	            retn.a = d / det;
-	            retn.b = -b / det;
-	            retn.c = -c / det;
-	            retn.d = a / det;
-	            retn.tx = (c * ty - d * tx) / det;
-	            retn.ty = (b * tx - a * ty) / det;
-	            return retn;
-	        }
-	        return null;
-	    }
-	    isIdentity() {
-	        return this.a === 1 && this.b === 0 && this.c === 0 && this.d === 1
-	            && this.tx === 0 && this.ty === 0;
-	    }
-	    transformDirection(point) {
-	        const x = point.x;
-	        const y = point.y;
-	        point.x = x * this.a + y * this.c;
-	        point.y = x * this.b + y * this.d;
-	        return point;
-	    }
-	    transformPoint(point) {
-	        const x = point.x;
-	        const y = point.y;
-	        point.x = x * this.a + y * this.c + this.tx;
-	        point.y = x * this.b + y * this.d + this.ty;
-	        return point;
-	    }
-	    transformPointNew(point) {
-	        const x = point.x;
-	        const y = point.y;
-	        return new vector2_1.Vector2(x * this.a + y * this.c + this.tx, x * this.b + y * this.d + this.ty);
-	    }
-	    inverseTransform(point) {
-	        const a = this.a;
-	        const b = this.b;
-	        const c = this.c;
-	        const d = this.d;
-	        const tx = this.tx;
-	        const ty = this.ty;
-	        const det = a * d - b * c;
-	        let res = null;
-	        if (det && !isNaN(det) && isFinite(tx) && isFinite(ty)) {
-	            const x = point.x - this.tx;
-	            const y = point.y - this.ty;
-	            res = new vector2_1.Vector2((x * d - y * c) / det, (y * a - x * b) / det);
-	        }
-	        return res;
-	    }
-	    // public decompose() {
-	    //     var a = this.a;
-	    //     var b = this.b;
-	    //     var c = this.c;
-	    //     var d = this.d;
-	    //     var det = a * d - b * c;
-	    //     var sqrt = Math.sqrt;
-	    //     var degrees = 180 / Math.PI;
-	    //     var rotate;
-	    //     var scale = new Vector2();
-	    //
-	    //     if (a !== 0 || b !== 0) {
-	    //         var r = sqrt(a * a + b * b);
-	    //         rotate = Math.acos(a / r) * (b > 0 ? 1 : -1);
-	    //         scale.x = r;
-	    //         scale.y = det / r;
-	    //     } else if (c !== 0 || d !== 0) {
-	    //         var s = sqrt(c * c + d * d);
-	    //         rotate = Math.asin(c / s) * (d > 0 ? 1 : -1);
-	    //         scale.x = det / s;
-	    //         scale.y = s;
-	    //     } else { // a = b = c = d = 0
-	    //         rotate = 0;
-	    //         scale.x = 0;
-	    //         scale.y = 0;
-	    //     }
-	    //     return {
-	    //         translation: new Vector2(this.tx, this.ty),
-	    //         rotation: rotate * degrees,
-	    //         scale: scale
-	    //     };
-	    // }
-	    getTranslation(out) {
-	        out = out || new vector2_1.Vector2();
-	        out.x = this.tx;
-	        out.y = this.ty;
-	        return out;
-	    }
-	    getScale(out) {
-	        var a = this.a;
-	        var b = this.b;
-	        var c = this.c;
-	        var d = this.d;
-	        var det = a * d - b * c;
-	        out = out || new vector2_1.Vector2();
-	        if (a !== 0 || b !== 0) {
-	            var r = Math.sqrt(a * a + b * b);
-	            out.x = r;
-	            out.y = det / r;
-	        }
-	        else if (c !== 0 || d !== 0) {
-	            var s = Math.sqrt(c * c + d * d);
-	            out.x = det / s;
-	            out.y = s;
-	        }
-	        else {
-	            out.x = 0;
-	            out.y = 0;
-	        }
-	        return out;
-	    }
-	    getRotation(unitType = math_util_1.AngleUnit.Radians) {
-	        var a = this.a;
-	        var b = this.b;
-	        var c = this.c;
-	        var d = this.d;
-	        var rotation = 0;
-	        if (a !== 0 || b !== 0) {
-	            var r = Math.sqrt(a * a + b * b);
-	            rotation = Math.acos(a / r) * (b > 0 ? 1 : -1);
-	        }
-	        else if (c !== 0 || d !== 0) {
-	            var s = Math.sqrt(c * c + d * d);
-	            rotation = Math.asin(c / s) * (d > 0 ? 1 : -1);
-	        }
-	        else {
-	            rotation = 0;
-	        }
-	        return unitType === math_util_1.AngleUnit.Degrees ? rotation * math_util_1.MathUtil.RadiansToDegrees : rotation;
-	    }
-	    copy(other) {
-	        this.a = other.a;
-	        this.b = other.b;
-	        this.c = other.c;
-	        this.d = other.d;
-	        this.tx = other.tx;
-	        this.ty = other.ty;
-	        return this;
-	    }
-	    equals(other) {
-	        return other.a === this.a && other.b === this.b && other.c === this.c &&
-	            other.d === this.d && other.tx === this.tx && other.ty === this.ty;
-	    }
-	    clone(out) {
-	        return (out || new Matrix3x3()).set(this.a, this.b, this.c, this.d, this.tx, this.ty);
-	    }
-	    static createIdentity() {
-	        return new Matrix3x3();
-	    }
-	    static createRotation(radians, out) {
-	        const result = out || new Matrix3x3();
-	        const cos = Math.cos(radians);
-	        const sin = Math.sin(radians);
-	        result.a = cos;
-	        result.b = sin;
-	        result.c = -sin;
-	        result.d = cos;
-	        result.tx = 0;
-	        result.ty = 0;
-	        return result;
-	    }
-	    static createScale(xScale, yScale, out) {
-	        const result = out || new Matrix3x3();
-	        result.a = xScale;
-	        result.b = 0;
-	        result.d = yScale;
-	        result.c = 0;
-	        result.tx = 0;
-	        result.ty = 0;
-	        return result;
-	    }
-	    static createTranslation(x, y, out) {
-	        const result = out || new Matrix3x3();
-	        result.a = 1;
-	        result.b = 0;
-	        result.c = 0;
-	        result.d = 1;
-	        result.tx = x;
-	        result.ty = y;
-	        return result;
-	    }
-	    static multiply(mat1, mat2, out) {
-	        out = out || new Matrix3x3();
-	        out.copy(mat1);
-	        out.multiply(mat2);
-	        return out;
+	    static createEvent() {
+	        return new StateChartEvent();
 	    }
 	}
-	Matrix3x3.scratch0 = new Matrix3x3();
-	Matrix3x3.scratch1 = new Matrix3x3();
-	Matrix3x3.scratch2 = new Matrix3x3();
-	Matrix3x3.scratch3 = new Matrix3x3();
-	Matrix3x3.scratch4 = new Matrix3x3();
-	exports.Matrix3x3 = Matrix3x3;
+	exports.StateChart = StateChart;
+	class StateChartBuilder {
+	    constructor(chart) {
+	        this.chart = chart;
+	    }
+	    init(fn) {
+	        this.currentState.onInit(fn);
+	    }
+	    enter(fn) {
+	        this.currentState.onEntered(fn);
+	    }
+	    exit(fn) {
+	        this.currentState.onExited(fn);
+	    }
+	    update(fn) {
+	        this.currentState.onUpdated(fn);
+	    }
+	    event(evtType, callback) {
+	        this.currentState.addEventHandler(evtType, callback);
+	    }
+	    trigger(evt, data) {
+	        this.chart.trigger(evt, data);
+	    }
+	    toDSL() {
+	        return {
+	            enter: this.enter.bind(this),
+	            exit: this.exit.bind(this),
+	            update: this.update.bind(this),
+	            init: this.init.bind(this),
+	            trigger: this.chart.trigger.bind(this.chart),
+	            state: this.chart.getStateFn(),
+	            event: this.event.bind(this),
+	            transition: this.chart.transition.bind(this.chart)
+	        };
+	    }
+	}
+	exports.StateChartBuilder = StateChartBuilder;
+	// var b = new StateChartBuilder();
+	// var z = b.createEvent<{s : string, y: number}>();
+	// b.trigger(z, {s: "", y: 1});
+	//
+	// const Evt_MouseUp = b.createEvent<Vector2>();
+	//
+	// b.event(Evt_MouseUp, "stateName");
 
 
 /***/ }

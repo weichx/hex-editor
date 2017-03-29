@@ -11,7 +11,8 @@ export enum EditorElementFlags {
     Rendered = 1 << 1,
     Enabled = 1 << 2,
     Destroyed = 1 << 3,
-    Visible = 1 << 4
+    Visible = 1 << 4,
+    ClearingChildren = 1 << 5
 }
 
 const pendingEventMap = new WeakMap<EditorElement, IEventDescriptor[]>();
@@ -74,7 +75,7 @@ export class EditorElement {
     }
 
     public insertChild<T>(child : EditorElement, index : number) : boolean {
-        if(!child) return;
+        if (!child) return;
         if (index < 0) index = 0;
         if (index > this.children.length) index = this.children.length;
         if (this.children[index] === child) return;
@@ -109,11 +110,11 @@ export class EditorElement {
             child.mount(this.htmlNode);
         }
 
-        if(!moved && oldParent && child.parent && child.isMounted()) {
+        if (!moved && oldParent && child.parent && child.isMounted()) {
             child.onParentChanged(this, oldParent);
         }
 
-        if(moved) child.onMoved(index);
+        if (moved) child.onMoved(index);
 
         return true;
     }
@@ -186,13 +187,11 @@ export class EditorElement {
     }
 
     public clearChildren() : void {
+        this.flags ^= EditorElementFlags.ClearingChildren;
         for (let i = 0; i < this.children.length; i++) {
             this.children[i].destroy();
         }
-        const node = this.getDomNode();
-        while (node.firstElementChild) {
-            node.firstElementChild.remove();
-        }
+        this.flags ^= EditorElementFlags.ClearingChildren;
     }
 
     public getChildrenByType<T extends EditorElement>(type : INewable<T>) : T[] {
@@ -288,25 +287,36 @@ export class EditorElement {
         return this.children.indexOf(child);
     }
 
-    //todo need to remove all event handlers
     public destroy() {
         if (this.isDestroyed()) return;
         this.flags |= EditorElementFlags.Destroyed;
-        //maybe have 'isDestroyPending' flag
-        //be careful with destroying the dom node since it is shared in a virtual tree
+
         this.onDestroyed();
 
         for (let i = 0; i < this.children.length; i++) {
             this.children[i].destroy();
         }
 
-        if (this.parent) {
-            if (!this.parent.isDestroyed()) {
-                this.getDomNode().remove();
+        //todo this can be done async somehow
+        const evtList = pendingEventMap.get(this);
+        if(evtList) {
+            for (let i = 0; i < evtList.length; i++) {
+                const evt = evtList[i];
+                if (this.htmlNode) {
+                    this.htmlNode.removeEventListener(evt.type, evt.fn, evt.bubble);
+                }
+            }
+            pendingEventMap.delete(this);
+        }
+
+        if (this.parent && !this.parent.isDestroyed()) {
+
+            this.getDomNode().remove();
+            if ((this.parent.flags & EditorElementFlags.ClearingChildren) === 0) {
                 this.parent.children.remove(this);
             }
         }
-
+        this.htmlNode = null;
         this.renderContext = null;
         this.parent = null;
         this.childRoot = null;

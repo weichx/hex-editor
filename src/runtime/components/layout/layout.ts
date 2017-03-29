@@ -1,92 +1,154 @@
-import {SizingComponent, SizingMode} from "./sizing_component";
-import {Component} from "../../component";
-import {AppElement} from "../../app_element";
-import {Vector2} from "../../vector2";
+import {Component, component} from "../../component";
+import {AppElement, Space} from "../../app_element";
+import {MathUtil} from "../../../math_util";
+import {inspector} from "../../../renderers/component/expose_as";
+import {EnumSelect} from "../../../util";
 
-export interface ISizingComponent{
-    appElement : AppElement;
-    width: number;
-    height: number;
-    sizingMode : SizingMode;
+export enum LengthUnit {
+    Percent, Pixel, Flex
 }
 
-export class DefaultSizer implements ISizingComponent {
+function layoutController(...args : any[]) : any {
 
-    appElement : AppElement;
-    width: number;
-    height: number;
-    sizingMode : SizingMode;
+}
 
-    constructor(appElement : AppElement) {
-        this.appElement = appElement;
-        this.width = 1;
-        this.height = 1;
-        this.sizingMode = SizingMode.Fraction;
+function editorEnabled(...args : any[]) : any {}
+
+class Width {
+
+    private _percent : number;
+    private _pixels : number;
+
+    public getPixels() : number {
+        return this._pixels;
+    }
+
+    public setPixels(pixelWidth : number) {
+
+    }
+
+    public setPercent(percent : number) {
+        this._percent = MathUtil.clamp01(percent);
+    }
+
+    public getPixelWidth(reference : Width) {
+
     }
 
 }
 
+enum Alignment {
+    Left, Right, Center, Fill
+}
+
+@layoutController
 export class LayoutComponent extends Component {
+    public doLayout() {}
+}
 
-    protected sizingComponents : Array<ISizingComponent> = [];
+class HorizontalLayoutSlot extends Component {
+    @inspector(Number) public paddingLeft : number = 0;
+    @inspector(Number) public paddingRight : number = 0;
+    @inspector(Number) public paddingTop : number = 0;
+    @inspector(Number) public paddingBottom : number = 0;
+    @inspector(Number) public flexFactor : number = 0;
+    @inspector(Boolean) public useFlex : boolean = false;
+    @inspector(Number) public width : number;
+    @inspector(Number) public height : number;
+    @inspector(EnumSelect, Alignment) public alignment : Alignment;
+    public index : number = -1;
+    public totalWidth : number = 0;
+}
 
-    public doLayout() : void {}
+@layoutController
+@component("Layout/Horizontal")
+export class HorizontalLayout extends LayoutComponent {
 
-    public onMounted() : void {
-        const childCount = this.appElement.getChildCount();
-        for(let i = 0; i < childCount; i++) {
-            const child = this.appElement.getChildAt(i);
-            let sizing = child.getComponent(SizingComponent) || new DefaultSizer(child);
-            this.sizingComponents.push(sizing)
+    private flexElements = new Array<HorizontalLayoutSlot>();
+    private nonFlexElements = new Array<HorizontalLayoutSlot>();
+    private slotComponents = new Array<HorizontalLayoutSlot>();
+
+    @inspector(Boolean) public sizeToContentWidth : boolean = false;
+    @inspector(Boolean) public sizeToContentHeight : boolean = false;
+
+    public onMounted() {
+        const children = this.appElement.getChildren();
+        for (let i = 0; i < children.length; i++) {
+            var slot = children[i].getComponent(HorizontalLayoutSlot);
+            slot = slot || children[i].addComponent(HorizontalLayoutSlot);
+            this.slotComponents.push(slot);
+            //slot.onChange();
         }
-        Runtime.queueLayout(this);
+        EditorRuntime.queueLayout(this);
     }
 
-    public getSlotAtPosition(position : Vector2) : any {
-        if(this.sizingComponents.length === 0) return;
-
+    @editorEnabled
+    public onChildAdded(child : AppElement) {
+        this.slotComponents.push(child.addComponent(HorizontalLayoutSlot));
+        EditorRuntime.queueLayout(this);
     }
 
-    public onChildAdded(child : AppElement) : void {
-        const sizer = child.getComponent(SizingComponent) || new DefaultSizer(child);
-        this.sizingComponents.push(sizer);
-        Runtime.queueLayout(this);
-    }
-
-    public onChildRemoved(child : AppElement) : void {
-        for(let i = 0; i < this.sizingComponents.length; i++) {
-            if(this.sizingComponents[i].appElement === child) {
-                this.sizingComponents.removeAt(i);
-                break;
+    public doLayout() {
+        //ignore size to content for now
+        let totalWidth = 0;
+        let fractions = 0;
+        for (let i = 0; i < this.slotComponents.length; i++) {
+            const slot = this.slotComponents[i];
+            slot.index = i;
+            if (slot.useFlex) {
+                this.flexElements.push(slot);
+                fractions += MathUtil.clamp(slot.flexFactor, 0, Number.MAX_SAFE_INTEGER) | 0;
+            }
+            else {
+                this.nonFlexElements.push(slot);
             }
         }
-        Runtime.queueLayout(this);
-    }
+        let spaceToAllocate = this.appElement.getWidth();
+        let allocatedSpace = 0;
+        for (let i = 0; i < this.nonFlexElements.length; i++) {
+            const slot = this.nonFlexElements[i];
+            const width = slot.appElement.getWidth();
+            let total = slot.paddingLeft + width + slot.paddingRight;
+            allocatedSpace += total;
+            slot.totalWidth = total;
+        }
 
-    public onChildMoved(child : AppElement) : void {
-        //maybe just rebuild sizing component list
-    }
-
-    public addSizingComponent(sizingComponent : SizingComponent) : void {
-        for(let i = 0; i < this.sizingComponents.length; i++) {
-            const cmp = this.sizingComponents[i];
-            if(cmp.appElement === sizingComponent.appElement) {
-                this.sizingComponents[i] = sizingComponent;
-                return;
+        let remaining = this.appElement.getWidth() - allocatedSpace;
+        if (fractions > 0) {
+            const pieceSize = remaining / fractions;
+            for (let i = 0; i < this.flexElements.length; i++) {
+                const slot = this.flexElements[i];
+                slot.totalWidth = pieceSize * slot.flexFactor;
             }
         }
-        Runtime.queueLayout(this);
-    }
-
-    public removeSizingComponent(sizingComponent : SizingComponent) : void {
-        for(let i = 0; i < this.sizingComponents.length; i++) {
-            const cmp = this.sizingComponents[i];
-            if(cmp.appElement === sizingComponent.appElement) {
-                this.sizingComponents[i] = new DefaultSizer(sizingComponent.appElement);
-                return;
+        else {
+            for (let i = 0; i < this.flexElements.length; i++) {
+                const slot = this.flexElements[i];
+                slot.totalWidth = 0;
             }
         }
-        Runtime.queueLayout(this);
+
+        var currentX = 0;
+        var height = this.appElement.getHeight();
+        for (let i = 0; i < this.slotComponents.length; i++) {
+            const slot = this.slotComponents[i];
+            const appElement = slot.appElement;
+            appElement.setWidth(slot.totalWidth, LengthUnit.Pixel);
+            appElement.setHeight(height, LengthUnit.Pixel);
+            appElement.setPositionValues(currentX, 0, Space.Local);
+            currentX += slot.totalWidth;
+        }
+        this.flexElements.length = 0;
+        this.nonFlexElements.length = 0;
+        totalWidth = Math.max(totalWidth, this.appElement.getWidth());
+    }
+
+    public getWidth() {
+
+    }
+
+    public getOverflowWidth() {
+
     }
 
 }
@@ -104,7 +166,6 @@ export class LayoutComponent extends Component {
 
 //how are animation triggers handled? possibly using this layout rect
 
-
 //tethers -> Sticky positioning based on screen size and tether point within some element (not only parent)
 //anchors -> Stretch width/height based on anchor points on parent
 
@@ -116,23 +177,23 @@ export class LayoutComponent extends Component {
 //Tether is a subclass of Layout?
 
 //adjusting sizes
-    //layout items are locked
+//layout items are locked
 
 //sizing
-    //anchor
-    //percent of parent remaining
-    //percent of parent total space
-    //fraction of parent remaining space
-    //fraction of parent total space based on # of siblings
-    //min / max / preferred
-    //fit child content width
-    //fit child content height
-    //fill parent
-    //stretch left
-    //stretch right
-    //stretch up
-    //stretch down
-    //stretch to sibling
+//anchor
+//percent of parent remaining
+//percent of parent total space
+//fraction of parent remaining space
+//fraction of parent total space based on # of siblings
+//min / max / preferred
+//fit child content width
+//fit child content height
+//fill parent
+//stretch left
+//stretch right
+//stretch up
+//stretch down
+//stretch to sibling
 
 //margin / padding / border -> Ignored for layout, layout only deals with total width / height
 //margin / padding / border -> Optionally collapsible
@@ -144,7 +205,6 @@ export class LayoutComponent extends Component {
 //anything with a tether is NOT part of layout children
 //absolute width / height
 //position
-
 
 //possible to use layout meta-elements that can declare sizing for their child
 //these elements can have only 1 child but many components

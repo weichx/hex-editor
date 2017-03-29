@@ -12,7 +12,6 @@ import {Component} from "../runtime/component";
 import {Vector2} from "../runtime/vector2";
 import {TypeOf} from "../runtime/interfaces/i_typeof";
 import {DragAction} from "./drag_actions/drag_action";
-import {HorizontalStackLayout} from "../runtime/components/layout/horizontal_stack_layout";
 import {Project} from "../project";
 import {BackgroundComponent} from "../runtime/components/background_component";
 import {Color} from "../runtime/color";

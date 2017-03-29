@@ -1,33 +1,33 @@
-import {EventDef, StateChart, StateChartBehavior, StateChartEvent, StateDef} from "../../src/state_chart/state_chart";
+import {StateChart, StateChartBehavior, StateChartBuilder} from "../../src/state_chart/state_chart";
 
 describe("Statechart - singular", function () {
 
-    class Evt_DoorUnlock extends StateChartEvent {}
-    class Evt_DoorLock extends StateChartEvent {}
-    class Evt_DoorOpen extends StateChartEvent {}
-    class Evt_DoorClose extends StateChartEvent {}
+    const Evt_DoorUnlock = StateChart.createEvent();
+    const Evt_DoorLock = StateChart.createEvent();
+    const Evt_DoorOpen = StateChart.createEvent();
+    const Evt_DoorClose = StateChart.createEvent();
 
     function getChart(behaviors : { [str : string] : StateChartBehavior } = {}) {
 
-        return new StateChart(function (state : StateDef, event : EventDef) {
-
+        return new StateChart(function (builder : StateChartBuilder) {
+            var { state, transition } = builder.toDSL();
             state("closed", behaviors["closed"], function () {
 
-                event(Evt_DoorUnlock, "unlocked");
+                transition(Evt_DoorUnlock, "unlocked");
 
                 state("locked", behaviors["locked"], function () {
-                    event(Evt_DoorUnlock, "unlocked");
+                    transition(Evt_DoorUnlock, "unlocked");
                 });
 
                 state("unlocked", behaviors["unlocked"], function () {
-                    event(Evt_DoorLock, "locked");
-                    event(Evt_DoorOpen, "opened");
+                    transition(Evt_DoorLock, "locked");
+                    transition(Evt_DoorOpen, "opened");
                 });
 
             });
 
             state("opened", behaviors["opened"], function () {
-                event(Evt_DoorClose, "unlocked");
+                transition(Evt_DoorClose, "unlocked");
             });
 
         });
@@ -48,7 +48,7 @@ describe("Statechart - singular", function () {
         expect(chart.isInState("unlocked")).toBeFalsy();
         expect(chart.isInState("locked")).toBeTruthy();
         expect(chart.isInState("closed")).toBeTruthy();
-        chart.trigger(new Evt_DoorUnlock());
+        chart.trigger(Evt_DoorUnlock);
         chart.update();
         expect(chart.isInState("unlocked")).toBeTruthy();
         expect(chart.isInState("locked")).toBeFalsy();
@@ -57,14 +57,14 @@ describe("Statechart - singular", function () {
 
     it("should move from closed/unlocked  to opened and back to closed/locked", function () {
         const chart = getChart();
-        chart.trigger(new Evt_DoorUnlock());
-        chart.trigger(new Evt_DoorOpen());
+        chart.trigger(Evt_DoorUnlock);
+        chart.trigger(Evt_DoorOpen);
         chart.update();
         expect(chart.isInState("opened")).toBeTruthy();
         expect(chart.isInState("closed")).toBeFalsy();
         expect(chart.isInState("locked")).toBeFalsy();
         expect(chart.isInState("unlocked")).toBeFalsy();
-        chart.trigger(new Evt_DoorClose());
+        chart.trigger(Evt_DoorClose);
         chart.update();
         expect(chart.isInState("opened")).toBeFalsy();
         expect(chart.isInState("closed")).toBeTruthy();
@@ -74,7 +74,7 @@ describe("Statechart - singular", function () {
 
     it("should not transition on invalid event", function () {
         const chart = getChart();
-        chart.trigger(new Evt_DoorClose());
+        chart.trigger(Evt_DoorClose);
         chart.update();
         expect(chart.isInState("opened")).toBeFalsy();
         expect(chart.isInState("closed")).toBeTruthy();
@@ -108,12 +108,12 @@ describe("Statechart - singular", function () {
         };
 
         var chart = getChart(behaviors); //enter = 1
-        chart.trigger(new Evt_DoorUnlock());
+        chart.trigger(Evt_DoorUnlock);
         chart.update(); //update = 1
         chart.update(); //update = 2
-        chart.trigger(new Evt_DoorOpen()); //exit = 1
+        chart.trigger(Evt_DoorOpen); //exit = 1
         chart.update(); //update = 2, not in closed state
-        chart.trigger(new Evt_DoorClose()); //enter = 2
+        chart.trigger(Evt_DoorClose); //enter = 2
         chart.update(); //update = 3, in closed state again
         expect(enterCount).toBe(2);
         expect(updateCount).toBe(3);
@@ -121,16 +121,112 @@ describe("Statechart - singular", function () {
 
     });
 
+    it("should handle state behavior functions", function() {
+        let enterCount = 0;
+        let exitCount = 0;
+        let updateCount = 0;
+        let initCount = 0;
+        const Evt_Swap = StateChart.createEvent();
+        const chart = new StateChart(function(builder : StateChartBuilder) {
+            const {state, transition, enter, exit, update, init } = builder.toDSL();
+            state("state1", function() {
+                enter(function() {
+                    enterCount++;
+                });
+                exit(function() {
+                    exitCount++;
+                });
+                update(function() {
+                    updateCount++;
+                });
+                init(function () {
+                    initCount++;
+                });
+                transition(Evt_Swap, "state2");
+            });
+            state("state2", function() {
+                transition(Evt_Swap, "state1");
+            });
+        });
+        expect(initCount).toBe(1);
+        expect(enterCount).toBe(1);
+        expect(exitCount).toBe(0);
+        expect(updateCount).toBe(0); //exit - no update tick
+        chart.trigger(Evt_Swap);
+        chart.update();
+        expect(initCount).toBe(1);
+        expect(enterCount).toBe(1);
+        expect(exitCount).toBe(1);
+        expect(updateCount).toBe(0);
+        chart.trigger(Evt_Swap);
+        chart.update();
+        expect(initCount).toBe(1);
+        expect(enterCount).toBe(2);
+        expect(exitCount).toBe(1);
+        expect(updateCount).toBe(1); //re-enter so it gets an update tick
+        chart.update();
+        expect(initCount).toBe(1);
+        expect(enterCount).toBe(2);
+        expect(exitCount).toBe(1);
+        expect(updateCount).toBe(2); //stay - get an update tick
+    });
+
+    it("should handle events", function() {
+        const Evt_Swap = StateChart.createEvent();
+        let count = 0;
+        const chart = new StateChart(function(builder : StateChartBuilder) {
+            const {state, transition, event } = builder.toDSL();
+            state("state1", function() {
+                event(Evt_Swap, () => count++);
+                transition(Evt_Swap, "state2");
+            });
+            state("state2", function() {
+                transition(Evt_Swap, "state1");
+            });
+        });
+        expect(count).toBe(0);
+        chart.trigger(Evt_Swap);
+        chart.update();
+        expect(count).toBe(1); // events are handled before exits
+        chart.trigger(Evt_Swap);
+        chart.update();
+        expect(count).toBe(1); // events not fired when not active
+        chart.trigger(Evt_Swap);
+        chart.update();
+        expect(count).toBe(2); // event fires when moving into state
+    });
+
+    it("should handle events with data", function() {
+        const Evt_Swap = StateChart.createEvent<{count : number}>();
+        let count = 0;
+        const chart = new StateChart(function(builder : StateChartBuilder) {
+            const {state, transition, event } = builder.toDSL();
+            state("state1", function() {
+                event(Evt_Swap, (data : { count : number}) => {
+                    expect(data.count).toBe(100);
+                    count++
+                });
+                transition(Evt_Swap, "state2");
+            });
+            state("state2", function() {
+                transition(Evt_Swap, "state1");
+            });
+        });
+        chart.trigger(Evt_Swap, {count: 100});
+        chart.update();
+        expect(count).toBe(1);
+    })
 });
 
 describe("StateChart - parallel", function () {
 
     it("should be in a parallel state", function () {
 
-        class Evt_Parallel extends StateChartEvent {}
-        class Evt_Singular extends StateChartEvent {}
+        const Evt_Parallel = StateChart.createEvent();
+        const Evt_Singular = StateChart.createEvent();
 
-        const chart = new StateChart(function (state : StateDef, event : EventDef) {
+        const chart = new StateChart(function (builder : StateChartBuilder) {
+            const {state, transition} = builder.toDSL();
 
             state("state0");
 
@@ -139,8 +235,8 @@ describe("StateChart - parallel", function () {
                 state("state2");
             });
 
-            event(Evt_Parallel, "parallel");
-            event(Evt_Singular, "state0");
+            transition(Evt_Parallel, "parallel");
+            transition(Evt_Singular, "state0");
 
         });
 
@@ -148,13 +244,13 @@ describe("StateChart - parallel", function () {
         expect(chart.isInState("state1")).toBeFalsy();
         expect(chart.isInState("state2")).toBeFalsy();
         expect(chart.isInState("parallel")).toBeFalsy();
-        chart.trigger(new Evt_Parallel());
+        chart.trigger(Evt_Parallel);
         chart.update();
         expect(chart.isInState("parallel")).toBeTruthy();
         expect(chart.isInState("state1")).toBeTruthy();
         expect(chart.isInState("state2")).toBeTruthy();
         expect(chart.isInState("state0")).toBeFalsy();
-        chart.trigger(new Evt_Singular());
+        chart.trigger(Evt_Singular);
         chart.update();
         expect(chart.isInState("state0")).toBeTruthy();
         expect(chart.isInState("state1")).toBeFalsy();
@@ -163,15 +259,16 @@ describe("StateChart - parallel", function () {
 
     });
 
-    class Evt_TextBold extends StateChartEvent {}
-    class Evt_TextUnderline extends StateChartEvent {}
-    class Evt_TextItalic extends StateChartEvent {}
-    class Evt_TextReset extends StateChartEvent {}
-    class Evt_TextDecorate extends StateChartEvent {}
+    const Evt_TextBold = StateChart.createEvent();
+    const Evt_TextUnderline = StateChart.createEvent();
+    const Evt_TextItalic = StateChart.createEvent();
+    const Evt_TextReset = StateChart.createEvent();
+    const Evt_TextDecorate = StateChart.createEvent();
 
     function getChart(behaviors : {[str : string] : StateChartBehavior} = {}) {
 
-        return new StateChart(function (state : StateDef, event : EventDef) {
+        return new StateChart(function (builder : StateChartBuilder) {
+            const {state, transition} = builder.toDSL();
 
             state("text-undecorated");
 
@@ -180,11 +277,11 @@ describe("StateChart - parallel", function () {
                 state('bold', behaviors["bold"], function () {
 
                     state('bold.off', behaviors["bold.off"], function () {
-                        event(Evt_TextBold, "bold.on");
+                        transition(Evt_TextBold, "bold.on");
                     });
 
                     state('bold.on', behaviors["bold.on"], function () {
-                        event(Evt_TextBold, "bold.off");
+                        transition(Evt_TextBold, "bold.off");
                     });
 
                 });
@@ -192,19 +289,19 @@ describe("StateChart - parallel", function () {
                 state('underline', behaviors["underline"], function () {
 
                     state('underline.off', behaviors["underline.on"], function () {
-                        event(Evt_TextUnderline, "underline.on");
+                        transition(Evt_TextUnderline, "underline.on");
                     });
 
                     state('underline.on', behaviors["underline.off"], function () {
-                        event(Evt_TextUnderline, "underline.off");
+                        transition(Evt_TextUnderline, "underline.off");
                     });
 
                 });
 
             });
 
-            event(Evt_TextReset, "text-undecorated");
-            event(Evt_TextDecorate, "text-decorated");
+            transition(Evt_TextReset, "text-undecorated");
+            transition(Evt_TextDecorate, "text-decorated");
 
         });
 
@@ -213,7 +310,7 @@ describe("StateChart - parallel", function () {
     it("should enter parallel child states", function () {
         const chart = getChart();
         expect(chart.isInState("text-decorated")).toBeFalsy();
-        chart.trigger(new Evt_TextDecorate());
+        chart.trigger(Evt_TextDecorate);
         chart.update();
         expect(chart.isInState("text-decorated")).toBeTruthy();
         expect(chart.isInState("bold.off")).toBeTruthy();
@@ -225,8 +322,8 @@ describe("StateChart - parallel", function () {
     it("should enter parallel child child state", function () {
         const chart = getChart();
         expect(chart.isInState("text-decorated")).toBeFalsy();
-        chart.trigger(new Evt_TextDecorate());
-        chart.trigger(new Evt_TextBold());
+        chart.trigger(Evt_TextDecorate);
+        chart.trigger(Evt_TextBold);
         chart.update();
         expect(chart.isInState("text-decorated")).toBeTruthy();
         expect(chart.isInState("bold.off")).toBeFalsy();
@@ -243,8 +340,8 @@ describe("StateChart - parallel", function () {
             }
         }
         const chart = getChart({"bold.off": new BoldOffBehavior()});
-        chart.trigger(new Evt_TextDecorate());
-        chart.trigger(new Evt_TextBold());
+        chart.trigger(Evt_TextDecorate);
+        chart.trigger(Evt_TextBold);
         chart.update();
         expect(count).toBe(1);
     });

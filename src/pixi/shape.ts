@@ -6,13 +6,15 @@ import {MathUtil} from "../math_util";
 
 export abstract class Shape extends Transformable {
 
-    public style : PixiStyle;
-    public children : Array<Shape>;
+    public readonly style : PixiStyle;
+    public readonly children : Array<Shape>;
+    public isEnabled : boolean;
 
     protected points : Vector2[];
 
-    constructor(style : PixiStyle) {
-        super();
+    constructor(parent? : Transformable, style? : PixiStyle) {
+        super(parent);
+        this.isEnabled = true;
         this.style = (style || PixiStyle.Inherit).clone();
         this.points = [];
     }
@@ -40,4 +42,7 @@ export abstract class Shape extends Transformable {
         this.setFillColor(color);
         this.setLineColor(color);
     }
+
+    public abstract containsPoint(point : Vector2) : boolean;
+
 }

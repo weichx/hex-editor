@@ -54,14 +54,6 @@ export class RuntimeImpl extends RuntimeBase {
     }
 
     public getAppElementAtPoint(point : Vector2) : AppElement {
-        const childCount = AppElement.Root.getChildCount();
-        for (let i = 0; i < childCount; i++) {
-            const hit = this.appElementAtPointStep(AppElement.Root.getChildAt(i), point);
-            if (hit) {
-                return hit;
-            }
-        }
-        //if (AppElement.Root.containsPoint(point)) return AppElement.Root;
         return null;
     }
 

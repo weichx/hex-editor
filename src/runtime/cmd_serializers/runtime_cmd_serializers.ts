@@ -37,7 +37,9 @@ Runtime.setCommandSerializer(CommandType.Create, function (id : any) {
         id: id,
         elementType: elementType,
         components: serializedComponents,
-        parentId: appElement.getParent().id
+        parentId: appElement.getParent().id,
+        width: appElement.getWidth(),
+        height: appElement.getHeight()
     };
 });
 

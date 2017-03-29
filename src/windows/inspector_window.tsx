@@ -10,8 +10,8 @@ import {AppElement} from "../runtime/app_element";
 import {createElement} from "../editor_element/element_renderer";
 import {CreateBinding, IEditorBinding} from "../editor/binding";
 import {CheckboxInput} from "../ui_elements/checkbox_input";
-import {TransformInspector} from "../renderers/component/app_element_inspector";
-
+import {TransformInspector} from "../renderers/component/transform_inspector";
+let inspector : any = null;
 export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
 
     public readonly selection : AppElement;
@@ -25,9 +25,10 @@ export class InspectorWindow extends EditorWindowElement<IWindowAttrs> {
         (this as any).selection = newSelection;
         this.getChildRoot().clearChildren();
         if (!this.selection) return;
-        this.getChildRoot().addChild(createElement(TransformInspector, {
+        inspector = createElement(TransformInspector, {
             appElement: this.selection
-        }));
+        });
+        this.getChildRoot().addChild(inspector);
         const renderers = ComponentRenderer.getAllRenderers(this.selection);
         for (let i = 0; i < renderers.length; i++) {
             this.getChildRoot().addChild(renderers[i]);

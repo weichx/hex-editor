@@ -2,13 +2,14 @@ import {Component} from "./component";
 import {LifeCycleFlag} from "./enums/e_lifecycle_flags";
 import {CommandType} from "./enums/e_command_type";
 import {TypeOf} from "./interfaces/i_typeof";
-import {clamp, traverseChildren} from "../util";
+import {clamp, Integer, traverseChildren} from "../util";
 import {BoundingBox} from "./bounding_box";
 import {MathUtil} from "../math_util";
 import {Matrix} from "./matrix";
 import {Quaternion} from "./quaternion";
 import {Vector2} from "./vector2";
 import {Vector3} from "./vector3";
+import {LengthUnit} from "./components/layout/layout";
 
 let idGenerator = 0;
 
@@ -31,21 +32,26 @@ export class AppElement {
     public name : string;
     public readonly id : number;
 
+    //todo a lot of these vector variables can probably be compressed into integers
+
     private parent : AppElement;
     private components : Array<Component>;
     private children : Array<AppElement>;
-    private boundingBox : BoundingBox;
-    private lifeCycleFlags : LifeCycleFlag;
+    private boundingBox : BoundingBox; //maybe re-create every time?
+    private lifeCycleFlags : LifeCycleFlag; //combine with ElementDirtyFlag
     private position : Vector2;
     private scale : Vector2;
     private rotation : number;
     private width : number;
     private height : number;
+    private widthUnit : LengthUnit;
+    private heightUnit : LengthUnit;
     private pivot : Vector2;
     private dirtyFlags : ElementDirtyFlag;
     private localMatrix : Matrix;
     private worldMatrix : Matrix;
-    public anchor : Vector2;
+    public anchorMin : Vector2;
+    public anchorMax : Vector2;
 
     constructor(name? : string, parent : AppElement = null) {
         this.id = idGenerator++;
@@ -67,7 +73,12 @@ export class AppElement {
         this.localMatrix = new Matrix();
         this.worldMatrix = new Matrix();
         this.boundingBox = new BoundingBox(this);
-        this.anchor = new Vector2();
+        this.anchorMin = new Vector2();
+        this.anchorMax = new Vector2();
+        this.width = 1;
+        this.height = 1;
+        this.widthUnit = LengthUnit.Percent;
+        this.heightUnit = LengthUnit.Percent;
         //todo don't allow components to be constructed outside of addComponent or this constructor
         Runtime.addElement(this);
     }
@@ -137,43 +148,64 @@ export class AppElement {
     }
 
     public getWidth() : number {
+        switch (this.widthUnit) {
+            case LengthUnit.Pixel:
+                return this.width;
+            case LengthUnit.Percent:
+                if (!this.parent) {
+                    return 0;
+                }
+                return this.width * this.parent.getWidth();
+            case LengthUnit.Flex:
+                return 0;
+        }
         return this.width;
     }
 
-    public setWidth(width : number) : void {
-        if (width === this.width) return;
-        this.width = width;
-        //todo get parent layout component and invoke layout
-        //todo get layout component and invoke layout
-        //todo use anchor settings
+    public getScaledWidth() : number {
+        return this.width * this.getWorldMatrix(Matrix.scratch4).getScaleX();
+    }
+
+    public setWidth(width : number, unit : LengthUnit) : void {
+        if (width === this.width && this.widthUnit === unit) return;
+        this.width = MathUtil.clamp(width, 0, Number.MAX_VALUE);
+        this.widthUnit = unit;
         this.dirtyFlags |= ElementDirtyFlag.Width;
         Runtime.sendCommand(CommandType.SetDimensions, this.id);
     }
 
     public getHeight() : number {
+        switch (this.heightUnit) {
+            case LengthUnit.Pixel:
+                return this.height;
+            case LengthUnit.Percent:
+                if (!this.parent) {
+                    return 0;
+                }
+                return this.height * this.parent.getHeight();
+            case LengthUnit.Flex:
+                return 0;
+        }
         return this.height;
     }
 
-    public setHeight(height : number) : void {
-        if (this.height === height) return;
-        this.height = height;
+    public getScaledHeight() : number {
+        return this.height * this.getWorldMatrix(Matrix.scratch4).getScaleY();
+    }
+
+    public setHeight(height : number, unit : LengthUnit) : void {
+        if (this.height === height && this.heightUnit === unit) return;
+        this.height = MathUtil.clamp(height, 0, Number.MAX_VALUE);
+        this.heightUnit = unit;
         this.dirtyFlags |= ElementDirtyFlag.Height;
         Runtime.sendCommand(CommandType.SetDimensions, this.id);
     }
 
-    public setDimensions(widthOrDimension : number | IDimension, height = 0) : void {
-        const dimension = widthOrDimension as IDimension;
-
-        if (typeof widthOrDimension === "object") {
-            if (dimension.width !== void 0) {
-                this.width = dimension.width;
-                this.height = dimension.height;
-            }
-        }
-        else {
-            this.width = widthOrDimension;
-            this.height = height;
-        }
+    public setDimensions(width : number, height : number, unit : LengthUnit) : void {
+        this.widthUnit = unit;
+        this.heightUnit = unit;
+        this.width  = MathUtil.clamp(width, 0, Number.MAX_VALUE);
+        this.height = MathUtil.clamp(height, 0, Number.MAX_VALUE);
         this.dirtyFlags |= ElementDirtyFlag.WidthOrHeight;
         Runtime.sendCommand(CommandType.SetDimensions, this.id);
     }
@@ -200,11 +232,18 @@ export class AppElement {
         Runtime.sendCommand(CommandType.SetTransform, this.id);
     }
 
-    public setPosition(position : Vector2, relativeTo : Space = Space.World) : void {
-        this.setPositionValues(position.x, position.y, relativeTo);
+    public setPosition(position : Vector2, relativeTo : Space = Space.World, keepChildPositions = false) : void {
+        this.setPositionValues(position.x, position.y, relativeTo, keepChildPositions);
     }
 
-    public setPositionValues(x : number, y : number, relativeTo : Space = Space.World) : void {
+    public setPositionValues(x : number, y : number, relativeTo : Space = Space.World, keepChildPositions = false) : void {
+        if(keepChildPositions) {
+            Vector2.scratchArray0.length = this.children.length;
+            for(let i = 0; i < this.children.length; i++) {
+                Vector2.scratchArray0[i] = this.children[i].getPosition();
+            }
+            this.setPositionValues(x, y, relativeTo);
+        }
         if (this.parent && relativeTo === Space.World) {
             var invertParentWorldMatrix = this.parent.getWorldMatrix(Matrix.scratch0);
             invertParentWorldMatrix.invert();
@@ -216,6 +255,11 @@ export class AppElement {
         else {
             this.position.x = x;
             this.position.y = y;
+        }
+        if(keepChildPositions) {
+            for (let i = 0; i < this.children.length; i++) {
+                this.children[i].setPosition(Vector2.scratchArray0[i]);
+            }
         }
         this.dirtyFlags |= ElementDirtyFlag.Position;
         Runtime.sendCommand(CommandType.SetTransform, this.id);
@@ -251,15 +295,12 @@ export class AppElement {
         }
     }
 
-    public enable() : void {
-        //Runtime.enable(this);
-    }
 
     public setParent(parent : AppElement, keepPosition = true) : void {
         if (parent && parent === this.parent) return;
         parent = parent || AppElement.Root;
         const oldParent = this.parent;
-        let currentPosition = this.getPosition();
+        let currentPosition = this.getPosition(Vector2.scratch0);
         this.parent = parent;
         //todo ancestor check
         if (oldParent) {
@@ -267,13 +308,9 @@ export class AppElement {
         }
         if (parent) {
             this.parent.children.push(this);
-            //todo position
-        }
-        else {
-            //todo position
         }
         if (keepPosition) {
-            this.setPosition(currentPosition);
+            this.setPositionValues(currentPosition.x, currentPosition.y, Space.World);
         }
         Runtime.setParent(this, parent, oldParent);
     }
@@ -305,6 +342,15 @@ export class AppElement {
 
     public getChildCount() : number {
         return this.children.length;
+    }
+
+    public getChildren(storage? : Array<AppElement>) {
+        storage = storage || [];
+        storage.length = this.children.length;
+        for (let i = 0; i < this.children.length; i++) {
+            storage[i] = this.children[i];
+        }
+        return storage;
     }
 
     public removeChild(child : AppElement) : void {
@@ -436,9 +482,6 @@ export class AppElement {
         this.parent = null;
     }
 
-    private destroyFromParent() : void {
-        //don't fire handlers n stuff
-    }
 
     /*** Accessors ***/
 

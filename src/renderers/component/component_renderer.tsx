@@ -22,6 +22,10 @@ export class ComponentRenderer<T extends Component> extends EditorHTMLElement<IA
     protected component = this.attrs.component as T;
     protected gfx : PIXI.Graphics;
 
+    protected getDomData() {
+        return { "tagName" : "div", classList: "component-renderer"}
+    }
+
     public onCreated() {
         if (this.onDesignerRendered !== ComponentRenderer.prototype.onDesignerRendered) {
             EditorRuntime.on(DesignerRendered, this);

@@ -1,29 +1,61 @@
 import {VoidFn} from "../util";
 
-class StateChartEventHandler {
+class StateChartTransition<T> {
 
     public target : string;
-    public type : typeof StateChartEvent;
-    public guardFn : (event? : StateChartEvent) => boolean;
+    public evt : StateChartEvent<T>;
+    public guardFn : (data? : T) => boolean;
 
-    constructor(type : any, target : string, guardFn? : (event? : StateChartEvent) => boolean) {
-        this.type = type;
+    constructor(evt : StateChartEvent<T>, target : string, guardFn? : (data? : T) => boolean) {
+        this.evt = evt;
         this.target = target;
-        this.guardFn = guardFn || StateChartEventHandler.NoOpGuard;
+        this.guardFn = guardFn || StateChartTransition.NoOpGuard;
     }
 
     private static NoOpGuard() { return true; }
 
 }
 
+export class StateChartEvent<T> {
+    public _brand : T; //used only for type checking, no runtime effect
+}
+
+export class StateChartBehavior {
+
+    protected readonly chart : StateChart;
+
+    public enter() {}
+
+    public update() {}
+
+    public exit() {}
+
+}
+
+interface IEventPackage<T> {
+    event : StateChartEvent<T>;
+    data : T;
+}
+
+interface IStateChartEventHandler<T> {
+    handler : (data? : T) => void;
+    event : StateChartEvent<T>;
+}
+
+
 class StateChartState {
 
     public readonly id : string;
     public states : Array<StateChartState>;
-    public events : Array<StateChartEventHandler>;
+    public events : Array<IStateChartEventHandler<any>>;
+    public transitions : Array<StateChartTransition<any>>;
     public isActive : boolean;
     public behavior : StateChartBehavior;
     public parent : StateChartState;
+    public initFns : Array<() => void>;
+    public enterFns : Array<() => void>;
+    public updateFns : Array<() => void>;
+    public exitFns : Array<() => void>;
 
     constructor(id : string, parent : StateChartState, behavior : StateChartBehavior) {
         this.id = id;
@@ -32,18 +64,56 @@ class StateChartState {
         this.isActive = false;
         this.states = [];
         this.events = [];
+        this.transitions = [];
+        this.initFns = null;
+        this.enterFns = null;
+        this.exitFns = null;
+        this.updateFns = null;
     }
 
-    public handleEvent(evt : StateChartEvent) : { targetId : string, from : StateChartState } {
-        const handledEvent = this.events.find((handler : StateChartEventHandler) => {
-            return handler.type === evt.constructor;
-        });
-        if (handledEvent && handledEvent.guardFn(evt)) {
-            return { targetId: handledEvent.target, from: this };
+    public onInit(fn : () => void) {
+        this.initFns = this.initFns || [];
+        this.initFns.push(fn);
+    }
+
+    public onUpdated(fn : () => void) {
+        this.updateFns = this.updateFns || [];
+        this.updateFns.push(fn);
+    }
+
+    public onEntered(fn : () => void) {
+        this.enterFns = this.enterFns || [];
+        this.enterFns.push(fn);
+    }
+
+    public onExited(fn : () => void) {
+        this.exitFns = this.exitFns || [];
+        this.exitFns.push(fn);
+    }
+
+    public addEventHandler<T>(evt : StateChartEvent<T>, callback : (data? : T) => void) : void {
+        this.events.push({ event: evt, handler: callback });
+    }
+
+    public handleEvent<T>(evtPackage : IEventPackage<T>) : { targetId : string, from : StateChartState } {
+        const evt = evtPackage.event;
+        const data = evtPackage.data;
+        for (let i = 0; i < this.events.length; i++) {
+            if (this.events[i].event === evt && this.events[i].handler) {
+                this.events[i].handler(data);
+            }
         }
+
+        for(let i = 0; i < this.transitions.length; i++) {
+            const transition = this.transitions[i];
+            if(transition.evt === evt && transition.guardFn(data)) {
+                return { targetId: transition.target, from: this };
+            }
+        }
+
         for (let i = 0; i < this.states.length; i++) {
             if (this.states[i].isActive) {
-                const retn = this.states[i].handleEvent(evt);
+                const retn = this.states[i].handleEvent(evtPackage);
                 if (retn) return retn;
             }
         }
@@ -53,9 +123,10 @@ class StateChartState {
     public enter(enterPath? : StateChartState[]) {
         if (this.isActive) return;
         this.isActive = true;
-        if (this.behavior) {
-            this.behavior.enter();
-        }
+        this.behavior && this.behavior.enter();
+        this.initFns && this.initFns.forEach(fn => fn());
+        this.enterFns && this.enterFns.forEach(fn => fn());
+        this.initFns = null;
         if (enterPath && enterPath.length > 0) {
             const child = enterPath.pop();
             if (child.parent !== this) {
@@ -72,6 +143,7 @@ class StateChartState {
 
     public update() {
         this.behavior && this.behavior.update();
+        this.updateFns && this.updateFns.forEach(fn => fn());
         for (let i = 0; i < this.states.length; i++) {
             if (this.states[i].isActive) {
                 this.states[i].update();
@@ -82,18 +154,33 @@ class StateChartState {
     public exit() {
         if (!this.isActive) return;
         this.isActive = false;
-        if (this.behavior) {
-            this.behavior.exit();
-        }
+        this.behavior && this.behavior.exit();
+        this.exitFns && this.exitFns.forEach(fn => fn());
         this.exitChildren();
     }
 
-    public exitChildren() {
+    public exitChildren(enterPath : StateChartState[] = null) {
         for (let i = 0; i < this.states.length; i++) {
             if (this.states[i].isActive) {
+                if(enterPath) {
+                    if(enterPath.indexOf(this.states[i]) === -1) {
+                        this.states[i].exit();
+                    }
+                }
                 this.states[i].exit();
             }
         }
+    }
+
+    public isParentOf(other : StateChartState) {
+        let ptr = other.parent;
+        while(ptr) {
+            if(ptr === this) {
+                return true;
+            }
+            ptr = ptr.parent;
+        }
+        return false;
     }
 
 }
@@ -103,64 +190,16 @@ class StateChartParallelState extends StateChartState {
     public enter(enterPath? : StateChartState[]) {
         if (this.isActive) return;
         this.isActive = true;
-        if (this.behavior) {
-            this.behavior.enter();
-        }
+        this.behavior && this.behavior.enter();
+        this.initFns && this.initFns.forEach(fn => fn());
+        this.initFns = null;
         enterPath && enterPath.pop();
         for (let i = 0; i < this.states.length; i++) {
             this.states[i].enter(enterPath);
         }
     }
 
-    public update() {
-        this.behavior && this.behavior.update();
-        for (let i = 0; i < this.states.length; i++) {
-            this.states[i].update();
-        }
-    }
-
-    public exit() {
-        if (!this.isActive) return;
-        this.isActive = false;
-        if (this.behavior) this.behavior.exit();
-        for (let i = 0; i < this.states.length; i++) {
-            this.states[i].exit();
-        }
-    }
-
 }
-
-type thing<T> = {
-    [P in keyof T]: T[P];
-    }
-
-export class StateChartEvent {
-    public _brand : object;
-
-    public static create<T extends object>() : thing<T> {
-        return null;
-    }
-}
-
-export class GenericStateChartEvent<T> extends StateChartEvent {
-
-}
-
-export class StateChartBehavior {
-
-    protected readonly chart : StateChart;
-
-    public enter() {}
-
-    public update() {}
-
-    public exit() {}
-
-}
-
-export type EventDef = (eventType : { new (...args : any[]) : StateChartEvent },
-                        targetStateId : string,
-                        guardFunction? : (data? : any) => boolean) => void;
 
 export type StateDef = {
     (id : string) : void;
@@ -174,36 +213,33 @@ export type StateDef = {
     }
 };
 
-//compiler seems to be broken w/ how 'protected' works, so to hide internal properties
-//i've duplicated some functionality :(
-export class StateChart {
+export class StateChart_Internal extends StateChartState {
 
-    private stateMap : Map<string, StateChartState>;
-    private states : Array<StateChartState>;
-    private events : Array<StateChartEventHandler>;
-    private stateStack : Array<StateChartState>;
-    private eventQueue : Array<StateChartEvent>;
-    private eventQueue0 : Array<StateChartEvent>;
-    private eventQueue1 : Array<StateChartEvent>;
-    private stateDef : StateDef;
-    private eventDef : EventDef;
-    private isActive : boolean;
+    public stateMap : Map<string, StateChartState>;
+    public stateStack : Array<StateChartState>;
+    public eventQueue : Array<IEventPackage<any>>;
+    public eventQueue0 : Array<IEventPackage<any>>;
+    public eventQueue1 : Array<IEventPackage<any>>;
+    public stateDef : StateDef;
+    public builder : StateChartBuilder;
 
-    constructor(definition : (state : StateDef, event : EventDef) => void) {
+    constructor(definition : (builder : StateChartBuilder) => void) {
+        super("$root", null, null);
         this.isActive = true;
         this.stateDef = this.getStateFn();
-        this.eventDef = this.event.bind(this);
         this.stateMap = new Map<string, StateChartState>();
-        this.states = [];
-        this.events = [];
         this.stateStack = [];
         this.eventQueue0 = [];
         this.eventQueue1 = [];
         this.eventQueue = this.eventQueue0;
         this.stateStack.push(this as any);
-        definition.call(this, this.stateDef, this.eventDef);
+        this.builder = new StateChartBuilder(this);
+        (this.builder as any).currentState = this;
+        definition(this.builder);
         this.stateStack.pop();
         this.stateStack = null;
+        this.initFns && this.initFns.forEach(fn => fn());
+        this.enterFns && this.enterFns.forEach(fn => fn());
         if (this.states[0]) {
             this.states[0].enter();
         }
@@ -216,9 +252,14 @@ export class StateChart {
         this.eventQueue = this.eventQueue === this.eventQueue0 ? this.eventQueue1 : this.eventQueue0;
         //do all transitions but queue all events till next frame
         while (currentQueue.length) {
-            this.handleEvent(currentQueue.shift());
+            const transition = this.handleEvent(currentQueue.shift());
+            if(transition) {
+                this.goTo(transition.targetId, transition.from);
+            }
         }
-        this.getActiveState().update();
+        this.updateFns && this.updateFns.forEach(fn => fn());
+        const active = this.getActiveState();
+        if(active) active.update();
     }
 
     public isInState(id : string) : boolean {
@@ -226,9 +267,9 @@ export class StateChart {
         return state && state.isActive;
     }
 
-    public trigger(event : StateChartEvent) : void {
+    public trigger<T>(event : StateChartEvent<T>, data? : T) : void {
         if (this.stateStack) throw new Error("StateChart hasn't entered yet, invalid call to trigger()");
-        this.eventQueue.push(event);
+        this.eventQueue.push({event: event, data : data});
     }
 
     public getConfiguration() {
@@ -252,34 +293,7 @@ export class StateChart {
         return config;
     }
 
-    private handleEvent(evt : StateChartEvent) {
-        const handledEvent = this.events.find((handler : StateChartEventHandler) => {
-            return handler.type === evt.constructor;
-        });
-        if (handledEvent && handledEvent.guardFn(evt)) {
-            this.goTo(handledEvent.target, this as any);
-            return;
-        }
-        for (let i = 0; i < this.states.length; i++) {
-            if (this.states[i].isActive) {
-                const retn = this.states[i].handleEvent(evt);
-                if (retn) {
-                    this.goTo(retn.targetId, retn.from);
-                    return;
-                }
-            }
-        }
-    }
-
-    private exitChildren() {
-        for (let i = 0; i < this.states.length; i++) {
-            if (this.states[i].isActive) {
-                this.states[i].exit();
-            }
-        }
-    }
-
-    private getStateFn() : StateDef {
+    public getStateFn() : StateDef {
         const fn : any = this.state.bind(this);
         fn.parallel = this.parallel.bind(this);
         return fn as StateDef;
@@ -293,17 +307,29 @@ export class StateChart {
         if (ptr === from) return;
         let enterPath : Array<StateChartState> = [];
         //find highest parent of target that is active
-        while (!ptr.isActive) {
-            enterPath.unshift(ptr);
-            ptr = ptr.parent;
+        //if from is a parent of ptr
+        if(from.isParentOf(ptr)) {
+            //work up from ptr until we hit from, enter as we go
+            while(ptr !== from) {
+                enterPath.push(ptr);
+                ptr = ptr.parent;
+            }
+            from.exitChildren(enterPath);
+            enterPath.shift().enter(enterPath);
         }
-        ptr.exitChildren();
-        enterPath.shift().enter(enterPath);
+        else {
+            while (!ptr.isActive) {
+                enterPath.unshift(ptr);
+                ptr = ptr.parent;
+            }
+            ptr.exitChildren();
+            enterPath.shift().enter(enterPath);
+        }
     }
 
-    private event(eventType : { new () : StateChartEvent }, targetStateId : string, guardFunction? : (data? : any) => boolean) {
-        if (!this.stateStack) throw new Error("StateChart has already entered, cannot call 'event()'");
-        this.stateStack.getLast().events.push(new StateChartEventHandler(eventType, targetStateId, guardFunction));
+    public transition<T>(evt : StateChartEvent<T>, targetStateId : string, guardFunction? : (data? : T) => boolean) {
+        if (!this.stateStack) throw new Error("StateChart has already entered, cannot call 'transition()'");
+        this.stateStack.getLast().transitions.push(new StateChartTransition(evt, targetStateId, guardFunction));
     }
 
     private state(id : string) : void;
@@ -353,7 +379,8 @@ export class StateChart {
 
         if (typeof definition === "function") {
             this.stateStack.push(state);
-            definition.call(this, this.stateDef, this.eventDef);
+            (this.builder as any).currentState = state;
+            definition();
             this.stateStack.pop();
         }
 
@@ -370,54 +397,86 @@ export class StateChart {
 
 }
 
-// class TypedEvent<T> {
-//     data : T;
-// }
-//
-// class StateChartBuilder {
-//
-//     public init() {
-//
-//     }
-//
-//     public enter(fn : () => void) {
-//
-//     }
-//
-//     public exit() {
-//
-//     }
-//
-//     public update() {
-//
-//     }
-//
-//     public state()  {}
-//
-//     public event<T>(evtType : TypedEvent<T>, target : string, guard? : (data? : T) => boolean) {
-//
-//     }
-//
-//     public trigger<T>(evt : TypedEvent<T>, data? : T) {
-//
-//     }
-//
-//     public toDSL() {
-//
-//     }
-//
-//     public createEvent<T>() : TypedEvent<T> {
-//         return new TypedEvent<T>();
-//     }
-//
-//     //x = event.create<T, u, v>();
-//     //x = event.create<string, number, string>
-//     //x = event.create<DataType>();
-//     //trigger(x, T;
-//     //new Event(data);
-//
-// }
-//
+//[Hack!] weirdness w/ typescript compiler makes it hard to hide methods from subclass...no idea why.
+//export a shadow class instead with only the properly exposed signature
+export class StateChart {
+
+    public trigger : <T>(event : StateChartEvent<T>, data? : T) => void;
+    public update : () => void;
+    public getConfiguration: () => string[][];
+    public isInState : (id : string) => boolean;
+
+    constructor(fn : (builder : StateChartBuilder) => void) {
+        return new StateChart_Internal(fn);
+    }
+
+    public static createEvent<T>() : StateChartEvent<T> {
+        return new StateChartEvent<T>();
+    }
+}
+
+export interface IStateChartDSL {
+    state : StateDef;
+    transition<T>(evt : StateChartEvent<T>, targetStateId : string, guard? : (data? : T) => boolean) : void;
+    init(fn : () => void) : void;
+    enter(fn : () => void) : void;
+    update(fn : () => void) : void;
+    exit(fn : () => void) : void;
+    event<T>(evt : StateChartEvent<T>, callback : (data? : T) => void) : void;
+    trigger<T>(evt : StateChartEvent<T>, data : T) : void;
+    isInState(stateId : string) : boolean;
+}
+
+type Callback = (fn : () => void) => void;
+
+export class StateChartBuilder {
+
+    private chart : StateChart_Internal;
+
+    constructor(chart : StateChart_Internal) {
+        this.chart = chart;
+    }
+
+    public init(fn : () => void) {
+        this.chart.stateStack.getLast().onInit(fn);
+    }
+
+    public enter(fn : () => void) {
+        this.chart.stateStack.getLast().onEntered(fn);
+    }
+
+    public exit(fn : () => void) {
+        this.chart.stateStack.getLast().onExited(fn);
+    }
+
+    public update(fn : () => void) {
+        this.chart.stateStack.getLast().onUpdated(fn);
+    }
+
+    public event<T>(evtType : StateChartEvent<T>, callback? : (data? : T) => void) : void {
+        this.chart.stateStack.getLast().addEventHandler(evtType, callback);
+    }
+
+    public trigger<T>(evt : StateChartEvent<T>, data? : T) {
+        this.chart.trigger(evt, data);
+    }
+
+    public toDSL() : IStateChartDSL {
+        return {
+            enter: this.enter.bind(this) as Callback,
+            exit: this.exit.bind(this) as Callback,
+            update: this.update.bind(this) as Callback,
+            init: this.init.bind(this) as Callback,
+            trigger: this.chart.trigger.bind(this.chart),
+            state: this.chart.getStateFn() as StateDef,
+            event: this.event.bind(this),
+            isInState: this.chart.isInState.bind(this.chart),
+            transition: this.chart.transition.bind(this.chart)
+        }
+    }
+
+}
+
 // var b = new StateChartBuilder();
 // var z = b.createEvent<{s : string, y: number}>();
 // b.trigger(z, {s: "", y: 1});

@@ -3,9 +3,7 @@ import {distanceTestPoint, hitTestLine, hitTestLine2} from "../../util";
 import {AppElement, Space} from "../../runtime/app_element";
 import {Vector2} from "../../runtime/vector2";
 import {BoundingBox} from "../../runtime/bounding_box";
-import {onFileDragLeave} from "../../editor_element/editor_element_annotations";
-import {MathUtil} from "../../math_util";
-import {Matrix3x3} from "../../runtime/matrix3x3";
+import {LayoutComponent, LengthUnit} from "../../runtime/components/layout/layout";
 
 enum DragSide {
     None, Center, Top, Left, Right, Bottom, TopRight, TopLeft, BottomRight, BottomLeft
@@ -42,7 +40,7 @@ export class SceneRectTool extends SceneTool {
                 return;
             }
             else if (input.isMouseDown()) {
-                if (this.draggedSide !== DragSide.None) {
+                if (this.draggedSide !== DragSide.None && selection.getComponent(LayoutComponent)) {
                     this.updateDragSide(input.getMouseDelta(), selection);
                 }
                 else if (this.panning) {
@@ -54,7 +52,7 @@ export class SceneRectTool extends SceneTool {
                 this.panning = false;
             }
 
-            if (this.draggedSide === DragSide.None) {
+            if (this.draggedSide === DragSide.None && selection.getComponent(LayoutComponent)) {
                 this.setHoverCursor(SceneRectTool.hitTestDragSide(mouse, rect));
             }
 
@@ -125,23 +123,23 @@ export class SceneRectTool extends SceneTool {
     }
 
     private updateDragSide(delta : Vector2, appElement : AppElement) {
-        //const p = appElement.getPosition();
+        const p = appElement.getPosition();
         let width = appElement.getWidth();
         let height = appElement.getHeight();
         switch (this.draggedSide) {
             case DragSide.TopRight:
-             //   p.y += delta.y;
+                p.y += delta.y;
                 width += delta.x;
                 height -= delta.y;
                 break;
             case DragSide.TopLeft:
-               // p.x += delta.x;
-               // p.y += delta.y;
+                p.x += delta.x;
+                p.y += delta.y;
                 width -= delta.x;
                 height -= delta.y;
                 break;
             case DragSide.BottomLeft:
-            //    p.x += delta.x;
+                p.x += delta.x;
                 width -= delta.x;
                 height += delta.y;
                 break;
@@ -150,11 +148,11 @@ export class SceneRectTool extends SceneTool {
                 height += delta.y;
                 break;
             case DragSide.Top:
-              //  p.y += delta.y;
+                p.y += delta.y;
                 height -= delta.y;
                 break;
             case DragSide.Left:
-              //  p.x += delta.x;
+                p.x += delta.x;
                 width -= delta.x;
                 break;
             case DragSide.Right:
@@ -164,27 +162,20 @@ export class SceneRectTool extends SceneTool {
                 height += delta.y;
                 break;
             case DragSide.Center:
-                //p.x += delta.x;
-                //p.y += delta.y;
-                var p = appElement.getPosition();
-                // p.addInPlace(delta);
                 p.x += delta.x;
                 p.y += delta.y;
-                // p = appElement.worldToLocal(p.addVectorNew(delta));
-                appElement.setPosition(p, Space.World);
-                 //appElement.setPosition(p.addVectorNew(delta), Space.World);
                 break;
         }
         if (width < 1) width = 1;
         if (height < 1) height = 1;
         if (height === 1 && delta.y > 0) {
-         //   p.y -= delta.y;
+            p.y -= delta.y;
         }
         if (width === 1 && delta.x > 0) {
-         //   p.x -= delta.x;
+            p.x -= delta.x;
         }
-        //appElement.setPositionValues(p.x, p.y);
-        appElement.setDimensions(width, height);
+        appElement.setPositionValues(p.x, p.y, Space.World, true);
+        appElement.setDimensions(width, height, LengthUnit.Pixel);
     }
 
 }

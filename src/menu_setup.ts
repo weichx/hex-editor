@@ -11,15 +11,12 @@ import {NumberInputComponent} from "./runtime/components/ui/number_input_compone
 import {TextAreaComponent} from "./runtime/components/ui/text_area_component";
 import {BackgroundComponent} from "./runtime/components/background_component";
 import {Color} from "./runtime/color";
-import {SizingComponent} from "./runtime/components/layout/sizing_component";
+import {LengthUnit} from "./runtime/components/layout/layout";
 
 function createTextElement(parent : AppElement = null) : AppElement {
     const element = new AppElement("Text", parent);
     const text = element.addComponent(TextComponent);
     text.setTextAsync("Enter Text Here");
-    const sizing = element.addComponent(SizingComponent);
-    sizing.width = 100;
-    sizing.height = 20;
     return element;
 }
 
@@ -27,10 +24,8 @@ function createPanelElement(parent : AppElement = null) : AppElement {
     const element = new AppElement("Panel", parent);
     element.addComponent(PanelComponent);
     const bg = element.addComponent(BackgroundComponent);
-    bg.color = Color.White;
-    const size = element.addComponent(SizingComponent);
-    size.width = 100;
-    size.height = 100;
+    bg.color = Color.random();
+    element.setDimensions(100, 40, LengthUnit.Pixel);
     return element;
 }
 
@@ -43,9 +38,9 @@ function createImageElement(parent : AppElement = null) : AppElement {
 function createButtonElement(parent : AppElement = null) : AppElement {
     const element = new AppElement("Button", parent);
     element.addComponent(ButtonComponent);
-    const size = element.addComponent(SizingComponent);
-    size.width = 100;
-    size.height = 20;
+    // const size = element.addComponent(SizingComponent);
+    // size.width = 100;
+    // size.height = 20;
     return element;
 }
 

@@ -70,6 +70,8 @@ BrowserRuntime.setCommandInvoker(CommandType.Create, (function () {
         for (let i = 0; i < components.length; i++) {
             DeserializeComponent(components[i], element);
         }
+        element.style.width = (payload.width | 0) + "px";
+        element.style.height = (payload.height | 0) + "px";
         BrowserRuntime.elementIdToDomNode(parentId).appendChild(element);
     }
 })());

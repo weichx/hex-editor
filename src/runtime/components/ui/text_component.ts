@@ -1,6 +1,7 @@
 import {component} from "../../component";
 import {CommandType} from "../../enums/e_command_type";
 import {UIComponent} from "../ui_component";
+import {LengthUnit} from "../layout/layout";
 
 export interface IFont {
     name : string;
@@ -44,7 +45,7 @@ export class TextComponent extends UIComponent {
             setFont: false
         }).then((width : number) => {
             this.textContent = text;
-            this.appElement.setWidth(width);
+            this.appElement.setWidth(width, LengthUnit.Pixel);
             return this.textContent;
         });
     }
@@ -57,7 +58,7 @@ export class TextComponent extends UIComponent {
             setFont: true
         }).then((width : number) => {
             this.font = font;
-            this.appElement.setWidth(width);
+            this.appElement.setWidth(width, LengthUnit.Pixel);
             return this.font;
         });
     }

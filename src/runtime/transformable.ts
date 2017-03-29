@@ -16,15 +16,18 @@ export class Transformable {
     protected scale : Vector2;
     protected dirty : boolean;
 
-    constructor() {
+    constructor(parent? : Transformable) {
         this.dirty = true;
-        this.parent = null;
+        this.parent = parent;
         this.children = [];
         this.position = new Vector2();
         this.rotation = new Quaternion();
         this.scale = new Vector2(1, 1);
         this.localMatrix = new Matrix();
         this.worldMatrix = new Matrix();
+        if(this.parent) {
+            this.parent.children.push(this);
+        }
     }
 
     public getWorldMatrix(out? : Matrix) {
@@ -33,7 +36,6 @@ export class Transformable {
     }
 
     public updateWorldMatrix() : void {
-        if(!this.isDirty()) return;
         const scaling = Matrix.scratch0;
         const rotation = Matrix.scratch1;
         const translate = Matrix.scratch2;
@@ -59,34 +61,43 @@ export class Transformable {
         return false;
     }
 
-    public translate(translation : Vector2, relativeTo = Space.World) : void {
+    public translate(translation : Vector2, relativeTo = Space.World) : this {
+        return this.translateValues(translation.x, translation.y, relativeTo);
+    }
+
+    public translateValues(x : number, y : number, relativeTo = Space.World) : this {
         if (this.parent && relativeTo === Space.World) {
             this.parent.getWorldMatrix(Matrix.scratch0).invert();
             const scratch = Vector3.scratch0;
-            scratch.x = translation.x;
-            scratch.y = translation.y;
+            scratch.x = x;
+            scratch.y = y;
             scratch.z = 0;
             Vector3.TransformCoordinates(scratch, Matrix.scratch0, scratch);
-            this.position.addVector(translation);
+            this.position.addValues(scratch.x, scratch.y);
         }
         else {
-            this.position.addVector(translation);
+            this.position.addValues(x, y);
         }
+        return this;
     }
 
     public setPosition(position : Vector2,  relativeTo = Space.World) : void {
+        return this.setPositionValues(position.x, position.y, relativeTo);
+    }
+
+    public setPositionValues(x : number, y : number, relativeTo = Space.World) : void {
         if (this.parent && relativeTo === Space.World) {
             this.parent.getWorldMatrix(Matrix.scratch0).invert();
             const scratch = Vector3.scratch0;
-            scratch.x = position.x;
-            scratch.y = position.y;
+            scratch.x = x;
+            scratch.y = y;
             scratch.z = 0;
             Vector3.TransformCoordinates(scratch, Matrix.scratch0, scratch);
             this.position.x = scratch.x;
             this.position.y = scratch.y;
         }
         else {
-            this.position.copy(position);
+            this.position.set(x, y);
         }
     }
 
@@ -109,14 +120,16 @@ export class Transformable {
         return this.rotation.getRotationZ();
     }
 
-    public rotate(radians : number) : void {
+    public rotate(radians : number) : this {
         Quaternion.RotationAxis(Vector3.Forward, radians, Quaternion.scratch0);
         this.rotation.multiply(Quaternion.scratch0);
+        return this;
     }
 
-    public setScale(scale : Vector2) : void {
+    public setScale(scale : Vector2) : this {
         this.scale.x = scale.x;
         this.scale.y = scale.y;
+        return this;
     }
 
     public getScale(out? : Vector2) : Vector2 {

@@ -1,4 +1,5 @@
 import {Matrix3x3} from "./matrix3x3";
+import {MathUtil} from "../math_util";
 
 export class Vector2 {
 
@@ -87,6 +88,12 @@ export class Vector2 {
             this.normalize();
             this.scale(length);
         }
+        return this;
+    }
+
+    public clampToVector0(vector : IVector2) : this {
+        this.x = MathUtil.clamp(this.x, 0, vector.x);
+        this.y = MathUtil.clamp(this.y, 0, vector.y);
         return this;
     }
 
@@ -355,6 +362,9 @@ export class Vector2 {
     public static scratch2 = new Vector2();
     public static scratch3 = new Vector2();
     public static scratch4 = new Vector2();
+
+    public static scratchArray0 = new Array<Vector2>();
+    public static scratchArray1 = new Array<Vector2>();
 
 }
 
