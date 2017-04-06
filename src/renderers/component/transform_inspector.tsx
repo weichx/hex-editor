@@ -11,6 +11,7 @@ import {ToggleIcon} from "../../ui_elements/icon";
 import {LayoutComponent, LengthUnit} from "../../runtime/components/layout/layout";
 import {Button} from "../../ui_elements/button";
 import {DesignerRendered} from "../../editor_events/evt_designer_rendererd";
+import {StageForeground} from "../../windows/scene/stage_foreground";
 
 export class TransformInspector extends EditorHTMLElement<{ appElement : AppElement }> {
 
@@ -99,7 +100,7 @@ export class TransformInspector extends EditorHTMLElement<{ appElement : AppElem
             <div x-if-eval={ !this.appElement.getParent().getComponent(LayoutComponent) } x-child-root
                  class="component-renderer-child-root">
                 <InspectorRow label="Anchors">
-                    <Button onClick={() => this.isEditingAnchors = !this.isEditingAnchors}>Edit</Button>
+                    <Button onClick={() => StageForeground.showAnchorFlower = !StageForeground.showAnchorFlower }>Edit</Button>
                 </InspectorRow>
                 <InspectorRow label="Position">
                     <Vector2Input value={ this.localPositionBinding }/>

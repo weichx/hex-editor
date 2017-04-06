@@ -6,7 +6,6 @@ import {AppElement, Space} from "../runtime/app_element";
 import {MathUtil} from "../math_util";
 import {Shape} from "../pixi/shape";
 import {Color} from "../runtime/color";
-import {EditorRuntimeImplementation} from "../editor/editor_runtime";
 
 export class AnchorFlower extends ShapeContainer {
 
@@ -46,10 +45,10 @@ export class AnchorFlower extends ShapeContainer {
     public update() : void {
 
         this.appElement = EditorRuntime.getSelection();
-        if(!this.appElement) return;
+        if (!this.appElement) return;
 
         this.setPosition(this.appElement.getParent().getPosition(Vector2.scratch0));
-        if(this.dragging) {
+        if (this.dragging) {
             const delta = EditorRuntime.getInput().getMouseDelta(Vector2.scratch0);
             if (this.activeChild === this.topLeft) {
                 this.setFromRawAnchors(delta.x, delta.y, 0, 0);
@@ -81,7 +80,10 @@ export class AnchorFlower extends ShapeContainer {
     }
 
     public render() {
-        if(!this.appElement) return;
+        if (!this.appElement || !this.isEnabled) {
+            this.gfx.clear();
+            return;
+        }
         this.center.setLineColor(this.activeChild === this.center ? Color.Green : Color.Red);
         this.topLeft.setLineColor(this.activeChild === this.topLeft ? Color.Green : Color.Red);
         this.topRight.setLineColor(this.activeChild === this.topRight ? Color.Green : Color.Red);

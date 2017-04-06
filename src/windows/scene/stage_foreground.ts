@@ -7,6 +7,8 @@ import {distanceTestPoint, hitTestLine2} from "../../util";
 import {LengthUnit} from "../../runtime/components/layout/layout";
 import {MouseButtonState} from "../../runtime/enums/e_mouse_state";
 import {AnchorFlower} from "../../renderers/anchor_flower";
+import {getCreationMenu} from "../../menu_setup";
+import {KeyCode} from "../../runtime/enums/e_keycode";
 
 export class StageForeground extends EditorHTMLElement<any> {
 
@@ -23,6 +25,7 @@ export class StageForeground extends EditorHTMLElement<any> {
     }
 
     public onUpdated() {
+        this.anchorFlower.isEnabled = StageForeground.showAnchorFlower;
         this.anchorFlower.update();
         this.stateChart.update();
     }
@@ -53,6 +56,51 @@ export class StageForeground extends EditorHTMLElement<any> {
         }
         this.anchorFlower.render();
         this.renderer.render(this.stage);
+    }
+
+    private getSnapList(mouse : Vector2, selection : AppElement) {
+        const retn = new Array<Vector2>();
+        const rootPosition = AppElement.Root.getPosition(Vector2.scratch0);
+        retn.push(new Vector2(rootPosition.x, rootPosition.y));
+        return retn;
+    }
+
+    private snap(mouse : Vector2, selection : AppElement) : void {
+        const snapList = this.getSnapList(mouse, selection);
+        const snapDistance = 10;
+        const position = selection.getPosition(Vector2.scratch0);
+        const width = selection.getWidth();
+        const height = selection.getHeight();
+        const centerX = position.x + (width * 0.5);
+        const centerY = position.y + (height * 0.5);
+        const top = position.y;
+        const bottom = position.y + height;
+        const left = position.x;
+        const right = position.x + width;
+        let x = -1;
+        let y = -1;
+        for (let i = 0; i < snapList.length; i++) {
+            const testPosition = snapList[i];
+            if (Math.abs(left - testPosition.x) <= snapDistance) {
+                x = testPosition.x;
+            }
+            else if(Math.abs(centerX - testPosition.x) <=snapDistance) {
+                x = testPosition.x + (width * 0.5);
+            }
+            else if(Math.abs(right - testPosition.x) <= snapDistance) {
+                x = testPosition.x + width;
+            }
+            if (Math.abs(top - testPosition.y) <= snapDistance) {
+                y = testPosition.y;
+            }
+            else if (Math.abs(centerY - testPosition.y) <= snapDistance) {
+                y = testPosition.y - (height * 0.5);
+            }
+            else if(Math.abs(bottom - testPosition.y) <= snapDistance) {
+                y = testPosition.y - height;
+            }
+        }
+
     }
 
     private hitTestEdge(point : Vector2, bounds : BoundingBox) : SelectionEdge {
@@ -156,7 +204,6 @@ export class StageForeground extends EditorHTMLElement<any> {
 
         if (this.stateChart) return this.stateChart;
 
-
         const Evt_DragEdge = StateChart.createEvent();
         const Evt_DragAnchor = StateChart.createEvent();
         const Evt_StartPanning = StateChart.createEvent();
@@ -207,15 +254,17 @@ export class StageForeground extends EditorHTMLElement<any> {
                             update(() => {
                                 if (!selection) return;
                                 edgeHit = this.hitTestEdge(mouse, selection.getBoundingBox());
-                                anchorHit = this.anchorFlower.hitTest(mouse);
+                                if (StageForeground.showAnchorFlower) {
+                                    anchorHit = this.anchorFlower.hitTest(mouse);
+                                }
                                 this.paintSelectionEdges();
-                                if(!anchorHit) this.setHoverCursor(edgeHit);
+                                if (!anchorHit) this.setHoverCursor(edgeHit);
                             });
 
                             event(Evt_MouseDown, (mouse : Vector2) => {
-                                if (input.isMouseButtonDown(MouseButtonState.Right)) {
-                                    return trigger(Evt_StartPanning, null);
-                                }
+                                // if (input.isMouseButtonDown(MouseButtonState.Right)) {
+                                //     return trigger(Evt_StartPanning, null);
+                                // }
                                 if (anchorHit) {
                                     return trigger(Evt_DragAnchor, anchorHit);
                                 }
@@ -228,11 +277,47 @@ export class StageForeground extends EditorHTMLElement<any> {
                                 trigger(Evt_MouseDownOutsideSelection, null);
                             });
 
-                            transition(Evt_StartPanning, "panning");
+                            transition(Evt_MouseDown, "manipulate.mouse.right.down", () => {
+                                return input.isMouseButtonDown(MouseButtonState.Right)
+                            });
                             transition(Evt_MouseDownOverSelection, "translating");
                             transition(Evt_MouseDownOverSelectionEdge, "resizing");
                             transition(Evt_DragAnchor, "drag-anchors");
 
+                        });
+
+                        state("manipulate.mouse.right.down", () => {
+                            let isPanning = false;
+                            enter(() => {
+                                isPanning = false;
+                            });
+                            update(() => {
+                                input.getMouseDownDelta(Vector2.scratch0);
+                                if (Vector2.scratch0.lengthSquared() > 64) {
+                                    isPanning = true;
+                                    trigger(Evt_StartPanning, null);
+                                }
+                            });
+                            exit(() => {
+                                if (!isPanning && input.isMouseInEditorElement(this)) {
+                                    input.getMousePosition(Vector2.scratch0);
+                                    const menu = new nw.Menu();
+
+                                    menu.append(new nw.MenuItem({
+                                        label: "Empty Element",
+                                        click: function () { new AppElement("App Element")}
+                                    }));
+
+                                    menu.append(new nw.MenuItem({
+                                        label: "Create",
+                                        submenu: getCreationMenu(selection)
+                                    }));
+
+                                    menu.popup(Vector2.scratch0.x, Vector2.scratch0.y);
+                                }
+                            });
+                            transition(Evt_MouseUp, "manipulating.none");
+                            transition(Evt_StartPanning, "panning");
                         });
 
                         state("panning", () => {
@@ -240,6 +325,7 @@ export class StageForeground extends EditorHTMLElement<any> {
                             update(() => {
                                 const position = AppElement.Root.getPosition(Vector2.scratch0);
                                 AppElement.Root.setPosition(position.addVector(input.getMouseDelta(Vector2.scratch1)));
+                                this.paintSelectionEdges();
                             });
 
                             transition(Evt_MouseUp, "manipulating.none")
@@ -252,8 +338,9 @@ export class StageForeground extends EditorHTMLElement<any> {
                                 const selection = EditorRuntime.getSelection();
                                 const delta = input.getMouseDelta(Vector2.scratch2);
                                 const position = selection.getPosition(Vector2.scratch0);
+                                this.snap()
                                 position.addVector(delta);
-                                selection.setPositionValues(position.x, position.y, Space.World);
+                                selection.setPositionValues(position.x, position.y, Space.World, input.isKeyDown(KeyCode.Shift));
                                 this.paintSelectionEdges();
                             });
 
@@ -307,6 +394,8 @@ export class StageForeground extends EditorHTMLElement<any> {
 
         });
     }
+
+    public static showAnchorFlower = false;
 
 }
 

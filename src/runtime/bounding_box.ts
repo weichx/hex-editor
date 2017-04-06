@@ -6,10 +6,10 @@ import {Quaternion} from "./quaternion";
 
 export class BoundingBox {
 
-    public readonly topLeft : Readonly<IVector2>;
-    public readonly topRight : Readonly<IVector2>;
-    public readonly bottomRight : Readonly<IVector2>;
-    public readonly bottomLeft : Readonly<IVector2>;
+    public readonly topLeft : Readonly<Vector2>;
+    public readonly topRight : Readonly<Vector2>;
+    public readonly bottomRight : Readonly<Vector2>;
+    public readonly bottomLeft : Readonly<Vector2>;
     public readonly appElement : AppElement;
     private points : Readonly<IVector2>[];
 

@@ -3134,7 +3134,8 @@
 	        if (keepChildPositions) {
 	            vector2_1.Vector2.scratchArray0.length = this.children.length;
 	            for (let i = 0; i < this.children.length; i++) {
-	                vector2_1.Vector2.scratchArray0[i] = this.children[i].getPosition();
+	                //using position as scratch since we will assign to it later anyway
+	                vector2_1.Vector2.scratchArray0[i] = this.children[i].getPosition(this.children[i].position);
 	            }
 	            this.setPositionValues(x, y, relativeTo);
 	        }
@@ -9037,6 +9038,7 @@
 	const layout_1 = __webpack_require__(104);
 	const button_1 = __webpack_require__(64);
 	const evt_designer_rendererd_1 = __webpack_require__(98);
+	const stage_foreground_1 = __webpack_require__(128);
 	class TransformInspector extends editor_html_element_1.EditorHTMLElement {
 	    constructor() {
 	        super(...arguments);
@@ -9104,7 +9106,7 @@
 	                Hex.createElement("span", { "x-if-eval": () => this.appElement.getParent().getComponent(layout_1.LayoutComponent), class: "component-name" }, "Transform (Controlled by Layout Component)")),
 	            Hex.createElement("div", { "x-if-eval": () => !this.appElement.getParent().getComponent(layout_1.LayoutComponent), "x-child-root": true, class: "component-renderer-child-root" },
 	                Hex.createElement(inspector_row_1.InspectorRow, { label: "Anchors" },
-	                    Hex.createElement(button_1.Button, { onClick: () => this.isEditingAnchors = !this.isEditingAnchors }, "Edit")),
+	                    Hex.createElement(button_1.Button, { onClick: () => stage_foreground_1.StageForeground.showAnchorFlower = !stage_foreground_1.StageForeground.showAnchorFlower }, "Edit")),
 	                Hex.createElement(inspector_row_1.InspectorRow, { label: "Position" },
 	                    Hex.createElement(vector2_input_1.Vector2Input, { value: this.localPositionBinding })),
 	                Hex.createElement(inspector_row_1.InspectorRow, { label: "Scale" },
@@ -9673,8 +9675,10 @@
 	        return this.gfx;
 	    }
 	    render() {
-	        if (!this.appElement)
+	        if (!this.appElement || !this.isEnabled) {
+	            this.gfx.clear();
 	            return;
+	        }
 	        this.center.setLineColor(this.activeChild === this.center ? color_1.Color.Green : color_1.Color.Red);
 	        this.topLeft.setLineColor(this.activeChild === this.topLeft ? color_1.Color.Green : color_1.Color.Red);
 	        this.topRight.setLineColor(this.activeChild === this.topRight ? color_1.Color.Green : color_1.Color.Red);
@@ -11610,11 +11614,14 @@
 	const layout_1 = __webpack_require__(104);
 	const e_mouse_state_1 = __webpack_require__(26);
 	const anchor_flower_1 = __webpack_require__(105);
+	const menu_setup_1 = __webpack_require__(75);
+	const e_keycode_1 = __webpack_require__(101);
 	class StageForeground extends editor_html_element_1.EditorHTMLElement {
 	    getDomData() {
 	        return { tagName: "canvas", classList: "overlay-canvas" };
 	    }
 	    onUpdated() {
+	        this.anchorFlower.isEnabled = StageForeground.showAnchorFlower;
 	        this.anchorFlower.update();
 	        this.stateChart.update();
 	    }
@@ -11787,15 +11794,17 @@
 	                                if (!selection)
 	                                    return;
 	                                edgeHit = this.hitTestEdge(mouse, selection.getBoundingBox());
-	                                anchorHit = this.anchorFlower.hitTest(mouse);
+	                                if (StageForeground.showAnchorFlower) {
+	                                    anchorHit = this.anchorFlower.hitTest(mouse);
+	                                }
 	                                this.paintSelectionEdges();
 	                                if (!anchorHit)
 	                                    this.setHoverCursor(edgeHit);
 	                            });
 	                            event(Evt_MouseDown, (mouse) => {
-	                                if (input.isMouseButtonDown(e_mouse_state_1.MouseButtonState.Right)) {
-	                                    return trigger(Evt_StartPanning, null);
-	                                }
+	                                // if (input.isMouseButtonDown(MouseButtonState.Right)) {
+	                                //     return trigger(Evt_StartPanning, null);
+	                                // }
 	                                if (anchorHit) {
 	                                    return trigger(Evt_DragAnchor, anchorHit);
 	                                }
@@ -11807,15 +11816,48 @@
 	                                }
 	                                trigger(Evt_MouseDownOutsideSelection, null);
 	                            });
-	                            transition(Evt_StartPanning, "panning");
+	                            transition(Evt_MouseDown, "manipulate.mouse.right.down", () => {
+	                                return input.isMouseButtonDown(e_mouse_state_1.MouseButtonState.Right);
+	                            });
 	                            transition(Evt_MouseDownOverSelection, "translating");
 	                            transition(Evt_MouseDownOverSelectionEdge, "resizing");
 	                            transition(Evt_DragAnchor, "drag-anchors");
+	                        });
+	                        state("manipulate.mouse.right.down", () => {
+	                            let isPanning = false;
+	                            enter(() => {
+	                                isPanning = false;
+	                            });
+	                            update(() => {
+	                                input.getMouseDownDelta(vector2_1.Vector2.scratch0);
+	                                if (vector2_1.Vector2.scratch0.lengthSquared() > 64) {
+	                                    isPanning = true;
+	                                    trigger(Evt_StartPanning, null);
+	                                }
+	                            });
+	                            exit(() => {
+	                                if (!isPanning && input.isMouseInEditorElement(this)) {
+	                                    input.getMousePosition(vector2_1.Vector2.scratch0);
+	                                    const menu = new nw.Menu();
+	                                    menu.append(new nw.MenuItem({
+	                                        label: "Empty Element",
+	                                        click: function () { new app_element_1.AppElement("App Element"); }
+	                                    }));
+	                                    menu.append(new nw.MenuItem({
+	                                        label: "Create",
+	                                        submenu: menu_setup_1.getCreationMenu(selection)
+	                                    }));
+	                                    menu.popup(vector2_1.Vector2.scratch0.x, vector2_1.Vector2.scratch0.y);
+	                                }
+	                            });
+	                            transition(Evt_MouseUp, "manipulating.none");
+	                            transition(Evt_StartPanning, "panning");
 	                        });
 	                        state("panning", () => {
 	                            update(() => {
 	                                const position = app_element_1.AppElement.Root.getPosition(vector2_1.Vector2.scratch0);
 	                                app_element_1.AppElement.Root.setPosition(position.addVector(input.getMouseDelta(vector2_1.Vector2.scratch1)));
+	                                this.paintSelectionEdges();
 	                            });
 	                            transition(Evt_MouseUp, "manipulating.none");
 	                        });
@@ -11825,7 +11867,7 @@
 	                                const delta = input.getMouseDelta(vector2_1.Vector2.scratch2);
 	                                const position = selection.getPosition(vector2_1.Vector2.scratch0);
 	                                position.addVector(delta);
-	                                selection.setPositionValues(position.x, position.y, app_element_1.Space.World);
+	                                selection.setPositionValues(position.x, position.y, app_element_1.Space.World, input.isKeyDown(e_keycode_1.KeyCode.Shift));
 	                                this.paintSelectionEdges();
 	                            });
 	                            transition(Evt_MouseUp, "manipulating.none");
@@ -11862,6 +11904,7 @@
 	        });
 	    }
 	}
+	StageForeground.showAnchorFlower = false;
 	exports.StageForeground = StageForeground;
 	var SelectionEdge;
 	(function (SelectionEdge) {

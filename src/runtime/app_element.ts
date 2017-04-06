@@ -240,7 +240,8 @@ export class AppElement {
         if(keepChildPositions) {
             Vector2.scratchArray0.length = this.children.length;
             for(let i = 0; i < this.children.length; i++) {
-                Vector2.scratchArray0[i] = this.children[i].getPosition();
+                //using position as scratch since we will assign to it later anyway
+                Vector2.scratchArray0[i] = this.children[i].getPosition(this.children[i].position);
             }
             this.setPositionValues(x, y, relativeTo);
         }

@@ -122,8 +122,8 @@ export class HierarchyWindow extends EditorWindowElement<IWindowAttrs> {
             bg.color = Color.Blue;
             element2.setPositionValues(100, 100, Space.Local);
             element2.setDimensions(100, 40, LengthUnit.Pixel);
-
         }, 500);
+
         EditorRuntime.on(SelectionChanged, this);
         EditorRuntime.on(SceneLoaded, this);
 

@@ -54,6 +54,18 @@ export class RuntimeImpl extends RuntimeBase {
     }
 
     public getAppElementAtPoint(point : Vector2) : AppElement {
+        const keys = Object.keys(this.appElementRegistry);
+        const resultSet : any = null;
+        for(let i = 0; i < keys.length; i++) {
+            const element = this.appElementRegistry[keys[i]];
+            if(element.getBoundingBox().containsPoint(point)) {
+                resultSet.push(element);
+            }
+        }
+        //depth != z
+        //if z is set
+        //find shared parent
+        //find index of parent.child
         return null;
     }
 
