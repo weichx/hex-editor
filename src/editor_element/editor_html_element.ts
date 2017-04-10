@@ -1,6 +1,9 @@
 import {EditorElement} from "./editor_element";
 import {EditorTextElement} from "./editor_text_element";
 import {dasherize} from "../util";
+import {Color} from "../runtime/color";
+import {Vector2} from "../runtime/vector2";
+import {MathUtil} from "../math_util";
 
 declare global {
     interface Node {
@@ -73,7 +76,7 @@ export class EditorHTMLElement<T extends IHTMLAttribute> extends EditorElement {
 
     public setStyle(styles : IStyleDeclaration) : void {
         const keys = Object.keys(styles);
-        for(let i = 0; i < keys.length; i++){
+        for (let i = 0; i < keys.length; i++) {
             const key = keys[i];
             (this.htmlNode.style as any)[key] = styles[key];
         }
@@ -128,7 +131,7 @@ export class EditorHTMLElement<T extends IHTMLAttribute> extends EditorElement {
 
         if (domData && domData.style) {
             const attrStyle = this.attrs.style || "";
-            this.htmlNode.setAttribute("style", domData.style + ";" +  attrStyle);
+            this.htmlNode.setAttribute("style", domData.style + ";" + attrStyle);
         }
         else if (this.attrs.style) {
             this.htmlNode.setAttribute("style", this.attrs.style);
@@ -143,8 +146,8 @@ export class EditorHTMLElement<T extends IHTMLAttribute> extends EditorElement {
             }
         }
 
-        for(let a in this.attrs) {
-            if(typeof this.attrs[a] !== "string") continue;
+        for (let a in this.attrs) {
+            if (typeof this.attrs[a] !== "string") continue;
             if (a.indexOf("x-") === 0) continue;
             if (a.indexOf("on") === 0) continue;
             if (a === "style" || a === "class") continue;
@@ -189,3 +192,7 @@ export class EditorHTMLElement<T extends IHTMLAttribute> extends EditorElement {
     }
 
 }
+
+
+
+

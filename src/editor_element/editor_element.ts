@@ -1,4 +1,4 @@
-import {traverse, traverseRootFirst} from "../util";
+import {traverse} from "../util";
 import {Vector2} from "../runtime/vector2";
 
 interface IEventDescriptor {

@@ -33,7 +33,7 @@ export class AppElement {
     public readonly id : number;
 
     //todo a lot of these vector variables can probably be compressed into integers
-
+    //life cycle, dirty render flags, width/height units, and possibly anchors can be combined into one
     private parent : AppElement;
     private components : Array<Component>;
     private children : Array<AppElement>;
@@ -44,12 +44,13 @@ export class AppElement {
     private rotation : number;
     private width : number;
     private height : number;
-    private widthUnit : LengthUnit;
-    private heightUnit : LengthUnit;
-    private pivot : Vector2;
+    private widthUnit : LengthUnit; //merge w/ width or some spare id field
+    private heightUnit : LengthUnit; //merge w/ height or some spare id field
+    private pivot : Vector2; //combine w/ scale into single vector4?
     private dirtyFlags : ElementDirtyFlag;
-    private localMatrix : Matrix;
+    private localMatrix : Matrix; //nuke, can always rebuild quickly
     private worldMatrix : Matrix;
+    //can condense into single integer using range 0-1 = 0-1000 treating last 2 digits as decimals
     public anchorMin : Vector2;
     public anchorMax : Vector2;
 

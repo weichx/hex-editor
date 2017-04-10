@@ -1,9 +1,7 @@
 import {AppElement} from "./app_element";
 import {TypeOf} from "./interfaces/i_typeof";
-import {serializeClass} from "./persistance/TEMP_ANNOTATION";
 import {LifeCycleFlag} from "./enums/e_lifecycle_flags";
 
-@serializeClass
 export class Component {
 
     public readonly appElement : AppElement;

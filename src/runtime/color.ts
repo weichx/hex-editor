@@ -14,7 +14,7 @@ export class Color {
         this.a = a;
     }
 
-    public copyTo(input : any) : any {
+    public copy(input : any) : any {
         input.r = this.r;
         input.g = this.g;
         input.b = this.b;
